@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { forwardRef } from '@nestjs/common';
 import { CourseEntity } from '@server/course';
 import { SessionEntity } from '@server/session';
 import { TeacherEntity } from '@server/teacher';
@@ -19,15 +18,15 @@ export class ExamEntity {
     @Column({ type: 'timestamp', nullable: false})
     endTime: Date
 
-    @ManyToOne(() => forwardRef(() => CourseEntity), (course) => course.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
+    @ManyToOne(() => CourseEntity, (course) => course.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
     @JoinColumn()
     course: CourseEntity;
 
-    @ManyToOne(() => forwardRef(() => SessionEntity), (session) => session.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
+    @ManyToOne(() => SessionEntity, (session) => session.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
     @JoinColumn()
     session: SessionEntity;
 
-    @ManyToOne(() => forwardRef(() => TeacherEntity), (teacher) => teacher.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
+    @ManyToOne(() => TeacherEntity, (teacher) => teacher.exams, { nullable: false, eager: true, onDelete: 'RESTRICT' })
     @JoinColumn()
     teacher: TeacherEntity;
     
