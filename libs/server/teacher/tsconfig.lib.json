@@ -17,5 +17,15 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*.ts"],
-  "references": []
+  "references": [
+    {
+      "path": "../exam/tsconfig.lib.json"
+    },
+    {
+      "path": "../course/tsconfig.lib.json"
+    },
+    {
+      "path": "../users/tsconfig.lib.json"
+    }
+  ]
 }

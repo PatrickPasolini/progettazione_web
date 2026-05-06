@@ -1,4 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, OneToMany, JoinColumn } from 'typeorm';
+import { forwardRef } from '@nestjs/common';
 import { DegreeEntity } from '@server/degree';
 import { ExamEntity } from '@server/exam';
 
@@ -27,7 +28,7 @@ export class SessionEntity {
     })
     degrees: DegreeEntity[];
 
-    @OneToMany(() => ExamEntity, (exam) => exam.session)
+    @OneToMany(() => forwardRef(() => ExamEntity), (exam) => exam.session)
     @JoinColumn()
     exams: ExamEntity[];
 

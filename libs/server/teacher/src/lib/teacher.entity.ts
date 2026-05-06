@@ -1,4 +1,5 @@
 import { ChildEntity, JoinColumn, OneToMany } from 'typeorm';
+import { forwardRef } from '@nestjs/common';
 import { UserEntity } from '@server/users';
 import { UserRole } from '@server/users';
 import { CourseEntity } from '@server/course';
@@ -7,11 +8,11 @@ import { ExamEntity } from '../../../exam/src/lib/exam.entity';
 @ChildEntity(UserRole.TEACHER)
 export class TeacherEntity extends UserEntity {
     
-    @OneToMany(()=>CourseEntity,(course)=>course.teacher)
+    @OneToMany(()=> forwardRef(() => CourseEntity),(course)=>course.teacher)
     @JoinColumn()
     courses: CourseEntity[];
     
-    @OneToMany(()=>ExamEntity,(exam)=>exam.teacher)
+    @OneToMany(()=> forwardRef(() => ExamEntity),(exam)=>exam.teacher)
     @JoinColumn()
     exams: ExamEntity[];    
     

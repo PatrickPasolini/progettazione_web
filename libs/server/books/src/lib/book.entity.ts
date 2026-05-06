@@ -25,3 +25,4 @@ export class Book {
     @JoinColumn() // optional on OneToMany relations
     category: Category;
 }
+
