@@ -57,6 +57,11 @@ export class ServerUsersController {
         return this.serverUsersService.create(user);
     }
 
+    @Post('populate')
+    populateDb() {
+        return this.serverUsersService.seed();
+    }
+
     @Patch(':id') // PATCH /users/:id
     @UseGuards(JwtAuthGuard,RolesGuard)
     @Roles(UserRole.ADMIN)

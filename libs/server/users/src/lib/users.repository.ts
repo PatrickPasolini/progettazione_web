@@ -23,6 +23,7 @@ export class UsersRepository {
     async createOne(dto: CreateUserDto, passwordHash: string): Promise<UserEntity> {
         const user = this.repository.create({
             name: dto.name,
+            surname: dto.surname,
             email: dto.email,
             passwordHash: passwordHash,
             role: dto.role

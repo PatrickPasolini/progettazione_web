@@ -12,6 +12,38 @@ export class ServerUsersService {
     // Injecting the repository
     constructor(private readonly usersRepository: UsersRepository){}
 
+    async seed() {
+        try {
+            const adminD = this.usersRepository.createOne({
+                name: 'Diego',
+                surname: 'Pioli',
+                email: 'diego.pioli@unibs.it',
+                password: 'Password1!',
+                role: UserRole.ADMIN
+            }, await bcrypt.hash('Password1!',10));
+
+            const adminP = this.usersRepository.createOne({
+                name: 'Patrik',
+                surname: 'Pasolini',
+                email: 'patrik.pasolini@unibs.it',
+                password: 'Password2!',
+                role: UserRole.ADMIN
+            }, await bcrypt.hash('Password2!',10));
+
+            const adminL = this.usersRepository.createOne({
+                name: 'Luca',
+                surname: 'Martinelli',
+                email: 'luca.martinelli@unibs.it',
+                password: 'Password3!',
+                role: UserRole.ADMIN
+            }, await bcrypt.hash('Password3!',10));
+        }
+        catch (error) {
+            console.error('Error seeding users:', error);
+            throw new Error('Failed to seed users');
+        }
+    }
+
     async findByEmail(email: string): Promise<UserEntity> {
         const user = await this.usersRepository.findByEmail(email);
 

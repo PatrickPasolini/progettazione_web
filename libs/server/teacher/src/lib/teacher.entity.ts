@@ -1,10 +1,9 @@
 import { ChildEntity, JoinColumn, OneToMany } from 'typeorm';
 import { UserEntity } from '@server/users';
-import { UserRole } from '@server/users';
 import { CourseEntity } from '@server/course';
 import { ExamEntity } from '@server/exam';
 
-@ChildEntity(UserRole.TEACHER)
+@ChildEntity()
 export class TeacherEntity extends UserEntity {
     
     @OneToMany(()=>CourseEntity,(course)=>course.teacher)

@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, TableInheritance } from 'typeor
 import { UserRole } from './dto/user-role.enum.js';
 
 @Entity('users')
-@TableInheritance({ column: { type: 'enum', enum: UserRole, name: 'role' } })
+@TableInheritance({ column: { type: 'varchar', name: 'dtype' } })
 export class UserEntity {
     @PrimaryGeneratedColumn()
     id: number;
@@ -22,7 +22,6 @@ export class UserEntity {
     @Column({
         type: 'enum',
         enum: UserRole,
-        default: UserRole.USER
     })
     role: UserRole;
 
