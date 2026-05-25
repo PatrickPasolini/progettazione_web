@@ -90,6 +90,30 @@ Nx monorepo — **university exam management system** (`appelli_db`).
 
 **Roles** — `USER`, `ADMIN`, `TEACHER`, `SECRETARY`. Use `@Roles(UserRole.TEACHER)` + `RolesGuard` from `@server/security`.
 
+### Business Requirements
+
+**Goal** — Teachers in a degree programme coordinate exam scheduling.
+
+**Teacher workflow:**
+- Picks degree programme + year (e.g. `INFLM-I`)
+- Sees all dates in session period; each date shows already-booked exams by colleagues
+- Inserts exam on a free date; can cancel/edit own entry
+
+**Constraints:**
+- Max 1 exam per day per (degree programme + year) combination
+- Insert/edit only within planning window (start_insertion → end_insertion dates)
+- Teacher sees all exams, modifies only own
+- Available days exclude Sat/Sun (optional: also exclude preset holidays)
+
+**Roles:**
+- `SECRETARY` — configures session: session start/end, insertion window start/end, degree programmes + years
+- `TEACHER` — inserts/edits own exam preferences until insertion period closes
+
+**Key entities to model:**
+- `ExamSession` — session start, session end, insertion_start, insertion_end
+- `DegreeYear` — degree programme + year of attendance (configured by secretary per session)
+- `ExamBooking` — teacher, session, degree_year, date → unique constraint on (session, degree_year, date)
+
 ### Environment
 
 `.env` required at workspace root:

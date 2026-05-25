@@ -44,6 +44,9 @@
     },
     {
       "path": "./libs/server/degree"
+    },
+    {
+      "path": "./libs/server/entities"
     }
   ]
 }
