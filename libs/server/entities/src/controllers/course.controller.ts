@@ -6,8 +6,8 @@ import { ApiBearerAuth, ApiBody, ApiParam, ApiQuery, ApiTags } from '@nestjs/swa
 import { JwtAuthGuard, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
 import { ServerCourseService } from '../services/course.service.js';
-import { CreateCourseDto } from '../dto/create-course.dto.js';
-import { UpdateCourseDto } from '../dto/update-course.dto.js';
+import { CreateCourseDto } from '../entities/dto/create-course.dto.js';
+import { UpdateCourseDto } from '../entities/dto/update-course.dto.js';
 
 @ApiTags('Courses APIs')
 @Controller('course')

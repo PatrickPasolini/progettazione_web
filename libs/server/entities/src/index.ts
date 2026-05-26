@@ -1,6 +1,6 @@
 // DTOs
-export * from './dto/create-course.dto.js';
-export * from './dto/update-course.dto.js';
+export * from './entities/dto/create-course.dto.js';
+export * from './entities/dto/update-course.dto.js';
 
 // Entities
 export * from './entities/teacher.entity.js';

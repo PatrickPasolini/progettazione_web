@@ -3,8 +3,8 @@ import { CourseEntity } from '../entities/course.entity.js';
 import { CourseRepository } from '../repositories/course.repository.js';
 import { TeacherRepository } from '../repositories/teacher.repository.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
-import { CreateCourseDto } from '../dto/create-course.dto.js';
-import { UpdateCourseDto } from '../dto/update-course.dto.js';
+import { CreateCourseDto } from '../entities/dto/create-course.dto.js';
+import { UpdateCourseDto } from '../entities/dto/update-course.dto.js';
 
 @Injectable()
 export class ServerCourseService {
