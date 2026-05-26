@@ -1,7 +1,20 @@
-import { Controller, Get, Param, ParseIntPipe, Post, UseGuards } from '@nestjs/common';
+import {
+    Body,
+    Controller,
+    Delete,
+    Get,
+    HttpCode,
+    Param,
+    ParseIntPipe,
+    Patch,
+    Post,
+    UseGuards,
+} from '@nestjs/common';
 import { ApiBearerAuth, ApiParam, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
+import { CreateTeacherDto } from '../entities/dto/create-teacher.dto.js';
+import { UpdateTeacherDto } from '../entities/dto/update-teacher.dto.js';
 import { ServerTeacherService } from '../services/teacher.service.js';
 
 @ApiTags('Teachers APIs')
@@ -22,6 +35,33 @@ export class ServerTeacherController {
     @ApiParam({ name: 'id', type: Number, description: 'ID del docente' })
     findOne(@Param('id', ParseIntPipe) id: number) {
         return this.serverTeacherService.findOne(id);
+    }
+
+    @Post()
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @ApiBearerAuth()
+    create(@Body() dto: CreateTeacherDto) {
+        return this.serverTeacherService.create(dto);
+    }
+
+    @Patch(':id')
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @ApiBearerAuth()
+    @ApiParam({ name: 'id', type: Number })
+    update(@Param('id', ParseIntPipe) id: number, @Body() dto: UpdateTeacherDto) {
+        return this.serverTeacherService.update(id, dto);
+    }
+
+    @Delete(':id')
+    @HttpCode(204)
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @ApiBearerAuth()
+    @ApiParam({ name: 'id', type: Number })
+    remove(@Param('id', ParseIntPipe) id: number) {
+        return this.serverTeacherService.remove(id);
     }
 
     @Post('populate')

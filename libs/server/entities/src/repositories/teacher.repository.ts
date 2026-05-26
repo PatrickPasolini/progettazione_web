@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { DeleteResult, Repository } from 'typeorm';
 import { TeacherEntity } from '../entities/teacher.entity.js';
 
 @Injectable()
@@ -28,5 +28,9 @@ export class TeacherRepository {
 
     save(teacher: TeacherEntity): Promise<TeacherEntity> {
         return this.repo.save(teacher);
+    }
+
+    delete(id: number): Promise<DeleteResult> {
+        return this.repo.delete(id);
     }
 }

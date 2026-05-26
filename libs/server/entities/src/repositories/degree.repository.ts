@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { In, Repository } from 'typeorm';
+import { DeleteResult, In, Repository } from 'typeorm';
 import { DegreeEntity } from '../entities/degree.entity.js';
 import { DegreeType, DegreeYear } from '../entities/dto/degree.enum.js';
 
@@ -37,5 +37,9 @@ export class DegreeRepository {
 
     save(degree: DegreeEntity): Promise<DegreeEntity> {
         return this.repo.save(degree);
+    }
+
+    delete(id: number): Promise<DeleteResult> {
+        return this.repo.delete(id);
     }
 }
