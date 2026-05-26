@@ -1,4 +1,4 @@
-import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
+import { ConflictException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { CourseEntity } from '../entities/course.entity.js';
 import { CourseRepository } from '../repositories/course.repository.js';
 import { TeacherRepository } from '../repositories/teacher.repository.js';
@@ -51,7 +51,7 @@ export class ServerCourseService {
         };
     }
 
-    async create(dto: CreateCourseDto): Promise<CourseEntity> {
+    async create(dto: CreateCourseDto): Promise<CourseListItem> {
         const existing = await this.courseRepository.findByName(dto.courseName);
         if (existing) 
             throw new ConflictException(`Course name "${dto.courseName}" already exists`);
@@ -65,10 +65,10 @@ export class ServerCourseService {
             : [];
 
         const course = this.courseRepository.create({ courseName: dto.courseName, teacher, degrees });
-        return this.courseRepository.save(course);
+        return this.toListItem(await this.courseRepository.save(course));
     }
 
-    async update(id: number, dto: UpdateCourseDto): Promise<CourseEntity> {
+    async update(id: number, dto: UpdateCourseDto): Promise<CourseListItem> {
         const course = await this.courseRepository.findByIdWithRelations(id);
         if (!course) 
             throw new NotFoundException(`Course with id ${id} not found`);
@@ -93,13 +93,18 @@ export class ServerCourseService {
                 : [];
         }
 
-        return this.courseRepository.save(course);
+        return this.toListItem(await this.courseRepository.save(course));
     }
 
     async remove(id: number): Promise<void> {
-        const result = await this.courseRepository.delete(id);
-        if ((result.affected ?? 0) === 0)
-            throw new NotFoundException(`Course with id ${id} not found`);
+        try {
+            const result = await this.courseRepository.delete(id);
+            if ((result.affected ?? 0) === 0)
+                throw new NotFoundException(`Course with id ${id} not found`);
+        } catch (e) {
+            if (e instanceof NotFoundException) throw e;
+            throw new ConflictException('Cannot delete course: it is referenced by one or more exams');
+        }
     }
 
     async seed(): Promise<void> {
