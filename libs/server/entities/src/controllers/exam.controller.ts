@@ -11,7 +11,7 @@ import {
     Query,
     UseGuards,
 } from '@nestjs/common';
-import { ApiBearerAuth, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiBody, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { CurrentUser, JwtAuthGuard, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
 import { TeacherEntity } from '../entities/teacher.entity.js';
@@ -51,6 +51,20 @@ export class ServerExamController {
     @UseGuards(JwtAuthGuard, RolesGuard)
     @Roles(UserRole.TEACHER)
     @ApiBearerAuth()
+    @ApiBody({
+        schema: {
+            type: 'object',
+            required: ['sessionId', 'courseId', 'degreeId', 'examDate', 'startTime', 'endTime'],
+            properties: {
+                sessionId: { type: 'integer', example: 1 },
+                courseId:  { type: 'integer', example: 2 },
+                degreeId:  { type: 'integer', example: 3 },
+                examDate:  { type: 'string', format: 'date', example: '2025-06-15' },
+                startTime: { type: 'string', format: 'date-time', example: '2025-06-15T09:00:00' },
+                endTime:   { type: 'string', format: 'date-time', example: '2025-06-15T11:00:00' },
+            },
+        },
+    })
     create(@Body() dto: CreateExamDto, @CurrentUser() teacher: TeacherEntity) {
         return this.serverExamService.create(dto, teacher);
     }
@@ -60,6 +74,18 @@ export class ServerExamController {
     @Roles(UserRole.TEACHER)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
+    @ApiBody({
+        schema: {
+            type: 'object',
+            properties: {
+                courseId:  { type: 'integer', example: 2 },
+                degreeId:  { type: 'integer', example: 3 },
+                examDate:  { type: 'string', format: 'date', example: '2025-06-15' },
+                startTime: { type: 'string', format: 'date-time', example: '2025-06-15T09:00:00' },
+                endTime:   { type: 'string', format: 'date-time', example: '2025-06-15T11:00:00' },
+            },
+        },
+    })
     update(
         @Param('id', ParseIntPipe) id: number,
         @Body() dto: UpdateExamDto,

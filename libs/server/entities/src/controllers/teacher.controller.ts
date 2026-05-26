@@ -10,7 +10,7 @@ import {
     Post,
     UseGuards,
 } from '@nestjs/common';
-import { ApiBearerAuth, ApiParam, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiBody, ApiParam, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
 import { CreateTeacherDto } from '../entities/dto/create-teacher.dto.js';
@@ -41,6 +41,18 @@ export class ServerTeacherController {
     @UseGuards(JwtAuthGuard, RolesGuard)
     @Roles(UserRole.ADMIN, UserRole.SECRETARY)
     @ApiBearerAuth()
+    @ApiBody({
+        schema: {
+            type: 'object',
+            required: ['name', 'surname', 'email', 'password'],
+            properties: {
+                name:     { type: 'string', example: 'Mario' },
+                surname:  { type: 'string', example: 'Rossi' },
+                email:    { type: 'string', format: 'email', example: 'mario.rossi@univ.it' },
+                password: { type: 'string', minLength: 6, example: 'Secret1!' },
+            },
+        },
+    })
     create(@Body() dto: CreateTeacherDto) {
         return this.serverTeacherService.create(dto);
     }
@@ -50,6 +62,17 @@ export class ServerTeacherController {
     @Roles(UserRole.ADMIN, UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
+    @ApiBody({
+        schema: {
+            type: 'object',
+            properties: {
+                name:     { type: 'string', example: 'Mario' },
+                surname:  { type: 'string', example: 'Rossi' },
+                email:    { type: 'string', format: 'email', example: 'mario.rossi@univ.it' },
+                password: { type: 'string', minLength: 6, example: 'Secret1!' },
+            },
+        },
+    })
     update(@Param('id', ParseIntPipe) id: number, @Body() dto: UpdateTeacherDto) {
         return this.serverTeacherService.update(id, dto);
     }

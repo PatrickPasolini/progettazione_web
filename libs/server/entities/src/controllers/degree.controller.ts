@@ -10,7 +10,7 @@ import {
     Post,
     UseGuards,
 } from '@nestjs/common';
-import { ApiBearerAuth, ApiParam, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiBody, ApiParam, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
 import { CreateDegreeDto } from '../entities/dto/create-degree.dto.js';
@@ -41,6 +41,17 @@ export class ServerDegreeController {
     @UseGuards(JwtAuthGuard, RolesGuard)
     @Roles(UserRole.SECRETARY, UserRole.ADMIN)
     @ApiBearerAuth()
+    @ApiBody({
+        schema: {
+            type: 'object',
+            required: ['degreeName', 'degreeType', 'degreeYear'],
+            properties: {
+                degreeName: { type: 'string', example: 'Informatica' },
+                degreeType: { type: 'string', enum: ['LT', 'LM', 'LMCU'], example: 'LT', description: 'LT = Triennale, LM = Magistrale, LMCU = Ciclo unico' },
+                degreeYear: { type: 'string', enum: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'], example: 'I' },
+            },
+        },
+    })
     create(@Body() dto: CreateDegreeDto) {
         return this.serverDegreeService.create(dto);
     }
@@ -50,6 +61,16 @@ export class ServerDegreeController {
     @Roles(UserRole.SECRETARY, UserRole.ADMIN)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
+    @ApiBody({
+        schema: {
+            type: 'object',
+            properties: {
+                degreeName: { type: 'string', example: 'Informatica' },
+                degreeType: { type: 'string', enum: ['LT', 'LM', 'LMCU'], example: 'LT', description: 'LT = Triennale, LM = Magistrale, LMCU = Ciclo unico' },
+                degreeYear: { type: 'string', enum: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'], example: 'I' },
+            },
+        },
+    })
     update(@Param('id', ParseIntPipe) id: number, @Body() dto: UpdateDegreeDto) {
         return this.serverDegreeService.update(id, dto);
     }
