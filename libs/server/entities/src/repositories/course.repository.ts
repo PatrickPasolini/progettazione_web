@@ -22,7 +22,7 @@ export class CourseRepository {
     }
 
     findById(id: number): Promise<CourseEntity | null> {
-        return this.repo.findOne({ where: { id } });
+        return this.repo.findOne({ where: { id }, relations: ['teacher', 'degrees'] });
     }
 
     findByIdWithRelations(id: number): Promise<CourseEntity | null> {
@@ -55,7 +55,8 @@ export class CourseRepository {
         return this.repo.save(course);
     }
 
-    delete(id: number): Promise<DeleteResult> {
+    async delete(id: number): Promise<DeleteResult> {
+        await this.repo.query(`DELETE FROM degree_courses WHERE course_id = $1`, [id]);
         return this.repo.delete(id);
     }
 }
