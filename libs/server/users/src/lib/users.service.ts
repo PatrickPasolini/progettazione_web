@@ -20,23 +20,39 @@ export class ServerUsersService {
                 email: 'diego.pioli@unibs.it',
                 password: 'Password1!',
                 role: UserRole.ADMIN
-            }, await bcrypt.hash('Password1!',10));
+            }, await bcrypt.hash('Password1!', 10));
 
             const adminP = this.usersRepository.createOne({
                 name: 'Patrick',
                 surname: 'Pasolini',
                 email: 'patrick.pasolini@unibs.it',
-                password: 'Password2!',
+                password: 'Password1!',
                 role: UserRole.ADMIN
-            }, await bcrypt.hash('Password2!',10));
+            }, await bcrypt.hash('Password1!', 10));
 
             const adminL = this.usersRepository.createOne({
                 name: 'Luca',
                 surname: 'Martinelli',
                 email: 'luca.martinelli@unibs.it',
-                password: 'Password3!',
+                password: 'Password1!',
                 role: UserRole.ADMIN
-            }, await bcrypt.hash('Password3!',10));
+            }, await bcrypt.hash('Password1!', 10));
+
+            const secretary1 = this.usersRepository.createOne({
+                name: 'Anna',
+                surname: 'Bianchi',
+                email: 'anna.bianchi@unibs.it',
+                password: 'Password1!',
+                role: UserRole.SECRETARY
+            }, await bcrypt.hash('Password1!', 10));
+
+            const secretary2 = this.usersRepository.createOne({
+                name: 'Marco',
+                surname: 'Rossi',
+                email: 'marco.rossi@unibs.it',
+                password: 'Password1!',
+                role: UserRole.SECRETARY
+            }, await bcrypt.hash('Password1!', 10));
         }
         catch (error) {
             console.error('Error seeding users:', error);

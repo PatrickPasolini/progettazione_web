@@ -88,4 +88,12 @@ export class ServerSessionController {
     remove(@Param('id', ParseIntPipe) id: number) {
         return this.serverSessionService.remove(id);
     }
+
+    @Post('populate')
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN)
+    @ApiBearerAuth()
+    seed() {
+        return this.serverSessionService.seed();
+    }
 }

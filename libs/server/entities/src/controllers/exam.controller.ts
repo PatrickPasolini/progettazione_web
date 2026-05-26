@@ -103,4 +103,12 @@ export class ServerExamController {
     remove(@Param('id', ParseIntPipe) id: number, @CurrentUser() teacher: TeacherEntity) {
         return this.serverExamService.remove(id, teacher);
     }
+
+    @Post('populate')
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN)
+    @ApiBearerAuth()
+    seed() {
+        return this.serverExamService.seed();
+    }
 }

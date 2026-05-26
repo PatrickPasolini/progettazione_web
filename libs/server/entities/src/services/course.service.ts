@@ -49,10 +49,12 @@ export class ServerCourseService {
 
     async create(dto: CreateCourseDto): Promise<CourseEntity> {
         const existing = await this.courseRepository.findByName(dto.courseName);
-        if (existing) throw new ConflictException(`Course name "${dto.courseName}" already exists`);
+        if (existing) 
+            throw new ConflictException(`Course name "${dto.courseName}" already exists`);
 
         const teacher = await this.teacherRepository.findById(dto.teacherId);
-        if (!teacher) throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
+        if (!teacher) 
+            throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
 
         const degrees = dto.degreeIds?.length
             ? await this.degreeRepository.findByIds(dto.degreeIds)
@@ -64,7 +66,8 @@ export class ServerCourseService {
 
     async update(id: number, dto: UpdateCourseDto): Promise<CourseEntity> {
         const course = await this.courseRepository.findByIdWithRelations(id);
-        if (!course) throw new NotFoundException(`Course with id ${id} not found`);
+        if (!course) 
+            throw new NotFoundException(`Course with id ${id} not found`);
 
         if (dto.courseName !== undefined) {
             const conflict = await this.courseRepository.findByName(dto.courseName);
@@ -75,7 +78,8 @@ export class ServerCourseService {
 
         if (dto.teacherId !== undefined) {
             const teacher = await this.teacherRepository.findById(dto.teacherId);
-            if (!teacher) throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
+            if (!teacher) 
+                throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
             course.teacher = teacher;
         }
 
@@ -97,24 +101,22 @@ export class ServerCourseService {
     async seed(): Promise<void> {
         const teachers = await this.teacherRepository.findAll();
         if (teachers.length === 0)
-            throw new Error('No teachers found — run POST /teacher/populate first');
+            throw new Error('No teachers found');
 
         const degrees = await this.degreeRepository.findAll();
         if (degrees.length === 0)
-            throw new Error('No degrees found — run POST /degree/populate first');
+            throw new Error('No degrees found');
 
         const [t1, t2, t3] = teachers;
         const d = degrees;
 
         const courses: { courseName: string; teacher: (typeof teachers)[0]; degreeIds: number[] }[] = [
-            { courseName: 'Analisi Matematica I',       teacher: t1,       degreeIds: [d[0]?.id, d[3]?.id].filter(Boolean) as number[] },
-            { courseName: 'Analisi Matematica II',      teacher: t1,       degreeIds: [d[1]?.id, d[4]?.id].filter(Boolean) as number[] },
-            { courseName: 'Programmazione I',           teacher: t2,       degreeIds: [d[0]?.id].filter(Boolean) as number[] },
-            { courseName: 'Programmazione II',          teacher: t2,       degreeIds: [d[1]?.id].filter(Boolean) as number[] },
-            { courseName: 'Basi di Dati',               teacher: t3 ?? t1, degreeIds: [d[2]?.id, d[5]?.id].filter(Boolean) as number[] },
-            { courseName: 'Reti di Calcolatori',        teacher: t3 ?? t2, degreeIds: [d[2]?.id].filter(Boolean) as number[] },
-            { courseName: 'Algoritmi e Strutture Dati', teacher: t2,       degreeIds: [d[1]?.id, d[4]?.id].filter(Boolean) as number[] },
-            { courseName: 'Sistemi Operativi',          teacher: t1,       degreeIds: [d[2]?.id, d[5]?.id].filter(Boolean) as number[] },
+            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
+            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeIds: [d[4]?.id, d[2]?.id].filter(Boolean) as number[] },
+            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
+            { courseName: 'Ingegneria del Software',                teacher: t3, degreeIds: [d[2]?.id].filter(Boolean) as number[] },
+            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
+            { courseName: 'Calcolo Scientifico',                    teacher: t2, degreeIds: [d[3]?.id].filter(Boolean) as number[] },
         ];
 
         for (const c of courses) {

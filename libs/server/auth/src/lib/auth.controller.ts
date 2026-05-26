@@ -21,7 +21,7 @@ export class ServerAuthController {
           schema: {
               type: 'object',
               properties: {
-                  email: { type: 'string', example: 'devis.bianchini@unibs.it' },
+                  email: { type: 'string', example: 'patrick.pasolini@unibs.it' },
                   password: {type: 'string', example: 'Password1!'}
               },
               required: ['email', 'password'],

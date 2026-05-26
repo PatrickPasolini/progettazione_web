@@ -58,9 +58,9 @@ export class ServerTeacherService {
 
     async seed(): Promise<void> {
         const teachers = [
-            { name: 'Mario',  surname: 'Rossi',   email: 'mario.rossi@unibs.it',   password: 'Teacher1!' },
-            { name: 'Giulia', surname: 'Bianchi', email: 'giulia.bianchi@unibs.it', password: 'Teacher2!' },
-            { name: 'Andrea', surname: 'Verdi',   email: 'andrea.verdi@unibs.it',   password: 'Teacher3!' },
+            { name: 'Luca',  surname: 'Giuzzi',   email: 'luca.giuzzi@unibs.it',   password: 'Teacher1!' },
+            { name: 'Paola', surname: 'Gervasio', email: 'paola.gervasio@unibs.it', password: 'Teacher2!' },
+            { name: 'Alessandro', surname: 'Saetti',   email: 'alessandro.saetti@unibs.it',   password: 'Teacher3!' },
         ];
 
         for (const t of teachers) {

@@ -149,6 +149,72 @@ export class ServerExamService {
         await this.examRepository.delete(id);
     }
 
+    async seed(): Promise<void> {
+        const sessions = await this.sessionRepository.findAll();
+        if (sessions.length === 0)
+            throw new Error('No sessions found');
+
+        const teachers = await this.teacherRepository.findAll();
+        if (teachers.length === 0)
+            throw new Error('No teachers found');
+
+        const courses = await this.courseRepository.findAll();
+        if (courses.length === 0)
+            throw new Error('No courses found');
+
+        const degrees = await this.degreeRepository.findAll();
+        if (degrees.length === 0)
+            throw new Error('No degrees found');
+
+        const [session] = sessions;
+        const [t1, t2, t3] = teachers; // Giuzzi, Gervasio, Saetti
+
+        const exams = [
+            {
+                // Giuzzi — Algebra e Geometria — Info BACHELOR 1°
+                examDate:  new Date('2026-06-10'),
+                startTime: new Date('2026-06-10T09:00:00'),
+                endTime:   new Date('2026-06-10T11:00:00'),
+                teacher:   t1,
+                course:    courses[0],
+                degree:    degrees[0],
+                session,
+            },
+            {
+                // Gervasio — Analisi Matematica 1 — Info BACHELOR 1°
+                examDate:  new Date('2026-06-12'),
+                startTime: new Date('2026-06-12T09:00:00'),
+                endTime:   new Date('2026-06-12T11:00:00'),
+                teacher:   t2,
+                course:    courses[4],
+                degree:    degrees[0],
+                session,
+            },
+            {
+                // Saetti — Elementi di Informatica e Programmazione — Info BACHELOR 1°
+                examDate:  new Date('2026-06-16'),
+                startTime: new Date('2026-06-16T09:00:00'),
+                endTime:   new Date('2026-06-16T11:00:00'),
+                teacher:   t3,
+                course:    courses[2],
+                degree:    degrees[0],
+                session,
+            },
+        ];
+
+        for (const e of exams) {
+            const conflict = await this.examRepository.findBySessionDegreeDate(
+                session.id,
+                e.degree.id,
+                e.examDate.toISOString().slice(0, 10),
+            );
+            if (conflict) continue;
+
+            const exam = this.examRepository.create(e);
+            await this.examRepository.save(exam);
+        }
+    }
+
     private validateExamDate(examDate: Date, sessionStart: Date, sessionEnd: Date): void {
         const day = examDate.getDay();
         if (day === 0 || day === 6) {

@@ -70,6 +70,33 @@ export class ServerSessionService {
         await this.sessionRepository.delete(id);
     }
 
+    async seed(): Promise<void> { // creo 2 sessioni per tutte le lauree presenti nel db 
+        const degrees = await this.degreeRepository.findAll();
+        if (degrees.length === 0)
+            throw new Error('No degrees found');
+
+        const sessions = [
+            {
+                startDate:       new Date('2026-06-01'),
+                endDate:         new Date('2026-07-31'),
+                startInsertDate: new Date('2026-04-01'),
+                endInsertDate:   new Date('2026-04-30'),
+            },
+            {
+                startDate:       new Date('2026-09-01'),
+                endDate:         new Date('2026-09-30'),
+                startInsertDate: new Date('2026-05-01'),
+                endInsertDate:   new Date('2026-06-30'),
+            },
+        ];
+
+        for (const s of sessions) {
+            const session = this.sessionRepository.create(s);
+            session.degrees = degrees;
+            await this.sessionRepository.save(session);
+        }
+    }
+
     private validateDates(
         startDate: string,
         endDate: string,
@@ -87,8 +114,6 @@ export class ServerSessionService {
         if (insertStart >= insertEnd) {
             throw new BadRequestException('startInsertDate must be before endInsertDate');
         }
-        if (insertStart < start || insertEnd > end) {
-            throw new BadRequestException('Insertion window must be within the session period');
-        }
+        
     }
 }

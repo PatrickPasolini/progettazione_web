@@ -51,3 +51,6 @@ vite.config.*.timestamp*
 .env
 .env.local
 .env.*.local
+
+# University data files
+UniBS_Materie_Docenti_2026.txt

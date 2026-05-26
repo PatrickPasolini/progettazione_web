@@ -58,14 +58,16 @@ export class ServerDegreeService {
 
     async seed(): Promise<void> {
         const degrees: Partial<DegreeEntity>[] = [
-            { degreeName: 'Informatica',              degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Informatica',              degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND },
-            { degreeName: 'Informatica',              degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD  },
             { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST  },
             { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND },
             { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD  },
-            { degreeName: 'Informatica (Magistrale)', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Informatica (Magistrale)', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST  },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND },
+            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST  },
+            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND },
+            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD  },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST  },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND },
         ];
 
         for (const d of degrees) {
