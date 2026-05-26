@@ -23,9 +23,9 @@ export class ServerUsersService {
             }, await bcrypt.hash('Password1!',10));
 
             const adminP = this.usersRepository.createOne({
-                name: 'Patrik',
+                name: 'Patrick',
                 surname: 'Pasolini',
-                email: 'patrik.pasolini@unibs.it',
+                email: 'patrick.pasolini@unibs.it',
                 password: 'Password2!',
                 role: UserRole.ADMIN
             }, await bcrypt.hash('Password2!',10));

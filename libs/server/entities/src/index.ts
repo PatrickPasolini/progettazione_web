@@ -1,3 +1,7 @@
+// DTOs
+export * from './dto/create-course.dto.js';
+export * from './dto/update-course.dto.js';
+
 // Entities
 export * from './entities/teacher.entity.js';
 export * from './entities/course.entity.js';
@@ -5,6 +9,11 @@ export * from './entities/exam.entity.js';
 export * from './entities/session.entity.js';
 export * from './entities/degree.entity.js';
 export * from './entities/dto/degree.enum.js';
+
+// Repositories
+export * from './repositories/teacher.repository.js';
+export * from './repositories/course.repository.js';
+export * from './repositories/degree.repository.js';
 
 // Modules
 export * from './modules/teacher.module.js';

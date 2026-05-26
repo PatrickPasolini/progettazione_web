@@ -1,14 +1,15 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, Unique } from 'typeorm';
 import { DegreeType, DegreeYear } from './dto/degree.enum.js';
 import { CourseEntity } from './course.entity.js';
 import { SessionEntity } from './session.entity.js';
 
 @Entity('degree')
+@Unique(['degreeName', 'degreeType', 'degreeYear'])
 export class DegreeEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ type: 'varchar', length: 255, nullable: false, unique: true })
+    @Column({ type: 'varchar', length: 255, nullable: false })
     degreeName: string;
 
     @Column({

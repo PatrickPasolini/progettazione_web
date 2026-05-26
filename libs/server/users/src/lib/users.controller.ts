@@ -46,7 +46,8 @@ export class ServerUsersController {
             type: 'object',
             properties: {
                 name: { type: 'string', example: 'Devis' },
-                email: { type: 'string', example: 'bianchin@unibs.it' },
+                surname: { type: 'string', example: 'Bianchini' },  
+                email: { type: 'string', example: 'bianchini@unibs.it' },
                 password: {type: 'string', example: 'Password1!'},
                 role: { type: 'string', enum: Object.values(UserRole), example: UserRole.USER}
             },
@@ -71,7 +72,8 @@ export class ServerUsersController {
             type: 'object',
             properties: {
                 name: { type: 'string', example: 'Devis' },
-                email: { type: 'string', example: 'bianchin@unibs.it' },
+                surname: { type: 'string', example: 'Bianchini' },
+                email: { type: 'string', example: 'bianchini@unibs.it' },
                 role: { type: 'string', enum: Object.values(UserRole), example: UserRole.USER}
             },
             required: ['name', 'email', 'role'],

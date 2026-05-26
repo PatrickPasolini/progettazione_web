@@ -1,4 +1,0 @@
-export * from './lib/teacher.entity';
-export * from './lib/teacher.controller';
-export * from './lib/teacher.service';
-export * from './lib/teacher.module';

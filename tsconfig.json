@@ -31,21 +31,6 @@
       "path": "./libs/server/security"
     },
     {
-      "path": "./libs/server/exam"
-    },
-    {
-      "path": "./libs/server/course"
-    },
-    {
-      "path": "./libs/server/session"
-    },
-    {
-      "path": "./libs/server/teacher"
-    },
-    {
-      "path": "./libs/server/degree"
-    },
-    {
       "path": "./libs/server/entities"
     }
   ]
