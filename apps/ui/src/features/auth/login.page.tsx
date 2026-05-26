@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login } from './auth.api';
-import book_styles from '../css/books.module.css';
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
@@ -27,42 +26,78 @@ export function LoginPage() {
   }
 
   return (
-    <main className={book_styles.page}>
-      <div className={`${book_styles.card} ${book_styles.cardSmall}`}>
-        <h1 className={book_styles.title}>Login</h1>
+    <div style={{
+      minHeight: '100vh', display: 'grid', placeItems: 'center',
+      background: 'var(--bg)',
+    }}>
+      <div style={{
+        background: 'var(--paper)', borderRadius: 14,
+        border: '1px solid var(--line)',
+        boxShadow: 'var(--shadow)',
+        padding: '40px 36px', width: 380, maxWidth: '92vw',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 28 }}>
+          <div style={{
+            width: 36, height: 36, borderRadius: 8,
+            background: 'var(--accent)', color: 'var(--paper)',
+            display: 'grid', placeItems: 'center',
+            fontFamily: "'Instrument Serif', serif", fontSize: 24,
+          }}>
+            A
+          </div>
+          <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, lineHeight: 1 }}>
+            Appelli<span style={{ color: 'var(--accent)' }}>.</span>
+          </span>
+        </div>
 
-        <form onSubmit={handleSubmit} className={book_styles.form}>
-          <div className={book_styles.field}>
+        <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, margin: '0 0 6px' }}>
+          Accedi
+        </h2>
+        <p style={{ color: 'var(--ink-3)', fontSize: 13, margin: '0 0 22px' }}>
+          Gestione appelli universitari
+        </p>
+
+        <form onSubmit={handleSubmit}>
+          <div className="field">
             <label>Email</label>
             <input
               type="email"
-              className={book_styles.input}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Inserisci email"
+              placeholder="nome@università.it"
               required
+              autoFocus
             />
           </div>
 
-          <div className={book_styles.field}>
+          <div className="field">
             <label>Password</label>
             <input
               type="password"
-              className={book_styles.input}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Inserisci password"
+              placeholder="Password"
               required
             />
           </div>
 
-          <button className={book_styles.button} type="submit" disabled={loading}>
-            {loading ? 'Accesso in corso...' : 'Login'}
+          {error && (
+            <div className="banner warn" style={{ margin: '12px 0' }}>
+              <span className="pill">Errore</span>
+              <span>{error}</span>
+            </div>
+          )}
+
+          <button
+            type="submit"
+            className="btn primary"
+            disabled={loading}
+            style={{ width: '100%', justifyContent: 'center', marginTop: 8 }}
+          >
+            {loading ? 'Accesso in corso…' : 'Accedi'}
           </button>
         </form>
-
-        {error && <p className={book_styles.error}>{error}</p>}
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,55 +1,83 @@
 import { useEffect, useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
-import { fetchCurrentUser } from '../auth/auth.api';
-import styles from '../css/books.module.css';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { fetchApi } from '../shared/api';
+import { Avatar } from '../shared/ui/components';
+import { CalIcon, PersonIcon, CogIcon } from '../shared/ui/icons';
+import type { CurrentUser } from '../shared/types';
 
 export function AppLayout() {
   const navigate = useNavigate();
-  const [user, setUser] = useState<any>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const [user, setUser] = useState<CurrentUser | null>(null);
 
   useEffect(() => {
-    fetchCurrentUser()
+    fetchApi<CurrentUser>('/users/me')
       .then(setUser)
       .catch(() => setUser(null));
   }, []);
 
+  const canSwitch = user?.role === 'ADMIN' || user?.role === 'SECRETARY';
+  const isDocente = location.pathname.startsWith('/docente');
+  const isSegreteria = location.pathname.startsWith('/segreteria');
+
+  const initials = user
+    ? `${user.name?.charAt(0) ?? ''}${user.surname?.charAt(0) ?? ''}`.toUpperCase()
+    : '?';
+
+  const fullName = user ? `${user.name} ${user.surname}` : '';
+
   return (
-    <>
-      <nav className={styles.navbar}>
-        <div className={styles.navBrand} onClick={() => navigate('/')}>
-          Gestione Appelli
+    <div className="app">
+      <header className="topbar">
+        <div className="brand">
+          <div className="brand-mark">A</div>
+          <span className="brand-name">Appelli<span className="dot">.</span></span>
+          <span className="brand-sub">Gestione esami</span>
         </div>
 
-        <div className={styles.navLinks}>
-          <div className={styles.userSection}>
+        <div className="topbar-divider" />
+
+        <div className="role-switch">
+          {(canSwitch || user?.role === 'TEACHER') && (
             <button
-              className={styles.userButton}
-              onClick={() => setMenuOpen((prev) => !prev)}
+              className={isDocente ? 'active' : ''}
+              onClick={() => navigate('/docente')}
             >
-              <span className={styles.userName}>
-                {user?.firstName && user?.lastName
-                  ? `${user.firstName} ${user.lastName}`
-                  : user?.email ?? 'Utente'}
-              </span>
-              ▾
+              <span className="dotpoint" />
+              <CalIcon size={14} />
+              Docente
             </button>
-
-            {menuOpen && (
-              <div className={styles.dropdownMenu}>
-                <button
-                  className={styles.dropdownItem}
-                  onClick={() => navigate('/logout')}
-                >
-                  Logout
-                </button>
-              </div>
-            )}
-          </div>
+          )}
+          {(canSwitch) && (
+            <button
+              className={isSegreteria ? 'active' : ''}
+              onClick={() => navigate('/segreteria')}
+            >
+              <span className="dotpoint" />
+              <CogIcon size={14} />
+              Segreteria
+            </button>
+          )}
         </div>
-      </nav>
+
+        <div className="top-meta">
+          <span>A.A. 2025–2026</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <PersonIcon size={14} />
+            <span>{fullName}</span>
+          </div>
+          <Avatar initials={initials} />
+          <button
+            className="btn-ghost"
+            style={{ fontSize: 12, padding: '4px 10px' }}
+            onClick={() => navigate('/logout')}
+          >
+            Esci
+          </button>
+        </div>
+      </header>
 
       <Outlet />
-    </>
+    </div>
   );
 }
