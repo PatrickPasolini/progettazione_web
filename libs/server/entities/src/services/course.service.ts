@@ -15,6 +15,10 @@ export class ServerCourseService {
         private readonly degreeRepository: DegreeRepository,
     ) {}
 
+    findDegreesByTeacher(teacherId: number) {
+        return this.courseRepository.findDegreesByTeacher(teacherId);
+    }
+
     async findAll(teacherId?: number): Promise<CourseListItem[]> {
         const courses = await this.courseRepository.findAll(teacherId);
         return courses.map(c => this.toListItem(c));

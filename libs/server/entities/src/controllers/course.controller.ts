@@ -22,6 +22,14 @@ export class ServerCourseController {
         return this.serverCourseService.findAll(teacherId ? +teacherId : undefined);
     }
 
+    @Get('teacher/:teacherId/degrees') // restituisce i degree  associati a tutti i course insegnati da un teacher
+    @UseGuards(JwtAuthGuard)
+    @ApiBearerAuth()
+    @ApiParam({ name: 'teacherId', type: Number, description: 'ID del docente' })
+    findDegreesByTeacher(@Param('teacherId', ParseIntPipe) teacherId: number) {
+        return this.serverCourseService.findDegreesByTeacher(teacherId);
+    }
+
     @Get(':id')
     @UseGuards(JwtAuthGuard)
     @ApiBearerAuth()

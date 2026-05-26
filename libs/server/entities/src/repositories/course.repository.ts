@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { CourseEntity } from '../entities/course.entity.js';
+import { DegreeEntity } from '../entities/degree.entity.js';
 
 @Injectable()
 export class CourseRepository {
@@ -26,6 +27,20 @@ export class CourseRepository {
 
     findByIdWithRelations(id: number): Promise<CourseEntity | null> {
         return this.repo.findOne({ where: { id }, relations: ['teacher', 'degrees'] });
+    }
+
+    async findDegreesByTeacher(teacherId: number): Promise<DegreeEntity[]> {
+        const courses = await this.repo.find({
+            where: { teacher: { id: teacherId } },
+            relations: ['degrees'],
+        });
+        const map = new Map<number, DegreeEntity>();
+        for (const course of courses) {
+            for (const degree of course.degrees) {
+                map.set(degree.id, degree);
+            }
+        }
+        return [...map.values()];
     }
 
     findByName(courseName: string): Promise<CourseEntity | null> {
