@@ -1,3 +1,6 @@
+// Interfaces
+export * from './interfaces/course-list-item.js';
+
 // DTOs
 export * from './entities/dto/create-course.dto.js';
 export * from './entities/dto/update-course.dto.js';

@@ -5,6 +5,7 @@ import { TeacherRepository } from '../repositories/teacher.repository.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateCourseDto } from '../entities/dto/create-course.dto.js';
 import { UpdateCourseDto } from '../entities/dto/update-course.dto.js';
+import { CourseListItem } from '../interfaces/course-list-item.js';
 
 @Injectable()
 export class ServerCourseService {
@@ -14,14 +15,36 @@ export class ServerCourseService {
         private readonly degreeRepository: DegreeRepository,
     ) {}
 
-    findAll(teacherId?: number): Promise<CourseEntity[]> {
-        return this.courseRepository.findAll(teacherId);
+    async findAll(teacherId?: number): Promise<CourseListItem[]> {
+        const courses = await this.courseRepository.findAll(teacherId);
+        return courses.map(c => this.toListItem(c));
     }
 
-    async findOne(id: number): Promise<CourseEntity> {
+    async findOne(id: number): Promise<CourseListItem> {
         const course = await this.courseRepository.findById(id);
-        if (!course) throw new NotFoundException(`Course with id ${id} not found`);
-        return course;
+        if (!course) 
+            throw new NotFoundException(`Course with id ${id} not found`);
+        return this.toListItem(course);
+    }
+
+    private toListItem(course: CourseEntity): CourseListItem {
+        return {
+            id: course.id,
+            courseName: course.courseName,
+            teacher: {
+                id: course.teacher.id,
+                name: course.teacher.name,
+                surname: course.teacher.surname,
+                email: course.teacher.email,
+                role: course.teacher.role,
+            },
+            degrees: course.degrees.map(d => ({
+                id: d.id,
+                degreeName: d.degreeName,
+                degreeType: d.degreeType,
+                degreeYear: d.degreeYear,
+            })),
+        };
     }
 
     async create(dto: CreateCourseDto): Promise<CourseEntity> {
