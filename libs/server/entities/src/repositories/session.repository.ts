@@ -18,6 +18,10 @@ export class SessionRepository {
         return this.repo.findOne({ where: { id } });
     }
 
+    findByIdWithDegrees(id: number): Promise<SessionEntity | null> {
+        return this.repo.findOne({ where: { id }, relations: ['degrees'] });
+    }
+
     create(data: Partial<SessionEntity>): SessionEntity {
         return this.repo.create(data);
     }

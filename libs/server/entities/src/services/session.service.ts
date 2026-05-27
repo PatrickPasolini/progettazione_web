@@ -1,5 +1,6 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { SessionRepository } from '../repositories/session.repository.js';
+import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateSessionDto } from '../entities/dto/create-session.dto.js';
 import { UpdateSessionDto } from '../entities/dto/update-session.dto.js';
 import { MacroArea } from '../entities/dto/degree.enum.js';
@@ -9,6 +10,7 @@ import { SessionEntity } from '../entities/session.entity.js';
 export class ServerSessionService {
     constructor(
         private readonly sessionRepository: SessionRepository,
+        private readonly degreeRepository: DegreeRepository,
     ) {}
 
     findAll(): Promise<SessionEntity[]> {
@@ -32,11 +34,15 @@ export class ServerSessionService {
             macroArea:       dto.macroArea,
         });
 
+        session.degrees = dto.degreeIds?.length
+            ? await this.degreeRepository.findByIds(dto.degreeIds)
+            : [];
+
         return this.sessionRepository.save(session);
     }
 
     async update(id: number, dto: UpdateSessionDto): Promise<SessionEntity> {
-        const session = await this.sessionRepository.findById(id);
+        const session = await this.sessionRepository.findByIdWithDegrees(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);
 
         const startDate      = dto.startDate      ? new Date(dto.startDate)      : session.startDate;
@@ -58,6 +64,12 @@ export class ServerSessionService {
             endInsertDate,
             ...(dto.macroArea && { macroArea: dto.macroArea }),
         });
+
+        if (dto.degreeIds !== undefined) {
+            session.degrees = dto.degreeIds.length
+                ? await this.degreeRepository.findByIds(dto.degreeIds)
+                : [];
+        }
 
         return this.sessionRepository.save(session);
     }

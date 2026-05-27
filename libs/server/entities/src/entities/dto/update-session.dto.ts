@@ -1,4 +1,4 @@
-import { IsDateString, IsEnum, IsOptional } from 'class-validator';
+import { IsArray, IsDateString, IsEnum, IsInt, IsOptional } from 'class-validator';
 import { MacroArea } from './degree.enum.js';
 
 export class UpdateSessionDto {
@@ -21,4 +21,9 @@ export class UpdateSessionDto {
     @IsEnum(MacroArea)
     @IsOptional()
     macroArea?: MacroArea;
+
+    @IsArray()
+    @IsInt({ each: true })
+    @IsOptional()
+    degreeIds?: number[];
 }
