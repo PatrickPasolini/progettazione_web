@@ -1,5 +1,5 @@
 import { IsEnum, IsOptional, IsString } from 'class-validator';
-import { DegreeType, DegreeYear } from './degree.enum.js';
+import { DegreeType, DegreeYear, MacroArea } from './degree.enum.js';
 
 export class UpdateDegreeDto {
     @IsString()
@@ -13,4 +13,8 @@ export class UpdateDegreeDto {
     @IsEnum(DegreeYear)
     @IsOptional()
     degreeYear?: DegreeYear;
+
+    @IsEnum(MacroArea)
+    @IsOptional()
+    macroArea?: MacroArea;
 }

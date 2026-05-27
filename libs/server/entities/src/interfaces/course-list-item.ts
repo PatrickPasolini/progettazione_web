@@ -1,4 +1,4 @@
-import { DegreeType, DegreeYear } from '../entities/dto/degree.enum.js';
+import { DegreeType, DegreeYear, MacroArea } from '../entities/dto/degree.enum.js';
 import { UserRole } from '@server/users';
 
 export interface CourseListItem {
@@ -15,6 +15,7 @@ export interface CourseListItem {
         id: number;
         degreeName: string;
         degreeType: DegreeType;
-        degreeYear: DegreeYear; 
+        degreeYear: DegreeYear;
+        macroArea: MacroArea;
     }[];
 }

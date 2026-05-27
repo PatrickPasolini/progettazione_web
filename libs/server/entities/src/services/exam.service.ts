@@ -255,6 +255,7 @@ export class ServerExamService {
                 degreeName: exam.degree.degreeName,
                 degreeType: exam.degree.degreeType,
                 degreeYear: exam.degree.degreeYear,
+                macroArea: exam.degree.macroArea,
             },
         };
     }

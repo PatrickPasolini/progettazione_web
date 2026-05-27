@@ -1,5 +1,5 @@
 import { IsEnum, IsNotEmpty, IsString } from 'class-validator';
-import { DegreeType, DegreeYear } from './degree.enum.js';
+import { DegreeType, DegreeYear, MacroArea } from './degree.enum.js';
 
 export class CreateDegreeDto {
     @IsString()
@@ -13,4 +13,8 @@ export class CreateDegreeDto {
     @IsEnum(DegreeYear)
     @IsNotEmpty()
     degreeYear: DegreeYear;
+
+    @IsEnum(MacroArea)
+    @IsNotEmpty()
+    macroArea: MacroArea;
 }

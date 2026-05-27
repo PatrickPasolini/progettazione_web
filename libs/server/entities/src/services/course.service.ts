@@ -1,4 +1,4 @@
-import { ConflictException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
+import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { CourseEntity } from '../entities/course.entity.js';
 import { CourseRepository } from '../repositories/course.repository.js';
 import { TeacherRepository } from '../repositories/teacher.repository.js';
@@ -47,6 +47,7 @@ export class ServerCourseService {
                 degreeName: d.degreeName,
                 degreeType: d.degreeType,
                 degreeYear: d.degreeYear,
+                macroArea: d.macroArea,
             })),
         };
     }

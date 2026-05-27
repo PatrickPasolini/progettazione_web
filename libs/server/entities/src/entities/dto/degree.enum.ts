@@ -13,3 +13,15 @@ export enum DegreeYear {
     SIXTH = 'VI',
     SEVENTH = 'VII'
 }
+
+export enum MacroArea {
+    AGRICULTURE      = 'Agraria',
+    BIOTECHNOLOGY    = 'Biotecnologie',
+    ECONOMICS        = 'Economia',
+    PHARMACY         = 'Farmacia',
+    LAW              = 'Giurisprudenza',
+    ENGINEERING      = 'Ingegneria',
+    MEDICINE         = 'Medicina',
+    SPORT_SCIENCE    = 'Scienze Motorie',
+    POLITICAL_SOCIAL = 'Scienze Politiche e Sociali',
+}

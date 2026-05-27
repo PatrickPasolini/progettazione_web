@@ -49,6 +49,7 @@ export class ServerDegreeController {
                 degreeName: { type: 'string', example: 'Informatica' },
                 degreeType: { type: 'string', enum: ['LT', 'LM', 'LMCU'], example: 'LT', description: 'LT = Triennale, LM = Magistrale, LMCU = Ciclo unico' },
                 degreeYear: { type: 'string', enum: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'], example: 'I' },
+                macroArea:  { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
             },
         },
     })
@@ -68,6 +69,7 @@ export class ServerDegreeController {
                 degreeName: { type: 'string', example: 'Informatica' },
                 degreeType: { type: 'string', enum: ['LT', 'LM', 'LMCU'], example: 'LT', description: 'LT = Triennale, LM = Magistrale, LMCU = Ciclo unico' },
                 degreeYear: { type: 'string', enum: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'], example: 'I' },
+                macroArea:  { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
             },
         },
     })

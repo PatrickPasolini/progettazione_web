@@ -3,7 +3,7 @@ import { DegreeEntity } from '../entities/degree.entity.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateDegreeDto } from '../entities/dto/create-degree.dto.js';
 import { UpdateDegreeDto } from '../entities/dto/update-degree.dto.js';
-import { DegreeType, DegreeYear } from '../entities/dto/degree.enum.js';
+import { DegreeType, DegreeYear, MacroArea } from '../entities/dto/degree.enum.js';
 
 @Injectable()
 export class ServerDegreeService {
@@ -35,9 +35,10 @@ export class ServerDegreeService {
         const degree = await this.degreeRepository.findById(id);
         if (!degree) throw new NotFoundException(`Degree with id ${id} not found`);
 
-        const newName = dto.degreeName ?? degree.degreeName;
-        const newType = dto.degreeType ?? degree.degreeType;
-        const newYear = dto.degreeYear ?? degree.degreeYear;
+        const newName      = dto.degreeName  ?? degree.degreeName;
+        const newType      = dto.degreeType  ?? degree.degreeType;
+        const newYear      = dto.degreeYear  ?? degree.degreeYear;
+        const newMacroArea = dto.macroArea   ?? degree.macroArea;
 
         if (newName !== degree.degreeName || newType !== degree.degreeType || newYear !== degree.degreeYear) {
             const conflict = await this.degreeRepository.findByNameTypeYear(newName, newType, newYear);
@@ -46,7 +47,7 @@ export class ServerDegreeService {
             }
         }
 
-        Object.assign(degree, { degreeName: newName, degreeType: newType, degreeYear: newYear });
+        Object.assign(degree, { degreeName: newName, degreeType: newType, degreeYear: newYear, macroArea: newMacroArea });
         return this.degreeRepository.save(degree);
     }
 
@@ -58,16 +59,16 @@ export class ServerDegreeService {
 
     async seed(): Promise<void> {
         const degrees: Partial<DegreeEntity>[] = [
-            { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND },
-            { degreeName: 'Ingegneria Informatica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD  },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND },
-            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND },
-            { degreeName: 'Ingegneria Elettronica',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD  },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST  },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
         ];
 
         for (const d of degrees) {
