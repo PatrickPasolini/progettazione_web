@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post, Query, ParseIntPipe, ParseEnumPipe, ValidationPipe, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, Param, Patch, Post, Query, ParseIntPipe, ParseEnumPipe, ValidationPipe, UseGuards } from '@nestjs/common';
 import { ServerUsersService } from './users.service';
 import { ApiTags, ApiBody, ApiQuery, ApiBearerAuth } from '@nestjs/swagger';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -85,6 +85,7 @@ export class ServerUsersController {
     }
 
     @Delete(':id') // DELETE /users/:id
+    @HttpCode(204)  // convenzione rest per indicare che la risposta è vuota
     @UseGuards(JwtAuthGuard,RolesGuard)
     @Roles(UserRole.ADMIN)
     @ApiBearerAuth()

@@ -46,10 +46,10 @@ export class ServerTeacherController {
             type: 'object',
             required: ['name', 'surname', 'email', 'password'],
             properties: {
-                name:     { type: 'string', example: 'Mario' },
-                surname:  { type: 'string', example: 'Rossi' },
-                email:    { type: 'string', format: 'email', example: 'mario.rossi@univ.it' },
-                password: { type: 'string', minLength: 6, example: 'Secret1!' },
+                name:     { type: 'string', example: 'Daniela' },
+                surname:  { type: 'string', example: 'Fogli' },
+                email:    { type: 'string', format: 'email', example: 'daniela.fogli@unibs.it' },
+                password: { type: 'string', minLength: 6, example: 'Teacher1!' },
             },
         },
     })
@@ -66,10 +66,10 @@ export class ServerTeacherController {
         schema: {
             type: 'object',
             properties: {
-                name:     { type: 'string', example: 'Mario' },
-                surname:  { type: 'string', example: 'Rossi' },
-                email:    { type: 'string', format: 'email', example: 'mario.rossi@univ.it' },
-                password: { type: 'string', minLength: 6, example: 'Secret1!' },
+                name:     { type: 'string', example: 'Daniela' },
+                surname:  { type: 'string', example: 'Fogli' },
+                email:    { type: 'string', format: 'email', example: 'daniela.fogli@unibs.it' },
+                password: { type: 'string', minLength: 6, example: 'Teacher1!' },
             },
         },
     })

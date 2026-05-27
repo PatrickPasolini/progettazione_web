@@ -1,6 +1,7 @@
 // Interfaces
 export * from './interfaces/course-list-item.js';
 export * from './interfaces/exam-list-item.js';
+export * from './interfaces/teacher-list-item.js';
 
 // DTOs
 export * from './entities/dto/create-course.dto.js';

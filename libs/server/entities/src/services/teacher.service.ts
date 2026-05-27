@@ -4,23 +4,25 @@ import { TeacherRepository } from '../repositories/teacher.repository.js';
 import { CreateTeacherDto } from '../entities/dto/create-teacher.dto.js';
 import { UpdateTeacherDto } from '../entities/dto/update-teacher.dto.js';
 import { UserRole } from '@server/users';
+import { TeacherListItem } from '../interfaces/teacher-list-item.js';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class ServerTeacherService {
     constructor(private readonly teacherRepository: TeacherRepository) {}
 
-    findAll(): Promise<TeacherEntity[]> {
-        return this.teacherRepository.findAll();
+    async findAll(): Promise<TeacherListItem[]> {
+        const teachers = await this.teacherRepository.findAll();
+        return teachers.map(t => this.toListItem(t));
     }
 
-    async findOne(id: number): Promise<TeacherEntity> {
+    async findOne(id: number): Promise<TeacherListItem> {
         const teacher = await this.teacherRepository.findById(id);
         if (!teacher) throw new NotFoundException(`Teacher with id ${id} not found`);
-        return teacher;
+        return this.toListItem(teacher);
     }
 
-    async create(dto: CreateTeacherDto): Promise<TeacherEntity> {
+    async create(dto: CreateTeacherDto): Promise<TeacherListItem> {
         const exists = await this.teacherRepository.findByEmail(dto.email);
         if (exists) throw new ConflictException(`Teacher with email ${dto.email} already exists`);
 
@@ -31,10 +33,10 @@ export class ServerTeacherService {
             passwordHash: await bcrypt.hash(dto.password, 10),
             role: UserRole.TEACHER,
         });
-        return this.teacherRepository.save(teacher);
+        return this.toListItem(await this.teacherRepository.save(teacher));
     }
 
-    async update(id: number, dto: UpdateTeacherDto): Promise<TeacherEntity> {
+    async update(id: number, dto: UpdateTeacherDto): Promise<TeacherListItem> {
         const teacher = await this.teacherRepository.findById(id);
         if (!teacher) throw new NotFoundException(`Teacher with id ${id} not found`);
 
@@ -47,7 +49,17 @@ export class ServerTeacherService {
         if (dto.surname) teacher.surname = dto.surname;
         if (dto.password) teacher.passwordHash = await bcrypt.hash(dto.password, 10);
 
-        return this.teacherRepository.save(teacher);
+        return this.toListItem(await this.teacherRepository.save(teacher));
+    }
+
+    private toListItem(teacher: TeacherEntity): TeacherListItem {
+        return {
+            id: teacher.id,
+            name: teacher.name,
+            surname: teacher.surname,
+            email: teacher.email,
+            role: teacher.role,
+        };
     }
 
     async remove(id: number): Promise<void> {
