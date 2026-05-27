@@ -11,11 +11,11 @@ export class SessionRepository {
     ) {}
 
     findAll(): Promise<SessionEntity[]> {
-        return this.repo.find({ relations: ['degrees'], order: { id: 'ASC' } });
+        return this.repo.find({ order: { id: 'ASC' } });
     }
 
     findById(id: number): Promise<SessionEntity | null> {
-        return this.repo.findOne({ where: { id }, relations: ['degrees'] });
+        return this.repo.findOne({ where: { id } });
     }
 
     create(data: Partial<SessionEntity>): SessionEntity {

@@ -44,13 +44,13 @@ export class ServerSessionController {
     @ApiBody({
         schema: {
             type: 'object',
-            required: ['startDate', 'endDate', 'startInsertDate', 'endInsertDate'],
+            required: ['startDate', 'endDate', 'startInsertDate', 'endInsertDate', 'macroArea'],
             properties: {
                 startDate:       { type: 'string', format: 'date', example: '2025-06-01' },
                 endDate:         { type: 'string', format: 'date', example: '2025-07-31' },
                 startInsertDate: { type: 'string', format: 'date', example: '2025-05-01', description: 'Inizio finestra inserimento esami' },
                 endInsertDate:   { type: 'string', format: 'date', example: '2025-05-31', description: 'Fine finestra inserimento esami' },
-                degreeIds: { type: 'array', items: { type: 'integer' }, example: [1, 2], description: 'ID corsi di laurea associati (opzionale)' },
+                macroArea: { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
             },
         },
     })
@@ -71,7 +71,7 @@ export class ServerSessionController {
                 endDate:         { type: 'string', format: 'date', example: '2025-07-31' },
                 startInsertDate: { type: 'string', format: 'date', example: '2025-05-01', description: 'Inizio finestra inserimento esami' },
                 endInsertDate:   { type: 'string', format: 'date', example: '2025-05-31', description: 'Fine finestra inserimento esami' },
-                degreeIds: { type: 'array', items: { type: 'integer' }, example: [1, 2], description: 'ID corsi di laurea associati (opzionale)' },
+                macroArea: { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
             },
         },
     })

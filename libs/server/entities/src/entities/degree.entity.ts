@@ -1,7 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, Unique } from 'typeorm';
 import { DegreeType, DegreeYear, MacroArea } from './dto/degree.enum.js';
 import { CourseEntity } from './course.entity.js';
-import { SessionEntity } from './session.entity.js';
 
 @Entity('degree')
 @Unique(['degreeName', 'degreeType', 'degreeYear'])
@@ -37,6 +36,5 @@ export class DegreeEntity {
     })
     courses: CourseEntity[];
 
-    @ManyToMany(() => SessionEntity, (session) => session.degrees)
-    sessions: SessionEntity[];
+
 }

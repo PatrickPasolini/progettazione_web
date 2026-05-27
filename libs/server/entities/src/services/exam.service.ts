@@ -44,7 +44,7 @@ export class ServerExamService {
         const degree = await this.degreeRepository.findById(dto.degreeId);
         if (!degree) throw new NotFoundException(`Degree with id ${dto.degreeId} not found`);
 
-        const degreeInSession = session.degrees?.some((d) => d.id === degree.id);
+        const degreeInSession = degree.macroArea === session.macroArea;
         if (!degreeInSession) {
             throw new BadRequestException(`Degree ${degree.id} does not belong to session ${session.id}`);
         }

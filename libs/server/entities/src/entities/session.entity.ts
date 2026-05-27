@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, OneToMany, JoinColumn } from 'typeorm';
-import { DegreeEntity } from './degree.entity.js';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinColumn } from 'typeorm';
+import { MacroArea } from './dto/degree.enum.js';
 import { ExamEntity } from './exam.entity.js';
 
 @Entity('session')
@@ -19,13 +19,8 @@ export class SessionEntity {
     @Column({ type: 'date', nullable: false })
     endInsertDate: Date;
 
-    @ManyToMany(() => DegreeEntity, (degree) => degree.sessions)
-    @JoinTable({
-        name: 'session_degrees',
-        joinColumn: {name: 'session_id', referencedColumnName:'id'},
-        inverseJoinColumn: {name: 'degree_id', referencedColumnName:'id'}
-    })
-    degrees: DegreeEntity[];
+    @Column({ type: 'enum', enum: MacroArea, nullable: false })
+    macroArea: MacroArea;
 
     @OneToMany(() => ExamEntity, (exam) => exam.session)
     @JoinColumn()
