@@ -1,10 +1,4 @@
-import {
-    BadRequestException,
-    ConflictException,
-    ForbiddenException,
-    Injectable,
-    NotFoundException,
-} from '@nestjs/common';
+import {BadRequestException, ConflictException, ForbiddenException, Injectable, NotFoundException} from '@nestjs/common';
 import { ExamEntity } from '../entities/exam.entity.js';
 import { ExamRepository } from '../repositories/exam.repository.js';
 import { SessionRepository } from '../repositories/session.repository.js';
@@ -15,6 +9,7 @@ import { CreateExamDto } from '../entities/dto/create-exam.dto.js';
 import { UpdateExamDto } from '../entities/dto/update-exam.dto.js';
 import { TeacherEntity } from '../entities/teacher.entity.js';
 import { UserRole } from '@server/users';
+import { ExamListItem } from '../interfaces/exam-list-item.js';
 
 @Injectable()
 export class ServerExamService {
@@ -26,22 +21,25 @@ export class ServerExamService {
         private readonly teacherRepository: TeacherRepository,
     ) {}
 
-    findAll(sessionId?: number, degreeId?: number): Promise<ExamEntity[]> {
-        return this.examRepository.findAll(sessionId, degreeId);
+    async findAll(sessionId?: number, degreeId?: number, teacherId?: number): Promise<ExamListItem[]> {
+        const exams = await this.examRepository.findAll(sessionId, degreeId, teacherId);
+        return exams.map(e => this.toListItem(e));
     }
 
-    async findOne(id: number): Promise<ExamEntity> {
+    async findOne(id: number): Promise<ExamListItem> {
         const exam = await this.examRepository.findById(id);
         if (!exam) throw new NotFoundException(`Exam with id ${id} not found`);
-        return exam;
+        return this.toListItem(exam);
     }
 
-    async create(dto: CreateExamDto, currentTeacher: TeacherEntity): Promise<ExamEntity> {
+    async create(dto: CreateExamDto, currentTeacher: TeacherEntity): Promise<ExamListItem> {
         const session = await this.sessionRepository.findById(dto.sessionId);
         if (!session) throw new NotFoundException(`Session with id ${dto.sessionId} not found`);
 
         const course = await this.courseRepository.findById(dto.courseId);
         if (!course) throw new NotFoundException(`Course with id ${dto.courseId} not found`);
+        if (course.teacher.id !== currentTeacher.id)
+            throw new ForbiddenException('You can only schedule exams for your own courses');
 
         const degree = await this.degreeRepository.findById(dto.degreeId);
         if (!degree) throw new NotFoundException(`Degree with id ${dto.degreeId} not found`);
@@ -49,6 +47,11 @@ export class ServerExamService {
         const degreeInSession = session.degrees?.some((d) => d.id === degree.id);
         if (!degreeInSession) {
             throw new BadRequestException(`Degree ${degree.id} does not belong to session ${session.id}`);
+        }
+
+        const courseInDegree = course.degrees?.some((d) => d.id === degree.id);
+        if (!courseInDegree) {
+            throw new BadRequestException(`Course ${course.id} is not available for degree ${degree.id}`);
         }
 
         const examDate = new Date(dto.examDate);
@@ -79,10 +82,10 @@ export class ServerExamService {
             degree,
         });
 
-        return this.examRepository.save(exam);
+        return this.toListItem(await this.examRepository.save(exam));
     }
 
-    async update(id: number, dto: UpdateExamDto, currentTeacher: TeacherEntity): Promise<ExamEntity> {
+    async update(id: number, dto: UpdateExamDto, currentTeacher: TeacherEntity): Promise<ExamListItem> {
         const exam = await this.examRepository.findById(id);
         if (!exam) throw new NotFoundException(`Exam with id ${id} not found`);
 
@@ -95,6 +98,8 @@ export class ServerExamService {
         if (dto.courseId) {
             const course = await this.courseRepository.findById(dto.courseId);
             if (!course) throw new NotFoundException(`Course with id ${dto.courseId} not found`);
+            if (course.teacher.id !== currentTeacher.id)
+                throw new ForbiddenException('You can only schedule exams for your own courses');
             exam.course = course;
         }
 
@@ -106,6 +111,11 @@ export class ServerExamService {
                 throw new BadRequestException(`Degree ${degree.id} does not belong to this session`);
             }
             exam.degree = degree;
+        }
+
+        const courseInDegree = exam.course.degrees?.some((d) => d.id === exam.degree.id);
+        if (!courseInDegree) {
+            throw new BadRequestException(`Course ${exam.course.id} is not available for degree ${exam.degree.id}`);
         }
 
         if (dto.examDate) {
@@ -122,13 +132,14 @@ export class ServerExamService {
                     `An exam is already scheduled on ${dto.examDate} for this degree and session`,
                 );
             }
+
             exam.examDate = newDate;
         }
 
         if (dto.startTime) exam.startTime = new Date(dto.startTime);
         if (dto.endTime) exam.endTime = new Date(dto.endTime);
 
-        return this.examRepository.save(exam);
+        return this.toListItem(await this.examRepository.save(exam));
     }
 
     async remove(id: number, currentTeacher: TeacherEntity): Promise<void> {
@@ -213,6 +224,39 @@ export class ServerExamService {
             const exam = this.examRepository.create(e);
             await this.examRepository.save(exam);
         }
+    }
+
+    private toListItem(exam: ExamEntity): ExamListItem {
+        return {
+            id: exam.id,
+            examDate: exam.examDate,
+            startTime: exam.startTime,
+            endTime: exam.endTime,
+            course: {
+                id: exam.course.id,
+                courseName: exam.course.courseName,
+            },
+            session: {
+                id: exam.session.id,
+                startDate: exam.session.startDate,
+                endDate: exam.session.endDate,
+                startInsertDate: exam.session.startInsertDate,
+                endInsertDate: exam.session.endInsertDate,
+            },
+            teacher: {
+                id: exam.teacher.id,
+                name: exam.teacher.name,
+                surname: exam.teacher.surname,
+                email: exam.teacher.email,
+                role: exam.teacher.role,
+            },
+            degree: {
+                id: exam.degree.id,
+                degreeName: exam.degree.degreeName,
+                degreeType: exam.degree.degreeType,
+                degreeYear: exam.degree.degreeYear,
+            },
+        };
     }
 
     private validateExamDate(examDate: Date, sessionStart: Date, sessionEnd: Date): void {

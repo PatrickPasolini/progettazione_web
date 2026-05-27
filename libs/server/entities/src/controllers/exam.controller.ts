@@ -29,13 +29,16 @@ export class ServerExamController {
     @ApiBearerAuth()
     @ApiQuery({ name: 'sessionId', required: false, type: Number })
     @ApiQuery({ name: 'degreeId', required: false, type: Number })
+    @ApiQuery({ name: 'teacherId', required: false, type: Number })
     findAll(
         @Query('sessionId') sessionId?: string,
         @Query('degreeId') degreeId?: string,
+        @Query('teacherId') teacherId?: string,
     ) {
         return this.serverExamService.findAll(
             sessionId ? parseInt(sessionId) : undefined,
             degreeId ? parseInt(degreeId) : undefined,
+            teacherId ? parseInt(teacherId) : undefined,
         );
     }
 
@@ -57,11 +60,11 @@ export class ServerExamController {
             required: ['sessionId', 'courseId', 'degreeId', 'examDate', 'startTime', 'endTime'],
             properties: {
                 sessionId: { type: 'integer', example: 1 },
-                courseId:  { type: 'integer', example: 2 },
-                degreeId:  { type: 'integer', example: 3 },
-                examDate:  { type: 'string', format: 'date', example: '2025-06-15' },
-                startTime: { type: 'string', format: 'date-time', example: '2025-06-15T09:00:00' },
-                endTime:   { type: 'string', format: 'date-time', example: '2025-06-15T11:00:00' },
+                courseId:  { type: 'integer', example: 5 },
+                degreeId:  { type: 'integer', example: 1 },
+                examDate:  { type: 'string', format: 'date', example: '2025-06-13' },
+                startTime: { type: 'string', format: 'date-time', example: '2025-06-13T09:00:00' },
+                endTime:   { type: 'string', format: 'date-time', example: '2025-06-13T11:00:00' },
             },
         },
     })
@@ -78,11 +81,11 @@ export class ServerExamController {
         schema: {
             type: 'object',
             properties: {
-                courseId:  { type: 'integer', example: 2 },
-                degreeId:  { type: 'integer', example: 3 },
-                examDate:  { type: 'string', format: 'date', example: '2025-06-15' },
-                startTime: { type: 'string', format: 'date-time', example: '2025-06-15T09:00:00' },
-                endTime:   { type: 'string', format: 'date-time', example: '2025-06-15T11:00:00' },
+                courseId:  { type: 'integer', example: 5 },
+                degreeId:  { type: 'integer', example: 1 },
+                examDate:  { type: 'string', format: 'date', example: '2025-06-13' },
+                startTime: { type: 'string', format: 'date-time', example: '2025-06-13T09:00:00' },
+                endTime:   { type: 'string', format: 'date-time', example: '2025-06-13T11:00:00' },
             },
         },
     })

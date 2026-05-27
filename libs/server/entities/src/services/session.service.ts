@@ -114,6 +114,8 @@ export class ServerSessionService {
         if (insertStart >= insertEnd) {
             throw new BadRequestException('startInsertDate must be before endInsertDate');
         }
-        
+        if (insertEnd >= start) {
+            throw new BadRequestException('endInsertDate must be before startDate');
+        }               
     }
 }

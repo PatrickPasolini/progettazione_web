@@ -10,7 +10,7 @@ export class ExamRepository {
         private readonly repo: Repository<ExamEntity>,
     ) {}
 
-    findAll(sessionId?: number, degreeId?: number): Promise<ExamEntity[]> {
+    findAll(sessionId?: number, degreeId?: number, teacherId?: number): Promise<ExamEntity[]> {
         const qb = this.repo.createQueryBuilder('exam')
             .leftJoinAndSelect('exam.course', 'course')
             .leftJoinAndSelect('exam.session', 'session')
@@ -20,12 +20,13 @@ export class ExamRepository {
 
         if (sessionId) qb.andWhere('session.id = :sessionId', { sessionId });
         if (degreeId) qb.andWhere('degree.id = :degreeId', { degreeId });
+        if (teacherId) qb.andWhere('teacher.id = :teacherId', { teacherId });
 
         return qb.getMany();
     }
 
     findById(id: number): Promise<ExamEntity | null> {
-        return this.repo.findOne({ where: { id } });
+        return this.repo.findOne({ where: { id }, relations: ['course.degrees'] });
     }
 
     findBySessionDegreeDate(
