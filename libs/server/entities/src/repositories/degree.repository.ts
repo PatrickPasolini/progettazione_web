@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, In, Repository } from 'typeorm';
 import { DegreeEntity } from '../entities/degree.entity.js';
-import { DegreeType, DegreeYear } from '../entities/dto/degree.enum.js';
+import { DegreeType, DegreeYear, MacroArea } from '../entities/dto/degree.enum.js';
 
 @Injectable()
 export class DegreeRepository {
@@ -21,6 +21,10 @@ export class DegreeRepository {
 
     findByIds(ids: number[]): Promise<DegreeEntity[]> {
         return this.repo.findBy({ id: In(ids) });
+    }
+
+    findByMacroArea(macroArea: MacroArea): Promise<DegreeEntity[]> {
+        return this.repo.findBy({ macroArea });
     }
 
     findByNameTypeYear(

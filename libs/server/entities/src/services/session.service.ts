@@ -100,6 +100,7 @@ export class ServerSessionService {
 
         for (const s of sessions) {
             const session = this.sessionRepository.create(s);
+            session.degrees = await this.degreeRepository.findByMacroArea(s.macroArea);
             await this.sessionRepository.save(session);
         }
     }
