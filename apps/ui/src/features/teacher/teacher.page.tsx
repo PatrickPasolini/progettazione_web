@@ -1,6 +1,6 @@
 import { Outlet, Navigate } from 'react-router-dom';
 
-export function SegreteriaPage() {
+export function TeacherPage() {
   return (
     <main className="flex-1 p-8">
       <Outlet />
@@ -8,11 +8,11 @@ export function SegreteriaPage() {
   );
 }
 
-export function SegreteriaIndex() {
-  return <Navigate to="/segreteria/sessioni" replace />;
+export function TeacherIndex() {
+  return <Navigate to="/docente/esami" replace />;
 }
 
-export function SegreteriaPlaceholder({ label }: { label: string }) {
+export function TeacherPlaceholder({ label }: { label: string }) {
   return (
     <p className="font-mono text-sm text-ink-4">
       {label} — in costruzione

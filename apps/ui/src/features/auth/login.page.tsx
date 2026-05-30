@@ -19,7 +19,9 @@ export function LoginPage() {
     try {
       await login(email, password);
       const user = await fetchCurrentUser();
-      navigate(user.role === 'SECRETARY' ? '/segreteria' : '/');
+      if (user.role === 'SECRETARY') navigate('/segreteria');
+      else if (user.role === 'TEACHER') navigate('/docente');
+      else navigate('/');
     } catch (err: any) {
       setError(err.message);
     } finally {
