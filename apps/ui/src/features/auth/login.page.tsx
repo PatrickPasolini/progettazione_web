@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { login } from './auth.api';
+import { login, fetchCurrentUser } from './auth.api';
 import book_styles from '../css/books.module.css';
 
 export function LoginPage() {
@@ -18,7 +18,8 @@ export function LoginPage() {
 
     try {
       await login(email, password);
-      navigate('/');
+      const user = await fetchCurrentUser();
+      navigate(user.role === 'SECRETARY' ? '/segreteria' : '/');
     } catch (err: any) {
       setError(err.message);
     } finally {
