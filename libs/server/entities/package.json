@@ -10,6 +10,11 @@
       "import": "./src/index.ts",
       "default": "./src/index.ts"
     },
+    "./frontend": {
+      "types": "./src/frontend.ts",
+      "import": "./src/frontend.ts",
+      "default": "./src/frontend.ts"
+    },
     "./package.json": "./package.json"
   },
   "dependencies": {}

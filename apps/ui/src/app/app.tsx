@@ -10,6 +10,7 @@ import {
   SegreteriaPlaceholder,
 } from '../features/segreteria/segreteria.page';
 import { DocentiPage } from '../features/segreteria/docenti.page';
+import { CorsiPage } from '../features/segreteria/corsi.page';
 
 
 import {
@@ -34,7 +35,7 @@ export function App() {
         <Route path="/segreteria" element={<SegreteriaPage />}>
           <Route index element={<SegreteriaIndex />} />
           <Route path="sessioni" element={<SegreteriaPlaceholder label="Sessioni" />} />
-          <Route path="corsi"    element={<SegreteriaPlaceholder label="Corsi di laurea" />} />
+          <Route path="corsi"    element={<CorsiPage />} />
           <Route path="materie"  element={<SegreteriaPlaceholder label="Materie" />} />
           <Route path="docenti"  element={<DocentiPage />} />
         </Route>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { createTeacher, updateTeacher } from './segreteria.api';
-import type { TeacherListItem } from '@server/entities';
+import type { TeacherListItem } from '@server/entities/frontend';
 
 // Interfaccia delle proprietà (Props) che il componente padre passerà a questo Modale
 interface DocenteModalProps {

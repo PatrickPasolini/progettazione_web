@@ -4,22 +4,23 @@ import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateDegreeDto } from '../entities/dto/create-degree.dto.js';
 import { UpdateDegreeDto } from '../entities/dto/update-degree.dto.js';
 import { DegreeType, DegreeYear, MacroArea } from '../entities/dto/degree.enum.js';
+import { DegreeListItem } from '../interfaces/degree-list-item.js';
 
 @Injectable()
 export class ServerDegreeService {
     constructor(private readonly degreeRepository: DegreeRepository) {}
 
-    findAll(): Promise<DegreeEntity[]> {
-        return this.degreeRepository.findAll();
+    findAll(): Promise<DegreeListItem[]> {
+        return this.degreeRepository.findAll().then((degrees) => degrees.map(this.toListItem));
     }
 
-    async findOne(id: number): Promise<DegreeEntity> {
+    async findOne(id: number): Promise<DegreeListItem> {
         const degree = await this.degreeRepository.findById(id);
         if (!degree) throw new NotFoundException(`Degree with id ${id} not found`);
-        return degree;
+        return this.toListItem(degree);
     }
 
-    async create(dto: CreateDegreeDto): Promise<DegreeEntity> {
+    async create(dto: CreateDegreeDto): Promise<DegreeListItem> {
         const exists = await this.degreeRepository.findByNameTypeYear(
             dto.degreeName,
             dto.degreeType,
@@ -28,10 +29,11 @@ export class ServerDegreeService {
         if (exists) throw new ConflictException('Degree with this name, type and year already exists');
 
         const degree = this.degreeRepository.create(dto);
-        return this.degreeRepository.save(degree);
+        const saved = await this.degreeRepository.save(degree);
+        return this.toListItem(saved);
     }
 
-    async update(id: number, dto: UpdateDegreeDto): Promise<DegreeEntity> {
+    async update(id: number, dto: UpdateDegreeDto): Promise<DegreeListItem> {
         const degree = await this.degreeRepository.findById(id);
         if (!degree) throw new NotFoundException(`Degree with id ${id} not found`);
 
@@ -48,7 +50,18 @@ export class ServerDegreeService {
         }
 
         Object.assign(degree, { degreeName: newName, degreeType: newType, degreeYear: newYear, macroArea: newMacroArea });
-        return this.degreeRepository.save(degree);
+        const saved = await this.degreeRepository.save(degree);
+        return this.toListItem(saved);
+    }
+
+    private toListItem(degree: DegreeEntity): DegreeListItem {
+        return {
+            id: degree.id,
+            degreeName: degree.degreeName,
+            degreeType: degree.degreeType,
+            degreeYear: degree.degreeYear,
+            macroArea: degree.macroArea,
+        };
     }
 
     async remove(id: number): Promise<void> {

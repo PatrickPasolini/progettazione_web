@@ -1,4 +1,4 @@
-import { TeacherListItem, CreateTeacherDto, UpdateTeacherDto } from '@server/entities';
+import { TeacherListItem, CreateTeacherDto, UpdateTeacherDto, DegreeListItem, CreateDegreeDto, UpdateDegreeDto } from '@server/entities/frontend';
 import { handleApiError } from '../shared/utils.api';
 
 const API_URL = 'http://localhost:3333/api';
@@ -70,6 +70,71 @@ export async function updateTeacher(id: number, payload: UpdateTeacherDto): Prom
 
 export async function deleteTeacher(id: number): Promise<void> {
     const response = await fetch(`${API_URL}/teacher/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+}
+
+// --- Degrees ---
+
+export async function fetchDegrees(): Promise<DegreeListItem[]> {
+    const response = await fetch(`${API_URL}/degree`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function fetchDegreeById(id: number): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function createDegree(payload: CreateDegreeDto): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function updateDegree(id: number, payload: UpdateDegreeDto): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function deleteDegree(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
         method: 'DELETE',
         headers: getAuthHeader(),
     });
