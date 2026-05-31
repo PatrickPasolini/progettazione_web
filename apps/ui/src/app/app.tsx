@@ -11,6 +11,7 @@ import {
 } from '../features/segreteria/segreteria.page';
 import { DocentiPage } from '../features/segreteria/docenti.page';
 import { CorsiPage } from '../features/segreteria/corsi.page';
+import { MateriePage } from '../features/segreteria/materie.page';
 
 
 import {
@@ -36,7 +37,7 @@ export function App() {
           <Route index element={<SegreteriaIndex />} />
           <Route path="sessioni" element={<SegreteriaPlaceholder label="Sessioni" />} />
           <Route path="corsi"    element={<CorsiPage />} />
-          <Route path="materie"  element={<SegreteriaPlaceholder label="Materie" />} />
+          <Route path="materie"  element={<MateriePage />} />
           <Route path="docenti"  element={<DocentiPage />} />
         </Route>
 

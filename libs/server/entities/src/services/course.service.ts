@@ -53,10 +53,6 @@ export class ServerCourseService {
     }
 
     async create(dto: CreateCourseDto): Promise<CourseListItem> {
-        const existing = await this.courseRepository.findByName(dto.courseName);
-        if (existing) 
-            throw new ConflictException(`Course name "${dto.courseName}" already exists`);
-
         const teacher = await this.teacherRepository.findById(dto.teacherId);
         if (!teacher) 
             throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
@@ -75,9 +71,6 @@ export class ServerCourseService {
             throw new NotFoundException(`Course with id ${id} not found`);
 
         if (dto.courseName !== undefined) {
-            const conflict = await this.courseRepository.findByName(dto.courseName);
-            if (conflict && conflict.id !== id)
-                throw new ConflictException(`Course name "${dto.courseName}" already exists`);
             course.courseName = dto.courseName;
         }
 

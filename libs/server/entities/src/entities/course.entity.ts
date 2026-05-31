@@ -8,7 +8,7 @@ export class CourseEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ type: 'varchar', length: 255, nullable: false, unique: true })
+    @Column({ type: 'varchar', length: 255, nullable: false })
     courseName: string;
 
     @OneToMany(() => ExamEntity, (exam) => exam.course)
