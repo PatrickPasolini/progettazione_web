@@ -22,7 +22,7 @@ export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaM
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
     const [degreeSearch, setDegreeSearch] = useState('');
     const [degreeOpen, setDegreeOpen] = useState(false);
-    const [selectedDegrees, setSelectedDegrees] = useState<DegreeListItem[]>([]);
+    const [selectedDegree, setSelectedDegree] = useState<DegreeListItem | null>(null);
     const degreeRef = useRef<HTMLDivElement>(null);
 
     const [submitting, setSubmitting] = useState(false);
@@ -39,14 +39,12 @@ export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaM
             setCourseName(course.courseName);
             const teacherMatch = teachers.find((t) => t.id === course.teacher.id);
             if (teacherMatch) setSelectedTeacher(teacherMatch);
-            const degreeMatches = degrees.filter((deg) =>
-                course.degrees.some((cd) => cd.id === deg.id)
-            );
-            setSelectedDegrees(degreeMatches);
+            const degreeMatch = degrees.find((deg) => deg.id === course.degree.id);
+            if (degreeMatch) setSelectedDegree(degreeMatch);
         } else {
             setCourseName('');
             setSelectedTeacher(null);
-            setSelectedDegrees([]);
+            setSelectedDegree(null);
         }
         setModalError(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -77,21 +75,16 @@ export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaM
         (d) => d.degreeName.toLowerCase().includes(degreeSearch.toLowerCase())
     );
 
-    const isDegreeSelected = (id: number) => selectedDegrees.some((d) => d.id === id);
-
-    const toggleDegree = (deg: DegreeListItem) => {
-        setSelectedDegrees((prev) =>
-            prev.some((d) => d.id === deg.id)
-                ? prev.filter((d) => d.id !== deg.id)
-                : [...prev, deg]
-        );
-    };
-
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
         if (!selectedTeacher) {
             setModalError("Seleziona un docente.");
+            return;
+        }
+
+        if (!selectedDegree) {
+            setModalError("Seleziona un corso di laurea.");
             return;
         }
 
@@ -102,7 +95,7 @@ export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaM
             const payload = {
                 courseName,
                 teacherId: selectedTeacher.id,
-                degreeIds: selectedDegrees.map((d) => d.id),
+                degreeId: selectedDegree.id,
             };
 
             if (mode === 'create') {
@@ -199,53 +192,46 @@ export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaM
                         </div>
 
                         <div ref={degreeRef} className="relative">
-                            <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Corsi di Laurea</label>
-                            {selectedDegrees.length > 0 && (
-                                <div className="flex flex-wrap gap-1.5 mb-2">
-                                    {selectedDegrees.map((d) => (
-                                        <span
-                                            key={d.id}
-                                            className="inline-flex items-center gap-1 px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full"
-                                        >
-                                            {d.degreeName}
-                                            <button
-                                                type="button"
-                                                onClick={() => toggleDegree(d)}
-                                                className="hover:text-red-600"
-                                            >
-                                                ✕
-                                            </button>
-                                        </span>
-                                    ))}
+                            <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Corso di Laurea</label>
+                            {selectedDegree ? (
+                                <div className="flex items-center gap-2 w-full px-3 py-2 border border-accent rounded-lg bg-white">
+                                    <span className="flex-1 text-ink">
+                                        {selectedDegree.degreeName}
+                                    </span>
+                                    <button
+                                        type="button"
+                                        onClick={() => { setSelectedDegree(null); setDegreeSearch(''); }}
+                                        className="text-ink-3 hover:text-red-600 text-sm"
+                                    >
+                                        ✕
+                                    </button>
                                 </div>
+                            ) : (
+                                <input
+                                    type="text"
+                                    required
+                                    placeholder="Cerca un corso di laurea..."
+                                    value={degreeSearch}
+                                    onFocus={() => setDegreeOpen(true)}
+                                    onChange={(e) => { setDegreeSearch(e.target.value); setDegreeOpen(true); }}
+                                    className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
+                                />
                             )}
-                            <input
-                                type="text"
-                                placeholder="Cerca corsi di laurea..."
-                                value={degreeSearch}
-                                onFocus={() => setDegreeOpen(true)}
-                                onChange={(e) => { setDegreeSearch(e.target.value); setDegreeOpen(true); }}
-                                className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
-                            />
-                            {degreeOpen && (
+                            {degreeOpen && !selectedDegree && (
                                 <div className="absolute z-10 mt-1 w-full bg-white border border-line rounded-lg shadow-lg" style={{ maxHeight: '120px', overflowY: 'auto' }}>
                                     {filteredDegrees.length === 0 ? (
                                         <p className="px-3 py-2 text-sm text-ink-4">Nessun corso di laurea trovato</p>
                                     ) : (
                                         filteredDegrees.map((d) => (
-                                            <label
+                                            <button
                                                 key={d.id}
-                                                className="flex items-center gap-3 px-3 py-2 text-sm text-ink hover:bg-bg/50 cursor-pointer transition-colors"
+                                                type="button"
+                                                onClick={() => { setSelectedDegree(d); setDegreeSearch(''); setDegreeOpen(false); }}
+                                                className="w-full text-left px-3 py-2 pr-4 hover:bg-bg/50 transition-colors"
                                             >
-                                                <input
-                                                    type="checkbox"
-                                                    checked={isDegreeSelected(d.id)}
-                                                    onChange={() => toggleDegree(d)}
-                                                    className="rounded border-line text-accent focus:ring-accent/30"
-                                                />
-                                                {d.degreeName}
-                                                <span className="text-ink-3 text-xs ml-auto pr-8">{d.degreeType} - {d.degreeYear}</span>
-                                            </label>
+                                                <span className="block text-sm text-ink">{d.degreeName}</span>
+                                                <span className="block text-xs text-ink-3">{d.degreeType} - {d.degreeYear}</span>
+                                            </button>
                                         ))
                                     )}
                                 </div>

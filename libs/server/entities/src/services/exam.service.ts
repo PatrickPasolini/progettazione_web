@@ -49,8 +49,7 @@ export class ServerExamService {
             throw new BadRequestException(`Degree ${degree.id} does not belong to session ${session.id}`);
         }
 
-        const courseInDegree = course.degrees?.some((d) => d.id === degree.id);
-        if (!courseInDegree) {
+        if (course.degree.id !== degree.id) {
             throw new BadRequestException(`Course ${course.id} is not available for degree ${degree.id}`);
         }
 
@@ -113,8 +112,7 @@ export class ServerExamService {
             exam.degree = degree;
         }
 
-        const courseInDegree = exam.course.degrees?.some((d) => d.id === exam.degree.id);
-        if (!courseInDegree) {
+        if (exam.course.degree.id !== exam.degree.id) {
             throw new BadRequestException(`Course ${exam.course.id} is not available for degree ${exam.degree.id}`);
         }
 

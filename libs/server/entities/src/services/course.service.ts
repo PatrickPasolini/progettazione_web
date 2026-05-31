@@ -15,8 +15,13 @@ export class ServerCourseService {
         private readonly degreeRepository: DegreeRepository,
     ) {}
 
-    findDegreesByTeacher(teacherId: number) {
-        return this.courseRepository.findDegreesByTeacher(teacherId);
+    async findDegreesByTeacher(teacherId: number) {
+        const courses = await this.courseRepository.findAll(teacherId);
+        const map = new Map<number, (typeof courses)[0]['degree']>();
+        for (const course of courses) {
+            map.set(course.degree.id, course.degree);
+        }
+        return [...map.values()];
     }
 
     async findAll(teacherId?: number): Promise<CourseListItem[]> {
@@ -42,13 +47,13 @@ export class ServerCourseService {
                 email: course.teacher.email,
                 role: course.teacher.role,
             },
-            degrees: course.degrees.map(d => ({
-                id: d.id,
-                degreeName: d.degreeName,
-                degreeType: d.degreeType,
-                degreeYear: d.degreeYear,
-                macroArea: d.macroArea,
-            })),
+            degree: {
+                id: course.degree.id,
+                degreeName: course.degree.degreeName,
+                degreeType: course.degree.degreeType,
+                degreeYear: course.degree.degreeYear,
+                macroArea: course.degree.macroArea,
+            },
         };
     }
 
@@ -57,11 +62,18 @@ export class ServerCourseService {
         if (!teacher) 
             throw new NotFoundException(`Teacher with id ${dto.teacherId} not found`);
 
-        const degrees = dto.degreeIds?.length
-            ? await this.degreeRepository.findByIds(dto.degreeIds)
-            : [];
+        const degree = await this.degreeRepository.findById(dto.degreeId);
+        if (!degree) 
+            throw new NotFoundException(`Degree with id ${dto.degreeId} not found`);
 
-        const course = this.courseRepository.create({ courseName: dto.courseName, teacher, degrees });
+        const existing = await this.courseRepository.findByNameAndDegree(dto.courseName, dto.degreeId);
+        if (existing) {
+            throw new ConflictException(
+                `A course named "${dto.courseName}" already exists for this degree`
+            );
+        }
+
+        const course = this.courseRepository.create({ courseName: dto.courseName, teacher, degree });
         return this.toListItem(await this.courseRepository.save(course));
     }
 
@@ -81,10 +93,21 @@ export class ServerCourseService {
             course.teacher = teacher;
         }
 
-        if (dto.degreeIds !== undefined) {
-            course.degrees = dto.degreeIds.length
-                ? await this.degreeRepository.findByIds(dto.degreeIds)
-                : [];
+        if (dto.degreeId !== undefined) {
+            const degree = await this.degreeRepository.findById(dto.degreeId);
+            if (!degree) 
+                throw new NotFoundException(`Degree with id ${dto.degreeId} not found`);
+            course.degree = degree;
+        }
+
+        const conflict = await this.courseRepository.findByNameAndDegree(
+            course.courseName,
+            course.degree.id
+        );
+        if (conflict && conflict.id !== id) {
+            throw new ConflictException(
+                `A course named "${course.courseName}" already exists for this degree`
+            );
         }
 
         return this.toListItem(await this.courseRepository.save(course));
@@ -113,27 +136,32 @@ export class ServerCourseService {
         const [t1, t2, t3] = teachers;
         const d = degrees;
 
-        const courses: { courseName: string; teacher: (typeof teachers)[0]; degreeIds: number[] }[] = [
-            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
-            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeIds: [d[4]?.id, d[2]?.id].filter(Boolean) as number[] },
-            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
-            { courseName: 'Ingegneria del Software',                teacher: t3, degreeIds: [d[2]?.id].filter(Boolean) as number[] },
-            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeIds: [d[0]?.id, d[5]?.id].filter(Boolean) as number[] },
-            { courseName: 'Calcolo Scientifico',                    teacher: t2, degreeIds: [d[3]?.id].filter(Boolean) as number[] },
+        const courses: { courseName: string; teacher: (typeof teachers)[0]; degreeId: number }[] = [
+            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeId: d[0]?.id },
+            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeId: d[5]?.id },
+            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeId: d[4]?.id },
+            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeId: d[2]?.id },
+            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeId: d[0]?.id },
+            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeId: d[5]?.id },
+            { courseName: 'Ingegneria del Software',                teacher: t3, degreeId: d[2]?.id },
+            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[0]?.id },
+            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[5]?.id },
+            { courseName: 'Calcolo Scientifico',                    teacher: t2, degreeId: d[3]?.id },
         ];
 
         for (const c of courses) {
-            const exists = await this.courseRepository.findByName(c.courseName);
+            if (!c.degreeId) continue;
+
+            const exists = await this.courseRepository.findByNameAndDegree(c.courseName, c.degreeId);
             if (exists) continue;
 
-            const degreeEntities = c.degreeIds.length
-                ? await this.degreeRepository.findByIds(c.degreeIds)
-                : [];
+            const degree = await this.degreeRepository.findById(c.degreeId);
+            if (!degree) continue;
 
             const course = this.courseRepository.create({
                 courseName: c.courseName,
                 teacher: c.teacher,
-                degrees: degreeEntities,
+                degree,
             });
             await this.courseRepository.save(course);
         }

@@ -1,9 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, ManyToMany, JoinColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, JoinColumn, Unique } from 'typeorm';
 import { TeacherEntity } from './teacher.entity.js';
 import { ExamEntity } from './exam.entity.js';
 import { DegreeEntity } from './degree.entity.js';
 
 @Entity('course')
+@Unique(['courseName', 'degree'])
 export class CourseEntity {
     @PrimaryGeneratedColumn()
     id: number;
@@ -19,6 +20,7 @@ export class CourseEntity {
     @JoinColumn()
     teacher: TeacherEntity;
 
-    @ManyToMany(() => DegreeEntity, (degree) => degree.courses, { eager: true })
-    degrees: DegreeEntity[];
+    @ManyToOne(() => DegreeEntity, { eager: true, onDelete: 'RESTRICT' })
+    @JoinColumn()
+    degree: DegreeEntity;
 }

@@ -37,7 +37,7 @@ export function MateriePage() {
         return courses.filter((c) =>
             c.courseName.toLowerCase().includes(term) ||
             `${c.teacher.name} ${c.teacher.surname}`.toLowerCase().includes(term) ||
-            c.degrees.some((d) => d.degreeName.toLowerCase().includes(term))
+            c.degree.degreeName.toLowerCase().includes(term)
         );
     }, [courses, searchTerm]);
 
@@ -103,20 +103,22 @@ export function MateriePage() {
                             <tr className="bg-bg/50 border-b border-line text-xs font-semibold text-ink-3 uppercase tracking-wider">
                                 <th className="px-6 py-4">Nome Corso</th>
                                 <th className="px-6 py-4">Docente</th>
-                                <th className="px-6 py-4">Corsi di Laurea</th>
+                                <th className="px-6 py-4">Corso di Laurea</th>
+                                <th className="px-6 py-4">Tipo</th>
+                                <th className="px-6 py-4">Anno</th>
                                 <th className="px-6 py-4 text-right">Azioni</th>
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-line-2">
                             {courses.length === 0 ? (
                                 <tr>
-                                    <td colSpan={4} className="px-6 py-8 text-center text-ink-4">
+                                    <td colSpan={6} className="px-6 py-8 text-center text-ink-4">
                                         Nessuna materia inserita a sistema.
                                     </td>
                                 </tr>
                             ) : filteredCourses.length === 0 ? (
                                 <tr>
-                                    <td colSpan={4} className="px-6 py-8 text-center text-ink-4">
+                                    <td colSpan={6} className="px-6 py-8 text-center text-ink-4">
                                         Nessun risultato trovato{searchTerm && <> per "{searchTerm}"</>}.
                                     </td>
                                 </tr>
@@ -125,9 +127,9 @@ export function MateriePage() {
                                     <tr key={course.id} className="hover:bg-bg/5 transition-colors">
                                         <td className="px-6 py-4 font-medium text-ink">{course.courseName}</td>
                                         <td className="px-6 py-4 text-ink-2">{course.teacher.name} {course.teacher.surname}</td>
-                                        <td className="px-6 py-4 text-ink-3">
-                                            {course.degrees.map((d) => d.degreeName).join(", ")}
-                                        </td>
+                                        <td className="px-6 py-4 text-ink-3">{course.degree.degreeName}</td>
+                                        <td className="px-6 py-4 text-ink-3">{course.degree.degreeType}</td>
+                                        <td className="px-6 py-4 text-ink-3">{course.degree.degreeYear}</td>
                                         <td className="px-6 py-4 text-right space-x-3">
                                             <button
                                                 onClick={() => openEditModal(course)}

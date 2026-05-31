@@ -26,7 +26,7 @@ export class ExamRepository {
     }
 
     findById(id: number): Promise<ExamEntity | null> {
-        return this.repo.findOne({ where: { id }, relations: ['course.degrees'] });
+        return this.repo.findOne({ where: { id }, relations: ['course.degree'] });
     }
 
     findBySessionDegreeDate(
