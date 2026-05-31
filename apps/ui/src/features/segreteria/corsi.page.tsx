@@ -158,9 +158,9 @@ export function CorsiPage() {
                         <thead>
                             <tr className="bg-bg/50 border-b border-line text-xs font-semibold text-ink-3 uppercase tracking-wider">
                                 <th className="px-6 py-4">Nome Corso</th>
+                                <th className="px-6 py-4">Area</th>
                                 <th className="px-6 py-4">Tipo</th>
                                 <th className="px-6 py-4">Anno</th>
-                                <th className="px-6 py-4">Area</th>
                                 <th className="px-6 py-4 text-right">Azioni</th>
                             </tr>
                         </thead>
@@ -185,9 +185,9 @@ export function CorsiPage() {
                                 filteredDegrees.map((degree) => (
                                     <tr key={degree.id} className="hover:bg-bg/5 transition-colors">
                                         <td className="px-6 py-4 font-medium text-ink">{degree.degreeName}</td>
+                                        <td className="px-6 py-4 text-ink-3">{degree.macroArea}</td>
                                         <td className="px-6 py-4 text-ink-2">{degree.degreeType}</td>
                                         <td className="px-6 py-4 text-ink-3">{degree.degreeYear}</td>
-                                        <td className="px-6 py-4 text-ink-3">{degree.macroArea}</td>
                                         <td className="px-6 py-4 text-right space-x-3">
                                             <button
                                                 onClick={() => openEditModal(degree)}
