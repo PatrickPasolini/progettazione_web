@@ -26,7 +26,7 @@ export function AppLayout() {
     fetchCurrentUser()
       .then((u) => {
         setEmail(u.email);
-        setTabs(u.role === 'SECRETARY' ? SEGRETERIA_TABS : TEACHER_TABS);
+        setTabs(u.role === 'TEACHER' ? TEACHER_TABS : SEGRETERIA_TABS);
       })
       .catch(() => setEmail(null));
   }, []);

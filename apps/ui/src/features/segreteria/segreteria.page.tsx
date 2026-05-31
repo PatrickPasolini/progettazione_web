@@ -18,4 +18,4 @@ export function SegreteriaPlaceholder({ label }: { label: string }) {
       {label} — in costruzione
     </p>
   );
-}
+} 

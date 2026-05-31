@@ -3,11 +3,15 @@ import { LoginPage } from '../features/auth/login.page';
 import { LogoutPage } from '../features/auth/logout.page';
 import { ProtectedRoute } from '../features/auth/protected-route';
 import { AppLayout } from '../features/layouts/app-layout';
+
 import {
   SegreteriaPage,
   SegreteriaIndex,
   SegreteriaPlaceholder,
 } from '../features/segreteria/segreteria.page';
+import { DocentiPage } from '../features/segreteria/docenti.page';
+
+
 import {
   TeacherPage,
   TeacherIndex,
@@ -32,7 +36,7 @@ export function App() {
           <Route path="sessioni" element={<SegreteriaPlaceholder label="Sessioni" />} />
           <Route path="corsi"    element={<SegreteriaPlaceholder label="Corsi di laurea" />} />
           <Route path="materie"  element={<SegreteriaPlaceholder label="Materie" />} />
-          <Route path="docenti"  element={<SegreteriaPlaceholder label="Docenti" />} />
+          <Route path="docenti"  element={<DocentiPage />} />
         </Route>
 
         <Route path="/docente" element={<TeacherPage />}>
