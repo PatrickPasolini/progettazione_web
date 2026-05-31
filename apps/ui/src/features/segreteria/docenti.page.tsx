@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { fetchTeachers, deleteTeacher } from "./segreteria.api";
 import { TeacherListItem } from '@server/entities';
 import { DocenteModal } from './docente-modal';
@@ -13,6 +13,9 @@ export function DocentiPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMode, setModalMode] = useState<"create" | "edit">('create');
     const [selectedTeacher, setSelectedTeacher] = useState<TeacherListItem | null>(null);
+
+    //ricerca
+    const [searchTerm, setSearchTerm] = useState("");
 
     const loadTeachers = async () => {
         try {
@@ -31,6 +34,18 @@ export function DocentiPage() {
     useEffect(() => {
         loadTeachers();
     }, []);
+
+    const filteredTeachers = useMemo(() => {
+        const list = !searchTerm.trim()
+            ? teachers
+            : teachers.filter(
+                (t) =>
+                    t.surname.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    t.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    t.email.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+        return [...list].sort((a, b) => a.surname.localeCompare(b.surname));
+    }, [teachers, searchTerm]);
 
     const openCreateModal = () => {
         setModalMode('create');
@@ -76,6 +91,16 @@ export function DocentiPage() {
                 </button>
             </div>
 
+            {/* Barra di ricerca */}
+            <input
+                type="text"
+                placeholder="Cerca per cognome, nome o email..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full border border-line rounded-lg px-4 py-2 text-sm text-ink
+                           placeholder:text-ink-4 focus:outline-none focus:ring-2 focus:ring-accent/30"
+            />
+
             {/* Visualizzazione degli stati di Caricamento o Errore */}
             {loading && <p className="text-ink-3">Caricamento in corso...</p>}
             {error && <p className="text-red-600 font-semibold">Errore: {error}</p>}
@@ -99,8 +124,14 @@ export function DocentiPage() {
                                         Nessun docente inserito a sistema.
                                     </td>
                                 </tr>
+                            ) : filteredTeachers.length === 0 ? (
+                                <tr>
+                                    <td colSpan={4} className="px-6 py-8 text-center text-ink-4">
+                                        Nessun risultato trovato per "{searchTerm}".
+                                    </td>
+                                </tr>
                             ) : (
-                                teachers.map((teacher) => (
+                                filteredTeachers.map((teacher) => (
                                     <tr key={teacher.id} className="hover:bg-bg/5 transition-colors">
                                         <td className="px-6 py-4 font-medium text-ink">{teacher.surname}</td>
                                         <td className="px-6 py-4 text-ink-2">{teacher.name}</td>
