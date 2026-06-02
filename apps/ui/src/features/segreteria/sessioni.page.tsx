@@ -235,14 +235,24 @@ export function SessioniPage() {
             </span>
           </button>
 
-          {/*Lista delle card sessioni*/}
-          {sessions.map((s) => (
-            <SessionCard
-              key={s.id}
-              session={s}
-              onOpen={() => openEditModal(s)}
-            />
-          ))}
+          {/*Lista delle card sessioni — ordinate per stato*/}
+          {[...sessions]
+            .sort((a, b) => {
+              const order: Record<SessionStatus, number> = {
+                draft: 0,
+                submission: 1,
+                ongoing: 2,
+                closed: 3,
+              };
+              return order[getStatus(a)] - order[getStatus(b)];
+            })
+            .map((s) => (
+              <SessionCard
+                key={s.id}
+                session={s}
+                onOpen={() => openEditModal(s)}
+              />
+            ))}
         </div>
       )}
 
