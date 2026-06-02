@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { SessionListItem } from '@server/entities/frontend';
 import { fetchSessions } from './segreteria.api';
+import { SessioneModal } from './sessione-modal';
 
 // draft: creazione sessione, submission: inserimento exam dei prof, ongoing: sessione in corso , closed: sessione finita
 type SessionStatus = 'draft' | 'submission' | 'ongoing' | 'closed';
@@ -80,10 +81,14 @@ function SessionCard({
 }) {
   const status = getStatus(session);
 
+  const isDraft = status === 'draft';
+
   return (
     <div
-      className="bg-paper border border-line rounded-xl p-5 relative cursor-pointer hover:border-accent-soft transition-colors"
-      onClick={onOpen}
+      className={`bg-paper border border-line rounded-xl p-5 relative transition-colors ${
+        isDraft ? 'cursor-pointer hover:border-accent-soft' : 'cursor-default'
+      }`}
+      onClick={isDraft ? onOpen : undefined}
     >
       {/* Label mese/anno in alto a destra */}
       <span className="absolute top-4 right-4 font-mono text-[10px] uppercase tracking-wider text-ink-3 bg-line-2 px-2 py-1 rounded-full">
@@ -101,14 +106,14 @@ function SessionCard({
           Sessione
         </dt>
         <dd className="m-0 tabular-nums text-ink-2">
-          {formatDate(session.startDate)} – {formatDate(session.endDate)}
+          {formatDate(session.startDate)} → {formatDate(session.endDate)}
         </dd>
 
         <dt className="font-mono text-[11px] uppercase tracking-wide text-ink-3 pt-0.5">
           Inserimenti
         </dt>
         <dd className="m-0 tabular-nums text-ink-2">
-          {formatDate(session.startInsertDate)} –{' '}
+          {formatDate(session.startInsertDate)} →{' '}
           {formatDate(session.endInsertDate)}
         </dd>
 
@@ -124,7 +129,7 @@ function SessionCard({
       <div className="mt-4 pt-4 border-t border-line-2 flex justify-end">
         <button
           disabled={status !== 'draft'}
-          className="bg-accent-soft text-accent px-4 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-accent hover:text-white disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-accent-soft disabled:hover:text-accent"
+          className="bg-accent text-white px-4 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-accent-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-accent"
           onClick={(e) => {
             e.stopPropagation();
             onOpen();
@@ -144,6 +149,11 @@ export function SessioniPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMode, setModalMode] = useState<'create' | 'edit'>('create');
+  const [selectedSession, setSelectedSession] =
+    useState<SessionListItem | null>(null);
+
   const loadSessions = async () => {
     try {
       setLoading(true);
@@ -161,6 +171,23 @@ export function SessioniPage() {
     loadSessions();
   }, []);
 
+  const openCreateModal = () => {
+    setModalMode('create');
+    setSelectedSession(null);
+    setIsModalOpen(true);
+  };
+
+  const openEditModal = (session: SessionListItem) => {
+    setModalMode('edit');
+    setSelectedSession(session);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedSession(null);
+  };
+
   return (
     <div>
       {/* Header pagina */}
@@ -172,7 +199,7 @@ export function SessioniPage() {
           </p>
         </div>
         <button
-          onClick={() => console.log('aggiungi nuova sessione')}
+          onClick={() => openCreateModal()}
           className="bg-accent text-white hover:bg-accent-2 transition-colors
                                    px-4 py-2 rounded-lg font-medium shadow-sm"
         >
@@ -194,7 +221,10 @@ export function SessioniPage() {
       {!loading && !error && (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-3.5">
           {/* Card "aggiungi nuova sessione" */}
-          <button className="border border-dashed border-line rounded-xl p-5 min-h-[200px] flex flex-col items-center justify-center gap-2 text-ink-3 hover:bg-paper hover:border-ink-3 hover:text-ink transition-colors text-sm">
+          <button
+            onClick={() => openCreateModal()}
+            className="border border-dashed border-line rounded-xl p-5 min-h-[200px] flex flex-col items-center justify-center gap-2 text-ink-3 hover:bg-paper hover:border-ink-3 hover:text-ink transition-colors text-sm"
+          >
             <span className="w-8 h-8 rounded-full bg-line-2 border border-line flex items-center justify-center text-lg font-serif">
               +
             </span>
@@ -210,10 +240,20 @@ export function SessioniPage() {
             <SessionCard
               key={s.id}
               session={s}
-              onOpen={() => console.log('apri sessione', s.id)}
+              onOpen={() => openEditModal(s)}
             />
           ))}
         </div>
+      )}
+
+      {isModalOpen && (
+        <SessioneModal
+          isOpen={isModalOpen}
+          mode={modalMode}
+          session={selectedSession}
+          onClose={closeModal}
+          onSave={loadSessions}
+        />
       )}
     </div>
   );
