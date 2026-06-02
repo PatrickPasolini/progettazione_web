@@ -32,6 +32,17 @@ export class CourseRepository {
         return this.repo.findOne({ where: { courseName, degree: { id: degreeId } } });
     }
 
+    findByTeacherAndSession(teacherId: number, sessionId: number): Promise<CourseEntity[]> {
+        return this.repo.createQueryBuilder('course')
+            .innerJoinAndSelect('course.teacher', 'teacher')
+            .innerJoinAndSelect('course.degree', 'degree')
+            .innerJoin('degree.sessions', 'session')
+            .where('teacher.id = :teacherId', { teacherId })
+            .andWhere('session.id = :sessionId', { sessionId })
+            .orderBy('course.id', 'ASC')
+            .getMany();
+    }
+
     create(data: Partial<CourseEntity>): CourseEntity {
         return this.repo.create(data);
     }
