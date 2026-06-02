@@ -21,14 +21,20 @@ export class UsersRepository {
     }
 
     async createOne(dto: CreateUserDto, passwordHash: string): Promise<UserEntity> {
+        const mustChangePassword = dto.role === UserRole.SECRETARY || dto.role === UserRole.TEACHER;
         const user = this.repository.create({
             name: dto.name,
             surname: dto.surname,
             email: dto.email,
             passwordHash: passwordHash,
-            role: dto.role
+            role: dto.role,
+            mustChangePassword,
         });
         return this.repository.save(user);
+    }
+
+    async updatePassword(id: number, passwordHash: string): Promise<void> {
+        await this.repository.update(id, { passwordHash, mustChangePassword: false });
     }
 
     findAll(role?: UserRole): Promise<UserEntity[]> {

@@ -95,8 +95,13 @@ export class ServerUsersService {
             throw new ConflictException('Email already in use');
         }
 
-        const passwordHash = await bcrypt.hash(dto.password,10);
-        return this.usersRepository.createOne(dto,passwordHash);
+        const passwordHash = await bcrypt.hash(dto.password, 10);
+        return this.usersRepository.createOne(dto, passwordHash);
+    }
+
+    async updatePassword(id: number, newPassword: string): Promise<void> {
+        const passwordHash = await bcrypt.hash(newPassword, 10);
+        await this.usersRepository.updatePassword(id, passwordHash);
     }
 
     async update(id: number, dto: UpdateUserDto): Promise<UserEntity> {

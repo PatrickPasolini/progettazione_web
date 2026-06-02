@@ -1,11 +1,9 @@
 const API_URL = 'http://localhost:3333/api';
 
-export async function login(email: string, password: string) {
+export async function login(email: string, password: string): Promise<{ mustChangePassword: boolean }> {
   const response = await fetch(`${API_URL}/auth/login`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password }),
   });
 
@@ -14,10 +12,24 @@ export async function login(email: string, password: string) {
   }
 
   const data = await response.json();
-
   localStorage.setItem('access_token', data.access_token);
-
   return data;
+}
+
+export async function changePassword(newPassword: string): Promise<void> {
+  const token = localStorage.getItem('access_token');
+  const response = await fetch(`${API_URL}/auth/change-password`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ newPassword }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Errore durante il cambio password');
+  }
 }
 
 export async function fetchCurrentUser() {

@@ -27,8 +27,16 @@ export class ServerAuthService {
     }
 
     async login(user: AuthenticatedUser): Promise<AuthResponse> {
-        const payload = {sub: user.id, name: user.name, email: user.email, role: user.role};
-        return {access_token: await this.jwtService.signAsync(payload), user}
+        const payload = { sub: user.id, name: user.name, email: user.email, role: user.role };
+        return {
+            access_token: await this.jwtService.signAsync(payload),
+            user,
+            mustChangePassword: user.mustChangePassword,
+        };
+    }
+
+    async changePassword(userId: number, newPassword: string): Promise<void> {
+        await this.usersService.updatePassword(userId, newPassword);
     }
 
     async register(dto: RegisterDto): Promise<AuthResponse> {
