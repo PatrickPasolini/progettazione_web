@@ -1,4 +1,4 @@
-import { TeacherListItem, CreateTeacherDto, UpdateTeacherDto, DegreeListItem, CreateDegreeDto, UpdateDegreeDto, CourseListItem, CreateCourseDto, UpdateCourseDto } from '@server/entities/frontend';
+import { TeacherListItem, CreateTeacherDto, UpdateTeacherDto, DegreeListItem, CreateDegreeDto, UpdateDegreeDto, CourseListItem, CreateCourseDto, UpdateCourseDto, SessionListItem, CreateSessionDto, UpdateSessionDto } from '@server/entities/frontend';
 import { handleApiError } from '../shared/utils.api';
 
 const API_URL = 'http://localhost:3333/api';
@@ -209,3 +209,40 @@ export async function deleteCourse(id: number): Promise<void> {
     }
 }
 
+// --- Sessions ---
+
+export async function fetchSessions(): Promise<SessionListItem[]> {
+    const response = await fetch(`${API_URL}/session`, {
+        headers: getAuthHeader(),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function createSession(payload: CreateSessionDto): Promise<SessionListItem> {
+    const response = await fetch(`${API_URL}/session`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function updateSession(id: number, payload: UpdateSessionDto): Promise<SessionListItem> {
+    const response = await fetch(`${API_URL}/session/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function deleteSession(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/session/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+    if (!response.ok) await handleApiError(response);
+}

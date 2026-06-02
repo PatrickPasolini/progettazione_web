@@ -11,11 +11,3 @@ export function SegreteriaPage() {
 export function SegreteriaIndex() {
   return <Navigate to="/segreteria/sessioni" replace />;
 }
-
-export function SegreteriaPlaceholder({ label }: { label: string }) {
-  return (
-    <p className="font-mono text-sm text-ink-4">
-      {label} — in costruzione
-    </p>
-  );
-} 

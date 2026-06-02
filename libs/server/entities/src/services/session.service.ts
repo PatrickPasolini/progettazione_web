@@ -5,6 +5,7 @@ import { CreateSessionDto } from '../entities/dto/create-session.dto.js';
 import { UpdateSessionDto } from '../entities/dto/update-session.dto.js';
 import { MacroArea } from '../entities/dto/degree.enum.js';
 import { SessionEntity } from '../entities/session.entity.js';
+import { SessionListItem } from '../interfaces/session-list-item.js';
 
 @Injectable()
 export class ServerSessionService {
@@ -13,17 +14,29 @@ export class ServerSessionService {
         private readonly degreeRepository: DegreeRepository,
     ) {}
 
-    findAll(): Promise<SessionEntity[]> {
-        return this.sessionRepository.findAll();
+    async findAll(): Promise<SessionListItem[]> {
+        const sessions = await this.sessionRepository.findAll();
+        return sessions.map(s => this.toListItem(s));
     }
 
-    async findOne(id: number): Promise<SessionEntity> {
+    async findOne(id: number): Promise<SessionListItem> {
         const session = await this.sessionRepository.findById(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);
-        return session;
+        return this.toListItem(session);
     }
 
-    async create(dto: CreateSessionDto): Promise<SessionEntity> {
+    private toListItem(session: SessionEntity): SessionListItem {
+        return {
+            id: session.id,
+            startDate: session.startDate,
+            endDate: session.endDate,
+            startInsertDate: session.startInsertDate,
+            endInsertDate: session.endInsertDate,
+            macroArea: session.macroArea,
+        }
+    }
+
+    async create(dto: CreateSessionDto): Promise<SessionListItem> {
         this.validateDates(dto.startDate, dto.endDate, dto.startInsertDate, dto.endInsertDate);
 
         const session = this.sessionRepository.create({
@@ -38,10 +51,10 @@ export class ServerSessionService {
             ? await this.degreeRepository.findByIds(dto.degreeIds)
             : [];
 
-        return this.sessionRepository.save(session);
+        return this.toListItem(await this.sessionRepository.save(session));
     }
 
-    async update(id: number, dto: UpdateSessionDto): Promise<SessionEntity> {
+    async update(id: number, dto: UpdateSessionDto): Promise<SessionListItem> {
         const session = await this.sessionRepository.findByIdWithDegrees(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);
 
@@ -71,7 +84,7 @@ export class ServerSessionService {
                 : [];
         }
 
-        return this.sessionRepository.save(session);
+        return this.toListItem(await this.sessionRepository.save(session));
     }
 
     async remove(id: number): Promise<void> {

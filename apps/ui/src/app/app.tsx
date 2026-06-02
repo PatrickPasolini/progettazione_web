@@ -7,7 +7,6 @@ import { AppLayout } from '../features/layouts/app-layout';
 import {
   SegreteriaPage,
   SegreteriaIndex,
-  SegreteriaPlaceholder,
 } from '../features/segreteria/segreteria.page';
 import { DocentiPage } from '../features/segreteria/docenti.page';
 import { CorsiPage } from '../features/segreteria/corsi.page';
@@ -19,6 +18,7 @@ import {
   TeacherIndex,
   TeacherPlaceholder,
 } from '../features/teacher/teacher.page';
+import { SessioniPage } from '../features/segreteria/sessioni.page';
 
 export function App() {
   return (
@@ -35,7 +35,7 @@ export function App() {
       >
         <Route path="/segreteria" element={<SegreteriaPage />}>
           <Route index element={<SegreteriaIndex />} />
-          <Route path="sessioni" element={<SegreteriaPlaceholder label="Sessioni" />} />
+          <Route path="sessioni" element={<SessioniPage />} />
           <Route path="corsi"    element={<CorsiPage />} />
           <Route path="materie"  element={<MateriePage />} />
           <Route path="docenti"  element={<DocentiPage />} />
