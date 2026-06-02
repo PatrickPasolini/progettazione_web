@@ -1,7 +1,15 @@
 import { useState, useEffect } from 'react';
 import { fetchCurrentUser } from '../auth/auth.api';
-import { featchSessionsByTeacherId } from './teacher.api';
+import { featchSessionsByTeacherId, featchCoursesByTeacherAndSession } from './teacher.api';
 import { SessionListItem } from '../../../../../libs/server/entities/src/interfaces/session-list-item';
+import { CourseListItem } from '../../../../../libs/server/entities/src/interfaces/course-list-item';
+import { DegreeType } from '../../../../../libs/server/entities/src/entities/dto/degree.enum';
+
+const DEGREE_TYPE_LABEL: Record<DegreeType, string> = {
+    [DegreeType.BACHELOR]: 'Triennale',
+    [DegreeType.MASTER]: 'Magistrale',
+    [DegreeType.SINGLE_CYCLE]: 'Magistrale a ciclo unico',
+};
 
 function formatDateRange(start: Date, end: Date): string {
     const s = new Date(start);
@@ -14,13 +22,30 @@ function formatDateRange(start: Date, end: Date): string {
 export function EsamiPage() {
     const [sessions, setSessions] = useState<SessionListItem[]>([]);
     const [selectedSessionId, setSelectedSessionId] = useState<number | ''>('');
+    const [userId, setUserId] = useState<number | null>(null);
+    const [courses, setCourses] = useState<CourseListItem[]>([]);
+    const [selectedCourseId, setSelectedCourseId] = useState<number | ''>('');
 
     useEffect(() => {
         fetchCurrentUser()
-            .then((user) => featchSessionsByTeacherId(user.id))
+            .then((user) => {
+                setUserId(user.id);
+                return featchSessionsByTeacherId(user.id);
+            })
             .then(setSessions)
             .catch(() => setSessions([]));
     }, []);
+
+    useEffect(() => {
+        if (userId === null || selectedSessionId === '') {
+            setCourses([]);
+            setSelectedCourseId('');
+            return;
+        }
+        featchCoursesByTeacherAndSession(userId, selectedSessionId as number)
+            .then(setCourses)
+            .catch(() => setCourses([]));
+    }, [userId, selectedSessionId]);
 
   return (
     <div className="flex flex-1 min-h-0">
@@ -48,9 +73,42 @@ export function EsamiPage() {
           <h4 className="font-mono text-[11px] uppercase tracking-widest text-ink-3 m-0">
             Corso di laurea
           </h4>
-          <select className="w-full px-3 py-2 rounded-lg border border-line text-sm text-ink focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent bg-paper shadow-sm">
-            <option>— seleziona —</option>
-          </select>
+          <div className="flex flex-col gap-2">
+            {courses.length === 0 ? (
+              <p className="text-[12px] text-ink-3 m-0">
+                {selectedSessionId ? 'Nessun corso disponibile.' : 'Seleziona prima una sessione.'}
+              </p>
+            ) : (
+              courses.map((course) => {
+                const sel = course.id === selectedCourseId;
+                return (
+                  <button
+                    key={course.id}
+                    type="button"
+                    onClick={() => setSelectedCourseId(course.id)}
+                    className={`w-full text-left flex items-start gap-2.5 p-3 rounded-[10px] border transition-colors ${
+                      sel
+                        ? 'border-accent bg-accent-soft ring-1 ring-inset ring-accent'
+                        : 'border-line bg-paper hover:border-ink-3 hover:bg-[#f0f5fc]'
+                    }`}
+                  >
+                    <span className={`mt-0.5 w-4 h-4 rounded-full border-[1.5px] shrink-0 flex items-center justify-center ${sel ? 'border-accent' : 'border-ink-4'}`}>
+                      {sel && <span className="w-2 h-2 rounded-full bg-accent" />}
+                    </span>
+                    <span className="flex flex-col gap-0.5 min-w-0">
+                      <span className="font-serif text-[17px] leading-tight text-ink">{course.courseName}</span>
+                      <span className="text-[12.5px] text-ink-2">
+                        {course.degree.degreeName} · Anno {course.degree.degreeYear}
+                      </span>
+                      <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-bg text-ink-2 mt-0.5 self-start">
+                        {DEGREE_TYPE_LABEL[course.degree.degreeType]}
+                      </span>
+                    </span>
+                  </button>
+                );
+              })
+            )}
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -103,14 +161,11 @@ export function EsamiPage() {
             </h1>
           </div>
           <button
-            
             className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-accent text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed"
           >
             + Nuovo appello
           </button>
         </div>
-
-
 
         {/* Placeholder calendario */}
         <div className="rounded-xl border border-line bg-paper flex items-center justify-center min-h-[420px] text-ink-3 text-sm font-mono">

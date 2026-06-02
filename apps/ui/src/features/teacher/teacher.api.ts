@@ -32,8 +32,14 @@ export async function featchSessionbyId(id: number) : Promise<SessionListItem> {
     return null;
 }
 
-export async function featchCoursesByTeacherId(id: number) : Promise<CourseListItem[]> {
-    return null;
+export async function featchCoursesByTeacherAndSession(teacherId: number, sessionId: number): Promise<CourseListItem[]> {
+    const response = await fetch(`${API_URL}/course/teacher/${teacherId}/session/${sessionId}`, {
+        headers: getAuthHeader(),
+    });
+    if (!response.ok) {
+        await handleApiError(response);
+    }
+    return response.json();
 }
 
 export async function featchCourseById(id: number) : Promise<CourseListItem> {
