@@ -230,8 +230,7 @@ export function SessioniPage() {
             </span>
             <b className="text-ink">Nuova sessione d'esame</b>
             <span className="text-center">
-              Imposta date di inizio/fine sessione, finestra di inserimento e
-              corsi.
+              Imposta date di inizio/fine sessione
             </span>
           </button>
 

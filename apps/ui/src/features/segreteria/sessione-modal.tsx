@@ -88,14 +88,29 @@ export function SessioneModal({
   if (!isOpen) return null;
 
   const handleSubmit = async () => {
-    if (
-      !macroArea ||
-      !startDate ||
-      !endDate ||
-      !startInsertDate ||
-      !endInsertDate
-    ) {
+    if (!macroArea || !startDate || !endDate || !startInsertDate || !endInsertDate) {
       setError('Compila tutti i campi');
+      return;
+    }
+    const today = new Date().toISOString().slice(0, 10);
+    if (startDate < today) {
+      setError('La data di inizio sessione non può essere nel passato');
+      return;
+    }
+    if (endDate < startDate) {
+      setError('La data di fine sessione deve essere dopo l\'inizio');
+      return;
+    }
+    if (startInsertDate < today) {
+      setError('La data di inizio inserimento non può essere nel passato');
+      return;
+    }
+    if (endInsertDate < startInsertDate) {
+      setError("La data di fine inserimento deve essere dopo l'inizio");
+      return;
+    }
+    if (endInsertDate >= startDate) {
+      setError("La finestra di inserimento deve terminare prima dell'inizio della sessione");
       return;
     }
     const payload: CreateSessionDto = {
