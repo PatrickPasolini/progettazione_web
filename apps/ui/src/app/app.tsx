@@ -17,8 +17,8 @@ import { MateriePage } from '../features/segreteria/materie.page';
 import {
   TeacherPage,
   TeacherIndex,
-  TeacherPlaceholder,
 } from '../features/teacher/teacher.page';
+import { EsamiPage } from '../features/teacher/esami.page';
 import { SessioniPage } from '../features/segreteria/sessioni.page';
 
 export function App() {
@@ -52,7 +52,7 @@ export function App() {
 
         <Route path="/docente" element={<TeacherPage />}>
           <Route index element={<TeacherIndex />} />
-          <Route path="esami" element={<TeacherPlaceholder label="Esami" />} />
+          <Route path="esami" element={<EsamiPage />} />
         </Route>
 
         <Route path="/" element={<Navigate to="/segreteria" replace />} />

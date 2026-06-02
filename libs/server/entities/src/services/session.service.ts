@@ -19,6 +19,11 @@ export class ServerSessionService {
         return sessions.map(s => this.toListItem(s));
     }
 
+    async findActiveByTeacher(teacherId: number): Promise<SessionListItem[]> {
+        const sessions = await this.sessionRepository.findActiveByTeacher(teacherId);
+        return sessions.map(s => this.toListItem(s));
+    }
+
     async findOne(id: number): Promise<SessionListItem> {
         const session = await this.sessionRepository.findById(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);

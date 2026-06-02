@@ -47,7 +47,7 @@ export function AppLayout() {
         <div className="flex items-center h-20 px-8 gap-8">
 
           <div className="shrink-0">
-            <img src="/examflow-logo.png" alt="ExamFlow" className="h-16 w-auto" />
+            <img src="/examflow-logo.png" alt="ExamFlow" className="h-12 w-auto" />
           </div>
 
           <div className="w-px h-7 bg-line shrink-0" />

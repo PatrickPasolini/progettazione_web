@@ -36,6 +36,14 @@ export class ServerSessionController {
     findOne(@Param('id', ParseIntPipe) id: number) {
         return this.serverSessionService.findOne(id);
     }
+    
+    @Get('teacher/:teacherId')
+    @UseGuards(JwtAuthGuard)
+    @ApiBearerAuth()
+    @ApiParam({ name: 'teacherId', type: Number, description: 'ID del docente' })
+    findActiveByTeacher(@Param('teacherId', ParseIntPipe) teacherId: number) {
+        return this.serverSessionService.findActiveByTeacher(teacherId);
+    }
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)

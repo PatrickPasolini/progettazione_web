@@ -22,6 +22,20 @@ export class SessionRepository {
         return this.repo.findOne({ where: { id }, relations: ['degrees'] });
     }
 
+    // Restituisce le sessioni non terminate in cui il Teacher ha exam associati 
+    findActiveByTeacher(teacherId: number): Promise<SessionEntity[]> {
+        const today = new Date().toISOString().slice(0, 10);
+        return this.repo
+            .createQueryBuilder('session')
+            .innerJoin('session.exams', 'exam')
+            .innerJoin('exam.teacher', 'teacher')
+            .where('teacher.id = :teacherId', { teacherId })
+            .andWhere('session.endDate >= :today', { today })
+            .distinct(true)
+            .orderBy('session.startDate', 'ASC')
+            .getMany();
+    }
+
     create(data: Partial<SessionEntity>): SessionEntity {
         return this.repo.create(data);
     }
