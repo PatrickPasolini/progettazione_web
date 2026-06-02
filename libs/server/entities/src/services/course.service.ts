@@ -133,7 +133,7 @@ export class ServerCourseService {
         if (degrees.length === 0)
             throw new Error('No degrees found');
 
-        const [t1, t2, t3] = teachers;
+        const [t1, t2, t3, t4] = teachers;
         const d = degrees;
 
         const courses: { courseName: string; teacher: (typeof teachers)[0]; degreeId: number }[] = [
@@ -147,6 +147,26 @@ export class ServerCourseService {
             { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[0]?.id },
             { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[5]?.id },
             { courseName: 'Calcolo Scientifico',                    teacher: t2, degreeId: d[3]?.id },
+            // Economics courses (indices 10-17 after Engineering)
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[10]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[11]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[12]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[13]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[14]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[15]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[16]?.id },
+            { courseName: 'Economia Politica',                      teacher: t4, degreeId: d[17]?.id },
+            { courseName: 'Ragioneria Generale',                    teacher: t4, degreeId: d[10]?.id },
+            { courseName: 'Ragioneria Generale',                    teacher: t4, degreeId: d[11]?.id },
+            { courseName: 'Ragioneria Generale',                    teacher: t4, degreeId: d[13]?.id },
+            { courseName: 'Ragioneria Generale',                    teacher: t4, degreeId: d[14]?.id },
+            { courseName: 'Statistica',                             teacher: t4, degreeId: d[10]?.id },
+            { courseName: 'Statistica',                             teacher: t4, degreeId: d[11]?.id },
+            { courseName: 'Statistica',                             teacher: t4, degreeId: d[12]?.id },
+            { courseName: 'Statistica',                             teacher: t4, degreeId: d[16]?.id },
+            { courseName: 'Statistica',                             teacher: t4, degreeId: d[17]?.id },
+            { courseName: 'Diritto Commerciale',                    teacher: t4, degreeId: d[13]?.id },
+            { courseName: 'Diritto Commerciale',                    teacher: t4, degreeId: d[14]?.id },
         ];
 
         for (const c of courses) {

@@ -82,6 +82,14 @@ export class ServerDegreeService {
             { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ENGINEERING },
             { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
             { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
+            { degreeName: 'Economia e Commercio',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia e Commercio',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia e Commercio',   degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia Aziendale',     degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia Aziendale',     degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia Aziendale',     degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia',               degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ECONOMICS },
+            { degreeName: 'Economia',               degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ECONOMICS },
         ];
 
         for (const d of degrees) {

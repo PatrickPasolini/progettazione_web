@@ -114,6 +114,13 @@ export class ServerSessionService {
                 endInsertDate:   new Date('2026-06-30'),
                 macroArea:       MacroArea.ENGINEERING,
             },
+            {
+                startDate:       new Date('2026-07-01'),
+                endDate:         new Date('2026-07-31'),
+                startInsertDate: new Date('2026-05-20'),
+                endInsertDate:   new Date('2026-06-20'),
+                macroArea:       MacroArea.ECONOMICS,
+            },
         ];
 
         for (const s of sessions) {

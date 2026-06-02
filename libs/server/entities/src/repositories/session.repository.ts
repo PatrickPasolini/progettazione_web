@@ -22,15 +22,19 @@ export class SessionRepository {
         return this.repo.findOne({ where: { id }, relations: ['degrees'] });
     }
 
-    // Restituisce le sessioni non terminate in cui il Teacher ha exam associati 
+    // Restituisce le sessioni con finestra d'inserimento attiva
+    // per le macro-aree in cui il docente insegna
     findActiveByTeacher(teacherId: number): Promise<SessionEntity[]> {
         const today = new Date().toISOString().slice(0, 10);
         return this.repo
             .createQueryBuilder('session')
-            .innerJoin('session.exams', 'exam')
-            .innerJoin('exam.teacher', 'teacher')
-            .where('teacher.id = :teacherId', { teacherId })
-            .andWhere('session.endDate >= :today', { today })
+            .innerJoin('session.degrees', 'degree')
+            .where(
+                `degree.id IN (SELECT c."degreeId" FROM course c WHERE c."teacherId" = :teacherId)`,
+                { teacherId },
+            )
+            .andWhere('session.startInsertDate <= :today', { today })
+            .andWhere('session.endInsertDate >= :today', { today })
             .distinct(true)
             .orderBy('session.startDate', 'ASC')
             .getMany();

@@ -73,6 +73,7 @@ export class ServerTeacherService {
             { name: 'Luca',  surname: 'Giuzzi',   email: 'luca.giuzzi@unibs.it',   password: 'Teacher1!' },
             { name: 'Paola', surname: 'Gervasio', email: 'paola.gervasio@unibs.it', password: 'Teacher2!' },
             { name: 'Alessandro', surname: 'Saetti',   email: 'alessandro.saetti@unibs.it',   password: 'Teacher3!' },
+            { name: 'Maria', surname: 'Rossi',    email: 'maria.rossi@unibs.it',    password: 'Teacher4!' },
         ];
 
         for (const t of teachers) {
