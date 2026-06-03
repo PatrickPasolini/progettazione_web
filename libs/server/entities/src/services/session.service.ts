@@ -38,6 +38,7 @@ export class ServerSessionService {
             startInsertDate: session.startInsertDate,
             endInsertDate: session.endInsertDate,
             macroArea: session.macroArea,
+            examLimit: session.examLimit,
         }
     }
 
@@ -50,6 +51,7 @@ export class ServerSessionService {
             startInsertDate: new Date(dto.startInsertDate),
             endInsertDate:   new Date(dto.endInsertDate),
             macroArea:       dto.macroArea,
+            examLimit:       dto.examLimit,
         });
 
         session.degrees = dto.degreeIds?.length
@@ -81,6 +83,7 @@ export class ServerSessionService {
             startInsertDate,
             endInsertDate,
             ...(dto.macroArea && { macroArea: dto.macroArea }),
+            ...(dto.examLimit !== undefined && { examLimit: dto.examLimit }),
         });
 
         if (dto.degreeIds !== undefined) {
@@ -99,13 +102,14 @@ export class ServerSessionService {
     }
 
     async seed(): Promise<void> {
-        const sessions: { startDate: Date; endDate: Date; startInsertDate: Date; endInsertDate: Date; macroArea: MacroArea }[] = [
+        const sessions: { startDate: Date; endDate: Date; startInsertDate: Date; endInsertDate: Date; macroArea: MacroArea; examLimit: number }[] = [
             {
                 startDate:       new Date('2026-06-01'),
                 endDate:         new Date('2026-07-31'),
                 startInsertDate: new Date('2026-04-01'),
                 endInsertDate:   new Date('2026-04-30'),
                 macroArea:       MacroArea.ENGINEERING,
+                examLimit:       2,
             },
             {
                 startDate:       new Date('2026-09-01'),
@@ -113,6 +117,7 @@ export class ServerSessionService {
                 startInsertDate: new Date('2026-05-01'),
                 endInsertDate:   new Date('2026-06-30'),
                 macroArea:       MacroArea.ENGINEERING,
+                examLimit:       1,
             },
         ];
 

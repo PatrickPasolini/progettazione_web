@@ -633,10 +633,14 @@ export function EsamiPage() {
         days: daysInSession,
     };
 
+    const examLimitReached =
+        !!selectedSession && myExams.length >= selectedSession.examLimit;
+
     // ── Handlers ────────────────────────────────────────────────────────────
 
     function onCellClick(iso: string, existing: ExamListItem | null) {
         if (!insertOpen || !selectedCourse) return;
+        if (!existing && examLimitReached) return;
         if (existing) {
             if (existing.teacher.id === userId)
                 setModal({ mode: 'edit', date: iso, exam: existing });
@@ -876,7 +880,7 @@ export function EsamiPage() {
                         </p>
                     </div>
                     <button
-                        disabled={!insertOpen || !selectedCourse}
+                        disabled={!insertOpen || !selectedCourse || examLimitReached}
                         onClick={() => setModal({ mode: 'add', date: '' })}
                         className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-accent text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-accent-2"
                     >
@@ -888,22 +892,33 @@ export function EsamiPage() {
                 {selectedSession && (
                     <div
                         className={`flex items-center gap-3.5 px-4 py-3 rounded-xl border mb-[22px] ${
-                            insertOpen
+                            insertOpen && examLimitReached
+                                ? 'bg-gold-soft border-[#e7d79b]'
+                                : insertOpen
                                 ? 'bg-teal-soft border-[#b8d0cb]'
                                 : 'bg-paper border-line'
                         }`}
                     >
                         <span
                             className={`font-mono text-[10.5px] uppercase tracking-wider px-2 py-[3px] rounded-full ${
-                                insertOpen
+                                insertOpen && examLimitReached
+                                    ? 'bg-gold text-paper'
+                                    : insertOpen
                                     ? 'bg-teal text-paper'
                                     : 'bg-ink text-paper'
                             }`}
                         >
-                            {insertOpen ? 'Aperta' : 'Chiusa'}
+                            {insertOpen && examLimitReached ? 'Limite' : insertOpen ? 'Aperta' : 'Chiusa'}
                         </span>
                         <div className="flex-1 text-[13.5px]">
-                            {insertOpen ? (
+                            {insertOpen && examLimitReached ? (
+                                <>
+                                    <b className="text-ink">Limite di {selectedSession.examLimit} appelli raggiunto.</b>
+                                    <span className="text-ink-2">
+                                        {' '}Puoi modificare o cancellare gli appelli esistenti, ma non aggiungerne altri.
+                                    </span>
+                                </>
+                            ) : insertOpen ? (
                                 <>
                                     <b className="text-ink">Finestra di inserimento attiva.</b>
                                     <span className="text-ink-2">
@@ -925,7 +940,7 @@ export function EsamiPage() {
                                 </>
                             )}
                         </div>
-                        {insertOpen && (
+                        {insertOpen && !examLimitReached && (
                             <span className="font-mono text-[11px] text-ink-3">
                                 Restano {daysRemaining(selectedSession.endInsertDate)} giorni
                             </span>
@@ -962,8 +977,11 @@ export function EsamiPage() {
                         <p className="font-mono text-[11px] uppercase tracking-widest text-ink-3 m-0">
                             I miei appelli
                         </p>
-                        <div className="font-serif text-[22px] leading-tight mt-0.5">
-                            {myExams.length}{' '}
+                        <div className={`font-serif text-[22px] leading-tight mt-0.5 ${examLimitReached ? 'text-gold' : ''}`}>
+                            {myExams.length}
+                            {selectedSession && (
+                                <span className="text-ink-3"> / {selectedSession.examLimit}</span>
+                            )}{' '}
                             {myExams.length === 1 ? 'pianificato' : 'pianificati'}
                         </div>
                     </div>

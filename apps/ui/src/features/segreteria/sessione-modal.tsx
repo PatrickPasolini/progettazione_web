@@ -82,6 +82,7 @@ export function SessioneModal({
   const [endInsertDate, setEndInsertDate] = useState(
     session?.endInsertDate ? toISO(session.endInsertDate) : ''
   );
+  const [examLimit, setExamLimit] = useState<number>(session?.examLimit ?? 1);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -113,12 +114,17 @@ export function SessioneModal({
       setError("La finestra di inserimento deve terminare prima dell'inizio della sessione");
       return;
     }
+    if (!examLimit || examLimit < 1) {
+      setError('Il limite appelli deve essere almeno 1');
+      return;
+    }
     const payload: CreateSessionDto = {
       macroArea: macroArea as MacroArea,
       startDate,
       endDate,
       startInsertDate,
       endInsertDate,
+      examLimit,
     };
     try {
       setLoading(true);
@@ -193,6 +199,20 @@ export function SessioneModal({
               endValue={endInsertDate}
               onStartChange={setStartInsertDate}
               onEndChange={setEndInsertDate}
+            />
+          </div>
+
+          {/* Limite appelli */}
+          <div className="flex flex-col gap-1">
+            <label className="text-xs font-medium text-ink-2 uppercase tracking-wide">
+              Limite appelli per docente
+            </label>
+            <input
+              type="number"
+              min={1}
+              value={examLimit}
+              onChange={(e) => setExamLimit(Number(e.target.value))}
+              className="w-24 px-3 py-2.5 bg-paper border border-line text-ink text-sm rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent"
             />
           </div>
         </div>

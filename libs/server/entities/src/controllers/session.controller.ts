@@ -52,13 +52,14 @@ export class ServerSessionController {
     @ApiBody({
         schema: {
             type: 'object',
-            required: ['startDate', 'endDate', 'startInsertDate', 'endInsertDate', 'macroArea'],
+            required: ['startDate', 'endDate', 'startInsertDate', 'endInsertDate', 'macroArea', 'examLimit'],
             properties: {
                 startDate:       { type: 'string', format: 'date', example: '2025-06-01' },
                 endDate:         { type: 'string', format: 'date', example: '2025-07-31' },
                 startInsertDate: { type: 'string', format: 'date', example: '2025-05-01', description: 'Inizio finestra inserimento esami' },
                 endInsertDate:   { type: 'string', format: 'date', example: '2025-05-31', description: 'Fine finestra inserimento esami' },
                 macroArea: { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
+                examLimit: { type: 'integer', minimum: 1, example: 2, description: 'Numero massimo di appelli per docente in questa sessione' },
                 degreeIds: { type: 'array', items: { type: 'integer' }, example: [1, 2], description: 'Lista di ID dei corsi di laurea (opzionale)' },
             },
         },
@@ -81,6 +82,7 @@ export class ServerSessionController {
                 startInsertDate: { type: 'string', format: 'date', example: '2025-05-01', description: 'Inizio finestra inserimento esami' },
                 endInsertDate:   { type: 'string', format: 'date', example: '2025-05-31', description: 'Fine finestra inserimento esami' },
                 macroArea: { type: 'string', enum: ['Agraria','Biotecnologie','Economia','Farmacia','Giurisprudenza','Ingegneria','Medicina','Scienze Motorie','Scienze Politiche e Sociali'], example: 'Ingegneria' },
+                examLimit: { type: 'integer', minimum: 1, example: 2, description: 'Numero massimo di appelli per docente in questa sessione' },
                 degreeIds: { type: 'array', items: { type: 'integer' }, example: [1, 3], description: 'Nuova lista di ID dei corsi di laurea' },
             },
         },

@@ -23,6 +23,9 @@ export class SessionEntity {
     @Column({ type: 'enum', enum: MacroArea, nullable: false })
     macroArea: MacroArea;
 
+    @Column({ type: 'int', nullable: false, default: 1 })
+    examLimit: number;
+
     @ManyToMany(() => DegreeEntity, (degree) => degree.sessions)
     @JoinTable({
         name: 'session_degrees',

@@ -6,4 +6,5 @@ export interface SessionListItem {
     startInsertDate: Date;
     endInsertDate: Date;
     macroArea: string;
+    examLimit: number;
 }
