@@ -80,6 +80,9 @@ function formatDateRange(start: Date, end: Date): string {
     const e = new Date(end);
     const month = (d: Date) => d.toLocaleDateString('it-IT', { month: 'short' });
     const year = e.getFullYear();
+    if (s.getMonth() === e.getMonth() && s.getFullYear() === e.getFullYear()) {
+        return `${month(e)} ${year}`;
+    }
     return `${month(s)}-${month(e)} ${year}`;
 }
 
@@ -868,9 +871,9 @@ export function EsamiPage() {
                 <div className="flex items-start justify-between mb-5">
                     <div>
                         <h1 className="font-serif text-[38px] leading-tight tracking-tight m-0 mt-0.5">
-                            Calendario{' '}
+                            Calendario Appelli{' '}
                             <em className="italic text-accent">
-                                {selectedSession ? `— ${selectedSession.macroArea}` : '—'}
+                                {selectedSession ? `- ${selectedSession.macroArea}` : '-'}
                             </em>
                         </h1>
                         <p className="text-[14px] text-ink-3 m-0 mt-0.5">
