@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
+import Holidays from 'date-holidays';
 import { fetchCurrentUser } from '../auth/auth.api';
 import {
     featchSessionsByTeacherId,
@@ -14,20 +15,6 @@ import { ExamListItem } from '../../../../../libs/server/entities/src/interfaces
 import { DegreeType } from '../../../../../libs/server/entities/src/entities/dto/degree.enum';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-
-const HOLIDAYS_2026: Record<string, string> = {
-    '2026-01-01': 'Capodanno',
-    '2026-01-06': 'Epifania',
-    '2026-04-06': 'Lunedì di Pasqua',
-    '2026-04-25': 'Festa della Liberazione',
-    '2026-05-01': 'Festa del Lavoro',
-    '2026-06-02': 'Festa della Repubblica',
-    '2026-08-15': 'Ferragosto',
-    '2026-11-01': 'Ognissanti',
-    '2026-12-08': 'Immacolata Concezione',
-    '2026-12-25': 'Natale',
-    '2026-12-26': 'Santo Stefano',
-};
 
 const DOW_LABELS = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
 
@@ -45,6 +32,19 @@ const DEGREE_TYPE_LABEL: Record<DegreeType, string> = {
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function buildHolidayMap(startDate: Date, endDate: Date): Record<string, string> {
+    const hd = new Holidays('IT');
+    const map: Record<string, string> = {};
+    for (let y = startDate.getFullYear(); y <= endDate.getFullYear(); y++) {
+        for (const h of hd.getHolidays(y)) {
+            if (h.type === 'public') {
+                map[h.date.substring(0, 10)] = h.name;
+            }
+        }
+    }
+    return map;
+}
 
 function toISO(d: Date): string {
     const y = d.getFullYear();
@@ -86,13 +86,13 @@ function formatDateRange(start: Date, end: Date): string {
     return `${month(s)}-${month(e)} ${year}`;
 }
 
-function countSessionDays(session: SessionListItem): number {
+function countSessionDays(session: SessionListItem, holidays: Record<string, string>): number {
     const s = new Date(session.startDate);
     const e = new Date(session.endDate);
     let n = 0;
     const d = new Date(s);
     while (d <= e) {
-        if (!isWeekend(d) && !HOLIDAYS_2026[toISO(d)]) n++;
+        if (!isWeekend(d) && !holidays[toISO(d)]) n++;
         d.setDate(d.getDate() + 1);
     }
     return n;
@@ -125,6 +125,7 @@ interface CalendarGridProps {
     userId: number | null;
     onCellClick: (iso: string, existing: ExamListItem | null) => void;
     stats: { mine: number; others: number; days: number };
+    holidays: Record<string, string>;
 }
 
 function CalendarGrid({
@@ -137,6 +138,7 @@ function CalendarGrid({
     userId,
     onCellClick,
     stats,
+    holidays,
 }: CalendarGridProps) {
     const first = startOfMonth(viewMonth);
     const startOffset = (first.getDay() + 6) % 7; // Monday-first
@@ -215,7 +217,7 @@ function CalendarGrid({
                     const inSession =
                         iso >= toISO(sessionStart) && iso <= toISO(sessionEnd);
                     const we = isWeekend(d);
-                    const hol = HOLIDAYS_2026[iso];
+                    const hol = holidays[iso];
                     const exam = byDate[iso];
                     const isToday = iso === todayISO;
                     const isMine = exam && exam.teacher.id === userId;
@@ -329,6 +331,7 @@ interface ExamFormProps {
     sessionEnd: string;
     course: CourseListItem;
     byDate: Record<string, ExamListItem>;
+    holidays: Record<string, string>;
     exam?: ExamListItem;
     onCancel: () => void;
     onSave: (data: { examDate: string; startTime: string; endTime: string }) => Promise<void>;
@@ -342,6 +345,7 @@ function ExamForm({
     sessionEnd,
     course,
     byDate,
+    holidays,
     exam,
     onCancel,
     onSave,
@@ -363,7 +367,7 @@ function ExamForm({
             return 'La data è fuori dal periodo della sessione.';
         const d = new Date(examDate + 'T12:00:00');
         if (isWeekend(d)) return 'Sabato e domenica non sono ammessi.';
-        if (HOLIDAYS_2026[examDate]) return `${HOLIDAYS_2026[examDate]} è una festività esclusa.`;
+        if (holidays[examDate]) return `${holidays[examDate]} è una festività esclusa.`;
         const existing = byDate[examDate];
         if (existing && existing.id !== exam?.id)
             return `Esiste già un appello in questa data per ${course.degree.degreeName}.`;
@@ -602,6 +606,14 @@ export function EsamiPage() {
     const selectedSession = sessions.find((s) => s.id === selectedSessionId);
     const selectedCourse = courses.find((c) => c.id === selectedCourseId);
 
+    const holidays = useMemo(() => {
+        if (!selectedSession) return {};
+        return buildHolidayMap(
+            new Date(selectedSession.startDate),
+            new Date(selectedSession.endDate),
+        );
+    }, [selectedSession]);
+
     const today = new Date();
     const insertOpen = selectedSession
         ? today >= new Date(selectedSession.startInsertDate) &&
@@ -623,8 +635,8 @@ export function EsamiPage() {
     );
 
     const daysInSession = useMemo(
-        () => (selectedSession ? countSessionDays(selectedSession) : 0),
-        [selectedSession],
+        () => (selectedSession ? countSessionDays(selectedSession, holidays) : 0),
+        [selectedSession, holidays],
     );
 
     const stats = {
@@ -834,7 +846,7 @@ export function EsamiPage() {
                         (() => {
                             const sStart = dateKey(selectedSession.startDate);
                             const sEnd = dateKey(selectedSession.endDate);
-                            const inRange = Object.entries(HOLIDAYS_2026).filter(
+                            const inRange = Object.entries(holidays).filter(
                                 ([iso]) => iso >= sStart && iso <= sEnd,
                             );
                             return inRange.length === 0 ? (
@@ -960,6 +972,7 @@ export function EsamiPage() {
                         userId={userId}
                         onCellClick={onCellClick}
                         stats={stats}
+                        holidays={holidays}
                     />
                 ) : (
                     <div className="rounded-xl border border-line bg-paper flex items-center justify-center min-h-[420px] text-ink-3 text-sm font-mono">
@@ -1072,6 +1085,7 @@ export function EsamiPage() {
                         sessionEnd={dateKey(selectedSession.endDate)}
                         course={selectedCourse}
                         byDate={byDate}
+                        holidays={holidays}
                         exam={modal.mode === 'edit' ? modal.exam : undefined}
                         onCancel={() => setModal(null)}
                         onSave={handleSave}
