@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { SessionEntity } from '../entities/session.entity.js';
+import { CourseEntity } from '../entities/course.entity.js';
 
 @Injectable()
 export class SessionRepository {
@@ -22,14 +23,18 @@ export class SessionRepository {
         return this.repo.findOne({ where: { id }, relations: ['degrees'] });
     }
 
-    // Restituisce le sessioni non terminate in cui il Teacher ha exam associati 
+    // Restituisce le sessioni non terminate che contengono corsi insegnati dal teacher
     findActiveByTeacher(teacherId: number): Promise<SessionEntity[]> {
         const today = new Date().toISOString().slice(0, 10);
         return this.repo
             .createQueryBuilder('session')
-            .innerJoin('session.exams', 'exam')
-            .innerJoin('exam.teacher', 'teacher')
-            .where('teacher.id = :teacherId', { teacherId })
+            .innerJoin('session.degrees', 'degree')
+            .innerJoin(
+                CourseEntity,
+                'course',
+                'course.degreeId = degree.id AND course.teacherId = :teacherId',
+                { teacherId },
+            )
             .andWhere('session.endDate >= :today', { today })
             .distinct(true)
             .orderBy('session.startDate', 'ASC')
