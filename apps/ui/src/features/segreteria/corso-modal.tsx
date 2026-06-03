@@ -1,62 +1,108 @@
 import { useState, useEffect } from 'react';
-import { createDegree, updateDegree } from './segreteria.api';
-import type { DegreeListItem, DegreeType, DegreeYear, MacroArea } from '@server/entities/frontend';
+import { createDegree, updateDegree, deleteDegree } from './segreteria.api';
+import type { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
+
+const ALL_YEARS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'] as const;
+
+function yearsForType(type: string, cycleYears: number): string[] {
+    if (type === 'LT') return ['I', 'II', 'III'];
+    if (type === 'LM') return ['I', 'II'];
+    return ALL_YEARS.slice(0, cycleYears);
+}
 
 interface CorsoModalProps {
     isOpen: boolean;
     mode: 'create' | 'edit';
-    degree: DegreeListItem | null;
+    degreeGroup: DegreeListItem[];
     onClose: () => void;
     onSave: () => void;
 }
 
-export function CorsoModal({ isOpen, mode, degree, onClose, onSave }: CorsoModalProps) {
-    const [degreeName, setDegreeName] = useState('');
-    const [degreeType, setDegreeType] = useState<DegreeType>('LT' as DegreeType);
-    const [degreeYear, setDegreeYear] = useState<DegreeYear>('I' as DegreeYear);
-    const [macroArea, setMacroArea] = useState<MacroArea | ''>('');
+export function CorsoModal({ isOpen, mode, degreeGroup, onClose, onSave }: CorsoModalProps) {
+    const first = degreeGroup[0] ?? null;
 
+    const [degreeName, setDegreeName] = useState('');
+    const [degreeType, setDegreeType] = useState('LT');
+    const [macroArea, setMacroArea] = useState<MacroArea | ''>('');
+    const [cycleYears, setCycleYears] = useState(5);
     const [submitting, setSubmitting] = useState(false);
     const [modalError, setModalError] = useState<string | null>(null);
 
     useEffect(() => {
-        if (mode === 'edit' && degree) {
-            setDegreeName(degree.degreeName);
-            setDegreeType(degree.degreeType);
-            setDegreeYear(degree.degreeYear);
-            setMacroArea(degree.macroArea);
+        if (mode === 'edit' && first) {
+            setDegreeName(first.degreeName);
+            setDegreeType(first.degreeType);
+            setMacroArea(first.macroArea as MacroArea);
+            setCycleYears(degreeGroup.length >= 2 ? degreeGroup.length : 5);
         } else {
             setDegreeName('');
-            setDegreeType('LT' as DegreeType);
-            setDegreeYear('I' as DegreeYear);
+            setDegreeType('LT');
             setMacroArea('');
+            setCycleYears(5);
         }
         setModalError(null);
-    }, [isOpen, mode, degree]);
+    }, [isOpen, mode, degreeGroup]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!macroArea) { setModalError("Seleziona un'area"); return; }
 
         try {
             setSubmitting(true);
             setModalError(null);
 
+            const newYears = yearsForType(degreeType, cycleYears);
+
             if (mode === 'create') {
-                await createDegree({ degreeName, degreeType, degreeYear, macroArea: macroArea as MacroArea });
-            } else if (mode === 'edit' && degree) {
-                await updateDegree(degree.id, { degreeName, degreeType, degreeYear, macroArea: macroArea as MacroArea });
+                for (const year of newYears) {
+                    await createDegree({
+                        degreeName,
+                        degreeType: degreeType as DegreeType,
+                        degreeYear: year as any,
+                        macroArea: macroArea as MacroArea,
+                    });
+                }
+            } else {
+                const oldByYear = new Map(degreeGroup.map((d) => [d.degreeYear, d]));
+
+                for (const year of newYears) {
+                    const existing = oldByYear.get(year as any);
+                    if (existing) {
+                        await updateDegree(existing.id, {
+                            degreeName,
+                            degreeType: degreeType as DegreeType,
+                            degreeYear: year as any,
+                            macroArea: macroArea as MacroArea,
+                        });
+                    } else {
+                        await createDegree({
+                            degreeName,
+                            degreeType: degreeType as DegreeType,
+                            degreeYear: year as any,
+                            macroArea: macroArea as MacroArea,
+                        });
+                    }
+                }
+
+                for (const [year, d] of oldByYear.entries()) {
+                    if (!newYears.includes(year)) {
+                        await deleteDegree(d.id);
+                    }
+                }
             }
+
             onSave();
             onClose();
         } catch (err: any) {
-            setModalError(err.message || "Errore durante il salvataggio del corso di laurea.");
+            setModalError(err.message || 'Errore durante il salvataggio.');
         } finally {
             setSubmitting(false);
         }
     };
 
-    if (!isOpen)
-        return null;
+    if (!isOpen) return null;
+
+    const previewYears = yearsForType(degreeType, cycleYears);
 
     return (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
@@ -92,7 +138,7 @@ export function CorsoModal({ isOpen, mode, degree, onClose, onSave }: CorsoModal
                             <select
                                 required
                                 value={degreeType}
-                                onChange={(e) => setDegreeType(e.target.value as DegreeType)}
+                                onChange={(e) => setDegreeType(e.target.value)}
                                 className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink bg-white"
                             >
                                 <option value="LT">Triennale (LT)</option>
@@ -101,23 +147,27 @@ export function CorsoModal({ isOpen, mode, degree, onClose, onSave }: CorsoModal
                             </select>
                         </div>
 
-                        <div>
-                            <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Anno</label>
-                            <select
-                                required
-                                value={degreeYear}
-                                onChange={(e) => setDegreeYear(e.target.value as DegreeYear)}
-                                className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink bg-white"
-                            >
-                                <option value="I">I</option>
-                                <option value="II">II</option>
-                                <option value="III">III</option>
-                                <option value="IV">IV</option>
-                                <option value="V">V</option>
-                                <option value="VI">VI</option>
-                                <option value="VII">VII</option>
-                            </select>
-                        </div>
+                        {degreeType === 'LMCU' && (
+                            <div>
+                                <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">
+                                    Numero di anni
+                                </label>
+                                <input
+                                    type="number"
+                                    min={2}
+                                    max={7}
+                                    required
+                                    value={cycleYears}
+                                    onChange={(e) => setCycleYears(Math.min(7, Math.max(2, Number(e.target.value))))}
+                                    className="w-24 px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
+                                />
+                            </div>
+                        )}
+
+                        <p className="text-xs text-ink-3">
+                            {mode === 'create' ? 'Verranno create le annualità' : 'Annualità nel database'}:{' '}
+                            <span className="font-mono font-semibold text-ink-2">{previewYears.join(', ')}</span>
+                        </p>
 
                         <div>
                             <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Area</label>

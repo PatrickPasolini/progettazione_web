@@ -10,7 +10,7 @@ export function CorsiPage() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMode, setModalMode] = useState<"create" | "edit">('create');
-    const [selectedDegree, setSelectedDegree] = useState<DegreeListItem | null>(null);
+    const [selectedGroup, setSelectedGroup] = useState<DegreeListItem[]>([]);
 
     const [searchTerm, setSearchTerm] = useState("");
     const [filterType, setFilterType] = useState("");
@@ -65,22 +65,35 @@ export function CorsiPage() {
         });
     }, [degrees, searchTerm, filterType, filterArea]);
 
+    const groupedDegrees = useMemo(() => {
+        const map = new Map<string, DegreeListItem[]>();
+        for (const d of filteredDegrees) {
+            const key = `${d.degreeName}||${d.macroArea}||${d.degreeType}`;
+            if (!map.has(key)) map.set(key, []);
+            map.get(key)!.push(d);
+        }
+        return [...map.values()];
+    }, [filteredDegrees]);
+
     const openCreateModal = () => {
         setModalMode('create');
-        setSelectedDegree(null);
+        setSelectedGroup([]);
         setIsModalOpen(true);
     };
 
-    const openEditModal = (degree: DegreeListItem) => {
+    const openEditModal = (group: DegreeListItem[]) => {
         setModalMode('edit');
-        setSelectedDegree(degree);
+        setSelectedGroup(group);
         setIsModalOpen(true);
     };
 
-    const handleDelete = async (id: number, name: string) => {
+    const handleDelete = async (group: DegreeListItem[]) => {
+        const name = group[0].degreeName;
         if (window.confirm(`Sei sicuro di voler eliminare il corso di laurea "${name}"?`)) {
             try {
-                await deleteDegree(id);
+                for (const d of group) {
+                    await deleteDegree(d.id);
+                }
                 loadDegrees();
             } catch (err: any) {
                 setError(err.message || "Errore nell'eliminazione del corso di laurea");
@@ -90,7 +103,7 @@ export function CorsiPage() {
 
     const closeModal = () => {
         setIsModalOpen(false);
-        setSelectedDegree(null);
+        setSelectedGroup([]);
     };
 
     return (
@@ -182,21 +195,23 @@ export function CorsiPage() {
                                     </td>
                                 </tr>
                             ) : (
-                                filteredDegrees.map((degree) => (
-                                    <tr key={degree.id} className="hover:bg-bg/5 transition-colors">
-                                        <td className="px-6 py-4 font-medium text-ink">{degree.degreeName}</td>
-                                        <td className="px-6 py-4 text-ink-3">{degree.macroArea}</td>
-                                        <td className="px-6 py-4 text-ink-2">{degree.degreeType}</td>
-                                        <td className="px-6 py-4 text-ink-3">{degree.degreeYear}</td>
+                                groupedDegrees.map((group) => (
+                                    <tr key={group.map((d) => d.id).join('-')} className="hover:bg-bg/5 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-ink">{group[0].degreeName}</td>
+                                        <td className="px-6 py-4 text-ink-3">{group[0].macroArea}</td>
+                                        <td className="px-6 py-4 text-ink-2">{group[0].degreeType}</td>
+                                        <td className="px-6 py-4 text-ink-3">
+                                            {group.map((d) => d.degreeYear).join(', ')}
+                                        </td>
                                         <td className="px-6 py-4 text-right space-x-3">
                                             <button
-                                                onClick={() => openEditModal(degree)}
+                                                onClick={() => openEditModal(group)}
                                                 className="text-accent hover:text-accent-2 font-medium text-sm transition-colors"
                                             >
                                                 Modifica
                                             </button>
                                             <button
-                                                onClick={() => handleDelete(degree.id, degree.degreeName)}
+                                                onClick={() => handleDelete(group)}
                                                 className="text-red-600 hover:text-red-800 font-medium text-sm transition-colors"
                                             >
                                                 Elimina
@@ -214,7 +229,7 @@ export function CorsiPage() {
                 <CorsoModal
                     isOpen={isModalOpen}
                     mode={modalMode}
-                    degree={selectedDegree}
+                    degreeGroup={selectedGroup}
                     onClose={closeModal}
                     onSave={loadDegrees}
                 />
