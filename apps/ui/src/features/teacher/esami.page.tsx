@@ -291,7 +291,7 @@ function CalendarGrid({
                                     }
                                 >
                                     <span className={'font-mono text-[9.5px] tracking-wide ' + (isMine ? 'text-white/70' : 'text-ink-3')}>
-                                        {fmtTime(exam.startTime)} · {exam.course.courseName.substring(0, 12)}
+                                        {fmtTime(exam.startTime)}
                                     </span>
                                     <span className={'font-medium ' + (isMine ? 'text-paper' : 'text-ink')}>
                                         {exam.course.courseName}
@@ -795,11 +795,6 @@ export function EsamiPage() {
                             })
                         )}
                     </div>
-                    {selectedCourse && (
-                        <p className="text-[12px] text-ink-3 m-0 mt-1">
-                            È ammesso un solo appello al giorno per CdS+anno.
-                        </p>
-                    )}
                 </div>
 
                 {/* Legend */}
@@ -887,9 +882,6 @@ export function EsamiPage() {
                                 {selectedSession ? `- ${selectedSession.macroArea}` : '-'}
                             </em>
                         </h1>
-                        <p className="text-[14px] text-ink-3 m-0 mt-0.5">
-                            Visualizza gli appelli inseriti dai colleghi e pianifica i tuoi nelle date libere.
-                        </p>
                     </div>
                     <button
                         disabled={!insertOpen || !selectedCourse || examLimitReached}
