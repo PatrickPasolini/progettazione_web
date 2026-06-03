@@ -194,11 +194,6 @@ function CalendarGrid({
                     {MONTH_LABELS_IT[viewMonth.getMonth()]}{' '}
                     <span className="text-ink-3">{viewMonth.getFullYear()}</span>
                 </div>
-                <div className="ml-auto flex gap-6 text-[12.5px] text-ink-3">
-                    <span><b className="text-ink font-semibold">{stats.days}</b> giorni utili</span>
-                    <span><b className="text-ink font-semibold">{stats.others}</b> appelli colleghi</span>
-                    <span><b className="text-accent font-semibold">{stats.mine}</b> miei appelli</span>
-                </div>
             </div>
 
             {/* Grid */}
