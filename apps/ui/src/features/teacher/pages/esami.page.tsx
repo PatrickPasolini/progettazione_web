@@ -10,6 +10,7 @@ import {
 } from '../teacher.api';
 import { SessionListItem, CourseListItem, ExamListItem } from '@server/entities/frontend';
 import { buildHolidayMap } from '../../../utils/calendar.utils';
+import { Button } from '../../../components/ui/button';
 import { dateKey } from '../../../utils/date.utils';
 import { CalendarGrid } from '../components/CalendarGrid';
 import { ExamForm } from '../components/ExamForm';
@@ -182,20 +183,19 @@ export function EsamiPage() {
             <main className="flex-1 min-w-0 overflow-y-auto px-9 py-7">
                 <div className="flex items-start justify-between mb-5">
                     <div>
-                        <h1 className="font-serif text-[38px] leading-tight tracking-tight m-0 mt-0.5">
+                        <h1 className="text-[38px] font-bold leading-tight tracking-tight m-0 mt-0.5">
                             Calendario Appelli{' '}
                             <em className="italic text-accent">
                                 {selectedSession ? `- ${selectedSession.macroArea}` : '-'}
                             </em>
                         </h1>
                     </div>
-                    <button
+                    <Button
                         disabled={!insertOpen || !selectedCourse || examLimitReached}
                         onClick={() => setModal({ mode: 'add', date: '' })}
-                        className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-accent text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-accent-2"
                     >
                         + Nuovo appello
-                    </button>
+                    </Button>
                 </div>
 
                 {selectedSession && (

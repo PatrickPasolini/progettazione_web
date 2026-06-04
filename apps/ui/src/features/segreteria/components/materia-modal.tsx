@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { createCourse, updateCourse, fetchTeachers, fetchDegrees } from '../segreteria.api';
 import type { CourseListItem, TeacherListItem, DegreeListItem } from '@server/entities/frontend';
+import { Button } from '../../../components/ui/button';
+import { Input } from '../../../components/ui/input';
+import { Label } from '../../../components/ui/label';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../../../components/ui/dialog';
 
 interface MateriaModalProps {
     isOpen: boolean;
@@ -13,33 +17,25 @@ interface MateriaModalProps {
 
 export function MateriaModal({ isOpen, mode, course, defaultDegreeId, onClose, onSave }: MateriaModalProps) {
     const [courseName, setCourseName] = useState('');
-
     const [teachers, setTeachers] = useState<TeacherListItem[]>([]);
     const [teacherSearch, setTeacherSearch] = useState('');
     const [teacherOpen, setTeacherOpen] = useState(false);
     const [selectedTeacher, setSelectedTeacher] = useState<TeacherListItem | null>(null);
     const teacherRef = useRef<HTMLDivElement>(null);
-
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
     const [degreeSearch, setDegreeSearch] = useState('');
     const [degreeOpen, setDegreeOpen] = useState(false);
     const [selectedDegree, setSelectedDegree] = useState<DegreeListItem | null>(null);
     const degreeRef = useRef<HTMLDivElement>(null);
-
     const [submitting, setSubmitting] = useState(false);
     const [modalError, setModalError] = useState<string | null>(null);
 
     const isDegreeFixed = mode === 'create' && !!defaultDegreeId;
-
-    const defaultDegree = useMemo(
-        () => degrees.find((d) => d.id === defaultDegreeId) ?? null,
-        [degrees, defaultDegreeId]
-    );
+    const defaultDegree = useMemo(() => degrees.find((d) => d.id === defaultDegreeId) ?? null, [degrees, defaultDegreeId]);
 
     const loadData = async () => {
         const [t, d] = await Promise.all([fetchTeachers(), fetchDegrees()]);
-        setTeachers(t);
-        setDegrees(d);
+        setTeachers(t); setDegrees(d);
         if (mode === 'edit' && course) {
             setCourseName(course.courseName);
             const teacherMatch = t.find((tc) => tc.id === course.teacher.id);
@@ -57,241 +53,150 @@ export function MateriaModal({ isOpen, mode, course, defaultDegreeId, onClose, o
             const degreeMatch = degrees.find((deg) => deg.id === course.degree.id);
             if (degreeMatch) setSelectedDegree(degreeMatch);
         } else {
-            setCourseName('');
-            setSelectedTeacher(null);
+            setCourseName(''); setSelectedTeacher(null);
             if (!isDegreeFixed) setSelectedDegree(null);
         }
         setModalError(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isOpen, mode, course, defaultDegreeId]);
 
-    useEffect(() => {
-        if (isOpen) loadData();
-    }, [isOpen]);
+    useEffect(() => { if (isOpen) loadData(); }, [isOpen]);
 
     useEffect(() => {
-        if (isDegreeFixed && defaultDegree && !selectedDegree) {
-            setSelectedDegree(defaultDegree);
-        }
+        if (isDegreeFixed && defaultDegree && !selectedDegree) setSelectedDegree(defaultDegree);
     }, [defaultDegree, isDegreeFixed, selectedDegree, isOpen]);
 
     useEffect(() => {
         const handleClick = (e: MouseEvent) => {
-            if (teacherRef.current && !teacherRef.current.contains(e.target as Node))
-                setTeacherOpen(false);
-            if (degreeRef.current && !degreeRef.current.contains(e.target as Node))
-                setDegreeOpen(false);
+            if (teacherRef.current && !teacherRef.current.contains(e.target as Node)) setTeacherOpen(false);
+            if (degreeRef.current && !degreeRef.current.contains(e.target as Node)) setDegreeOpen(false);
         };
         document.addEventListener('mousedown', handleClick);
         return () => document.removeEventListener('mousedown', handleClick);
     }, []);
 
-    const filteredTeachers = teachers.filter(
-        (t) =>
-            `${t.name} ${t.surname}`.toLowerCase().includes(teacherSearch.toLowerCase()) ||
-            t.email.toLowerCase().includes(teacherSearch.toLowerCase())
+    const filteredTeachers = teachers.filter((t) =>
+        `${t.name} ${t.surname}`.toLowerCase().includes(teacherSearch.toLowerCase()) ||
+        t.email.toLowerCase().includes(teacherSearch.toLowerCase())
     );
+    const filteredDegrees = degrees.filter((d) => d.degreeName.toLowerCase().includes(degreeSearch.toLowerCase()));
 
-    const filteredDegrees = degrees.filter(
-        (d) => d.degreeName.toLowerCase().includes(degreeSearch.toLowerCase())
-    );
-
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: { preventDefault(): void }) => {
         e.preventDefault();
-
-        if (!selectedTeacher) {
-            setModalError("Seleziona un docente.");
-            return;
-        }
-
+        if (!selectedTeacher) { setModalError('Seleziona un docente.'); return; }
         const degreeId = isDegreeFixed ? defaultDegreeId! : selectedDegree?.id;
-        if (!degreeId) {
-            setModalError("Seleziona un corso di laurea.");
-            return;
-        }
-
+        if (!degreeId) { setModalError('Seleziona un corso di laurea.'); return; }
         try {
-            setSubmitting(true);
-            setModalError(null);
-
-            const payload = {
-                courseName,
-                teacherId: selectedTeacher.id,
-                degreeId,
-            };
-
-            if (mode === 'create') {
-                await createCourse(payload);
-            } else if (mode === 'edit' && course) {
-                await updateCourse(course.id, payload);
-            }
-            onSave();
-            onClose();
+            setSubmitting(true); setModalError(null);
+            const payload = { courseName, teacherId: selectedTeacher.id, degreeId };
+            if (mode === 'create') await createCourse(payload);
+            else if (mode === 'edit' && course) await updateCourse(course.id, payload);
+            onSave(); onClose();
         } catch (err: any) {
-            setModalError(err.message || "Errore durante il salvataggio della materia.");
+            setModalError(err.message || 'Errore durante il salvataggio della materia.');
         } finally {
             setSubmitting(false);
         }
     };
 
-    if (!isOpen)
-        return null;
+    const dropdownCls = "absolute z-10 mt-1 w-full bg-background border border-border rounded-lg shadow-lg overflow-y-auto max-h-[120px]";
 
     return (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-white border border-line rounded-xl shadow-lg w-full max-w-md">
-                <div className="bg-bg/30 px-6 py-4 border-b border-line">
-                    <h3 className="font-bold text-lg text-ink">
-                        {mode === 'create' ? 'Aggiungi Nuova Materia' : 'Modifica Materia'}
-                    </h3>
-                </div>
+        <Dialog open={isOpen} onOpenChange={(o) => { if (!o) onClose(); }}>
+            <DialogContent className="max-w-md">
+                <DialogHeader>
+                    <DialogTitle>{mode === 'create' ? 'Aggiungi Nuova Materia' : 'Modifica Materia'}</DialogTitle>
+                </DialogHeader>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="p-6 space-y-4">
+                    <div className="flex flex-col gap-4 py-2">
                         {modalError && (
-                            <div className="text-red-600 bg-red-50 text-sm font-medium p-3 rounded-lg border border-red-100">
+                            <div className="text-destructive bg-destructive/10 text-sm font-medium p-3 rounded-lg border border-destructive/20">
                                 {modalError}
                             </div>
                         )}
 
-                        <div>
-                            <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Nome Corso</label>
-                            <input
-                                type="text"
-                                required
-                                value={courseName}
-                                onChange={(e) => setCourseName(e.target.value)}
-                                className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
-                                placeholder="Es. Analisi Matematica 1"
-                            />
+                        <div className="flex flex-col gap-1.5">
+                            <Label htmlFor="course-name">Nome Corso</Label>
+                            <Input id="course-name" type="text" required value={courseName} onChange={(e) => setCourseName(e.target.value)} placeholder="Es. Analisi Matematica 1" />
                         </div>
 
-                        <div ref={teacherRef} className="relative">
-                            <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Docente</label>
+                        <div ref={teacherRef} className="relative flex flex-col gap-1.5">
+                            <Label>Docente</Label>
                             {selectedTeacher ? (
-                                <div className="flex items-center gap-2 w-full px-3 py-2 border border-accent rounded-lg bg-white">
-                                    <span className="flex-1 text-ink">
-                                        {selectedTeacher.name} {selectedTeacher.surname}
-                                    </span>
-                                    <button
-                                        type="button"
-                                        onClick={() => { setSelectedTeacher(null); setTeacherSearch(''); }}
-                                        className="text-ink-3 hover:text-red-600 text-sm"
-                                    >
-                                        ✕
-                                    </button>
+                                <div className="flex items-center gap-2 w-full px-3 py-2 border border-primary rounded-md bg-background">
+                                    <span className="flex-1 text-sm text-foreground">{selectedTeacher.name} {selectedTeacher.surname}</span>
+                                    <button type="button" onClick={() => { setSelectedTeacher(null); setTeacherSearch(''); }} className="text-muted-foreground hover:text-destructive text-sm">✕</button>
                                 </div>
                             ) : (
-                                <input
-                                    type="text"
-                                    required
-                                    placeholder="Cerca un docente..."
-                                    value={teacherSearch}
+                                <Input type="text" required placeholder="Cerca un docente..." value={teacherSearch}
                                     onFocus={() => setTeacherOpen(true)}
                                     onChange={(e) => { setTeacherSearch(e.target.value); setTeacherOpen(true); }}
-                                    className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
                                 />
                             )}
                             {teacherOpen && !selectedTeacher && (
-                                <div className="absolute z-10 mt-1 w-full bg-white border border-line rounded-lg shadow-lg" style={{ maxHeight: '120px', overflowY: 'auto' }}>
-                                    {filteredTeachers.length === 0 ? (
-                                        <p className="px-3 py-2 text-sm text-ink-4">Nessun docente trovato</p>
-                                    ) : (
-                                        filteredTeachers.map((t) => (
-                                            <button
-                                                key={t.id}
-                                                type="button"
+                                <div className={dropdownCls}>
+                                    {filteredTeachers.length === 0
+                                        ? <p className="px-3 py-2 text-sm text-muted-foreground">Nessun docente trovato</p>
+                                        : filteredTeachers.map((t) => (
+                                            <button key={t.id} type="button"
                                                 onClick={() => { setSelectedTeacher(t); setTeacherSearch(''); setTeacherOpen(false); }}
-                                                className="w-full text-left px-3 py-2 pr-4 hover:bg-bg/50 transition-colors"
-                                            >
-                                                <span className="block text-sm text-ink">{t.name} {t.surname}</span>
-                                                <span className="block text-xs text-ink-3">{t.email}</span>
+                                                className="w-full text-left px-3 py-2 hover:bg-muted transition-colors">
+                                                <span className="block text-sm text-foreground">{t.name} {t.surname}</span>
+                                                <span className="block text-xs text-muted-foreground">{t.email}</span>
                                             </button>
                                         ))
-                                    )}
+                                    }
                                 </div>
                             )}
                         </div>
 
                         {isDegreeFixed ? (
-                            <div>
-                                <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Corso di Laurea</label>
-                                <div className="w-full px-3 py-2 border border-line rounded-lg bg-bg/20 text-ink">
-                                    {defaultDegree
-                                        ? `${defaultDegree.degreeName} — ${defaultDegree.degreeType} ${defaultDegree.degreeYear} (${defaultDegree.macroArea})`
-                                        : 'Caricamento...'
-                                    }
+                            <div className="flex flex-col gap-1.5">
+                                <Label>Corso di Laurea</Label>
+                                <div className="w-full px-3 py-2 border border-border rounded-md bg-muted text-sm text-foreground">
+                                    {defaultDegree ? `${defaultDegree.degreeName} — ${defaultDegree.degreeType} ${defaultDegree.degreeYear} (${defaultDegree.macroArea})` : 'Caricamento…'}
                                 </div>
                             </div>
                         ) : (
-                            <div ref={degreeRef} className="relative">
-                                <label className="block text-xs font-semibold uppercase text-ink-3 mb-1">Corso di Laurea</label>
+                            <div ref={degreeRef} className="relative flex flex-col gap-1.5">
+                                <Label>Corso di Laurea</Label>
                                 {selectedDegree ? (
-                                    <div className="flex items-center gap-2 w-full px-3 py-2 border border-accent rounded-lg bg-white">
-                                        <span className="flex-1 text-ink">
-                                            {selectedDegree.degreeName}
-                                        </span>
-                                        <button
-                                            type="button"
-                                            onClick={() => { setSelectedDegree(null); setDegreeSearch(''); }}
-                                            className="text-ink-3 hover:text-red-600 text-sm"
-                                        >
-                                            ✕
-                                        </button>
+                                    <div className="flex items-center gap-2 w-full px-3 py-2 border border-primary rounded-md bg-background">
+                                        <span className="flex-1 text-sm text-foreground">{selectedDegree.degreeName}</span>
+                                        <button type="button" onClick={() => { setSelectedDegree(null); setDegreeSearch(''); }} className="text-muted-foreground hover:text-destructive text-sm">✕</button>
                                     </div>
                                 ) : (
-                                    <input
-                                        type="text"
-                                        required
-                                        placeholder="Cerca un corso di laurea..."
-                                        value={degreeSearch}
+                                    <Input type="text" required placeholder="Cerca un corso di laurea..." value={degreeSearch}
                                         onFocus={() => setDegreeOpen(true)}
                                         onChange={(e) => { setDegreeSearch(e.target.value); setDegreeOpen(true); }}
-                                        className="w-full px-3 py-2 border border-line rounded-lg focus:outline-none focus:border-accent text-ink"
                                     />
                                 )}
                                 {degreeOpen && !selectedDegree && (
-                                    <div className="absolute z-10 mt-1 w-full bg-white border border-line rounded-lg shadow-lg" style={{ maxHeight: '120px', overflowY: 'auto' }}>
-                                        {filteredDegrees.length === 0 ? (
-                                            <p className="px-3 py-2 text-sm text-ink-4">Nessun corso di laurea trovato</p>
-                                        ) : (
-                                            filteredDegrees.map((d) => (
-                                                <button
-                                                    key={d.id}
-                                                    type="button"
+                                    <div className={dropdownCls}>
+                                        {filteredDegrees.length === 0
+                                            ? <p className="px-3 py-2 text-sm text-muted-foreground">Nessun corso trovato</p>
+                                            : filteredDegrees.map((d) => (
+                                                <button key={d.id} type="button"
                                                     onClick={() => { setSelectedDegree(d); setDegreeSearch(''); setDegreeOpen(false); }}
-                                                    className="w-full text-left px-3 py-2 pr-4 hover:bg-bg/50 transition-colors"
-                                                >
-                                                    <span className="block text-sm text-ink">{d.degreeName}</span>
-                                                    <span className="block text-xs text-ink-3">{d.degreeType} - {d.degreeYear}</span>
+                                                    className="w-full text-left px-3 py-2 hover:bg-muted transition-colors">
+                                                    <span className="block text-sm text-foreground">{d.degreeName}</span>
+                                                    <span className="block text-xs text-muted-foreground">{d.degreeType} - {d.degreeYear}</span>
                                                 </button>
                                             ))
-                                        )}
+                                        }
                                     </div>
                                 )}
                             </div>
                         )}
                     </div>
 
-                    <div className="bg-bg/20 px-6 py-4 border-t border-line flex justify-end space-x-3">
-                        <button
-                            type="button"
-                            onClick={onClose}
-                            disabled={submitting}
-                            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg font-medium text-ink disabled:opacity-50"
-                        >
-                            Annulla
-                        </button>
-                        <button
-                            type="submit"
-                            disabled={submitting}
-                            className="px-4 py-2 bg-accent hover:bg-accent-2 transition-colors text-white rounded-lg font-medium shadow-sm disabled:opacity-50"
-                        >
-                            {submitting ? 'Salvataggio...' : 'Salva'}
-                        </button>
+                    <div className="flex justify-end gap-2 pt-4 border-t border-border mt-2">
+                        <Button type="button" variant="outline" onClick={onClose} disabled={submitting}>Annulla</Button>
+                        <Button type="submit" disabled={submitting}>{submitting ? 'Salvataggio…' : 'Salva'}</Button>
                     </div>
                 </form>
-            </div>
-        </div>
+            </DialogContent>
+        </Dialog>
     );
 }

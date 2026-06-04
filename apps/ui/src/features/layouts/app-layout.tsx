@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
+import { Button } from '../../components/ui/button';
 import { fetchCurrentUser } from '../auth/auth.api';
 
 interface NavTab { label: string; path: string; }
@@ -91,13 +92,14 @@ export function AppLayout() {
               </button>
 
               {open && (
-                <div className="absolute right-0 mt-1 w-40 bg-paper border border-line rounded-lg shadow-md py-1 z-50">
-                  <button
+                <div className="absolute right-0 mt-1 w-40 bg-card border border-border rounded-lg shadow-md py-1 z-50">
+                  <Button
+                    variant="ghost"
                     onClick={() => navigate('/logout')}
-                    className="w-full text-left px-4 py-2 text-sm text-ink-2 hover:bg-gray-100 transition-colors"
+                    className="w-full justify-start px-4 text-sm"
                   >
                     Logout
-                  </button>
+                  </Button>
                 </div>
               )}
             </div>

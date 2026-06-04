@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { CourseListItem, ExamListItem } from '@server/entities/frontend';
 import { isWeekend, fmtTime } from '../../../utils/date.utils';
+import { Button } from '../../../components/ui/button';
+import { Input } from '../../../components/ui/input';
+import { Label } from '../../../components/ui/label';
+import { DatePicker } from '../../../components/ui/date-picker';
 
 interface ExamFormProps {
     mode: 'add' | 'edit';
@@ -48,7 +52,7 @@ export function ExamForm({
         return '';
     }
 
-    async function handleSubmit(e: React.FormEvent) {
+    async function handleSubmit(e: { preventDefault(): void }) {
         e.preventDefault();
         const v = validate();
         if (v) { setErr(v); return; }
@@ -77,28 +81,24 @@ export function ExamForm({
         }
     }
 
-    const inputCls =
-        'w-full px-3 py-[9px] rounded-lg border border-line bg-paper text-ink text-[13.5px] focus:outline-none focus:border-ink-2';
-
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-3.5">
             <div className="grid grid-cols-2 gap-3">
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-[12px] text-ink-3">Data</label>
-                    <input
-                        type="date"
-                        className={inputCls}
+                    <Label>Data</Label>
+                    <DatePicker
                         value={examDate}
                         min={sessionStart}
                         max={sessionEnd}
-                        onChange={(e) => { setExamDate(e.target.value); setErr(''); }}
+                        onChange={(v) => { setExamDate(v); setErr(''); }}
+                        filterDate={(d) => !isWeekend(d) && !holidays[d.toISOString().slice(0, 10)]}
                     />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-[12px] text-ink-3">Ora inizio</label>
-                    <input
+                    <Label htmlFor="start-hour">Ora inizio</Label>
+                    <Input
+                        id="start-hour"
                         type="time"
-                        className={inputCls}
                         value={startHour}
                         step={1800}
                         onChange={(e) => setStartHour(e.target.value)}
@@ -108,68 +108,55 @@ export function ExamForm({
 
             <div className="grid grid-cols-2 gap-3">
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-[12px] text-ink-3">Ora fine</label>
-                    <input
+                    <Label htmlFor="end-hour">Ora fine</Label>
+                    <Input
+                        id="end-hour"
                         type="time"
-                        className={inputCls}
                         value={endHour}
                         step={1800}
                         onChange={(e) => setEndHour(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-[12px] text-ink-3">Materia</label>
-                    <input
-                        type="text"
-                        className={inputCls + ' bg-[#e3e9f3] text-ink-3'}
-                        value={course.courseName}
-                        disabled
-                    />
+                    <Label>Materia</Label>
+                    <Input value={course.courseName} disabled className="bg-muted text-muted-foreground" />
                 </div>
             </div>
 
             <div className="flex flex-col gap-1.5">
-                <label className="text-[12px] text-ink-3">Corso di laurea · Anno</label>
-                <input
-                    type="text"
-                    className={inputCls + ' bg-[#e3e9f3] text-ink-3'}
+                <Label>Corso di laurea · Anno</Label>
+                <Input
                     value={`${course.degree.degreeName} · Anno ${course.degree.degreeYear}`}
                     disabled
+                    className="bg-muted text-muted-foreground"
                 />
             </div>
 
             {err && (
-                <div className="text-[12px] text-accent flex items-center gap-1.5">
+                <div className="text-[12px] text-destructive flex items-center gap-1.5">
                     ⚠ {err}
                 </div>
             )}
 
-            <div className="flex items-center justify-end gap-2 mt-1 pt-3.5 border-t border-line -mx-6 px-6">
+            <div className="flex items-center justify-end gap-2 mt-1 pt-3.5 border-t border-border -mx-6 px-6">
                 {mode === 'edit' && (
-                    <button
+                    <Button
                         type="button"
+                        variant="outline"
+                        size="sm"
                         onClick={handleDelete}
                         disabled={saving}
-                        className="mr-auto text-[12px] px-2.5 py-1.5 rounded-md border border-accent-soft text-accent hover:bg-accent-soft disabled:opacity-40"
+                        className="mr-auto border-destructive/40 text-destructive hover:bg-destructive/10"
                     >
                         Cancella appello
-                    </button>
+                    </Button>
                 )}
-                <button
-                    type="button"
-                    onClick={onCancel}
-                    disabled={saving}
-                    className="text-[13.5px] font-medium px-4 py-2.5 rounded-lg border border-line bg-paper text-ink hover:bg-bg disabled:opacity-40"
-                >
+                <Button type="button" variant="outline" onClick={onCancel} disabled={saving}>
                     Annulla
-                </button>
-                <button
-                    type="submit"
-                    disabled={saving}
-                    className="text-[13.5px] font-medium px-4 py-2.5 rounded-lg bg-accent text-white hover:bg-accent-2 disabled:opacity-40"
-                >
+                </Button>
+                <Button type="submit" disabled={saving}>
                     {saving ? 'Salvataggio…' : mode === 'edit' ? 'Salva modifiche' : 'Conferma appello'}
-                </button>
+                </Button>
             </div>
         </form>
     );

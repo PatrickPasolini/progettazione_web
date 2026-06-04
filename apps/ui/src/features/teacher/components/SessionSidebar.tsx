@@ -101,7 +101,7 @@ export function SessionSidebar({
                                         {sel && <span className="w-2 h-2 rounded-full bg-accent" />}
                                     </span>
                                     <span className="flex flex-col gap-0.5 min-w-0">
-                                        <span className="font-serif text-[17px] leading-tight text-ink">
+                                        <span className="text-[17px] font-semibold leading-tight text-ink">
                                             {course.courseName}
                                         </span>
                                         <span className="text-[12.5px] text-ink-2">

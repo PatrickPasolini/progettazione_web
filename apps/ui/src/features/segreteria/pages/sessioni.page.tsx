@@ -96,7 +96,7 @@ function SessionCard({
       </span>
 
       {/* Macroarea */}
-      <h3 className="font-serif text-2xl m-0 mb-3 pr-24 leading-tight">
+      <h3 className="text-2xl font-semibold m-0 mb-3 pr-24 leading-tight">
         {session.macroArea}
       </h3>
 
@@ -225,7 +225,7 @@ export function SessioniPage() {
             onClick={() => openCreateModal()}
             className="border border-dashed border-line rounded-xl p-5 min-h-[200px] flex flex-col items-center justify-center gap-2 text-ink-3 hover:bg-paper hover:border-ink-3 hover:text-ink transition-colors text-sm"
           >
-            <span className="w-8 h-8 rounded-full bg-line-2 border border-line flex items-center justify-center text-lg font-serif">
+            <span className="w-8 h-8 rounded-full bg-line-2 border border-line flex items-center justify-center text-lg">
               +
             </span>
             <b className="text-ink">Nuova sessione d'esame</b>

@@ -1,26 +1,23 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login, fetchCurrentUser } from './auth.api';
+import { Button } from '../../components/ui/button';
+import { Input } from '../../components/ui/input';
+import { Label } from '../../components/ui/label';
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-
   const navigate = useNavigate();
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: { preventDefault(): void }) {
     e.preventDefault();
-    setError(null);
-    setLoading(true);
-
+    setError(null); setLoading(true);
     try {
       const { mustChangePassword } = await login(email, password);
-      if (mustChangePassword) {
-        navigate('/cambia-password');
-        return;
-      }
+      if (mustChangePassword) { navigate('/cambia-password'); return; }
       const user = await fetchCurrentUser();
       if (user.role === 'SECRETARY') navigate('/segreteria');
       else if (user.role === 'TEACHER') navigate('/docente');
@@ -33,45 +30,25 @@ export function LoginPage() {
   }
 
   return (
-    <main className="min-h-screen bg-bg flex justify-center items-center p-8">
-      <div className="bg-paper w-full max-w-sm p-8 rounded-xl shadow-lg">
-        <h1 className="text-center text-ink text-xl font-semibold m-0">Login</h1>
+    <main className="min-h-screen bg-background flex justify-center items-center p-8">
+      <div className="bg-card border border-border w-full max-w-sm p-8 rounded-xl shadow-lg">
+        <h1 className="text-center text-foreground text-xl font-semibold m-0">Login</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-6">
-          <div className="flex flex-col text-sm">
-            <label className="text-ink-2 font-medium mb-1">Email</label>
-            <input
-              type="email"
-              className="px-3 py-2 rounded-md border border-line focus:outline-none focus:border-accent text-ink"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Inserisci email"
-              required
-            />
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Inserisci email" required />
           </div>
-
-          <div className="flex flex-col text-sm">
-            <label className="text-ink-2 font-medium mb-1">Password</label>
-            <input
-              type="password"
-              className="px-3 py-2 rounded-md border border-line focus:outline-none focus:border-accent text-ink"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Inserisci password"
-              required
-            />
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="password">Password</Label>
+            <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Inserisci password" required />
           </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="mt-2 py-2.5 rounded-md bg-accent text-white font-semibold hover:bg-accent-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-          >
-            {loading ? 'Accesso in corso...' : 'Login'}
-          </button>
+          <Button type="submit" disabled={loading} className="mt-2 w-full">
+            {loading ? 'Accesso in corso…' : 'Login'}
+          </Button>
         </form>
 
-        {error && <p className="mt-4 text-center text-red-500 font-medium text-sm">{error}</p>}
+        {error && <p className="mt-4 text-center text-destructive font-medium text-sm">{error}</p>}
       </div>
     </main>
   );

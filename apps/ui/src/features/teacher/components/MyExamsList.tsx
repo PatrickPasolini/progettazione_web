@@ -1,6 +1,7 @@
 import { ExamListItem, SessionListItem } from '@server/entities/frontend';
 import { dateKey, fmtTime } from '../../../utils/date.utils';
 import { DOW_FULL } from '../../../utils/calendar.utils';
+import { Button } from '../../../components/ui/button';
 
 interface MyExamsListProps {
     myExams: ExamListItem[];
@@ -26,7 +27,7 @@ export function MyExamsList({
                     <p className="font-mono text-[11px] uppercase tracking-widest text-ink-3 m-0">
                         I miei appelli
                     </p>
-                    <div className={`font-serif text-[22px] leading-tight mt-0.5 ${examLimitReached ? 'text-gold' : ''}`}>
+                    <div className={`text-[22px] font-semibold leading-tight mt-0.5 ${examLimitReached ? 'text-gold' : ''}`}>
                         {myExams.length}
                         {session && (
                             <span className="text-ink-3"> / {session.examLimit}</span>
@@ -38,7 +39,7 @@ export function MyExamsList({
 
             {myExams.length === 0 ? (
                 <div className="text-center py-8 px-3.5 text-ink-3 border border-dashed border-line rounded-lg text-sm">
-                    <span className="font-serif text-[22px] text-ink-2 block mb-1">
+                    <span className="text-[22px] font-semibold text-ink-2 block mb-1">
                         Nessun appello
                     </span>
                     Clicca una data libera sul calendario per aggiungere il tuo primo appello.
@@ -55,7 +56,7 @@ export function MyExamsList({
                             >
                                 <div className="flex items-start justify-between">
                                     <div>
-                                        <div className="font-serif text-[22px] leading-none">
+                                        <div className="text-[22px] font-semibold leading-none">
                                             {d.getDate()}{' '}
                                             {d.toLocaleDateString('it-IT', { month: 'short' }).toLowerCase()}
                                         </div>
@@ -73,21 +74,24 @@ export function MyExamsList({
                                 <div className="text-[12px] text-ink-3 mt-0.5">
                                     {exam.degree.degreeName} · Anno {exam.degree.degreeYear}
                                 </div>
-                                <div className="flex gap-1.5 mt-3 pt-2.5 border-t border-line-2">
-                                    <button
+                                <div className="flex gap-1.5 mt-3 pt-2.5 border-t border-border">
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
                                         onClick={() => onEdit(exam)}
                                         disabled={!insertOpen}
-                                        className="text-[12px] px-2.5 py-1.5 rounded-md border border-line text-ink-2 hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
                                     >
                                         Modifica
-                                    </button>
-                                    <button
+                                    </Button>
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
                                         onClick={() => onDelete(exam)}
                                         disabled={!insertOpen}
-                                        className="text-[12px] px-2.5 py-1.5 rounded-md border border-accent-soft text-accent hover:bg-accent-soft disabled:opacity-40 disabled:cursor-not-allowed"
+                                        className="border-destructive/40 text-destructive hover:bg-destructive/10"
                                     >
                                         Cancella
-                                    </button>
+                                    </Button>
                                 </div>
                             </div>
                         );

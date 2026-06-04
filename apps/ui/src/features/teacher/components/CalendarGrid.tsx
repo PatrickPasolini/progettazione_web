@@ -1,6 +1,7 @@
 import { ExamListItem } from '@server/entities/frontend';
 import { toISO, isWeekend, startOfMonth, addMonths, fmtTime } from '../../../utils/date.utils';
 import { DOW_LABELS, MONTH_LABELS_IT } from '../../../utils/calendar.utils';
+import { Button } from '../../../components/ui/button';
 
 interface CalendarGridProps {
     viewMonth: Date;
@@ -56,26 +57,30 @@ export function CalendarGrid({
         <div>
             <div className="flex items-center gap-4 mb-[18px]">
                 <div className="inline-flex gap-0.5">
-                    <button
+                    <Button
+                        variant="outline"
+                        size="icon"
                         onClick={() => setViewMonth(addMonths(viewMonth, -1))}
                         disabled={!canPrev}
-                        className="w-8 h-8 bg-paper border border-line rounded-lg text-ink-2 grid place-items-center hover:bg-[#e3e9f3] disabled:opacity-40 disabled:cursor-not-allowed"
+                        className="w-8 h-8"
                     >
                         <svg viewBox="0 0 12 12" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M7.5 2L3.5 6l4 4" />
                         </svg>
-                    </button>
-                    <button
+                    </Button>
+                    <Button
+                        variant="outline"
+                        size="icon"
                         onClick={() => setViewMonth(addMonths(viewMonth, 1))}
                         disabled={!canNext}
-                        className="w-8 h-8 bg-paper border border-line rounded-lg text-ink-2 grid place-items-center hover:bg-[#e3e9f3] disabled:opacity-40 disabled:cursor-not-allowed"
+                        className="w-8 h-8"
                     >
                         <svg viewBox="0 0 12 12" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'rotate(180deg)' }}>
                             <path d="M7.5 2L3.5 6l4 4" />
                         </svg>
-                    </button>
+                    </Button>
                 </div>
-                <div className="font-serif text-[26px] leading-none">
+                <div className="text-[26px] font-semibold leading-none">
                     {MONTH_LABELS_IT[viewMonth.getMonth()]}{' '}
                     <span className="text-ink-3">{viewMonth.getFullYear()}</span>
                 </div>
@@ -136,7 +141,7 @@ export function CalendarGrid({
                                     className={
                                         isToday && !outMonth
                                             ? 'w-6 h-6 bg-ink text-paper rounded-full grid place-items-center font-mono text-[13px]'
-                                            : 'font-serif text-[18px] leading-none' +
+                                            : 'text-[18px] font-semibold leading-none' +
                                               (outMonth ? ' text-ink-4' : '')
                                     }
                                 >
