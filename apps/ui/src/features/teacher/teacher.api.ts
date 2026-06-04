@@ -1,7 +1,5 @@
 
-import { CourseListItem } from '../../../../../libs/server/entities/src/interfaces/course-list-item';
-import { SessionListItem } from '../../../../../libs/server/entities/src/interfaces/session-list-item';
-import { ExamListItem } from '../../../../../libs/server/entities/src/interfaces/exam-list-item';
+import { CourseListItem, SessionListItem, ExamListItem } from '@server/entities/frontend';
 import { handleApiError } from '../shared/utils.api';
 
 const API_URL = 'http://localhost:3333/api';

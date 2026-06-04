@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { SessionListItem } from '@server/entities/frontend';
-import { fetchSessions } from './segreteria.api';
-import { SessioneModal } from './sessione-modal';
+import { fetchSessions } from '../segreteria.api';
+import { SessioneModal } from '../components/sessione-modal';
 
 // draft: creazione sessione, submission: inserimento exam dei prof, ongoing: sessione in corso , closed: sessione finita
 type SessionStatus = 'draft' | 'submission' | 'ongoing' | 'closed';

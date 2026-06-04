@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { createCourse, updateCourse, fetchTeachers, fetchDegrees } from './segreteria.api';
+import { createCourse, updateCourse, fetchTeachers, fetchDegrees } from '../segreteria.api';
 import type { CourseListItem, TeacherListItem, DegreeListItem } from '@server/entities/frontend';
 
 interface MateriaModalProps {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createDegree, updateDegree, deleteDegree } from './segreteria.api';
+import { createDegree, updateDegree, deleteDegree } from '../segreteria.api';
 import type { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
 
 const ALL_YEARS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'] as const;

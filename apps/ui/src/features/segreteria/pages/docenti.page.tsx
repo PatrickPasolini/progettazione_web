@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchTeachers, deleteTeacher } from "./segreteria.api";
+import { fetchTeachers, deleteTeacher } from "../segreteria.api";
 import { TeacherListItem } from '@server/entities/frontend';
-import { DocenteModal } from './docente-modal';
+import { DocenteModal } from '../components/docente-modal';
 
 export function DocentiPage() {
     // visualizzazione tabella

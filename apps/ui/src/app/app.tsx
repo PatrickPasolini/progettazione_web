@@ -8,18 +8,18 @@ import { AppLayout } from '../features/layouts/app-layout';
 import {
   SegreteriaPage,
   SegreteriaIndex,
-} from '../features/segreteria/segreteria.page';
-import { DocentiPage } from '../features/segreteria/docenti.page';
-import { CorsiPage } from '../features/segreteria/corsi.page';
-import { MateriePage } from '../features/segreteria/materie.page';
+} from '../features/segreteria/pages/segreteria.page';
+import { DocentiPage } from '../features/segreteria/pages/docenti.page';
+import { CorsiPage } from '../features/segreteria/pages/corsi.page';
+import { MateriePage } from '../features/segreteria/pages/materie.page';
 
 
 import {
   TeacherPage,
   TeacherIndex,
-} from '../features/teacher/teacher.page';
-import { EsamiPage } from '../features/teacher/esami.page';
-import { SessioniPage } from '../features/segreteria/sessioni.page';
+} from '../features/teacher/pages/teacher.page';
+import { EsamiPage } from '../features/teacher/pages/esami.page';
+import { SessioniPage } from '../features/segreteria/pages/sessioni.page';
 
 export function App() {
   return (

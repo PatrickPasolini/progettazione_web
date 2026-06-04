@@ -4,7 +4,7 @@ import {
   SessionListItem,
   CreateSessionDto,
 } from '@server/entities/frontend';
-import { createSession, updateSession } from './segreteria.api';
+import { createSession, updateSession } from '../segreteria.api';
 
 interface SessioneModalProps {
   isOpen: boolean;

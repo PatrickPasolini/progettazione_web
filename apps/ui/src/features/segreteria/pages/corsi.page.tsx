@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchDegrees, deleteDegree } from "./segreteria.api";
+import { fetchDegrees, deleteDegree } from "../segreteria.api";
 import { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
-import { CorsoModal } from './corso-modal';
+import { CorsoModal } from '../components/corso-modal';
 
 export function CorsiPage() {
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);

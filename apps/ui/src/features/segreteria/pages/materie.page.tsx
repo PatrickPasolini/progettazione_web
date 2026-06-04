@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchCourses, deleteCourse } from "./segreteria.api";
+import { fetchCourses, deleteCourse } from "../segreteria.api";
 import { CourseListItem } from '@server/entities/frontend';
-import { MateriaModal } from './materia-modal';
+import { MateriaModal } from '../components/materia-modal';
 
 interface YearLeaf {
     degreeId: number;
