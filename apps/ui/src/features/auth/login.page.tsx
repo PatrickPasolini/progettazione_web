@@ -32,9 +32,12 @@ export function LoginPage() {
   return (
     <main className="min-h-screen bg-background flex justify-center items-center p-8">
       <div className="bg-card border border-border w-full max-w-sm p-8 rounded-xl shadow-lg">
-        <h1 className="text-center text-foreground text-xl font-semibold m-0">Login</h1>
+        <div className="flex flex-col items-center gap-2 mb-7">
+          <img src="/examflow-logo.png" alt="ExamFlow" className="h-14 w-auto" />
+          <p className="text-sm text-muted-foreground text-center">Accedi per gestire le sessioni d'esame</p>
+        </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-6">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="email">Email</Label>
             <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Inserisci email" required />
@@ -44,7 +47,7 @@ export function LoginPage() {
             <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Inserisci password" required />
           </div>
           <Button type="submit" disabled={loading} className="mt-2 w-full">
-            {loading ? 'Accesso in corso…' : 'Login'}
+            {loading ? 'Accesso in corso…' : 'Accedi'}
           </Button>
         </form>
 

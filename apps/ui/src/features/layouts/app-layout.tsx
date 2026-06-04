@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { Button } from '../../components/ui/button';
+import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from '../../components/ui/alert-dialog';
 import { fetchCurrentUser } from '../auth/auth.api';
 
 interface NavTab { label: string; path: string; }
@@ -20,6 +21,7 @@ export function AppLayout() {
   const [email, setEmail] = useState<string | null>(null);
   const [tabs, setTabs] = useState<NavTab[]>([]);
   const [open, setOpen] = useState(false);
+  const [logoutOpen, setLogoutOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
@@ -95,7 +97,7 @@ export function AppLayout() {
                 <div className="absolute right-0 mt-1 w-40 bg-card border border-border rounded-lg shadow-md py-1 z-50">
                   <Button
                     variant="ghost"
-                    onClick={() => navigate('/logout')}
+                    onClick={() => { setOpen(false); setLogoutOpen(true); }}
                     className="w-full justify-start px-4 text-sm"
                   >
                     Logout
@@ -109,6 +111,23 @@ export function AppLayout() {
       </header>
 
       <Outlet />
+
+      <AlertDialog open={logoutOpen} onOpenChange={setLogoutOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Conferma uscita</AlertDialogTitle>
+            <AlertDialogDescription>
+              Sei sicuro di voler uscire? Dovrai effettuare di nuovo l'accesso.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Annulla</AlertDialogCancel>
+            <AlertDialogAction onClick={() => navigate('/logout')}>
+              Esci
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
