@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ServerUsersModule } from '@server/users';
-import { OrgBooksModule } from '@org/books';
 import { DatabaseModule } from '@org/database';
 import { ServerAuthModule } from '@server/auth';
 import {
@@ -18,7 +17,6 @@ import {
     DatabaseModule,
     ServerUsersModule,
     ServerAuthModule,
-    OrgBooksModule,
     ServerCourseModule,
     ServerDegreeModule,
     ServerExamModule,
