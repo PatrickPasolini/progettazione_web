@@ -54,4 +54,9 @@ export class CourseRepository {
     async delete(id: number): Promise<DeleteResult> {
         return this.repo.delete(id);
     }
+
+    // Svuota la tabella course. CASCADE pulisce anche exam (exam.course RESTRICT).
+    async clearCascade(): Promise<void> {
+        await this.repo.query('TRUNCATE TABLE "course" RESTART IDENTITY CASCADE');
+    }
 }

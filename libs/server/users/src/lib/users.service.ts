@@ -14,45 +14,25 @@ export class ServerUsersService {
 
     async seed() {
         try {
-            const adminD = this.usersRepository.createOne({
-                name: 'Diego',
-                surname: 'Pioli',
-                email: 'diego.pioli@unibs.it',
-                password: 'Password1!',
-                role: UserRole.ADMIN
-            }, await bcrypt.hash('Password1!', 10));
+            // 3 admin + 1 segreteria per ciascuna area (MacroArea: Economia,
+            // Giurisprudenza, Ingegneria, Medicina). Tutti con password standard.
+            const users: CreateUserDto[] = [
+                { name: 'Diego',      surname: 'Pioli',      email: 'diego.pioli@unibs.it',      password: 'Password1!', role: UserRole.ADMIN },
+                { name: 'Patrick',    surname: 'Pasolini',   email: 'patrick.pasolini@unibs.it', password: 'Password1!', role: UserRole.ADMIN },
+                { name: 'Luca',       surname: 'Martinelli', email: 'luca.martinelli@unibs.it',  password: 'Password1!', role: UserRole.ADMIN },
+                { name: 'Segreteria', surname: 'Economia',       email: 'segreteria.economia@unibs.it',       password: 'Password1!', role: UserRole.SECRETARY },
+                { name: 'Segreteria', surname: 'Giurisprudenza', email: 'segreteria.giurisprudenza@unibs.it', password: 'Password1!', role: UserRole.SECRETARY },
+                { name: 'Segreteria', surname: 'Ingegneria',     email: 'segreteria.ingegneria@unibs.it',     password: 'Password1!', role: UserRole.SECRETARY },
+                { name: 'Segreteria', surname: 'Medicina',       email: 'segreteria.medicina@unibs.it',       password: 'Password1!', role: UserRole.SECRETARY },
+            ];
 
-            const adminP = this.usersRepository.createOne({
-                name: 'Patrick',
-                surname: 'Pasolini',
-                email: 'patrick.pasolini@unibs.it',
-                password: 'Password1!',
-                role: UserRole.ADMIN
-            }, await bcrypt.hash('Password1!', 10));
+            const passwordHash = await bcrypt.hash('Password1!', 10);
 
-            const adminL = this.usersRepository.createOne({
-                name: 'Luca',
-                surname: 'Martinelli',
-                email: 'luca.martinelli@unibs.it',
-                password: 'Password1!',
-                role: UserRole.ADMIN
-            }, await bcrypt.hash('Password1!', 10));
-
-            const secretary1 = this.usersRepository.createOne({
-                name: 'Anna',
-                surname: 'Bianchi',
-                email: 'anna.bianchi@unibs.it',
-                password: 'Password1!',
-                role: UserRole.SECRETARY
-            }, await bcrypt.hash('Password1!', 10));
-
-            const secretary2 = this.usersRepository.createOne({
-                name: 'Marco',
-                surname: 'Rossi',
-                email: 'marco.rossi@unibs.it',
-                password: 'Password1!',
-                role: UserRole.SECRETARY
-            }, await bcrypt.hash('Password1!', 10));
+            for (const u of users) {
+                const exists = await this.usersRepository.findByEmail(u.email);
+                if (exists) continue;
+                await this.usersRepository.createOne(u, passwordHash);
+            }
         }
         catch (error) {
             console.error('Error seeding users:', error);

@@ -94,11 +94,18 @@ export function AppLayout() {
               </button>
 
               {open && (
-                <div className="absolute right-0 mt-1 w-40 bg-card border border-border rounded-lg shadow-md py-1 z-50">
+                <div className="absolute right-0 mt-1 w-48 bg-card border border-border rounded-lg shadow-md py-1 z-50">
+                  <Button
+                    variant="ghost"
+                    onClick={() => { setOpen(false); navigate('/cambia-password'); }}
+                    className="w-full justify-start px-4 text-sm text-ink-2 hover:bg-gray-100 hover:text-ink"
+                  >
+                    Cambia password
+                  </Button>
                   <Button
                     variant="ghost"
                     onClick={() => { setOpen(false); setLogoutOpen(true); }}
-                    className="w-full justify-start px-4 text-sm"
+                    className="w-full justify-start px-4 text-sm text-red-600 hover:bg-red-50 hover:text-red-700"
                   >
                     Logout
                   </Button>
@@ -122,7 +129,7 @@ export function AppLayout() {
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Annulla</AlertDialogCancel>
-            <AlertDialogAction onClick={() => navigate('/logout')}>
+            <AlertDialogAction onClick={() => navigate('/logout')} className="bg-red-600 hover:bg-red-700">
               Esci
             </AlertDialogAction>
           </AlertDialogFooter>

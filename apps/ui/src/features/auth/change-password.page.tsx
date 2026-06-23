@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { changePassword, fetchCurrentUser } from './auth.api';
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
@@ -11,6 +11,9 @@ export function ChangePasswordPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  // forced=true => primo accesso obbligato (impostato dalla login page);
+  // assente/false => cambio password volontario dal menu.
+  const forced = (useLocation().state as { forced?: boolean } | null)?.forced === true;
 
   async function handleSubmit(e: { preventDefault(): void }) {
     e.preventDefault();
@@ -34,7 +37,9 @@ export function ChangePasswordPage() {
       <div className="bg-card border border-border w-full max-w-sm p-8 rounded-xl shadow-lg">
         <h1 className="text-center text-foreground text-xl font-semibold m-0">Cambia Password</h1>
         <p className="text-center text-muted-foreground text-sm mt-1 mb-0">
-          Primo accesso: imposta una nuova password.
+          {forced
+            ? 'Primo accesso: imposta una nuova password.'
+            : 'Imposta una nuova password per il tuo account.'}
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-6">

@@ -1,0 +1,1515 @@
+================================================================================
+4. AREA: AREA INGEGNERIA
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA MEDICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ALGEBRA LINEARE E GEOMETRIA ANALITICA (6 CFU – Primo Semestre)
+    Docente/i: COSTA SIMONE
+  • ANALISI MATEMATICA (9 CFU – Primo Semestre)
+    Docente/i: ROSSI RICCARDA
+  • CHIMICA GENERALE E ORGANICA PER L'INGEGNERIA MEDICA (9 CFU – Primo Semestre)
+    Docente/i: ALESSANDRI IVANO, VASSALINI IRENE
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: BARRICELLI BARBARA RITA
+  • FONDAMENTI DI PROGRAMMAZIONE PER L'INGEGNERIA MEDICA (6 CFU – Secondo Semestre)
+    Docente/i: ADAMI NICOLA
+  • FISICA SPERIMENTALE (9 CFU – Secondo Semestre)
+    Docente/i: LONGHI GIOVANNA
+  • BIOCHIMICA E BIOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: MITOLA STEFANIA MARIA FILOMENA
+  • BIOLOGIA GENERALE E CELLULARE (3 CFU – Secondo Semestre)
+    Docente/i: BARBON ALESSANDRO
+  • BIOCHIMICA (3 CFU – Secondo Semestre)
+    Docente/i: MITOLA STEFANIA MARIA FILOMENA
+  • FONDAMENTI DI RETI E CYBERSECURITY PER LA TELEMEDICINA (6 CFU – Secondo Semestre)
+    Docente/i: GRINGOLI FRANCESCO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: CORSO DI LAUREA IN TECNICHE DELL'EDILIZIA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • LABORATORIO DI ORGANIZZAZIONE DEL CANTIERE E SICUREZZA (18 CFU – Ciclo Annuale Unico)
+    Docente/i: CIRIBINI ANGELO LUIGI CAMILLO, MASTROLEMBO VENTURA SILVIA
+  • MATEMATICA (6 CFU – Primo Semestre)
+    Docente/i: MORANDO ALESSANDRO
+  • DISEGNO E LABORATORIO CAD (9 CFU – Primo Semestre)
+    Docente/i: BORIN PAOLO, INNOCENTI SERENO MARCO
+  • TOPOGRAFIA (6 CFU – Primo Semestre)
+    Docente/i: VASSENA GIORGIO PAOLO MARIA
+  • FISICA (6 CFU – Secondo Semestre)
+    Docente/i: ZURLO NICOLA, FERRONI MATTEO
+  • TECNICHE INFORMATICHE (6 CFU – Secondo Semestre)
+    Docente/i: AMATO ALESSIA
+  • LABORATORIO DI RILIEVI TOPOGRAFICI E CARTOGRAFIA (9 CFU – Secondo Semestre)
+    Docente/i: VASSENA GIORGIO PAOLO MARIA
+
+  [2° Anno]
+  • ELEMENTI DI FISICA TECNICA (6 CFU – Primo Semestre)
+    Docente/i: PILOTELLI MARIAGRAZIA, PIANA EDOARDO ALESSIO
+  • ELEMENTI DI ESTIMO E VALUTAZIONI IMMOBILIARI (6 CFU – Primo Semestre)
+    Docente/i: GUERRA MARTINA
+  • FONDAMENTI DI STATICA (6 CFU – Primo Semestre)
+    Docente/i: CARINI ANGELO, FANTONI FRANCESCA
+  • ELEMENTI DI DIRITTO (CFU n/d – Primo Semestre)
+    Docente/i: BREDA ROSANNA
+  • ELEMENTI DI DIRITTO AMMINISTRATIVO (3 CFU – Primo Semestre)
+    Docente/i: DE LUCA NICOLA
+  • PRATICA FORENSE (3 CFU – Primo Semestre)
+    Docente/i: BREDA ROSANNA
+  • COMPOSIZIONE ARCHITETTONICA E URBANA (6 CFU – Primo Semestre)
+    Docente/i: LONGO OLIVIA
+  • FONDAMENTI DI IDRAULICA (6 CFU – Secondo Semestre)
+    Docente/i: VALERIO GIULIA
+  • LABORATORIO DI PROGETTAZIONE EDILIZIA (12 CFU – Secondo Semestre)
+    Docente/i: PLIZZARI GIOVANNI, CONFORTI ANTONIO
+  • LABORATORIO DI GIS PER LA PIANIFICAZIONE (9 CFU – Secondo Semestre)
+    Docente/i: BARONE PAOLA
+  • SEMINARI CERTIFICATI (1 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GENTILE MARIA
+
+  [3° Anno]
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ORLANDO SERGIO
+  • TIROCINIO PRATICO-VALUTATIVO TPV (50 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MONTI FRANCESCO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: CORSO DI LAUREA IN TECNICHE INDUSTRIALI DI PRODOTTO E DI PROCESSO [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ELEMENTI DI MATEMATICA LP (6 CFU – Primo Semestre)
+    Docente/i: MORETTI ROBERTA
+  • ELEMENTI DI INFORMATICA LP (6 CFU – Primo Semestre)
+    Docente/i: GARDA MASSIMILIANO
+  • ELEMENTI DI FISICA LP (5 CFU – Primo Semestre)
+    Docente/i: FERRARI SERGIO
+  • ELEMENTI DI CHIMICA LP (4 CFU – Primo Semestre)
+    Docente/i: DEPERO LAURA ELEONORA
+  • METROLOGIA INDUSTRIALE LP (5 CFU – Primo Semestre)
+    Docente/i: VETTURI DAVID
+  • DISEGNO TECNICO INDUSTRIALE LP (5 CFU – Primo Semestre)
+    Docente/i: RUSSO LORENZO
+  • MECCANICA APPLICATA ALLE MACCHINE LP (5 CFU – Secondo Semestre)
+    Docente/i: FAGLIA RODOLFO
+  • ELETTROTECNICA LP (6 CFU – Secondo Semestre)
+    Docente/i: GATTI FABIO
+  • CONTROLLI AUTOMATICI LP (6 CFU – Secondo Semestre)
+    Docente/i: BESCHI MANUEL
+  • IMPIANTI LP (6 CFU – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO
+  • SISTEMI D'AUTOMAZIONE E ROBOTICI LP (6 CFU – Secondo Semestre)
+    Docente/i: ADAMINI RICCARDO
+  • FISICA TECNICA LP (6 CFU – Secondo Semestre)
+    Docente/i: MARTINELLI MAURIZIO
+  • TECNOLOGIE MECCANICHE LP (6 CFU – Secondo Semestre)
+    Docente/i: ATTANASIO ALDO, ABENI ANDREA
+  • MATERIALI METALLICI LP (6 CFU – Secondo Semestre)
+    Docente/i: TOCCI MARIALAURA
+  • COSTRUZIONE DI MACCHINE LP (6 CFU – Secondo Semestre)
+    Docente/i: BATTINI DAVIDE
+
+  [2° Anno]
+  • AZIONAMENTI ELETTRICI E A FLUIDO LP (6 CFU – Primo Semestre)
+    Docente/i: TIBONI MONICA
+  • MATERIALI POLIMERICI LP (6 CFU – Primo Semestre)
+    Docente/i: AGNELLI SILVIA
+  • MACCHINE E SISTEMI ENERGETICI LP (6 CFU – Primo Semestre)
+    Docente/i: MARIANI SILVIA
+  • LABORATORIO DI ROBOTICA E SISTEMI DI AUTOMAZIONE (12 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI NICOLA, PAGANI ROBERTO, ARDOLINO MARCO, LEGNANI GIOVANNI
+  • LABORATORIO DI SISTEMI DI AZIONAMENTO (6 CFU – Primo Semestre)
+    Docente/i: TIBONI MONICA, BESCHI MANUEL, ASTOLFI DAVIDE, PASETTI MARCO
+  • LABORATORIO DI PROCESSI METALLURGICI (6 CFU – Primo Semestre)
+    Docente/i: POLA ANNALISA
+  • NORMATIVE E SICUREZZA LP (3 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • LABORATORIO DI PROGETTAZIONE MECCANICA E TECNOLOGIA (12 CFU – Secondo Semestre)
+    Docente/i: BODINI ILEANA, BATTINI DAVIDE
+  • LABORATORIO DI INTEGRAZIONE DI SISTEMI D'AUTOMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: PAGANI ROBERTO, TIBONI MONICA
+  • LABORATORIO DI ENERGIA (6 CFU – Secondo Semestre)
+    Docente/i: GHIDONI ANTONIO
+  • LABORATORIO DI IMPIANTI ELETTRICI (6 CFU – Secondo Semestre)
+    Docente/i: DI MARCOBERARDINO GIOELE, ASTOLFI DAVIDE
+
+  [3° Anno]
+  • PROJECT WORK (6 CFU – Primo Semestre)
+    Docente/i: TOCCI MARIALAURA
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MANCINI SIMONE
+  • TIROCINIO PRATICO-VALUTATIVO - AREA INDUSTRIALE - A (24 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: BRUNO DANIELE
+  • TIROCINIO PRATICO-VALUTATIVO - AREA INDUSTRIALE - B (24 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GIORDANO FEDERICA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA CIVILE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • DISEGNO (9 CFU – Primo Semestre)
+    Docente/i: DE PAOLI MASSIMO
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: COSTA SIMONE, PASOTTI STEFANO
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: GIACOMINI ALESSANDRO, MORANDO ALESSANDRO
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: FOGLI DANIELA
+  • STORIA DELL'ARCHITETTURA (9 CFU – Secondo Semestre)
+    Docente/i: GIUSTINA IRENE ITALIA
+  • CHIMICA (9 CFU – Secondo Semestre)
+    Docente/i: DEPERO LAURA ELEONORA
+  • FISICA SPERIMENTALE I (MECC., TERM.) (9 CFU – Secondo Semestre)
+    Docente/i: FERRONI MATTEO, ZURLO NICOLA
+
+  [2° Anno]
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: KOVARIK HYNEK, TREBESCHI PAOLA
+  • TOPOGRAFIA (8 CFU – Primo Semestre)
+    Docente/i: VASSENA GIORGIO PAOLO MARIA
+  • MECCANICA RAZIONALE (9 CFU – Secondo Semestre)
+    Docente/i: VUK ELENA, ZULLO FEDERICO
+  • FISICA SPERIMENTALE II (ELETTROM., OTTICA ONDE) (9 CFU – Secondo Semestre)
+    Docente/i: ZURLO NICOLA, FERRONI MATTEO
+  • VALUTAZIONE DEGLI INVESTIMENTI E GESTIONE DEI PROGETTI (6 CFU – Secondo Semestre)
+    Docente/i: FERRETTI IVAN
+  • GEOLOGIA APPLICATA (8 CFU – Secondo Semestre)
+    Docente/i: MONTRASIO LORELLA, GATTO MICHELE PLACIDO ANTONIO
+
+  [3° Anno]
+  • SCIENZA DELLE COSTRUZIONI (10 CFU – Ciclo Annuale Unico)
+    Docente/i: BARDELLA LORENZO
+  • FISICA TECNICA (9 CFU – Primo Semestre)
+    Docente/i: PIANA EDOARDO ALESSIO, PILOTELLI MARIAGRAZIA
+  • IDRAULICA (10 CFU – Primo Semestre)
+    Docente/i: PILOTTI MARCO
+  • ARCHITETTURA TECNICA (9 CFU – Secondo Semestre)
+    Docente/i: ARENGHI ALBERTO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: BERNARDI SERGIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: PASOTTI STEFANO
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: ROSSI RICCARDA
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: FRANCO LAURA
+  • DISEGNO TECNICO INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: BARONIO GABRIELE
+  • FISICA SPERIMENTALE (MECC., ELETTROM.) (9 CFU – Secondo Semestre)
+    Docente/i: BONOMI GERMANO, PAGANO DAVIDE
+  • FONDAMENTI DI PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: CATTANEO ROBERTA
+
+  [2° Anno]
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: KOVARIK HYNEK, BONFANTI GIOVANNA, ROSSI RICCARDA
+  • ELETTROTECNICA (6 CFU – Primo Semestre)
+    Docente/i: ROCCO DAVIDE
+  • FISICA SPERIMENTALE (OTTICA ONDE) (6 CFU – Primo Semestre)
+    Docente/i: PAGANO DAVIDE
+  • TECNOLOGIE MECCANICHE E MACCHINE  DI LAVORAZIONE (9 CFU – Primo Semestre)
+    Docente/i: GINESTRA PAOLA SERENA
+  • FISICA TECNICA (9 CFU – Secondo Semestre)
+    Docente/i: PICCHI DAVIDE
+  • FONDAMENTI DI AUTOMATICA (9 CFU – Secondo Semestre)
+    Docente/i: VISIOLI ANTONIO
+  • MECCANICA RAZIONALE (6 CFU – Secondo Semestre)
+    Docente/i: AMATO ANDREA
+  • FONDAMENTI DI ELETTRONICA E STRUMENTAZIONE (9 CFU – Secondo Semestre)
+    Docente/i: FERRARI VITTORIO, NASTRO ALESSANDRO
+
+  [3° Anno]
+  • SISTEMI DI CONTROLLO IN TEMPO REALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CARNEVALE CLAUDIO
+  • MECCANICA DELLE MACCHINE E MACCHINE (12 CFU – Primo Semestre)
+    Docente/i: ADAMINI RICCARDO, INCERTI GIOVANNI
+  • SISTEMI DI VISIONE (6 CFU – Primo Semestre)
+    Docente/i: PASINETTI SIMONE
+  • SISTEMI DISTRIBUITI E PLC (6 CFU – Primo Semestre)
+    Docente/i: FERRARI PAOLO
+  • MECCANICA DEGLI AZIONAMENTI (9 CFU – Secondo Semestre)
+    Docente/i: TIBONI MONICA
+  • COSTRUZIONE DI MACCHINE (6 CFU – Secondo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • LABORATORIO DI PROGETTAZIONE FUNZIONALE DI SISTEMI PER L'AUTOMAZIONE (3 CFU – Secondo Semestre)
+    Docente/i: ADAMINI RICCARDO, PELLEGRINI NICOLA
+  • CONTROLLO DIGITALE (6 CFU – Secondo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RINALDI MARIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA DELLE TECNOLOGIE PER L'IMPRESA DIGITALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ANALISI MATEMATICA PER L'IMPRESA DIGITALE (9 CFU – Primo Semestre)
+    Docente/i: MARCELLINI FRANCESCA
+  • ALGEBRA LINEARE E GEOMETRIA ANALITICA (6 CFU – Primo Semestre)
+    Docente/i: COSTA SIMONE
+  • ECONOMIA E GESTIONE AZIENDALE (6 CFU – Primo Semestre)
+    Docente/i: DE ANGELIS ALESSIA
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA, SAETTI ALESSANDRO
+  • SISTEMI DI ELABORAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: CERUTTI FEDERICO, SCALA ENRICO
+  • SISTEMI ELETTRONICI PER L'AUTOMAZIONE E L'INDUSTRIA (6 CFU – Secondo Semestre)
+    Docente/i: FLAMMINI ALESSANDRA
+  • FONDAMENTI DI PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: DONELLI ENRICO, SERINA IVAN
+  • FISICA SPERIMENTALE (12 CFU – Secondo Semestre)
+    Docente/i: FAGLIA GUIDO, MASCAGNA VALERIO
+
+  [2° Anno]
+  • ELEMENTI DI TELECOMUNICAZIONI (9 CFU – Primo Semestre)
+    Docente/i: BENINI SERGIO, LO CIGNO RENATO ANTONIO, GNUTTI ALESSANDRO
+  • PROGETTAZIONE SOFTWARE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA
+  • STATISTICA PER L'INGEGNERIA (6 CFU – Primo Semestre)
+    Docente/i: VUK ELENA
+  • ANALISI MATEMATICA PER L'INGEGNERIA (3 CFU – Primo Semestre)
+    Docente/i: KOVARIK HYNEK
+  • ANALISI E STATISTICA PER L'INGEGNERIA (CFU n/d – Primo Semestre)
+    Docente/i: KOVARIK HYNEK
+  • CIRCUITI ELETTRICI (6 CFU – Primo Semestre)
+    Docente/i: ROCCO DAVIDE
+  • ELETTROMAGNETISMO (3 CFU – Primo Semestre)
+    Docente/i: DE CEGLIA DOMENICO
+  • ELETTROMAGNETISMO E CIRCUITI ELETTRICI (CFU n/d – Primo Semestre)
+    Docente/i: DE CEGLIA DOMENICO
+  • SISTEMI DI PRODUZIONE (6 CFU – Primo Semestre)
+    Docente/i: PERONA MARCO
+  • AUTOMAZIONE E CONTROLLO (9 CFU – Secondo Semestre)
+    Docente/i: CARE' ALGO
+  • SISTEMI DI GESTIONE DATI E PROCESSI (9 CFU – Secondo Semestre)
+    Docente/i: RULA ANISA, MELCHIORI MICHELE
+  • MACCHINE E IMPIANTI ELETTRICI (6 CFU – Secondo Semestre)
+    Docente/i: PASETTI MARCO
+  • SISTEMI DI PRODUZIONE E IMPIANTI (CFU n/d – Secondo Semestre)
+    Docente/i: PERONA MARCO
+
+  [3° Anno]
+  • SISTEMI INTELLIGENTI, USER EXPERIENCE E ROBOTICA (9 CFU – Ciclo Annuale Unico)
+    Docente/i: BARRICELLI BARBARA RITA, SCALA ENRICO
+  • INTRODUZIONE A CYBER SECURITY, BIG DATA E INTERNET OF THINGS (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARI PAOLO
+  • SISTEMI DI MISURA E QUALITA' (9 CFU – Primo Semestre)
+    Docente/i: SERPELLONI MAURO, BORGHETTI MICHELA
+  • COMPONENTI ELETTRONICI E SISTEMI DIGITALI (CFU n/d – Primo Semestre)
+    Docente/i: SISINNI EMILIANO
+  • COMPONENTI ELETTRONICI (3 CFU – Primo Semestre)
+    Docente/i: BAU' MARCO
+  • SISTEMI DIGITALI (6 CFU – Primo Semestre)
+    Docente/i: SISINNI EMILIANO
+  • INTRODUZIONE ALLA CYBER SECURITY E AI BIG DATA (6 CFU – Primo Semestre)
+    Docente/i: GRINGOLI FRANCESCO, BIANCHINI DEVIS
+  • INTERNET OF THINGS (6 CFU – Secondo Semestre)
+    Docente/i: FERRARI PAOLO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: LOMBARDI CLAUDIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA ELETTRONICA E DELLE TELECOMUNICAZIONI [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: GIUZZI LUCA, PASOTTI STEFANO
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: GERVASIO PAOLA, MARCELLINI FRANCESCA
+  • ECONOMIA E GESTIONE AZIENDALE (6 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI MASSIMO
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA, SAETTI ALESSANDRO
+  • PROBABILITA' E STATISTICA (6 CFU – Secondo Semestre)
+    Docente/i: ZULLO FEDERICO, VUK ELENA
+  • FONDAMENTI DI PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: DONELLI ENRICO, SERINA IVAN
+  • CHIMICA PER LE TECNOLOGIE (6 CFU – Secondo Semestre)
+    Docente/i: ALESSANDRI IVANO
+  • FISICA SPERIMENTALE I (MECC., TERM.) (9 CFU – Secondo Semestre)
+    Docente/i: VENTURELLI LUCA, COMINI ELISABETTA
+
+  [2° Anno]
+  • FISICA SPERIMENTALE (ELETTROM., OTTICA, SEMICOND., APPLICAZIONI) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: ZAPPA DARIO
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: COLOMBO RINALDO MARIO
+  • ELEMENTI DI RETI DI TELECOMUNICAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • RETI DI TELECOMUNICAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • ELEMENTI DI RETI DI TELECOMUNICAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • COMPLEMENTI DI RETI DI TELECOMUNICAZIONE (3 CFU – Primo Semestre)
+    Docente/i: GRINGOLI FRANCESCO
+  • FISICA SPERIMENTALE (ELETTROM., OTTICA, SEMICOND.) (9 CFU – Primo Semestre)
+    Docente/i: ZAPPA DARIO, MASCAGNA VALERIO
+  • FISICA, ELETTROMAGNETISMO ED ELETTROTECNICA (CFU n/d – Primo Semestre)
+    Docente/i: LOCATELLI ANDREA
+  • FISICA SPERIMENTALE (ELETTROM., OTTICA) (6 CFU – Primo Semestre)
+    Docente/i: ZAPPA DARIO, MASCAGNA VALERIO
+  • ELETTROTECNICA (6 CFU – Primo Semestre)
+    Docente/i: LOCATELLI ANDREA
+  • ELETTROTECNICA (6 CFU – Primo Semestre)
+    Docente/i: LOCATELLI ANDREA
+  • FONDAMENTI DI AUTOMATICA (9 CFU – Secondo Semestre)
+    Docente/i: RAMPONI FEDERICO ALESSANDRO
+  • SEGNALI E SISTEMI (9 CFU – Secondo Semestre)
+    Docente/i: LEONARDI RICCARDO, DALAI MARCO
+  • FONDAMENTI DI SEGNALI E SISTEMI (6 CFU – Secondo Semestre)
+    Docente/i: LEONARDI RICCARDO, DALAI MARCO
+  • APPLICAZIONI DI FISICA (3 CFU – Secondo Semestre)
+    Docente/i: ZAPPA DARIO
+  • FONDAMENTI DI ELETTRONICA (9 CFU – Secondo Semestre)
+    Docente/i: FERRARI MARCO, NASTRO ALESSANDRO
+
+  [3° Anno]
+  • ELETTRONICA DIGITALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: DEPARI ALESSANDRO
+  • SISTEMI OPERATIVI (6 CFU – Primo Semestre)
+    Docente/i: BARONI PIETRO
+  • CAMPI ELETTROMAGNETICI (9 CFU – Primo Semestre)
+    Docente/i: DE ANGELIS COSTANTINO, CARLETTI LUCA
+  • RETI LOGICHE ED ELETTRONICA DIGITALE (6 CFU – Primo Semestre)
+    Docente/i: DEPARI ALESSANDRO
+  • SISTEMI OPERATIVI E PROGETTAZIONE SOFTWARE (CFU n/d – Primo Semestre)
+    Docente/i: BARONI PIETRO
+  • SISTEMI OPERATIVI (6 CFU – Primo Semestre)
+    Docente/i: BARONI PIETRO
+  • ELEMENTI DI PROGETTAZIONE SOFTWARE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA
+  • TRATTAMENTO DIGITALE DELL'INFORMAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: LEONARDI RICCARDO
+  • ELABORAZIONE NUMERICA DEI SEGNALI (6 CFU – Primo Semestre)
+    Docente/i: MIGLIORATI PIERANGELO, LEONARDI RICCARDO
+  • INTRODUZIONE AI CYBERMEDIA (6 CFU – Primo Semestre)
+    Docente/i: LEONARDI RICCARDO, GNUTTI ALESSANDRO
+  • SISTEMI ELETTRONICI DIGITALI E MICROPROCESSORI (6 CFU – Secondo Semestre)
+    Docente/i: DEPARI ALESSANDRO
+  • MISURE E SISTEMI PER L'INDUSTRIA (CFU n/d – Secondo Semestre)
+    Docente/i: BRANDÃO DENNIS
+  • SISTEMI PER L'INDUSTRIA E PLC (6 CFU – Secondo Semestre)
+    Docente/i: FLAMMINI ALESSANDRA, RINALDI STEFANO
+  • MISURE ELETTRONICHE (6 CFU – Secondo Semestre)
+    Docente/i: BRANDÃO DENNIS
+  • PRINCIPI DI TRASMISSIONE RETI CELLULARI E 5G (CFU n/d – Secondo Semestre)
+    Docente/i: BENINI SERGIO
+  • ARCHITETTURA E PROTOCOLLI (3 CFU – Secondo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • PIANIFICAZIONE DI RETE (3 CFU – Secondo Semestre)
+    Docente/i: CARLETTI LUCA
+  • PRINCIPI DI TRASMISSIONE DELL'INFORMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: BENINI SERGIO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SARTORI MARIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA GESTIONALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: BASILE ENRICO
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: GALLO DANIELE
+  • ANALISI MATEMATICA A GESTIONALI (6 CFU – Primo Semestre)
+    Docente/i: MORANDO ALESSANDRO
+  • DISEGNO TECNICO INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: BODINI ILEANA, UBERTI STEFANO
+  • PROBABILITA' E STATISTICA (6 CFU – Secondo Semestre)
+    Docente/i: NASO MARIA GRAZIA, ZULLO FEDERICO
+  • FISICA SPERIMENTALE (MECC., ELETTROM.) (9 CFU – Secondo Semestre)
+    Docente/i: BONOMI GERMANO
+  • ANALISI MATEMATICA B GESTIONALI (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI RICCARDA
+
+  [2° Anno]
+  • FONDAMENTI DI MECCANICA E COSTRUZIONE DI MACCHINE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: D'AMICO SIMONE
+  • ANALISI DEI SISTEMI E OTTIMIZZAZIONE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CATTANEO FRANCESCA
+  • METALLURGIA (6 CFU – Primo Semestre)
+    Docente/i: CORNACCHIA GIOVANNA, TOCCI MARIALAURA
+  • TECNOLOGIA MECCANICA (9 CFU – Primo Semestre)
+    Docente/i: GIORLEO LUCA
+  • FONDAMENTI DI MECCANICA (6 CFU – Primo Semestre)
+    Docente/i: REMINO CARLO
+  • ANALISI DEI SISTEMI (6 CFU – Primo Semestre)
+    Docente/i: VOLTA MARIALUISA
+  • FISICA TECNICA (9 CFU – Secondo Semestre)
+    Docente/i: POESIO PIETRO
+  • ISTITUZIONI DI ECONOMIA (9 CFU – Secondo Semestre)
+    Docente/i: D'AMICO MATTEO
+  • RICERCA OPERATIVA (6 CFU – Secondo Semestre)
+    Docente/i: MANERBA DANIELE
+  • COSTRUZIONE DI MACCHINE (6 CFU – Secondo Semestre)
+    Docente/i: SOLAZZI LUIGI
+
+  [3° Anno]
+  • PROGETTAZIONE DI IMPIANTI E LABORATORIO DI SISTEMI PRODUTTIVI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MARTINI TOMMASO
+  • GESTIONE DEGLI IMPIANTI E DELLA LOGISTICA INDUSTRIALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BERNARDI SILVIA
+  • ECONOMIA E FINANZA AZIENDALE (CORSO INTEGRATO) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FONTANA TOMMASO
+  • GESTIONE INDUSTRIALE DELLA QUALITA' (6 CFU – Primo Semestre)
+    Docente/i: CERETTI ELISABETTA, SEITI MIRIAM
+  • ECONOMIA ED ORGANIZZAZIONE AZIENDALE (6 CFU – Primo Semestre)
+    Docente/i: MUTINELLI MARCO ALBERTO
+  • PROGETTAZIONE DI IMPIANTI (6 CFU – Primo Semestre)
+    Docente/i: SACCANI NICOLA
+  • GESTIONE DEGLI IMPIANTI (6 CFU – Primo Semestre)
+    Docente/i: TOMASONI GIUSEPPE
+  • MISURE ELETTRICHE ED ELETTRONICHE (6 CFU – Secondo Semestre)
+    Docente/i: CRESCINI DAMIANO
+  • SISTEMI DI CONTROLLO DI GESTIONE E FINANZA (9 CFU – Secondo Semestre)
+    Docente/i: MARIANI SIMONE
+  • LOGISTICA INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • LABORATORIO DI SISTEMI PRODUTTIVI (6 CFU – Secondo Semestre)
+    Docente/i: SACCANI NICOLA
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: PARISI SIMONE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA INFORMATICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: GIUZZI LUCA, PASOTTI STEFANO
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: GERVASIO PAOLA, MARCELLINI FRANCESCA
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA, SAETTI ALESSANDRO
+  • PROBABILITA' E STATISTICA (6 CFU – Secondo Semestre)
+    Docente/i: ZULLO FEDERICO, VUK ELENA
+  • FONDAMENTI DI PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: DONELLI ENRICO, SERINA IVAN
+  • ECONOMIA APPLICATA ALL'INGEGNERIA (6 CFU – Secondo Semestre)
+    Docente/i: MARINO ELISA
+  • FISICA SPERIMENTALE I (MECC., TERM.) (9 CFU – Secondo Semestre)
+    Docente/i: VENTURELLI LUCA, COMINI ELISABETTA
+
+  [2° Anno]
+  • ANALISI MATEMATICA E RICERCA OPERATIVA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MANSINI RENATA
+  • FISICA E CIRCUITI ELETTRICI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LOCATELLI ANDREA
+  • PROGRAMMAZIONE AVANZATA JAVA E C (9 CFU – Primo Semestre)
+    Docente/i: BIANCO VALENTINA
+  • RETI DI TELECOMUNICAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • ELEMENTI DI RETI DI TELECOMUNICAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LO CIGNO RENATO ANTONIO
+  • COMPLEMENTI DI RETI DI TELECOMUNICAZIONE (3 CFU – Primo Semestre)
+    Docente/i: GRINGOLI FRANCESCO
+  • FISICA SPERIMENTALE II (6 CFU – Primo Semestre)
+    Docente/i: MASCAGNA VALERIO, VENTURELLI LUCA
+  • ANALISI MATEMATICA II (6 CFU – Primo Semestre)
+    Docente/i: COLOMBO RINALDO MARIO
+  • CALCOLATORI ELETTRONICI (6 CFU – Secondo Semestre)
+    Docente/i: GIACOMIN MASSIMILIANO
+  • FONDAMENTI DI AUTOMATICA (9 CFU – Secondo Semestre)
+    Docente/i: RAMPONI FEDERICO ALESSANDRO
+  • CIRCUITI ELETTRICI PER L'ELETTRONICA (6 CFU – Secondo Semestre)
+    Docente/i: LOCATELLI ANDREA, ROCCO DAVIDE
+  • RICERCA OPERATIVA (6 CFU – Secondo Semestre)
+    Docente/i: MANSINI RENATA
+
+  [3° Anno]
+  • INGEGNERIA DEL SOFTWARE (9 CFU – Ciclo Annuale Unico)
+    Docente/i: ZANELLA MARINA, SAETTI ALESSANDRO
+  • SISTEMI OPERATIVI E IMPIANTI INFORMATICI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BARONI PIETRO
+  • BASI DI DATI E PROGRAMMAZIONE WEB (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: RULA ANISA
+  • LINGUAGGI DI PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LAMPERTI GIAN FRANCO
+  • BASI DI DATI (6 CFU – Primo Semestre)
+    Docente/i: RULA ANISA
+  • ELETTRONICA GENERALE (9 CFU – Primo Semestre)
+    Docente/i: FLAMMINI ALESSANDRA, SISINNI EMILIANO
+  • SISTEMI OPERATIVI (6 CFU – Primo Semestre)
+    Docente/i: BARONI PIETRO
+  • PROGRAMMAZIONE WEB (6 CFU – Secondo Semestre)
+    Docente/i: GIORDANO MASSIMO
+  • IMPIANTI INFORMATICI (6 CFU – Secondo Semestre)
+    Docente/i: BARONI PIETRO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ROSSI ROBERTO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA MECCANICA E DEI MATERIALI [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • INFORMATICA E PROGRAMMAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: GIACOMIN MASSIMILIANO
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: TRAETTA TOMMASO, PASOTTI ANITA
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: LUTEROTTI FABIO, GIACOMINI ALESSANDRO
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: GIACOMIN MASSIMILIANO
+  • COMPLEMENTI DI PROGRAMMAZIONE (3 CFU – Primo Semestre)
+    Docente/i: GIACOMIN MASSIMILIANO
+  • DISEGNO TECNICO INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: VILLA VALERIO
+  • CHIMICA (9 CFU – Secondo Semestre)
+    Docente/i: BONTEMPI ELZA
+  • FISICA SPERIMENTALE (MECC., ELETTROM.) (9 CFU – Secondo Semestre)
+    Docente/i: LEA RAMONA
+
+  [2° Anno]
+  • TECNOLOGIE MECCANICHE (12 CFU – Ciclo Annuale Unico)
+    Docente/i: ATTANASIO ALDO, FIORENTINO ANTONIO
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: KOVARIK HYNEK, BONFANTI GIOVANNA, ROSSI RICCARDA
+  • METALLURGIA (9 CFU – Primo Semestre)
+    Docente/i: GELFI MARCELLO GIUSEPPE, FACCOLI MICHELA
+  • FISICA SPERIMENTALE (OTTICA ONDE) (6 CFU – Primo Semestre)
+    Docente/i: PAGANO DAVIDE
+  • FISICA TECNICA (9 CFU – Secondo Semestre)
+    Docente/i: LEZZI ADRIANO MARIA
+  • MECCANICA RAZIONALE (6 CFU – Secondo Semestre)
+    Docente/i: NASO MARIA GRAZIA
+  • SCIENZA E TECNOLOGIA DEI MATERIALI (9 CFU – Secondo Semestre)
+    Docente/i: BIGNOTTI FABIO
+
+  [3° Anno]
+  • MISURE MECCANICHE E COLLAUDI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: RIZZO ANNA
+  • SCIENZA DELLE COSTRUZIONI (9 CFU – Primo Semestre)
+    Docente/i: SALVADORI ALBERTO
+  • ELETTROTECNICA (6 CFU – Primo Semestre)
+    Docente/i: VILLA MATTEO
+  • MECCANICA APPLICATA ALLE MACCHINE (9 CFU – Primo Semestre)
+    Docente/i: FAGLIA RODOLFO, AMICI CINZIA
+  • MACCHINE A FLUIDO IDRAULICHE E TERMICHE (9 CFU – Primo Semestre)
+    Docente/i: REBAY STEFANO
+  • SPECIFICHE GEOMETRICHE DEI PRODOTTI (6 CFU – Primo Semestre)
+    Docente/i: BARONIO GABRIELE, BODINI ILEANA
+  • FONDAMENTI DELLA MISURAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LANCINI MATTEO
+  • STRUMENTAZIONE ELETTRONICA (6 CFU – Secondo Semestre)
+    Docente/i: PASINETTI SIMONE
+  • LABORATORIO CAD (3 CFU – Secondo Semestre)
+    Docente/i: BARONIO GABRIELE, UBERTI STEFANO
+  • POLIMERI INDUSTRIALI E RICICLO (6 CFU – Secondo Semestre)
+    Docente/i: SARTORE LUCIANA
+  • LEGHE FERROSE E TECNICHE DI LABORATORIO (6 CFU – Secondo Semestre)
+    Docente/i: CORNACCHIA GIOVANNA
+  • TECNOLOGIE METALLURGICHE CON LABORATORIO (CFU n/d – Secondo Semestre)
+    Docente/i: SARTORI FEDERICA
+  • TECNOLOGIE METALLURGICHE (6 CFU – Secondo Semestre)
+    Docente/i: TOCCI MARIALAURA
+  • LABORATORIO DI ANALISI DEI METALLI (3 CFU – Secondo Semestre)
+    Docente/i: BORGESE LAURA
+  • LABORATORIO DI MATERIALI POLIMERICI-PROPRIETA' MECCANICHE (3 CFU – Secondo Semestre)
+    Docente/i: BALDI FRANCESCO
+  • LABORATORIO DI MATERIALI POLIMERICI-PROPRIETA' TERMICHE E DI PROCESSO (3 CFU – Secondo Semestre)
+    Docente/i: BALDI FRANCESCO
+  • ACUSTICA AMBIENTALE E CONTROLLO DEL RUMORE INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: PIANA EDOARDO ALESSIO
+  • METROLOGIA INDUSTRIALE E APPLICATA (6 CFU – Secondo Semestre)
+    Docente/i: VETTURI DAVID
+  • CONVERSIONE DELL'ENERGIA ED EFFICIENZA ENERGETICA (CFU n/d – Secondo Semestre)
+    Docente/i: GALLI ROBERTA
+  • SISTEMI DI CONVERSIONE DELL'ENERGIA (9 CFU – Secondo Semestre)
+    Docente/i: DI MARCOBERARDINO GIOELE
+  • EFFICIENZA ENERGETICA DEGLI IMPIANTI (3 CFU – Secondo Semestre)
+    Docente/i: ZANONI SIMONE
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: BIANCHI EMANUELE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • DISEGNO (9 CFU – Primo Semestre)
+    Docente/i: DE PAOLI MASSIMO
+  • ALGEBRA E GEOMETRIA (9 CFU – Primo Semestre)
+    Docente/i: COSTA SIMONE, PASOTTI STEFANO
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: GIACOMINI ALESSANDRO, MORANDO ALESSANDRO
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: FOGLI DANIELA
+  • ANALISI DEI SISTEMI URBANI E TERRITORIALI (9 CFU – Secondo Semestre)
+    Docente/i: RICHIEDEI ANNA
+  • CHIMICA (9 CFU – Secondo Semestre)
+    Docente/i: DEPERO LAURA ELEONORA
+  • FISICA SPERIMENTALE I (MECC., TERM.) (9 CFU – Secondo Semestre)
+    Docente/i: FERRONI MATTEO, ZURLO NICOLA
+
+  [2° Anno]
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: KOVARIK HYNEK, TREBESCHI PAOLA
+  • CHIMICA AMBIENTALE ED ECOLOGIA APPLICATA (6 CFU – Primo Semestre)
+    Docente/i: PEDRAZZANI ROBERTA
+  • TOPOGRAFIA (8 CFU – Primo Semestre)
+    Docente/i: VASSENA GIORGIO PAOLO MARIA
+  • MECCANICA RAZIONALE (9 CFU – Secondo Semestre)
+    Docente/i: VUK ELENA, ZULLO FEDERICO
+  • FISICA SPERIMENTALE II (ELETTROM., OTTICA ONDE) (9 CFU – Secondo Semestre)
+    Docente/i: ZURLO NICOLA, FERRONI MATTEO
+  • VALUTAZIONE DEGLI INVESTIMENTI E GESTIONE DEI PROGETTI (6 CFU – Secondo Semestre)
+    Docente/i: FERRETTI IVAN
+  • GEOLOGIA APPLICATA (8 CFU – Secondo Semestre)
+    Docente/i: MONTRASIO LORELLA, GATTO MICHELE PLACIDO ANTONIO
+
+  [3° Anno]
+  • SCIENZA DELLE COSTRUZIONI (10 CFU – Ciclo Annuale Unico)
+    Docente/i: BARDELLA LORENZO
+  • INGEGNERIA SANITARIA-AMBIENTALE (9 CFU – Primo Semestre)
+    Docente/i: SORLINI SABRINA, ABBA' ALESSANDRO
+  • FISICA TECNICA (9 CFU – Primo Semestre)
+    Docente/i: PIANA EDOARDO ALESSIO, PILOTELLI MARIAGRAZIA
+  • IDRAULICA (10 CFU – Primo Semestre)
+    Docente/i: PILOTTI MARCO
+  • IDROLOGIA (9 CFU – Secondo Semestre)
+    Docente/i: TOMIROTTI MASSIMO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: PARISI ANNA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: Ingegneria fisica e matematica [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • FONDAMENTI DI INFORMATICA E PROGRAMMAZIONE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SERINA IVAN
+  • ANALISI MATEMATICA I (9 CFU – Primo Semestre)
+    Docente/i: GERVASIO PAOLA, MARCELLINI FRANCESCA
+  • ELEMENTI DI INFORMATICA E PROGRAMMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: LOREGGIA ANDREA, SAETTI ALESSANDRO
+  • ALGEBRA LINEARE E GEOMETRIA (6 CFU – Primo Semestre)
+    Docente/i: GIUZZI LUCA
+  • PROBABILITA' E STATISTICA (6 CFU – Secondo Semestre)
+    Docente/i: ZULLO FEDERICO, VUK ELENA
+  • FONDAMENTI DI PROGRAMMAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: DONELLI ENRICO, SERINA IVAN
+  • CHIMICA PER LE TECNOLOGIE (6 CFU – Secondo Semestre)
+    Docente/i: ALESSANDRI IVANO
+  • FISICA SPERIMENTALE 1 E LABORATORIO (CFU n/d – Secondo Semestre)
+    Docente/i: MASCAGNA VALERIO
+  • FISICA SPERIMENTALE 1 (9 CFU – Secondo Semestre)
+    Docente/i: VENTURELLI LUCA, COMINI ELISABETTA
+  • LABORATORIO DI FISICA SPERIMENTALE 1 (3 CFU – Secondo Semestre)
+    Docente/i: MASCAGNA VALERIO
+
+  [2° Anno]
+  • FISICA SPERIMENTALE 2 E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: ZAPPA DARIO
+  • ELETTROMAGNETISMO APPLICATO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LOCATELLI ANDREA
+  • METODI ANALITICI E NUMERICI PER L'INGEGNERIA E LA FISICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LUTEROTTI FABIO
+  • ANALISI MATEMATICA II (9 CFU – Primo Semestre)
+    Docente/i: COLOMBO RINALDO MARIO
+  • FISICA SPERIMENTALE 2 (9 CFU – Primo Semestre)
+    Docente/i: ZAPPA DARIO, MASCAGNA VALERIO
+  • ELETTROTECNICA (6 CFU – Primo Semestre)
+    Docente/i: LOCATELLI ANDREA
+  • CALCOLO SCIENTIFICO (6 CFU – Primo Semestre)
+    Docente/i: GERVASIO PAOLA
+  • FONDAMENTI DI AUTOMATICA (9 CFU – Secondo Semestre)
+    Docente/i: CAMPI MARCO CLAUDIO
+  • LABORATORIO DI FISICA SPERIMENTALE 2 (3 CFU – Secondo Semestre)
+    Docente/i: ZAPPA DARIO
+  • FONDAMENTI DI CAMPI ELETTROMAGNETICI (6 CFU – Secondo Semestre)
+    Docente/i: DE CEGLIA DOMENICO
+  • ANALISI MATEMATICA III (6 CFU – Secondo Semestre)
+    Docente/i: LUTEROTTI FABIO
+  • INTRODUZIONE ALLA FISICA QUANTISTICA (6 CFU – Secondo Semestre)
+    Docente/i: ARTONI MAURIZIO
+  • FONDAMENTI DI TELECOMUNICAZIONI (6 CFU – Secondo Semestre)
+    Docente/i: DALAI MARCO, DELLA FIORE STEFANO
+
+  [3° Anno]
+  • FISICA DELLO STATO SOLIDO (6 CFU – Primo Semestre)
+    Docente/i: COMINI ELISABETTA
+  • INTRODUZIONE ALLA FISICA NUCLEARE E SUBNUCLEARE (6 CFU – Primo Semestre)
+    Docente/i: LEA RAMONA, MASCAGNA VALERIO, BIANCONI ANDREA, VENTURELLI LUCA
+  • MISURE E STRUMENTAZIONE (6 CFU – Primo Semestre)
+    Docente/i: BORGHETTI MICHELA
+  • FONDAMENTI DI ELETTRONICA (9 CFU – Secondo Semestre)
+    Docente/i: BAU' MARCO, RICHELLI ANNA
+  • OTTICA E TECNOLOGIE FOTONICHE (9 CFU – Secondo Semestre)
+    Docente/i: BARONIO FABIO, DE CEGLIA DOMENICO
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ESPOSITO PAOLO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: SISTEMI AGRICOLI SOSTENIBILI [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • BIOLOGIA E BIODIVERSITA' VEGETALE ED ANIMALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: ZIZIOLI DANIELA
+  • ECONOMIA E STATISTICA PER LE SCIENZE AGRARIE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VENTURA VERA
+  • MATEMATICA (6 CFU – Primo Semestre)
+    Docente/i: MORANDO ALESSANDRO
+  • CHIMICA (CFU n/d – Primo Semestre)
+    Docente/i: GIAGNONI LAURA
+  • CHIMICA GENERALE E INORGANICA (6 CFU – Primo Semestre)
+    Docente/i: FEDERICI STEFANIA
+  • CHIMICA ORGANICA ED ELEMENTI DI CHIMICA AGRARIA (6 CFU – Primo Semestre)
+    Docente/i: GIAGNONI LAURA
+  • BIOLOGIA E BIODIVERSITA' ANIMALE (6 CFU – Primo Semestre)
+    Docente/i: ZIZIOLI DANIELA
+  • METODI PER L'ANALISI E LA GESTIONE DEI DATI (6 CFU – Primo Semestre)
+    Docente/i: SIMONETTO ANNA
+  • FISICA (6 CFU – Secondo Semestre)
+    Docente/i: ZURLO NICOLA, FERRONI MATTEO
+  • BIOCHIMICA E FISIOLOGIA VEGETALE (6 CFU – Secondo Semestre)
+    Docente/i: MONTI EUGENIO, MASTINU ANDREA
+  • ECOLOGIA (6 CFU – Secondo Semestre)
+    Docente/i: GILIOLI GIANNI
+  • BIOLOGIA E BIODIVERSITA' VEGETALE (6 CFU – Secondo Semestre)
+    Docente/i: MASTINU ANDREA
+  • ECONOMIA PER LO SVILUPPO RURALE SOSTENIBILE (6 CFU – Secondo Semestre)
+    Docente/i: VENTURA VERA
+
+  [2° Anno]
+  • AGRONOMIA E COLTIVAZIONI ERBACEE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CARUSO ELISA
+  • IDRAULICA ED IDROLOGIA AGRARIA (6 CFU – Primo Semestre)
+    Docente/i: BARONTINI STEFANO
+  • AGRONOMIA GENERALE (6 CFU – Primo Semestre)
+    Docente/i: MARIANI LUIGI
+  • GESTIONE E FERTILITA' DEL SUOLO (9 CFU – Primo Semestre)
+    Docente/i: GIAGNONI LAURA
+  • PROTEZIONE SOSTENIBILE DELLE PIANTE (CFU n/d – Secondo Semestre)
+    Docente/i: GILIOLI GIANNI
+  • CONTROLLO INTEGRATO DEI PARASSITI DELLE PIANTE (6 CFU – Secondo Semestre)
+    Docente/i: GILIOLI GIANNI
+  • PATOLOGIA VEGETALE E CONTROLLO INTEGRATO (IPM) DELLE FITOPATIE (6 CFU – Secondo Semestre)
+    Docente/i: ROMANO ENRICO
+  • COLTIVAZIONI ERBACEE SOSTENIBILI (6 CFU – Secondo Semestre)
+    Docente/i: MARIANI LUIGI
+  • ZOOTECNIA E GESTIONE SOSTENIBILE DI ALLEVAMENTI ZOOTECNICI (12 CFU – Secondo Semestre)
+    Docente/i: ESPOSITO GIUSEPPE
+  • GENETICA AGRARIA E ELEMENTI DI MIGLIORAMENTO GENETICO (6 CFU – Secondo Semestre)
+    Docente/i: BARONE DAVIDE
+
+  [3° Anno]
+  • GESTIONE E VALORIZZAZIONE DI REFLUI ZOOTECNICI E BIOMASSE (6 CFU – Primo Semestre)
+    Docente/i: VACCARI MENTORE, ABBA' ALESSANDRO
+  • TRASFORMAZIONI ALIMENTARI (6 CFU – Primo Semestre)
+    Docente/i: ORLANDO PAOLA
+  • ANALISI E GESTIONE DELLE RISORSE TERRITORIALI E GIS (6 CFU – Primo Semestre)
+    Docente/i: RICHIEDEI ANNA
+  • TECNOLOGIE PER L'AGRICOLTURA DI PRECISIONE (CFU n/d – Secondo Semestre)
+    Docente/i: AGGOGERI FRANCESCO
+  • MECCANICA APPLICATA (6 CFU – Secondo Semestre)
+    Docente/i: AGGOGERI FRANCESCO
+  • SENSORI PER L'AGRICOLTURA E IOT (6 CFU – Secondo Semestre)
+    Docente/i: BORGHETTI MICHELA
+  • COLTIVAZIONI ARBOREE E VITICOLTURA SOSTENIBILI (9 CFU – Secondo Semestre)
+    Docente/i: GHIGLIENO ISABELLA
+  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FERRARI FRANCESCA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: CIVIL AND ENVIRONMENTAL ENGINEERING - INGEGNERIA CIVILE E AMBIENTALE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ENVIRONMENTAL HYDRAULICS (9 CFU – Ciclo Annuale Unico)
+    Docente/i: VALERIO GIULIA
+  • STRUCTURAL DESIGN (9 CFU – Primo Semestre)
+    Docente/i: TIBERTI GIUSEPPE
+  • GEOTECHNICAL ENGINEERING (9 CFU – Primo Semestre)
+    Docente/i: GATTO MICHELE PLACIDO ANTONIO
+  • URBAN PLANNING AND RISK MITIGATION (CFU n/d – Secondo Semestre)
+    Docente/i: TIRA MAURIZIO
+  • BUILDING PERFORMANCE ENGINEERING (9 CFU – Secondo Semestre)
+    Docente/i: SESANA MARTA MARIA
+  • ADVANCED GEOMATICS (9 CFU – Secondo Semestre)
+    Docente/i: VASSENA GIORGIO PAOLO MARIA
+  • BASIC PRINCIPLES OF URBAN PLANNING (6 CFU – Secondo Semestre)
+    Docente/i: TIRA MAURIZIO
+  • PLANNING AND RISK MITIGATION (3 CFU – Secondo Semestre)
+    Docente/i: TIRA MAURIZIO
+
+  [2° Anno]
+  • HYDRAULIC STRUCTURES (9 CFU – Primo Semestre)
+    Docente/i: RANZI ROBERTO, TOMIROTTI MASSIMO
+  • REINFORCED CONCRETE STRUCTURES (9 CFU – Primo Semestre)
+    Docente/i: METELLI GIOVANNI, PRETI MARCO
+  • ENERGY SYSTEMS: FROM OIL AND GAS TO RENEWABLES (6 CFU – Secondo Semestre)
+    Docente/i: ARTIOLI NANCY
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: LOMBARDI SIMONE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA CIVILE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • TECNICA DELLE COSTRUZIONI (9 CFU – Primo Semestre)
+    Docente/i: PLIZZARI GIOVANNI, CONFORTI ANTONIO
+  • GEOTECNICA (9 CFU – Primo Semestre)
+    Docente/i: MONTRASIO LORELLA, GATTO MICHELE PLACIDO ANTONIO
+  • ANALISI NUMERICA (6 CFU – Primo Semestre)
+    Docente/i: GASTALDI LUCIA
+  • COMPLEMENTI DI SCIENZA DELLE COSTRUZIONI (9 CFU – Secondo Semestre)
+    Docente/i: CARINI ANGELO
+
+  [2° Anno]
+  • TEORIA E PROGETTO DELLE COSTRUZIONI IN CA E CAP (9 CFU – Primo Semestre)
+    Docente/i: MINELLI FAUSTO, FACCONI LUCA
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: DE ANGELIS MONICA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ECONOMIA APPLICATA ALL'INGEGNERIA (6 CFU – Primo Semestre)
+    Docente/i: SALA GABRIELE
+  • LABORATORIO DI MISURE INDUSTRIALI (6 CFU – Primo Semestre)
+    Docente/i: LANCINI MATTEO
+  • IMPIANTI DI SERVIZIO PER L'ENERGIA (3 CFU – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • IMPIANTI PER L'AUTOMAZIONE (6 CFU – Primo Semestre)
+    Docente/i: BACCHETTI ANDREA
+  • IMPIANTI INDUSTRIALI PER L'AUTOMAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • SISTEMI DI CONTROLLO INTELLIGENTI (CFU n/d – Primo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • MODELLISTICA DI SISTEMI INTELLIGENTI (6 CFU – Primo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • SISTEMI COMPLESSI E CONTROLLO OTTIMO (6 CFU – Primo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • MICROPROCESSOR BASED INSTRUMENTATION (9 CFU – Secondo Semestre)
+    Docente/i: SARDINI EMILIO, FAPANNI TIZIANO
+  • ROBOTICS AND CONTROL SYSTEMS (CFU n/d – Secondo Semestre)
+    Docente/i: LEGNANI GIOVANNI
+  • SERVO SYSTEMS AND ROBOTICS (9 CFU – Secondo Semestre)
+    Docente/i: LEGNANI GIOVANNI
+  • CONTROL SYSTEMS TECHNOLOGIES (9 CFU – Secondo Semestre)
+    Docente/i: VISIOLI ANTONIO
+
+  [2° Anno]
+  • SISTEMI MECCATRONICI INTERAGENTI CON L'UOMO (6 CFU – Primo Semestre)
+    Docente/i: BORBONI ALBERTO
+  • ISOLE ROBOTIZZATE E SISTEMI DI AUTOMAZIONE (9 CFU – Primo Semestre)
+    Docente/i: AGGOGERI FRANCESCO, PELLEGRINI NICOLA
+  • LABORATORIO DI MECCATRONICA (CFU n/d – Secondo Semestre)
+    Docente/i: SERPELLONI MAURO
+  • ELETTRONICA INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: COLALONGO LUIGI
+  • LABORATORIO DI ROBOTICA INDUSTR E MACCHINE (6 CFU – Secondo Semestre)
+    Docente/i: PAGANI ROBERTO
+  • LABORATORIO DI ELETTRONICA E STRUMENTAZIONE (3 CFU – Secondo Semestre)
+    Docente/i: SERPELLONI MAURO
+  • LABORATORIO DI AUTOMATICA (3 CFU – Secondo Semestre)
+    Docente/i: BESCHI MANUEL
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RICCI SIMONE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA ELETTRONICA [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • TECNOLOGIE E DISPOSITIVI ELETTRONICI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: TORRICELLI FABRIZIO
+  • CALCOLO SCIENTIFICO (6 CFU – Primo Semestre)
+    Docente/i: GERVASIO PAOLA
+  • SENSORI (6 CFU – Primo Semestre)
+    Docente/i: SARDINI EMILIO, BORGHETTI MICHELA
+  • DISPOSITIVI ELETTRONICI (6 CFU – Primo Semestre)
+    Docente/i: COLALONGO LUIGI
+  • PROGETTO DI CIRCUITI ELETTRONICI (9 CFU – Secondo Semestre)
+    Docente/i: KOVACS VAJNA ZSOLT MIKLOS
+  • ELETTRONICA E TECNOLOGIE EMERGENTI (6 CFU – Secondo Semestre)
+    Docente/i: TORRICELLI FABRIZIO
+  • PROGETTO DI SISTEMI ELETTRONICI PER L'INTERNET OF THINGS (6 CFU – Secondo Semestre)
+    Docente/i: SISINNI EMILIANO
+  • PROVA DI CONOSCENZA DELLA LINGUA INGLESE (APPROFONDIMENTO) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MARTINELLI CHIARA
+
+  [2° Anno]
+  • PROGETTO DI CIRCUITI INTEGRATI ANALOGICI (CFU n/d – Primo Semestre)
+    Docente/i: RICHELLI ANNA
+  • MICROELETTRONICA (6 CFU – Primo Semestre)
+    Docente/i: KOVACS VAJNA ZSOLT MIKLOS, TORRICELLI FABRIZIO
+  • PROGETTO DI CIRCUITI INTEGRATI (3 CFU – Primo Semestre)
+    Docente/i: RICHELLI ANNA
+  • PROGETTO DI SISTEMI ELETTRONICI ANALOGICI (6 CFU – Primo Semestre)
+    Docente/i: FERRARI MARCO
+  • ELETTRONICA PER STRUMENTAZIONE, SENSORI E MICROSISTEMI (9 CFU – Secondo Semestre)
+    Docente/i: FERRARI VITTORIO, FERRARI MARCO, NASTRO ALESSANDRO
+  • PROVA FINALE (18 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MORELLI VITTORIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA GESTIONALE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • GESTIONE DEGLI IMPIANTI E DEL LAVORO INDUSTRIALE CON LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MONTI ROBERTA
+  • SISTEMI LOGISTICI E TECNOLOGICI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PERONA MARCO
+  • ANALISI E DECISIONI NEI SISTEMI COMPLESSI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VOLTA MARIALUISA
+  • GESTIONE DEGLI IMPIANTI E DEL LAVORO INDUSTRIALE (9 CFU – Primo Semestre)
+    Docente/i: MARIANI SERGIO
+  • ORGANIZZAZIONE E GESTIONE DELL'INNOVAZIONE (9 CFU – Primo Semestre)
+    Docente/i: SGOBBI FRANCESCA
+  • SISTEMI INFORMATIVI (6 CFU – Primo Semestre)
+    Docente/i: MELCHIORI MICHELE
+  • TECNOLOGIE INDUSTRIALI DI PRODUZIONE (6 CFU – Primo Semestre)
+    Docente/i: ADRODEGARI FEDERICO
+  • MODELLAZIONE DELLE LAVORAZIONI MASSIVE (6 CFU – Primo Semestre)
+    Docente/i: CERETTI ELISABETTA, ATTANASIO ALDO
+  • MODELLI DI SUPPORTO ALLE DECISIONI (6 CFU – Primo Semestre)
+    Docente/i: VOLTA MARIALUISA
+  • GESTIONE DEGLI IMPIANTI E DEL LAVORO INDUSTRI (9 CFU – Primo Semestre)
+    Docente/i: CATTANEO FEDERICA
+  • ECONOMIA INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: BANNÒ MARIASOLE
+  • GESTIONE DELLA PRODUZIONE E SICUREZZA (CFU n/d – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO
+  • GESTIONE DEI SISTEMI LOGISTICI INTEGRATI (6 CFU – Secondo Semestre)
+    Docente/i: BACCHETTI ANDREA, ARDOLINO MARCO
+  • GESTIONE DEI SISTEMI LOGISTICI INTEGRATI (6 CFU – Secondo Semestre)
+    Docente/i: BACCHETTI ANDREA, ARDOLINO MARCO
+  • ANALISI E CONTROLLO DI PROCESSI COMPLESSI (6 CFU – Secondo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • ECONOMIA DELL'INNOVAZIONE (3 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI GABRIELE
+  • ECONOMIA INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: BANNÒ MARIASOLE
+  • ECONOMIA INDUSTRIALE E DELL'INNOVAZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: BANNÒ MARIASOLE
+  • ERGONOMIA E SICUREZZA (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • GESTIONE DELLA PRODUZIONE (6 CFU – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO
+  • LABORATORIO DI GESTIONE DEGLI IMPIANTI (3 CFU – Secondo Semestre)
+    Docente/i: CARUSO RICCARDO
+
+  [2° Anno]
+  • LABORATORIO DI DOCUMENTAZIONE TECNICA (6 CFU – Primo Semestre)
+    Docente/i: VILLA VALERIO
+  • MACCHINE E SISTEMI ENERGETICI (6 CFU – Primo Semestre)
+    Docente/i: IORA PAOLO GIULIO
+  • DIRITTO DELL'IMPRESA (6 CFU – Primo Semestre)
+    Docente/i: GRANIERI MASSIMILIANO
+  • MODELLI DI SUPPORTO ALLE DECISIONI (6 CFU – Primo Semestre)
+    Docente/i: VOLTA MARIALUISA
+  • OPTIMIZATION ALGORITHMS (6 CFU – Primo Semestre)
+    Docente/i: MANSINI RENATA
+  • MODELING AND SIMULATION OF PRODUCTIVE PROCESSES (6 CFU – Primo Semestre)
+    Docente/i: ADRODEGARI FEDERICO
+  • PROCESS OPTIMIZATION (CFU n/d – Primo Semestre)
+    Docente/i: MANSINI RENATA
+  • GESTIONE AZIENDALE (CFU n/d – Primo Semestre)
+    Docente/i: MUTINELLI MARCO ALBERTO
+  • STRATEGIA AZIENDALE (6 CFU – Primo Semestre)
+    Docente/i: MUTINELLI MARCO ALBERTO
+  • MARKETING (3 CFU – Primo Semestre)
+    Docente/i: MUTINELLI MARCO ALBERTO
+  • SOCIOLOGIA DELL'ORGANIZZAZIONE (6 CFU – Secondo Semestre)
+    Docente/i: CODARA LINO
+  • LABORATORIO DI GESTIONE DEI SISTEMI DI PRODUZIONE (6 CFU – Secondo Semestre)
+    Docente/i: COCCA PAOLA
+  • GESTIONE DELLA FILIERA LOGISTCA (6 CFU – Secondo Semestre)
+    Docente/i: PERONA MARCO, BRESSANELLI GIANMARCO, ADRODEGARI FEDERICO
+  • GESTIONE DELLA MANUTENZIONE E DELL'ENERGIA (6 CFU – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO, ZANONI SIMONE
+  • GESTIONI INDUSTRIALI INTEGRATE (CFU n/d – Secondo Semestre)
+    Docente/i: TOMASONI GIUSEPPE
+  • GESTIONE DEI SISTEMI LOGISTICI INTEGRATI (6 CFU – Secondo Semestre)
+    Docente/i: BACCHETTI ANDREA, ARDOLINO MARCO
+  • LABORATORIO DI ORGANIZZAZIONE E STRATEGIA D'IMPRESA (6 CFU – Secondo Semestre)
+    Docente/i: BANNÒ MARIASOLE
+  • GESTIONE DELLA SOSTENIBILITA' INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: TOMASONI GIUSEPPE
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: VILLA SERGIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA INFORMATICA [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • SISTEMI INFORMATIVI E PROGETTAZIONE DI APPLICAZIONI WEB (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LOMBARDI GIULIA
+  • INTERAZIONE PERSONA-CALCOLATORE (6 CFU – Primo Semestre)
+    Docente/i: FOGLI DANIELA
+  • SISTEMI INFORMATIVI (6 CFU – Primo Semestre)
+    Docente/i: MELCHIORI MICHELE
+  • MACHINE LEARNING E DATA MINING (6 CFU – Secondo Semestre)
+    Docente/i: GEREVINI ALFONSO EMILIO, SERINA IVAN
+  • ALGORITMI E STRUTTURE DATI (9 CFU – Secondo Semestre)
+    Docente/i: ZANELLA MARINA, SAETTI ALESSANDRO
+  • PROGETTAZIONE DI APPLICAZIONI WEB FULL STACK (6 CFU – Secondo Semestre)
+    Docente/i: BIANCHINI DEVIS
+  • PROVA DI CONOSCENZA DELLA LINGUA INGLESE (APPROFONDIMENTO) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ESPOSITO MAURIZIO
+
+  [2° Anno]
+  • STAGE/PROGETTO 6 CFU - LM (6 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: NEGRI ELISA
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GRECO GABRIELE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA MECCANICA [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ECONOMIA, ORGANIZZAZIONE, LOGISTICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: ROSSI DIANA
+  • TERMOFLUIDODINAMICA PER LA BIOMECCANICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LEZZI ADRIANO MARIA
+  • GESTIONE INDUSTRIALE DELLA QUALITA' CON LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CERETTI ELISABETTA
+  • LABORATORIO DI ANALISI DEI SISTEMI ED OTTIMIZZAZIONE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VOLTA MARIALUISA
+  • COSTRUZIONE DI MACCHINE I (9 CFU – Primo Semestre)
+    Docente/i: DONZELLA GIORGIO
+  • FONDAMENTI DI TERMOFLUIDODINAMICA (6 CFU – Primo Semestre)
+    Docente/i: LEZZI ADRIANO MARIA
+  • FONDAMENTI DI TERMOFLUIDODINAMICA (6 CFU – Primo Semestre)
+    Docente/i: LEZZI ADRIANO MARIA
+  • MACCHINE A FLUIDO IDRAULICHE E TERMICHE (9 CFU – Primo Semestre)
+    Docente/i: REBAY STEFANO
+  • GESTIONE INDUSTRIALE DELLA QUALITA' (6 CFU – Primo Semestre)
+    Docente/i: CERETTI ELISABETTA, SEITI MIRIAM
+  • SISTEMI MECCATRONICI INTERAGENTI CON L'UOMO (6 CFU – Primo Semestre)
+    Docente/i: BORBONI ALBERTO
+  • IMPIANTI INDUSTRIALI SOSTENIBILI (CFU n/d – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • IMPIANTI DI SERVIZIO PER L'ENERGIA (3 CFU – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • IMPIANTI DI PRODUZIONE SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • ELEMENTI DI ANALISI DEI SISTEMI (3 CFU – Primo Semestre)
+    Docente/i: VOLTA MARIALUISA
+  • ECONOMIA APPLICATA ALL'INGEGNERIA (6 CFU – Primo Semestre)
+    Docente/i: SGOBBI FRANCESCA
+  • ECONOMIA APPLICATA ALL'INGEGNERIA (6 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI LUCA
+  • GESTIONE DELLA PRODUZIONE E SICUREZZA (CFU n/d – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO
+  • MECCANICA E MISURA DELLE VIBRAZIONI (CFU n/d – Secondo Semestre)
+    Docente/i: INCERTI GIOVANNI
+  • BIOMECHATRONICS (CFU n/d – Secondo Semestre)
+    Docente/i: LEGNANI GIOVANNI
+  • MECCANICA DEI MATERIALI (6 CFU – Secondo Semestre)
+    Docente/i: DONZELLA GIORGIO, AVANZINI ANDREA
+  • MECCANICA DEI MATERIALI PER LA PROGETTAZIONE STRUTTURALE (CFU n/d – Secondo Semestre)
+    Docente/i: DONZELLA GIORGIO
+  • LABORATORIO DI GESTIONE INDUSTRIALE DELLA QUALITA' (3 CFU – Secondo Semestre)
+    Docente/i: CERETTI ELISABETTA, GINESTRA PAOLA SERENA
+  • MOTORI A COMBUSTIONE INTERNA E FLUIDODINAMICA NUMERICA (9 CFU – Secondo Semestre)
+    Docente/i: GHIDONI ANTONIO
+  • PROGETTAZIONE STRUTTURALE CON MATERIALI INNOVATIVI (6 CFU – Secondo Semestre)
+    Docente/i: AVANZINI ANDREA
+  • PRODUCTION TECHNOLOGIES FOR BIOMANUFACTURING (3 CFU – Secondo Semestre)
+    Docente/i: GINESTRA PAOLA SERENA
+  • LABORATORIO DI TECNICHE DI OTTIMIZZAZIONE (3 CFU – Secondo Semestre)
+    Docente/i: MANERBA DANIELE
+  • PRODUCTION TECHNOLOGY FOR BIOMECHANICS (CFU n/d – Secondo Semestre)
+    Docente/i: GINESTRA PAOLA SERENA
+  • ADDITIVE MANUFACTURING PROCESSES (6 CFU – Secondo Semestre)
+    Docente/i: GIORLEO LUCA
+  • TURBOMACHINERY AND WIND TURBINES (9 CFU – Secondo Semestre)
+    Docente/i: REBAY STEFANO
+  • ENERGY DECARBONIZATION (6 CFU – Secondo Semestre)
+    Docente/i: IORA PAOLO GIULIO
+  • CHEMISTRY AND THERMODYNAMICS FOR ENERGY SYSTEMS (CFU n/d – Secondo Semestre)
+    Docente/i: PICCHI DAVIDE
+  • CHEMISTRY FOR SUSTAINABLE ENERGY (6 CFU – Secondo Semestre)
+    Docente/i: BORGESE LAURA
+  • APPLIED THERMODYNAMICS (6 CFU – Secondo Semestre)
+    Docente/i: PICCHI DAVIDE
+  • CONTROLLI AUTOMATICI (6 CFU – Secondo Semestre)
+    Docente/i: BESCHI MANUEL
+  • BIOMECHANICS (6 CFU – Secondo Semestre)
+    Docente/i: LEGNANI GIOVANNI, AMICI CINZIA
+  • BIOFLUID MECHANICS (3 CFU – Secondo Semestre)
+    Docente/i: POESIO PIETRO
+  • SENSORS FOR BIOSIGNALS (6 CFU – Secondo Semestre)
+    Docente/i: SERPELLONI MAURO
+  • LOGISTICA INDUSTRIALE (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • ERGONOMIA E SICUREZZA (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • GESTIONE DELLA PRODUZIONE (6 CFU – Secondo Semestre)
+    Docente/i: ZAVANELLA LUCIO ENRICO
+  • MECCANICA DELLE VIBRAZIONI (9 CFU – Secondo Semestre)
+    Docente/i: INCERTI GIOVANNI
+  • LABORATORIO DI MISURE DELLE VIBRAZIONI (3 CFU – Secondo Semestre)
+    Docente/i: VETTURI DAVID
+
+  [2° Anno]
+  • MECCANICA DEL VEICOLO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GADOLA MARCO
+  • SISTEMI INTEGRATI PER GLI AUTOVEICOLI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: RICHELLI ANNA
+  • IMPIANTI PER L'INDUSTRIA BIOMEDICALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: COCCA PAOLA
+  • FLUIDODINAMICA COMPUTAZIONALE PER APPLICAZIONI ENERGETICHE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GHIDONI ANTONIO
+  • PRODUZIONE DI ENERGIA DA FONTI RINNOVABILI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: DI MARCOBERARDINO GIOELE
+  • FONDAMENTI DI TERMOFLUIDODINAMICA (6 CFU – Primo Semestre)
+    Docente/i: LEZZI ADRIANO MARIA
+  • ANALISI STRUTTURALE DELL'AUTOVEICOLO CON LABORATORIO (CFU n/d – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • PROGETTAZIONE DI STRUTTURE BIOMECCANICHE (CFU n/d – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • STRUCTURAL BIOMECHANICS (3 CFU – Primo Semestre)
+    Docente/i: AVANZINI ANDREA
+  • MACCHINE A FLUIDO IDRAULICHE E TERMICHE (9 CFU – Primo Semestre)
+    Docente/i: REBAY STEFANO
+  • PROGETTAZIONE ASSISTITA DI STRUTTURE MECCANICHE (6 CFU – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • DISEGNO E MODELLISTICA DELL'AUTOVEICOLO (6 CFU – Primo Semestre)
+    Docente/i: GADOLA MARCO
+  • COSTRUZIONI DI MACCHINE II (6 CFU – Primo Semestre)
+    Docente/i: SOLAZZI LUIGI
+  • MODELLI DI SUPPORTO ALLE DECISIONI (6 CFU – Primo Semestre)
+    Docente/i: VOLTA MARIALUISA
+  • PROGETTAZIONE MECCANICA AVANZATA (CFU n/d – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • LABORATORIO DI CALCOLO STRUTTURALE AGLI ELEMENTI FINITI (3 CFU – Primo Semestre)
+    Docente/i: AVANZINI ANDREA
+  • ELETTRONICA PER I VEICOLI (6 CFU – Primo Semestre)
+    Docente/i: RICHELLI ANNA
+  • PROGETTAZIONE ASSISTITA DI STRUTTURE MECCANICHE (6 CFU – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • TECNOLOGIE DELLE ENERGIE RINNOVABILI (6 CFU – Primo Semestre)
+    Docente/i: DI MARCOBERARDINO GIOELE
+  • IMPIANTI INDUSTRIALI SOSTENIBILI (CFU n/d – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • IMPIANTI DI SERVIZIO PER L'ENERGIA (3 CFU – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • INTRODUZIONE ALLA FLUIDODINAMICA COMPUTAZIONALE (6 CFU – Primo Semestre)
+    Docente/i: GHIDONI ANTONIO
+  • IMPIANTI DI PRODUZIONE SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • IMPIANTI DI PRODUZIONE SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • IMPIANTI DI PRODUZIONE SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • FENOMENI DI TRASPORTO PER LE TECNOLOGIE ENERGETICHE (CFU n/d – Primo Semestre)
+    Docente/i: POESIO PIETRO
+  • FENOMENI DI TRASPORTO PER SISTEMI MULTIFASE (6 CFU – Primo Semestre)
+    Docente/i: POESIO PIETRO
+  • FLUSSI IN MEZZI POROSI PER APPLICAZIONI INDUSTRIALI (3 CFU – Primo Semestre)
+    Docente/i: PICCHI DAVIDE
+  • LABORATORIO DI ANAL STRUTT DELL'AUTOVEICOL (3 CFU – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • PROGETTAZIONE ASSISTITA DI STRUTTURE MECCANIC (6 CFU – Primo Semestre)
+    Docente/i: MAZZU' ANGELO
+  • ERGONOMIA E SICUREZZA (6 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • MATERIALS FOR BIOMEDICAL APPLICATIONS (CFU n/d – Secondo Semestre)
+    Docente/i: POLA ANNALISA
+  • METALLIC BIOMETARIALS AND COATINGS (3 CFU – Secondo Semestre)
+    Docente/i: POLA ANNALISA
+  • BIOMATERIALS (3 CFU – Secondo Semestre)
+    Docente/i: BIGNOTTI FABIO
+  • BIONANOTECNOLOGY (3 CFU – Secondo Semestre)
+    Docente/i: FEDERICI STEFANIA
+  • AZIONAMENTI ELETTRICI, OLEODINAMICI E PNEUMATICI (6 CFU – Secondo Semestre)
+    Docente/i: AMICI CINZIA
+  • LABORATORIO DI MECCANICA E TESTING DEL VEICOLO (6 CFU – Secondo Semestre)
+    Docente/i: GADOLA MARCO
+  • CONTROLLI AUTOMATICI (6 CFU – Secondo Semestre)
+    Docente/i: BESCHI MANUEL
+  • AZIONAMENTO E CONTROLLO DEL MOTO (CFU n/d – Secondo Semestre)
+    Docente/i: CARNEVALE CLAUDIO
+  • VEICOLI IBRIDI ED ELETTRICI (6 CFU – Secondo Semestre)
+    Docente/i: CHINDAMO DANIEL
+  • BIOCOMBUSTIBILI: PRODUZIONE E APPLICAZIONI (3 CFU – Secondo Semestre)
+    Docente/i: DI MARCOBERARDINO GIOELE
+  • PRODUCTION SYSTEMS FOR MEDICAL DEVICES (6 CFU – Secondo Semestre)
+    Docente/i: MARTINI ELISA
+  • LABORATORIO DI FLUIDODINAMICA COMPUTAZIONALE (6 CFU – Secondo Semestre)
+    Docente/i: GHIDONI ANTONIO
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ESPOSITO CHIARA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • TECNICA DELLE COSTRUZIONI (9 CFU – Primo Semestre)
+    Docente/i: PLIZZARI GIOVANNI, CONFORTI ANTONIO
+  • GEOTECNICA (9 CFU – Primo Semestre)
+    Docente/i: MONTRASIO LORELLA, GATTO MICHELE PLACIDO ANTONIO
+  • PROGETTO E GESTIONE DI IMPIANTI DI TRATTAMENTO RIFIUTI (6 CFU – Primo Semestre)
+    Docente/i: VACCARI MENTORE
+  • TECNICA ED ECONOMIA DEI TRASPORTI (9 CFU – Primo Semestre)
+    Docente/i: BARABINO BENEDETTO, VENTURA ROBERTO
+  • IDRAULICA AMBIENTALE (9 CFU – Secondo Semestre)
+    Docente/i: BARONTINI STEFANO, TOMIROTTI MASSIMO
+
+  [2° Anno]
+  • COSTRUZIONI IDRAULICHE (9 CFU – Primo Semestre)
+    Docente/i: RANZI ROBERTO, TOMIROTTI MASSIMO, MURACA ALESSANDRO
+  • TECNICA URBANISTICA (CFU n/d – Primo Semestre)
+    Docente/i: BADIANI BARBARA
+  • STRUMENTI DI GOVERNO DEL TERRITORIO (3 CFU – Primo Semestre)
+    Docente/i: BADIANI BARBARA
+  • ORGANICA URBANISTICA (6 CFU – Primo Semestre)
+    Docente/i: BADIANI BARBARA
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ROMANO FEDERICA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA PER L'INNOVAZIONE DEI MATERIALI E DEL PRODOTTO [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • POLIMERI E COMPOSITI PER L'INNOVAZIONE DI PRODOTTO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PANDINI STEFANO
+  • COSTRUZIONE DI MACCHINE I (9 CFU – Primo Semestre)
+    Docente/i: DONZELLA GIORGIO
+  • MACCHINE E SISTEMI ENERGETICI (6 CFU – Primo Semestre)
+    Docente/i: IORA PAOLO GIULIO
+  • PROPRIETA' MECCANICHE E FUNZIONALI DEI POLIMERI E DEI COMPOSITI (6 CFU – Primo Semestre)
+    Docente/i: PANDINI STEFANO
+  • ECONOMIA APPLICATA ALL'INGEGNERIA (6 CFU – Primo Semestre)
+    Docente/i: SGOBBI FRANCESCA
+  • FONDERIA (6 CFU – Secondo Semestre)
+    Docente/i: POLA ANNALISA
+  • METODI DI SELEZIONE DEL MATERIALE (6 CFU – Secondo Semestre)
+    Docente/i: PANDINI STEFANO
+  • LABORATORIO DI MODELLAZIONE E RAPPRESENTAZIONE DEI PRODOTTI (6 CFU – Secondo Semestre)
+    Docente/i: RIZZO FRANCESCO
+  • FONDERIA E SIDERURGIA TRADIZIONALE E INNOVATIVA (CFU n/d – Secondo Semestre)
+    Docente/i: POLA ANNALISA
+  • SIDERURGIA TRADIZIONALE E INNOVATIVA (6 CFU – Secondo Semestre)
+    Docente/i: GELFI MARCELLO GIUSEPPE
+
+  [2° Anno]
+  • TECNOLOGIA DEI POLIMERI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BALDI FRANCESCO
+  • METALLURGIA MECCANICA (6 CFU – Primo Semestre)
+    Docente/i: CORNACCHIA GIOVANNA
+  • LIGHT ALLOYS (6 CFU – Primo Semestre)
+    Docente/i: POLA ANNALISA
+  • METALLURGIA MECCANICA E LIGHT ALLOYS (CFU n/d – Primo Semestre)
+    Docente/i: POLA ANNALISA
+  • IMPIANTI INDUSTRIALI SOSTENIBILI (CFU n/d – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • IMPIANTI DI SERVIZIO PER L'ENERGIA (3 CFU – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • IMPIANTI DI PRODUZIONE SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: COCCA PAOLA
+  • FONDAMENTI DI TECNOLOGIA DEI POLIMERI (6 CFU – Primo Semestre)
+    Docente/i: BALDI FRANCESCO
+  • PRODUCT INNOVATION AND PROCESS CERTIFICATION (9 CFU – Secondo Semestre)
+    Docente/i: FIORENTINO ANTONIO, SEITI MIRIAM
+  • PROGETTAZIONE CON LE MATERIE PLASTICHE (6 CFU – Secondo Semestre)
+    Docente/i: RAMORINO GIORGIO
+  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FERRI FEDERICA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: TECNOLOGIE PER LA TRANSIZIONE ECOLOGICA IN AGRICOLTURA [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • BIODIVERSITÀ FUNZIONALE E SERVIZI ECOSISTEMICI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GILIOLI GIANNI
+  • TECNOLOGIE PER LE PRODUZIONI VEGETALI SOSTENIBILI (6 CFU – Primo Semestre)
+    Docente/i: MARIANI LUIGI, GHIGLIENO ISABELLA
+  • TECNOLOGIE PER LA SOSTENIBILITÀ E LA SICUREZZA DELLE PRODUZIONI ANIMALI (6 CFU – Primo Semestre)
+    Docente/i: RICCI MARIA
+  • METODOLOGIE QUANTITATIVE AVANZATE IN AGRICOLTURA (6 CFU – Primo Semestre)
+    Docente/i: SIMONETTO ANNA
+  • ASPETTI NORMATIVI E GESTIONALI DELL’ATTIVITÀ PRODUTTIVA AGRICOLA (6 CFU – Primo Semestre)
+    Docente/i: BRUNORI MARGHERITA
+  • BIODIVERSITÀ FUNZIONALE E SERVIZI ECOSISTEMICI - ANALISI DELLA BIODIVERSITÀ STRUTTURALE (3 CFU – Primo Semestre)
+    Docente/i: MARTINI LUCA
+  • ECONOMIA DELL’INNOVAZIONE NEI FOOD SYSTEM (9 CFU – Secondo Semestre)
+    Docente/i: VENTURA VERA
+  • TECNOLOGIE INNOVATIVE PER LO STUDIO E LA PROTEZIONE DEL SUOLO (CFU n/d – Secondo Semestre)
+    Docente/i: PEDRAZZANI ROBERTA
+  • TECNOLOGIE INNOVATIVE PER LO STUDIO E LA PROTEZIONE DEL SUOLO - VALUTAZIONE E PROTEZIONE DEL SISTEMA SUOLO (6 CFU – Secondo Semestre)
+    Docente/i: GIAGNONI LAURA
+  • TECNOLOGIE INNOVATIVE PER LO STUDIO E LA PROTEZIONE DEL SUOLO - ANALISI E GESTIONE DEL RISCHIO ECOTOSSICOLOGICO (3 CFU – Secondo Semestre)
+    Docente/i: PEDRAZZANI ROBERTA
+  • SISTEMI INTEGRATI DI PRODUZIONE ED ECONOMIA CIRCOLARE (6 CFU – Secondo Semestre)
+    Docente/i: FERRI STEFANO
+  • BIODIVERSITÀ FUNZIONALE E SERVIZI ECOSISTEMICI - SERVIZI ECOSISTEMICI E SOSTENIBILITÀ (9 CFU – Secondo Semestre)
+    Docente/i: GILIOLI GIANNI, SIMONETTO ANNA
+  • PROVA DI CONOSCENZA DELLA LINGUA INGLESE (APPROFONDIMENTO) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MARTINI VALENTINA
+
+  [2° Anno]
+  • TECNOLOGIE AVANZATE PER L'AGRICOLTURA (CFU n/d – Primo Semestre)
+    Docente/i: ZANONI SIMONE
+  • TECNOLOGIE AVANZATE PER L'AGRICOLTURA - MECCANICA AVANZATA PER L’AGRICOLTURA (3 CFU – Primo Semestre)
+    Docente/i: AGGOGERI FRANCESCO
+  • TECNOLOGIE AVANZATE PER L'AGRICOLTURA - IMPIANTI DI SERVIZIO PER L'AGRICOLTURA (3 CFU – Primo Semestre)
+    Docente/i: ZANONI SIMONE, FERRETTI IVAN
+  • SENSORISTICA AVANZATA PER L’AGRICOLTURA (6 CFU – Primo Semestre)
+    Docente/i: RINALDI STEFANO
+  • ASPETTI NORMATIVI E GESTIONALI DELL’ATTIVITÀ PRODUTTIVA AGRICOLA (6 CFU – Primo Semestre)
+    Docente/i: BRUNORI MARGHERITA
+  • TIROCINIO (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: DE ANGELIS EMANUELE
+  • ALTRE ATTIVITÀ FORMATIVE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GUERRA ALESSIA
+  • PROVA FINALE (15 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: BASILE FRANCESCA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INGEGNERIA EDILE-ARCHITETTURA [Ciclo Unico]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • DISEGNO 1 E LABORATORI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: INNOCENTI SERENO MARCO
+  • DISEGNO 1 (6 CFU – Ciclo Annuale Unico)
+    Docente/i: INNOCENTI SERENO MARCO
+  • LABORATORIO DI GEOMETRIA DESCRITTIVA (3 CFU – Ciclo Annuale Unico)
+    Docente/i: INNOCENTI SERENO MARCO, DE PAOLI MASSIMO
+  • LABORATORIO DI INFORMATICA GRAFICA DI BASE (3 CFU – Ciclo Annuale Unico)
+    Docente/i: DE PAOLI MASSIMO
+  • ANALISI MATEMATICA 1 (6 CFU – Primo Semestre)
+    Docente/i: BONFANTI GIOVANNA, TREBESCHI PAOLA
+  • ALGEBRA ED ELEMENTI DI GEOMETRIA (6 CFU – Primo Semestre)
+    Docente/i: TRAETTA TOMMASO, PASOTTI ANITA
+  • FISICA GENERALE (6 CFU – Secondo Semestre)
+    Docente/i: FERRONI MATTEO, ZURLO NICOLA
+  • STORIA DELL'ARCHITETTURA (9 CFU – Secondo Semestre)
+    Docente/i: GIUSTINA IRENE ITALIA
+  • SOCIOLOGIA URBANA (6 CFU – Secondo Semestre)
+    Docente/i: CODARA LINO
+
+  [2° Anno]
+  • DISEGNO 2 E LABORATORI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PASSAMANI IVANA
+  • LABORATORIO DI RILIEVO DELL'ARCHITETTURA (3 CFU – Ciclo Annuale Unico)
+    Docente/i: PASSAMANI IVANA
+  • DISEGNO 2 (6 CFU – Ciclo Annuale Unico)
+    Docente/i: PASSAMANI IVANA
+  • LABORATORIO DI INFORMATICA GRAFICA PER IL PROGETTO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: PASSAMANI IVANA, BORIN PAOLO
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 1 E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LONGO OLIVIA
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 1 (9 CFU – Ciclo Annuale Unico)
+    Docente/i: LONGO OLIVIA
+  • LABORATORIO DI ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 1 (3 CFU – Ciclo Annuale Unico)
+    Docente/i: COSTA CHIARA
+  • ANALISI MATEMATICA 2 (6 CFU – Primo Semestre)
+    Docente/i: LUTEROTTI FABIO
+  • STORIA DELL'ARCHITETTURA CONTEMPORANEA (9 CFU – Primo Semestre)
+    Docente/i: GIUSTINA IRENE ITALIA, SALA ELISA
+  • SCIENZA E TECNOLOGIA DEI MATERIALI DA COSTRUZIONE (6 CFU – Primo Semestre)
+    Docente/i: SARTORE LUCIANA
+  • MECCANICA RAZIONALE (6 CFU – Secondo Semestre)
+    Docente/i: ZULLO FEDERICO
+  • FISICA TECNICA (9 CFU – Secondo Semestre)
+    Docente/i: PILOTELLI MARIAGRAZIA, PIANA EDOARDO ALESSIO
+
+  [3° Anno]
+  • ARCHITETTURA TECNICA 1 E LABORATORI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SESANA MARTA MARIA
+  • SCIENZA DELLE COSTRUZIONI (9 CFU – Primo Semestre)
+    Docente/i: PANTEGHINI ANDREA
+  • ESTIMO (9 CFU – Primo Semestre)
+    Docente/i: GALLO MAURIZIO
+  • ARCHITETTURA TECNICA 1 (6 CFU – Primo Semestre)
+    Docente/i: SESANA MARTA MARIA
+  • LABORATORIO DI ARCHITETTURA TECNICA 1 (3 CFU – Primo Semestre)
+    Docente/i: SESANA MARTA MARIA
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 2 E LABORATORIO (CFU n/d – Secondo Semestre)
+    Docente/i: LONGO OLIVIA
+  • LABORATORIO DI ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 2 (3 CFU – Secondo Semestre)
+    Docente/i: GRECO MASSIMO
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 2 (9 CFU – Secondo Semestre)
+    Docente/i: LONGO OLIVIA, ANGI BARBARA
+  • IDRAULICA E INFRASTRUTTURE IDRAULICHE URBANE 1 (9 CFU – Secondo Semestre)
+    Docente/i: GROSSI GIOVANNA
+  • LABORATORIO DI IMPIANTI TECNICI PER L'EDILIZIA (3 CFU – Secondo Semestre)
+    Docente/i: LOMBARDI DAVIDE
+
+  [4° Anno]
+  • TECNICA DELLE COSTRUZIONI E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: TIBERTI GIUSEPPE
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 3 E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: ANGI BARBARA
+  • TECNICA URBANISTICA E LABORATORIO (CFU n/d – Primo Semestre)
+    Docente/i: TIBONI MICHELA
+  • ARCHITETTURA TECNICA 2 E LABORATORIO (CFU n/d – Primo Semestre)
+    Docente/i: ARENGHI ALBERTO
+  • ARCHITETTURA TECNICA 2 (6 CFU – Primo Semestre)
+    Docente/i: ARENGHI ALBERTO
+  • LABORATORIO DI IMPIANTI TECNICI INNOVATIVI  PER GLI EDIFICI (3 CFU – Primo Semestre)
+    Docente/i: PARISI MONICA
+  • ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 3 (9 CFU – Primo Semestre)
+    Docente/i: ANGI BARBARA
+  • TECNICA DELLE COSTRUZIONI (9 CFU – Primo Semestre)
+    Docente/i: TIBERTI GIUSEPPE, MINELLI FAUSTO
+  • TECNICA URBANISTICA (9 CFU – Primo Semestre)
+    Docente/i: TIBONI MICHELA
+  • LABORATORIO DI TECNICA URBANISTICA (3 CFU – Primo Semestre)
+    Docente/i: TIBONI MICHELA, CARRA MARTINA
+  • GEOTECNICA (9 CFU – Secondo Semestre)
+    Docente/i: LAGIOIA ROCCO
+  • LABORATORIO DI ARCHITETTURA E COMPOSIZIONE ARCHITETTONICA 3 (3 CFU – Secondo Semestre)
+    Docente/i: ROSSI VITTORIO
+  • ORGANIZZAZIONE DEL CANTIERE (9 CFU – Secondo Semestre)
+    Docente/i: MASTROLEMBO VENTURA SILVIA
+  • LABORATORIO DI TECNICA DELLE COSTRUZIONI (3 CFU – Secondo Semestre)
+    Docente/i: MARCHINA EGIDIO
+
+  [5° Anno]
+  • RESTAURO ARCHITETTONICO E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: COCCOLI CARLOTTA
+  • RIABILITAZIONE STRUTTURALE E LABORATORIO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PLIZZARI GIOVANNI
+  • RESTAURO ARCHITETTONICO (9 CFU – Ciclo Annuale Unico)
+    Docente/i: COCCOLI CARLOTTA, SCALA BARBARA
+  • LABORATORIO DI RESTAURO ARCHITETTONICO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: COCCOLI CARLOTTA
+  • RIABILITAZIONE STRUTTURALE (9 CFU – Primo Semestre)
+    Docente/i: PLIZZARI GIOVANNI, FACCONI LUCA
+  • URBANISTICA E LABORATORIO (CFU n/d – Secondo Semestre)
+    Docente/i: PEZZAGNO MICHELE
+  • LABORATORIO DI RIABILITAZIONE STRUTTURALE (3 CFU – Secondo Semestre)
+    Docente/i: FACCONI LUCA
+  • LABORATORIO AVANZATO DI STORIA DELL’ARCHITETTURA, DELLE TECNICHE EDILIZIE E DELL’AMBIENTE COSTRUITO (3 CFU – Secondo Semestre)
+    Docente/i: GIUSTINA IRENE ITALIA
+  • URBANISTICA (9 CFU – Secondo Semestre)
+    Docente/i: PEZZAGNO MICHELE
+  • LABORATORIO DI URBANISTICA (3 CFU – Secondo Semestre)
+    Docente/i: PEZZAGNO MICHELE
+  • LABORATORIO DI TESI DI LAUREA (15 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: LEONE GIUSEPPE
+  • LABORATORIO DI PROGETTO INTEGRATO (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: AMATO CHIARA
+
+

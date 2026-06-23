@@ -46,4 +46,9 @@ export class DegreeRepository {
     delete(id: number): Promise<DeleteResult> {
         return this.repo.delete(id);
     }
+
+    // Svuota la tabella degree. CASCADE pulisce course, exam e il join session_degrees.
+    async clearCascade(): Promise<void> {
+        await this.repo.query('TRUNCATE TABLE "degree" RESTART IDENTITY CASCADE');
+    }
 }

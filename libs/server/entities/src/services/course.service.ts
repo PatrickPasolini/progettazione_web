@@ -6,6 +6,7 @@ import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateCourseDto } from '../entities/dto/create-course.dto.js';
 import { UpdateCourseDto } from '../entities/dto/update-course.dto.js';
 import { CourseListItem } from '../interfaces/course-list-item.js';
+import { seedCourses } from '../assets/courses-data.js';
 
 @Injectable()
 export class ServerCourseService {
@@ -132,40 +133,35 @@ export class ServerCourseService {
     async seed(): Promise<void> {
         const teachers = await this.teacherRepository.findAll();
         if (teachers.length === 0)
-            throw new Error('No teachers found');
+            throw new Error('No teachers found - esegui prima il seed dei docenti');
 
         const degrees = await this.degreeRepository.findAll();
         if (degrees.length === 0)
-            throw new Error('No degrees found');
+            throw new Error('No degrees found - esegui prima il seed dei corsi di laurea');
 
-        const [t1, t2, t3] = teachers;
-        const d = degrees;
+        // Reset: svuota i corsi (e exam dipendenti) per un seed pulito.
+        await this.courseRepository.clearCascade();
 
-        const courses: { courseName: string; teacher: (typeof teachers)[0]; degreeId: number }[] = [
-            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeId: d[0]?.id },
-            { courseName: 'Algebra e Geometria',                    teacher: t1, degreeId: d[5]?.id },
-            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeId: d[4]?.id },
-            { courseName: 'Algebra per Codici e Crittografia',      teacher: t1, degreeId: d[2]?.id },
-            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeId: d[0]?.id },
-            { courseName: 'Elementi di Informatica e Programmazione', teacher: t3, degreeId: d[5]?.id },
-            { courseName: 'Ingegneria del Software',                teacher: t3, degreeId: d[2]?.id },
-            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[0]?.id },
-            { courseName: 'Analisi Matematica 1',                   teacher: t2, degreeId: d[5]?.id },
-            { courseName: 'Calcolo Scientifico',                    teacher: t2, degreeId: d[3]?.id },
-        ];
+        // Indici in memoria per evitare una query per riga (~2400 corsi).
+        const teacherByEmail = new Map(teachers.map((t) => [t.email, t]));
+        const degreeByKey = new Map(
+            degrees.map((d) => [`${d.degreeName}||${d.degreeType}||${d.degreeYear}`, d]),
+        );
+        const existing = await this.courseRepository.findAll();
+        const seen = new Set(existing.map((c) => `${c.courseName}||${c.degree.id}`));
 
-        for (const c of courses) {
-            if (!c.degreeId) continue;
+        for (const c of seedCourses) {
+            const teacher = teacherByEmail.get(c.teacherEmail);
+            const degree = degreeByKey.get(`${c.degreeName}||${c.degreeType}||${c.degreeYear}`);
+            if (!teacher || !degree) continue;
 
-            const exists = await this.courseRepository.findByNameAndDegree(c.courseName, c.degreeId);
-            if (exists) continue;
-
-            const degree = await this.degreeRepository.findById(c.degreeId);
-            if (!degree) continue;
+            const key = `${c.courseName}||${degree.id}`;
+            if (seen.has(key)) continue;
+            seen.add(key);
 
             const course = this.courseRepository.create({
                 courseName: c.courseName,
-                teacher: c.teacher,
+                teacher,
                 degree,
             });
             await this.courseRepository.save(course);

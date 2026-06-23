@@ -52,4 +52,9 @@ export class SessionRepository {
     delete(id: number): Promise<DeleteResult> {
         return this.repo.delete(id);
     }
+
+    // Svuota la tabella session. CASCADE pulisce exam e il join session_degrees.
+    async clearCascade(): Promise<void> {
+        await this.repo.query('TRUNCATE TABLE "session" RESTART IDENTITY CASCADE');
+    }
 }

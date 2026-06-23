@@ -3,8 +3,8 @@ import { DegreeEntity } from '../entities/degree.entity.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateDegreeDto } from '../entities/dto/create-degree.dto.js';
 import { UpdateDegreeDto } from '../entities/dto/update-degree.dto.js';
-import { DegreeType, DegreeYear, MacroArea } from '../entities/dto/degree.enum.js';
 import { DegreeListItem } from '../interfaces/degree-list-item.js';
+import { seedDegrees } from '../assets/courses-data.js';
 
 @Injectable()
 export class ServerDegreeService {
@@ -71,26 +71,18 @@ export class ServerDegreeService {
     }
 
     async seed(): Promise<void> {
-        const degrees: Partial<DegreeEntity>[] = [
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Informatica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.BACHELOR, degreeYear: DegreeYear.THIRD,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.FIRST,   macroArea: MacroArea.ENGINEERING },
-            { degreeName: 'Ingegneria Elettronica', degreeType: DegreeType.MASTER,   degreeYear: DegreeYear.SECOND,  macroArea: MacroArea.ENGINEERING },
-        ];
+        // Reset: svuota i corsi di laurea (e course/exam/join dipendenti).
+        await this.degreeRepository.clearCascade();
 
-        for (const d of degrees) {
-            const exists = await this.degreeRepository.findByNameTypeYear(
-                d.degreeName!,
-                d.degreeType!,
-                d.degreeYear!,
-            );
-            if (exists) continue;
+        const existing = await this.degreeRepository.findAll();
+        const seen = new Set(
+            existing.map((d) => `${d.degreeName}||${d.degreeType}||${d.degreeYear}`),
+        );
+
+        for (const d of seedDegrees) {
+            const key = `${d.degreeName}||${d.degreeType}||${d.degreeYear}`;
+            if (seen.has(key)) continue;
+            seen.add(key);
 
             const degree = this.degreeRepository.create(d);
             await this.degreeRepository.save(degree);

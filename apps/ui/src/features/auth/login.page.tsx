@@ -17,7 +17,7 @@ export function LoginPage() {
     setError(null); setLoading(true);
     try {
       const { mustChangePassword } = await login(email, password);
-      if (mustChangePassword) { navigate('/cambia-password'); return; }
+      if (mustChangePassword) { navigate('/cambia-password', { state: { forced: true } }); return; }
       const user = await fetchCurrentUser();
       if (user.role === 'SECRETARY') navigate('/segreteria');
       else if (user.role === 'TEACHER') navigate('/docente');

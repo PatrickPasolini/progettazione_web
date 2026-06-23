@@ -1,0 +1,539 @@
+================================================================================
+1. AREA: AREA ECONOMICO-STATISTICA
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+CORSO: BANCA E FINANZA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • STORIA ECONOMICA (6 CFU – Primo Quadrimestre)
+    Docente/i: BETTONI BARBARA, PARIS IVAN
+  • FONDAMENTI DI ECONOMIA AZIENDALE (6 CFU – Primo Quadrimestre)
+    Docente/i: BALDISSERA ANNALISA
+  • MATEMATICA GENERALE (9 CFU – Primo Quadrimestre)
+    Docente/i: BARONE VITTORIO
+  • BUSINESS ENGLISH (B2) (9 CFU – Primo Quadrimestre)
+    Docente/i: ZANOLA ANNALISA
+  • DIRITTO PRIVATO (9 CFU – Secondo Quadrimestre)
+    Docente/i: TRECCANI MATTEO
+  • ECONOMIA POLITICA I (9 CFU – Secondo Quadrimestre)
+    Docente/i: MINELLI ENRICO
+  • ABILITÀ INFORMATICHE (2 CFU – Secondo Quadrimestre)
+    Docente/i: FERRI MARTINA
+  • MISURE ECONOMICHE D'AZIENDA (9 CFU – Secondo Quadrimestre)
+    Docente/i: MAZZOLENI ALBERTO
+
+  [2° Anno]
+  • STATISTICA (9 CFU – Primo Quadrimestre)
+    Docente/i: MANISERA MARICA
+  • ECONOMIA POLITICA II (9 CFU – Primo Quadrimestre)
+    Docente/i: TRECROCI CARMINE
+  • MATEMATICA FINANZIARIA E ATTUARIALE (6 CFU – Primo Quadrimestre)
+    Docente/i: RICCARDI ROSSANA
+  • DIRITTO PUBBLICO (6 CFU – Primo Quadrimestre)
+    Docente/i: CASANOVA DANIELE
+  • POLITICA ECONOMICA (9 CFU – Secondo Quadrimestre)
+    Docente/i: BAZZANA DAVIDE
+  • ECONOMIA DEGLI INTERMEDIARI FINANZIARI (9 CFU – Secondo Quadrimestre)
+    Docente/i: BASILE IGNAZIO GIORGIO
+  • DIRITTO COMMERCIALE E BANCARIO (12 CFU – Secondo Quadrimestre)
+    Docente/i: PAGANO LAURA
+
+  [3° Anno]
+  • ECONOMIA DEL MERCATO MOBILIARE (9 CFU – Primo Quadrimestre)
+    Docente/i: FERRARI PIERPAOLO
+  • FINANZIAMENTI D'AZIENDA (6 CFU – Primo Quadrimestre)
+    Docente/i: FERRARI PIERPAOLO
+  • INFERENZA STATISTICA (9 CFU – Primo Quadrimestre)
+    Docente/i: BRENTARI EUGENIO
+  • ECONOMIA DELLE AZIENDE DI CREDITO (9 CFU – Secondo Quadrimestre)
+    Docente/i: SAVONA ROBERTO, ABATE GUIDO
+  • SCELTE DI PORTAFOGLIO (6 CFU – Secondo Quadrimestre)
+    Docente/i: DONADELLI MICHAEL
+  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FRANCO TOMMASO
+  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ROSSI ANDREA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: Business and Economics [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ECONOMIC HISTORY (6 CFU – Primo Quadrimestre)
+    Docente/i: LANDONI MATTEO
+  • MATHEMATICS (9 CFU – Primo Quadrimestre)
+    Docente/i: DOMINGUEZ MARTIN MARIA RUTH
+  • PRINCIPLES OF MANAGEMENT (9 CFU – Primo Quadrimestre)
+    Docente/i: GASBARRO FEDERICA
+  • DIGITAL SKILLS LAB (2 CFU – Primo Quadrimestre)
+    Docente/i: FILIPPI CARLO
+  • EUROPEAN AND ITALIAN PUBLIC LAW (9 CFU – Secondo Quadrimestre)
+    Docente/i: MACCABIANI NADIA
+  • FINANCIAL ACCOUNTING (6 CFU – Secondo Quadrimestre)
+    Docente/i: ROCCA LAURA
+  • MICROECONOMICS (9 CFU – Secondo Quadrimestre)
+    Docente/i: SCARPA CARLO
+
+  [2° Anno]
+  • FINANCIAL MATHEMATICS (6 CFU – Primo Quadrimestre)
+    Docente/i: BOVO ANDREA
+  • MACROECONOMICS (9 CFU – Primo Quadrimestre)
+    Docente/i: PARISI MARIA LAURA
+  • MANAGEMENT ACCOUNTING (9 CFU – Primo Quadrimestre)
+    Docente/i: BIANCHI ROBERTO
+  • STATISTICS (9 CFU – Primo Quadrimestre)
+    Docente/i: MACIS AMBRA
+  • COMPUTATIONAL THINKING (6 CFU – Secondo Quadrimestre)
+    Docente/i: ARCHETTI CLAUDIA
+  • EUROPEAN AND ITALIAN PRIVATE LAW (9 CFU – Secondo Quadrimestre)
+    Docente/i: FERRARI CLAUDIA
+  • MARKETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: BREGOLI ILENIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: ECONOMIA E ANALISI DEI DATI [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • INFORMATICA E PROBLEM SOLVING (6 CFU – Primo Quadrimestre)
+    Docente/i: VINDIGNI MICHELE
+  • FONDAMENTI DI ECONOMIA AZIENDALE (6 CFU – Primo Quadrimestre)
+    Docente/i: BALDISSERA ANNALISA
+  • MATEMATICA I (9 CFU – Primo Quadrimestre)
+    Docente/i: BELLINI MARIA
+  • ABILITÀ INFORMATICHE (2 CFU – Primo Quadrimestre)
+    Docente/i: FILIPPI CARLO
+  • DIRITTO PUBBLICO E TRANSIZIONE DIGITALE (9 CFU – Primo Quadrimestre)
+    Docente/i: MACCABIANI NADIA
+  • ECONOMIA POLITICA I (9 CFU – Secondo Quadrimestre)
+    Docente/i: MINELLI ENRICO
+  • CODING PER L'ANALISI DEI DATI (9 CFU – Secondo Quadrimestre)
+    Docente/i: PELIZZARI CRISTIAN
+  • MISURE ECONOMICHE D'AZIENDA (9 CFU – Secondo Quadrimestre)
+    Docente/i: MAZZOLENI ALBERTO
+
+  [2° Anno]
+  • ECONOMIA POLITICA II (9 CFU – Primo Quadrimestre)
+    Docente/i: TRECROCI CARMINE
+  • STATISTICA (9 CFU – Primo Quadrimestre)
+    Docente/i: MANISERA MARICA
+  • MATEMATICA II (6 CFU – Primo Quadrimestre)
+    Docente/i: RICCARDI ROSSANA
+  • BUSINESS ENGLISH (B2) (9 CFU – Primo Quadrimestre)
+    Docente/i: ZANOLA ANNALISA
+  • RICERCA OPERATIVA (9 CFU – Secondo Quadrimestre)
+    Docente/i: GUASTAROBA GIANFRANCO
+  • DIRITTO PRIVATO E RELAZIONI ECONOMICHE (6 CFU – Secondo Quadrimestre)
+    Docente/i: MANCINI CRISTINA
+  • GESTIONE AZIENDALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: BARONE SILVIA
+  • STATISTICA PER L'ANALISI DEI DATI (9 CFU – Secondo Quadrimestre)
+    Docente/i: SILVESTRI GIUSEPPE
+
+  [3° Anno]
+  • FINANCIAL ECONOMICS (6 CFU – Primo Quadrimestre)
+    Docente/i: DONADELLI MICHAEL
+  • PUBLIC AND INNOVATION ECONOMICS (9 CFU – Primo Quadrimestre)
+    Docente/i: LEVAGGI ROSELLA
+  • DATA ANALYSIS AND BIG DATA LAB (9 CFU – Primo Quadrimestre)
+    Docente/i: RIPAMONTI ENRICO
+  • EMPIRICAL ECONOMICS (9 CFU – Secondo Quadrimestre)
+    Docente/i: MINIACI RAFFAELE
+  • COMPUTATIONAL METHODS (6 CFU – Secondo Quadrimestre)
+    Docente/i: FILIPPI CARLO
+  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: COLOMBO DAVIDE
+  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FONTANA MARIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: ECONOMIA E GESTIONE AZIENDALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ECONOMIA AZIENDALE (9 CFU – Primo Quadrimestre)
+    Docente/i: GENNARI FRANCESCA, BOGARELLI PAOLO
+  • MATEMATICA GENERALE (9 CFU – Primo Quadrimestre)
+    Docente/i: OGGIONI GIORGIA, BOVO ANDREA, RICCARDI ROSSANA
+  • STORIA ECONOMICA (6 CFU – Primo Quadrimestre)
+    Docente/i: PARIS IVAN, BETTONI BARBARA
+  • BUSINESS ENGLISH (B2) (9 CFU – Primo Quadrimestre)
+    Docente/i: ZANOLA ANNALISA, DOERR ROXANNE BARBARA
+  • DIRITTO PRIVATO (9 CFU – Secondo Quadrimestre)
+    Docente/i: MAFFEIS DANIELE, PASCUCCI LUISA
+  • CONTABILITÀ GENERALE E BILANCIO (9 CFU – Secondo Quadrimestre)
+    Docente/i: NICOLIELLO MARIO, TEODORI CLAUDIO, MORI ELISA
+  • ECONOMIA POLITICA I (9 CFU – Secondo Quadrimestre)
+    Docente/i: RIZZATI MASSIMILIANO CARLO PIETRO, MARCHIORI CARMEN
+  • ABILITÀ INFORMATICHE (2 CFU – Secondo Quadrimestre)
+    Docente/i: TESTA NICOLA
+
+  [2° Anno]
+  • STATISTICA (9 CFU – Primo Quadrimestre)
+    Docente/i: ZUCCOLOTTO PAOLA, CARPITA MAURIZIO
+  • ECONOMIA POLITICA II (9 CFU – Primo Quadrimestre)
+    Docente/i: VASSALLI MATILDE, GUERINI MATTIA
+  • MATEMATICA FINANZIARIA E ATTUARIALE (6 CFU – Primo Quadrimestre)
+    Docente/i: PELIZZARI CRISTIAN, DOMINGUEZ MARTIN MARIA RUTH
+  • DIRITTO PUBBLICO (6 CFU – Primo Quadrimestre)
+    Docente/i: GORLANI MARIO, CASANOVA DANIELE
+  • ECONOMIA E GESTIONE DELLE IMPRESE (9 CFU – Secondo Quadrimestre)
+    Docente/i: FALINI ALBERTO, TENCATI ANTONIO
+  • DIRITTO COMMERCIALE (9 CFU – Secondo Quadrimestre)
+    Docente/i: PICCIAU CHIARA
+  • CONTABILITÀ ANALITICA E BUDGETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: BOSETTI LUISA, CASSANO RAFFAELLA
+
+  [3° Anno]
+  • MARKETING (9 CFU – Primo Quadrimestre)
+    Docente/i: BONERA MICHELLE
+  • DIRITTO DEL LAVORO (9 CFU – Primo Quadrimestre)
+    Docente/i: RAVELLI FABIO
+  • PUBLIC ECONOMICS (9 CFU – Primo Quadrimestre)
+    Docente/i: PANTEGHINI PAOLO
+  • FINANCIAL MANAGEMENT MODELS (9 CFU – Primo Quadrimestre)
+    Docente/i: FALBO PAOLO STEFANO
+  • RICERCA OPERATIVA (9 CFU – Primo Quadrimestre)
+    Docente/i: ARCHETTI CLAUDIA, SPERANZA MARIA GRAZIA
+  • PROGRAMMAZIONE E CONTROLLO (9 CFU – Primo Quadrimestre)
+    Docente/i: FRANZONI SIMONA
+  • AMMINISTRAZIONE E CONTROLLO DELLE IMPRESE TURISTICHE (6 CFU – Primo Quadrimestre)
+    Docente/i: DE ANGELIS ROBERTO
+  • ECONOMIA E GESTIONE DELLE IMPRESE TURISTICHE (6 CFU – Primo Quadrimestre)
+    Docente/i: GASBARRO FEDERICA
+  • OPERATIONS MANAGEMENT (6 CFU – Primo Quadrimestre)
+    Docente/i: SPERANZA MARIA GRAZIA
+  • ECONOMIA DEI BENI CULTURALI (9 CFU – Primo Quadrimestre)
+    Docente/i: DALLE NOGARE CHIARA
+  • SOCIOLOGIA ECONOMICA DEI PROCESSI CULTURALI (6 CFU – Primo Quadrimestre)
+    Docente/i: BIANCHI CARLO
+  • STORIA CULTURALE (6 CFU – Primo Quadrimestre)
+    Docente/i: MARTINI ANTONIO
+  • INNOVAZIONE E PRODUZIONE INDUSTRIALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: CODINI ANNA PAOLA
+  • ORGANIZZAZIONE AZIENDALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: GIACOMINI DAVIDE, MUZZI CATERINA
+  • TECNICA PROFESSIONALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: GRASSI SILVIA
+  • BUSINESS ORGANISATION (6 CFU – Secondo Quadrimestre)
+    Docente/i: GIACOMINI DAVIDE
+  • STRATEGY ANALYSIS (9 CFU – Secondo Quadrimestre)
+    Docente/i: NICOLIELLO MARIO
+  • ECONOMIA DEGLI INTERMEDIARI FINANZIARI (9 CFU – Secondo Quadrimestre)
+    Docente/i: SAVONA ROBERTO
+  • POLITICA DEL TURISMO E DEI BENI CULTURALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: BAZZANA DAVIDE
+  • GEOGRAFIA E SOCIOLOGIA DEL TURISMO (CFU n/d – Secondo Quadrimestre)
+    Docente/i: PIETTA ANTONELLA DOSOLINA
+  • GEOGRAFIA DEL TURISMO (4.5 CFU – Secondo Quadrimestre)
+    Docente/i: PIETTA ANTONELLA DOSOLINA
+  • SOCIOLOGIA DEL TURISMO (4.5 CFU – Secondo Quadrimestre)
+    Docente/i: ABBIATI GIOVANNI MARIA
+  • MARKETING DEGLI EVENTI CULTURALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: MARTINELLI SILVIA
+  • FINANZA PER LE ATTIVITÀ CULTURALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: ABATE GUIDO
+  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GIORDANO MARIA
+  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: D'AMICO SARA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: Economia e Gestione delle Imprese Culturali e Creative [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • DIRITTO PRIVATO (9 CFU – Primo Quadrimestre)
+    Docente/i: PASCUCCI LUISA
+  • ECONOMIA AZIENDALE (9 CFU – Primo Quadrimestre)
+    Docente/i: FRANZONI SIMONA
+  • MATEMATICA GENERALE (9 CFU – Primo Quadrimestre)
+    Docente/i: ZUANON MAGALI ERNESTINE
+  • STORIA ECONOMICA (6 CFU – Primo Quadrimestre)
+    Docente/i: POMPERMAIER MATTEO
+  • CONTABILITÀ GENERALE E BILANCIO (9 CFU – Secondo Quadrimestre)
+    Docente/i: VITALE FILIPPO
+  • ECONOMIA POLITICA I (9 CFU – Secondo Quadrimestre)
+    Docente/i: VALENTE CLAUDIA
+  • BUSINESS ENGLISH (B2) (9 CFU – Secondo Quadrimestre)
+    Docente/i: BIANCO CRISTINA
+  • ABILITÀ INFORMATICHE (2 CFU – Secondo Quadrimestre)
+    Docente/i: VINDIGNI MICHELE
+
+  [2° Anno]
+  • ECONOMIA POLITICA II (9 CFU – Primo Quadrimestre)
+    Docente/i: VITALE SERGIO
+  • MATEMATICA FINANZIARIA E ATTUARIALE (6 CFU – Primo Quadrimestre)
+    Docente/i: ZUANON MAGALI ERNESTINE
+  • STATISTICA (9 CFU – Primo Quadrimestre)
+    Docente/i: GOLIA SILVIA
+  • DIRITTO PUBBLICO (6 CFU – Secondo Quadrimestre)
+    Docente/i: CASANOVA DANIELE
+  • ECONOMIA  E GESTIONE DELLE IMPRESE CULTURALI E CREATIVE (9 CFU – Secondo Quadrimestre)
+    Docente/i: GASBARRO FEDERICA
+  • DIRITTO DELLE IMPRESE CULTURALI E CREATIVE (9 CFU – Secondo Quadrimestre)
+    Docente/i: MORELLI CRISTINA
+  • CONTABILITÀ ANALITICA E BUDGETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: COLOMBO FILIPPO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: Analytics and Data Science for Economics and Management [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ACCOUNTING AND MARKETING (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BONERA MICHELLE
+  • ACCOUNTING ANALYTICS (6 CFU – Primo Quadrimestre)
+    Docente/i: ROCCA LAURA
+  • CODING FOR DATA SCIENCE AND ANALYTICS (9 CFU – Primo Quadrimestre)
+    Docente/i: LOCORO ANGELA
+  • STATISTICAL LEARNING (9 CFU – Primo Quadrimestre)
+    Docente/i: MANISERA MARICA
+  • DATABASE MANAGEMENT (6 CFU – Secondo Quadrimestre)
+    Docente/i: COSTA CHIARA
+  • DIGITAL MARKETING (6 CFU – Secondo Quadrimestre)
+    Docente/i: BONERA MICHELLE
+  • LAW AND DATA (6 CFU – Secondo Quadrimestre)
+    Docente/i: CATTANEO FRANCESCO
+  • CAUSAL INFERENCE AND IMPACT EVALUATION (6 CFU – Secondo Quadrimestre)
+    Docente/i: MINIACI RAFFAELE
+
+  [2° Anno]
+  • ANALYTICS AND DECISION METHODS (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: NERI GIULIA
+  • OPTIMIZATION METHODS IN BUSINESS ANALYTICS (6 CFU – Primo Quadrimestre)
+    Docente/i: GUASTAROBA GIANFRANCO
+  • ARTIFICIAL INTELLIGENCE (9 CFU – Primo Quadrimestre)
+    Docente/i: LOCORO ANGELA
+  • STATISTICS FOR MACHINE LEARNING (9 CFU – Primo Quadrimestre)
+    Docente/i: RIPAMONTI ENRICO
+  • DECISION THEORY AND MULTI-CRITERIA ANALYSIS (6 CFU – Secondo Quadrimestre)
+    Docente/i: DOMINGUEZ MARTIN MARIA RUTH
+  • ECONOMICS OF INFORMATION AND DATA (6 CFU – Secondo Quadrimestre)
+    Docente/i: MINELLI ENRICO
+  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MARTINI GIUSEPPE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: CONSULENZA AZIENDALE E LIBERA PROFESSIONE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ANALISI DI BILANCIO E COMUNICAZIONE FINANZIARIA (9 CFU – Primo Quadrimestre)
+    Docente/i: TEODORI CLAUDIO
+  • STATISTICA PER LE DECISIONI AZIENDALI (9 CFU – Primo Quadrimestre)
+    Docente/i: BRENTARI EUGENIO
+  • CRISI D'IMPRESA (CFU n/d – Primo Quadrimestre)
+    Docente/i: ARDIZZONE LUIGI
+  • DIRITTO DELLA CRISI D'IMPRESA (6 CFU – Primo Quadrimestre)
+    Docente/i: ARDIZZONE LUIGI
+  • CRISI D'IMPRESA E PROCESSI DI RISTRUTTURAZIONE (6 CFU – Primo Quadrimestre)
+    Docente/i: MAZZOLENI ALBERTO
+  • ECONOMIA DELLA TASSAZIONE (9 CFU – Secondo Quadrimestre)
+    Docente/i: PANTEGHINI PAOLO
+  • STORIA ECONOMICA DELLE PROFESSIONI (6 CFU – Secondo Quadrimestre)
+    Docente/i: BETTONI BARBARA
+  • STATISTICA PER LA FINANZA (9 CFU – Secondo Quadrimestre)
+    Docente/i: CARPITA MAURIZIO
+  • STRATEGIA E CONTROLLO STRATEGICO DI GESTIONE (9 CFU – Secondo Quadrimestre)
+    Docente/i: GENNARI FRANCESCA
+  • PRINCIPI CONTABILI NAZIONALI E INTERNAZIONALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: CARINI CRISTIAN
+  • SCENARI E POLITICHE MACROECONOMICHE (6 CFU – Secondo Quadrimestre)
+    Docente/i: MENONCIN FRANCESCO, VERGALLI SERGIO
+
+  [2° Anno]
+  • TECNICA DEGLI INVESTIMENTI E DEI FINANZIAMENTI (9 CFU – Primo Quadrimestre)
+    Docente/i: BUBBI PIER LUCA
+  • GESTIONE FINANZIARIA AZIENDALE (9 CFU – Primo Quadrimestre)
+    Docente/i: FALINI ALBERTO
+  • DIRITTO PUBBLICO DELL'AMBIENTE (6 CFU – Primo Quadrimestre)
+    Docente/i: GORLANI MARIO
+  • BILANCIO CONSOLIDATO E GRUPPI DI IMPRESE (6 CFU – Primo Quadrimestre)
+    Docente/i: CARINI CRISTIAN
+  • SISTEMI INFORMATIVI AZIENDALI (6 CFU – Primo Quadrimestre)
+    Docente/i: LOMBARDI RICCARDO
+  • DIRITTO DELLE SOCIETÀ E RESPONSABILITÀ SOCIALE (6 CFU – Primo Quadrimestre)
+    Docente/i: MORANDI PAOLA
+  • DIRITTO TRIBUTARIO (9 CFU – Secondo Quadrimestre)
+    Docente/i: CORASANITI GIUSEPPE
+  • PROFILI AZIENDALI E GIURIDICI DELLE OPERAZIONI STRAORDINARIE D'IMPRESA (CFU n/d – Secondo Quadrimestre)
+    Docente/i: MARTINI LUCA
+  • PRINCIPI E RENDICONTAZIONE DI SOSTENIBILITÀ (9 CFU – Secondo Quadrimestre)
+    Docente/i: ROCCA LAURA
+  • OPERAZIONI STRAORDINARIE D'IMPRESA (6 CFU – Secondo Quadrimestre)
+    Docente/i: CAMODECA RENATO SALVATORE
+  • DIRITTO COMMERCIALE (CORSO PROGREDITO) (6 CFU – Secondo Quadrimestre)
+    Docente/i: MONTI MARTINA
+  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SANTORO ALESSIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: FINANZA E RISK MANAGEMENT [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • GESTIONE DEI RISCHI BANCARI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SAVONA ROBERTO
+  • MONETA E FINANZA (9 CFU – Primo Quadrimestre)
+    Docente/i: TRECROCI CARMINE
+  • RISCHI DI MERCATO AZIONARIO E OBBLIGAZIONARIO (9 CFU – Primo Quadrimestre)
+    Docente/i: MENONCIN FRANCESCO
+  • INFORMATICA E MODELLI MATEMATICI PER LA FINANZA (9 CFU – Primo Quadrimestre)
+    Docente/i: ANGELELLI ENRICO
+  • ECONOMIA DELLA BANCA E GESTIONE DEI RISCHI (6 CFU – Primo Quadrimestre)
+    Docente/i: ABATE GUIDO
+  • ASSET MANAGEMENT E INVESTITORI ISTITUZIONALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: BASILE IGNAZIO GIORGIO, FERRARI PIERPAOLO
+  • DERIVATI E GESTIONE DEI RISCHI (9 CFU – Secondo Quadrimestre)
+    Docente/i: MENONCIN FRANCESCO
+  • DIRITTO DEI MERCATI FINANZIARI (6 CFU – Secondo Quadrimestre)
+    Docente/i: ARDIZZONE LUIGI
+  • RISCHI DI CREDITO (6 CFU – Secondo Quadrimestre)
+    Docente/i: SAVONA ROBERTO
+
+  [2° Anno]
+  • ECONOMETRIA DEI MERCATI FINANZIARI (6 CFU – Primo Quadrimestre)
+    Docente/i: GUERINI MATTIA
+  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RUSSO CHIARA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: MANAGEMENT [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • INTERNATIONAL ECONOMICS (9 CFU – Primo Quadrimestre)
+    Docente/i: PARISI MARIA LAURA
+  • ANALISI DI BILANCIO E COMUNICAZIONE FINANZIARIA (9 CFU – Primo Quadrimestre)
+    Docente/i: TEODORI CLAUDIO
+  • IMPRESE E MERCATI INTERNAZIONALI (9 CFU – Primo Quadrimestre)
+    Docente/i: BERTOLI GIUSEPPE
+  • BUSINESS CONTRACT LAW (6 CFU – Primo Quadrimestre)
+    Docente/i: MARTINELLI LUCA
+  • FINANCIAL STATEMENT ANALYSIS (9 CFU – Primo Quadrimestre)
+    Docente/i: CAMODECA RENATO SALVATORE
+  • DIRITTO DEI CONTRATTI FINANZIARI DELL'IMPRESA (6 CFU – Primo Quadrimestre)
+    Docente/i: ROSSI PAOLA
+  • ORGANIZATIONAL BEHAVIOR (6 CFU – Primo Quadrimestre)
+    Docente/i: MUZZI CATERINA
+  • ORGANIZZAZIONE E GESTIONE DELLE RISORSE UMANE (9 CFU – Secondo Quadrimestre)
+    Docente/i: MUZZI CATERINA
+  • LEADERSHIP AND COMPLEX ORGANIZATIONS (6 CFU – Secondo Quadrimestre)
+    Docente/i: CASTELLANI MARCO
+  • CORPORATE SOCIAL RESPONSIBILITY AND SUSTAINABILITY (9 CFU – Secondo Quadrimestre)
+    Docente/i: TENCATI ANTONIO
+  • ENVIRONMENTAL ECONOMICS (9 CFU – Secondo Quadrimestre)
+    Docente/i: MARCHIORI CARMEN
+  • INTERNATIONAL MARKETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: CODINI ANNA PAOLA
+  • HISTORY OF GLOBAL BUSINESS (9 CFU – Secondo Quadrimestre)
+    Docente/i: LANDONI MATTEO
+  • ENVIRONMENTAL HISTORY (9 CFU – Secondo Quadrimestre)
+    Docente/i: BETTONI BARBARA
+
+  [2° Anno]
+  • GESTIONE DELLA PRODUZIONE E DELLA LOGISTICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BERNARDI FRANCESCO
+  • SUPPLY CHAIN AND TRANSPORTATION MANAGEMENT (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: NEGRI FRANCESCA
+  • MARKETING MANAGEMENT (9 CFU – Primo Quadrimestre)
+    Docente/i: CERUTI FRANCESCA
+  • GESTIONE DELLA SUPPLY CHAIN (6 CFU – Primo Quadrimestre)
+    Docente/i: FILIPPI CARLO, SPERANZA MARIA GRAZIA
+  • TECNICA DEGLI INVESTIMENTI E DEI FINANZIAMENTI (9 CFU – Primo Quadrimestre)
+    Docente/i: BUBBI PIER LUCA
+  • STATISTICA PER IL MARKETING (9 CFU – Primo Quadrimestre)
+    Docente/i: ZUCCOLOTTO PAOLA
+  • QUANTITATIVE METHODS FOR ECONOMICS AND BUSINESS (9 CFU – Primo Quadrimestre)
+    Docente/i: OGGIONI GIORGIA
+  • INTERNATIONAL ECONOMIC ENVIRONMENT FOR BUSINESS (9 CFU – Primo Quadrimestre)
+    Docente/i: PONTAROLLO NICOLA
+  • TECNICA FINANZIARIA (6 CFU – Primo Quadrimestre)
+    Docente/i: BUBBI PIER LUCA
+  • GESTIONE FINANZIARIA AZIENDALE (9 CFU – Primo Quadrimestre)
+    Docente/i: FALINI ALBERTO
+  • METHODS AND MODELS FOR ENVIRONMENTAL SUSTAINABILITY (9 CFU – Primo Quadrimestre)
+    Docente/i: FALBO PAOLO STEFANO
+  • LABORATORIO GLOBAL MARKETING RESEARCH (2 CFU – Primo Quadrimestre)
+    Docente/i: CODINI ANNA PAOLA
+  • GESTIONE DELLA PRODUZIONE E DELLA LOGISTICA INTERNA (6 CFU – Primo Quadrimestre)
+    Docente/i: BERTAZZI LUCA
+  • LABORATORIO PER LA GESTIONE DELLA PRODUZIONE E DELLA LOGISTICA (2 CFU – Primo Quadrimestre)
+    Docente/i: BERTAZZI LUCA
+  • SUPPLY CHAIN MANAGEMENT (6 CFU – Primo Quadrimestre)
+    Docente/i: FILIPPI CARLO, SPERANZA MARIA GRAZIA
+  • LABORATORIO DI MARKETING PLAN (2 CFU – Primo Quadrimestre)
+    Docente/i: BARBIERI CARLO
+  • SISTEMI INFORMATIVI AZIENDALI (6 CFU – Primo Quadrimestre)
+    Docente/i: RICCI MATTEO
+  • SUSTAINABILITY CERTIFICATIONS LAB (2 CFU – Primo Quadrimestre)
+    Docente/i: GALLO FILIPPO
+  • STATISTICA PER LA FINANZA (9 CFU – Secondo Quadrimestre)
+    Docente/i: CARPITA MAURIZIO
+  • MARKETING-ADVANCED (6 CFU – Secondo Quadrimestre)
+    Docente/i: BREGOLI ILENIA
+  • FINANZA AZIENDALE  STRAORDINARIA (6 CFU – Secondo Quadrimestre)
+    Docente/i: BUBBI PIER LUCA
+  • FINANCIAL MANAGEMENT (6 CFU – Secondo Quadrimestre)
+    Docente/i: MARIANI LAURA
+  • ASSET MANAGEMENT E INVESTITORI ISTITUZIONALI (9 CFU – Secondo Quadrimestre)
+    Docente/i: BASILE IGNAZIO GIORGIO, FERRARI PIERPAOLO
+  • RESOURCE AND ENERGY ECONOMICS (9 CFU – Secondo Quadrimestre)
+    Docente/i: VERGALLI SERGIO
+  • TECNOLOGIE DIGITALI PER L'IMPRESA (9 CFU – Secondo Quadrimestre)
+    Docente/i: RINALDI STEFANO
+  • SOSTENIBILITÀ AMBIENTALE E SOCIALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: PIETTA ANTONELLA DOSOLINA
+  • MARKETING INDUSTRIALE E DEI SERVIZI (9 CFU – Secondo Quadrimestre)
+    Docente/i: BREGOLI ILENIA
+  • TRANSPORTATION MANAGEMENT (6 CFU – Secondo Quadrimestre)
+    Docente/i: ARCHETTI CLAUDIA, GUASTAROBA GIANFRANCO
+  • DIGITAL MARKETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: BONERA MICHELLE
+  • GESTIONE DELLA LOGISTICA DISTRIBUTIVA E DELLA LOGISTICA SOSTENIBILE (9 CFU – Secondo Quadrimestre)
+    Docente/i: BERTAZZI LUCA
+  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: COSTA CLAUDIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: MARKETING PER IL MADE IN ITALY [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • PRODUZIONI LOCALI, TURISMO, SOSTENIBILITA' NEL MADE IN ITALY (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FRANZONI SIMONA
+  • ANALISI ECONOMICO FINANZIARIE PER IL MARKETING (9 CFU – Primo Quadrimestre)
+    Docente/i: MARTINI PAOLA
+  • GOVERNANCE DEL TURISMO SOSTENIBILE (6 CFU – Primo Quadrimestre)
+    Docente/i: FRANZONI SIMONA
+  • SOCIOLOGIA DEI CONSUMI (6 CFU – Primo Quadrimestre)
+    Docente/i: CASNICI NICCOLÒ
+  • MODELLI E METODI PER LE DECISIONI AZIENDALI (6 CFU – Primo Quadrimestre)
+    Docente/i: ZUANON MAGALI ERNESTINE
+  • STATISTICA PER IL MARKETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: GUERRA CRISTINA
+  • SOSTENIBILITA' AMBIENTALE E SOCIALE (6 CFU – Secondo Quadrimestre)
+    Docente/i: PIETTA ANTONELLA DOSOLINA
+  • COMUNICAZIONE E MARKETING DIGITALE PER IL MADE IN ITALY (9 CFU – Secondo Quadrimestre)
+    Docente/i: MAZZA GIOVANNI
+
+  [2° Anno]
+  • BRAND MANAGEMENT PER IL MADE IN ITALY (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MORETTI FRANCESCO
+  • ECONOMIA DELLE INDUSTRIE CULTURALI E CREATIVE (9 CFU – Primo Quadrimestre)
+    Docente/i: DALLE NOGARE CHIARA
+  • STORIA DEL BRAND (6 CFU – Primo Quadrimestre)
+    Docente/i: LANDONI MATTEO
+  • MARKETING INTERNAZIONALE (9 CFU – Primo Quadrimestre)
+    Docente/i: MORETTI TOMMASO
+  • LABORATORIO DI MARKETING PLAN E GENERATIVE AI (2 CFU – Primo Quadrimestre)
+    Docente/i: SORRENTINO STEFANO
+  • BRAND MANAGEMENT (6 CFU – Secondo Quadrimestre)
+    Docente/i: RICCI TOMMASO
+  • DIRITTO PER IL MARKETING (9 CFU – Secondo Quadrimestre)
+    Docente/i: PELLEGRINI ANNA
+  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: LONGO MONICA
