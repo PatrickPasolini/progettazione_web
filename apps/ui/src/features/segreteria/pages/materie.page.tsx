@@ -3,6 +3,7 @@ import { fetchCourses, deleteCourse, fetchDegrees } from "../segreteria.api";
 import { CourseListItem, DegreeListItem } from '@server/entities/frontend';
 import { MateriaModal } from '../components/materia-modal';
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 interface YearLeaf {
     degreeId: number;
@@ -28,6 +29,7 @@ export function MateriePage() {
     const [error, setError] = useState<string | null>(null);
 
     const [deleteError, setDeleteError] = useState<string | null>(null);
+    const [pendingDelete, setPendingDelete] = useState<{ id: number; name: string } | null>(null);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMode, setModalMode] = useState<"create" | "edit">('create');
@@ -143,14 +145,18 @@ export function MateriePage() {
         setIsModalOpen(true);
     };
 
-    const handleDelete = async (id: number, name: string) => {
-        if (window.confirm(`Sei sicuro di voler eliminare la materia "${name}"?`)) {
-            try {
-                await deleteCourse(id);
-                loadCourses();
-            } catch (err: any) {
-                setDeleteError(err.message || "Errore nell'eliminazione della materia");
-            }
+    const handleDelete = (id: number, name: string) => {
+        setPendingDelete({ id, name });
+    };
+
+    const confirmDelete = async () => {
+        if (!pendingDelete) return;
+        setPendingDelete(null);
+        try {
+            await deleteCourse(pendingDelete.id);
+            loadCourses();
+        } catch (err: any) {
+            setDeleteError(err.message || "Errore nell'eliminazione della materia");
         }
     };
 
@@ -308,6 +314,14 @@ export function MateriePage() {
                     })}
                 </div>
             )}
+
+            <ConfirmDialog
+                open={!!pendingDelete}
+                title="Elimina materia"
+                description={<>Sei sicuro di voler eliminare la materia<br />"{pendingDelete?.name}"?</>}
+                onConfirm={confirmDelete}
+                onCancel={() => setPendingDelete(null)}
+            />
 
             <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
                 <AlertDialogContent>

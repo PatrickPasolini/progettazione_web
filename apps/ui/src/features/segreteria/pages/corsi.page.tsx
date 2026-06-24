@@ -3,6 +3,7 @@ import { fetchDegrees, deleteDegree } from "../segreteria.api";
 import { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
 import { CorsoModal } from '../components/corso-modal';
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 export function CorsiPage() {
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
@@ -14,6 +15,7 @@ export function CorsiPage() {
     const [selectedGroup, setSelectedGroup] = useState<DegreeListItem[]>([]);
 
     const [deleteError, setDeleteError] = useState<string | null>(null);
+    const [pendingDelete, setPendingDelete] = useState<DegreeListItem[] | null>(null);
 
     const [searchTerm, setSearchTerm] = useState("");
     const [filterType, setFilterType] = useState("");
@@ -90,17 +92,20 @@ export function CorsiPage() {
         setIsModalOpen(true);
     };
 
-    const handleDelete = async (group: DegreeListItem[]) => {
-        const name = group[0].degreeName;
-        if (window.confirm(`Sei sicuro di voler eliminare il corso di laurea "${name}"?`)) {
-            try {
-                for (const d of group) {
-                    await deleteDegree(d.id);
-                }
-                loadDegrees();
-            } catch (err: any) {
-                setDeleteError(err.message || "Errore nell'eliminazione del corso di laurea");
+    const handleDelete = (group: DegreeListItem[]) => {
+        setPendingDelete(group);
+    };
+
+    const confirmDelete = async () => {
+        if (!pendingDelete) return;
+        setPendingDelete(null);
+        try {
+            for (const d of pendingDelete) {
+                await deleteDegree(d.id);
             }
+            loadDegrees();
+        } catch (err: any) {
+            setDeleteError(err.message || "Errore nell'eliminazione del corso di laurea");
         }
     };
 
@@ -237,6 +242,14 @@ export function CorsiPage() {
                     onSave={loadDegrees}
                 />
             )}
+
+            <ConfirmDialog
+                open={!!pendingDelete}
+                title="Elimina corso di laurea"
+                description={<>Sei sicuro di voler eliminare il corso di laurea<br />"{pendingDelete?.[0]?.degreeName}"?</>}
+                onConfirm={confirmDelete}
+                onCancel={() => setPendingDelete(null)}
+            />
 
             <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
                 <AlertDialogContent>

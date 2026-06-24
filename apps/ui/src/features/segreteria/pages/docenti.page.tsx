@@ -3,6 +3,7 @@ import { fetchTeachers, deleteTeacher } from "../segreteria.api";
 import { TeacherListItem } from '@server/entities/frontend';
 import { DocenteModal } from '../components/docente-modal';
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 export function DocentiPage() {
     // visualizzazione tabella
@@ -11,6 +12,7 @@ export function DocentiPage() {
     const [error, setError] = useState<string | null>(null);
 
     const [deleteError, setDeleteError] = useState<string | null>(null);
+    const [pendingDelete, setPendingDelete] = useState<{ id: number; fullName: string } | null>(null);
 
     //modale per aggiungere o modificare un docente
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,14 +64,18 @@ export function DocentiPage() {
         setIsModalOpen(true);
     };
 
-    const handleDelete = async (id: number, fullName: string) => {
-        if (window.confirm(`Sei sicuro di voler eliminare il docente ${fullName}?'`)) {
-            try {
-                await deleteTeacher(id);
-                loadTeachers();
-            } catch (err: any) {
-                setDeleteError(err.message || "Errore nell'eliminazione del docente");
-            }
+    const handleDelete = (id: number, fullName: string) => {
+        setPendingDelete({ id, fullName });
+    };
+
+    const confirmDelete = async () => {
+        if (!pendingDelete) return;
+        setPendingDelete(null);
+        try {
+            await deleteTeacher(pendingDelete.id);
+            loadTeachers();
+        } catch (err: any) {
+            setDeleteError(err.message || "Errore nell'eliminazione del docente");
         }
     };
 
@@ -171,6 +177,14 @@ export function DocentiPage() {
                     onSave={loadTeachers}
                 />
             )}
+
+            <ConfirmDialog
+                open={!!pendingDelete}
+                title="Elimina docente"
+                description={<>Sei sicuro di voler eliminare il docente<br />"{pendingDelete?.fullName}"?</>}
+                onConfirm={confirmDelete}
+                onCancel={() => setPendingDelete(null)}
+            />
 
             <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
                 <AlertDialogContent>

@@ -5,6 +5,7 @@ import { Button } from '../../../components/ui/button';
 import { Input } from '../../../components/ui/input';
 import { Label } from '../../../components/ui/label';
 import { DatePicker } from '../../../components/ui/date-picker';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 interface ExamFormProps {
     mode: 'add' | 'edit';
@@ -38,6 +39,7 @@ export function ExamForm({
     const [endHour, setEndHour] = useState(exam ? fmtTime(exam.endTime) : '11:00');
     const [err, setErr] = useState('');
     const [saving, setSaving] = useState(false);
+    const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
     function validate(): string {
         if (!examDate) return 'Seleziona una data.';
@@ -69,9 +71,9 @@ export function ExamForm({
         }
     }
 
-    async function handleDelete() {
+    async function confirmDelete() {
         if (!onDelete) return;
-        if (!window.confirm('Cancellare questo appello?')) return;
+        setShowDeleteConfirm(false);
         setSaving(true);
         try {
             await onDelete();
@@ -144,7 +146,7 @@ export function ExamForm({
                         type="button"
                         variant="outline"
                         size="sm"
-                        onClick={handleDelete}
+                        onClick={() => setShowDeleteConfirm(true)}
                         disabled={saving}
                         className="mr-auto border-destructive/40 text-destructive hover:bg-destructive/10"
                     >
@@ -158,6 +160,14 @@ export function ExamForm({
                     {saving ? 'Salvataggio…' : mode === 'edit' ? 'Salva modifiche' : 'Conferma appello'}
                 </Button>
             </div>
+        <ConfirmDialog
+            open={showDeleteConfirm}
+            title="Cancella appello"
+            description="Sei sicuro di voler cancellare questo appello?"
+            confirmLabel="Cancella"
+            onConfirm={confirmDelete}
+            onCancel={() => setShowDeleteConfirm(false)}
+        />
         </form>
     );
 }

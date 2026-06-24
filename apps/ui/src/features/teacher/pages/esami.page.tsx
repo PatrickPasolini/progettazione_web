@@ -18,6 +18,7 @@ import { Modal } from '../components/Modal';
 import { InsertionBanner } from '../components/InsertionBanner';
 import { SessionSidebar } from '../components/SessionSidebar';
 import { MyExamsList } from '../components/MyExamsList';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 type ModalState =
     | { mode: 'add'; date: string }
@@ -33,6 +34,7 @@ export function EsamiPage() {
     const [exams, setExams] = useState<ExamListItem[]>([]);
     const [viewMonth, setViewMonth] = useState<Date>(new Date());
     const [modal, setModal] = useState<ModalState>(null);
+    const [pendingDeleteExam, setPendingDeleteExam] = useState<ExamListItem | null>(null);
 
     useEffect(() => {
         fetchCurrentUser()
@@ -152,9 +154,14 @@ export function EsamiPage() {
         await reloadExams();
     }
 
-    async function handleDeleteFromList(exam: ExamListItem) {
-        if (!window.confirm('Cancellare questo appello?')) return;
-        await deleteExam(exam.id);
+    function handleDeleteFromList(exam: ExamListItem) {
+        setPendingDeleteExam(exam);
+    }
+
+    async function confirmDeleteFromList() {
+        if (!pendingDeleteExam) return;
+        setPendingDeleteExam(null);
+        await deleteExam(pendingDeleteExam.id);
         await reloadExams();
     }
 
@@ -258,6 +265,14 @@ export function EsamiPage() {
                     />
                 )}
             </Modal>
+            <ConfirmDialog
+                open={!!pendingDeleteExam}
+                title="Cancella appello"
+                description="Sei sicuro di voler cancellare questo appello?"
+                confirmLabel="Cancella"
+                onConfirm={confirmDeleteFromList}
+                onCancel={() => setPendingDeleteExam(null)}
+            />
         </div>
     );
 }
