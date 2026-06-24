@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchDegrees, deleteDegree } from "../segreteria.api";
 import { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
 import { CorsoModal } from '../components/corso-modal';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
 
 export function CorsiPage() {
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
@@ -11,6 +12,8 @@ export function CorsiPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMode, setModalMode] = useState<"create" | "edit">('create');
     const [selectedGroup, setSelectedGroup] = useState<DegreeListItem[]>([]);
+
+    const [deleteError, setDeleteError] = useState<string | null>(null);
 
     const [searchTerm, setSearchTerm] = useState("");
     const [filterType, setFilterType] = useState("");
@@ -96,7 +99,7 @@ export function CorsiPage() {
                 }
                 loadDegrees();
             } catch (err: any) {
-                setError(err.message || "Errore nell'eliminazione del corso di laurea");
+                setDeleteError(err.message || "Errore nell'eliminazione del corso di laurea");
             }
         }
     };
@@ -234,6 +237,18 @@ export function CorsiPage() {
                     onSave={loadDegrees}
                 />
             )}
+
+            <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
+                <AlertDialogContent>
+                    <AlertDialogHeader>
+                        <AlertDialogTitle>Eliminazione non consentita</AlertDialogTitle>
+                        <AlertDialogDescription>{deleteError}</AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                        <AlertDialogAction onClick={() => setDeleteError(null)}>OK</AlertDialogAction>
+                    </AlertDialogFooter>
+                </AlertDialogContent>
+            </AlertDialog>
         </div>
     );
 }

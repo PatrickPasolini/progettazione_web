@@ -43,6 +43,14 @@ export class CourseRepository {
             .getMany();
     }
 
+    countUpcomingExams(courseId: number): Promise<number> {
+        return this.repo.createQueryBuilder('course')
+            .innerJoin('course.exams', 'exam')
+            .where('course.id = :courseId', { courseId })
+            .andWhere('exam.examDate >= CURRENT_DATE')
+            .getCount();
+    }
+
     create(data: Partial<CourseEntity>): CourseEntity {
         return this.repo.create(data);
     }

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchCourses, deleteCourse } from "../segreteria.api";
 import { CourseListItem } from '@server/entities/frontend';
 import { MateriaModal } from '../components/materia-modal';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
 
 interface YearLeaf {
     degreeId: number;
@@ -24,6 +25,8 @@ export function MateriePage() {
     const [courses, setCourses] = useState<CourseListItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
+
+    const [deleteError, setDeleteError] = useState<string | null>(null);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMode, setModalMode] = useState<"create" | "edit">('create');
@@ -168,7 +171,7 @@ export function MateriePage() {
                 await deleteCourse(id);
                 loadCourses();
             } catch (err: any) {
-                setError(err.message || "Errore nell'eliminazione della materia");
+                setDeleteError(err.message || "Errore nell'eliminazione della materia");
             }
         }
     };
@@ -327,6 +330,18 @@ export function MateriePage() {
                     })}
                 </div>
             )}
+
+            <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
+                <AlertDialogContent>
+                    <AlertDialogHeader>
+                        <AlertDialogTitle>Eliminazione non consentita</AlertDialogTitle>
+                        <AlertDialogDescription>{deleteError}</AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                        <AlertDialogAction onClick={() => setDeleteError(null)}>OK</AlertDialogAction>
+                    </AlertDialogFooter>
+                </AlertDialogContent>
+            </AlertDialog>
 
             {isModalOpen && (
                 <MateriaModal

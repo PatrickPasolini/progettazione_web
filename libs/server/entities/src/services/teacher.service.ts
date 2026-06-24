@@ -66,7 +66,14 @@ export class ServerTeacherService {
     async remove(id: number): Promise<void> {
         const teacher = await this.teacherRepository.findById(id);
         if (!teacher) throw new NotFoundException(`Teacher with id ${id} not found`);
-        await this.teacherRepository.delete(id);
+        try {
+            await this.teacherRepository.delete(id);
+        } catch (err: any) {
+            const code = err?.code ?? err?.driverError?.code ?? err?.cause?.code;
+            if (code === '23503' || code === '23001')
+                throw new ConflictException('Non puoi eliminare questo docente perché ha dei corsi associati.');
+            throw err;
+        }
     }
 
     async seed(): Promise<void> {

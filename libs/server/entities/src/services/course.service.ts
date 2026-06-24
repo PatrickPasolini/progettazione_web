@@ -120,13 +120,21 @@ export class ServerCourseService {
     }
 
     async remove(id: number): Promise<void> {
+        const course = await this.courseRepository.findById(id);
+        if (!course) throw new NotFoundException(`Course with id ${id} not found`);
+
+        const upcoming = await this.courseRepository.countUpcomingExams(id);
+        if (upcoming > 0)
+            throw new ConflictException('Non puoi eliminare questa materia perché ha degli esami futuri programmati.');
+
         try {
-            const result = await this.courseRepository.delete(id);
-            if ((result.affected ?? 0) === 0)
-                throw new NotFoundException(`Course with id ${id} not found`);
+            await this.courseRepository.delete(id);
         } catch (e) {
             if (e instanceof NotFoundException) throw e;
-            throw new ConflictException('Cannot delete course: it is referenced by one or more exams');
+            const code = (e as any)?.code ?? (e as any)?.driverError?.code ?? (e as any)?.cause?.code;
+            if (code === '23503' || code === '23001')
+                throw new ConflictException('Non puoi eliminare questa materia perché ha degli esami storici associati.');
+            throw e;
         }
     }
 

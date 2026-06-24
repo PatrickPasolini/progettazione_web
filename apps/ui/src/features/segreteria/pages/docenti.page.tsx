@@ -2,12 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchTeachers, deleteTeacher } from "../segreteria.api";
 import { TeacherListItem } from '@server/entities/frontend';
 import { DocenteModal } from '../components/docente-modal';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
 
 export function DocentiPage() {
     // visualizzazione tabella
     const [teachers, setTeachers] = useState<TeacherListItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
+
+    const [deleteError, setDeleteError] = useState<string | null>(null);
 
     //modale per aggiungere o modificare un docente
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -65,7 +68,7 @@ export function DocentiPage() {
                 await deleteTeacher(id);
                 loadTeachers();
             } catch (err: any) {
-                setError(err.message || 'Errore nell eliminazione del docente');
+                setDeleteError(err.message || "Errore nell'eliminazione del docente");
             }
         }
     };
@@ -168,6 +171,18 @@ export function DocentiPage() {
                     onSave={loadTeachers}
                 />
             )}
+
+            <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
+                <AlertDialogContent>
+                    <AlertDialogHeader>
+                        <AlertDialogTitle>Eliminazione non consentita</AlertDialogTitle>
+                        <AlertDialogDescription>{deleteError}</AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                        <AlertDialogAction onClick={() => setDeleteError(null)}>OK</AlertDialogAction>
+                    </AlertDialogFooter>
+                </AlertDialogContent>
+            </AlertDialog>
 
         </div>
 

@@ -1,5 +1,4 @@
 import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
-import { DegreeEntity } from '../entities/degree.entity.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateDegreeDto } from '../entities/dto/create-degree.dto.js';
 import { UpdateDegreeDto } from '../entities/dto/update-degree.dto.js';
@@ -65,8 +64,17 @@ export class ServerDegreeService {
     }
 
     async remove(id: number): Promise<void> {
-        const degree = await this.degreeRepository.findById(id);
+        const degree = await this.degreeRepository.findByIdWithSessions(id);
         if (!degree) throw new NotFoundException(`Degree with id ${id} not found`);
+
+        if (await this.degreeRepository.hasCourses(id))
+            throw new ConflictException('Non puoi eliminare questo corso di laurea perché ha delle materie associate!');
+
+        if (degree.sessions?.length) {
+            degree.sessions = [];
+            await this.degreeRepository.save(degree);
+        }
+
         await this.degreeRepository.delete(id);
     }
 
