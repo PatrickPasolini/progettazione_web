@@ -1,6 +1,7 @@
 import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { CourseEntity } from '../entities/course.entity.js';
 import { CourseRepository } from '../repositories/course.repository.js';
+import { ExamRepository } from '../repositories/exam.repository.js';
 import { TeacherRepository } from '../repositories/teacher.repository.js';
 import { DegreeRepository } from '../repositories/degree.repository.js';
 import { CreateCourseDto } from '../entities/dto/create-course.dto.js';
@@ -12,6 +13,7 @@ import { seedCourses } from '../assets/courses-data.js';
 export class ServerCourseService {
     constructor(
         private readonly courseRepository: CourseRepository,
+        private readonly examRepository: ExamRepository,
         private readonly teacherRepository: TeacherRepository,
         private readonly degreeRepository: DegreeRepository,
     ) {}
@@ -127,15 +129,8 @@ export class ServerCourseService {
         if (upcoming > 0)
             throw new ConflictException('Non puoi eliminare questa materia perché ha degli esami futuri programmati.');
 
-        try {
-            await this.courseRepository.delete(id);
-        } catch (e) {
-            if (e instanceof NotFoundException) throw e;
-            const code = (e as any)?.code ?? (e as any)?.driverError?.code ?? (e as any)?.cause?.code;
-            if (code === '23503' || code === '23001')
-                throw new ConflictException('Non puoi eliminare questa materia perché ha degli esami storici associati.');
-            throw e;
-        }
+        await this.examRepository.deletePastByCourse(id);
+        await this.courseRepository.delete(id);
     }
 
     async seed(): Promise<void> {

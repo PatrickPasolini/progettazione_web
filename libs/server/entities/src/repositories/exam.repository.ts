@@ -55,4 +55,12 @@ export class ExamRepository {
     delete(id: number): Promise<DeleteResult> {
         return this.repo.delete(id);
     }
+
+    deletePastByCourse(courseId: number): Promise<DeleteResult> {
+        return this.repo.createQueryBuilder()
+            .delete()
+            .where('courseId = :courseId', { courseId })
+            .andWhere('examDate < CURRENT_DATE')
+            .execute();
+    }
 }
