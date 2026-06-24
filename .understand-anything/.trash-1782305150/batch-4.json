@@ -1,0 +1,358 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "type": "file",
+      "name": "auth.controller.ts",
+      "filePath": "libs/server/auth/src/lib/auth.controller.ts",
+      "summary": "NestJS authentication controller exposing login, password change, and registration endpoints under the auth module.",
+      "tags": ["api-handler", "authentication", "controller", "service"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/auth/src/lib/auth.controller.ts:ServerAuthController",
+      "type": "class",
+      "name": "ServerAuthController",
+      "filePath": "libs/server/auth/src/lib/auth.controller.ts",
+      "lineRange": [17, 62],
+      "summary": "Auth HTTP controller delegating login (via local guard), password change (for the current user), and registration to ServerAuthService.",
+      "tags": ["api-handler", "controller", "authentication", "endpoint"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/auth.module.ts",
+      "type": "file",
+      "name": "auth.module.ts",
+      "filePath": "libs/server/auth/src/lib/auth.module.ts",
+      "summary": "NestJS module wiring the auth controller, service, and JWT/local Passport strategies together.",
+      "tags": ["module", "authentication", "configuration", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/auth/src/lib/auth.module.ts:ServerAuthModule",
+      "type": "class",
+      "name": "ServerAuthModule",
+      "filePath": "libs/server/auth/src/lib/auth.module.ts",
+      "lineRange": [24, 24],
+      "summary": "Auth feature module registering the controller, service, and Passport strategy providers.",
+      "tags": ["module", "authentication", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/auth.service.ts",
+      "type": "file",
+      "name": "auth.service.ts",
+      "filePath": "libs/server/auth/src/lib/auth.service.ts",
+      "summary": "Core authentication service handling credential validation, JWT issuance, password change, and user registration.",
+      "tags": ["service", "authentication", "jwt", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/auth/src/lib/auth.service.ts:ServerAuthService",
+      "type": "class",
+      "name": "ServerAuthService",
+      "filePath": "libs/server/auth/src/lib/auth.service.ts",
+      "lineRange": [10, 48],
+      "summary": "Validates credentials with bcrypt, signs JWTs, updates passwords, and registers new users via the users service.",
+      "tags": ["service", "authentication", "jwt", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "type": "file",
+      "name": "change-password.dto.ts",
+      "filePath": "libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "summary": "DTO defining the new-password payload for the password change endpoint.",
+      "tags": ["data-model", "dto", "validation", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/dto/register.dto.ts",
+      "type": "file",
+      "name": "register.dto.ts",
+      "filePath": "libs/server/auth/src/lib/dto/register.dto.ts",
+      "summary": "DTO describing the user registration request payload.",
+      "tags": ["data-model", "dto", "authentication", "type-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "type": "file",
+      "name": "local-auth.guard.ts",
+      "filePath": "libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "summary": "Passport local-strategy auth guard protecting the login endpoint.",
+      "tags": ["middleware", "authentication", "guard", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "type": "file",
+      "name": "auth-response.interface.ts",
+      "filePath": "libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "summary": "Interface describing the auth response shape containing access token, user, and password-change flag.",
+      "tags": ["type-definition", "interface", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "file",
+      "name": "authenticated-user.interface.ts",
+      "filePath": "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "summary": "Interface describing the authenticated user object attached to requests after validation.",
+      "tags": ["type-definition", "interface", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts",
+      "type": "file",
+      "name": "jwt-payload.interface.ts",
+      "filePath": "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts",
+      "summary": "Interface describing the JWT payload claims used for signing and validation.",
+      "tags": ["type-definition", "interface", "jwt", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "type": "file",
+      "name": "jwt.strategy.ts",
+      "filePath": "libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "summary": "Passport JWT strategy extracting the Bearer token and validating its payload into an authenticated user.",
+      "tags": ["authentication", "jwt", "strategy", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/auth/src/lib/strategies/jwt.strategy.ts:JwtStrategy",
+      "type": "class",
+      "name": "JwtStrategy",
+      "filePath": "libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "lineRange": [8, 32],
+      "summary": "Passport JWT strategy configured with the secret key; validates token payloads into the authenticated user object.",
+      "tags": ["authentication", "jwt", "strategy", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "type": "file",
+      "name": "local.strategy.ts",
+      "filePath": "libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "summary": "Passport local strategy validating email/password credentials against the auth service.",
+      "tags": ["authentication", "strategy", "validation", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/auth/src/lib/strategies/local.strategy.ts:LocalStrategy",
+      "type": "class",
+      "name": "LocalStrategy",
+      "filePath": "libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "lineRange": [8, 17],
+      "summary": "Passport local strategy delegating credential validation to ServerAuthService.validateUser.",
+      "tags": ["authentication", "strategy", "validation", "security"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "class:libs/server/auth/src/lib/auth.controller.ts:ServerAuthController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "class:libs/server/auth/src/lib/auth.controller.ts:ServerAuthController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "file:libs/server/auth/src/lib/auth.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "file:libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "file:libs/server/auth/src/lib/dto/register.dto.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "file:libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "class:libs/server/auth/src/lib/auth.controller.ts:ServerAuthController",
+      "target": "class:libs/server/auth/src/lib/auth.service.ts:ServerAuthService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "class:libs/server/auth/src/lib/auth.module.ts:ServerAuthModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "class:libs/server/auth/src/lib/auth.module.ts:ServerAuthModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "file:libs/server/auth/src/lib/auth.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.module.ts",
+      "target": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.service.ts",
+      "target": "class:libs/server/auth/src/lib/auth.service.ts:ServerAuthService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.service.ts",
+      "target": "class:libs/server/auth/src/lib/auth.service.ts:ServerAuthService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.service.ts",
+      "target": "file:libs/server/auth/src/lib/dto/register.dto.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.service.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/auth.service.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "target": "class:libs/server/auth/src/lib/strategies/jwt.strategy.ts:JwtStrategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "target": "class:libs/server/auth/src/lib/strategies/jwt.strategy.ts:JwtStrategy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "target": "class:libs/server/auth/src/lib/strategies/local.strategy.ts:LocalStrategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "target": "class:libs/server/auth/src/lib/strategies/local.strategy.ts:LocalStrategy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "target": "file:libs/server/auth/src/lib/auth.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "target": "file:libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "class:libs/server/auth/src/lib/strategies/local.strategy.ts:LocalStrategy",
+      "target": "class:libs/server/auth/src/lib/auth.service.ts:ServerAuthService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

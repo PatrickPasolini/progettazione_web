@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/api/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/api/package.json",
+      "summary": "Project manifest for the @org/api NestJS application, declaring NestJS runtime dependencies and Nx build/serve/prune targets that drive webpack compilation and packaging.",
+      "tags": ["configuration", "build-system", "nestjs", "nx"],
+      "complexity": "moderate",
+      "languageNotes": "Embeds Nx project targets directly under the 'nx' key, using executors like @nx/js:node and @nx/js:prune-lockfile to manage the build pipeline."
+    },
+    {
+      "id": "config:apps/api/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/api/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for building the API application sources, extending the base tsconfig and scoping include/exclude to app code while referencing project dependencies.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/api/tsconfig.json",
+      "summary": "Root TypeScript solution config for the API app, extending the workspace base config and wiring project references to the app and spec build configs.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

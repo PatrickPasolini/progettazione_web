@@ -1,0 +1,66 @@
+# .understandignore — patterns for files/dirs to exclude from analysis
+# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
+# Lines below are suggestions — uncomment to activate.
+# Use ! prefix to force-include something excluded by defaults.
+#
+# Built-in defaults (always excluded unless negated):
+#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
+#
+
+# --- From .gitignore (uncomment to exclude) ---
+
+# tmp
+# out-tsc
+# /.idea
+# .project
+# .classpath
+# .c9/
+# *.launch
+# .settings/
+# *.sublime-workspace
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# /.sass-cache
+# /connect.lock
+# /coverage
+# /libpeerconnection.log
+# npm-debug.log
+# yarn-error.log
+# testem.log
+# /typings
+# .DS_Store
+# Thumbs.db
+# .nx/cache
+# .nx/workspace-data
+# .cursor/rules/nx-rules.mdc
+# .github/instructions/nx.instructions.md
+# test-output
+# vite.config.*.timestamp*
+# .env
+# .env.local
+# .env.*.local
+# UniBS_Materie_Docenti_2026.txt
+
+# --- Test file patterns (uncomment to exclude) ---
+
+# JS / TS
+*.test.*
+*.spec.*
+*.snap
+apps/api-e2e/**
+apps/ui-e2e/**
+# C# / .NET
+# **/*Tests.cs
+# **/*Test.cs
+# **/*Fixture.cs
+# **/*.Tests.csproj
+# Java / Kotlin
+# **/src/test/**
+# **/*Test.java
+# **/*IT.java
+# **/*Spec.kt
+# Go
+# **/*_test.go

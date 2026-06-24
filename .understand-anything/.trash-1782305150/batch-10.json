@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Agent-facing guidance describing how to work with the Nx workspace, including task-running conventions, scaffolding with generators, and when to consult nx_docs.",
+      "tags": ["documentation", "nx", "development", "guidelines"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Primary project guidance file documenting the Nx monorepo architecture (apps and libraries), common commands, key design patterns (STI, auth flow, roles), and business requirements for the university exam-scheduling system.",
+      "tags": ["documentation", "architecture", "guidelines", "overview"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Default Nx workspace README covering library generation, task running, versioning, TypeScript project references, Nx Cloud setup, and useful links.",
+      "tags": ["documentation", "entry-point", "nx", "overview"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:Requisiti progetto web.txt",
+      "type": "document",
+      "name": "Requisiti progetto web.txt",
+      "filePath": "Requisiti progetto web.txt",
+      "summary": "Plain-text project requirements (in Italian) outlining the functional specification for the university exam-scheduling web application.",
+      "tags": ["documentation", "requirements", "specification"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:nx.json",
+      "type": "config",
+      "name": "nx.json",
+      "filePath": "nx.json",
+      "summary": "Nx workspace configuration defining named inputs, plugins, target defaults, generator defaults, and cloud connectivity settings for the monorepo.",
+      "tags": ["configuration", "nx", "build-system", "monorepo"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:opencode.json",
+      "type": "config",
+      "name": "opencode.json",
+      "filePath": "opencode.json",
+      "summary": "OpenCode tool configuration declaring MCP server integrations for the workspace.",
+      "tags": ["configuration", "tooling", "mcp"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Workspace root manifest declaring npm scripts, dependencies, devDependencies, workspaces, and Nx settings for the appelli_db monorepo.",
+      "tags": ["configuration", "build-system", "dependencies", "monorepo"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tsconfig.base.json",
+      "type": "config",
+      "name": "tsconfig.base.json",
+      "filePath": "tsconfig.base.json",
+      "summary": "Base TypeScript compiler configuration extended by all projects, enabling composite/declaration-only builds with nodenext module resolution and strict-ish checks.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple",
+      "languageNotes": "Uses composite + emitDeclarationOnly with customConditions for source-level project references across the monorepo."
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "Root TypeScript configuration that extends the base config and wires up project references for incremental builds across the workspace.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:CLAUDE.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CLAUDE.md",
+      "target": "config:nx.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:nx.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:nx.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:Requisiti progetto web.txt",
+      "target": "document:CLAUDE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "config:nx.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

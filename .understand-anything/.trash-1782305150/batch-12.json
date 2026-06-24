@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/ui/components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "apps/ui/components.json",
+      "summary": "shadcn/ui configuration for the React app, defining the default style, Tailwind setup (slate base color, CSS variables), and path aliases for components, ui, lib, utils, and hooks.",
+      "tags": ["configuration", "shadcn", "tailwind", "ui", "frontend"],
+      "complexity": "simple",
+      "languageNotes": "shadcn CLI reads this file to scaffold components into the configured alias directories."
+    },
+    {
+      "id": "file:apps/ui/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "apps/ui/index.html",
+      "summary": "HTML entry document for the Vite-powered React UI, mounting the app at the #root div and loading the main.tsx module script plus the global stylesheet.",
+      "tags": ["entry-point", "markup", "vite", "frontend", "bootstrap"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/ui/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/ui/package.json",
+      "summary": "Package manifest for the @org/ui app declaring runtime UI dependencies including Radix UI primitives (dialog, select, label, slot, separator) and react-datepicker.",
+      "tags": ["configuration", "dependencies", "frontend", "package-manifest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/ui/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/ui/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the UI application build, extending the workspace base config with React JSX, bundler module resolution, DOM lib, and Vite/Nx typings while excluding test files.",
+      "tags": ["configuration", "typescript", "build-system", "frontend"],
+      "complexity": "simple",
+      "languageNotes": "Uses bundler moduleResolution and project references to compile app sources from src/ separately from tests."
+    },
+    {
+      "id": "config:apps/ui/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/ui/tsconfig.json",
+      "summary": "Root TypeScript solution file for the UI app that uses project references to delegate compilation to tsconfig.app.json and tsconfig.spec.json, extending the workspace base config.",
+      "tags": ["configuration", "typescript", "build-system", "frontend"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/ui/tsconfig.app.json",
+      "target": "file:apps/ui/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/ui/tsconfig.json",
+      "target": "config:apps/ui/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/ui/components.json",
+      "target": "file:apps/ui/index.html",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

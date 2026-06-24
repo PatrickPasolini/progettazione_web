@@ -1,0 +1,80 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the documentation index to understand appelli_db: an Nx monorepo where university teachers coordinate exam scheduling within secretariat-configured planning windows. It maps the backend (NestJS + TypeORM) and frontend (React 19 + Vite) and the tech stack.",
+    "nodeIds": ["document:md/README.md", "document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Database Foundation",
+    "description": "The DatabaseModule wires TypeORM to PostgreSQL from PG_* environment variables with autoLoadEntities and synchronize enabled. Every backend entity ultimately persists through this connection.",
+    "nodeIds": ["file:libs/database/src/lib/database.module.ts"]
+  },
+  {
+    "order": 3,
+    "title": "Users and Roles",
+    "description": "UserEntity is the single-table-inheritance base discriminated by the UserRole enum (USER, ADMIN, TEACHER, SECRETARY). TeacherEntity extends it via @ChildEntity. Roles drive authorization across the app.",
+    "nodeIds": ["file:libs/server/users/src/lib/user.entity.ts", "file:libs/server/users/src/lib/dto/user-role.enum.ts"]
+  },
+  {
+    "order": 4,
+    "title": "Authentication Flow",
+    "description": "The auth library validates email/password via the Passport local strategy, issues a JWT, then validates Bearer tokens on protected routes via the jwt strategy — the heart of the login flow.",
+    "nodeIds": ["file:libs/server/auth/src/lib/auth.service.ts", "file:libs/server/auth/src/lib/strategies/local.strategy.ts", "file:libs/server/auth/src/lib/strategies/jwt.strategy.ts"]
+  },
+  {
+    "order": 5,
+    "title": "Security: Guards and Decorators",
+    "description": "Shared, reusable guards enforce auth and role-based access: JwtAuthGuard protects routes, RolesGuard reads @Roles metadata via the Reflector. These live in @server/security, not in each feature module.",
+    "nodeIds": ["file:libs/server/security/src/lib/guards/jwt-auth.guard.ts", "file:libs/server/security/src/lib/guards/roles.guard.ts", "file:libs/server/security/src/lib/decorators/roles.decorator.ts"]
+  },
+  {
+    "order": 6,
+    "title": "Domain Entities",
+    "description": "The exam-scheduling domain: degree programmes, exam sessions, and exams. Sessions define both the exam period and the insertion (planning) window; exams belong to a session, degree-year, teacher, and course.",
+    "nodeIds": ["file:libs/server/entities/src/entities/degree.entity.ts", "file:libs/server/entities/src/entities/session.entity.ts", "file:libs/server/entities/src/entities/exam.entity.ts"]
+  },
+  {
+    "order": 7,
+    "title": "Exam Scheduling Business Rules",
+    "description": "exam.service.ts centralizes the core constraints: max one exam per day per (degree programme + year), inserts/edits only within the planning window, and weekend exclusion. This is where the project's business requirements become code.",
+    "nodeIds": ["file:libs/server/entities/src/services/exam.service.ts", "file:libs/server/entities/src/controllers/exam.controller.ts"]
+  },
+  {
+    "order": 8,
+    "title": "Session Configuration",
+    "description": "session.service.ts handles secretariat configuration: session start/end and insertion window dates, plus seeding. It defines the time boundaries the teacher workflow operates within.",
+    "nodeIds": ["file:libs/server/entities/src/services/session.service.ts"]
+  },
+  {
+    "order": 9,
+    "title": "Seed Data",
+    "description": "courses-data.ts is the generated seed dataset (degrees, courses, teachers) parsed from the corsi/*.txt catalogs, used to populate the database on startup.",
+    "nodeIds": ["file:libs/server/entities/src/assets/courses-data.ts"]
+  },
+  {
+    "order": 10,
+    "title": "API Application Wiring",
+    "description": "main.ts boots the NestJS app (CORS, the /api global prefix, Swagger at /api/docs); app.module.ts is the composition root assembling database, auth, users, security, and the domain feature modules.",
+    "nodeIds": ["file:apps/api/src/main.ts", "file:apps/api/src/app/app.module.ts"]
+  },
+  {
+    "order": 11,
+    "title": "Frontend Bootstrap",
+    "description": "main.tsx mounts React; app.tsx sets up react-router-dom routing, protected routes, and the layout shell that gates teacher vs. secretariat views by role.",
+    "nodeIds": ["file:apps/ui/src/main.tsx", "file:apps/ui/src/app/app.tsx"]
+  },
+  {
+    "order": 12,
+    "title": "Teacher Workflow UI",
+    "description": "The teacher's Esami page renders the session calendar grid, shows colleagues' booked exams, and lets a teacher insert/edit their own exam within the planning window — the primary user journey, talking to the API via teacher.api.ts.",
+    "nodeIds": ["file:apps/ui/src/features/teacher/pages/esami.page.tsx", "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "file:apps/ui/src/features/teacher/teacher.api.ts"]
+  },
+  {
+    "order": 13,
+    "title": "Secretariat Workflow UI",
+    "description": "The segreteria feature lets secretaries configure sessions, degree programmes, courses, and teachers through dedicated pages and modals, calling segreteria.api.ts — the setup side that the teacher workflow depends on.",
+    "nodeIds": ["file:apps/ui/src/features/segreteria/pages/segreteria.page.tsx", "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx", "file:apps/ui/src/features/segreteria/segreteria.api.ts"]
+  }
+]

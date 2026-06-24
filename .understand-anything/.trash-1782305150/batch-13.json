@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "document:corsi/Area Economico-statistica.txt",
+      "type": "document",
+      "name": "Area Economico-statistica.txt",
+      "filePath": "corsi/Area Economico-statistica.txt",
+      "summary": "Seed-data listing of the Economics & Statistics academic area, enumerating degree programmes (e.g. Banca e Finanza) with their courses by year, CFU credits, semester/quadrimestre, and assigned teachers.",
+      "tags": ["documentation", "seed-data", "course-catalog", "degree-programme", "reference"],
+      "complexity": "complex",
+      "languageNotes": "Plain-text fixed-format catalog in Italian; structured by AREA -> CORSO -> Anno -> course with CFU and Docente/i fields."
+    },
+    {
+      "id": "document:corsi/Area Giuridica.txt",
+      "type": "document",
+      "name": "Area Giuridica.txt",
+      "filePath": "corsi/Area Giuridica.txt",
+      "summary": "Seed-data listing of the Law academic area, enumerating degree programmes (e.g. Consulente del Lavoro e Giurista d'Impresa) with their courses by year, CFU credits, semester, and assigned teachers.",
+      "tags": ["documentation", "seed-data", "course-catalog", "degree-programme", "reference"],
+      "complexity": "complex",
+      "languageNotes": "Plain-text fixed-format catalog in Italian; structured by AREA -> CORSO -> Anno -> course with CFU and Docente/i fields."
+    },
+    {
+      "id": "document:corsi/Area Ingegneria.txt",
+      "type": "document",
+      "name": "Area Ingegneria.txt",
+      "filePath": "corsi/Area Ingegneria.txt",
+      "summary": "Seed-data listing of the Engineering academic area, enumerating degree programmes (e.g. Ingegneria Medica) with their courses by year, CFU credits, semester, and assigned teachers.",
+      "tags": ["documentation", "seed-data", "course-catalog", "degree-programme", "reference"],
+      "complexity": "complex",
+      "languageNotes": "Plain-text fixed-format catalog in Italian; structured by AREA -> CORSO -> Anno -> course with CFU and Docente/i fields."
+    },
+    {
+      "id": "document:corsi/Area Medica.txt",
+      "type": "document",
+      "name": "Area Medica.txt",
+      "filePath": "corsi/Area Medica.txt",
+      "summary": "Seed-data listing of the Medical academic area, enumerating degree programmes (e.g. Biotecnologie) with their courses by year, CFU credits, semester, and assigned teachers; the largest catalog in the batch at ~3960 lines.",
+      "tags": ["documentation", "seed-data", "course-catalog", "degree-programme", "reference"],
+      "complexity": "complex",
+      "languageNotes": "Plain-text fixed-format catalog in Italian; structured by AREA -> CORSO -> Anno -> course with CFU and Docente/i fields."
+    }
+  ],
+  "edges": []
+}

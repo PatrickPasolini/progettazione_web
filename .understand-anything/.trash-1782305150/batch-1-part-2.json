@@ -1,0 +1,1417 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "type": "file",
+      "name": "corso-modal.tsx",
+      "filePath": "apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "summary": "Secretary modal for creating/editing a degree programme group, synchronizing per-year degree records on save.",
+      "tags": [
+        "component",
+        "form",
+        "data-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "type": "file",
+      "name": "docente-modal.tsx",
+      "filePath": "apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "summary": "Secretary modal for creating and editing teacher accounts via the segreteria API.",
+      "tags": [
+        "component",
+        "form",
+        "data-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "type": "file",
+      "name": "materia-modal.tsx",
+      "filePath": "apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "summary": "Secretary modal for creating/editing courses, with searchable teacher and degree selectors loaded from the API.",
+      "tags": [
+        "component",
+        "form",
+        "data-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "type": "file",
+      "name": "sessione-modal.tsx",
+      "filePath": "apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "summary": "Secretary modal for creating/editing exam sessions, including date-range validation for session and insertion windows.",
+      "tags": [
+        "component",
+        "form",
+        "validation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "type": "file",
+      "name": "corsi.page.tsx",
+      "filePath": "apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "summary": "Secretary page listing degree programmes with search/filter/sort and grouped display, delegating create/edit to CorsoModal.",
+      "tags": [
+        "component",
+        "data-model",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "type": "file",
+      "name": "docenti.page.tsx",
+      "filePath": "apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "summary": "Secretary page listing teachers with search and sort, delegating create/edit/delete to DocenteModal.",
+      "tags": [
+        "component",
+        "data-model",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "type": "file",
+      "name": "materie.page.tsx",
+      "filePath": "apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "summary": "Secretary page presenting courses in an expandable area/degree/year tree with search and modal-driven editing.",
+      "tags": [
+        "component",
+        "data-model",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "type": "file",
+      "name": "segreteria.page.tsx",
+      "filePath": "apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "summary": "Secretary section landing page and index redirect component.",
+      "tags": [
+        "component",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "type": "file",
+      "name": "sessioni.page.tsx",
+      "filePath": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "summary": "Secretary page listing exam sessions as status-sorted cards with computed lifecycle status, delegating editing to SessioneModal.",
+      "tags": [
+        "component",
+        "data-model",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "file",
+      "name": "segreteria.api.ts",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "summary": "Secretary API client with full CRUD for teachers, degrees, courses, and sessions; injects the auth header and centralizes error handling.",
+      "tags": [
+        "api-handler",
+        "service",
+        "crud"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "type": "file",
+      "name": "ExamForm.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "summary": "Teacher exam booking form validating date (weekday, within session window) and time range before saving or deleting an exam.",
+      "tags": [
+        "component",
+        "form",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/Modal.tsx",
+      "type": "file",
+      "name": "Modal.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/Modal.tsx",
+      "summary": "Lightweight dialog wrapper for the teacher feature built on the shared dialog primitives.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "dialog"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/pages/teacher.page.tsx",
+      "type": "file",
+      "name": "teacher.page.tsx",
+      "filePath": "apps/ui/src/features/teacher/pages/teacher.page.tsx",
+      "summary": "Teacher section landing page and index redirect component.",
+      "tags": [
+        "component",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "apps/ui/src/lib/utils.ts",
+      "summary": "Utility exposing the cn helper that merges Tailwind class names via clsx and tailwind-merge.",
+      "tags": [
+        "utility",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/main.tsx",
+      "type": "file",
+      "name": "main.tsx",
+      "filePath": "apps/ui/src/main.tsx",
+      "summary": "React application bootstrap that mounts the App component into the DOM root.",
+      "tags": [
+        "entry-point",
+        "bootstrap"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/components/corso-modal.tsx:CorsoModal",
+      "type": "function",
+      "name": "CorsoModal",
+      "filePath": "apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "lineRange": [
+        25,
+        145
+      ],
+      "summary": "Degree-group create/edit modal that diffs per-year degree records and issues create/update/delete API calls on save.",
+      "tags": [
+        "component",
+        "form"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/components/docente-modal.tsx:DocenteModal",
+      "type": "function",
+      "name": "DocenteModal",
+      "filePath": "apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "lineRange": [
+        17,
+        91
+      ],
+      "summary": "Teacher create/edit modal posting to the segreteria teacher endpoints.",
+      "tags": [
+        "component",
+        "form"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/components/materia-modal.tsx:MateriaModal",
+      "type": "function",
+      "name": "MateriaModal",
+      "filePath": "apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "lineRange": [
+        18,
+        202
+      ],
+      "summary": "Course create/edit modal with searchable teacher and degree dropdowns sourced from the API.",
+      "tags": [
+        "component",
+        "form"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/components/sessione-modal.tsx:SessioneModal",
+      "type": "function",
+      "name": "SessioneModal",
+      "filePath": "apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "lineRange": [
+        38,
+        126
+      ],
+      "summary": "Exam-session create/edit modal validating session and insertion date ranges before submitting.",
+      "tags": [
+        "component",
+        "form",
+        "validation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/corsi.page.tsx:CorsiPage",
+      "type": "function",
+      "name": "CorsiPage",
+      "filePath": "apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "lineRange": [
+        6,
+        239
+      ],
+      "summary": "Degree-programme listing page with search, type/area filters, sorting, grouping, and modal-driven CRUD.",
+      "tags": [
+        "component",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/docenti.page.tsx:DocentiPage",
+      "type": "function",
+      "name": "DocentiPage",
+      "filePath": "apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "lineRange": [
+        6,
+        176
+      ],
+      "summary": "Teacher listing page with search and sort, delegating CRUD to DocenteModal.",
+      "tags": [
+        "component",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/materie.page.tsx:MateriePage",
+      "type": "function",
+      "name": "MateriePage",
+      "filePath": "apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "lineRange": [
+        23,
+        343
+      ],
+      "summary": "Course listing page rendering an expandable area/degree/year tree with search and modal editing.",
+      "tags": [
+        "component",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:SessioniPage",
+      "type": "function",
+      "name": "SessioniPage",
+      "filePath": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "lineRange": [
+        147,
+        269
+      ],
+      "summary": "Session listing page sorting sessions by computed status and rendering them as cards.",
+      "tags": [
+        "component",
+        "listing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:SessionCard",
+      "type": "function",
+      "name": "SessionCard",
+      "filePath": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "lineRange": [
+        75,
+        143
+      ],
+      "summary": "Card presenting a single session with status pill, date ranges, and open action.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:getStatus",
+      "type": "function",
+      "name": "getStatus",
+      "filePath": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "lineRange": [
+        24,
+        35
+      ],
+      "summary": "Derives a session lifecycle status (draft/submission/ongoing/closed) from its dates relative to today.",
+      "tags": [
+        "utility",
+        "date"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeachers",
+      "type": "function",
+      "name": "fetchTeachers",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        15,
+        26
+      ],
+      "summary": "Fetches all teachers with the auth header. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeacherById",
+      "type": "function",
+      "name": "fetchTeacherById",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        28,
+        39
+      ],
+      "summary": "Fetches a single teacher by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createTeacher",
+      "type": "function",
+      "name": "createTeacher",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        41,
+        54
+      ],
+      "summary": "Creates a teacher account. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateTeacher",
+      "type": "function",
+      "name": "updateTeacher",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        56,
+        69
+      ],
+      "summary": "Updates an existing teacher. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteTeacher",
+      "type": "function",
+      "name": "deleteTeacher",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        71,
+        80
+      ],
+      "summary": "Deletes a teacher by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegrees",
+      "type": "function",
+      "name": "fetchDegrees",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        84,
+        94
+      ],
+      "summary": "Fetches all degree programmes. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegreeById",
+      "type": "function",
+      "name": "fetchDegreeById",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        96,
+        106
+      ],
+      "summary": "Fetches a single degree by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createDegree",
+      "type": "function",
+      "name": "createDegree",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        108,
+        120
+      ],
+      "summary": "Creates a degree programme. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateDegree",
+      "type": "function",
+      "name": "updateDegree",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        122,
+        134
+      ],
+      "summary": "Updates an existing degree. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteDegree",
+      "type": "function",
+      "name": "deleteDegree",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        136,
+        145
+      ],
+      "summary": "Deletes a degree by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourses",
+      "type": "function",
+      "name": "fetchCourses",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        149,
+        159
+      ],
+      "summary": "Fetches all courses. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourseById",
+      "type": "function",
+      "name": "fetchCourseById",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        161,
+        171
+      ],
+      "summary": "Fetches a single course by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createCourse",
+      "type": "function",
+      "name": "createCourse",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        173,
+        185
+      ],
+      "summary": "Creates a course. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateCourse",
+      "type": "function",
+      "name": "updateCourse",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        187,
+        199
+      ],
+      "summary": "Updates an existing course. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteCourse",
+      "type": "function",
+      "name": "deleteCourse",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        201,
+        210
+      ],
+      "summary": "Deletes a course by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchSessions",
+      "type": "function",
+      "name": "fetchSessions",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        214,
+        220
+      ],
+      "summary": "Fetches all exam sessions. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        222,
+        230
+      ],
+      "summary": "Creates an exam session. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateSession",
+      "type": "function",
+      "name": "updateSession",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        232,
+        240
+      ],
+      "summary": "Updates an existing session. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteSession",
+      "type": "function",
+      "name": "deleteSession",
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "lineRange": [
+        242,
+        248
+      ],
+      "summary": "Deletes a session by id. Calls handleApiError on failure.",
+      "tags": [
+        "api-handler",
+        "crud"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/ExamForm.tsx:ExamForm",
+      "type": "function",
+      "name": "ExamForm",
+      "filePath": "apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "lineRange": [
+        23,
+        163
+      ],
+      "summary": "Teacher exam-booking form validating weekday, session window, and time range before save/delete.",
+      "tags": [
+        "component",
+        "form",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/Modal.tsx:Modal",
+      "type": "function",
+      "name": "Modal",
+      "filePath": "apps/ui/src/features/teacher/components/Modal.tsx",
+      "lineRange": [
+        11,
+        23
+      ],
+      "summary": "Generic modal wrapper rendering title, subtitle, and children atop the shared dialog primitives.",
+      "tags": [
+        "component",
+        "dialog"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "apps/ui/src/lib/utils.ts",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Merges conditional and Tailwind class names via clsx and tailwind-merge.",
+      "tags": [
+        "utility",
+        "styling"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/corso-modal.tsx:CorsoModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/corso-modal.tsx:CorsoModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/docente-modal.tsx:DocenteModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/docente-modal.tsx:DocenteModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/materia-modal.tsx:MateriaModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/materia-modal.tsx:MateriaModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/sessione-modal.tsx:SessioneModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "function:apps/ui/src/features/segreteria/components/sessione-modal.tsx:SessioneModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/corsi.page.tsx:CorsiPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/corsi.page.tsx:CorsiPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/docenti.page.tsx:DocentiPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/docenti.page.tsx:DocentiPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/materie.page.tsx:MateriePage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/materie.page.tsx:MateriePage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:SessioniPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:SessioniPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:SessionCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "function:apps/ui/src/features/segreteria/pages/sessioni.page.tsx:getStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeachers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeachers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeacherById",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchTeacherById",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createTeacher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createTeacher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateTeacher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateTeacher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteTeacher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteTeacher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegrees",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegrees",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegreeById",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchDegreeById",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createDegree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createDegree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateDegree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateDegree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteDegree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteDegree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourses",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourses",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourseById",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchCourseById",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createCourse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createCourse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateCourse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateCourse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteCourse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteCourse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchSessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:fetchSessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:updateSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/segreteria/segreteria.api.ts:deleteSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "function:apps/ui/src/features/teacher/components/ExamForm.tsx:ExamForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "function:apps/ui/src/features/teacher/components/ExamForm.tsx:ExamForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/Modal.tsx",
+      "target": "function:apps/ui/src/features/teacher/components/Modal.tsx:Modal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/Modal.tsx",
+      "target": "function:apps/ui/src/features/teacher/components/Modal.tsx:Modal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/lib/utils.ts",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/lib/utils.ts",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "file:apps/ui/src/features/shared/utils.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "target": "file:apps/ui/src/utils/date.utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/teacher/components/Modal.tsx",
+      "target": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/main.tsx",
+      "target": "file:apps/ui/src/app/app.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "target": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/main.tsx",
+      "target": "function:apps/ui/src/app/app.tsx:App",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

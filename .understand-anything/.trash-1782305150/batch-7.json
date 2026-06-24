@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "config:eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "Root ESLint flat config for the Nx monorepo, composing Nx base/TypeScript/JavaScript presets and enforcing module-boundary constraints across all projects.",
+      "tags": ["configuration", "eslint", "linting", "monorepo", "build-system"],
+      "complexity": "simple",
+      "languageNotes": "Uses ESLint flat config (array export) with the @nx/enforce-module-boundaries rule to govern cross-project dependencies."
+    },
+    {
+      "id": "config:apps/api/eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/api/eslint.config.mjs",
+      "summary": "Project-level ESLint config for the NestJS API app that extends the root monorepo flat config.",
+      "tags": ["configuration", "eslint", "linting", "api"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/ui/eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/ui/eslint.config.mjs",
+      "summary": "Project-level ESLint config for the React UI app that extends the root monorepo flat config with app-specific overrides.",
+      "tags": ["configuration", "eslint", "linting", "frontend"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/auth/eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "libs/server/auth/eslint.config.mjs",
+      "summary": "Project-level ESLint config for the server auth library that extends the root monorepo flat config.",
+      "tags": ["configuration", "eslint", "linting", "library"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/users/eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "libs/server/users/eslint.config.mjs",
+      "summary": "Project-level ESLint config for the server users library that extends the root monorepo flat config.",
+      "tags": ["configuration", "eslint", "linting", "library"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/api/eslint.config.mjs",
+      "target": "config:eslint.config.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "config:apps/ui/eslint.config.mjs",
+      "target": "config:eslint.config.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "config:libs/server/auth/eslint.config.mjs",
+      "target": "config:eslint.config.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "config:libs/server/users/eslint.config.mjs",
+      "target": "config:eslint.config.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

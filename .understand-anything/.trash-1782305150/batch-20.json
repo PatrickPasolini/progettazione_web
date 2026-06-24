@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": "document:md/frontend/01-overview.md",
+      "type": "document",
+      "name": "01-overview.md",
+      "filePath": "md/frontend/01-overview.md",
+      "summary": "Frontend overview documentation describing the React 19 + Vite + react-router-dom v6 stack, folder structure, routing, frontend authentication, API clients, and role-based navigation.",
+      "tags": ["documentation", "frontend", "overview", "architecture", "routing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/frontend/02-auth.md",
+      "type": "document",
+      "name": "02-auth.md",
+      "filePath": "md/frontend/02-auth.md",
+      "summary": "Documents the frontend authentication flow covering LoginPage, LogoutPage, ChangePasswordPage, ProtectedRoute guard, the auth API client, and the AppLayout logout alert.",
+      "tags": ["documentation", "frontend", "authentication", "routing", "security"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/frontend/03-teacher.md",
+      "type": "document",
+      "name": "03-teacher.md",
+      "filePath": "md/frontend/03-teacher.md",
+      "summary": "Documents the teacher portal: the exam-booking user flow, EsamiPage state and effects, calendar logic, frontend pre-validation constraints, and the supporting components and teacher API client.",
+      "tags": ["documentation", "frontend", "teacher", "calendar", "exam-booking"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:md/frontend/04-segreteria.md",
+      "type": "document",
+      "name": "04-segreteria.md",
+      "filePath": "md/frontend/04-segreteria.md",
+      "summary": "Documents the secretary portal: the management pages for sessions, courses, subjects and teachers, their modal components, and the segreteria API client endpoints.",
+      "tags": ["documentation", "frontend", "secretary", "crud", "admin"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:md/frontend/05-components.md",
+      "type": "document",
+      "name": "05-components.md",
+      "filePath": "md/frontend/05-components.md",
+      "summary": "Documents shared frontend components including AppLayout, the shadcn/ui component library usage, and the ProtectedRoute wrapper.",
+      "tags": ["documentation", "frontend", "components", "ui-library", "shadcn"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/frontend/06-utils.md",
+      "type": "document",
+      "name": "06-utils.md",
+      "filePath": "md/frontend/06-utils.md",
+      "summary": "Documents frontend utility modules: calendar.utils.ts (holiday handling, day computations) and date.utils.ts (UTC shift handling for date formatting).",
+      "tags": ["documentation", "frontend", "utility", "calendar", "date"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:md/frontend/01-overview.md",
+      "target": "file:apps/ui/src/main.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/01-overview.md",
+      "target": "file:apps/ui/src/app/app.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/auth/login.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/auth/logout.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/auth/protected-route.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/auth/auth.api.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/02-auth.md",
+      "target": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/Modal.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/03-teacher.md",
+      "target": "file:apps/ui/src/features/teacher/teacher.api.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/04-segreteria.md",
+      "target": "file:apps/ui/src/features/segreteria/segreteria.api.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/05-components.md",
+      "target": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/05-components.md",
+      "target": "file:apps/ui/src/features/auth/protected-route.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/06-utils.md",
+      "target": "file:apps/ui/src/utils/calendar.utils.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/frontend/06-utils.md",
+      "target": "file:apps/ui/src/utils/date.utils.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

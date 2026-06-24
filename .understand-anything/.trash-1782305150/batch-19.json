@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "document:md/backend/01-overview.md",
+      "type": "document",
+      "name": "01-overview.md",
+      "filePath": "md/backend/01-overview.md",
+      "summary": "Backend overview documenting the Nx monorepo structure, the HTTP request flow through NestJS, the global /api route prefix, principal dependencies, code conventions, and tsconfig path aliases.",
+      "tags": ["documentation", "overview", "architecture", "backend", "nestjs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/backend/02-database.md",
+      "type": "document",
+      "name": "02-database.md",
+      "filePath": "md/backend/02-database.md",
+      "summary": "Documents the DatabaseModule TypeORM/PostgreSQL setup, required environment variables, configuration notes (autoLoadEntities, synchronize), and the main PostgreSQL table schema.",
+      "tags": ["documentation", "database", "configuration", "typeorm", "postgresql"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/backend/03-users.md",
+      "type": "document",
+      "name": "03-users.md",
+      "filePath": "md/backend/03-users.md",
+      "summary": "Documents the users library: UserEntity base, UserRole enum, the TeacherEntity STI subtype, UsersService, UsersController, DTOs, and public exports.",
+      "tags": ["documentation", "data-model", "backend", "users", "sti"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/backend/04-auth.md",
+      "type": "document",
+      "name": "04-auth.md",
+      "filePath": "md/backend/04-auth.md",
+      "summary": "Documents the authentication flow: AuthModule, AuthService, AuthController, Passport local and JWT strategies, interfaces, DTOs, the mustChangePassword flag, and frontend token storage.",
+      "tags": ["documentation", "authentication", "security", "jwt", "passport"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:md/backend/05-security.md",
+      "type": "document",
+      "name": "05-security.md",
+      "filePath": "md/backend/05-security.md",
+      "summary": "Documents the shared security library: JwtAuthGuard and RolesGuard, the @CurrentUser and @Roles decorators, route protection patterns, and public exports.",
+      "tags": ["documentation", "security", "guards", "decorators", "authorization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:md/backend/06-entities.md",
+      "type": "document",
+      "name": "06-entities.md",
+      "filePath": "md/backend/06-entities.md",
+      "summary": "Comprehensive reference for the domain entities (Degree, Session, Teacher, Course, Exam) with their controllers, services, exam validation logic, DTOs, response interfaces, and feature modules.",
+      "tags": ["documentation", "data-model", "domain", "backend", "entities"],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:md/backend/07-api-app.md",
+      "type": "document",
+      "name": "07-api-app.md",
+      "filePath": "md/backend/07-api-app.md",
+      "summary": "Documents the API entry point: main.ts bootstrap, AppModule wiring, AppController, and a summary of all exposed API routes.",
+      "tags": ["documentation", "entry-point", "backend", "nestjs", "api"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:md/backend/01-overview.md",
+      "target": "file:apps/api/src/main.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/01-overview.md",
+      "target": "file:apps/api/src/app/app.module.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/02-database.md",
+      "target": "file:libs/database/src/lib/database.module.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/03-users.md",
+      "target": "file:libs/server/users/src/lib/user.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/03-users.md",
+      "target": "file:libs/server/users/src/lib/users.service.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/03-users.md",
+      "target": "file:libs/server/users/src/lib/users.controller.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/04-auth.md",
+      "target": "file:libs/server/auth/src/lib/auth.module.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/04-auth.md",
+      "target": "file:libs/server/auth/src/lib/auth.service.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/04-auth.md",
+      "target": "file:libs/server/auth/src/lib/auth.controller.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/05-security.md",
+      "target": "file:libs/server/security/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/entities/degree.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/entities/session.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/entities/teacher.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/entities/course.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/entities/exam.entity.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/services/exam.service.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/services/session.service.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/06-entities.md",
+      "target": "file:libs/server/entities/src/controllers/exam.controller.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/07-api-app.md",
+      "target": "file:apps/api/src/main.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:md/backend/07-api-app.md",
+      "target": "file:apps/api/src/app/app.module.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

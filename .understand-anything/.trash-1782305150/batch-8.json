@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/api/src/app/app.controller.ts",
+      "type": "file",
+      "name": "app.controller.ts",
+      "filePath": "apps/api/src/app/app.controller.ts",
+      "summary": "Root NestJS controller exposing a single GET endpoint that delegates to AppService for a sample data response.",
+      "tags": ["api-handler", "controller", "nestjs", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/api/src/app/app.module.ts",
+      "summary": "Root application module that wires together the database, auth, users, and all domain feature modules (course, degree, exam, session, teacher) plus the root controller and service.",
+      "tags": ["nestjs", "module", "entry-point", "configuration"],
+      "complexity": "simple",
+      "languageNotes": "NestJS @Module decorator composing feature modules via the imports array, the standard dependency-injection wiring pattern."
+    },
+    {
+      "id": "file:apps/api/src/app/app.service.ts",
+      "type": "file",
+      "name": "app.service.ts",
+      "filePath": "apps/api/src/app/app.service.ts",
+      "summary": "Root injectable service providing a trivial getData method used by the root controller as a scaffold/health placeholder.",
+      "tags": ["nestjs", "service", "provider"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/api/src/main.ts",
+      "summary": "API bootstrap entry point that creates the Nest application, enables CORS, sets the global /api prefix, configures Swagger docs, and starts the HTTP listener.",
+      "tags": ["entry-point", "bootstrap", "nestjs", "swagger"],
+      "complexity": "simple",
+      "languageNotes": "Uses NestFactory plus the SwaggerModule/DocumentBuilder fluent API to expose OpenAPI documentation."
+    },
+    {
+      "id": "class:apps/api/src/app/app.controller.ts:AppController",
+      "type": "class",
+      "name": "AppController",
+      "filePath": "apps/api/src/app/app.controller.ts",
+      "lineRange": [7, 14],
+      "summary": "Root controller injecting AppService and exposing getData via the default route.",
+      "tags": ["controller", "api-handler", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/api/src/app/app.module.ts",
+      "lineRange": [15, 29],
+      "summary": "Root module aggregating database, auth, and domain feature modules with the root controller and service.",
+      "tags": ["module", "nestjs", "composition-root"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api/src/app/app.service.ts:AppService",
+      "type": "class",
+      "name": "AppService",
+      "filePath": "apps/api/src/app/app.service.ts",
+      "lineRange": [4, 8],
+      "summary": "Injectable provider returning a placeholder data payload via getData.",
+      "tags": ["service", "provider", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/api/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/api/src/main.ts",
+      "lineRange": [10, 33],
+      "summary": "Async bootstrap routine that instantiates the Nest app, configures CORS, global prefix, Swagger documentation, and begins listening on the configured port.",
+      "tags": ["bootstrap", "entry-point", "nestjs", "swagger"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/api/src/app/app.controller.ts",
+      "target": "file:apps/api/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/app/app.module.ts",
+      "target": "file:apps/api/src/app/app.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/app/app.module.ts",
+      "target": "file:apps/api/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/main.ts",
+      "target": "file:apps/api/src/app/app.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/app/app.controller.ts",
+      "target": "class:apps/api/src/app/app.controller.ts:AppController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api/src/app/app.controller.ts",
+      "target": "class:apps/api/src/app/app.controller.ts:AppController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api/src/app/app.module.ts",
+      "target": "class:apps/api/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api/src/app/app.module.ts",
+      "target": "class:apps/api/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api/src/app/app.service.ts",
+      "target": "class:apps/api/src/app/app.service.ts:AppService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api/src/app/app.service.ts",
+      "target": "class:apps/api/src/app/app.service.ts:AppService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api/src/main.ts",
+      "target": "function:apps/api/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:apps/api/src/app/app.controller.ts:AppController",
+      "target": "class:apps/api/src/app/app.service.ts:AppService",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

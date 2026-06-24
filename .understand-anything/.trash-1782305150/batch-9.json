@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/ci.yml",
+      "type": "pipeline",
+      "name": "ci.yml",
+      "filePath": ".github/workflows/ci.yml",
+      "summary": "GitHub Actions CI workflow triggered on push to main and on pull requests; uses Nx Cloud distributed task execution to run format check, lint, test, build, typecheck, and e2e across the monorepo.",
+      "tags": ["ci-cd", "infrastructure", "deployment", "build-system", "automation"],
+      "complexity": "simple",
+      "languageNotes": "Uses Nx Cloud distributed execution (nx start-ci-run --distribute-on) to parallelize monorepo tasks across agents, with nx fix-ci as an always-run self-healing step."
+    },
+    {
+      "id": "step:.github/workflows/ci.yml:main",
+      "type": "pipeline",
+      "name": "main",
+      "filePath": ".github/workflows/ci.yml",
+      "summary": "Primary CI job on ubuntu-latest that checks out the repo, bootstraps Nx Cloud distribution, installs dependencies with npm ci, and runs format:check followed by lint, test, build, typecheck, and e2e-ci targets via nx run-many.",
+      "tags": ["ci-cd", "build-system", "automation", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline:.github/workflows/ci.yml",
+      "target": "step:.github/workflows/ci.yml:main",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

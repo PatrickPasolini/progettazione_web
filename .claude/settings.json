@@ -19,7 +19,8 @@
     ]
   },
   "enabledPlugins": {
-    "nx@nx-claude-plugins": true
+    "nx@nx-claude-plugins": true,
+    "understand-anything@understand-anything": true
   },
   "extraKnownMarketplaces": {
     "nx-claude-plugins": {
