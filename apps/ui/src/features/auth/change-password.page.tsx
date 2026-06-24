@@ -22,8 +22,8 @@ export function ChangePasswordPage() {
     try {
       await changePassword(newPassword);
       const user = await fetchCurrentUser();
-      if (user.role === 'SECRETARY') navigate('/segreteria');
-      else if (user.role === 'TEACHER') navigate('/docente');
+      if (user.role === 'SECRETARY') navigate('/secretary');
+      else if (user.role === 'TEACHER') navigate('/teacher');
       else navigate('/');
     } catch (err: any) {
       setError(err.message);

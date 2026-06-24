@@ -1,6 +1,6 @@
 import { Outlet, Navigate } from 'react-router-dom';
 
-export function SegreteriaPage() {
+export function SecretaryPage() {
   return (
     <main className="flex-1 p-8">
       <Outlet />
@@ -8,6 +8,6 @@ export function SegreteriaPage() {
   );
 }
 
-export function SegreteriaIndex() {
-  return <Navigate to="/segreteria/sessioni" replace />;
+export function SecretaryIndex() {
+  return <Navigate to="/secretary/sessions" replace />;
 }

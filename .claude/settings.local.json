@@ -6,7 +6,8 @@
       "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(JSON.stringify\\(p.workspaces, null, 2\\)\\)\")",
       "Bash(npm install *)",
       "Bash(Select-String \"entit\")",
-      "Bash(npx shadcn *)"
+      "Bash(npx shadcn *)",
+      "Bash(git mv *)"
     ]
   }
 }

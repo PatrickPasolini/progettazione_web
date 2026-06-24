@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { createTeacher, updateTeacher } from '../segreteria.api';
+import { createTeacher, updateTeacher } from '../secretary.api';
 import type { TeacherListItem } from '@server/entities/frontend';
 import { Button } from '../../../components/ui/button';
 import { Input } from '../../../components/ui/input';
 import { Label } from '../../../components/ui/label';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../../../components/ui/dialog';
 
-interface DocenteModalProps {
+interface TeacherModalProps {
     isOpen: boolean;
     mode: 'create' | 'edit';
     teacher: TeacherListItem | null;
@@ -14,7 +14,7 @@ interface DocenteModalProps {
     onSave: () => void;
 }
 
-export function DocenteModal({ isOpen, mode, teacher, onClose, onSave }: DocenteModalProps) {
+export function TeacherModal({ isOpen, mode, teacher, onClose, onSave }: TeacherModalProps) {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [email, setEmail] = useState('');

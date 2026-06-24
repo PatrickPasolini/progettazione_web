@@ -25,7 +25,7 @@ type ModalState =
     | { mode: 'edit'; date: string; exam: ExamListItem }
     | null;
 
-export function EsamiPage() {
+export function ExamsPage() {
     const [sessions, setSessions] = useState<SessionListItem[]>([]);
     const [selectedSessionId, setSelectedSessionId] = useState<number | ''>('');
     const [userId, setUserId] = useState<number | null>(null);

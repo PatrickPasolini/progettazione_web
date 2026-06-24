@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchTeachers, deleteTeacher } from "../segreteria.api";
+import { fetchTeachers, deleteTeacher } from "../secretary.api";
 import { TeacherListItem } from '@server/entities/frontend';
-import { DocenteModal } from '../components/docente-modal';
+import { TeacherModal } from '../components/teacher-modal';
 import { ErrorDialog } from '../../../components/ui/error-dialog';
 import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
-export function DocentiPage() {
+export function TeachersPage() {
     // visualizzazione tabella
     const [teachers, setTeachers] = useState<TeacherListItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
@@ -169,7 +169,7 @@ export function DocentiPage() {
 
             {/* Modale per inserimento / modifica docente (sarà importato dal file che scriveremo qui a breve) */}
             {isModalOpen && (
-                <DocenteModal
+                <TeacherModal
                     isOpen={isModalOpen}
                     mode={modalMode}
                     teacher={selectedTeacher}

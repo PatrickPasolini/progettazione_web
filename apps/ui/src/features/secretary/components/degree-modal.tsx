@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createDegree, updateDegree, deleteDegree } from '../segreteria.api';
+import { createDegree, updateDegree, deleteDegree } from '../secretary.api';
 import type { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
 import { Button } from '../../../components/ui/button';
 import { Input } from '../../../components/ui/input';
@@ -14,7 +14,7 @@ function yearsForType(type: string, cycleYears: number): string[] {
     return ALL_YEARS.slice(0, cycleYears);
 }
 
-interface CorsoModalProps {
+interface DegreeModalProps {
     isOpen: boolean;
     mode: 'create' | 'edit';
     degreeGroup: DegreeListItem[];
@@ -22,7 +22,7 @@ interface CorsoModalProps {
     onSave: () => void;
 }
 
-export function CorsoModal({ isOpen, mode, degreeGroup, onClose, onSave }: CorsoModalProps) {
+export function DegreeModal({ isOpen, mode, degreeGroup, onClose, onSave }: DegreeModalProps) {
     const first = degreeGroup[0] ?? null;
 
     const [degreeName, setDegreeName] = useState('');

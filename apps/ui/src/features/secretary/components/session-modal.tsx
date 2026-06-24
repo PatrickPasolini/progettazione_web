@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { MacroArea, SessionListItem, CreateSessionDto } from '@server/entities/frontend';
-import { createSession, updateSession } from '../segreteria.api';
+import { createSession, updateSession } from '../secretary.api';
 import { Button } from '../../../components/ui/button';
 import { Input } from '../../../components/ui/input';
 import { Label } from '../../../components/ui/label';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../../../components/ui/dialog';
 import { DatePicker } from '../../../components/ui/date-picker';
 
-interface SessioneModalProps {
+interface SessionModalProps {
   isOpen: boolean;
   mode: 'create' | 'edit';
   session: SessionListItem | null;
@@ -35,7 +35,7 @@ function DateRangePicker({
   );
 }
 
-export function SessioneModal({ isOpen, mode, session, onClose, onSave }: SessioneModalProps) {
+export function SessionModal({ isOpen, mode, session, onClose, onSave }: SessionModalProps) {
   const [macroArea, setMacroArea] = useState<MacroArea | ''>((session?.macroArea as MacroArea) ?? '');
   const [startDate, setStartDate] = useState(session?.startDate ? toISO(session.startDate) : '');
   const [endDate, setEndDate] = useState(session?.endDate ? toISO(session.endDate) : '');

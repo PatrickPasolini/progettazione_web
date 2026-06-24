@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchDegrees, deleteDegree } from "../segreteria.api";
+import { fetchDegrees, deleteDegree } from "../secretary.api";
 import { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
-import { CorsoModal } from '../components/corso-modal';
+import { DegreeModal } from '../components/degree-modal';
 import { ErrorDialog } from '../../../components/ui/error-dialog';
 import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
-export function CorsiPage() {
+export function DegreesPage() {
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
@@ -234,7 +234,7 @@ export function CorsiPage() {
             )}
 
             {isModalOpen && (
-                <CorsoModal
+                <DegreeModal
                     isOpen={isModalOpen}
                     mode={modalMode}
                     degreeGroup={selectedGroup}

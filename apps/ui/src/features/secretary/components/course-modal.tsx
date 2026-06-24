@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { createCourse, updateCourse, fetchTeachers, fetchDegrees } from '../segreteria.api';
+import { createCourse, updateCourse, fetchTeachers, fetchDegrees } from '../secretary.api';
 import type { CourseListItem, TeacherListItem, DegreeListItem } from '@server/entities/frontend';
 import { MacroArea } from '@server/entities/frontend';
 import { Button } from '../../../components/ui/button';
@@ -7,7 +7,7 @@ import { Input } from '../../../components/ui/input';
 import { Label } from '../../../components/ui/label';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../../../components/ui/dialog';
 
-interface MateriaModalProps {
+interface CourseModalProps {
     isOpen: boolean;
     mode: 'create' | 'edit';
     course: CourseListItem | null;
@@ -18,7 +18,7 @@ interface MateriaModalProps {
 const selectCls = "w-full border border-input rounded-md px-3 py-2 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed";
 const dropdownCls = "absolute z-10 mt-1 w-full bg-background border border-border rounded-lg shadow-lg overflow-y-auto max-h-[120px]";
 
-export function MateriaModal({ isOpen, mode, course, onClose, onSave }: MateriaModalProps) {
+export function CourseModal({ isOpen, mode, course, onClose, onSave }: CourseModalProps) {
     const [courseName, setCourseName] = useState('');
 
     const [teachers, setTeachers] = useState<TeacherListItem[]>([]);

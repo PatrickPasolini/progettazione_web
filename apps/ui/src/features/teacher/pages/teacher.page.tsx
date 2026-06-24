@@ -9,6 +9,6 @@ export function TeacherPage() {
 }
 
 export function TeacherIndex() {
-  return <Navigate to="/docente/esami" replace />;
+  return <Navigate to="/teacher/exams" replace />;
 }
 

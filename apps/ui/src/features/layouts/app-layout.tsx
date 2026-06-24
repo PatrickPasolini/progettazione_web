@@ -7,14 +7,14 @@ import { fetchCurrentUser } from '../auth/auth.api';
 interface NavTab { label: string; path: string; }
 
 const SEGRETERIA_TABS: NavTab[] = [
-  { label: 'Sessioni', path: '/segreteria/sessioni' },
-  { label: 'Corsi',    path: '/segreteria/corsi' },
-  { label: 'Materie',  path: '/segreteria/materie' },
-  { label: 'Docenti',  path: '/segreteria/docenti' },
+  { label: 'Sessioni', path: '/secretary/sessions' },
+  { label: 'Corsi',    path: '/secretary/degrees' },
+  { label: 'Materie',  path: '/secretary/courses' },
+  { label: 'Docenti',  path: '/secretary/teachers' },
 ];
 
 const TEACHER_TABS: NavTab[] = [
-  { label: 'Esami', path: '/docente/esami' },
+  { label: 'Esami', path: '/teacher/exams' },
 ];
 
 export function AppLayout() {

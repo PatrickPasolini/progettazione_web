@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchCourses, deleteCourse, fetchDegrees } from "../segreteria.api";
+import { fetchCourses, deleteCourse, fetchDegrees } from "../secretary.api";
 import { CourseListItem, DegreeListItem } from '@server/entities/frontend';
-import { MateriaModal } from '../components/materia-modal';
+import { CourseModal } from '../components/course-modal';
 import { ErrorDialog } from '../../../components/ui/error-dialog';
 import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
@@ -22,7 +22,7 @@ interface AreaNode {
     groups: GroupNode[];
 }
 
-export function MateriePage() {
+export function CoursesPage() {
     const [courses, setCourses] = useState<CourseListItem[]>([]);
     const [degrees, setDegrees] = useState<DegreeListItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
@@ -330,7 +330,7 @@ export function MateriePage() {
             />
 
             {isModalOpen && (
-                <MateriaModal
+                <CourseModal
                     isOpen={isModalOpen}
                     mode={modalMode}
                     course={selectedCourse}

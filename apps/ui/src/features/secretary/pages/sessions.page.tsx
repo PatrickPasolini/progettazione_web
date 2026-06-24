@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { SessionListItem } from '@server/entities/frontend';
-import { fetchSessions } from '../segreteria.api';
-import { SessioneModal } from '../components/sessione-modal';
+import { fetchSessions } from '../secretary.api';
+import { SessionModal } from '../components/session-modal';
 
 // draft: creazione sessione, submission: inserimento exam dei prof, ongoing: sessione in corso , closed: sessione finita
 type SessionStatus = 'draft' | 'submission' | 'ongoing' | 'closed';
@@ -142,9 +142,9 @@ function SessionCard({
   );
 }
 
-// --- SessioniPage ---
+// --- SessionsPage ---
 
-export function SessioniPage() {
+export function SessionsPage() {
   const [sessions, setSessions] = useState<SessionListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -256,7 +256,7 @@ export function SessioniPage() {
       )}
 
       {isModalOpen && (
-        <SessioneModal
+        <SessionModal
           isOpen={isModalOpen}
           mode={modalMode}
           session={selectedSession}

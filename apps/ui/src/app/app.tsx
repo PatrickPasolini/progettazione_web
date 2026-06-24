@@ -6,20 +6,19 @@ import { ProtectedRoute } from '../features/auth/protected-route';
 import { AppLayout } from '../features/layouts/app-layout';
 
 import {
-  SegreteriaPage,
-  SegreteriaIndex,
-} from '../features/segreteria/pages/segreteria.page';
-import { DocentiPage } from '../features/segreteria/pages/docenti.page';
-import { CorsiPage } from '../features/segreteria/pages/corsi.page';
-import { MateriePage } from '../features/segreteria/pages/materie.page';
-
+  SecretaryPage,
+  SecretaryIndex,
+} from '../features/secretary/pages/secretary.page';
+import { TeachersPage } from '../features/secretary/pages/teachers.page';
+import { DegreesPage } from '../features/secretary/pages/degrees.page';
+import { CoursesPage } from '../features/secretary/pages/courses.page';
+import { SessionsPage } from '../features/secretary/pages/sessions.page';
 
 import {
   TeacherPage,
   TeacherIndex,
 } from '../features/teacher/pages/teacher.page';
-import { EsamiPage } from '../features/teacher/pages/esami.page';
-import { SessioniPage } from '../features/segreteria/pages/sessioni.page';
+import { ExamsPage } from '../features/teacher/pages/exams.page';
 
 export function App() {
   return (
@@ -42,20 +41,20 @@ export function App() {
           </ProtectedRoute>
         }
       >
-        <Route path="/segreteria" element={<SegreteriaPage />}>
-          <Route index element={<SegreteriaIndex />} />
-          <Route path="sessioni" element={<SessioniPage />} />
-          <Route path="corsi"    element={<CorsiPage />} />
-          <Route path="materie"  element={<MateriePage />} />
-          <Route path="docenti"  element={<DocentiPage />} />
+        <Route path="/secretary" element={<SecretaryPage />}>
+          <Route index element={<SecretaryIndex />} />
+          <Route path="sessions" element={<SessionsPage />} />
+          <Route path="degrees"  element={<DegreesPage />} />
+          <Route path="courses"  element={<CoursesPage />} />
+          <Route path="teachers" element={<TeachersPage />} />
         </Route>
 
-        <Route path="/docente" element={<TeacherPage />}>
+        <Route path="/teacher" element={<TeacherPage />}>
           <Route index element={<TeacherIndex />} />
-          <Route path="esami" element={<EsamiPage />} />
+          <Route path="exams" element={<ExamsPage />} />
         </Route>
 
-        <Route path="/" element={<Navigate to="/segreteria" replace />} />
+        <Route path="/" element={<Navigate to="/secretary" replace />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
