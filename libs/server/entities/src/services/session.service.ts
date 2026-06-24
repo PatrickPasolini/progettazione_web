@@ -56,7 +56,7 @@ export class ServerSessionService {
 
         session.degrees = dto.degreeIds?.length
             ? await this.degreeRepository.findByIds(dto.degreeIds)
-            : [];
+            : await this.degreeRepository.findByMacroArea(dto.macroArea);
 
         return this.toListItem(await this.sessionRepository.save(session));
     }
@@ -90,6 +90,8 @@ export class ServerSessionService {
             session.degrees = dto.degreeIds.length
                 ? await this.degreeRepository.findByIds(dto.degreeIds)
                 : [];
+        } else if (dto.macroArea) {
+            session.degrees = await this.degreeRepository.findByMacroArea(dto.macroArea);
         }
 
         return this.toListItem(await this.sessionRepository.save(session));
