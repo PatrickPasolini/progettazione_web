@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchCourses, deleteCourse, fetchDegrees } from "../segreteria.api";
 import { CourseListItem, DegreeListItem } from '@server/entities/frontend';
 import { MateriaModal } from '../components/materia-modal';
-import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
+import { ErrorDialog } from '../../../components/ui/error-dialog';
 import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 interface YearLeaf {
@@ -323,17 +323,11 @@ export function MateriePage() {
                 onCancel={() => setPendingDelete(null)}
             />
 
-            <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
-                <AlertDialogContent>
-                    <AlertDialogHeader>
-                        <AlertDialogTitle>Eliminazione non consentita</AlertDialogTitle>
-                        <AlertDialogDescription>{deleteError}</AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                        <AlertDialogAction onClick={() => setDeleteError(null)}>OK</AlertDialogAction>
-                    </AlertDialogFooter>
-                </AlertDialogContent>
-            </AlertDialog>
+            <ErrorDialog
+                open={!!deleteError}
+                message={deleteError}
+                onClose={() => setDeleteError(null)}
+            />
 
             {isModalOpen && (
                 <MateriaModal

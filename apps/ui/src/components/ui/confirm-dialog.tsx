@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Trash2 } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -35,7 +36,12 @@ export function ConfirmDialog({
     <AlertDialog open={open} onOpenChange={(o) => { if (!o) onCancel(); }}>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>{title}</AlertDialogTitle>
+          <AlertDialogTitle className="flex items-center gap-3">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 shrink-0">
+              <Trash2 className="w-4 h-4 text-red-600" />
+            </span>
+            {title}
+          </AlertDialogTitle>
           <AlertDialogDescription>{description}</AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

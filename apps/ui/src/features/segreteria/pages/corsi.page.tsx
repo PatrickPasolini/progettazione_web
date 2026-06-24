@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchDegrees, deleteDegree } from "../segreteria.api";
 import { DegreeListItem, DegreeType, MacroArea } from '@server/entities/frontend';
 import { CorsoModal } from '../components/corso-modal';
-import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '../../../components/ui/alert-dialog';
+import { ErrorDialog } from '../../../components/ui/error-dialog';
 import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
 
 export function CorsiPage() {
@@ -251,17 +251,11 @@ export function CorsiPage() {
                 onCancel={() => setPendingDelete(null)}
             />
 
-            <AlertDialog open={!!deleteError} onOpenChange={(o) => { if (!o) setDeleteError(null); }}>
-                <AlertDialogContent>
-                    <AlertDialogHeader>
-                        <AlertDialogTitle>Eliminazione non consentita</AlertDialogTitle>
-                        <AlertDialogDescription>{deleteError}</AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                        <AlertDialogAction onClick={() => setDeleteError(null)}>OK</AlertDialogAction>
-                    </AlertDialogFooter>
-                </AlertDialogContent>
-            </AlertDialog>
+            <ErrorDialog
+                open={!!deleteError}
+                message={deleteError}
+                onClose={() => setDeleteError(null)}
+            />
         </div>
     );
 }
