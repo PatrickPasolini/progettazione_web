@@ -1,0 +1,248 @@
+import { TeacherListItem, CreateTeacherDto, UpdateTeacherDto, DegreeListItem, CreateDegreeDto, UpdateDegreeDto, CourseListItem, CreateCourseDto, UpdateCourseDto, SessionListItem, CreateSessionDto, UpdateSessionDto } from '@server/entities/frontend';
+import { handleApiError } from '../shared/utils.api';
+
+const API_URL = 'http://localhost:3333/api';
+
+function getAuthHeader() {
+    const token = localStorage.getItem('access_token');
+
+    return {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+    };
+}
+
+export async function fetchTeachers() : Promise<TeacherListItem[]> {
+    const response = await fetch(`${API_URL}/teacher`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    const data: TeacherListItem[] = await response.json();
+    return data;
+}
+
+export async function fetchTeacherById(id: number) : Promise<TeacherListItem> {
+    const response = await fetch(`${API_URL}/teacher/${id}`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    const data: TeacherListItem = await response.json();
+    return data;
+}
+
+export async function createTeacher(payload: CreateTeacherDto): Promise<TeacherListItem> {
+    const response = await fetch(`${API_URL}/teacher`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+    
+    const data: TeacherListItem = await response.json();
+    return data;
+}
+
+export async function updateTeacher(id: number, payload: UpdateTeacherDto): Promise<TeacherListItem> {
+    const response = await fetch(`${API_URL}/teacher/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+    
+    const data: TeacherListItem = await response.json();
+    return data;
+}
+
+export async function deleteTeacher(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/teacher/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+}
+
+// --- Degrees ---
+
+export async function fetchDegrees(): Promise<DegreeListItem[]> {
+    const response = await fetch(`${API_URL}/degree`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function fetchDegreeById(id: number): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function createDegree(payload: CreateDegreeDto): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function updateDegree(id: number, payload: UpdateDegreeDto): Promise<DegreeListItem> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function deleteDegree(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/degree/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+}
+
+// --- Courses ---
+
+export async function fetchCourses(): Promise<CourseListItem[]> {
+    const response = await fetch(`${API_URL}/course`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function fetchCourseById(id: number): Promise<CourseListItem> {
+    const response = await fetch(`${API_URL}/course/${id}`, {
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function createCourse(payload: CreateCourseDto): Promise<CourseListItem> {
+    const response = await fetch(`${API_URL}/course`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function updateCourse(id: number, payload: UpdateCourseDto): Promise<CourseListItem> {
+    const response = await fetch(`${API_URL}/course/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+
+    return response.json();
+}
+
+export async function deleteCourse(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/course/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+
+    if(!response.ok) {
+        await handleApiError(response);
+    }
+}
+
+// --- Sessions ---
+
+export async function fetchSessions(): Promise<SessionListItem[]> {
+    const response = await fetch(`${API_URL}/session`, {
+        headers: getAuthHeader(),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function createSession(payload: CreateSessionDto): Promise<SessionListItem> {
+    const response = await fetch(`${API_URL}/session`, {
+        method: 'POST',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function updateSession(id: number, payload: UpdateSessionDto): Promise<SessionListItem> {
+    const response = await fetch(`${API_URL}/session/${id}`, {
+        method: 'PATCH',
+        headers: getAuthHeader(),
+        body: JSON.stringify(payload),
+    });
+    if (!response.ok) await handleApiError(response);
+    return response.json();
+}
+
+export async function deleteSession(id: number): Promise<void> {
+    const response = await fetch(`${API_URL}/session/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+    });
+    if (!response.ok) await handleApiError(response);
+}

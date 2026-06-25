@@ -5,6 +5,7 @@ import { CreateSessionDto } from '../entities/dto/create-session.dto.js';
 import { UpdateSessionDto } from '../entities/dto/update-session.dto.js';
 import { MacroArea } from '../entities/dto/degree.enum.js';
 import { SessionEntity } from '../entities/session.entity.js';
+import { SessionListItem } from '../interfaces/session-list-item.js';
 
 @Injectable()
 export class ServerSessionService {
@@ -13,17 +14,35 @@ export class ServerSessionService {
         private readonly degreeRepository: DegreeRepository,
     ) {}
 
-    findAll(): Promise<SessionEntity[]> {
-        return this.sessionRepository.findAll();
+    async findAll(): Promise<SessionListItem[]> {
+        const sessions = await this.sessionRepository.findAll();
+        return sessions.map(s => this.toListItem(s));
     }
 
-    async findOne(id: number): Promise<SessionEntity> {
+    async findActiveByTeacher(teacherId: number): Promise<SessionListItem[]> {
+        const sessions = await this.sessionRepository.findActiveByTeacher(teacherId);
+        return sessions.map(s => this.toListItem(s));
+    }
+
+    async findOne(id: number): Promise<SessionListItem> {
         const session = await this.sessionRepository.findById(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);
-        return session;
+        return this.toListItem(session);
     }
 
-    async create(dto: CreateSessionDto): Promise<SessionEntity> {
+    private toListItem(session: SessionEntity): SessionListItem {
+        return {
+            id: session.id,
+            startDate: session.startDate,
+            endDate: session.endDate,
+            startInsertDate: session.startInsertDate,
+            endInsertDate: session.endInsertDate,
+            macroArea: session.macroArea,
+            examLimit: session.examLimit,
+        }
+    }
+
+    async create(dto: CreateSessionDto): Promise<SessionListItem> {
         this.validateDates(dto.startDate, dto.endDate, dto.startInsertDate, dto.endInsertDate);
 
         const session = this.sessionRepository.create({
@@ -32,16 +51,17 @@ export class ServerSessionService {
             startInsertDate: new Date(dto.startInsertDate),
             endInsertDate:   new Date(dto.endInsertDate),
             macroArea:       dto.macroArea,
+            examLimit:       dto.examLimit,
         });
 
         session.degrees = dto.degreeIds?.length
             ? await this.degreeRepository.findByIds(dto.degreeIds)
-            : [];
+            : await this.degreeRepository.findByMacroArea(dto.macroArea);
 
-        return this.sessionRepository.save(session);
+        return this.toListItem(await this.sessionRepository.save(session));
     }
 
-    async update(id: number, dto: UpdateSessionDto): Promise<SessionEntity> {
+    async update(id: number, dto: UpdateSessionDto): Promise<SessionListItem> {
         const session = await this.sessionRepository.findByIdWithDegrees(id);
         if (!session) throw new NotFoundException(`Session with id ${id} not found`);
 
@@ -63,15 +83,18 @@ export class ServerSessionService {
             startInsertDate,
             endInsertDate,
             ...(dto.macroArea && { macroArea: dto.macroArea }),
+            ...(dto.examLimit !== undefined && { examLimit: dto.examLimit }),
         });
 
         if (dto.degreeIds !== undefined) {
             session.degrees = dto.degreeIds.length
                 ? await this.degreeRepository.findByIds(dto.degreeIds)
                 : [];
+        } else if (dto.macroArea) {
+            session.degrees = await this.degreeRepository.findByMacroArea(dto.macroArea);
         }
 
-        return this.sessionRepository.save(session);
+        return this.toListItem(await this.sessionRepository.save(session));
     }
 
     async remove(id: number): Promise<void> {
@@ -81,26 +104,29 @@ export class ServerSessionService {
     }
 
     async seed(): Promise<void> {
-        const sessions: { startDate: Date; endDate: Date; startInsertDate: Date; endInsertDate: Date; macroArea: MacroArea }[] = [
-            {
-                startDate:       new Date('2026-06-01'),
-                endDate:         new Date('2026-07-31'),
-                startInsertDate: new Date('2026-04-01'),
-                endInsertDate:   new Date('2026-04-30'),
-                macroArea:       MacroArea.ENGINEERING,
-            },
-            {
-                startDate:       new Date('2026-09-01'),
-                endDate:         new Date('2026-09-30'),
-                startInsertDate: new Date('2026-05-01'),
-                endInsertDate:   new Date('2026-06-30'),
-                macroArea:       MacroArea.ENGINEERING,
-            },
-        ];
+        // Reset: svuota le sessioni (e exam/join dipendenti) per un seed pulito.
+        await this.sessionRepository.clearCascade();
+
+        // Una sessione per ciascuna area. Finestra inserimento APERTA oggi
+        // (start < oggi < end) e chiusa prima dell'inizio sessione:
+        // startInsertDate < endInsertDate < startDate < endDate.
+        const sessions: Partial<SessionEntity>[] = [
+            MacroArea.ECONOMICS,
+            MacroArea.LAW,
+            MacroArea.ENGINEERING,
+            MacroArea.MEDICINE,
+        ].map((macroArea) => ({
+            startInsertDate: new Date('2026-06-01'),
+            endInsertDate:   new Date('2026-07-15'),
+            startDate:       new Date('2026-07-20'),
+            endDate:         new Date('2026-09-30'),
+            macroArea,
+            examLimit:       1,
+        }));
 
         for (const s of sessions) {
             const session = this.sessionRepository.create(s);
-            session.degrees = await this.degreeRepository.findByMacroArea(s.macroArea);
+            session.degrees = await this.degreeRepository.findByMacroArea(s.macroArea!);
             await this.sessionRepository.save(session);
         }
     }

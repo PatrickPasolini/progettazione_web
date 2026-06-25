@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ui/src/features/shared/utils.api.ts",
+      "type": "file",
+      "name": "utils.api.ts",
+      "filePath": "apps/ui/src/features/shared/utils.api.ts",
+      "summary": "Shared API helper that normalizes failed fetch responses into a single Error message, joining array-valued validation messages from the backend.",
+      "tags": ["utility", "api-handler", "error-handling", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError",
+      "type": "function",
+      "name": "handleApiError",
+      "filePath": "apps/ui/src/features/shared/utils.api.ts",
+      "lineRange": [1, 9],
+      "summary": "Parses a failed Response body and throws an Error, flattening NestJS array message payloads into a comma-joined string.",
+      "tags": ["utility", "error-handling", "api-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "type": "file",
+      "name": "CalendarGrid.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "summary": "React component rendering a monthly calendar grid for exam scheduling, with month navigation, weekend/holiday styling, and per-day exam cells that are clickable within the insertion window.",
+      "tags": ["component", "calendar", "ui", "event-handler"],
+      "complexity": "complex",
+      "languageNotes": "Builds a 6-row day grid from startOfMonth, padding leading days and trimming a fully out-of-month final week."
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/CalendarGrid.tsx:CalendarGrid",
+      "type": "function",
+      "name": "CalendarGrid",
+      "filePath": "apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "lineRange": [18, 204],
+      "summary": "Functional component that computes the month grid, renders day cells with booked exams keyed by ISO date, and invokes onCellClick for actionable free days.",
+      "tags": ["component", "calendar", "ui", "event-handler"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "type": "file",
+      "name": "InsertionBanner.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "summary": "React banner component that communicates the exam insertion window status to teachers, showing days remaining, closed-window, or exam-limit-reached states.",
+      "tags": ["component", "ui", "banner", "status-indicator"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/InsertionBanner.tsx:InsertionBanner",
+      "type": "function",
+      "name": "InsertionBanner",
+      "filePath": "apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "lineRange": [10, 69],
+      "summary": "Renders a contextual notice about the insertion period using session dates and daysRemaining, branching on whether insertion is open and the exam limit.",
+      "tags": ["component", "ui", "banner"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "type": "file",
+      "name": "MyExamsList.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "summary": "React component listing the current teacher's booked exams with date/time formatting and edit/delete actions enabled only while the insertion window is open.",
+      "tags": ["component", "ui", "list", "event-handler"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/MyExamsList.tsx:MyExamsList",
+      "type": "function",
+      "name": "MyExamsList",
+      "filePath": "apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "lineRange": [15, 103],
+      "summary": "Maps over the teacher's exams rendering each as a card with localized date/time and triggering onEdit/onDelete callbacks.",
+      "tags": ["component", "ui", "list"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "type": "file",
+      "name": "SessionSidebar.tsx",
+      "filePath": "apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "summary": "React sidebar component for the teacher exam page providing session and course selectors plus a summary of session dates, insertion window, and holidays in range.",
+      "tags": ["component", "ui", "sidebar", "selector"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/components/SessionSidebar.tsx:SessionSidebar",
+      "type": "function",
+      "name": "SessionSidebar",
+      "filePath": "apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "lineRange": [16, 196],
+      "summary": "Renders session/course dropdowns and a details panel with formatted date ranges and the holidays falling within the selected session period.",
+      "tags": ["component", "ui", "sidebar"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "type": "file",
+      "name": "esami.page.tsx",
+      "filePath": "apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "summary": "Top-level teacher exam-scheduling page that orchestrates data loading (user, sessions, courses, exams), holiday/exam derivation, and CRUD via a modal, composing the calendar, sidebar, banner, and exam list.",
+      "tags": ["page", "container", "entry-point", "data-fetching", "event-handler"],
+      "complexity": "complex",
+      "languageNotes": "Heavy use of useState/useEffect/useMemo; derives byDate map and myExams via memoization."
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage",
+      "type": "function",
+      "name": "EsamiPage",
+      "filePath": "apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "lineRange": [27, 263],
+      "summary": "Main page component managing session/course/exam state and modal-driven create/update/delete flows, wiring child components together.",
+      "tags": ["page", "container", "data-fetching", "event-handler"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/ui/src/features/teacher/teacher.api.ts",
+      "type": "file",
+      "name": "teacher.api.ts",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "summary": "Teacher-facing API client exposing fetch helpers for sessions, courses, and exams plus exam create/update/delete, all authenticated via a Bearer token from localStorage.",
+      "tags": ["service", "api-client", "data-fetching", "crud"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:getAuthHeader",
+      "type": "function",
+      "name": "getAuthHeader",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [7, 14],
+      "summary": "Builds an Authorization header object from the JWT stored in localStorage for use in authenticated fetch calls.",
+      "tags": ["utility", "auth", "api-client"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:featchSessionsByTeacherId",
+      "type": "function",
+      "name": "featchSessionsByTeacherId",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [16, 28],
+      "summary": "Fetches the exam sessions associated with a given teacher id, handling API errors via handleApiError.",
+      "tags": ["api-client", "data-fetching", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:featchCoursesByTeacherAndSession",
+      "type": "function",
+      "name": "featchCoursesByTeacherAndSession",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [34, 42],
+      "summary": "Retrieves the courses for a teacher within a specific session via an authenticated GET request.",
+      "tags": ["api-client", "data-fetching", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:fetchExamsBySessionAndDegree",
+      "type": "function",
+      "name": "fetchExamsBySessionAndDegree",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [48, 58],
+      "summary": "Fetches all exams booked for a given session and degree programme, used to populate the calendar grid.",
+      "tags": ["api-client", "data-fetching", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:createExam",
+      "type": "function",
+      "name": "createExam",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [60, 75],
+      "summary": "Sends a POST request to create a new exam booking from the provided DTO, returning the created entity.",
+      "tags": ["api-client", "crud", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:updateExam",
+      "type": "function",
+      "name": "updateExam",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [77, 88],
+      "summary": "Sends a PATCH request to update an existing exam booking identified by id with the given DTO.",
+      "tags": ["api-client", "crud", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/teacher/teacher.api.ts:deleteExam",
+      "type": "function",
+      "name": "deleteExam",
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "lineRange": [90, 96],
+      "summary": "Sends a DELETE request to remove an exam booking by id, throwing on API error.",
+      "tags": ["api-client", "crud", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/utils/calendar.utils.ts",
+      "type": "file",
+      "name": "calendar.utils.ts",
+      "filePath": "apps/ui/src/utils/calendar.utils.ts",
+      "summary": "Calendar-domain constants (day/month labels, degree-type labels) and helpers that build an Italian holiday map and count working days within a session.",
+      "tags": ["utility", "calendar", "constants", "i18n"],
+      "complexity": "simple",
+      "languageNotes": "Uses a date-holidays library (hd.getHolidays) to build an ISO-keyed holiday lookup."
+    },
+    {
+      "id": "function:apps/ui/src/utils/calendar.utils.ts:buildHolidayMap",
+      "type": "function",
+      "name": "buildHolidayMap",
+      "filePath": "apps/ui/src/utils/calendar.utils.ts",
+      "lineRange": [20, 31],
+      "summary": "Builds a map of ISO date string to holiday name covering the years spanned by the given start and end dates.",
+      "tags": ["utility", "calendar", "holidays"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/utils/calendar.utils.ts:countSessionDays",
+      "type": "function",
+      "name": "countSessionDays",
+      "filePath": "apps/ui/src/utils/calendar.utils.ts",
+      "lineRange": [33, 43],
+      "summary": "Counts the number of available weekday (non-weekend) days in a session, excluding those that fall on holidays.",
+      "tags": ["utility", "calendar", "business-logic"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/utils/date.utils.ts",
+      "type": "file",
+      "name": "date.utils.ts",
+      "filePath": "apps/ui/src/utils/date.utils.ts",
+      "summary": "Collection of pure date helpers (ISO formatting, weekend detection, month arithmetic, date-key normalization, time and range formatting, days-remaining) used across the teacher calendar UI.",
+      "tags": ["utility", "date", "formatting", "barrel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/utils/date.utils.ts:formatDateRange",
+      "type": "function",
+      "name": "formatDateRange",
+      "filePath": "apps/ui/src/utils/date.utils.ts",
+      "lineRange": [30, 39],
+      "summary": "Formats a start/end date pair into a compact human-readable Italian range, collapsing shared month or year.",
+      "tags": ["utility", "date", "formatting", "i18n"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/utils/date.utils.ts:daysRemaining",
+      "type": "function",
+      "name": "daysRemaining",
+      "filePath": "apps/ui/src/utils/date.utils.ts",
+      "lineRange": [41, 47],
+      "summary": "Computes the whole number of days remaining until a given ISO end date, clamped at zero.",
+      "tags": ["utility", "date", "calculation"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:apps/ui/src/features/shared/utils.api.ts", "target": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/shared/utils.api.ts", "target": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError", "type": "exports", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "target": "function:apps/ui/src/features/teacher/components/CalendarGrid.tsx:CalendarGrid", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "target": "function:apps/ui/src/features/teacher/components/CalendarGrid.tsx:CalendarGrid", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "target": "file:apps/ui/src/components/ui/button.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "target": "file:apps/ui/src/utils/calendar.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx", "target": "function:apps/ui/src/features/teacher/components/InsertionBanner.tsx:InsertionBanner", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx", "target": "function:apps/ui/src/features/teacher/components/InsertionBanner.tsx:InsertionBanner", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "function:apps/ui/src/features/teacher/components/InsertionBanner.tsx:InsertionBanner", "target": "function:apps/ui/src/utils/date.utils.ts:daysRemaining", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "target": "function:apps/ui/src/features/teacher/components/MyExamsList.tsx:MyExamsList", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "target": "function:apps/ui/src/features/teacher/components/MyExamsList.tsx:MyExamsList", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "target": "file:apps/ui/src/components/ui/button.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "target": "file:apps/ui/src/utils/calendar.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx", "target": "function:apps/ui/src/features/teacher/components/SessionSidebar.tsx:SessionSidebar", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx", "target": "function:apps/ui/src/features/teacher/components/SessionSidebar.tsx:SessionSidebar", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx", "target": "file:apps/ui/src/utils/calendar.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "function:apps/ui/src/features/teacher/components/SessionSidebar.tsx:SessionSidebar", "target": "function:apps/ui/src/utils/date.utils.ts:formatDateRange", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/components/ui/button.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/auth/auth.api.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/CalendarGrid.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/ExamForm.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/InsertionBanner.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/Modal.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/MyExamsList.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/components/SessionSidebar.tsx", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/features/teacher/teacher.api.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/utils/calendar.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/ui/src/features/teacher/pages/esami.page.tsx", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchSessionsByTeacherId", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchCoursesByTeacherAndSession", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:fetchExamsBySessionAndDegree", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:createExam", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:updateExam", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:deleteExam", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/pages/esami.page.tsx:EsamiPage", "target": "function:apps/ui/src/utils/calendar.utils.ts:buildHolidayMap", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:getAuthHeader", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchSessionsByTeacherId", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchCoursesByTeacherAndSession", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:fetchExamsBySessionAndDegree", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:createExam", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:updateExam", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:deleteExam", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchSessionsByTeacherId", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:featchCoursesByTeacherAndSession", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:fetchExamsBySessionAndDegree", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:createExam", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:updateExam", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "function:apps/ui/src/features/teacher/teacher.api.ts:deleteExam", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/features/teacher/teacher.api.ts", "target": "file:apps/ui/src/features/shared/utils.api.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "function:apps/ui/src/features/teacher/teacher.api.ts:featchSessionsByTeacherId", "target": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "function:apps/ui/src/features/teacher/teacher.api.ts:createExam", "target": "function:apps/ui/src/features/shared/utils.api.ts:handleApiError", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/ui/src/utils/calendar.utils.ts", "target": "function:apps/ui/src/utils/calendar.utils.ts:buildHolidayMap", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/utils/calendar.utils.ts", "target": "function:apps/ui/src/utils/calendar.utils.ts:countSessionDays", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/utils/calendar.utils.ts", "target": "function:apps/ui/src/utils/calendar.utils.ts:buildHolidayMap", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/utils/calendar.utils.ts", "target": "function:apps/ui/src/utils/calendar.utils.ts:countSessionDays", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/utils/calendar.utils.ts", "target": "file:apps/ui/src/utils/date.utils.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:apps/ui/src/utils/date.utils.ts", "target": "function:apps/ui/src/utils/date.utils.ts:formatDateRange", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/utils/date.utils.ts", "target": "function:apps/ui/src/utils/date.utils.ts:daysRemaining", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/ui/src/utils/date.utils.ts", "target": "function:apps/ui/src/utils/date.utils.ts:formatDateRange", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:apps/ui/src/utils/date.utils.ts", "target": "function:apps/ui/src/utils/date.utils.ts:daysRemaining", "type": "exports", "direction": "forward", "weight": 0.8}
+  ]
+}

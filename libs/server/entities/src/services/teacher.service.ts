@@ -5,6 +5,7 @@ import { CreateTeacherDto } from '../entities/dto/create-teacher.dto.js';
 import { UpdateTeacherDto } from '../entities/dto/update-teacher.dto.js';
 import { UserRole } from '@server/users';
 import { TeacherListItem } from '../interfaces/teacher-list-item.js';
+import { seedTeachers } from '../assets/courses-data.js';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
@@ -65,26 +66,40 @@ export class ServerTeacherService {
     async remove(id: number): Promise<void> {
         const teacher = await this.teacherRepository.findById(id);
         if (!teacher) throw new NotFoundException(`Teacher with id ${id} not found`);
-        await this.teacherRepository.delete(id);
+        try {
+            await this.teacherRepository.delete(id);
+        } catch (err: any) {
+            const code = err?.code ?? err?.driverError?.code ?? err?.cause?.code;
+            if (code === '23503' || code === '23001')
+                throw new ConflictException('Non puoi eliminare questo docente perché ha dei corsi associati.');
+            throw err;
+        }
     }
 
     async seed(): Promise<void> {
-        const teachers = [
-            { name: 'Luca',  surname: 'Giuzzi',   email: 'luca.giuzzi@unibs.it',   password: 'Teacher1!' },
-            { name: 'Paola', surname: 'Gervasio', email: 'paola.gervasio@unibs.it', password: 'Teacher2!' },
-            { name: 'Alessandro', surname: 'Saetti',   email: 'alessandro.saetti@unibs.it',   password: 'Teacher3!' },
-        ];
+        // Tutti i docenti seedati nascono con la stessa password standard e con
+        // mustChangePassword=true: al primo login verrà richiesto di cambiarla
+        // (stessa convenzione di UsersRepository.createOne per TEACHER/SECRETARY).
+        // Reset: svuota i docenti (e course/exam dipendenti) per un seed pulito.
+        await this.teacherRepository.clearTeachers();
 
-        for (const t of teachers) {
-            const exists = await this.teacherRepository.findByEmail(t.email);
-            if (exists) continue;
+        const passwordHash = await bcrypt.hash('Password1!', 10);
+        // Dedup contro TUTTE le email utente (secretary inclusi): users.email
+        // è unique cross-ruolo. Un docente con email già usata da un secretary verrebbe
+        // saltato invece di far fallire l'INSERT (violazione unique).
+        const existing = new Set(await this.teacherRepository.findAllUserEmails());
+
+        for (const t of seedTeachers) {
+            if (existing.has(t.email)) continue;
+            existing.add(t.email);
 
             const teacher = this.teacherRepository.create({
                 name: t.name,
                 surname: t.surname,
                 email: t.email,
-                passwordHash: await bcrypt.hash(t.password, 10),
+                passwordHash,
                 role: UserRole.TEACHER,
+                mustChangePassword: true,
             });
             await this.teacherRepository.save(teacher);
         }

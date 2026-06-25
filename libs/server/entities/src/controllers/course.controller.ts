@@ -22,6 +22,18 @@ export class ServerCourseController {
         return this.serverCourseService.findAll(teacherId ? +teacherId : undefined);
     }
 
+    @Get('teacher/:teacherId/session/:sessionId')
+    @UseGuards(JwtAuthGuard)
+    @ApiBearerAuth()
+    @ApiParam({ name: 'teacherId', type: Number, description: 'ID del docente' })
+    @ApiParam({ name: 'sessionId', type: Number, description: 'ID della sessione' })
+    findByTeacherAndSession(
+        @Param('teacherId', ParseIntPipe) teacherId: number,
+        @Param('sessionId', ParseIntPipe) sessionId: number,
+    ) {
+        return this.serverCourseService.findByTeacherAndSession(teacherId, sessionId);
+    }
+
     @Get('teacher/:teacherId/degrees') // restituisce i degree  associati a tutti i course insegnati da un teacher
     @UseGuards(JwtAuthGuard)
     @ApiBearerAuth()
@@ -40,7 +52,7 @@ export class ServerCourseController {
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY, UserRole.TEACHER)
+    @Roles(UserRole.SECRETARY, UserRole.TEACHER)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -64,7 +76,7 @@ export class ServerCourseController {
 
     @Patch(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY, UserRole.TEACHER)
+    @Roles(UserRole.SECRETARY, UserRole.TEACHER)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number, description: 'ID del corso da aggiornare' })
     @ApiBody({
@@ -88,7 +100,7 @@ export class ServerCourseController {
 
     @Delete(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number, description: 'ID del corso da eliminare' })
     remove(@Param('id', ParseIntPipe) id: number) {
@@ -97,7 +109,7 @@ export class ServerCourseController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverCourseService.seed();

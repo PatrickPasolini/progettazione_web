@@ -1,1 +1,167 @@
-/* You can add global styles to this file, and also import other style files */
+/* ── Geist font faces ─────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/geist-sans/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/geist-sans/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/geist-sans/Geist-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/geist-sans/Geist-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/geist-mono/GeistMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* shadcn tokens — mapped to existing palette */
+    --background:         214 30% 96%;   /* bg         #eef2f8 */
+    --foreground:         217 51% 12%;   /* ink         #0e1a2e */
+
+    --card:               210 60% 98%;   /* paper       #f8fafd */
+    --card-foreground:    217 51% 12%;
+
+    --popover:            210 60% 98%;
+    --popover-foreground: 217 51% 12%;
+
+    --primary:            218 62% 28%;   /* accent      #1c3d77 */
+    --primary-foreground: 0   0%  100%;
+
+    --secondary:          218 62% 90%;   /* accent-soft #dbe5f5 */
+    --secondary-foreground: 216 43% 22%; /* ink-2       #1f3050 */
+
+    --muted:              214 30% 96%;
+    --muted-foreground:   217 18% 44%;   /* ink-3       #5d6c85 */
+
+    --accent:             218 62% 90%;
+    --accent-foreground:  218 62% 28%;
+
+    --destructive:        0   72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border:             215 30% 86%;   /* line        #d3dceb */
+    --input:              215 30% 86%;
+    --ring:               218 62% 28%;
+
+    --radius: 0.625rem;
+  }
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── react-datepicker overrides ──────────────────────────────────────────── */
+.dp-calendar {
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 13px !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: var(--radius) !important;
+  background: hsl(var(--card)) !important;
+  box-shadow: 0 4px 16px rgba(14,26,46,.10) !important;
+  padding: 8px !important;
+}
+
+.dp-calendar .react-datepicker__header {
+  background: hsl(var(--card)) !important;
+  border-bottom: 1px solid hsl(var(--border)) !important;
+  padding-bottom: 8px !important;
+}
+
+.dp-calendar .react-datepicker__current-month {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.dp-calendar .react-datepicker__day-name {
+  color: hsl(var(--muted-foreground)) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .04em !important;
+  width: 2rem !important;
+  line-height: 2rem !important;
+}
+
+.dp-calendar .react-datepicker__day {
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 2rem !important;
+  border-radius: 6px !important;
+  color: hsl(var(--foreground)) !important;
+  transition: background .12s, color .12s !important;
+}
+
+.dp-calendar .react-datepicker__day:hover {
+  background: hsl(var(--accent)) !important;
+  color: hsl(var(--accent-foreground)) !important;
+}
+
+.dp-calendar .react-datepicker__day--selected,
+.dp-calendar .react-datepicker__day--keyboard-selected {
+  background: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  font-weight: 600 !important;
+}
+
+.dp-calendar .react-datepicker__day--disabled {
+  color: hsl(var(--muted-foreground)) !important;
+  opacity: .4 !important;
+}
+
+.dp-calendar .react-datepicker__day--outside-month {
+  color: hsl(var(--muted-foreground)) !important;
+  opacity: .35 !important;
+}
+
+.dp-calendar .react-datepicker__navigation-icon::before {
+  border-color: hsl(var(--muted-foreground)) !important;
+}
+
+.dp-calendar .react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: hsl(var(--foreground)) !important;
+}
+
+.react-datepicker-popper {
+  z-index: 60 !important;
+}

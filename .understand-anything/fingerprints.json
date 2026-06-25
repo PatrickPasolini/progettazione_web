@@ -1,0 +1,7396 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "f8d0357b6977069a2cd81eeffbd60f8bb3eae7e9",
+  "generatedAt": "2026-06-24T12:45:36.788Z",
+  "files": {
+    ".claude/settings.json": {
+      "filePath": ".claude/settings.json",
+      "contentHash": "f7b0e32283d954164f8ca0ae7143f96df17c759d0e54b912975fca4fb99e0425",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    ".claude/settings.local.json": {
+      "filePath": ".claude/settings.local.json",
+      "contentHash": "8935d0f1970e4f14fd75514051628d5f1c192e51cbaf1ff332534e8ae91665c4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    ".codex/config.toml": {
+      "filePath": ".codex/config.toml",
+      "contentHash": "86105b0401ba16982a4d6cde18a8fb987d99b8993f687d4b1e5ec6fbdc82b72c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/agents/ci-monitor-subagent.md": {
+      "filePath": ".cursor/agents/ci-monitor-subagent.md",
+      "contentHash": "5b28159950b221859a5a2a806f6a92d0c5ffbfc29f8adc539619314f8e124ca6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 612,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/commands/monitor-ci.md": {
+      "filePath": ".cursor/commands/monitor-ci.md",
+      "contentHash": "5006d78468219a093c5406f55deb11240726ef6c60baccf646f1af745bc3a5a2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 649,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/link-workspace-packages/SKILL.md": {
+      "filePath": ".cursor/skills/link-workspace-packages/SKILL.md",
+      "contentHash": "f1f4a8dfc3e6392fe834807587f86de69109738b2b75ae4d2c21ddaec84fe454",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/monitor-ci/SKILL.md": {
+      "filePath": ".cursor/skills/monitor-ci/SKILL.md",
+      "contentHash": "d56e131636dd255ff9db343440043b82c7bd4ab253ec202c14c12d36825c2449",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/nx-generate/SKILL.md": {
+      "filePath": ".cursor/skills/nx-generate/SKILL.md",
+      "contentHash": "291ab89f4189e299e319e211bb20bf3e32fd415d2f94bfada152cc39bc951014",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 167,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/nx-plugins/SKILL.md": {
+      "filePath": ".cursor/skills/nx-plugins/SKILL.md",
+      "contentHash": "96659fc0ea92b133445cf5d356f4ee710396fc4da22aaa515ad7a6f7ef39a5dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/nx-run-tasks/SKILL.md": {
+      "filePath": ".cursor/skills/nx-run-tasks/SKILL.md",
+      "contentHash": "544e773afd7eb6d22b7768f8932a150f6767becb61b34608060d0f11bcb722f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/nx-workspace/references/AFFECTED.md": {
+      "filePath": ".cursor/skills/nx-workspace/references/AFFECTED.md",
+      "contentHash": "5c3243ced18c3cd7b3f330accbfd87df55e076c689f12ea0e4191a9604d6a8b9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    ".cursor/skills/nx-workspace/SKILL.md": {
+      "filePath": ".cursor/skills/nx-workspace/SKILL.md",
+      "contentHash": "7023b26c33bb88b64189a111587dbda3c0a3a7a39a5fb640ff83db092122b861",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 288,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/commands/monitor-ci.toml": {
+      "filePath": ".gemini/commands/monitor-ci.toml",
+      "contentHash": "7aec6669fe728373d02de40d904aa7285f82313e9f5b65ae907c6bddd3b56629",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 655,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/settings.json": {
+      "filePath": ".gemini/settings.json",
+      "contentHash": "cfb16e3be55fa55e27fae26d0f44420e9dee665b38e9dc422305f443892fb30b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/link-workspace-packages/skill.md": {
+      "filePath": ".gemini/skills/link-workspace-packages/skill.md",
+      "contentHash": "f1f4a8dfc3e6392fe834807587f86de69109738b2b75ae4d2c21ddaec84fe454",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/monitor-ci/skill.md": {
+      "filePath": ".gemini/skills/monitor-ci/skill.md",
+      "contentHash": "d56e131636dd255ff9db343440043b82c7bd4ab253ec202c14c12d36825c2449",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/nx-generate/skill.md": {
+      "filePath": ".gemini/skills/nx-generate/skill.md",
+      "contentHash": "291ab89f4189e299e319e211bb20bf3e32fd415d2f94bfada152cc39bc951014",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 167,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/nx-plugins/skill.md": {
+      "filePath": ".gemini/skills/nx-plugins/skill.md",
+      "contentHash": "96659fc0ea92b133445cf5d356f4ee710396fc4da22aaa515ad7a6f7ef39a5dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/nx-run-tasks/skill.md": {
+      "filePath": ".gemini/skills/nx-run-tasks/skill.md",
+      "contentHash": "544e773afd7eb6d22b7768f8932a150f6767becb61b34608060d0f11bcb722f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/nx-workspace/references/AFFECTED.md": {
+      "filePath": ".gemini/skills/nx-workspace/references/AFFECTED.md",
+      "contentHash": "5c3243ced18c3cd7b3f330accbfd87df55e076c689f12ea0e4191a9604d6a8b9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    ".gemini/skills/nx-workspace/skill.md": {
+      "filePath": ".gemini/skills/nx-workspace/skill.md",
+      "contentHash": "7023b26c33bb88b64189a111587dbda3c0a3a7a39a5fb640ff83db092122b861",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 288,
+      "hasStructuralAnalysis": true
+    },
+    ".github/agents/ci-monitor-subagent.agent.md": {
+      "filePath": ".github/agents/ci-monitor-subagent.agent.md",
+      "contentHash": "54015c4fc55ac64882dd8ea3a872d6ce0f73d494f4d39ac8f57161ad96706b4f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 610,
+      "hasStructuralAnalysis": true
+    },
+    ".github/prompts/monitor-ci.prompt.md": {
+      "filePath": ".github/prompts/monitor-ci.prompt.md",
+      "contentHash": "5ff0f47a581fd81df18d6c2aee75ef7457875d4963ff057d75d986020cc543bc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/link-workspace-packages/SKILL.md": {
+      "filePath": ".github/skills/link-workspace-packages/SKILL.md",
+      "contentHash": "f1f4a8dfc3e6392fe834807587f86de69109738b2b75ae4d2c21ddaec84fe454",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/monitor-ci/SKILL.md": {
+      "filePath": ".github/skills/monitor-ci/SKILL.md",
+      "contentHash": "d56e131636dd255ff9db343440043b82c7bd4ab253ec202c14c12d36825c2449",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/nx-generate/SKILL.md": {
+      "filePath": ".github/skills/nx-generate/SKILL.md",
+      "contentHash": "291ab89f4189e299e319e211bb20bf3e32fd415d2f94bfada152cc39bc951014",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 167,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/nx-plugins/SKILL.md": {
+      "filePath": ".github/skills/nx-plugins/SKILL.md",
+      "contentHash": "96659fc0ea92b133445cf5d356f4ee710396fc4da22aaa515ad7a6f7ef39a5dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/nx-run-tasks/SKILL.md": {
+      "filePath": ".github/skills/nx-run-tasks/SKILL.md",
+      "contentHash": "544e773afd7eb6d22b7768f8932a150f6767becb61b34608060d0f11bcb722f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/nx-workspace/references/AFFECTED.md": {
+      "filePath": ".github/skills/nx-workspace/references/AFFECTED.md",
+      "contentHash": "5c3243ced18c3cd7b3f330accbfd87df55e076c689f12ea0e4191a9604d6a8b9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    ".github/skills/nx-workspace/SKILL.md": {
+      "filePath": ".github/skills/nx-workspace/SKILL.md",
+      "contentHash": "7023b26c33bb88b64189a111587dbda3c0a3a7a39a5fb640ff83db092122b861",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 288,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/ci.yml": {
+      "filePath": ".github/workflows/ci.yml",
+      "contentHash": "dd1cd9b8ecdca444c0b49b2c59e27ebff0970c3e2d5952342e46522845ccd240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/agents/ci-monitor-subagent.md": {
+      "filePath": ".opencode/agents/ci-monitor-subagent.md",
+      "contentHash": "6fead50db479855c28cda55d36357512d43e887c24d63e37fc226bc40a311ebf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 611,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/commands/monitor-ci.md": {
+      "filePath": ".opencode/commands/monitor-ci.md",
+      "contentHash": "217d4f5dc8b15fd80a49815f660c8593d9573826e3daf5dca87507781433711d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/link-workspace-packages/SKILL.md": {
+      "filePath": ".opencode/skills/link-workspace-packages/SKILL.md",
+      "contentHash": "f1f4a8dfc3e6392fe834807587f86de69109738b2b75ae4d2c21ddaec84fe454",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/monitor-ci/SKILL.md": {
+      "filePath": ".opencode/skills/monitor-ci/SKILL.md",
+      "contentHash": "d56e131636dd255ff9db343440043b82c7bd4ab253ec202c14c12d36825c2449",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 658,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/nx-generate/SKILL.md": {
+      "filePath": ".opencode/skills/nx-generate/SKILL.md",
+      "contentHash": "291ab89f4189e299e319e211bb20bf3e32fd415d2f94bfada152cc39bc951014",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 167,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/nx-plugins/SKILL.md": {
+      "filePath": ".opencode/skills/nx-plugins/SKILL.md",
+      "contentHash": "96659fc0ea92b133445cf5d356f4ee710396fc4da22aaa515ad7a6f7ef39a5dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/nx-run-tasks/SKILL.md": {
+      "filePath": ".opencode/skills/nx-run-tasks/SKILL.md",
+      "contentHash": "544e773afd7eb6d22b7768f8932a150f6767becb61b34608060d0f11bcb722f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/nx-workspace/references/AFFECTED.md": {
+      "filePath": ".opencode/skills/nx-workspace/references/AFFECTED.md",
+      "contentHash": "5c3243ced18c3cd7b3f330accbfd87df55e076c689f12ea0e4191a9604d6a8b9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    ".opencode/skills/nx-workspace/SKILL.md": {
+      "filePath": ".opencode/skills/nx-workspace/SKILL.md",
+      "contentHash": "7023b26c33bb88b64189a111587dbda3c0a3a7a39a5fb640ff83db092122b861",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 288,
+      "hasStructuralAnalysis": true
+    },
+    ".prettierignore": {
+      "filePath": ".prettierignore",
+      "contentHash": "c460aadc057c3f5b13bca07ef4a4ac235f624f4090f58d1b2c5de7886e65978a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "33a3fc9c9328bdf3ee143253932547b0c4ed3868dbdc6e1038eba9fc54f38fb1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 67,
+      "hasStructuralAnalysis": false
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "45964d7171942305b5edb1354526b25179deb557856facfb7a6c5b839ebaee21",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/eslint.config.mjs": {
+      "filePath": "apps/api/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/jest.config.cts": {
+      "filePath": "apps/api/jest.config.cts",
+      "contentHash": "13a97b55d9e5332042e57e1c32c2d67dcc1c1c016ddf67fd5499413eadbd9406",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api/package.json": {
+      "filePath": "apps/api/package.json",
+      "contentHash": "44f4d8726a103284a839994962c9323323ded7e8075d4c69f7a4d49fe8e5bbdf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 97,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/src/app/app.controller.ts": {
+      "filePath": "apps/api/src/app/app.controller.ts",
+      "contentHash": "ab2c4f01a970e22b789afd16418aa05289ae1742a9e49f3b285b6c61efb62d3f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiTags"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/src/app/app.module.ts": {
+      "filePath": "apps/api/src/app/app.module.ts",
+      "contentHash": "2659e1e79233da8f26b3901655502ca7ddb9c70db8aad99da047cd77265297f0",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "ServerUsersModule"
+          ]
+        },
+        {
+          "source": "@org/database",
+          "specifiers": [
+            "DatabaseModule"
+          ]
+        },
+        {
+          "source": "@server/auth",
+          "specifiers": [
+            "ServerAuthModule"
+          ]
+        },
+        {
+          "source": "@server/entities",
+          "specifiers": [
+            "ServerCourseModule",
+            "ServerDegreeModule",
+            "ServerExamModule",
+            "ServerSessionModule",
+            "ServerTeacherModule"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/src/app/app.service.ts": {
+      "filePath": "apps/api/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/src/assets/.gitkeep": {
+      "filePath": "apps/api/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api/src/main.ts": {
+      "filePath": "apps/api/src/main.ts",
+      "contentHash": "430d681c9648c5fab695fa153a49b7d713e4a3138256b9b249d119a02b94960b",
+      "functions": [
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 24
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module",
+          "specifiers": [
+            "AppModule"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "DocumentBuilder",
+            "SwaggerModule"
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            "* as path"
+          ]
+        },
+        {
+          "source": "dotenv",
+          "specifiers": [
+            "* as dotenv"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/tsconfig.app.json": {
+      "filePath": "apps/api/tsconfig.app.json",
+      "contentHash": "72006420b62d3269147b2e2dfc4fdcc43953122374922bb9dd967340645d3f6f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/tsconfig.json": {
+      "filePath": "apps/api/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api/webpack.config.js": {
+      "filePath": "apps/api/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/components.json": {
+      "filePath": "apps/ui/components.json",
+      "contentHash": "a548dbd3c73592f74a631d584f78df35d90fe55992c3eb045c24d85e82952668",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/eslint.config.mjs": {
+      "filePath": "apps/ui/eslint.config.mjs",
+      "contentHash": "59e2f6d3349a773c24ad759557822ab35c9425382f80909e3f3bd78ab1dd0430",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/eslint-plugin",
+          "specifiers": [
+            "nx"
+          ]
+        },
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/index.html": {
+      "filePath": "apps/ui/index.html",
+      "contentHash": "85e0770149ba4880639903ee22d8c51b2dd2c5093902db04ddb52d875602fb2f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": false
+    },
+    "apps/ui/jest.config.cts": {
+      "filePath": "apps/ui/jest.config.cts",
+      "contentHash": "f736b5f065858158d6caff5cd500e34d5775a6763ab75ae3548ce16d156e7fd1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": false
+    },
+    "apps/ui/package.json": {
+      "filePath": "apps/ui/package.json",
+      "contentHash": "e0298ea018bd49eb22a05b7fe732085b53ff1b8e7023f3bfaee1800ffa69db9f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/postcss.config.js": {
+      "filePath": "apps/ui/postcss.config.js",
+      "contentHash": "d4f46606c2a1a06625b593846bc71c52faaa12560d4490f45cfe9c6d75958e5f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/app/app.tsx": {
+      "filePath": "apps/ui/src/app/app.tsx",
+      "contentHash": "dbbfc70c85c86c5f7b2026193123816bc6e1f699c173949829663704882f0352",
+      "functions": [
+        {
+          "name": "App",
+          "params": [],
+          "exported": true,
+          "lineCount": 41
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Routes",
+            "Route",
+            "Navigate"
+          ]
+        },
+        {
+          "source": "../features/auth/login.page",
+          "specifiers": [
+            "LoginPage"
+          ]
+        },
+        {
+          "source": "../features/auth/logout.page",
+          "specifiers": [
+            "LogoutPage"
+          ]
+        },
+        {
+          "source": "../features/auth/change-password.page",
+          "specifiers": [
+            "ChangePasswordPage"
+          ]
+        },
+        {
+          "source": "../features/auth/protected-route",
+          "specifiers": [
+            "ProtectedRoute"
+          ]
+        },
+        {
+          "source": "../features/layouts/app-layout",
+          "specifiers": [
+            "AppLayout"
+          ]
+        },
+        {
+          "source": "../features/segreteria/pages/segreteria.page",
+          "specifiers": [
+            "SegreteriaPage",
+            "SegreteriaIndex"
+          ]
+        },
+        {
+          "source": "../features/segreteria/pages/docenti.page",
+          "specifiers": [
+            "DocentiPage"
+          ]
+        },
+        {
+          "source": "../features/segreteria/pages/corsi.page",
+          "specifiers": [
+            "CorsiPage"
+          ]
+        },
+        {
+          "source": "../features/segreteria/pages/materie.page",
+          "specifiers": [
+            "MateriePage"
+          ]
+        },
+        {
+          "source": "../features/teacher/pages/teacher.page",
+          "specifiers": [
+            "TeacherPage",
+            "TeacherIndex"
+          ]
+        },
+        {
+          "source": "../features/teacher/pages/esami.page",
+          "specifiers": [
+            "EsamiPage"
+          ]
+        },
+        {
+          "source": "../features/segreteria/pages/sessioni.page",
+          "specifiers": [
+            "SessioniPage"
+          ]
+        }
+      ],
+      "exports": [
+        "App"
+      ],
+      "totalLines": 67,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/assets/.gitkeep": {
+      "filePath": "apps/ui/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/ui/src/components/ui/alert-dialog.tsx": {
+      "filePath": "apps/ui/src/components/ui/alert-dialog.tsx",
+      "contentHash": "3a2d82e8b98ddb6aea669411eb2beef413213c5f1179596093552f426700eb69",
+      "functions": [
+        {
+          "name": "AlertDialogHeader",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "AlertDialogFooter",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-alert-dialog",
+          "specifiers": [
+            "* as AlertDialogPrimitive"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "./button",
+          "specifiers": [
+            "buttonVariants"
+          ]
+        }
+      ],
+      "exports": [
+        "AlertDialog",
+        "AlertDialogTrigger",
+        "AlertDialogContent",
+        "AlertDialogHeader",
+        "AlertDialogFooter",
+        "AlertDialogTitle",
+        "AlertDialogDescription",
+        "AlertDialogAction",
+        "AlertDialogCancel"
+      ],
+      "totalLines": 91,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/badge.tsx": {
+      "filePath": "apps/ui/src/components/ui/badge.tsx",
+      "contentHash": "f519ada8eb213b107380c8829ddb954189a02c3dde0e20dec12078cfe978f3bf",
+      "functions": [
+        {
+          "name": "Badge",
+          "params": [
+            "{ className, variant, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Badge",
+        "badgeVariants"
+      ],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/button.tsx": {
+      "filePath": "apps/ui/src/components/ui/button.tsx",
+      "contentHash": "e37e7a5d61f873e9a4b60555318b4a71328e06ac1ce8088de9a980cd02a778c8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-slot",
+          "specifiers": [
+            "Slot"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/date-picker.tsx": {
+      "filePath": "apps/ui/src/components/ui/date-picker.tsx",
+      "contentHash": "9f8a63510d365c8077227c02c76110f6fcc9ff674e30474be82092cebb639110",
+      "functions": [
+        {
+          "name": "toDate",
+          "params": [
+            "s"
+          ],
+          "returnType": "Date | null",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "toISO",
+          "params": [
+            "d"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "DatePicker",
+          "params": [
+            "{ value, onChange, min, max, placeholder = 'Seleziona data…', className, disabled, filterDate }"
+          ],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react-datepicker",
+          "specifiers": [
+            "ReactDatePicker",
+            "registerLocale"
+          ]
+        },
+        {
+          "source": "date-fns/locale/it",
+          "specifiers": [
+            "it"
+          ]
+        },
+        {
+          "source": "react-datepicker/dist/react-datepicker.css",
+          "specifiers": []
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "DatePicker"
+      ],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/dialog.tsx": {
+      "filePath": "apps/ui/src/components/ui/dialog.tsx",
+      "contentHash": "f624b462c272f823aa34f7114a2ba196813753a2050ed3c058f1acb69b5df895",
+      "functions": [
+        {
+          "name": "DialogHeader",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "DialogFooter",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-dialog",
+          "specifiers": [
+            "* as DialogPrimitive"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "X"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Dialog",
+        "DialogPortal",
+        "DialogOverlay",
+        "DialogClose",
+        "DialogTrigger",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter",
+        "DialogTitle",
+        "DialogDescription"
+      ],
+      "totalLines": 121,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/input.tsx": {
+      "filePath": "apps/ui/src/components/ui/input.tsx",
+      "contentHash": "9ef9a75b8ba3fda4af64b4130b131c7842fc3a5bb8243653d552de58675ba59e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Input"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/label.tsx": {
+      "filePath": "apps/ui/src/components/ui/label.tsx",
+      "contentHash": "d798c65cbf8124d241d7936e907bcfb950c474e4cd12280f7d9504f1cabba21a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-label",
+          "specifiers": [
+            "* as LabelPrimitive"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Label"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/select.tsx": {
+      "filePath": "apps/ui/src/components/ui/select.tsx",
+      "contentHash": "292fb20d9e873664d87bdb13c4b3aae9184b73d24dfc0c84140c29b4506a90b9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-select",
+          "specifiers": [
+            "* as SelectPrimitive"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "Check",
+            "ChevronDown",
+            "ChevronUp"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Select",
+        "SelectGroup",
+        "SelectValue",
+        "SelectTrigger",
+        "SelectContent",
+        "SelectLabel",
+        "SelectItem",
+        "SelectSeparator",
+        "SelectScrollUpButton",
+        "SelectScrollDownButton"
+      ],
+      "totalLines": 159,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/components/ui/separator.tsx": {
+      "filePath": "apps/ui/src/components/ui/separator.tsx",
+      "contentHash": "a3bfcc8915053007cba862ee56407e2b283dd4e9454d145193546152fb7e40f3",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-separator",
+          "specifiers": [
+            "* as SeparatorPrimitive"
+          ]
+        },
+        {
+          "source": "../../lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Separator"
+      ],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/auth/auth.api.ts": {
+      "filePath": "apps/ui/src/features/auth/auth.api.ts",
+      "contentHash": "8bbfd38e17cf9874370542d035192974116d6980a0e00636573bbe14682f724c",
+      "functions": [
+        {
+          "name": "login",
+          "params": [
+            "email",
+            "password"
+          ],
+          "returnType": "Promise<{ mustChangePassword: boolean }>",
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "changePassword",
+          "params": [
+            "newPassword"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "fetchCurrentUser",
+          "params": [],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "login",
+        "changePassword",
+        "fetchCurrentUser"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/auth/change-password.page.tsx": {
+      "filePath": "apps/ui/src/features/auth/change-password.page.tsx",
+      "contentHash": "80028e4294676082aef6df6f3d7369ee7cb9bf7f8407d72cab79076dcdfe6b88",
+      "functions": [
+        {
+          "name": "ChangePasswordPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 56
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate",
+            "useLocation"
+          ]
+        },
+        {
+          "source": "./auth.api",
+          "specifiers": [
+            "changePassword",
+            "fetchCurrentUser"
+          ]
+        },
+        {
+          "source": "../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        }
+      ],
+      "exports": [
+        "ChangePasswordPage"
+      ],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/auth/login.page.tsx": {
+      "filePath": "apps/ui/src/features/auth/login.page.tsx",
+      "contentHash": "f046dfa17aa85d92c4ead86ccb48af6fae3f85fcd9518c36ff9fad7043592f47",
+      "functions": [
+        {
+          "name": "LoginPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 51
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "./auth.api",
+          "specifiers": [
+            "login",
+            "fetchCurrentUser"
+          ]
+        },
+        {
+          "source": "../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        }
+      ],
+      "exports": [
+        "LoginPage"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/auth/logout.page.tsx": {
+      "filePath": "apps/ui/src/features/auth/logout.page.tsx",
+      "contentHash": "e6312f38f27c42190475feb4fe10daca6ff2d4047ed5dab0ed7057102d9da52e",
+      "functions": [
+        {
+          "name": "LogoutPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate"
+          ]
+        }
+      ],
+      "exports": [
+        "LogoutPage"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/auth/protected-route.tsx": {
+      "filePath": "apps/ui/src/features/auth/protected-route.tsx",
+      "contentHash": "303906dfdb20868b3ff995bc7e7f987258d3bcc3dee1063668a71c75836e1958",
+      "functions": [
+        {
+          "name": "ProtectedRoute",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "ReactNode"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Navigate"
+          ]
+        }
+      ],
+      "exports": [
+        "ProtectedRoute"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/layouts/app-layout.tsx": {
+      "filePath": "apps/ui/src/features/layouts/app-layout.tsx",
+      "contentHash": "5f4a922818137b7614ba2aa9ed13c3f4db75ad7f50afb3ff2af018abe668b1bd",
+      "functions": [
+        {
+          "name": "AppLayout",
+          "params": [],
+          "exported": true,
+          "lineCount": 121
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Outlet",
+            "NavLink",
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../components/ui/alert-dialog",
+          "specifiers": [
+            "AlertDialog",
+            "AlertDialogContent",
+            "AlertDialogHeader",
+            "AlertDialogTitle",
+            "AlertDialogDescription",
+            "AlertDialogFooter",
+            "AlertDialogCancel",
+            "AlertDialogAction"
+          ]
+        },
+        {
+          "source": "../auth/auth.api",
+          "specifiers": [
+            "fetchCurrentUser"
+          ]
+        }
+      ],
+      "exports": [
+        "AppLayout"
+      ],
+      "totalLines": 141,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/components/corso-modal.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "contentHash": "11f5a29c2ddd241f268cd7c600e8fc8dc922c0dd6660bb61f229c9b9f0d7a024",
+      "functions": [
+        {
+          "name": "yearsForType",
+          "params": [
+            "type",
+            "cycleYears"
+          ],
+          "returnType": "string[]",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "CorsoModal",
+          "params": [
+            "{ isOpen, mode, degreeGroup, onClose, onSave }"
+          ],
+          "exported": true,
+          "lineCount": 121
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "createDegree",
+            "updateDegree",
+            "deleteDegree"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "DegreeListItem",
+            "DegreeType",
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "../../../components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent",
+            "DialogHeader",
+            "DialogTitle"
+          ]
+        }
+      ],
+      "exports": [
+        "CorsoModal"
+      ],
+      "totalLines": 146,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/components/docente-modal.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "contentHash": "3fe0cdfa70c06291944d5d269b01a3f600392292d77305ed0a618c81db6713ca",
+      "functions": [
+        {
+          "name": "DocenteModal",
+          "params": [
+            "{ isOpen, mode, teacher, onClose, onSave }"
+          ],
+          "exported": true,
+          "lineCount": 75
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "createTeacher",
+            "updateTeacher"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "TeacherListItem"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "../../../components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent",
+            "DialogHeader",
+            "DialogTitle"
+          ]
+        }
+      ],
+      "exports": [
+        "DocenteModal"
+      ],
+      "totalLines": 92,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/components/materia-modal.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "contentHash": "2bd3991daa4c5af28d753d8c6e1a96c556c4fa6f6392c7e68e02c0ce54311bef",
+      "functions": [
+        {
+          "name": "MateriaModal",
+          "params": [
+            "{ isOpen, mode, course, defaultDegreeId, onClose, onSave }"
+          ],
+          "exported": true,
+          "lineCount": 185
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef",
+            "useMemo"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "createCourse",
+            "updateCourse",
+            "fetchTeachers",
+            "fetchDegrees"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "CourseListItem",
+            "TeacherListItem",
+            "DegreeListItem"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "../../../components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent",
+            "DialogHeader",
+            "DialogTitle"
+          ]
+        }
+      ],
+      "exports": [
+        "MateriaModal"
+      ],
+      "totalLines": 203,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/components/sessione-modal.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "contentHash": "3396523817864beae3545fcd093fcc5d4cd9c910d5ec14ec2b2ad338d6d2ca1b",
+      "functions": [
+        {
+          "name": "toISO",
+          "params": [
+            "d"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "DateRangePicker",
+          "params": [
+            "{\n  startValue, endValue, onStartChange, onEndChange, maxEnd,\n}"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "SessioneModal",
+          "params": [
+            "{ isOpen, mode, session, onClose, onSave }"
+          ],
+          "exported": true,
+          "lineCount": 89
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "MacroArea",
+            "SessionListItem",
+            "CreateSessionDto"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "createSession",
+            "updateSession"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "../../../components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent",
+            "DialogHeader",
+            "DialogTitle"
+          ]
+        },
+        {
+          "source": "../../../components/ui/date-picker",
+          "specifiers": [
+            "DatePicker"
+          ]
+        }
+      ],
+      "exports": [
+        "SessioneModal"
+      ],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/pages/corsi.page.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "contentHash": "db81c928d5f68beec575219118ec9b3f2d72a9dcd76910c29acacf9676c49bbf",
+      "functions": [
+        {
+          "name": "CorsiPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 234
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect",
+            "useMemo",
+            "useState"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "fetchDegrees",
+            "deleteDegree"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "DegreeListItem",
+            "DegreeType",
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "../components/corso-modal",
+          "specifiers": [
+            "CorsoModal"
+          ]
+        }
+      ],
+      "exports": [
+        "CorsiPage"
+      ],
+      "totalLines": 240,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/pages/docenti.page.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "contentHash": "170fafcc5f057f74583dd7bc2ccfc91d9d75437a27dfb84a66cd7876c8e5f506",
+      "functions": [
+        {
+          "name": "DocentiPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 171
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect",
+            "useMemo",
+            "useState"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "fetchTeachers",
+            "deleteTeacher"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "TeacherListItem"
+          ]
+        },
+        {
+          "source": "../components/docente-modal",
+          "specifiers": [
+            "DocenteModal"
+          ]
+        }
+      ],
+      "exports": [
+        "DocentiPage"
+      ],
+      "totalLines": 176,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/pages/materie.page.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "contentHash": "815caed2eb5dec2723087d41dd719122f4b77f2f341a8f75c1465e6c7b41d5ab",
+      "functions": [
+        {
+          "name": "MateriePage",
+          "params": [],
+          "exported": true,
+          "lineCount": 321
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect",
+            "useMemo",
+            "useState"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "fetchCourses",
+            "deleteCourse"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "CourseListItem"
+          ]
+        },
+        {
+          "source": "../components/materia-modal",
+          "specifiers": [
+            "MateriaModal"
+          ]
+        }
+      ],
+      "exports": [
+        "MateriePage"
+      ],
+      "totalLines": 344,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/pages/segreteria.page.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "contentHash": "4edfd8e915f7269bdcb4982aa2fc41c2007625bf4fa8733a61acdf1681eaf34e",
+      "functions": [
+        {
+          "name": "SegreteriaPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "SegreteriaIndex",
+          "params": [],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Outlet",
+            "Navigate"
+          ]
+        }
+      ],
+      "exports": [
+        "SegreteriaPage",
+        "SegreteriaIndex"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/pages/sessioni.page.tsx": {
+      "filePath": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "contentHash": "08c4b956fd56793bce78feaf8971e7736d18a2353ff48c764f98b9463c371127",
+      "functions": [
+        {
+          "name": "getStatus",
+          "params": [
+            "s"
+          ],
+          "returnType": "SessionStatus",
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "formatDate",
+          "params": [
+            "d"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "getSessionLabel",
+          "params": [
+            "s"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "StatusPill",
+          "params": [
+            "{ status }"
+          ],
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "SessionCard",
+          "params": [
+            "{\n  session,\n  onOpen,\n}"
+          ],
+          "exported": false,
+          "lineCount": 69
+        },
+        {
+          "name": "SessioniPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 123
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect",
+            "useState"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "SessionListItem"
+          ]
+        },
+        {
+          "source": "../segreteria.api",
+          "specifiers": [
+            "fetchSessions"
+          ]
+        },
+        {
+          "source": "../components/sessione-modal",
+          "specifiers": [
+            "SessioneModal"
+          ]
+        }
+      ],
+      "exports": [
+        "SessioniPage"
+      ],
+      "totalLines": 270,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/segreteria/segreteria.api.ts": {
+      "filePath": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "contentHash": "392681af40a03d4d9261c4bada146974c8e945343a7725205d90f95256eacdd8",
+      "functions": [
+        {
+          "name": "getAuthHeader",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "fetchTeachers",
+          "params": [],
+          "returnType": "Promise<TeacherListItem[]>",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "fetchTeacherById",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<TeacherListItem>",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "createTeacher",
+          "params": [
+            "payload"
+          ],
+          "returnType": "Promise<TeacherListItem>",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "updateTeacher",
+          "params": [
+            "id",
+            "payload"
+          ],
+          "returnType": "Promise<TeacherListItem>",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "deleteTeacher",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "fetchDegrees",
+          "params": [],
+          "returnType": "Promise<DegreeListItem[]>",
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "fetchDegreeById",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<DegreeListItem>",
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "createDegree",
+          "params": [
+            "payload"
+          ],
+          "returnType": "Promise<DegreeListItem>",
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "updateDegree",
+          "params": [
+            "id",
+            "payload"
+          ],
+          "returnType": "Promise<DegreeListItem>",
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "deleteDegree",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "fetchCourses",
+          "params": [],
+          "returnType": "Promise<CourseListItem[]>",
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "fetchCourseById",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<CourseListItem>",
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "createCourse",
+          "params": [
+            "payload"
+          ],
+          "returnType": "Promise<CourseListItem>",
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "updateCourse",
+          "params": [
+            "id",
+            "payload"
+          ],
+          "returnType": "Promise<CourseListItem>",
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "deleteCourse",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "fetchSessions",
+          "params": [],
+          "returnType": "Promise<SessionListItem[]>",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "createSession",
+          "params": [
+            "payload"
+          ],
+          "returnType": "Promise<SessionListItem>",
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "updateSession",
+          "params": [
+            "id",
+            "payload"
+          ],
+          "returnType": "Promise<SessionListItem>",
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "deleteSession",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "TeacherListItem",
+            "CreateTeacherDto",
+            "UpdateTeacherDto",
+            "DegreeListItem",
+            "CreateDegreeDto",
+            "UpdateDegreeDto",
+            "CourseListItem",
+            "CreateCourseDto",
+            "UpdateCourseDto",
+            "SessionListItem",
+            "CreateSessionDto",
+            "UpdateSessionDto"
+          ]
+        },
+        {
+          "source": "../shared/utils.api",
+          "specifiers": [
+            "handleApiError"
+          ]
+        }
+      ],
+      "exports": [
+        "fetchTeachers",
+        "fetchTeacherById",
+        "createTeacher",
+        "updateTeacher",
+        "deleteTeacher",
+        "fetchDegrees",
+        "fetchDegreeById",
+        "createDegree",
+        "updateDegree",
+        "deleteDegree",
+        "fetchCourses",
+        "fetchCourseById",
+        "createCourse",
+        "updateCourse",
+        "deleteCourse",
+        "fetchSessions",
+        "createSession",
+        "updateSession",
+        "deleteSession"
+      ],
+      "totalLines": 249,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/shared/utils.api.ts": {
+      "filePath": "apps/ui/src/features/shared/utils.api.ts",
+      "contentHash": "f07857999ba4e690364fce5447d13066b882908a173a5b8706680f6a64cb4626",
+      "functions": [
+        {
+          "name": "handleApiError",
+          "params": [
+            "response"
+          ],
+          "returnType": "Promise<never>",
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "handleApiError"
+      ],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/CalendarGrid.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "contentHash": "6c0419458c0b5124d116dbabdd409daffd2a672d261875db97febcc09a9ef16b",
+      "functions": [
+        {
+          "name": "CalendarGrid",
+          "params": [
+            "{\n    viewMonth,\n    setViewMonth,\n    sessionStart,\n    sessionEnd,\n    insertOpen,\n    byDate,\n    userId,\n    onCellClick,\n    holidays,\n}"
+          ],
+          "exported": true,
+          "lineCount": 187
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "ExamListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "toISO",
+            "isWeekend",
+            "startOfMonth",
+            "addMonths",
+            "fmtTime"
+          ]
+        },
+        {
+          "source": "../../../utils/calendar.utils",
+          "specifiers": [
+            "DOW_LABELS",
+            "MONTH_LABELS_IT"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        }
+      ],
+      "exports": [
+        "CalendarGrid"
+      ],
+      "totalLines": 205,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/ExamForm.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "contentHash": "2352fec518e1361efb1520eaed1443651d43658f3d3e3fbac955ddec1fdefc3b",
+      "functions": [
+        {
+          "name": "ExamForm",
+          "params": [
+            "{\n    mode,\n    initialDate,\n    sessionStart,\n    sessionEnd,\n    course,\n    byDate,\n    holidays,\n    exam,\n    onCancel,\n    onSave,\n    onDelete,\n}"
+          ],
+          "exported": true,
+          "lineCount": 141
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "CourseListItem",
+            "ExamListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "isWeekend",
+            "fmtTime"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "../../../components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "../../../components/ui/date-picker",
+          "specifiers": [
+            "DatePicker"
+          ]
+        }
+      ],
+      "exports": [
+        "ExamForm"
+      ],
+      "totalLines": 164,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/InsertionBanner.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "contentHash": "0009f7ee96129289054d3c78754e50fc628344f4a9efe2edd9839d84311029e6",
+      "functions": [
+        {
+          "name": "InsertionBanner",
+          "params": [
+            "{ session, insertOpen, examLimitReached }"
+          ],
+          "exported": true,
+          "lineCount": 60
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "SessionListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "daysRemaining"
+          ]
+        }
+      ],
+      "exports": [
+        "InsertionBanner"
+      ],
+      "totalLines": 70,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/Modal.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/Modal.tsx",
+      "contentHash": "b25625982ee58a9377463f3aff294fe86e966a952205074c85bf390941204930",
+      "functions": [
+        {
+          "name": "Modal",
+          "params": [
+            "{ open, onClose, title, subtitle, children }"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../../components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent",
+            "DialogHeader",
+            "DialogTitle",
+            "DialogDescription"
+          ]
+        }
+      ],
+      "exports": [
+        "Modal"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/MyExamsList.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "contentHash": "93c9776492cde029f8459e97a19488da69d42bfe15a32a1f857613264f451535",
+      "functions": [
+        {
+          "name": "MyExamsList",
+          "params": [
+            "{\n    myExams,\n    session,\n    examLimitReached,\n    insertOpen,\n    onEdit,\n    onDelete,\n}"
+          ],
+          "exported": true,
+          "lineCount": 89
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "ExamListItem",
+            "SessionListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "dateKey",
+            "fmtTime"
+          ]
+        },
+        {
+          "source": "../../../utils/calendar.utils",
+          "specifiers": [
+            "DOW_FULL"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        }
+      ],
+      "exports": [
+        "MyExamsList"
+      ],
+      "totalLines": 104,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/components/SessionSidebar.tsx": {
+      "filePath": "apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "contentHash": "6ce4ec8cca4cbd2a1085cc390b7dd25e2605011f890d1f7b6a2c7107a691ef7c",
+      "functions": [
+        {
+          "name": "SessionSidebar",
+          "params": [
+            "{\n    sessions,\n    selectedSessionId,\n    onSessionChange,\n    selectedSession,\n    courses,\n    selectedCourseId,\n    onCourseChange,\n    holidays,\n}"
+          ],
+          "exported": true,
+          "lineCount": 181
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "SessionListItem",
+            "CourseListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "formatDateRange",
+            "dateKey"
+          ]
+        },
+        {
+          "source": "../../../utils/calendar.utils",
+          "specifiers": [
+            "DEGREE_TYPE_LABEL"
+          ]
+        }
+      ],
+      "exports": [
+        "SessionSidebar"
+      ],
+      "totalLines": 197,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/pages/esami.page.tsx": {
+      "filePath": "apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "contentHash": "d1f02be089cf2c8351d43fa0db74d9a55b63640cf3bfc005eec77cd4c8c33a19",
+      "functions": [
+        {
+          "name": "EsamiPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 237
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useMemo"
+          ]
+        },
+        {
+          "source": "../../auth/auth.api",
+          "specifiers": [
+            "fetchCurrentUser"
+          ]
+        },
+        {
+          "source": "../teacher.api",
+          "specifiers": [
+            "featchSessionsByTeacherId",
+            "featchCoursesByTeacherAndSession",
+            "fetchExamsBySessionAndDegree",
+            "createExam",
+            "updateExam",
+            "deleteExam"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "SessionListItem",
+            "CourseListItem",
+            "ExamListItem"
+          ]
+        },
+        {
+          "source": "../../../utils/calendar.utils",
+          "specifiers": [
+            "buildHolidayMap"
+          ]
+        },
+        {
+          "source": "../../../components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "../../../utils/date.utils",
+          "specifiers": [
+            "dateKey"
+          ]
+        },
+        {
+          "source": "../components/CalendarGrid",
+          "specifiers": [
+            "CalendarGrid"
+          ]
+        },
+        {
+          "source": "../components/ExamForm",
+          "specifiers": [
+            "ExamForm"
+          ]
+        },
+        {
+          "source": "../components/Modal",
+          "specifiers": [
+            "Modal"
+          ]
+        },
+        {
+          "source": "../components/InsertionBanner",
+          "specifiers": [
+            "InsertionBanner"
+          ]
+        },
+        {
+          "source": "../components/SessionSidebar",
+          "specifiers": [
+            "SessionSidebar"
+          ]
+        },
+        {
+          "source": "../components/MyExamsList",
+          "specifiers": [
+            "MyExamsList"
+          ]
+        }
+      ],
+      "exports": [
+        "EsamiPage"
+      ],
+      "totalLines": 264,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/pages/teacher.page.tsx": {
+      "filePath": "apps/ui/src/features/teacher/pages/teacher.page.tsx",
+      "contentHash": "bd863650564c04518d65fe6baeb74d4e3c4711cc959d7806d5a6da750d937144",
+      "functions": [
+        {
+          "name": "TeacherPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "TeacherIndex",
+          "params": [],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Outlet",
+            "Navigate"
+          ]
+        }
+      ],
+      "exports": [
+        "TeacherPage",
+        "TeacherIndex"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/features/teacher/teacher.api.ts": {
+      "filePath": "apps/ui/src/features/teacher/teacher.api.ts",
+      "contentHash": "81448487aa072a6eac3b964ff54ad94bde79236abf82f3314689db3a0f5f6de9",
+      "functions": [
+        {
+          "name": "getAuthHeader",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "featchSessionsByTeacherId",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<SessionListItem[]>",
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "featchSessionbyId",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<SessionListItem>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "featchCoursesByTeacherAndSession",
+          "params": [
+            "teacherId",
+            "sessionId"
+          ],
+          "returnType": "Promise<CourseListItem[]>",
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "featchCourseById",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<CourseListItem>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "fetchExamsBySessionAndDegree",
+          "params": [
+            "sessionId",
+            "degreeId"
+          ],
+          "returnType": "Promise<ExamListItem[]>",
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "createExam",
+          "params": [
+            "dto"
+          ],
+          "returnType": "Promise<ExamListItem>",
+          "exported": true,
+          "lineCount": 16
+        },
+        {
+          "name": "updateExam",
+          "params": [
+            "id",
+            "dto"
+          ],
+          "returnType": "Promise<ExamListItem>",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "deleteExam",
+          "params": [
+            "id"
+          ],
+          "returnType": "Promise<void>",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "CourseListItem",
+            "SessionListItem",
+            "ExamListItem"
+          ]
+        },
+        {
+          "source": "../shared/utils.api",
+          "specifiers": [
+            "handleApiError"
+          ]
+        }
+      ],
+      "exports": [
+        "featchSessionsByTeacherId",
+        "featchSessionbyId",
+        "featchCoursesByTeacherAndSession",
+        "featchCourseById",
+        "fetchExamsBySessionAndDegree",
+        "createExam",
+        "updateExam",
+        "deleteExam"
+      ],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/lib/utils.ts": {
+      "filePath": "apps/ui/src/lib/utils.ts",
+      "contentHash": "d877e040fa63ee71f52e36b0c50163c28b9034ff46b3b3983b2f31bd3350d195",
+      "functions": [
+        {
+          "name": "cn",
+          "params": [
+            "...inputs"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "clsx",
+          "specifiers": [
+            "clsx",
+            "ClassValue"
+          ]
+        },
+        {
+          "source": "tailwind-merge",
+          "specifiers": [
+            "twMerge"
+          ]
+        }
+      ],
+      "exports": [
+        "cn"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/main.tsx": {
+      "filePath": "apps/ui/src/main.tsx",
+      "contentHash": "08e28bd2ec3ff0e8bf93ac95121efc16d47a247e4b645f2bc8ed4c9bf913bbaa",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "StrictMode"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "BrowserRouter"
+          ]
+        },
+        {
+          "source": "react-dom/client",
+          "specifiers": [
+            "* as ReactDOM"
+          ]
+        },
+        {
+          "source": "./app/app",
+          "specifiers": [
+            "App"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/styles.css": {
+      "filePath": "apps/ui/src/styles.css",
+      "contentHash": "31f56258ea4276108bbf30b3d24b38ee71030519ce2c072d2ef8eb61491df0ae",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 168,
+      "hasStructuralAnalysis": false
+    },
+    "apps/ui/src/utils/calendar.utils.ts": {
+      "filePath": "apps/ui/src/utils/calendar.utils.ts",
+      "contentHash": "8dc584885f213c1dba5e9bb1f272ce4b26ec35e700871302dc6ef987f7edcf7f",
+      "functions": [
+        {
+          "name": "buildHolidayMap",
+          "params": [
+            "startDate",
+            "endDate"
+          ],
+          "returnType": "Record<string, string>",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "countSessionDays",
+          "params": [
+            "session",
+            "holidays"
+          ],
+          "returnType": "number",
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "date-holidays",
+          "specifiers": [
+            "Holidays"
+          ]
+        },
+        {
+          "source": "@server/entities/frontend",
+          "specifiers": [
+            "SessionListItem",
+            "DegreeType"
+          ]
+        },
+        {
+          "source": "./date.utils",
+          "specifiers": [
+            "toISO",
+            "isWeekend"
+          ]
+        }
+      ],
+      "exports": [
+        "DOW_LABELS",
+        "MONTH_LABELS_IT",
+        "DOW_FULL",
+        "DEGREE_TYPE_LABEL",
+        "buildHolidayMap",
+        "countSessionDays"
+      ],
+      "totalLines": 44,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/src/utils/date.utils.ts": {
+      "filePath": "apps/ui/src/utils/date.utils.ts",
+      "contentHash": "3ace20d46ee720f4d6791973b6cf2150dd59f77b01789390e108579be157288e",
+      "functions": [
+        {
+          "name": "toISO",
+          "params": [
+            "d"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "isWeekend",
+          "params": [
+            "d"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "startOfMonth",
+          "params": [
+            "d"
+          ],
+          "returnType": "Date",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "addMonths",
+          "params": [
+            "d",
+            "n"
+          ],
+          "returnType": "Date",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "dateKey",
+          "params": [
+            "v"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "fmtTime",
+          "params": [
+            "v"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "formatDateRange",
+          "params": [
+            "start",
+            "end"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "daysRemaining",
+          "params": [
+            "isoEnd"
+          ],
+          "returnType": "number",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "toISO",
+        "isWeekend",
+        "startOfMonth",
+        "addMonths",
+        "dateKey",
+        "fmtTime",
+        "formatDateRange",
+        "daysRemaining"
+      ],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/tailwind.config.js": {
+      "filePath": "apps/ui/tailwind.config.js",
+      "contentHash": "c29935cb9104d175f33a889f31ebba10d09dddfec8a6a6165c3580f6f5d1ba5d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/tsconfig.app.json": {
+      "filePath": "apps/ui/tsconfig.app.json",
+      "contentHash": "b9dc4e8ad598cce2ebf1f033461c4fd75819c1e18369b017a850c4440e979c48",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/tsconfig.json": {
+      "filePath": "apps/ui/tsconfig.json",
+      "contentHash": "d8f483e19f1a6f54238b52f9537c2fdc564d63f04b051f32dc294a15b57617d8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "apps/ui/tsconfig.tsbuildinfo": {
+      "filePath": "apps/ui/tsconfig.tsbuildinfo",
+      "contentHash": "41bee697aacfc9e0d3682f879bd33741ef4a7a773b16d411fd57298fb36fa2e5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/ui/vite.config.mts": {
+      "filePath": "apps/ui/vite.config.mts",
+      "contentHash": "47c42a9c90f31dde1367be7e7ce407f954a4eacc433c980bf72e6910d0370f8d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": false
+    },
+    "CLAUDE.md": {
+      "filePath": "CLAUDE.md",
+      "contentHash": "2bd127db2dcc3342b3927c068682fb981372cbe9a2001fe9bf01dbeba7993c17",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 130,
+      "hasStructuralAnalysis": true
+    },
+    "corsi/Area Economico-statistica.txt": {
+      "filePath": "corsi/Area Economico-statistica.txt",
+      "contentHash": "c35b1351bb29cda193f2e9ec1404988278446ee4127ff23b7b7dd852a053d485",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 539,
+      "hasStructuralAnalysis": false
+    },
+    "corsi/Area Giuridica.txt": {
+      "filePath": "corsi/Area Giuridica.txt",
+      "contentHash": "93dc261ab89c11d03e50f67201cb6f3a8a4f6c252781fe59b8cda4b69a15fb7a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 317,
+      "hasStructuralAnalysis": false
+    },
+    "corsi/Area Ingegneria.txt": {
+      "filePath": "corsi/Area Ingegneria.txt",
+      "contentHash": "2e5958825574adbe62497ee64237c4f55dc58b1ae1bd3a48523df5fdaa5a7212",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1516,
+      "hasStructuralAnalysis": false
+    },
+    "corsi/Area Medica.txt": {
+      "filePath": "corsi/Area Medica.txt",
+      "contentHash": "b7f92e623d96ff2e7e176c16237b4cd344fdfd52108c8d250184533c51ec96d2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3961,
+      "hasStructuralAnalysis": false
+    },
+    "eslint.config.mjs": {
+      "filePath": "eslint.config.mjs",
+      "contentHash": "88e70ee8072290465acb1d9ad7f97649c7310eaa9f3edb37e3debf08bb3627e3",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/eslint-plugin",
+          "specifiers": [
+            "nx"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "jest.config.ts": {
+      "filePath": "jest.config.ts",
+      "contentHash": "89a3f04bec5db1e19d34f6987c77506d3797cc0bbdcfdc6abab4e317c4eca851",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "jest",
+          "specifiers": [
+            "Config"
+          ]
+        },
+        {
+          "source": "@nx/jest",
+          "specifiers": [
+            "getJestProjectsAsync"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "jest.preset.js": {
+      "filePath": "jest.preset.js",
+      "contentHash": "2a1bad0e8ed09f34acbf5391bb4f96467dba5c533a927bacb7075c3ed04d73c2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/package.json": {
+      "filePath": "libs/database/package.json",
+      "contentHash": "f211708c1236496300fb7e18f7617d355b3d8ac1f4c33faaf1ed6ad1279c0080",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/README.md": {
+      "filePath": "libs/database/README.md",
+      "contentHash": "243e6dc02f317dc4dadcbf4c43b121feeffb1fa6a089b92a8968959a82746058",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/src/index.ts": {
+      "filePath": "libs/database/src/index.ts",
+      "contentHash": "207e1dc8c285c2c1609a28e7ad01a2696a6aa3710540345a7a594ee28719625b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/src/lib/database.module.ts": {
+      "filePath": "libs/database/src/lib/database.module.ts",
+      "contentHash": "c7279e0c934fceca06cb200f2c33c8f265aa388ba9ccf37444f8d9a6e37f12af",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DatabaseModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "dotenv/config",
+          "specifiers": []
+        }
+      ],
+      "exports": [
+        "DatabaseModule"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/tsconfig.json": {
+      "filePath": "libs/database/tsconfig.json",
+      "contentHash": "4e2a4326a268f26f664ac488a782909c8f6ba7836ba8707ea557b2bfe056cb41",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "libs/database/tsconfig.lib.json": {
+      "filePath": "libs/database/tsconfig.lib.json",
+      "contentHash": "b274dc0b750ece71f77eb36cb4a8a9144faa146b63d13b0cede52640b4d886f6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/eslint.config.mjs": {
+      "filePath": "libs/server/auth/eslint.config.mjs",
+      "contentHash": "3517bf657170b1838b69132ceefbbeea29f6534dec7c2895712080b035b6c58c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/jest.config.cts": {
+      "filePath": "libs/server/auth/jest.config.cts",
+      "contentHash": "2315469e9154cfa5d30c65c1feb528848059a2b5db0731d19d4537fcae5d9eb6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "libs/server/auth/package.json": {
+      "filePath": "libs/server/auth/package.json",
+      "contentHash": "8d53a0080e34231e216d35800cf7a27e2ea485e8c126cc9f6b0bf6661fc12eec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/README.md": {
+      "filePath": "libs/server/auth/README.md",
+      "contentHash": "92ddce5609fb23786f59b12758e8721966b5f818704840af620e4648658e8f92",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/index.ts": {
+      "filePath": "libs/server/auth/src/index.ts",
+      "contentHash": "70fbe84507340c282ec520f11a3eba4890d45fdd0bd88c9bbc3bcf82f11e65d5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/auth.controller.ts": {
+      "filePath": "libs/server/auth/src/lib/auth.controller.ts",
+      "contentHash": "cdf2df67c73a224f58c7043271c0579eab215efa5d8b4406203e7ee6608de11f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerAuthController",
+          "methods": [
+            "constructor",
+            "login",
+            "changePassword",
+            "register"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 46
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "UseGuards",
+            "Post",
+            "Patch",
+            "Request",
+            "Body",
+            "ValidationPipe"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiTags",
+            "ApiBody"
+          ]
+        },
+        {
+          "source": "./auth.service",
+          "specifiers": [
+            "ServerAuthService"
+          ]
+        },
+        {
+          "source": "./dto/register.dto",
+          "specifiers": [
+            "RegisterDto"
+          ]
+        },
+        {
+          "source": "./dto/change-password.dto",
+          "specifiers": [
+            "ChangePasswordDto"
+          ]
+        },
+        {
+          "source": "./interfaces/authenticated-user.interface",
+          "specifiers": [
+            "AuthenticatedUser"
+          ]
+        },
+        {
+          "source": "./guards/local-auth.guard",
+          "specifiers": [
+            "LocalAuthGuard"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "JwtAuthGuard",
+            "CurrentUser"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerAuthController"
+      ],
+      "totalLines": 63,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/auth.module.ts": {
+      "filePath": "libs/server/auth/src/lib/auth.module.ts",
+      "contentHash": "89c871eabc8f4b3cd33cebbde9eac6fb0e41762dfb6aca169046182bea9b9c7a",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerAuthModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/jwt",
+          "specifiers": [
+            "JwtModule"
+          ]
+        },
+        {
+          "source": "@nestjs/passport",
+          "specifiers": [
+            "PassportModule"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "ServerUsersModule"
+          ]
+        },
+        {
+          "source": "./auth.controller",
+          "specifiers": [
+            "ServerAuthController"
+          ]
+        },
+        {
+          "source": "./strategies/jwt.strategy",
+          "specifiers": [
+            "JwtStrategy"
+          ]
+        },
+        {
+          "source": "./auth.service",
+          "specifiers": [
+            "ServerAuthService"
+          ]
+        },
+        {
+          "source": "./strategies/local.strategy",
+          "specifiers": [
+            "LocalStrategy"
+          ]
+        },
+        {
+          "source": "dotenv/config",
+          "specifiers": []
+        }
+      ],
+      "exports": [
+        "ServerAuthModule"
+      ],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/auth.service.ts": {
+      "filePath": "libs/server/auth/src/lib/auth.service.ts",
+      "contentHash": "99b89617539e484ae36a36371bb70017602a217681e968f87e855f940bd98fb3",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerAuthService",
+          "methods": [
+            "constructor",
+            "validateUser",
+            "login",
+            "changePassword",
+            "register"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 39
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "NotFoundException",
+            "Injectable",
+            "UnauthorizedException"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "ServerUsersService"
+          ]
+        },
+        {
+          "source": "@nestjs/jwt",
+          "specifiers": [
+            "JwtService"
+          ]
+        },
+        {
+          "source": "bcrypt",
+          "specifiers": [
+            "* as bcrypt"
+          ]
+        },
+        {
+          "source": "./interfaces/authenticated-user.interface",
+          "specifiers": [
+            "AuthenticatedUser"
+          ]
+        },
+        {
+          "source": "./interfaces/auth-response.interface",
+          "specifiers": [
+            "AuthResponse"
+          ]
+        },
+        {
+          "source": "./dto/register.dto",
+          "specifiers": [
+            "RegisterDto"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerAuthService"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/dto/change-password.dto.ts": {
+      "filePath": "libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "contentHash": "cc73e6816e141270d5a92da2ab923a79d21b105dd24a1da460f88d3852274d96",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ChangePasswordDto",
+          "methods": [],
+          "properties": [
+            "newPassword"
+          ],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsString",
+            "MinLength",
+            "Matches"
+          ]
+        }
+      ],
+      "exports": [
+        "ChangePasswordDto"
+      ],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/dto/register.dto.ts": {
+      "filePath": "libs/server/auth/src/lib/dto/register.dto.ts",
+      "contentHash": "3157fc67efffcd3671b3e21523eaa1860c7026d5c0488839a8305bf91139faef",
+      "functions": [],
+      "classes": [
+        {
+          "name": "RegisterDto",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "CreateUserDto"
+          ]
+        }
+      ],
+      "exports": [
+        "RegisterDto"
+      ],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/guards/local-auth.guard.ts": {
+      "filePath": "libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "contentHash": "66954a68bf91e8e942fe0f4d521f40d31176b62720fb4edd95b5aad18b3728ef",
+      "functions": [],
+      "classes": [
+        {
+          "name": "LocalAuthGuard",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/passport",
+          "specifiers": [
+            "AuthGuard"
+          ]
+        }
+      ],
+      "exports": [
+        "LocalAuthGuard"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/interfaces/auth-response.interface.ts": {
+      "filePath": "libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "contentHash": "690ab9efc41288c3aeb450a2a6abe902b37991509aa3cf0d02a602d167f75502",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AuthResponse",
+          "methods": [],
+          "properties": [
+            "access_token",
+            "user",
+            "mustChangePassword"
+          ],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "./authenticated-user.interface",
+          "specifiers": [
+            "AuthenticatedUser"
+          ]
+        }
+      ],
+      "exports": [
+        "AuthResponse"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts": {
+      "filePath": "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "contentHash": "698e7131c44d7addaf1e59f8b4c12173e04eb742c3487fe100098ba828d9e3cb",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts": {
+      "filePath": "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts",
+      "contentHash": "7f7f5e3c667015272d655fc29ffd99f7b4013cccc638228008b0a66bc7c012b2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/strategies/jwt.strategy.ts": {
+      "filePath": "libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "contentHash": "623171c5835631d97951970086b2ef6fe377b3b22a3684d142732b897296b5ae",
+      "functions": [],
+      "classes": [
+        {
+          "name": "JwtStrategy",
+          "methods": [
+            "constructor",
+            "validate"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/passport",
+          "specifiers": [
+            "PassportStrategy"
+          ]
+        },
+        {
+          "source": "passport-jwt",
+          "specifiers": [
+            "ExtractJwt",
+            "Strategy"
+          ]
+        },
+        {
+          "source": "../interfaces/authenticated-user.interface",
+          "specifiers": [
+            "AuthenticatedUser"
+          ]
+        },
+        {
+          "source": "../interfaces/jwt-payload.interface",
+          "specifiers": [
+            "JwtPayload"
+          ]
+        }
+      ],
+      "exports": [
+        "JwtStrategy"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/src/lib/strategies/local.strategy.ts": {
+      "filePath": "libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "contentHash": "34eef09e31a7c5f0ed2afd5d4d17b42d09d88d9e16e6f0442e5f6921dc546bb4",
+      "functions": [],
+      "classes": [
+        {
+          "name": "LocalStrategy",
+          "methods": [
+            "constructor",
+            "validate"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "passport-local",
+          "specifiers": [
+            "Strategy"
+          ]
+        },
+        {
+          "source": "@nestjs/passport",
+          "specifiers": [
+            "PassportStrategy"
+          ]
+        },
+        {
+          "source": "../auth.service",
+          "specifiers": [
+            "ServerAuthService"
+          ]
+        },
+        {
+          "source": "../interfaces/authenticated-user.interface",
+          "specifiers": [
+            "AuthenticatedUser"
+          ]
+        }
+      ],
+      "exports": [
+        "LocalStrategy"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/tsconfig.json": {
+      "filePath": "libs/server/auth/tsconfig.json",
+      "contentHash": "1d3d16945976fa1ed70f5bbfc155f733f3a1fd47c1dd9c50239d230a9858f589",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/auth/tsconfig.lib.json": {
+      "filePath": "libs/server/auth/tsconfig.lib.json",
+      "contentHash": "2378bc5f580cda25647bb912127bd8b2bc9b3c12889c14c71b2617f7437595bf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/package.json": {
+      "filePath": "libs/server/entities/package.json",
+      "contentHash": "4f849a513d56f4c3b584caf0bf896889807c582643be7c074a466d7e3bb9e682",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/assets/courses-data.ts": {
+      "filePath": "libs/server/entities/src/assets/courses-data.ts",
+      "contentHash": "a0af42659f315fc568118b0273a5683ff52abfca493028ba2f0d729c6ed9ea8d",
+      "functions": [
+        {
+          "name": "mkCourse",
+          "params": [
+            "courseName",
+            "teacherEmail",
+            "degreeName",
+            "degreeType",
+            "degreeYear"
+          ],
+          "returnType": "SeedCourse",
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "seedTeachers",
+        "seedDegrees",
+        "seedCourses"
+      ],
+      "totalLines": 3899,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/controllers/course.controller.ts": {
+      "filePath": "libs/server/entities/src/controllers/course.controller.ts",
+      "contentHash": "9e6df0bd9de9c7bb36a22b9e889886244c7f3267382164dfe4e253fe94d61c64",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerCourseController",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findByTeacherAndSession",
+            "findDegreesByTeacher",
+            "findOne",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 104
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "Param",
+            "ParseIntPipe",
+            "Patch",
+            "Post",
+            "Query",
+            "UseGuards",
+            "ValidationPipe"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiBearerAuth",
+            "ApiBody",
+            "ApiParam",
+            "ApiQuery",
+            "ApiTags"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../services/course.service.js",
+          "specifiers": [
+            "ServerCourseService"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-course.dto.js",
+          "specifiers": [
+            "CreateCourseDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-course.dto.js",
+          "specifiers": [
+            "UpdateCourseDto"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerCourseController"
+      ],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/controllers/degree.controller.ts": {
+      "filePath": "libs/server/entities/src/controllers/degree.controller.ts",
+      "contentHash": "e9afda653eaa257f2b2603f5bb8ea6caa0c841f21d412c767bc4a93a95ef338a",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerDegreeController",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 76
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "HttpCode",
+            "Param",
+            "ParseIntPipe",
+            "Patch",
+            "Post",
+            "UseGuards"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiBearerAuth",
+            "ApiBody",
+            "ApiParam",
+            "ApiTags"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-degree.dto.js",
+          "specifiers": [
+            "CreateDegreeDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-degree.dto.js",
+          "specifiers": [
+            "UpdateDegreeDto"
+          ]
+        },
+        {
+          "source": "../services/degree.service.js",
+          "specifiers": [
+            "ServerDegreeService"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerDegreeController"
+      ],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/controllers/exam.controller.ts": {
+      "filePath": "libs/server/entities/src/controllers/exam.controller.ts",
+      "contentHash": "1dff8e7f9d431c820c77d7147a7729f936be763dcbc48f9001e59b2d99228e9f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerExamController",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 94
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "HttpCode",
+            "Param",
+            "ParseIntPipe",
+            "Patch",
+            "Post",
+            "Query",
+            "UseGuards"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiBearerAuth",
+            "ApiBody",
+            "ApiParam",
+            "ApiQuery",
+            "ApiTags"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "CurrentUser",
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-exam.dto.js",
+          "specifiers": [
+            "CreateExamDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-exam.dto.js",
+          "specifiers": [
+            "UpdateExamDto"
+          ]
+        },
+        {
+          "source": "../services/exam.service.js",
+          "specifiers": [
+            "ServerExamService"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerExamController"
+      ],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/controllers/session.controller.ts": {
+      "filePath": "libs/server/entities/src/controllers/session.controller.ts",
+      "contentHash": "87e9438ff527816d50bd5a5cce6a55ed5a5b1e1508dbf8428aa93887abf98b39",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerSessionController",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "findActiveByTeacher",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 90
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "HttpCode",
+            "Param",
+            "ParseIntPipe",
+            "Patch",
+            "Post",
+            "UseGuards"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiBearerAuth",
+            "ApiBody",
+            "ApiParam",
+            "ApiTags"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-session.dto.js",
+          "specifiers": [
+            "CreateSessionDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-session.dto.js",
+          "specifiers": [
+            "UpdateSessionDto"
+          ]
+        },
+        {
+          "source": "../services/session.service.js",
+          "specifiers": [
+            "ServerSessionService"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerSessionController"
+      ],
+      "totalLines": 112,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/controllers/teacher.controller.ts": {
+      "filePath": "libs/server/entities/src/controllers/teacher.controller.ts",
+      "contentHash": "ed086fa5258b72348bcb5ac6440021cac04f92561558f9f9914542ec9ce2119b",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerTeacherController",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 76
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "HttpCode",
+            "Param",
+            "ParseIntPipe",
+            "Patch",
+            "Post",
+            "UseGuards"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiBearerAuth",
+            "ApiBody",
+            "ApiParam",
+            "ApiTags"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-teacher.dto.js",
+          "specifiers": [
+            "CreateTeacherDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-teacher.dto.js",
+          "specifiers": [
+            "UpdateTeacherDto"
+          ]
+        },
+        {
+          "source": "../services/teacher.service.js",
+          "specifiers": [
+            "ServerTeacherService"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerTeacherController"
+      ],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/course.entity.ts": {
+      "filePath": "libs/server/entities/src/entities/course.entity.ts",
+      "contentHash": "15037a06b26a7647c931b91a7fdc0fa320992a77d2aadf6c963960ebfb4bc765",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CourseEntity",
+          "methods": [],
+          "properties": [
+            "id",
+            "courseName",
+            "exams",
+            "teacher",
+            "degree"
+          ],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Entity",
+            "PrimaryGeneratedColumn",
+            "Column",
+            "ManyToOne",
+            "OneToMany",
+            "JoinColumn",
+            "Unique"
+          ]
+        },
+        {
+          "source": "./teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "./exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        },
+        {
+          "source": "./degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "CourseEntity"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/degree.entity.ts": {
+      "filePath": "libs/server/entities/src/entities/degree.entity.ts",
+      "contentHash": "a2d347d63c646ebdd92332db0c97a27c8b036c057be537d0f5dd05f7db7a00e6",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DegreeEntity",
+          "methods": [],
+          "properties": [
+            "id",
+            "degreeName",
+            "degreeType",
+            "degreeYear",
+            "macroArea",
+            "sessions"
+          ],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Entity",
+            "PrimaryGeneratedColumn",
+            "Column",
+            "ManyToMany",
+            "Unique"
+          ]
+        },
+        {
+          "source": "./dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "./session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "DegreeEntity"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/create-course.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "contentHash": "cb2c2bd9f440364dd2b5baebd78ae2d80565d2bd45536cb579314fe9ddbb2244",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateCourseDto",
+          "methods": [],
+          "properties": [
+            "courseName",
+            "teacherId",
+            "degreeId"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsInt",
+            "IsNotEmpty",
+            "IsString"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateCourseDto"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/create-degree.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "contentHash": "371eba2e13fb3d1616dcc4d62c5aa3477ce2663d99160c8751d4274d51eabd56",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateDegreeDto",
+          "methods": [],
+          "properties": [
+            "degreeName",
+            "degreeType",
+            "degreeYear",
+            "macroArea"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsEnum",
+            "IsNotEmpty",
+            "IsString"
+          ]
+        },
+        {
+          "source": "./degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateDegreeDto"
+      ],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/create-exam.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "contentHash": "fb41a4559034252cc04b9a7883934156fa02cc90f4cbf3e7a82eee1378c7b33f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateExamDto",
+          "methods": [],
+          "properties": [
+            "sessionId",
+            "courseId",
+            "degreeId",
+            "examDate",
+            "startTime",
+            "endTime"
+          ],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsDateString",
+            "IsInt",
+            "IsNotEmpty"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateExamDto"
+      ],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/create-session.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "contentHash": "84101d322a3856faa52943076c55df6392ad64dfb5038f456910202ad2996791",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateSessionDto",
+          "methods": [],
+          "properties": [
+            "startDate",
+            "endDate",
+            "startInsertDate",
+            "endInsertDate",
+            "macroArea",
+            "examLimit",
+            "degreeIds"
+          ],
+          "exported": true,
+          "lineCount": 31
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsArray",
+            "IsDateString",
+            "IsEnum",
+            "IsInt",
+            "IsNotEmpty",
+            "IsOptional",
+            "Min"
+          ]
+        },
+        {
+          "source": "./degree.enum.js",
+          "specifiers": [
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateSessionDto"
+      ],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/create-teacher.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "contentHash": "3e957aadd56d621c8de9259139e658bfcf5bee985c863e7c53274d0434a67b39",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateTeacherDto",
+          "methods": [],
+          "properties": [
+            "name",
+            "surname",
+            "email",
+            "password"
+          ],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsEmail",
+            "IsNotEmpty",
+            "IsString",
+            "MinLength"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateTeacherDto"
+      ],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/degree.enum.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "contentHash": "ea4fae1b8c4d41368e7ff0133a7e85c7125a7dc80d1e9823126b1b0e29b792c5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/update-course.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "contentHash": "7a238eb2cdcb8101c1772cfbf37cfb9d860cf7abb26df753800c602ffaf7e172",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateCourseDto",
+          "methods": [],
+          "properties": [
+            "courseName",
+            "teacherId",
+            "degreeId"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsInt",
+            "IsOptional",
+            "IsString"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateCourseDto"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/update-degree.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "contentHash": "bee7d80cdf14108060f64a3c83402c4487f8cbe88d1d457b3722cc227a4aa61c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateDegreeDto",
+          "methods": [],
+          "properties": [
+            "degreeName",
+            "degreeType",
+            "degreeYear",
+            "macroArea"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsEnum",
+            "IsOptional",
+            "IsString"
+          ]
+        },
+        {
+          "source": "./degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateDegreeDto"
+      ],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/update-exam.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "contentHash": "ce0e125ba42f3c81d30fe7ec668caa6da84c14f658c07d9e5d852f110ab5c692",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateExamDto",
+          "methods": [],
+          "properties": [
+            "courseId",
+            "degreeId",
+            "examDate",
+            "startTime",
+            "endTime"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsDateString",
+            "IsInt",
+            "IsOptional"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateExamDto"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/update-session.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "contentHash": "b2f21e0945185b13a25742fb3af853ba07f840e85a0b50a495b39534f82871eb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateSessionDto",
+          "methods": [],
+          "properties": [
+            "startDate",
+            "endDate",
+            "startInsertDate",
+            "endInsertDate",
+            "macroArea",
+            "examLimit",
+            "degreeIds"
+          ],
+          "exported": true,
+          "lineCount": 31
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsArray",
+            "IsDateString",
+            "IsEnum",
+            "IsInt",
+            "IsOptional",
+            "Min"
+          ]
+        },
+        {
+          "source": "./degree.enum.js",
+          "specifiers": [
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateSessionDto"
+      ],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/dto/update-teacher.dto.ts": {
+      "filePath": "libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "contentHash": "19feef4a567ea4db9bb043300cd81a49b452e2e79051910b8c0e0e6260fac735",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateTeacherDto",
+          "methods": [],
+          "properties": [
+            "name",
+            "surname",
+            "email",
+            "password"
+          ],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsEmail",
+            "IsOptional",
+            "IsString",
+            "MinLength"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateTeacherDto"
+      ],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/exam.entity.ts": {
+      "filePath": "libs/server/entities/src/entities/exam.entity.ts",
+      "contentHash": "a4e57d8b23d4add89415361b71bf71bf683b2bae536d10d0ca1bbf8236e176b0",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ExamEntity",
+          "methods": [],
+          "properties": [
+            "id",
+            "examDate",
+            "startTime",
+            "endTime",
+            "course",
+            "session",
+            "teacher",
+            "degree"
+          ],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Entity",
+            "PrimaryGeneratedColumn",
+            "Column",
+            "ManyToOne",
+            "JoinColumn",
+            "Unique"
+          ]
+        },
+        {
+          "source": "./course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        },
+        {
+          "source": "./degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        },
+        {
+          "source": "./session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        },
+        {
+          "source": "./teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "ExamEntity"
+      ],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/session.entity.ts": {
+      "filePath": "libs/server/entities/src/entities/session.entity.ts",
+      "contentHash": "fdd160b165b8a666501ed2b1b52b4a85b1aaa11447c905d303f327752c7733c8",
+      "functions": [],
+      "classes": [
+        {
+          "name": "SessionEntity",
+          "methods": [],
+          "properties": [
+            "id",
+            "startDate",
+            "endDate",
+            "startInsertDate",
+            "endInsertDate",
+            "macroArea",
+            "examLimit",
+            "degrees",
+            "exams"
+          ],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Entity",
+            "PrimaryGeneratedColumn",
+            "Column",
+            "OneToMany",
+            "JoinColumn",
+            "ManyToMany",
+            "JoinTable"
+          ]
+        },
+        {
+          "source": "./dto/degree.enum.js",
+          "specifiers": [
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "./exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        },
+        {
+          "source": "./degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "SessionEntity"
+      ],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/entities/teacher.entity.ts": {
+      "filePath": "libs/server/entities/src/entities/teacher.entity.ts",
+      "contentHash": "3ee02dc1b1b21c906cd5d038363d2270cdc15e603bd171d29f31ae7fee855712",
+      "functions": [],
+      "classes": [
+        {
+          "name": "TeacherEntity",
+          "methods": [],
+          "properties": [
+            "courses",
+            "exams"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "ChildEntity",
+            "JoinColumn",
+            "OneToMany"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserEntity"
+          ]
+        },
+        {
+          "source": "./course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        },
+        {
+          "source": "./exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "TeacherEntity"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/frontend.ts": {
+      "filePath": "libs/server/entities/src/frontend.ts",
+      "contentHash": "5b13d5ce60798b087c412ef8d67f651cf3fab2c037d97b60951094ca8368f739",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/index.ts": {
+      "filePath": "libs/server/entities/src/index.ts",
+      "contentHash": "69342a1b7f34949f6ba2f3d5cd199aa6ea9bf45a61cf3a7c4b2e31a8bfcf9264",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/interfaces/course-list-item.ts": {
+      "filePath": "libs/server/entities/src/interfaces/course-list-item.ts",
+      "contentHash": "d736e5c1967702aaeafcd7ea1812a643bd54beef820c2f5ccfdf9b23ffbb6672",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/interfaces/degree-list-item.ts": {
+      "filePath": "libs/server/entities/src/interfaces/degree-list-item.ts",
+      "contentHash": "0804beb5923e9fc33d22d06b72805a5d0fe25799c3725cf9d7f5ec2d8a825643",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/interfaces/exam-list-item.ts": {
+      "filePath": "libs/server/entities/src/interfaces/exam-list-item.ts",
+      "contentHash": "27cab04e07b1dd47768d353c13cba4a68943a49a48d15646e408d41c001278aa",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/interfaces/session-list-item.ts": {
+      "filePath": "libs/server/entities/src/interfaces/session-list-item.ts",
+      "contentHash": "f8bf5bbbb61cbb2aeaea67484a85111b7d97ed4f434ab0814cd24efec2b3c0a2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/interfaces/teacher-list-item.ts": {
+      "filePath": "libs/server/entities/src/interfaces/teacher-list-item.ts",
+      "contentHash": "36c730d7d16f5ca9daaa4bf586febf7a9fe56261c46cf85236ebe3f8a06b26af",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/modules/course.module.ts": {
+      "filePath": "libs/server/entities/src/modules/course.module.ts",
+      "contentHash": "ae5dc3b11287d11e2b7d57074472b3829215434822e17474b2b871ef518d465c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerCourseModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "../controllers/course.controller.js",
+          "specifiers": [
+            "ServerCourseController"
+          ]
+        },
+        {
+          "source": "../services/course.service.js",
+          "specifiers": [
+            "ServerCourseService"
+          ]
+        },
+        {
+          "source": "../repositories/course.repository.js",
+          "specifiers": [
+            "CourseRepository"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../entities/course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerCourseModule"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/modules/degree.module.ts": {
+      "filePath": "libs/server/entities/src/modules/degree.module.ts",
+      "contentHash": "8e855960505442e1c1bbcf38f81ad90e671dd58f376eaf8e2d80edfe5e3a2a87",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerDegreeModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "../controllers/degree.controller.js",
+          "specifiers": [
+            "ServerDegreeController"
+          ]
+        },
+        {
+          "source": "../services/degree.service.js",
+          "specifiers": [
+            "ServerDegreeService"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerDegreeModule"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/modules/exam.module.ts": {
+      "filePath": "libs/server/entities/src/modules/exam.module.ts",
+      "contentHash": "805dfec0ee3e7aaec151f5790db0ba04b5aa261482c9d8a95bebbb30290fb1e4",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerExamModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "../controllers/exam.controller.js",
+          "specifiers": [
+            "ServerExamController"
+          ]
+        },
+        {
+          "source": "../services/exam.service.js",
+          "specifiers": [
+            "ServerExamService"
+          ]
+        },
+        {
+          "source": "../entities/exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        },
+        {
+          "source": "../entities/session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        },
+        {
+          "source": "../entities/course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "../repositories/exam.repository.js",
+          "specifiers": [
+            "ExamRepository"
+          ]
+        },
+        {
+          "source": "../repositories/session.repository.js",
+          "specifiers": [
+            "SessionRepository"
+          ]
+        },
+        {
+          "source": "../repositories/course.repository.js",
+          "specifiers": [
+            "CourseRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerExamModule"
+      ],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/modules/session.module.ts": {
+      "filePath": "libs/server/entities/src/modules/session.module.ts",
+      "contentHash": "d9b2812c8cd07ce4f070ec29e5a45d6d1453df1a838049a4044516b7adf0e895",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerSessionModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "../controllers/session.controller.js",
+          "specifiers": [
+            "ServerSessionController"
+          ]
+        },
+        {
+          "source": "../services/session.service.js",
+          "specifiers": [
+            "ServerSessionService"
+          ]
+        },
+        {
+          "source": "../entities/session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        },
+        {
+          "source": "../repositories/session.repository.js",
+          "specifiers": [
+            "SessionRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerSessionModule"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/modules/teacher.module.ts": {
+      "filePath": "libs/server/entities/src/modules/teacher.module.ts",
+      "contentHash": "2a8f9b49d5918c7ef006a3e63f2fb5d10448a6c95fbbb683d015ac137fa3e51f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerTeacherModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "../controllers/teacher.controller.js",
+          "specifiers": [
+            "ServerTeacherController"
+          ]
+        },
+        {
+          "source": "../services/teacher.service.js",
+          "specifiers": [
+            "ServerTeacherService"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerTeacherModule"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/repositories/course.repository.ts": {
+      "filePath": "libs/server/entities/src/repositories/course.repository.ts",
+      "contentHash": "d6e5058c2c045578a7423fb763efb228644f14d485a351a84fb4cf130ed4f89a",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CourseRepository",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findById",
+            "findByIdWithRelations",
+            "findByNameAndDegree",
+            "findByTeacherAndSession",
+            "create",
+            "save",
+            "delete",
+            "clearCascade"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 56
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "DeleteResult",
+            "Repository"
+          ]
+        },
+        {
+          "source": "../entities/course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "CourseRepository"
+      ],
+      "totalLines": 63,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/repositories/degree.repository.ts": {
+      "filePath": "libs/server/entities/src/repositories/degree.repository.ts",
+      "contentHash": "d89c6c01cd78900dfe1bd7577fac730a97cf1c6026c09e71eac75132393c2ad5",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DegreeRepository",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findById",
+            "findByIds",
+            "findByMacroArea",
+            "findByNameTypeYear",
+            "create",
+            "save",
+            "delete",
+            "clearCascade"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "DeleteResult",
+            "In",
+            "Repository"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        },
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "DegreeType",
+            "DegreeYear",
+            "MacroArea"
+          ]
+        }
+      ],
+      "exports": [
+        "DegreeRepository"
+      ],
+      "totalLines": 55,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/repositories/exam.repository.ts": {
+      "filePath": "libs/server/entities/src/repositories/exam.repository.ts",
+      "contentHash": "1eb09d3d8f837d00529a9cc0e7a67342cf74dd67a37a941e09cf06bb505d35b1",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ExamRepository",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findById",
+            "findBySessionDegreeDate",
+            "create",
+            "save",
+            "delete"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 52
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "DeleteResult",
+            "Repository"
+          ]
+        },
+        {
+          "source": "../entities/exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "ExamRepository"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/repositories/session.repository.ts": {
+      "filePath": "libs/server/entities/src/repositories/session.repository.ts",
+      "contentHash": "f1a542084aac0bbf5dad553ef1af9a9a59182be104df054c5d9c55aef9841462",
+      "functions": [],
+      "classes": [
+        {
+          "name": "SessionRepository",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findById",
+            "findByIdWithDegrees",
+            "findActiveByTeacher",
+            "create",
+            "save",
+            "delete",
+            "clearCascade"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 53
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "DeleteResult",
+            "Repository"
+          ]
+        },
+        {
+          "source": "../entities/session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        },
+        {
+          "source": "../entities/course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        }
+      ],
+      "exports": [
+        "SessionRepository"
+      ],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/repositories/teacher.repository.ts": {
+      "filePath": "libs/server/entities/src/repositories/teacher.repository.ts",
+      "contentHash": "4e5c7470aae4834934131c44f9a66958e1900d77e0c317c3dd1209509b463794",
+      "functions": [],
+      "classes": [
+        {
+          "name": "TeacherRepository",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findById",
+            "findByEmail",
+            "findAllUserEmails",
+            "create",
+            "save",
+            "delete",
+            "clearTeachers"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 45
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "DeleteResult",
+            "Repository"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "TeacherRepository"
+      ],
+      "totalLines": 53,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/services/course.service.ts": {
+      "filePath": "libs/server/entities/src/services/course.service.ts",
+      "contentHash": "4d55424d3a13b0b65161f6d881daafcf1ffad4f5ea153b68eb7d7225744b930a",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerCourseService",
+          "methods": [
+            "constructor",
+            "findByTeacherAndSession",
+            "findDegreesByTeacher",
+            "findAll",
+            "findOne",
+            "toListItem",
+            "create",
+            "update",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 159
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "ConflictException",
+            "Injectable",
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "../entities/course.entity.js",
+          "specifiers": [
+            "CourseEntity"
+          ]
+        },
+        {
+          "source": "../repositories/course.repository.js",
+          "specifiers": [
+            "CourseRepository"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-course.dto.js",
+          "specifiers": [
+            "CreateCourseDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-course.dto.js",
+          "specifiers": [
+            "UpdateCourseDto"
+          ]
+        },
+        {
+          "source": "../interfaces/course-list-item.js",
+          "specifiers": [
+            "CourseListItem"
+          ]
+        },
+        {
+          "source": "../assets/courses-data.js",
+          "specifiers": [
+            "seedCourses"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerCourseService"
+      ],
+      "totalLines": 171,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/services/degree.service.ts": {
+      "filePath": "libs/server/entities/src/services/degree.service.ts",
+      "contentHash": "0b2ccdb982f481bd4cf5b04863b58d7b090d72e8614969e2c736127c52d366db",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerDegreeService",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "toListItem",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 82
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "ConflictException",
+            "Injectable",
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "../entities/degree.entity.js",
+          "specifiers": [
+            "DegreeEntity"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-degree.dto.js",
+          "specifiers": [
+            "CreateDegreeDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-degree.dto.js",
+          "specifiers": [
+            "UpdateDegreeDto"
+          ]
+        },
+        {
+          "source": "../interfaces/degree-list-item.js",
+          "specifiers": [
+            "DegreeListItem"
+          ]
+        },
+        {
+          "source": "../assets/courses-data.js",
+          "specifiers": [
+            "seedDegrees"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerDegreeService"
+      ],
+      "totalLines": 92,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/services/exam.service.ts": {
+      "filePath": "libs/server/entities/src/services/exam.service.ts",
+      "contentHash": "f375d03a8a3713c2d0459ddb957a6eba400e47ecbc6b80623b6585773ca98ce9",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerExamService",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "remove",
+            "seed",
+            "toListItem",
+            "validateExamDate",
+            "validateInsertionWindow"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 271
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "BadRequestException",
+            "ConflictException",
+            "ForbiddenException",
+            "Injectable",
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "../entities/exam.entity.js",
+          "specifiers": [
+            "ExamEntity"
+          ]
+        },
+        {
+          "source": "../repositories/exam.repository.js",
+          "specifiers": [
+            "ExamRepository"
+          ]
+        },
+        {
+          "source": "../repositories/session.repository.js",
+          "specifiers": [
+            "SessionRepository"
+          ]
+        },
+        {
+          "source": "../repositories/course.repository.js",
+          "specifiers": [
+            "CourseRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-exam.dto.js",
+          "specifiers": [
+            "CreateExamDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-exam.dto.js",
+          "specifiers": [
+            "UpdateExamDto"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../interfaces/exam-list-item.js",
+          "specifiers": [
+            "ExamListItem"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerExamService"
+      ],
+      "totalLines": 286,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/services/session.service.ts": {
+      "filePath": "libs/server/entities/src/services/session.service.ts",
+      "contentHash": "2d2b28dd8480429b80acd9278f26281bf6745618e72b1440516120298b03620d",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerSessionService",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findActiveByTeacher",
+            "findOne",
+            "toListItem",
+            "create",
+            "update",
+            "remove",
+            "seed",
+            "validateDates"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 140
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "BadRequestException",
+            "Injectable",
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "../repositories/session.repository.js",
+          "specifiers": [
+            "SessionRepository"
+          ]
+        },
+        {
+          "source": "../repositories/degree.repository.js",
+          "specifiers": [
+            "DegreeRepository"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-session.dto.js",
+          "specifiers": [
+            "CreateSessionDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-session.dto.js",
+          "specifiers": [
+            "UpdateSessionDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/degree.enum.js",
+          "specifiers": [
+            "MacroArea"
+          ]
+        },
+        {
+          "source": "../entities/session.entity.js",
+          "specifiers": [
+            "SessionEntity"
+          ]
+        },
+        {
+          "source": "../interfaces/session-list-item.js",
+          "specifiers": [
+            "SessionListItem"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerSessionService"
+      ],
+      "totalLines": 151,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/src/services/teacher.service.ts": {
+      "filePath": "libs/server/entities/src/services/teacher.service.ts",
+      "contentHash": "e06409aacf3d8581a944c7b2b5d00f24025108b9428b88aa2dea894273c3a11c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerTeacherService",
+          "methods": [
+            "constructor",
+            "findAll",
+            "findOne",
+            "create",
+            "update",
+            "toListItem",
+            "remove",
+            "seed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 89
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "ConflictException",
+            "Injectable",
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "../entities/teacher.entity.js",
+          "specifiers": [
+            "TeacherEntity"
+          ]
+        },
+        {
+          "source": "../repositories/teacher.repository.js",
+          "specifiers": [
+            "TeacherRepository"
+          ]
+        },
+        {
+          "source": "../entities/dto/create-teacher.dto.js",
+          "specifiers": [
+            "CreateTeacherDto"
+          ]
+        },
+        {
+          "source": "../entities/dto/update-teacher.dto.js",
+          "specifiers": [
+            "UpdateTeacherDto"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../interfaces/teacher-list-item.js",
+          "specifiers": [
+            "TeacherListItem"
+          ]
+        },
+        {
+          "source": "../assets/courses-data.js",
+          "specifiers": [
+            "seedTeachers"
+          ]
+        },
+        {
+          "source": "bcrypt",
+          "specifiers": [
+            "* as bcrypt"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerTeacherService"
+      ],
+      "totalLines": 101,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/tsconfig.json": {
+      "filePath": "libs/server/entities/tsconfig.json",
+      "contentHash": "73ad0a27b98ec081c04e4ce2bc64bbae2c1528d45a12fb7731e2ad2c340031f7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/tsconfig.lib.json": {
+      "filePath": "libs/server/entities/tsconfig.lib.json",
+      "contentHash": "a91eab0a707b47c680bae55f4faca09a347e51b55005e79568179d88fe7ec55d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/entities/tsconfig.tsbuildinfo": {
+      "filePath": "libs/server/entities/tsconfig.tsbuildinfo",
+      "contentHash": "41bee697aacfc9e0d3682f879bd33741ef4a7a773b16d411fd57298fb36fa2e5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "libs/server/security/package.json": {
+      "filePath": "libs/server/security/package.json",
+      "contentHash": "128c9c10fed58f9c13396d45806501299323d5bf6d73f8997d7b08bdebc38161",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/README.md": {
+      "filePath": "libs/server/security/README.md",
+      "contentHash": "f95f6e6ae469eb5716a17f602246500268855b395ad8211d7981021adc5ddb82",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/src/index.ts": {
+      "filePath": "libs/server/security/src/index.ts",
+      "contentHash": "acd0bef2503d6aeea2b118fcddb31f5c0b3e62e3c4fd1e5e93addd3a99ec6aa5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/src/lib/decorators/current-user.decorator.ts": {
+      "filePath": "libs/server/security/src/lib/decorators/current-user.decorator.ts",
+      "contentHash": "06a333357027ddda189a2fa60c07d1f0db9cb8ad9f58800dc33f3565650e4608",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "createParamDecorator",
+            "ExecutionContext"
+          ]
+        }
+      ],
+      "exports": [
+        "CurrentUser"
+      ],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/src/lib/decorators/roles.decorator.ts": {
+      "filePath": "libs/server/security/src/lib/decorators/roles.decorator.ts",
+      "contentHash": "698c141533e8eca4a35d86528d8a6b65f22a33892a629c348e3965b36d89283f",
+      "functions": [
+        {
+          "name": "Roles",
+          "params": [
+            "...roles"
+          ],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "SetMetadata"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "ROLES_KEY",
+        "Roles"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/src/lib/guards/jwt-auth.guard.ts": {
+      "filePath": "libs/server/security/src/lib/guards/jwt-auth.guard.ts",
+      "contentHash": "fdce374d5cc27e834e965b3029aea3f5b88993a2d5f22dd57ecc8bc667bbb6b9",
+      "functions": [],
+      "classes": [
+        {
+          "name": "JwtAuthGuard",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/passport",
+          "specifiers": [
+            "AuthGuard"
+          ]
+        }
+      ],
+      "exports": [
+        "JwtAuthGuard"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/src/lib/guards/roles.guard.ts": {
+      "filePath": "libs/server/security/src/lib/guards/roles.guard.ts",
+      "contentHash": "a79fba95a3e3959491b0aa02ba85d77804b6373c527613cd082e3b9ffbd56b6f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "RolesGuard",
+          "methods": [
+            "constructor",
+            "canActivate"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "CanActivate",
+            "ExecutionContext",
+            "ForbiddenException",
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "Reflector"
+          ]
+        },
+        {
+          "source": "@server/users",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "../decorators/roles.decorator",
+          "specifiers": [
+            "ROLES_KEY"
+          ]
+        }
+      ],
+      "exports": [
+        "RolesGuard"
+      ],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/tsconfig.json": {
+      "filePath": "libs/server/security/tsconfig.json",
+      "contentHash": "73ad0a27b98ec081c04e4ce2bc64bbae2c1528d45a12fb7731e2ad2c340031f7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/security/tsconfig.lib.json": {
+      "filePath": "libs/server/security/tsconfig.lib.json",
+      "contentHash": "8b6f2bbe6b30c4991f5a01f2ae4994576fcf9192b5d3ad40e68e5b694f960641",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/eslint.config.mjs": {
+      "filePath": "libs/server/users/eslint.config.mjs",
+      "contentHash": "3517bf657170b1838b69132ceefbbeea29f6534dec7c2895712080b035b6c58c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/jest.config.cts": {
+      "filePath": "libs/server/users/jest.config.cts",
+      "contentHash": "3ab92d0779d9465569de66450f28cabecd6301491adc3f30a0320158266d1215",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "libs/server/users/package.json": {
+      "filePath": "libs/server/users/package.json",
+      "contentHash": "0e51f1c9bc151c574899fa61771ed1e6a9f3fed95c4eac8f71c3b27a6eecf3b2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/README.md": {
+      "filePath": "libs/server/users/README.md",
+      "contentHash": "805bb18e9f57a39476dcd24d7eb649015f72ff0779490e4c8da33cc04e1d7913",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/index.ts": {
+      "filePath": "libs/server/users/src/index.ts",
+      "contentHash": "d813e9aa5f104503713d90090e6a22750316d3fcfa40f0de7c7d6184a62d9766",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/dto/create-user.dto.ts": {
+      "filePath": "libs/server/users/src/lib/dto/create-user.dto.ts",
+      "contentHash": "ece7719cf12663c99047d47e17324b02a92aeb5890e17ad0522d38c890243327",
+      "functions": [],
+      "classes": [
+        {
+          "name": "CreateUserDto",
+          "methods": [],
+          "properties": [
+            "name",
+            "surname",
+            "email",
+            "password",
+            "role"
+          ],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "imports": [
+        {
+          "source": "class-validator",
+          "specifiers": [
+            "IsEmail",
+            "IsEnum",
+            "IsNotEmpty",
+            "IsString",
+            "Matches",
+            "MinLength"
+          ]
+        },
+        {
+          "source": "./user-role.enum",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateUserDto"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/dto/update-user.dto.ts": {
+      "filePath": "libs/server/users/src/lib/dto/update-user.dto.ts",
+      "contentHash": "a5390d74cd7bef82444979efa437904d9e985c2c2787a6c678e10c79affada9d",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UpdateUserDto",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "imports": [
+        {
+          "source": "./create-user.dto",
+          "specifiers": [
+            "CreateUserDto"
+          ]
+        },
+        {
+          "source": "@nestjs/mapped-types",
+          "specifiers": [
+            "PartialType"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateUserDto"
+      ],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/dto/user-role.enum.ts": {
+      "filePath": "libs/server/users/src/lib/dto/user-role.enum.ts",
+      "contentHash": "cb156bc3f3472dcf33c58e4152ec11324168fa4237a1de7450d9d30658835590",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/user.entity.ts": {
+      "filePath": "libs/server/users/src/lib/user.entity.ts",
+      "contentHash": "bb2942a7e0eea8d1f00ecc9c4d1bcd4a42e0964ab909ed2a820ee1823d480c02",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UserEntity",
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "surname",
+            "email",
+            "passwordHash",
+            "role",
+            "mustChangePassword"
+          ],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Entity",
+            "PrimaryGeneratedColumn",
+            "Column",
+            "TableInheritance"
+          ]
+        },
+        {
+          "source": "./dto/user-role.enum.js",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "UserEntity"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/users.controller.ts": {
+      "filePath": "libs/server/users/src/lib/users.controller.ts",
+      "contentHash": "99829e61e3ff5178dc442cdbd0d22e0d07a0f63e5feaeb4a93d36ea695e66398",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerUsersController",
+          "methods": [
+            "constructor",
+            "getUsers",
+            "getMe",
+            "getInternUsers",
+            "getOneUser",
+            "create",
+            "populateDb",
+            "update",
+            "removeUser"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 85
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Delete",
+            "Get",
+            "HttpCode",
+            "Param",
+            "Patch",
+            "Post",
+            "Query",
+            "ParseIntPipe",
+            "ParseEnumPipe",
+            "ValidationPipe",
+            "UseGuards"
+          ]
+        },
+        {
+          "source": "./users.service",
+          "specifiers": [
+            "ServerUsersService"
+          ]
+        },
+        {
+          "source": "@nestjs/swagger",
+          "specifiers": [
+            "ApiTags",
+            "ApiBody",
+            "ApiQuery",
+            "ApiBearerAuth"
+          ]
+        },
+        {
+          "source": "./dto/create-user.dto",
+          "specifiers": [
+            "CreateUserDto"
+          ]
+        },
+        {
+          "source": "./dto/update-user.dto",
+          "specifiers": [
+            "UpdateUserDto"
+          ]
+        },
+        {
+          "source": "./dto/user-role.enum",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "@server/security",
+          "specifiers": [
+            "CurrentUser",
+            "JwtAuthGuard",
+            "Roles",
+            "RolesGuard"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerUsersController"
+      ],
+      "totalLines": 96,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/users.module.ts": {
+      "filePath": "libs/server/users/src/lib/users.module.ts",
+      "contentHash": "301b23ac67c482887841d7b49efb90f2d5e4483a485184278b646f74dea3b5ab",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerUsersModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "TypeOrmModule"
+          ]
+        },
+        {
+          "source": "./user.entity",
+          "specifiers": [
+            "UserEntity"
+          ]
+        },
+        {
+          "source": "./users.controller",
+          "specifiers": [
+            "ServerUsersController"
+          ]
+        },
+        {
+          "source": "./users.service",
+          "specifiers": [
+            "ServerUsersService"
+          ]
+        },
+        {
+          "source": "./users.repository",
+          "specifiers": [
+            "UsersRepository"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerUsersModule"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/users.repository.ts": {
+      "filePath": "libs/server/users/src/lib/users.repository.ts",
+      "contentHash": "4f97e689d2e244e98d6f3b31e610605b16a650920f31dcfed771b06106cb73a2",
+      "functions": [],
+      "classes": [
+        {
+          "name": "UsersRepository",
+          "methods": [
+            "constructor",
+            "findByEmail",
+            "findById",
+            "createOne",
+            "updatePassword",
+            "findAll",
+            "updateOne",
+            "deleteOne"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 56
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@nestjs/typeorm",
+          "specifiers": [
+            "InjectRepository"
+          ]
+        },
+        {
+          "source": "./user.entity",
+          "specifiers": [
+            "UserEntity"
+          ]
+        },
+        {
+          "source": "typeorm",
+          "specifiers": [
+            "Repository"
+          ]
+        },
+        {
+          "source": "./dto/create-user.dto",
+          "specifiers": [
+            "CreateUserDto"
+          ]
+        },
+        {
+          "source": "./dto/update-user.dto",
+          "specifiers": [
+            "UpdateUserDto"
+          ]
+        },
+        {
+          "source": "./dto/user-role.enum",
+          "specifiers": [
+            "UserRole"
+          ]
+        }
+      ],
+      "exports": [
+        "UsersRepository"
+      ],
+      "totalLines": 66,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/src/lib/users.service.ts": {
+      "filePath": "libs/server/users/src/lib/users.service.ts",
+      "contentHash": "18a625c7008399fb8b36f1268690a635a4427a1f7f39dab797d015249a0acbec",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ServerUsersService",
+          "methods": [
+            "constructor",
+            "seed",
+            "findByEmail",
+            "getOneUser",
+            "getUsers",
+            "create",
+            "updatePassword",
+            "update",
+            "removeUser"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 100
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable",
+            "NotFoundException",
+            "ConflictException"
+          ]
+        },
+        {
+          "source": "./dto/create-user.dto",
+          "specifiers": [
+            "CreateUserDto"
+          ]
+        },
+        {
+          "source": "./dto/update-user.dto",
+          "specifiers": [
+            "UpdateUserDto"
+          ]
+        },
+        {
+          "source": "./users.repository",
+          "specifiers": [
+            "UsersRepository"
+          ]
+        },
+        {
+          "source": "./user.entity",
+          "specifiers": [
+            "UserEntity"
+          ]
+        },
+        {
+          "source": "./dto/user-role.enum",
+          "specifiers": [
+            "UserRole"
+          ]
+        },
+        {
+          "source": "bcrypt",
+          "specifiers": [
+            "* as bcrypt"
+          ]
+        }
+      ],
+      "exports": [
+        "ServerUsersService"
+      ],
+      "totalLines": 110,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/tsconfig.json": {
+      "filePath": "libs/server/users/tsconfig.json",
+      "contentHash": "1d3d16945976fa1ed70f5bbfc155f733f3a1fd47c1dd9c50239d230a9858f589",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "libs/server/users/tsconfig.lib.json": {
+      "filePath": "libs/server/users/tsconfig.lib.json",
+      "contentHash": "8e108632ab397e8b7484aa84a7eeab8bde54ca30c8b9e5e513e2571339a0af42",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/01-overview.md": {
+      "filePath": "md/backend/01-overview.md",
+      "contentHash": "c938ee5c35cdff759c19754806b8021203012acd84fc3d270704d7c4c38d1c5e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 69,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/02-database.md": {
+      "filePath": "md/backend/02-database.md",
+      "contentHash": "f38083f9a02c4c702bbc49faec69222f17ce98a76e04d0c498990df03da42321",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/03-users.md": {
+      "filePath": "md/backend/03-users.md",
+      "contentHash": "31ba12740ece59448c729f22be536ca95d967677436b7a6d525028f776b146cc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 116,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/04-auth.md": {
+      "filePath": "md/backend/04-auth.md",
+      "contentHash": "4854bfa5687371abc3840fdfe8f92a83278be1e97623f54108a0580a8d08e06d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 137,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/05-security.md": {
+      "filePath": "md/backend/05-security.md",
+      "contentHash": "6783cc5ce23cb395aba2e747809070bcedd8ca6c9743c604b1a8cd309dede2c6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/06-entities.md": {
+      "filePath": "md/backend/06-entities.md",
+      "contentHash": "bb8236b7a33b5225e464b12776137b0260df66ae2e588917b6ab24660c87824d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 309,
+      "hasStructuralAnalysis": true
+    },
+    "md/backend/07-api-app.md": {
+      "filePath": "md/backend/07-api-app.md",
+      "contentHash": "0d56e0ac75365ee049f1a7c219caecc5d0f84072e43e30c88993dd697957756e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/01-overview.md": {
+      "filePath": "md/frontend/01-overview.md",
+      "contentHash": "c309f8111c534322c85068e2d3666d6cbcffdea2b9c5763cbbea3121db8aa83a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/02-auth.md": {
+      "filePath": "md/frontend/02-auth.md",
+      "contentHash": "d368cf7f206428ba04756949501926d945373145e9be90538ab83b33d0bfd2d5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 78,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/03-teacher.md": {
+      "filePath": "md/frontend/03-teacher.md",
+      "contentHash": "453408a8449e1c98bb037684c8a0e98cbaa537771bdbae44f7f48583597a62b0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 148,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/04-segreteria.md": {
+      "filePath": "md/frontend/04-segreteria.md",
+      "contentHash": "ace4988ea6465c39874a47a73300eec4bc344c4ac6db9e86394c793fb4e079b3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 161,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/05-components.md": {
+      "filePath": "md/frontend/05-components.md",
+      "contentHash": "411d14c5923039d0acfc43a68c35cc4556365777cdd94e0c6fcbfff5c5781448",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 96,
+      "hasStructuralAnalysis": true
+    },
+    "md/frontend/06-utils.md": {
+      "filePath": "md/frontend/06-utils.md",
+      "contentHash": "6520a3b3c101105b6be4e356a880c682475f794bdaeb15d58f653fce6c11fc54",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "md/README.md": {
+      "filePath": "md/README.md",
+      "contentHash": "3e3a6b8d278d83dbff6f4554edad09b4b7a02d1f5d667dc44203a6750f362ff0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "nx.json": {
+      "filePath": "nx.json",
+      "contentHash": "e056ccf3388870325175544866c8eb86e725d01ccb42de77763469453f6a7902",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": true
+    },
+    "opencode.json": {
+      "filePath": "opencode.json",
+      "contentHash": "977c2239e4ab7e9b959bac18fd4b3d2eba9292ba8a9ec6b03f280cd666998863",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "2418188de98dfdc1351c6cfa4359c4a8a4121a82324952ca09074dc8a20a8425",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 126,
+      "hasStructuralAnalysis": true
+    },
+    "packages/.gitkeep": {
+      "filePath": "packages/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "d313267a379c3d069497b438668c174c727fe8ef3d0bc2365e27201b1b15d188",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 106,
+      "hasStructuralAnalysis": true
+    },
+    "Requisiti progetto web.txt": {
+      "filePath": "Requisiti progetto web.txt",
+      "contentHash": "df3bca7b329c981cb1221121327de8bf2c89d7e720ffe757f51343a58c129640",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": false
+    },
+    "tools/parse-corsi.mjs": {
+      "filePath": "tools/parse-corsi.mjs",
+      "contentHash": "1e4635ef66a647818ab92510b02b2a5965fd923fad2625274c3783e84bdc9fc6",
+      "functions": [
+        {
+          "name": "stripAccents",
+          "params": [
+            "s"
+          ],
+          "exported": false,
+          "lineCount": 2
+        },
+        {
+          "name": "parseDocente",
+          "params": [
+            "raw"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "degreeKey",
+          "params": [
+            "n",
+            "t",
+            "y"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "q",
+          "params": [
+            "s"
+          ],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:fs",
+          "specifiers": [
+            "readFileSync",
+            "writeFileSync",
+            "readdirSync"
+          ]
+        },
+        {
+          "source": "node:path",
+          "specifiers": [
+            "join",
+            "dirname"
+          ]
+        },
+        {
+          "source": "node:url",
+          "specifiers": [
+            "fileURLToPath"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 208,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.base.json": {
+      "filePath": "tsconfig.base.json",
+      "contentHash": "a9fa2c9b96627f33c00f6e197b2b1ad413858e956cc225a6fe2bc2c937065960",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "e805a270077c8bff49640a3fb052e3df6b0afee8646d3ca1f21e8f446bdd0eec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/server/entities/src/assets/courses-data.ts",
+      "type": "file",
+      "name": "courses-data.ts",
+      "filePath": "libs/server/entities/src/assets/courses-data.ts",
+      "summary": "Large static seed dataset exporting teachers, degrees and courses arrays used to populate the database, with a mkCourse helper that builds course seed records.",
+      "tags": ["data-model", "seed-data", "factory", "fixtures"],
+      "complexity": "complex",
+      "languageNotes": "Nearly 3900 lines of inline literal seed data; a single mkCourse factory keeps course entries terse."
+    },
+    {
+      "id": "function:libs/server/entities/src/assets/courses-data.ts:mkCourse",
+      "type": "function",
+      "name": "mkCourse",
+      "filePath": "libs/server/entities/src/assets/courses-data.ts",
+      "lineRange": [1523, 1531],
+      "summary": "Factory that assembles a single course seed record from course name, teacher email, degree name, degree type and degree year.",
+      "tags": ["factory", "seed-data", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/controllers/course.controller.ts",
+      "type": "file",
+      "name": "course.controller.ts",
+      "filePath": "libs/server/entities/src/controllers/course.controller.ts",
+      "summary": "NestJS REST controller exposing CRUD plus teacher/session lookup and seed endpoints for courses, delegating to ServerCourseService.",
+      "tags": ["api-handler", "controller", "rest", "course"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/controllers/course.controller.ts:ServerCourseController",
+      "type": "class",
+      "name": "ServerCourseController",
+      "filePath": "libs/server/entities/src/controllers/course.controller.ts",
+      "lineRange": [14, 117],
+      "summary": "Course HTTP controller with findAll, findByTeacherAndSession, findDegreesByTeacher, findOne, create, update, remove and seed handlers.",
+      "tags": ["api-handler", "controller", "rest"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/controllers/exam.controller.ts",
+      "type": "file",
+      "name": "exam.controller.ts",
+      "filePath": "libs/server/entities/src/controllers/exam.controller.ts",
+      "summary": "NestJS REST controller for exam bookings, handling filtered listing, CRUD and seed while injecting the current authenticated user on mutations.",
+      "tags": ["api-handler", "controller", "rest", "exam"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/controllers/exam.controller.ts:ServerExamController",
+      "type": "class",
+      "name": "ServerExamController",
+      "filePath": "libs/server/entities/src/controllers/exam.controller.ts",
+      "lineRange": [24, 117],
+      "summary": "Exam HTTP controller with findAll (filtered by session/degree/year), findOne, create, update, remove and seed handlers, passing CurrentUser to write operations.",
+      "tags": ["api-handler", "controller", "rest", "security"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/controllers/teacher.controller.ts",
+      "type": "file",
+      "name": "teacher.controller.ts",
+      "filePath": "libs/server/entities/src/controllers/teacher.controller.ts",
+      "summary": "NestJS REST controller exposing CRUD and seed endpoints for teachers, delegating to ServerTeacherService.",
+      "tags": ["api-handler", "controller", "rest", "teacher"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/controllers/teacher.controller.ts:ServerTeacherController",
+      "type": "class",
+      "name": "ServerTeacherController",
+      "filePath": "libs/server/entities/src/controllers/teacher.controller.ts",
+      "lineRange": [22, 97],
+      "summary": "Teacher HTTP controller with findAll, findOne, create, update, remove and seed handlers.",
+      "tags": ["api-handler", "controller", "rest"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/course.entity.ts",
+      "type": "file",
+      "name": "course.entity.ts",
+      "filePath": "libs/server/entities/src/entities/course.entity.ts",
+      "summary": "TypeORM entity for courses, related to a teacher, a degree and the exams scheduled for the course.",
+      "tags": ["data-model", "entity", "typeorm", "course"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/entities/src/entities/course.entity.ts:CourseEntity",
+      "type": "class",
+      "name": "CourseEntity",
+      "filePath": "libs/server/entities/src/entities/course.entity.ts",
+      "lineRange": [8, 26],
+      "summary": "TypeORM CourseEntity with id, courseName and relations to exams, teacher and degree.",
+      "tags": ["data-model", "entity", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "type": "file",
+      "name": "create-course.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "summary": "Validation DTO describing the payload for creating a course (courseName, teacherId, degreeId).",
+      "tags": ["dto", "validation", "course"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "type": "file",
+      "name": "create-exam.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "summary": "Validation DTO describing the payload for creating an exam booking (session, course, degree, date and time fields).",
+      "tags": ["dto", "validation", "exam"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "type": "file",
+      "name": "create-teacher.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "summary": "Validation DTO describing the payload for creating a teacher (name, surname, email, password).",
+      "tags": ["dto", "validation", "teacher"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "type": "file",
+      "name": "update-course.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "summary": "Validation DTO describing the payload for updating a course (courseName, teacherId, degreeId).",
+      "tags": ["dto", "validation", "course"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "type": "file",
+      "name": "update-exam.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "summary": "Validation DTO describing the payload for updating an exam booking (course, degree, date and time fields).",
+      "tags": ["dto", "validation", "exam"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "type": "file",
+      "name": "update-teacher.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "summary": "Validation DTO describing the payload for updating a teacher (name, surname, email, password).",
+      "tags": ["dto", "validation", "teacher"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/exam.entity.ts",
+      "type": "file",
+      "name": "exam.entity.ts",
+      "filePath": "libs/server/entities/src/entities/exam.entity.ts",
+      "summary": "TypeORM entity for exam bookings, linking a course, session, teacher and degree with date and time fields.",
+      "tags": ["data-model", "entity", "typeorm", "exam"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/entities/src/entities/exam.entity.ts:ExamEntity",
+      "type": "class",
+      "name": "ExamEntity",
+      "filePath": "libs/server/entities/src/entities/exam.entity.ts",
+      "lineRange": [9, 37],
+      "summary": "TypeORM ExamEntity with id, examDate, startTime, endTime and relations to course, session, teacher and degree.",
+      "tags": ["data-model", "entity", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/teacher.entity.ts",
+      "type": "file",
+      "name": "teacher.entity.ts",
+      "filePath": "libs/server/entities/src/entities/teacher.entity.ts",
+      "summary": "TypeORM ChildEntity for teachers (single-table inheritance from UserEntity) holding course and exam relations.",
+      "tags": ["data-model", "entity", "typeorm", "teacher"],
+      "complexity": "simple",
+      "languageNotes": "Uses TypeORM single-table inheritance via @ChildEntity, adding only relation columns to the base user table."
+    },
+    {
+      "id": "class:libs/server/entities/src/entities/teacher.entity.ts:TeacherEntity",
+      "type": "class",
+      "name": "TeacherEntity",
+      "filePath": "libs/server/entities/src/entities/teacher.entity.ts",
+      "lineRange": [7, 16],
+      "summary": "TeacherEntity extends UserEntity via single-table inheritance, adding courses and exams relations.",
+      "tags": ["data-model", "entity", "typeorm", "inheritance"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/interfaces/course-list-item.ts",
+      "type": "file",
+      "name": "course-list-item.ts",
+      "filePath": "libs/server/entities/src/interfaces/course-list-item.ts",
+      "summary": "Type definition describing the flattened course shape returned to API clients in list responses.",
+      "tags": ["type-definition", "interface", "course"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/interfaces/exam-list-item.ts",
+      "type": "file",
+      "name": "exam-list-item.ts",
+      "filePath": "libs/server/entities/src/interfaces/exam-list-item.ts",
+      "summary": "Type definition describing the flattened exam shape returned to API clients in list responses.",
+      "tags": ["type-definition", "interface", "exam"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/interfaces/teacher-list-item.ts",
+      "type": "file",
+      "name": "teacher-list-item.ts",
+      "filePath": "libs/server/entities/src/interfaces/teacher-list-item.ts",
+      "summary": "Type definition describing the flattened teacher shape returned to API clients in list responses.",
+      "tags": ["type-definition", "interface", "teacher"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/modules/course.module.ts",
+      "type": "file",
+      "name": "course.module.ts",
+      "filePath": "libs/server/entities/src/modules/course.module.ts",
+      "summary": "NestJS module wiring the course controller, service, repositories and TypeORM feature entities for the course feature.",
+      "tags": ["module", "nestjs", "course", "wiring"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/modules/exam.module.ts",
+      "type": "file",
+      "name": "exam.module.ts",
+      "filePath": "libs/server/entities/src/modules/exam.module.ts",
+      "summary": "NestJS module wiring the exam controller, service, repositories and TypeORM feature entities for the exam-booking feature.",
+      "tags": ["module", "nestjs", "exam", "wiring"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/modules/teacher.module.ts",
+      "type": "file",
+      "name": "teacher.module.ts",
+      "filePath": "libs/server/entities/src/modules/teacher.module.ts",
+      "summary": "NestJS module wiring the teacher controller, service and repository for the teacher feature.",
+      "tags": ["module", "nestjs", "teacher", "wiring"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/repositories/course.repository.ts",
+      "type": "file",
+      "name": "course.repository.ts",
+      "filePath": "libs/server/entities/src/repositories/course.repository.ts",
+      "summary": "Data-access layer wrapping the TypeORM course repository with query helpers including teacher/session joins and cascade clearing.",
+      "tags": ["repository", "data-access", "typeorm", "course"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/repositories/course.repository.ts:CourseRepository",
+      "type": "class",
+      "name": "CourseRepository",
+      "filePath": "libs/server/entities/src/repositories/course.repository.ts",
+      "lineRange": [7, 62],
+      "summary": "Repository for CourseEntity with find/create/save/delete helpers plus query-builder joins for teacher-and-session lookups and cascade clearing.",
+      "tags": ["repository", "data-access", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/repositories/exam.repository.ts",
+      "type": "file",
+      "name": "exam.repository.ts",
+      "filePath": "libs/server/entities/src/repositories/exam.repository.ts",
+      "summary": "Data-access layer wrapping the TypeORM exam repository with filtered listing and session/degree/date uniqueness lookups.",
+      "tags": ["repository", "data-access", "typeorm", "exam"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/repositories/exam.repository.ts:ExamRepository",
+      "type": "class",
+      "name": "ExamRepository",
+      "filePath": "libs/server/entities/src/repositories/exam.repository.ts",
+      "lineRange": [7, 58],
+      "summary": "Repository for ExamEntity with findAll (filtered via query builder), findBySessionDegreeDate uniqueness check, and create/save/delete helpers.",
+      "tags": ["repository", "data-access", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/repositories/teacher.repository.ts",
+      "type": "file",
+      "name": "teacher.repository.ts",
+      "filePath": "libs/server/entities/src/repositories/teacher.repository.ts",
+      "summary": "Data-access layer wrapping the TypeORM teacher repository with email lookups and raw queries against the shared user table.",
+      "tags": ["repository", "data-access", "typeorm", "teacher"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository",
+      "type": "class",
+      "name": "TeacherRepository",
+      "filePath": "libs/server/entities/src/repositories/teacher.repository.ts",
+      "lineRange": [8, 52],
+      "summary": "Repository for TeacherEntity with find/create/save/delete, findByEmail, findAllUserEmails and clearTeachers helpers spanning the STI user table.",
+      "tags": ["repository", "data-access", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/services/course.service.ts",
+      "type": "file",
+      "name": "course.service.ts",
+      "filePath": "libs/server/entities/src/services/course.service.ts",
+      "summary": "Business-logic service for courses handling CRUD, teacher/session listing, list-item mapping, validation and idempotent seeding from the static dataset.",
+      "tags": ["service", "business-logic", "course", "seed-data"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService",
+      "type": "class",
+      "name": "ServerCourseService",
+      "filePath": "libs/server/entities/src/services/course.service.ts",
+      "lineRange": [12, 170],
+      "summary": "Course service orchestrating course, teacher and degree repositories for CRUD, degree listing, toListItem mapping and dataset seeding.",
+      "tags": ["service", "business-logic", "orchestration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/services/exam.service.ts",
+      "type": "file",
+      "name": "exam.service.ts",
+      "filePath": "libs/server/entities/src/services/exam.service.ts",
+      "summary": "Business-logic service for exam bookings enforcing scheduling constraints (weekend exclusion, insertion window, one-per-day uniqueness) across CRUD and seeding.",
+      "tags": ["service", "business-logic", "exam", "validation"],
+      "complexity": "complex",
+      "languageNotes": "Centralizes the core scheduling rules via validateExamDate and validateInsertionWindow helpers reused across create/update/remove."
+    },
+    {
+      "id": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService",
+      "type": "class",
+      "name": "ServerExamService",
+      "filePath": "libs/server/entities/src/services/exam.service.ts",
+      "lineRange": [15, 285],
+      "summary": "Exam service orchestrating exam, session, course, degree and teacher repositories with date/window validation, uniqueness enforcement and seeding.",
+      "tags": ["service", "business-logic", "validation", "orchestration"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:libs/server/entities/src/services/teacher.service.ts",
+      "type": "file",
+      "name": "teacher.service.ts",
+      "filePath": "libs/server/entities/src/services/teacher.service.ts",
+      "summary": "Business-logic service for teachers handling CRUD with bcrypt password hashing, email uniqueness checks and idempotent seeding.",
+      "tags": ["service", "business-logic", "teacher", "security"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/services/teacher.service.ts:ServerTeacherService",
+      "type": "class",
+      "name": "ServerTeacherService",
+      "filePath": "libs/server/entities/src/services/teacher.service.ts",
+      "lineRange": [12, 100],
+      "summary": "Teacher service orchestrating the teacher repository for CRUD, bcrypt hashing, toListItem mapping and seeding from the static dataset.",
+      "tags": ["service", "business-logic", "security", "orchestration"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {"source": "file:libs/server/entities/src/assets/courses-data.ts", "target": "function:libs/server/entities/src/assets/courses-data.ts:mkCourse", "type": "contains", "direction": "forward", "weight": 1.0},
+
+    {"source": "file:libs/server/entities/src/controllers/course.controller.ts", "target": "class:libs/server/entities/src/controllers/course.controller.ts:ServerCourseController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/controllers/course.controller.ts", "target": "class:libs/server/entities/src/controllers/course.controller.ts:ServerCourseController", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/controllers/course.controller.ts", "target": "file:libs/server/entities/src/entities/dto/create-course.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/course.controller.ts", "target": "file:libs/server/entities/src/entities/dto/update-course.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/course.controller.ts", "target": "file:libs/server/entities/src/services/course.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/controllers/course.controller.ts:ServerCourseController", "target": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "class:libs/server/entities/src/controllers/exam.controller.ts:ServerExamController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "class:libs/server/entities/src/controllers/exam.controller.ts:ServerExamController", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "file:libs/server/entities/src/entities/dto/create-exam.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "file:libs/server/entities/src/entities/dto/update-exam.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/exam.controller.ts", "target": "file:libs/server/entities/src/services/exam.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/controllers/exam.controller.ts:ServerExamController", "target": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:libs/server/entities/src/controllers/teacher.controller.ts", "target": "class:libs/server/entities/src/controllers/teacher.controller.ts:ServerTeacherController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/controllers/teacher.controller.ts", "target": "class:libs/server/entities/src/controllers/teacher.controller.ts:ServerTeacherController", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/controllers/teacher.controller.ts", "target": "file:libs/server/entities/src/entities/dto/create-teacher.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/teacher.controller.ts", "target": "file:libs/server/entities/src/entities/dto/update-teacher.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/teacher.controller.ts", "target": "file:libs/server/entities/src/services/teacher.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/controllers/teacher.controller.ts:ServerTeacherController", "target": "class:libs/server/entities/src/services/teacher.service.ts:ServerTeacherService", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:libs/server/entities/src/entities/course.entity.ts", "target": "class:libs/server/entities/src/entities/course.entity.ts:CourseEntity", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/entities/course.entity.ts", "target": "class:libs/server/entities/src/entities/course.entity.ts:CourseEntity", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/entities/course.entity.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/course.entity.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/course.entity.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "class:libs/server/entities/src/entities/exam.entity.ts:ExamEntity", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "class:libs/server/entities/src/entities/exam.entity.ts:ExamEntity", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/exam.entity.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/teacher.entity.ts", "target": "class:libs/server/entities/src/entities/teacher.entity.ts:TeacherEntity", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/entities/teacher.entity.ts", "target": "class:libs/server/entities/src/entities/teacher.entity.ts:TeacherEntity", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/entities/teacher.entity.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/teacher.entity.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/interfaces/course-list-item.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/interfaces/exam-list-item.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/assets/courses-data.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/controllers/course.controller.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/repositories/course.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/course.module.ts", "target": "file:libs/server/entities/src/services/course.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/controllers/exam.controller.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/repositories/course.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/repositories/exam.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/repositories/session.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/exam.module.ts", "target": "file:libs/server/entities/src/services/exam.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/modules/teacher.module.ts", "target": "file:libs/server/entities/src/controllers/teacher.controller.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/teacher.module.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/teacher.module.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/teacher.module.ts", "target": "file:libs/server/entities/src/services/teacher.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/repositories/course.repository.ts", "target": "class:libs/server/entities/src/repositories/course.repository.ts:CourseRepository", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/repositories/course.repository.ts", "target": "class:libs/server/entities/src/repositories/course.repository.ts:CourseRepository", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/repositories/course.repository.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/repositories/exam.repository.ts", "target": "class:libs/server/entities/src/repositories/exam.repository.ts:ExamRepository", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/repositories/exam.repository.ts", "target": "class:libs/server/entities/src/repositories/exam.repository.ts:ExamRepository", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/repositories/exam.repository.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/repositories/teacher.repository.ts", "target": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/repositories/teacher.repository.ts", "target": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/repositories/teacher.repository.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/assets/courses-data.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/entities/dto/create-course.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/entities/dto/update-course.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/interfaces/course-list-item.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/repositories/course.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/course.service.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService", "target": "class:libs/server/entities/src/repositories/course.repository.ts:CourseRepository", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "class:libs/server/entities/src/services/course.service.ts:ServerCourseService", "target": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/entities/dto/create-exam.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/entities/dto/update-exam.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/interfaces/exam-list-item.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/repositories/course.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/repositories/exam.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/repositories/session.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/exam.service.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "target": "class:libs/server/entities/src/repositories/exam.repository.ts:ExamRepository", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "target": "class:libs/server/entities/src/repositories/course.repository.ts:CourseRepository", "type": "calls", "direction": "forward", "weight": 0.8},
+    {"source": "class:libs/server/entities/src/services/exam.service.ts:ServerExamService", "target": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository", "type": "calls", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "class:libs/server/entities/src/services/teacher.service.ts:ServerTeacherService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "class:libs/server/entities/src/services/teacher.service.ts:ServerTeacherService", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/assets/courses-data.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/entities/dto/create-teacher.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/entities/dto/update-teacher.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/entities/teacher.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/interfaces/teacher-list-item.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/teacher.service.ts", "target": "file:libs/server/entities/src/repositories/teacher.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/services/teacher.service.ts:ServerTeacherService", "target": "class:libs/server/entities/src/repositories/teacher.repository.ts:TeacherRepository", "type": "calls", "direction": "forward", "weight": 0.8}
+  ]
+}

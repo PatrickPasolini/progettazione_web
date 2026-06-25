@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "config:libs/server/entities/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/server/entities/package.json",
+      "summary": "Package manifest for the @server/entities library, defining dual entry points (main index and a separate ./frontend export) with TypeScript source as both main and types.",
+      "tags": ["configuration", "package-manifest", "library", "exports"],
+      "complexity": "simple",
+      "languageNotes": "Uses the package.json 'exports' map with conditional 'types'/'import'/'default' keys plus a subpath export './frontend' for shared frontend-safe entities."
+    },
+    {
+      "id": "config:libs/server/entities/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/server/entities/tsconfig.json",
+      "summary": "Root TypeScript project config for the @server/entities library that extends the workspace base and references the lib build config.",
+      "tags": ["configuration", "typescript", "build-system", "library"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/entities/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/server/entities/tsconfig.lib.json",
+      "summary": "Library build TypeScript config defining compilerOptions, include globs, and exclusions for compiling the @server/entities source.",
+      "tags": ["configuration", "typescript", "build-system", "library"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:libs/server/entities/tsconfig.json",
+      "target": "config:libs/server/entities/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

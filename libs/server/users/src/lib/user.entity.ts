@@ -25,6 +25,7 @@ export class UserEntity {
     })
     role: UserRole;
 
-    
+    @Column({ default: false })
+    mustChangePassword: boolean;
 }
 

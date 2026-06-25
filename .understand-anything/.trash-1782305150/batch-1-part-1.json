@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ui/src/app/app.tsx",
+      "type": "file",
+      "name": "app.tsx",
+      "filePath": "apps/ui/src/app/app.tsx",
+      "summary": "Root React component defining the application route tree with react-router-dom, wiring auth, secretary, and teacher feature pages behind protected routes.",
+      "tags": [
+        "entry-point",
+        "routing",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/alert-dialog.tsx",
+      "type": "file",
+      "name": "alert-dialog.tsx",
+      "filePath": "apps/ui/src/components/ui/alert-dialog.tsx",
+      "summary": "shadcn/Radix alert-dialog primitives (trigger, content, header, footer, action, cancel) used for confirmation dialogs across the UI.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "dialog"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Radix UI wrapper with cn-based class composition."
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/badge.tsx",
+      "type": "file",
+      "name": "badge.tsx",
+      "filePath": "apps/ui/src/components/ui/badge.tsx",
+      "summary": "shadcn Badge component with class-variance-authority variants for labeling and status indication.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "file",
+      "name": "button.tsx",
+      "filePath": "apps/ui/src/components/ui/button.tsx",
+      "summary": "shadcn Button component exposing variant and size styles via class-variance-authority; foundational UI primitive reused widely.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "type": "file",
+      "name": "date-picker.tsx",
+      "filePath": "apps/ui/src/components/ui/date-picker.tsx",
+      "summary": "Native date input wrapper that converts between ISO strings and Date objects, supporting min/max bounds and date filtering.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "date"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/dialog.tsx",
+      "type": "file",
+      "name": "dialog.tsx",
+      "filePath": "apps/ui/src/components/ui/dialog.tsx",
+      "summary": "shadcn/Radix dialog primitives (overlay, content, header, footer, title, description) for modal interactions.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "dialog"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Radix UI wrapper with cn-based class composition."
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "file",
+      "name": "input.tsx",
+      "filePath": "apps/ui/src/components/ui/input.tsx",
+      "summary": "shadcn Input component wrapping the native input element with consistent styling.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "file",
+      "name": "label.tsx",
+      "filePath": "apps/ui/src/components/ui/label.tsx",
+      "summary": "shadcn/Radix Label primitive providing accessible form labels.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/select.tsx",
+      "type": "file",
+      "name": "select.tsx",
+      "filePath": "apps/ui/src/components/ui/select.tsx",
+      "summary": "shadcn/Radix Select primitives (trigger, content, item, group, separator) for accessible dropdown selection.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "form"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Radix UI wrapper with scroll buttons and cn-based styling."
+    },
+    {
+      "id": "file:apps/ui/src/components/ui/separator.tsx",
+      "type": "file",
+      "name": "separator.tsx",
+      "filePath": "apps/ui/src/components/ui/separator.tsx",
+      "summary": "shadcn/Radix Separator primitive for visual division between content sections.",
+      "tags": [
+        "component",
+        "ui-primitive",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/auth/auth.api.ts",
+      "type": "file",
+      "name": "auth.api.ts",
+      "filePath": "apps/ui/src/features/auth/auth.api.ts",
+      "summary": "Authentication API client providing login, change-password, and current-user fetch against the backend, storing the JWT in localStorage.",
+      "tags": [
+        "api-handler",
+        "authentication",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "type": "file",
+      "name": "change-password.page.tsx",
+      "filePath": "apps/ui/src/features/auth/change-password.page.tsx",
+      "summary": "Page where a user sets a new password (e.g. on first login), validating confirmation and redirecting by role on success.",
+      "tags": [
+        "component",
+        "authentication",
+        "form"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/auth/login.page.tsx",
+      "type": "file",
+      "name": "login.page.tsx",
+      "filePath": "apps/ui/src/features/auth/login.page.tsx",
+      "summary": "Login page collecting email/password, calling the auth API, and routing the user to their role-specific area.",
+      "tags": [
+        "component",
+        "authentication",
+        "form"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ui/src/features/auth/logout.page.tsx",
+      "type": "file",
+      "name": "logout.page.tsx",
+      "filePath": "apps/ui/src/features/auth/logout.page.tsx",
+      "summary": "Logout route that clears the stored token and redirects to login.",
+      "tags": [
+        "component",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/auth/protected-route.tsx",
+      "type": "file",
+      "name": "protected-route.tsx",
+      "filePath": "apps/ui/src/features/auth/protected-route.tsx",
+      "summary": "Route guard that redirects unauthenticated users to login based on presence of a stored token.",
+      "tags": [
+        "component",
+        "authentication",
+        "middleware"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "type": "file",
+      "name": "app-layout.tsx",
+      "filePath": "apps/ui/src/features/layouts/app-layout.tsx",
+      "summary": "Authenticated app shell rendering role-based navigation tabs, user dropdown with logout confirmation, and an Outlet for child routes.",
+      "tags": [
+        "component",
+        "layout",
+        "navigation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/app/app.tsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "apps/ui/src/app/app.tsx",
+      "lineRange": [
+        24,
+        64
+      ],
+      "summary": "Defines the full client-side route tree, mapping URLs to auth, secretary, and teacher pages with protected-route guarding.",
+      "tags": [
+        "routing",
+        "entry-point"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/components/ui/date-picker.tsx:DatePicker",
+      "type": "function",
+      "name": "DatePicker",
+      "filePath": "apps/ui/src/components/ui/date-picker.tsx",
+      "lineRange": [
+        32,
+        56
+      ],
+      "summary": "Controlled date picker translating ISO string values to/from a native date input with bounds and filtering.",
+      "tags": [
+        "component",
+        "date"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/auth/auth.api.ts:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "apps/ui/src/features/auth/auth.api.ts",
+      "lineRange": [
+        3,
+        17
+      ],
+      "summary": "Posts credentials to the login endpoint and persists the returned JWT to localStorage.",
+      "tags": [
+        "authentication",
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/auth/auth.api.ts:changePassword",
+      "type": "function",
+      "name": "changePassword",
+      "filePath": "apps/ui/src/features/auth/auth.api.ts",
+      "lineRange": [
+        19,
+        33
+      ],
+      "summary": "Sends a new password to the backend using the stored bearer token.",
+      "tags": [
+        "authentication",
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "function",
+      "name": "fetchCurrentUser",
+      "filePath": "apps/ui/src/features/auth/auth.api.ts",
+      "lineRange": [
+        35,
+        49
+      ],
+      "summary": "Fetches the authenticated user profile using the stored JWT.",
+      "tags": [
+        "authentication",
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ui/src/features/auth/change-password.page.tsx:ChangePasswordPage",
+      "type": "function",
+      "name": "ChangePasswordPage",
+      "filePath": "apps/ui/src/features/auth/change-password.page.tsx",
+      "lineRange": [
+        8,
+        63
+      ],
+      "summary": "Password-change form component handling validation, submission, and role-based redirect.",
+      "tags": [
+        "component",
+        "form",
+        "authentication"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/auth/login.page.tsx:LoginPage",
+      "type": "function",
+      "name": "LoginPage",
+      "filePath": "apps/ui/src/features/auth/login.page.tsx",
+      "lineRange": [
+        8,
+        58
+      ],
+      "summary": "Login form component managing credentials state, submission, and post-login navigation.",
+      "tags": [
+        "component",
+        "form",
+        "authentication"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ui/src/features/layouts/app-layout.tsx:AppLayout",
+      "type": "function",
+      "name": "AppLayout",
+      "filePath": "apps/ui/src/features/layouts/app-layout.tsx",
+      "lineRange": [
+        20,
+        140
+      ],
+      "summary": "Authenticated shell component loading the current user, building role-based tabs, and managing the logout dropdown.",
+      "tags": [
+        "component",
+        "layout",
+        "navigation"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "function:apps/ui/src/app/app.tsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "function:apps/ui/src/app/app.tsx:App",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "target": "function:apps/ui/src/components/ui/date-picker.tsx:DatePicker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "target": "function:apps/ui/src/components/ui/date-picker.tsx:DatePicker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:login",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:changePassword",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:changePassword",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/auth.api.ts",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "function:apps/ui/src/features/auth/change-password.page.tsx:ChangePasswordPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "function:apps/ui/src/features/auth/change-password.page.tsx:ChangePasswordPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "function:apps/ui/src/features/auth/login.page.tsx:LoginPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "function:apps/ui/src/features/auth/login.page.tsx:LoginPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "function:apps/ui/src/features/layouts/app-layout.tsx:AppLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "function:apps/ui/src/features/layouts/app-layout.tsx:AppLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/auth/login.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/auth/logout.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/auth/protected-route.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/app/app.tsx",
+      "target": "file:apps/ui/src/features/teacher/pages/teacher.page.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/alert-dialog.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/alert-dialog.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/badge.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/button.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/dialog.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/input.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/label.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/select.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/separator.tsx",
+      "target": "file:apps/ui/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "file:apps/ui/src/features/auth/auth.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "file:apps/ui/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "file:apps/ui/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "file:apps/ui/src/features/auth/auth.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "file:apps/ui/src/components/ui/alert-dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "file:apps/ui/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "file:apps/ui/src/features/auth/auth.api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:login",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/login.page.tsx",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:changePassword",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/auth/change-password.page.tsx",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/features/layouts/app-layout.tsx",
+      "target": "function:apps/ui/src/features/auth/auth.api.ts:fetchCurrentUser",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/alert-dialog.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/badge.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/button.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/date-picker.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/dialog.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/input.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/label.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/select.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ui/src/components/ui/separator.tsx",
+      "target": "function:apps/ui/src/lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

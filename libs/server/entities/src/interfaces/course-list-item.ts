@@ -11,11 +11,11 @@ export interface CourseListItem {
         email: string;
         role: UserRole;
     };
-    degrees: {
+    degree: {
         id: number;
         degreeName: string;
         degreeType: DegreeType;
         degreeYear: DegreeYear;
         macroArea: MacroArea;
-    }[];
+    };
 }

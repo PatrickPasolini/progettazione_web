@@ -1,9 +1,11 @@
-import { Controller, UseGuards, Post, Request, Body, ValidationPipe } from '@nestjs/common';
+import { Controller, UseGuards, Post, Patch, Request, Body, ValidationPipe } from '@nestjs/common';
 import { ApiTags, ApiBody } from '@nestjs/swagger';
 import { ServerAuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
-import { AuthenticatedUser } from './interfaces/authenticated-user.interface';
+import { ChangePasswordDto } from './dto/change-password.dto';
+import type { AuthenticatedUser } from './interfaces/authenticated-user.interface';
 import { LocalAuthGuard } from './guards/local-auth.guard';
+import { JwtAuthGuard, CurrentUser } from '@server/security';
 import { UserRole } from '@server/users';
 
 type RequestWithUser = Request & {
@@ -21,7 +23,7 @@ export class ServerAuthController {
           schema: {
               type: 'object',
               properties: {
-                  email: { type: 'string', example: 'patrick.pasolini@unibs.it' },
+                  email: { type: 'string', example: 'segreteria.economia@unibs.it' },
                   password: {type: 'string', example: 'Password1!'}
               },
               required: ['email', 'password'],
@@ -29,6 +31,15 @@ export class ServerAuthController {
       })
   login(@Request() req: RequestWithUser) {
     return this.serverAuthService.login(req.user);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Patch('change-password')
+  changePassword(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body(ValidationPipe) dto: ChangePasswordDto,
+  ) {
+    return this.serverAuthService.changePassword(user.id, dto.newPassword);
   }
 
   @Post('register')
@@ -40,7 +51,7 @@ export class ServerAuthController {
                   surname: { type: 'string', example: 'Bianchini' },
                   email: { type: 'string', example: 'devis.bianchini@unibs.it' },
                   password: {type: 'string', example: 'Password1!'},
-                  role: { type: 'string', enum: Object.values(UserRole), example: UserRole.USER}
+                  role: { type: 'string', enum: Object.values(UserRole), example: UserRole.TEACHER}
               },
               required: ['name', 'email', 'password', 'role'],
           },

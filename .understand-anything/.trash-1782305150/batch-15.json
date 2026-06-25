@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "document:libs/server/auth/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "libs/server/auth/README.md",
+      "summary": "Minimal generated README for the @server/auth library, noting how to run its unit tests via Nx.",
+      "tags": ["documentation", "library", "auth"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/auth/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/server/auth/package.json",
+      "summary": "Package manifest for the @server/auth library defining its name, entry points, and module exports for the JWT/Passport authentication code.",
+      "tags": ["configuration", "library", "auth", "package-manifest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/auth/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/server/auth/tsconfig.json",
+      "summary": "Root TypeScript project configuration for the @server/auth library, wiring up references to its lib and spec build configs.",
+      "tags": ["configuration", "typescript", "build-system", "auth"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/auth/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/server/auth/tsconfig.lib.json",
+      "summary": "Library-build TypeScript configuration for @server/auth, setting compiler options, includes, and excludes for emitting the auth module's compiled output.",
+      "tags": ["configuration", "typescript", "build-system", "auth"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:libs/server/auth/tsconfig.json",
+      "target": "config:libs/server/auth/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -49,8 +49,14 @@ export class ServerExamService {
             throw new BadRequestException(`Degree ${degree.id} does not belong to session ${session.id}`);
         }
 
-        const courseInDegree = course.degrees?.some((d) => d.id === degree.id);
-        if (!courseInDegree) {
+        const teacherExams = await this.examRepository.findAll(session.id, undefined, currentTeacher.id);
+        if (teacherExams.length >= session.examLimit) {
+            throw new BadRequestException(
+                `Limite di ${session.examLimit} appelli per sessione raggiunto`,
+            );
+        }
+
+        if (course.degree.id !== degree.id) {
             throw new BadRequestException(`Course ${course.id} is not available for degree ${degree.id}`);
         }
 
@@ -113,8 +119,7 @@ export class ServerExamService {
             exam.degree = degree;
         }
 
-        const courseInDegree = exam.course.degrees?.some((d) => d.id === exam.degree.id);
-        if (!courseInDegree) {
+        if (exam.course.degree.id !== exam.degree.id) {
             throw new BadRequestException(`Course ${exam.course.id} is not available for degree ${exam.degree.id}`);
         }
 
@@ -146,14 +151,13 @@ export class ServerExamService {
         const exam = await this.examRepository.findById(id);
         if (!exam) throw new NotFoundException(`Exam with id ${id} not found`);
 
-        const isAdminOrSecretary =
-            currentTeacher.role === UserRole.ADMIN || currentTeacher.role === UserRole.SECRETARY;
+        const isSecretary = currentTeacher.role === UserRole.SECRETARY;
 
-        if (!isAdminOrSecretary && exam.teacher.id !== currentTeacher.id) {
+        if (!isSecretary && exam.teacher.id !== currentTeacher.id) {
             throw new ForbiddenException('You can only delete your own exams');
         }
 
-        if (!isAdminOrSecretary) {
+        if (!isSecretary) {
             this.validateInsertionWindow(exam.session.startInsertDate, exam.session.endInsertDate);
         }
 
@@ -197,7 +201,7 @@ export class ServerExamService {
                 startTime: new Date('2026-06-12T09:00:00'),
                 endTime:   new Date('2026-06-12T11:00:00'),
                 teacher:   t2,
-                course:    courses[4],
+                course:    courses[7],
                 degree:    degrees[0],
                 session,
             },
@@ -207,7 +211,7 @@ export class ServerExamService {
                 startTime: new Date('2026-06-16T09:00:00'),
                 endTime:   new Date('2026-06-16T11:00:00'),
                 teacher:   t3,
-                course:    courses[2],
+                course:    courses[4],
                 degree:    degrees[0],
                 session,
             },

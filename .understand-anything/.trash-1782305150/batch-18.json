@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "document:libs/server/users/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "libs/server/users/README.md",
+      "summary": "Minimal generated README for the @server/users library describing how to run its unit tests.",
+      "tags": ["documentation", "library", "nx"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/users/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/server/users/package.json",
+      "summary": "Package manifest for the @server/users library defining its name, entry points (main/types/exports) and dependencies.",
+      "tags": ["configuration", "library", "package-manifest", "barrel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/users/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/server/users/tsconfig.json",
+      "summary": "Root TypeScript project config for the @server/users library, referencing the lib build config and extending the workspace base config.",
+      "tags": ["configuration", "typescript", "build-system", "library"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/users/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/server/users/tsconfig.lib.json",
+      "summary": "TypeScript build configuration for compiling the @server/users library, setting compiler options, includes, and test exclusions.",
+      "tags": ["configuration", "typescript", "build-system", "library"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:libs/server/users/README.md",
+      "target": "config:libs/server/users/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:libs/server/users/tsconfig.json",
+      "target": "config:libs/server/users/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

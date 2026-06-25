@@ -39,7 +39,7 @@ export class ServerTeacherController {
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -59,7 +59,7 @@ export class ServerTeacherController {
 
     @Patch(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     @ApiBody({
@@ -80,7 +80,7 @@ export class ServerTeacherController {
     @Delete(':id')
     @HttpCode(204)
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     remove(@Param('id', ParseIntPipe) id: number) {
@@ -89,7 +89,7 @@ export class ServerTeacherController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverTeacherService.seed();

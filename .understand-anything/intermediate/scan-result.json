@@ -1,0 +1,2014 @@
+{
+  "name": "appelli_db",
+  "description": "Nx monorepo for a university exam-scheduling system (appelli_db): teachers within a degree programme coordinate exam dates within a planning window configured by the secretariat. The backend is a NestJS + TypeORM/PostgreSQL API and the frontend is a React 19 + Vite single-page app styled with TailwindCSS and shadcn/Radix UI. Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "toml",
+    "typescript",
+    "yaml"
+  ],
+  "frameworks": [
+    "NestJS",
+    "React",
+    "React Router",
+    "TypeORM",
+    "Passport/JWT",
+    "Nx",
+    "Vite",
+    "Vitest",
+    "Jest",
+    "Playwright",
+    "TailwindCSS",
+    "Radix UI",
+    "GitHub Actions"
+  ],
+  "files": [
+    {
+      "path": ".claude/settings.json",
+      "language": "json",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".codex/config.toml",
+      "language": "toml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".cursor/agents/ci-monitor-subagent.md",
+      "language": "markdown",
+      "sizeLines": 611,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/commands/monitor-ci.md",
+      "language": "markdown",
+      "sizeLines": 648,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/link-workspace-packages/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/monitor-ci/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/nx-generate/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/nx-plugins/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/nx-run-tasks/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/nx-workspace/references/AFFECTED.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/skills/nx-workspace/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/commands/monitor-ci.toml",
+      "language": "toml",
+      "sizeLines": 654,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gemini/settings.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gemini/skills/link-workspace-packages/skill.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/monitor-ci/skill.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/nx-generate/skill.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/nx-plugins/skill.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/nx-run-tasks/skill.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/nx-workspace/references/AFFECTED.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gemini/skills/nx-workspace/skill.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/agents/ci-monitor-subagent.agent.md",
+      "language": "markdown",
+      "sizeLines": 609,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/prompts/monitor-ci.prompt.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/link-workspace-packages/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/monitor-ci/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/nx-generate/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/nx-plugins/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/nx-run-tasks/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/nx-workspace/references/AFFECTED.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/skills/nx-workspace/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "language": "yaml",
+      "sizeLines": 40,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".opencode/agents/ci-monitor-subagent.md",
+      "language": "markdown",
+      "sizeLines": 610,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/commands/monitor-ci.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/link-workspace-packages/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/monitor-ci/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 657,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/nx-generate/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/nx-plugins/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/nx-run-tasks/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/nx-workspace/references/AFFECTED.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/skills/nx-workspace/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".prettierignore",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/api/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/package.json",
+      "language": "json",
+      "sizeLines": 96,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 38,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/components.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ui/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/index.html",
+      "language": "html",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/ui/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/package.json",
+      "language": "json",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ui/postcss.config.js",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/app/app.tsx",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/date-picker.tsx",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/label.tsx",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/select.tsx",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/components/ui/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/auth/auth.api.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/auth/change-password.page.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/auth/login.page.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/auth/logout.page.tsx",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/auth/protected-route.tsx",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/layouts/app-layout.tsx",
+      "language": "typescript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "language": "typescript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "language": "typescript",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "language": "typescript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "language": "typescript",
+      "sizeLines": 343,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "language": "typescript",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/segreteria/segreteria.api.ts",
+      "language": "typescript",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/shared/utils.api.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "language": "typescript",
+      "sizeLines": 204,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/Modal.tsx",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "language": "typescript",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/pages/teacher.page.tsx",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/features/teacher/teacher.api.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/main.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/styles.css",
+      "language": "css",
+      "sizeLines": 167,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/ui/src/utils/calendar.utils.ts",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/src/utils/date.utils.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/tailwind.config.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ui/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ui/tsconfig.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ui/vite.config.mts",
+      "language": "mts",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "corsi/Area Economico-statistica.txt",
+      "language": "txt",
+      "sizeLines": 538,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "corsi/Area Giuridica.txt",
+      "language": "txt",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "corsi/Area Ingegneria.txt",
+      "language": "txt",
+      "sizeLines": 1515,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "corsi/Area Medica.txt",
+      "language": "txt",
+      "sizeLines": 3960,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "jest.config.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "jest.preset.js",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/database/package.json",
+      "language": "json",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/database/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "libs/database/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/database/src/lib/database.module.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/database/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/database/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/auth/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/package.json",
+      "language": "json",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/auth/README.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "libs/server/auth/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/auth.controller.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/auth.module.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/auth.service.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/dto/register.dto.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/src/lib/strategies/local.strategy.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/auth/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/auth/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/entities/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/entities/src/assets/courses-data.ts",
+      "language": "typescript",
+      "sizeLines": 3898,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/controllers/course.controller.ts",
+      "language": "typescript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/controllers/degree.controller.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/controllers/exam.controller.ts",
+      "language": "typescript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/controllers/session.controller.ts",
+      "language": "typescript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/controllers/teacher.controller.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/course.entity.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/degree.entity.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/exam.entity.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/session.entity.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/entities/teacher.entity.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/frontend.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/interfaces/course-list-item.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/interfaces/degree-list-item.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/interfaces/exam-list-item.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/interfaces/session-list-item.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/interfaces/teacher-list-item.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/modules/course.module.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/modules/degree.module.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/modules/exam.module.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/modules/session.module.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/modules/teacher.module.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/repositories/course.repository.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/repositories/degree.repository.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/repositories/exam.repository.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/repositories/session.repository.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/repositories/teacher.repository.ts",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/services/course.service.ts",
+      "language": "typescript",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/services/degree.service.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/services/exam.service.ts",
+      "language": "typescript",
+      "sizeLines": 285,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/services/session.service.ts",
+      "language": "typescript",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/src/services/teacher.service.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/entities/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/entities/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/entities/tsconfig.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/package.json",
+      "language": "json",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/security/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "libs/server/security/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/src/lib/decorators/current-user.decorator.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/src/lib/decorators/roles.decorator.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/src/lib/guards/jwt-auth.guard.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/src/lib/guards/roles.guard.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/security/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/security/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/users/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/package.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/users/README.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "libs/server/users/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/dto/create-user.dto.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/dto/update-user.dto.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/dto/user-role.enum.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/user.entity.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/users.controller.ts",
+      "language": "typescript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/users.module.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/users.repository.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/src/lib/users.service.ts",
+      "language": "typescript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/server/users/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/server/users/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 31,
+      "fileCategory": "config"
+    },
+    {
+      "path": "md/backend/01-overview.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/02-database.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/03-users.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/04-auth.md",
+      "language": "markdown",
+      "sizeLines": 136,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/05-security.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/06-entities.md",
+      "language": "markdown",
+      "sizeLines": 308,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/backend/07-api-app.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/01-overview.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/02-auth.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/03-teacher.md",
+      "language": "markdown",
+      "sizeLines": 147,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/04-segreteria.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/05-components.md",
+      "language": "markdown",
+      "sizeLines": 95,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/frontend/06-utils.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "md/README.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "nx.json",
+      "language": "json",
+      "sizeLines": 100,
+      "fileCategory": "config"
+    },
+    {
+      "path": "opencode.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 125,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Requisiti progetto web.txt",
+      "language": "txt",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tools/parse-corsi.mjs",
+      "language": "javascript",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    }
+  ],
+  "totalFiles": 234,
+  "filteredByIgnore": 26,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".claude/settings.json": [],
+    ".claude/settings.local.json": [],
+    ".codex/config.toml": [],
+    ".cursor/agents/ci-monitor-subagent.md": [],
+    ".cursor/commands/monitor-ci.md": [],
+    ".cursor/skills/link-workspace-packages/SKILL.md": [],
+    ".cursor/skills/monitor-ci/SKILL.md": [],
+    ".cursor/skills/nx-generate/SKILL.md": [],
+    ".cursor/skills/nx-plugins/SKILL.md": [],
+    ".cursor/skills/nx-run-tasks/SKILL.md": [],
+    ".cursor/skills/nx-workspace/references/AFFECTED.md": [],
+    ".cursor/skills/nx-workspace/SKILL.md": [],
+    ".gemini/commands/monitor-ci.toml": [],
+    ".gemini/settings.json": [],
+    ".gemini/skills/link-workspace-packages/skill.md": [],
+    ".gemini/skills/monitor-ci/skill.md": [],
+    ".gemini/skills/nx-generate/skill.md": [],
+    ".gemini/skills/nx-plugins/skill.md": [],
+    ".gemini/skills/nx-run-tasks/skill.md": [],
+    ".gemini/skills/nx-workspace/references/AFFECTED.md": [],
+    ".gemini/skills/nx-workspace/skill.md": [],
+    ".github/agents/ci-monitor-subagent.agent.md": [],
+    ".github/prompts/monitor-ci.prompt.md": [],
+    ".github/skills/link-workspace-packages/SKILL.md": [],
+    ".github/skills/monitor-ci/SKILL.md": [],
+    ".github/skills/nx-generate/SKILL.md": [],
+    ".github/skills/nx-plugins/SKILL.md": [],
+    ".github/skills/nx-run-tasks/SKILL.md": [],
+    ".github/skills/nx-workspace/references/AFFECTED.md": [],
+    ".github/skills/nx-workspace/SKILL.md": [],
+    ".github/workflows/ci.yml": [],
+    ".opencode/agents/ci-monitor-subagent.md": [],
+    ".opencode/commands/monitor-ci.md": [],
+    ".opencode/skills/link-workspace-packages/SKILL.md": [],
+    ".opencode/skills/monitor-ci/SKILL.md": [],
+    ".opencode/skills/nx-generate/SKILL.md": [],
+    ".opencode/skills/nx-plugins/SKILL.md": [],
+    ".opencode/skills/nx-run-tasks/SKILL.md": [],
+    ".opencode/skills/nx-workspace/references/AFFECTED.md": [],
+    ".opencode/skills/nx-workspace/SKILL.md": [],
+    ".prettierignore": [],
+    ".understand-anything/.understandignore": [],
+    "AGENTS.md": [],
+    "apps/api/eslint.config.mjs": [
+      "eslint.config.mjs"
+    ],
+    "apps/api/jest.config.cts": [],
+    "apps/api/package.json": [],
+    "apps/api/src/app/app.controller.ts": [
+      "apps/api/src/app/app.service.ts"
+    ],
+    "apps/api/src/app/app.module.ts": [
+      "apps/api/src/app/app.controller.ts",
+      "apps/api/src/app/app.service.ts"
+    ],
+    "apps/api/src/app/app.service.ts": [],
+    "apps/api/src/assets/.gitkeep": [],
+    "apps/api/src/main.ts": [
+      "apps/api/src/app/app.module.ts"
+    ],
+    "apps/api/tsconfig.app.json": [],
+    "apps/api/tsconfig.json": [],
+    "apps/api/webpack.config.js": [],
+    "apps/ui/components.json": [],
+    "apps/ui/eslint.config.mjs": [
+      "eslint.config.mjs"
+    ],
+    "apps/ui/index.html": [],
+    "apps/ui/jest.config.cts": [],
+    "apps/ui/package.json": [],
+    "apps/ui/postcss.config.js": [],
+    "apps/ui/src/app/app.tsx": [
+      "apps/ui/src/features/auth/change-password.page.tsx",
+      "apps/ui/src/features/auth/login.page.tsx",
+      "apps/ui/src/features/auth/logout.page.tsx",
+      "apps/ui/src/features/auth/protected-route.tsx",
+      "apps/ui/src/features/layouts/app-layout.tsx",
+      "apps/ui/src/features/segreteria/pages/corsi.page.tsx",
+      "apps/ui/src/features/segreteria/pages/docenti.page.tsx",
+      "apps/ui/src/features/segreteria/pages/materie.page.tsx",
+      "apps/ui/src/features/segreteria/pages/segreteria.page.tsx",
+      "apps/ui/src/features/segreteria/pages/sessioni.page.tsx",
+      "apps/ui/src/features/teacher/pages/esami.page.tsx",
+      "apps/ui/src/features/teacher/pages/teacher.page.tsx"
+    ],
+    "apps/ui/src/assets/.gitkeep": [],
+    "apps/ui/src/components/ui/alert-dialog.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/badge.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/button.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/date-picker.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/dialog.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/input.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/label.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/select.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/components/ui/separator.tsx": [
+      "apps/ui/src/lib/utils.ts"
+    ],
+    "apps/ui/src/features/auth/auth.api.ts": [],
+    "apps/ui/src/features/auth/change-password.page.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/auth/auth.api.ts"
+    ],
+    "apps/ui/src/features/auth/login.page.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/auth/auth.api.ts"
+    ],
+    "apps/ui/src/features/auth/logout.page.tsx": [],
+    "apps/ui/src/features/auth/protected-route.tsx": [],
+    "apps/ui/src/features/layouts/app-layout.tsx": [
+      "apps/ui/src/components/ui/alert-dialog.tsx",
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/features/auth/auth.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/components/corso-modal.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/dialog.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/components/docente-modal.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/dialog.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/components/materia-modal.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/dialog.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/components/sessione-modal.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/date-picker.tsx",
+      "apps/ui/src/components/ui/dialog.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/pages/corsi.page.tsx": [
+      "apps/ui/src/features/segreteria/components/corso-modal.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/pages/docenti.page.tsx": [
+      "apps/ui/src/features/segreteria/components/docente-modal.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/pages/materie.page.tsx": [
+      "apps/ui/src/features/segreteria/components/materia-modal.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/pages/segreteria.page.tsx": [],
+    "apps/ui/src/features/segreteria/pages/sessioni.page.tsx": [
+      "apps/ui/src/features/segreteria/components/sessione-modal.tsx",
+      "apps/ui/src/features/segreteria/segreteria.api.ts"
+    ],
+    "apps/ui/src/features/segreteria/segreteria.api.ts": [
+      "apps/ui/src/features/shared/utils.api.ts"
+    ],
+    "apps/ui/src/features/shared/utils.api.ts": [],
+    "apps/ui/src/features/teacher/components/CalendarGrid.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/utils/calendar.utils.ts",
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/components/ExamForm.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/components/ui/date-picker.tsx",
+      "apps/ui/src/components/ui/input.tsx",
+      "apps/ui/src/components/ui/label.tsx",
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/components/InsertionBanner.tsx": [
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/components/Modal.tsx": [
+      "apps/ui/src/components/ui/dialog.tsx"
+    ],
+    "apps/ui/src/features/teacher/components/MyExamsList.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/utils/calendar.utils.ts",
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/components/SessionSidebar.tsx": [
+      "apps/ui/src/utils/calendar.utils.ts",
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/pages/esami.page.tsx": [
+      "apps/ui/src/components/ui/button.tsx",
+      "apps/ui/src/features/auth/auth.api.ts",
+      "apps/ui/src/features/teacher/components/CalendarGrid.tsx",
+      "apps/ui/src/features/teacher/components/ExamForm.tsx",
+      "apps/ui/src/features/teacher/components/InsertionBanner.tsx",
+      "apps/ui/src/features/teacher/components/Modal.tsx",
+      "apps/ui/src/features/teacher/components/MyExamsList.tsx",
+      "apps/ui/src/features/teacher/components/SessionSidebar.tsx",
+      "apps/ui/src/features/teacher/teacher.api.ts",
+      "apps/ui/src/utils/calendar.utils.ts",
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/features/teacher/pages/teacher.page.tsx": [],
+    "apps/ui/src/features/teacher/teacher.api.ts": [
+      "apps/ui/src/features/shared/utils.api.ts"
+    ],
+    "apps/ui/src/lib/utils.ts": [],
+    "apps/ui/src/main.tsx": [
+      "apps/ui/src/app/app.tsx"
+    ],
+    "apps/ui/src/styles.css": [],
+    "apps/ui/src/utils/calendar.utils.ts": [
+      "apps/ui/src/utils/date.utils.ts"
+    ],
+    "apps/ui/src/utils/date.utils.ts": [],
+    "apps/ui/tailwind.config.js": [],
+    "apps/ui/tsconfig.app.json": [],
+    "apps/ui/tsconfig.json": [],
+    "apps/ui/tsconfig.tsbuildinfo": [],
+    "apps/ui/vite.config.mts": [],
+    "CLAUDE.md": [],
+    "corsi/Area Economico-statistica.txt": [],
+    "corsi/Area Giuridica.txt": [],
+    "corsi/Area Ingegneria.txt": [],
+    "corsi/Area Medica.txt": [],
+    "eslint.config.mjs": [],
+    "jest.config.ts": [],
+    "jest.preset.js": [],
+    "libs/database/package.json": [],
+    "libs/database/README.md": [],
+    "libs/database/src/index.ts": [],
+    "libs/database/src/lib/database.module.ts": [],
+    "libs/database/tsconfig.json": [],
+    "libs/database/tsconfig.lib.json": [],
+    "libs/server/auth/eslint.config.mjs": [
+      "eslint.config.mjs"
+    ],
+    "libs/server/auth/jest.config.cts": [],
+    "libs/server/auth/package.json": [],
+    "libs/server/auth/README.md": [],
+    "libs/server/auth/src/index.ts": [],
+    "libs/server/auth/src/lib/auth.controller.ts": [
+      "libs/server/auth/src/lib/auth.service.ts",
+      "libs/server/auth/src/lib/dto/change-password.dto.ts",
+      "libs/server/auth/src/lib/dto/register.dto.ts",
+      "libs/server/auth/src/lib/guards/local-auth.guard.ts",
+      "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts"
+    ],
+    "libs/server/auth/src/lib/auth.module.ts": [
+      "libs/server/auth/src/lib/auth.controller.ts",
+      "libs/server/auth/src/lib/auth.service.ts",
+      "libs/server/auth/src/lib/strategies/jwt.strategy.ts",
+      "libs/server/auth/src/lib/strategies/local.strategy.ts"
+    ],
+    "libs/server/auth/src/lib/auth.service.ts": [
+      "libs/server/auth/src/lib/dto/register.dto.ts",
+      "libs/server/auth/src/lib/interfaces/auth-response.interface.ts",
+      "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts"
+    ],
+    "libs/server/auth/src/lib/dto/change-password.dto.ts": [],
+    "libs/server/auth/src/lib/dto/register.dto.ts": [],
+    "libs/server/auth/src/lib/guards/local-auth.guard.ts": [],
+    "libs/server/auth/src/lib/interfaces/auth-response.interface.ts": [
+      "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts"
+    ],
+    "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts": [],
+    "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts": [],
+    "libs/server/auth/src/lib/strategies/jwt.strategy.ts": [
+      "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts",
+      "libs/server/auth/src/lib/interfaces/jwt-payload.interface.ts"
+    ],
+    "libs/server/auth/src/lib/strategies/local.strategy.ts": [
+      "libs/server/auth/src/lib/auth.service.ts",
+      "libs/server/auth/src/lib/interfaces/authenticated-user.interface.ts"
+    ],
+    "libs/server/auth/tsconfig.json": [],
+    "libs/server/auth/tsconfig.lib.json": [],
+    "libs/server/entities/package.json": [],
+    "libs/server/entities/src/assets/courses-data.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/controllers/course.controller.ts": [
+      "libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "libs/server/entities/src/services/course.service.ts"
+    ],
+    "libs/server/entities/src/controllers/degree.controller.ts": [
+      "libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "libs/server/entities/src/services/degree.service.ts"
+    ],
+    "libs/server/entities/src/controllers/exam.controller.ts": [
+      "libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/services/exam.service.ts"
+    ],
+    "libs/server/entities/src/controllers/session.controller.ts": [
+      "libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "libs/server/entities/src/services/session.service.ts"
+    ],
+    "libs/server/entities/src/controllers/teacher.controller.ts": [
+      "libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "libs/server/entities/src/services/teacher.service.ts"
+    ],
+    "libs/server/entities/src/entities/course.entity.ts": [
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/exam.entity.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts"
+    ],
+    "libs/server/entities/src/entities/degree.entity.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "libs/server/entities/src/entities/session.entity.ts"
+    ],
+    "libs/server/entities/src/entities/dto/create-course.dto.ts": [],
+    "libs/server/entities/src/entities/dto/create-degree.dto.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/entities/dto/create-exam.dto.ts": [],
+    "libs/server/entities/src/entities/dto/create-session.dto.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/entities/dto/create-teacher.dto.ts": [],
+    "libs/server/entities/src/entities/dto/degree.enum.ts": [],
+    "libs/server/entities/src/entities/dto/update-course.dto.ts": [],
+    "libs/server/entities/src/entities/dto/update-degree.dto.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/entities/dto/update-exam.dto.ts": [],
+    "libs/server/entities/src/entities/dto/update-session.dto.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/entities/dto/update-teacher.dto.ts": [],
+    "libs/server/entities/src/entities/exam.entity.ts": [
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/session.entity.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts"
+    ],
+    "libs/server/entities/src/entities/session.entity.ts": [
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "libs/server/entities/src/entities/exam.entity.ts"
+    ],
+    "libs/server/entities/src/entities/teacher.entity.ts": [
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/exam.entity.ts"
+    ],
+    "libs/server/entities/src/frontend.ts": [],
+    "libs/server/entities/src/index.ts": [],
+    "libs/server/entities/src/interfaces/course-list-item.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/interfaces/degree-list-item.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/interfaces/exam-list-item.ts": [
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/interfaces/session-list-item.ts": [],
+    "libs/server/entities/src/interfaces/teacher-list-item.ts": [],
+    "libs/server/entities/src/modules/course.module.ts": [
+      "libs/server/entities/src/controllers/course.controller.ts",
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/repositories/course.repository.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts",
+      "libs/server/entities/src/services/course.service.ts"
+    ],
+    "libs/server/entities/src/modules/degree.module.ts": [
+      "libs/server/entities/src/controllers/degree.controller.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/services/degree.service.ts"
+    ],
+    "libs/server/entities/src/modules/exam.module.ts": [
+      "libs/server/entities/src/controllers/exam.controller.ts",
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/exam.entity.ts",
+      "libs/server/entities/src/entities/session.entity.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/repositories/course.repository.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/exam.repository.ts",
+      "libs/server/entities/src/repositories/session.repository.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts",
+      "libs/server/entities/src/services/exam.service.ts"
+    ],
+    "libs/server/entities/src/modules/session.module.ts": [
+      "libs/server/entities/src/controllers/session.controller.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/session.entity.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/session.repository.ts",
+      "libs/server/entities/src/services/session.service.ts"
+    ],
+    "libs/server/entities/src/modules/teacher.module.ts": [
+      "libs/server/entities/src/controllers/teacher.controller.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts",
+      "libs/server/entities/src/services/teacher.service.ts"
+    ],
+    "libs/server/entities/src/repositories/course.repository.ts": [
+      "libs/server/entities/src/entities/course.entity.ts"
+    ],
+    "libs/server/entities/src/repositories/degree.repository.ts": [
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/dto/degree.enum.ts"
+    ],
+    "libs/server/entities/src/repositories/exam.repository.ts": [
+      "libs/server/entities/src/entities/exam.entity.ts"
+    ],
+    "libs/server/entities/src/repositories/session.repository.ts": [
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/session.entity.ts"
+    ],
+    "libs/server/entities/src/repositories/teacher.repository.ts": [
+      "libs/server/entities/src/entities/teacher.entity.ts"
+    ],
+    "libs/server/entities/src/services/course.service.ts": [
+      "libs/server/entities/src/assets/courses-data.ts",
+      "libs/server/entities/src/entities/course.entity.ts",
+      "libs/server/entities/src/entities/dto/create-course.dto.ts",
+      "libs/server/entities/src/entities/dto/update-course.dto.ts",
+      "libs/server/entities/src/interfaces/course-list-item.ts",
+      "libs/server/entities/src/repositories/course.repository.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts"
+    ],
+    "libs/server/entities/src/services/degree.service.ts": [
+      "libs/server/entities/src/assets/courses-data.ts",
+      "libs/server/entities/src/entities/degree.entity.ts",
+      "libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "libs/server/entities/src/interfaces/degree-list-item.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts"
+    ],
+    "libs/server/entities/src/services/exam.service.ts": [
+      "libs/server/entities/src/entities/dto/create-exam.dto.ts",
+      "libs/server/entities/src/entities/dto/update-exam.dto.ts",
+      "libs/server/entities/src/entities/exam.entity.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/interfaces/exam-list-item.ts",
+      "libs/server/entities/src/repositories/course.repository.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/exam.repository.ts",
+      "libs/server/entities/src/repositories/session.repository.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts"
+    ],
+    "libs/server/entities/src/services/session.service.ts": [
+      "libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "libs/server/entities/src/entities/session.entity.ts",
+      "libs/server/entities/src/interfaces/session-list-item.ts",
+      "libs/server/entities/src/repositories/degree.repository.ts",
+      "libs/server/entities/src/repositories/session.repository.ts"
+    ],
+    "libs/server/entities/src/services/teacher.service.ts": [
+      "libs/server/entities/src/assets/courses-data.ts",
+      "libs/server/entities/src/entities/dto/create-teacher.dto.ts",
+      "libs/server/entities/src/entities/dto/update-teacher.dto.ts",
+      "libs/server/entities/src/entities/teacher.entity.ts",
+      "libs/server/entities/src/interfaces/teacher-list-item.ts",
+      "libs/server/entities/src/repositories/teacher.repository.ts"
+    ],
+    "libs/server/entities/tsconfig.json": [],
+    "libs/server/entities/tsconfig.lib.json": [],
+    "libs/server/entities/tsconfig.tsbuildinfo": [],
+    "libs/server/security/package.json": [],
+    "libs/server/security/README.md": [],
+    "libs/server/security/src/index.ts": [],
+    "libs/server/security/src/lib/decorators/current-user.decorator.ts": [],
+    "libs/server/security/src/lib/decorators/roles.decorator.ts": [],
+    "libs/server/security/src/lib/guards/jwt-auth.guard.ts": [],
+    "libs/server/security/src/lib/guards/roles.guard.ts": [
+      "libs/server/security/src/lib/decorators/roles.decorator.ts"
+    ],
+    "libs/server/security/tsconfig.json": [],
+    "libs/server/security/tsconfig.lib.json": [],
+    "libs/server/users/eslint.config.mjs": [
+      "eslint.config.mjs"
+    ],
+    "libs/server/users/jest.config.cts": [],
+    "libs/server/users/package.json": [],
+    "libs/server/users/README.md": [],
+    "libs/server/users/src/index.ts": [],
+    "libs/server/users/src/lib/dto/create-user.dto.ts": [
+      "libs/server/users/src/lib/dto/user-role.enum.ts"
+    ],
+    "libs/server/users/src/lib/dto/update-user.dto.ts": [
+      "libs/server/users/src/lib/dto/create-user.dto.ts"
+    ],
+    "libs/server/users/src/lib/dto/user-role.enum.ts": [],
+    "libs/server/users/src/lib/user.entity.ts": [
+      "libs/server/users/src/lib/dto/user-role.enum.ts"
+    ],
+    "libs/server/users/src/lib/users.controller.ts": [
+      "libs/server/users/src/lib/dto/create-user.dto.ts",
+      "libs/server/users/src/lib/dto/update-user.dto.ts",
+      "libs/server/users/src/lib/dto/user-role.enum.ts",
+      "libs/server/users/src/lib/users.service.ts"
+    ],
+    "libs/server/users/src/lib/users.module.ts": [
+      "libs/server/users/src/lib/user.entity.ts",
+      "libs/server/users/src/lib/users.controller.ts",
+      "libs/server/users/src/lib/users.repository.ts",
+      "libs/server/users/src/lib/users.service.ts"
+    ],
+    "libs/server/users/src/lib/users.repository.ts": [
+      "libs/server/users/src/lib/dto/create-user.dto.ts",
+      "libs/server/users/src/lib/dto/update-user.dto.ts",
+      "libs/server/users/src/lib/dto/user-role.enum.ts",
+      "libs/server/users/src/lib/user.entity.ts"
+    ],
+    "libs/server/users/src/lib/users.service.ts": [
+      "libs/server/users/src/lib/dto/create-user.dto.ts",
+      "libs/server/users/src/lib/dto/update-user.dto.ts",
+      "libs/server/users/src/lib/dto/user-role.enum.ts",
+      "libs/server/users/src/lib/user.entity.ts",
+      "libs/server/users/src/lib/users.repository.ts"
+    ],
+    "libs/server/users/tsconfig.json": [],
+    "libs/server/users/tsconfig.lib.json": [],
+    "md/backend/01-overview.md": [],
+    "md/backend/02-database.md": [],
+    "md/backend/03-users.md": [],
+    "md/backend/04-auth.md": [],
+    "md/backend/05-security.md": [],
+    "md/backend/06-entities.md": [],
+    "md/backend/07-api-app.md": [],
+    "md/frontend/01-overview.md": [],
+    "md/frontend/02-auth.md": [],
+    "md/frontend/03-teacher.md": [],
+    "md/frontend/04-segreteria.md": [],
+    "md/frontend/05-components.md": [],
+    "md/frontend/06-utils.md": [],
+    "md/README.md": [],
+    "nx.json": [],
+    "opencode.json": [],
+    "package.json": [],
+    "packages/.gitkeep": [],
+    "README.md": [],
+    "Requisiti progetto web.txt": [],
+    "tools/parse-corsi.mjs": [],
+    "tsconfig.base.json": [],
+    "tsconfig.json": []
+  }
+}

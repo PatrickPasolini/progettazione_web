@@ -1,0 +1,3929 @@
+================================================================================
+3. AREA: AREA MEDICA
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+CORSO: BIOTECNOLOGIE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • MATEMATICA E FISICA (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI ALESSIA
+  • CHIMICA GENERALE, INORGANICA E ORGANICA (CFU n/d – Primo Semestre)
+    Docente/i: BARONE MICHELE
+  • BIOLOGIA GENERALE E CELLULARE (6 CFU – Primo Semestre)
+    Docente/i: ZOPPI NICOLETTA, BARBON ALESSANDRO
+  • MATEMATICA (6 CFU – Primo Semestre)
+    Docente/i: TREBESCHI PAOLA
+  • FISICA APPLICATA (6 CFU – Primo Semestre)
+    Docente/i: LONGHI GIOVANNA
+  • CHIMICA GENERALE E INORGANICA (6 CFU – Primo Semestre)
+    Docente/i: BERGESE PAOLO
+  • CHIMICA ORGANICA (6 CFU – Primo Semestre)
+    Docente/i: ALESSANDRI IVANO
+  • ISTOLOGIA, EMBRIOLOGIA ED ANATOMIA (CFU n/d – Secondo Semestre)
+    Docente/i: RUSSO SIMONE
+  • BIOCHIMICA (CFU n/d – Secondo Semestre)
+    Docente/i: MAZZA LUCA
+  • GENETICA E GENOMICA (CFU n/d – Secondo Semestre)
+    Docente/i: RINALDI VITTORIO
+  • BIOSTATISTICA (6 CFU – Secondo Semestre)
+    Docente/i: SPECCHIA CLAUDIA
+  • BIOCHIMICA GENERALE (3 CFU – Secondo Semestre)
+    Docente/i: MITOLA STEFANIA MARIA FILOMENA
+  • BIOCHIMICA METABOLICA (3 CFU – Secondo Semestre)
+    Docente/i: MONTI EUGENIO, POLI MAURA
+  • METODOLOGIE BIOCHIMICHE (3 CFU – Secondo Semestre)
+    Docente/i: BRESCIANI ROBERTO, GRILLO ELISABETTA
+  • ANATOMIA UMANA (3 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • LABORATORIO DI ANATOMIA MICROSCOPICA (3 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • ISTOLOGIA ED EMBRIOLOGIA (6 CFU – Secondo Semestre)
+    Docente/i: PAROLINI SILVIA, REZZOLA SARA
+  • GENETICA GENERALE ED EL.DI GENETICA UMANA (3 CFU – Secondo Semestre)
+    Docente/i: MAGRI CHIARA
+  • GENETICA MOLECOLARE E GENOMICA (6 CFU – Secondo Semestre)
+    Docente/i: BORSANI GIUSEPPE
+
+  [2° Anno]
+  • BIOLOGIA MOLECOLARE (CFU n/d – Primo Semestre)
+    Docente/i: GALLO ALESSANDRO
+  • BIOTECNOLOGIE ALIMENTARI (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA MARTINA
+  • MICROBIOLOGIA E VIROLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: SILVESTRI PAOLO
+  • BIOTECNOLOGIE ZOOTECNICHE E VETERINARIE (3 CFU – Primo Semestre)
+    Docente/i: DE ANGELIS VALENTINA
+  • BIOTECNOLOGIE FITOPATOLOGICHE (3 CFU – Primo Semestre)
+    Docente/i: GENTILE EMANUELE
+  • BIOTECNOLOGIE AGRO-VETERINARIE (CFU n/d – Primo Semestre)
+    Docente/i: BARONE FRANCESCA
+  • BIOLOGIA MOLECOLARE (3 CFU – Primo Semestre)
+    Docente/i: FINAZZI DARIO
+  • ESERCITAZIONI DI BIOLOGIA MOLECOLARE (3 CFU – Primo Semestre)
+    Docente/i: ELIA LEONARDO, FRA ANNAMARIA
+  • LABORATORIO DI BIOLOGIA MOLECOLARE (3 CFU – Primo Semestre)
+    Docente/i: FINAZZI DARIO, FRA ANNAMARIA
+  • CHIMICA DEGLI ALIMENTI (6 CFU – Primo Semestre)
+    Docente/i: PERON GREGORIO
+  • CHIMICA E BIOTECNOLOGIE DELLE FERMENTAZIONI (3 CFU – Primo Semestre)
+    Docente/i: MARINO ELENA
+  • BIOTECNOLOGIE AGRARIE E AMBIENTALI (3 CFU – Primo Semestre)
+    Docente/i: MASTINU ANDREA
+  • MICROBIOLOGIA E MICROBIOLOGIA CLINICA (MOD.1) (6 CFU – Primo Semestre)
+    Docente/i: FIORENTINI SIMONA
+  • MICROBIOLOGIA E MICROBIOLOGIA CLINICA (MOD.2) (3 CFU – Primo Semestre)
+    Docente/i: CACCURI FRANCESCA
+  • FISIOLOGIA (6 CFU – Secondo Semestre)
+    Docente/i: FALCIATI LUCA
+  • PATOLOGIA GENERALE E IMMUNOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: GALLI MICHELE
+  • BIOCHIMICA CLINICA E BIOLOGIA MOLECOLARE CLINICA (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI FILIPPO
+  • GENETICA  MEDICA (6 CFU – Secondo Semestre)
+    Docente/i: RITELLI MARCO GIUSEPPE, IZZI CLAUDIA
+  • BIOCHIMICA CLINICA E BIOLOGIA MOLECOLARE CLIN (3 CFU – Secondo Semestre)
+    Docente/i: BIASIOTTO GIORGIO
+  • ESERCITAZIONI BIOCHIM.CL. E BIOLOG.MOL.CL. (3 CFU – Secondo Semestre)
+    Docente/i: CORSINI MICHELA
+  • LABORATORIO DI IMMUNOLOGIA (3 CFU – Secondo Semestre)
+    Docente/i: SALVI VALENTINA
+  • IMMUNOLOGIA (3 CFU – Secondo Semestre)
+    Docente/i: TIBERIO LAURA
+  • PATOLOGIA GENERALE (3 CFU – Secondo Semestre)
+    Docente/i: RUSNATI MARCO
+  • LABORATORIO DI PATOLOGIA GENERALE (3 CFU – Secondo Semestre)
+    Docente/i: GIACOMINI ARIANNA
+
+  [3° Anno]
+  • ASPETTI GIURIDICI, GESTIONALI E DI BIOETICA IN BIOTECNOLOGIE (CFU n/d – Primo Semestre)
+    Docente/i: GIORDANO GABRIELE
+  • PATOLOGIA CLINICA E MODELLI ANIMALI (CFU n/d – Primo Semestre)
+    Docente/i: DE LUCA ANTONIO
+  • FARMACOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: COLOMBO MARIA
+  • FARMACOLOGIA 1 (3 CFU – Primo Semestre)
+    Docente/i: BONINI SARA ANNA
+  • FARMACOLOGIA 2 (3 CFU – Primo Semestre)
+    Docente/i: BONINI SARA ANNA
+  • CHIMICA FARMACEUTICA (3 CFU – Primo Semestre)
+    Docente/i: GIANONCELLI ALESSANDRA, RIBAUDO GIOVANNI
+  • IL MODELLO ANIMALE ZEBRAFISH NELLA RICERCA BIOMEDICA (3 CFU – Primo Semestre)
+    Docente/i: ZIZIOLI DANIELA
+  • PATOLOGIA  CLINICA (3 CFU – Primo Semestre)
+    Docente/i: DEL PRETE ANNALISA
+  • LABORATORIO DI PATOLOGIA CLINICA (3 CFU – Primo Semestre)
+    Docente/i: MARTINI PAOLO
+  • DIRITTO COMMERCIALE (3 CFU – Primo Semestre)
+    Docente/i: MANCINI ANTONIO
+  • FILOSOFIA MORALE (3 CFU – Primo Semestre)
+    Docente/i: BUZZI ELISA MARIA
+  • ECONOMIA AZIENDALE (3 CFU – Primo Semestre)
+    Docente/i: CASSANO RAFFAELLA
+  • TIROCINIO (BIOTECNOLOGIE) (2 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: BENEDETTI ANDREA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: ASSISTENZA SANITARIA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MONTI NICOLA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: SORRENTINO SIMONE
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: ROSSI ELENA
+  • Biochimica (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GRILLO ELISABETTA
+  • Biologia Applicata (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PIOVANI GIOVANNA
+  • Fisiologia (3 CFU – Ciclo Annuale Unico)
+    Docente/i: GRASSI GABRIELE
+  • SCIENZE BIOMEDICHE DELLA VITA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VALENTE MARCO
+  • TIROCINIO 1° ANNO (CDL ASSIST SAN) (17 CFU – Ciclo Annuale Unico)
+    Docente/i: ORLANDO CHIARA
+  • LABORATORIO 1° ANNO (CDL ASSIST SAN) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MAZZA ALESSIA
+  • Anatomia umana e istologia (3 CFU – Ciclo Annuale Unico)
+    Docente/i: CORSETTI GIOVANNI
+  • Informatica (2 CFU – Primo Semestre)
+    Docente/i: GNUTTI ALESSANDRO
+  • PRINCIPI DI EPIDEMIOLOGIA, STATISTICA E INFORMATICA (CFU n/d – Primo Semestre)
+    Docente/i: FONTANA TOMMASO
+  • Epidemiologia di base (1 CFU – Primo Semestre)
+    Docente/i: VILLA FRANCESCO
+  • Statistica medica (2 CFU – Primo Semestre)
+    Docente/i: ROTA MATTEO
+  • SCIENZE DELL'ASSISTENZA SANITARIA PER IL MODELLO ONE HEALTH AND PLANETARY HEALTH (CFU n/d – Primo Semestre)
+    Docente/i: MARIANI ROBERTO
+  • Fondamenti metodologici della professione dell'assistente sanitario (1 CFU – Primo Semestre)
+    Docente/i: SARTORI DAVIDE
+  • Igiene ambientale (1 CFU – Primo Semestre)
+    Docente/i: CERETTI ELISABETTA
+  • Organizzazione dei servizi socio-sanitari (1 CFU – Primo Semestre)
+    Docente/i: ROSSI SIMONE
+  • Alimentazione e salute (1 CFU – Primo Semestre)
+    Docente/i: MARCONI SILVIA
+  • Igiene generale (2 CFU – Primo Semestre)
+    Docente/i: GELATTI UMBERTO
+  • Psicologia sociale (1 CFU – Primo Semestre)
+    Docente/i: LEONE DANIELE
+  • Psicologia generale e dello sviluppo (2 CFU – Primo Semestre)
+    Docente/i: CONTI CRISTINA
+  • Sociologia dei processi culturali e comunicativi (1 CFU – Primo Semestre)
+    Docente/i: CATTANEO RICCARDO
+  • Sociologia generale (1 CFU – Primo Semestre)
+    Docente/i: DE ANGELIS GIOVANNI
+  • Sociologia dell'ambiente e del territorio (2 CFU – Primo Semestre)
+    Docente/i: RINALDI CARLO
+  • SCIENZE PSICOLOGICHE E SOCIALI PER LA PROMOZIONE DELLA SALUTE (CFU n/d – Primo Semestre)
+    Docente/i: PARISI MONICA
+  • FONDAMENTI DI GENETICA, MICROBIOLOGIA E PATOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: PARISI MATTEO
+  • Genetica medica (1 CFU – Secondo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • Microbiologia e microbiologia clinica (2 CFU – Secondo Semestre)
+    Docente/i: MONTI MARTINA
+  • Patologia generale (3 CFU – Secondo Semestre)
+    Docente/i: RIZZO RICCARDO
+  • Immunologia Clinica (1 CFU – Secondo Semestre)
+    Docente/i: GRECO FRANCESCO
+  • METODOLOGIA DELLA RICERCA E DELL'OSSERVAZIONE IN AMBITO SANITARIO, SOCIALE E PSICOLOGICO (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCO MICHELE
+  • Tecniche di colloquio, counselling e intervista (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI NICOLA
+  • Teoria e tecnica dell'osservazione (1 CFU – Secondo Semestre)
+    Docente/i: GUERRA FABIO
+  • Metodi epidemiologici per la ricerca in ambito sanitario (1 CFU – Secondo Semestre)
+    Docente/i: SERRA SERGIO
+  • Metodologia della professione nella ricerca e nell'osservazione (1 CFU – Secondo Semestre)
+    Docente/i: PALMIERI MATTEO
+  • Metodologia della ricerca sociale (1 CFU – Secondo Semestre)
+    Docente/i: ESPOSITO ALESSANDRO
+  • Gestione, organizzazione e elaborazione delle informazioni (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ANTONIO
+  • Statistica sociale e demografia (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI MAURIZIO
+  • LINGUA INGLESE 1° ANNO (CDL ASSIST SAN) (1 CFU – Secondo Semestre)
+    Docente/i: AMATO CARLO
+
+  [2° Anno]
+  • LINGUA INGLESE 2° ANNO (CDL ASSIST SAN) (2 CFU – Ciclo Annuale Unico)
+    Docente/i: FRANCO VALENTINA
+  • TIROCINIO 2° ANNO (CDL ASSIST SAN) (23 CFU – Ciclo Annuale Unico)
+    Docente/i: ORLANDO RICCARDO
+  • LABORATORIO 2° ANNO (CDL ASSIST SAN) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: ORLANDO MARIA
+  • ELEMENTI DI FARMACOLOGIA, PRIMO SOCCORSO ED EMERGENZA SANITARIA (CFU n/d – Primo Semestre)
+    Docente/i: FONTANA ROBERTO
+  • Farmacologia (2 CFU – Primo Semestre)
+    Docente/i: BONINI SARA ANNA, SIGALA SANDRA
+  • Esami diagnostici e strumentali e loro applicazioni (1 CFU – Primo Semestre)
+    Docente/i: GENTILE RICCARDO
+  • Gestione delle emergenze nei Centri Vaccinali (2 CFU – Primo Semestre)
+    Docente/i: CHELAZZI COSIMO
+  • Tecniche e metodi per il monitoraggio dei parametri e per la somministrazione di farmaci (1 CFU – Primo Semestre)
+    Docente/i: FONTANA GIOVANNI
+  • MEDICINA PREVENTIVA, SOCIALE E DI COMUNITA' (CFU n/d – Primo Semestre)
+    Docente/i: FRANCO SILVIA
+  • Psichiatria e psichiatria di comunità (1 CFU – Primo Semestre)
+    Docente/i: DESTE GIACOMO VITTORIO PIETRO
+  • Medicina delle migrazioni (2 CFU – Primo Semestre)
+    Docente/i: GOBBI FEDERICO, MATTEELLI ALBERTO
+  • Medicina preventiva, sociale e di comunità (2 CFU – Primo Semestre)
+    Docente/i: COVOLO LOREDANA
+  • Psicologia clinica (1 CFU – Primo Semestre)
+    Docente/i: GHILARDI ALBERTO
+  • Metodologia della professione per la medicina preventiva, sociale e di comunità (2 CFU – Primo Semestre)
+    Docente/i: SERRA ENRICO
+  • Malattie infettive e infezioni correlate all'assistenza (2 CFU – Primo Semestre)
+    Docente/i: QUIROS ROLDAN MARIA EUGENIA
+  • FONDAMENTI DI PROMOZIONE DELLA SALUTE (CFU n/d – Secondo Semestre)
+    Docente/i: D'AMICO FRANCESCO
+  • Pedagogia generale, sociale ed istituzionale (2 CFU – Secondo Semestre)
+    Docente/i: MARINO ELISA
+  • Teoria e metodi degli interventi di promozione della salute e della gestione dei gruppi (2 CFU – Secondo Semestre)
+    Docente/i: GRECO LORENZO
+  • Metodologia della professione per la promozione della salute (2 CFU – Secondo Semestre)
+    Docente/i: VALENTE DAVIDE
+  • Didattica e pedagogia speciale (1 CFU – Secondo Semestre)
+    Docente/i: CATTANEO MATTEO
+  • SCIENZE DELL'ASSISTENZA PER LA PREVENZIONE, L'EDUCAZIONE TERAPEUTICA E IL CASE MANAGEMENT (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCHI SIMONE
+  • Metodologia della professione per la prevenzione e per la presa in carico del paziente cronico o fragile (2 CFU – Secondo Semestre)
+    Docente/i: SORRENTINO MARCO
+  • Neurologia (1 CFU – Secondo Semestre)
+    Docente/i: ROZZINI LUCA
+  • Medicina interna dell'adulto e geriatria (2 CFU – Secondo Semestre)
+    Docente/i: MORANDI ALESSANDRO, MARENGONI ALESSANDRA
+  • Medicina e prevenzione di genere (1 CFU – Secondo Semestre)
+    Docente/i: MARTINI MARCO
+  • Oncologia medica (1 CFU – Secondo Semestre)
+    Docente/i: COSENTINI DEBORAH, ALONGI FILIPPO
+  • Medicina fisica e riabilitativa (1 CFU – Secondo Semestre)
+    Docente/i: MONTICONE MARCO
+
+  [3° Anno]
+  • TIROCINIO 3° ANNO (CDL ASSIST SAN) (20 CFU – Ciclo Annuale Unico)
+    Docente/i: BELLINI LUCA
+  • LABORATORIO 3° ANNO (CDL ASSIST SAN) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BARBIERI ANTONIO
+  • SCIENZE DELLA PROMOZIONE DELLA SALUTE PER LA FAMIGLIA (CFU n/d – Primo Semestre)
+    Docente/i: MARIANI GIULIA
+  • Psicologia della famiglia (1 CFU – Primo Semestre)
+    Docente/i: FERRARI MARTINA
+  • Metodologia della professione per la promozione della salute nella famiglia (2 CFU – Primo Semestre)
+    Docente/i: RINALDI TOMMASO
+  • Pediatria Generale e Specialistica (2 CFU – Primo Semestre)
+    Docente/i: DOTTA LAURA
+  • Ostetricia e ginecologia (1 CFU – Primo Semestre)
+    Docente/i: FICHERA ANNA
+  • SCIENZE DELLA PROMOZIONE DELLA SALUTE PER LA SCUOLA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI SILVIA
+  • Pediatria preventiva e sociale (1 CFU – Primo Semestre)
+    Docente/i: CONSONNI FILIPPO
+  • Igiene scolastica e degli alimenti nelle collettività (1 CFU – Primo Semestre)
+    Docente/i: FERETTI DONATELLA
+  • Metodologia della professione per la promozione della salute nella scuola (1 CFU – Primo Semestre)
+    Docente/i: SILVESTRI MARIA
+  • Neuropsichiatria infantile (2 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • SCIENZE DELLA PROMOZIONE DELLA SALUTE PER IL LAVORO E NELLA VITA QUOTIDIANA (CFU n/d – Primo Semestre)
+    Docente/i: BRUNO PAOLO
+  • Prevenzione delle malattie dell'apparato visivo (1 CFU – Primo Semestre)
+    Docente/i: FERRARA MARIANTONIA
+  • Prevenzione delle malattie otorinolaringoiatriche e audiologiche (1 CFU – Primo Semestre)
+    Docente/i: MATTAVELLI DAVIDE, RAMPINELLI VITTORIO
+  • Metodologia della professione per la promozione della salute, la sicurezza e la tutela dei lavoratori e degli sportivi (2 CFU – Primo Semestre)
+    Docente/i: NERI FRANCESCO
+  • Protezione e radioprotezione (1 CFU – Primo Semestre)
+    Docente/i: BUGLIONE DI MONALE E BASTIA MICHELA, ALONGI FILIPPO
+  • Medicina del lavoro, malattie professionali e prevenzione (2 CFU – Primo Semestre)
+    Docente/i: RIZZO ALESSANDRO
+  • QUALITA' DELLE PRESTAZIONI SANITARIE E SOCIO-SANITARIE (CFU n/d – Primo Semestre)
+    Docente/i: GATTI TOMMASO
+  • Metodologia della professione per la verifica e il controllo delle prestazioni sanitarie e socio-sanitarie (1 CFU – Primo Semestre)
+    Docente/i: AMATO CARLO
+  • Qualità e appropriatezza delle prestazioni sanitarie e socio-sanitarie (1 CFU – Primo Semestre)
+    Docente/i: BARBIERI SILVIA
+  • SCIENZE GIURIDICHE E DEL MANAGEMENT SANITARIO (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI SILVIA
+  • Metodologia della professione in ambito giuridico e del management (1 CFU – Secondo Semestre)
+    Docente/i: GUERRA FABIO
+  • Medicina legale e deontologia (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • Diritto del lavoro (1 CFU – Secondo Semestre)
+    Docente/i: SERRA FRANCESCA
+  • Istituzioni di diritto pubblico (1 CFU – Secondo Semestre)
+    Docente/i: BARBIERI FILIPPO
+  • Tutela dei diritti dei cittadini (1 CFU – Secondo Semestre)
+    Docente/i: BREDA ROSANNA
+  • Organizzazione aziendale (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI SERGIO
+  • SCIENZE DELLA COMUNICAZIONE PER LA PROMOZIONE DELLA SALUTE (CFU n/d – Secondo Semestre)
+    Docente/i: DE ANGELIS FILIPPO
+  • Metodologia della professione per le relazioni con il pubblico e per la comunicazione innovativa e digitale (1 CFU – Secondo Semestre)
+    Docente/i: GATTI LAURA
+  • Principi di comunicazione e marketing in sanità (2 CFU – Secondo Semestre)
+    Docente/i: FONTANA SARA
+  • Sanità digitale (1 CFU – Secondo Semestre)
+    Docente/i: LOMBARDI CLAUDIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: DIETISTICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: SERRA EMANUELE
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: PALMIERI RICCARDO
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: VITALE ELENA
+  • TIROCINIO 1° ANNO (CDL DIETISTICA) (12 CFU – Ciclo Annuale Unico)
+    Docente/i: NERI MICHELE
+  • LABORATORIO PROFESSIONALE 1° ANNO (CDL DIETISTICA) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BIANCO FABIO
+  • FISICA, STATISTICA ED INFORMATICA (CFU n/d – Primo Semestre)
+    Docente/i: SORRENTINO CARLO
+  • FISICA AD INDIRIZZO BIOMEDICO (3 CFU – Primo Semestre)
+    Docente/i: GALLO FRANCESCO
+  • STATISTICA PER LA RICERCA (2 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • INFORMATICA (3 CFU – Primo Semestre)
+    Docente/i: GATTA ROBERTO
+  • SCIENZE BIOMEDICHE DI BASE (CFU n/d – Primo Semestre)
+    Docente/i: BIANCHI ELISA
+  • GENETICA MEDICA (2 CFU – Primo Semestre)
+    Docente/i: MARCHINA ELEONORA
+  • BIOCHIMICA (3 CFU – Primo Semestre)
+    Docente/i: FANZANI ALESSANDRO
+  • CHIMICA GENERALE E INORGANICA (1 CFU – Primo Semestre)
+    Docente/i: GRASSI VITTORIO
+  • CHIMICA DEGLI ALIMENTI (1 CFU – Primo Semestre)
+    Docente/i: PERON GREGORIO
+  • BIOLOGIA APPLICATA (3 CFU – Primo Semestre)
+    Docente/i: RUSSO ISABELLA
+  • SCIENZE MORFOLOGICHE UMANE E FISIOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: SARTORI MONICA
+  • ANATOMIA UMANA E DELL'APPARATO DIGERENTE (3 CFU – Primo Semestre)
+    Docente/i: CORSETTI GIOVANNI
+  • FISIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: SILVESTRI MATTEO
+  • ISTOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: REZZOLA SARA
+  • ETIOPATOGENESI DELLE MALATTIE (CFU n/d – Secondo Semestre)
+    Docente/i: MORETTI STEFANO
+  • PATOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: FRA ANNAMARIA
+  • PATOLOGIA CLINICA (1 CFU – Secondo Semestre)
+    Docente/i: SALVI VALENTINA
+  • IGIENE GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: GATTI VITTORIO
+  • MICROBIOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • SCIENZE CLINICHE E DIETETICHE 1 (CFU n/d – Secondo Semestre)
+    Docente/i: PARISI ENRICO
+  • SCIENZE DIETETICHE APPLICATE (3 CFU – Secondo Semestre)
+    Docente/i: CARBONE TOMMASO
+  • MEDICINA INTERNA (1 CFU – Secondo Semestre)
+    Docente/i: ZUCCHELLI ALBERTO
+  • SCIENZE E TECNOLOGIE ALIMENTARI (2 CFU – Secondo Semestre)
+    Docente/i: RUSSO TOMMASO
+  • CHIMICA DEGLI ALIMENTI (1 CFU – Secondo Semestre)
+    Docente/i: PERON GREGORIO
+  • FISIOLOGIA DELLA NUTRIZIONE (2 CFU – Secondo Semestre)
+    Docente/i: MARCONI SILVIA
+  • SCIENZE PSICOPEDAGOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: BARBIERI FABIO
+  • PSICOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: DELLA VEDOVA ANNA MARIA
+  • PEDAGOGIA GENERALE E SOCIALE (1 CFU – Secondo Semestre)
+    Docente/i: BORNATICI SARA
+  • STORIA DELLA MEDICINA (1 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • SOCIOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: MARINO GIULIA
+  • INGLESE SCIENTIFICO 1° ANNO (CdL Dietistica) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SARTORI ALESSIA
+
+  [2° Anno]
+  • ALTRE ATTIVITA' II ANNO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: CARUSO FRANCESCO
+  • TIROCINIO 2° ANNO (22 CFU – Ciclo Annuale Unico)
+    Docente/i: GRAZIOLI MARIAGIUDITTA
+  • LABORATORIO PROFESSIONALE 2° ANNO (CDL DIETISTICA) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GIORDANO ROBERTO
+  • METABOLISMO, NUTRIZIONE E ATTIVITA' FISICA (CFU n/d – Primo Semestre)
+    Docente/i: RIZZO ALESSIA
+  • ENDOCRINOLOGIA (MALATTIE METAB. E NUTRIZ.) (2 CFU – Primo Semestre)
+    Docente/i: PIROLA ILENIA
+  • MEDICINA DELLO SPORT (MED. INTER.) (1 CFU – Primo Semestre)
+    Docente/i: DE CIUCEIS CAROLINA
+  • SCIENZE DIETET. APPL. (MALATTIE METAB.) - 2 A (2 CFU – Primo Semestre)
+    Docente/i: ZANINI BARBARA
+  • TECNICHE PER LA VALUTAZIONE DELLA COMP. CORPOREA (BIVA, pliche, dexa…) (1 CFU – Primo Semestre)
+    Docente/i: COSTA SIMONE
+  • DIETETICA E FARMACOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: RIZZO FILIPPO
+  • GASTROENTEROLOGIA (DIETOLOG., DIETETOREP.) (1 CFU – Primo Semestre)
+    Docente/i: RICCI CHIARA
+  • SCIENZE DIETET. APPL. 2° ANNO PARTE A (DIETOL (2 CFU – Primo Semestre)
+    Docente/i: DE LUCA LORENZO
+  • SCIENZE DIETET. APPL. 2° ANNO PARTE B (DIETOL (1 CFU – Primo Semestre)
+    Docente/i: FRANCO PAOLO
+  • FARMACOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: VALERIO ALESSANDRA
+  • PRINCIPI DI MEDICINA GENERALE E PRIMO SOCCORSO (CFU n/d – Primo Semestre)
+    Docente/i: BELLINI DAVIDE
+  • MEDICINA INTERNA (1) - PARTE A (1 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • MEDICINA INTERNA (1) - PARTE B (1 CFU – Primo Semestre)
+    Docente/i: MUIESAN MARIA LORENZA
+  • MEDICINA INTERNA (1) - PARTE C (1 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • ANESTESIA E RIANIMAZIONE - BSL (2 CFU – Primo Semestre)
+    Docente/i: BERTONI MICHELE
+  • SCIENZE CLINICHE E DIETETICHE (2) (CFU n/d – Secondo Semestre)
+    Docente/i: BENEDETTI MASSIMO
+  • MALATTIE APPARATO CARDIOVASCOLARE (1 CFU – Secondo Semestre)
+    Docente/i: ADAMO MARIANNA
+  • ENDOCRINOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: CAPPELLI CARLO
+  • NEFROLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: ZUBANI ROBERTO
+  • MEDICINA INTERNA (2) (1 CFU – Secondo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • MALATTIE DEL SANGUE (1 CFU – Secondo Semestre)
+    Docente/i: AVENOSO DANIELE
+  • SCIENZE DIETETICHE APPLICATE (2 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI SERGIO
+  • SCIENZE CLINICHE E DIETETICHE (3) (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI LUCA
+  • GASTROENTEROLGIA (1 CFU – Secondo Semestre)
+    Docente/i: RICCI CHIARA
+  • MALATTIE INFETTIVE (1 CFU – Secondo Semestre)
+    Docente/i: FOCA' EMANUELE
+  • SCIENZE DIETET. APPL. (MAL. A) - 2 A. PARTE A (1 CFU – Secondo Semestre)
+    Docente/i: ZANINI BARBARA
+  • SCIENZE DIETET. APPL.ICATA (MAL A.) - 2A. PARTE B (1 CFU – Secondo Semestre)
+    Docente/i: ZANINI BARBARA
+  • MALATTIE ODONTOSTOMATOLOGICHE (1 CFU – Secondo Semestre)
+    Docente/i: DALESSANDRI DOMENICO
+
+  [3° Anno]
+  • ALTRE ATTIVITA 3° ANNO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: FERRARO VALENTINA
+  • TIROCINIO 3° ANNO (CDL DIETISTICA) (26 CFU – Ciclo Annuale Unico)
+    Docente/i: LONGO GIULIA
+  • LABORATORIO PROFESSIONALE 3° ANNO (CDL DIETISTICA) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RIZZO ROBERTA
+  • SCIENZE CLINICHE E DIETETICHE 4 (CFU n/d – Primo Semestre)
+    Docente/i: DE ANGELIS GIUSEPPE
+  • PSICOLOGIA CLINICA 1 (1 CFU – Primo Semestre)
+    Docente/i: BUIZZA CHIARA
+  • PSICHIATRIA (1 CFU – Primo Semestre)
+    Docente/i: DESTE GIACOMO VITTORIO PIETRO
+  • SCIENZE DIETET. APPL. (DISTURBI COMPORT. ALIM (2 CFU – Primo Semestre)
+    Docente/i: BELLINI FRANCESCO
+  • MEDICINA INTERNA (3) (1 CFU – Primo Semestre)
+    Docente/i: GRASSI GIUSEPPE
+  • NEUROPSICHIATRIA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: BELLINI PAOLA
+  • METODOLOGIA DELLA RICERCA BIBLIOGRAFICA (1 CFU – Primo Semestre)
+    Docente/i: BIANCO FABIO
+  • SCIENZE MATERNO INFANTILE (CFU n/d – Primo Semestre)
+    Docente/i: BENEDETTI CHIARA
+  • PEDIATRIA GENERALE E SPECIALISTICA (2 CFU – Primo Semestre)
+    Docente/i: DOTTA LAURA
+  • CHIRURGIA PEDIATRICA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: BORONI GIOVANNI
+  • PSICOLOGIA CLINICA 2 (1 CFU – Primo Semestre)
+    Docente/i: BUIZZA CHIARA
+  • GINECOLOGIA E OSTETRICIA (1 CFU – Primo Semestre)
+    Docente/i: FERRARI FEDERICO GIORGIO
+  • MEDICINA INTERNA, SPORT E NUTRIZIONE (1 CFU – Primo Semestre)
+    Docente/i: CARUSO CLAUDIA
+  • NUTRIZIONE ARTIFICIALE, ONCOLOGIA E NEUROLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: PELLEGRINI VITTORIO
+  • ONCOLOGIA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: GRISANTI SALVATORE
+  • SCIENZE DIETETICHE APPL. (NUTRIZ. ARTIF., ONC) (1 CFU – Secondo Semestre)
+    Docente/i: RICCI CHIARA
+  • NEUROLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: MARCONI SILVIA
+  • CHIRURGIA (1 CFU – Secondo Semestre)
+    Docente/i: RAMERA MARCO
+  • GASTROENTEROLOGIA / NUTRIZIONE CLINICA (1 CFU – Secondo Semestre)
+    Docente/i: RICCI CHIARA
+  • SCIENZE MEDICO-LEGALI E GESTIONALI (CFU n/d – Secondo Semestre)
+    Docente/i: PALUMBO FILIPPO
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: CARUSO SIMONE
+  • ECONOMIA AZIENDALE (1 CFU – Secondo Semestre)
+    Docente/i: RUSSO MARIA
+  • SCIENZE DIETET. APPL. (SC. MED.-LEG.) (1 CFU – Secondo Semestre)
+    Docente/i: MARCONI SILVIA
+  • ORGANIZZAZIONE AZIENDALE (1 CFU – Secondo Semestre)
+    Docente/i: ESPOSITO SERGIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: EDUCAZIONE PROFESSIONALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: ESPOSITO CARLO
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: FERRARI NICOLA
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: NEGRI GABRIELE
+  • ALTRE ATTIVITA' FORMATIVE (1° ANNO) (3 CFU – Ciclo Annuale Unico)
+    Docente/i: CONTI SILVIA
+  • TIROCINIO 1° ANNO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CATTANEO PAOLA
+  • METODI TECN. INTERV. EDUC - LAB RUOLO PROFESS (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MORELLI MARCO
+  • METODI TECN. INTERV. EDUC - LAB TECN. ANIM. (1 CFU – Ciclo Annuale Unico)
+    Docente/i: ESPOSITO ELISA
+  • TIROCINIO PRATICO 1° ANNO (16 CFU – Ciclo Annuale Unico)
+    Docente/i: GRASSI MAURIZIO
+  • SCIENZE PROPEDEUTICHE SOCIO-ANTROPOLOGICHE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VITALE GIOVANNI
+  • SOCIOLOGIA GENERALE (4 CFU – Ciclo Annuale Unico)
+    Docente/i: FONTANA PAOLA
+  • ANTROPOLOGIA (4 CFU – Ciclo Annuale Unico)
+    Docente/i: NEGRI MASSIMO
+  • METODOLOGIA DELLA RICERCA SOC. ED EDUC. (5 CFU – Ciclo Annuale Unico)
+    Docente/i: SORRENTINO ELENA
+  • SCIENZE BIOMEDICHE DI BASE (CFU n/d – Primo Semestre)
+    Docente/i: BARBIERI MARIA
+  • BIOCHIMICA (1 CFU – Primo Semestre)
+    Docente/i: INGRASSIA ROSARIA
+  • BIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: RUSSO ISABELLA
+  • GENETICA (1 CFU – Primo Semestre)
+    Docente/i: RITELLI MARCO GIUSEPPE
+  • BIOCHIMICA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: CORSINI MICHELA
+  • MICROBIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • MEDICINA DI PRIMO SOCCORSO E DELLE FRAGILITA' (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO CHIARA
+  • MEDICINA INTERNA (1 CFU – Primo Semestre)
+    Docente/i: CARUSO SARA
+  • PRINCIPI DI PRIMO SOCCORSO (1 CFU – Primo Semestre)
+    Docente/i: CHELAZZI COSIMO
+  • SCIENZE PSICOPEDAGOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: BENEDETTI FRANCESCO
+  • STORIA DELLA PEDAGOGIA (2 CFU – Secondo Semestre)
+    Docente/i: MARINO FRANCESCA
+  • PSICOLOGIA GENERALE (3 CFU – Secondo Semestre)
+    Docente/i: SANTORO PAOLO
+  • PEDAGOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: BORNATICI SARA
+  • PSICOLOGIA DELLO SVILUPPO (3 CFU – Secondo Semestre)
+    Docente/i: LONGO LAURA
+  • BASI MORFOLOGICHE E FUNZIONALI DELLA VITA (CFU n/d – Secondo Semestre)
+    Docente/i: RUSSO PAOLA
+  • ANATOMIA UMANA (1 CFU – Secondo Semestre)
+    Docente/i: GALLI SIMONE
+  • FISIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: BRIGNANI DEBORA
+  • PATOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: SERRA PAOLA
+  • STORIA DELLA MEDICINA (2 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • INGLESE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RIZZO MARIA
+
+  [2° Anno]
+  • ALTRE ATTIVITA' FORMATIVE (2° ANNO) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SALA FILIPPO
+  • TIROCINIO 2° ANNO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MORTARI CHIARA
+  • COLLOQUIO COUNSELLING (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BENEDETTI ANTONIO
+  • RELAZIONE D'AIUTO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GUERRA GIUSEPPE
+  • TIROCINIO PRATICO 2° ANNO (18 CFU – Ciclo Annuale Unico)
+    Docente/i: AMATO BARBARA
+  • SCIENZE RIABILITATIVE E NEUROPSICHIATRICHE (CFU n/d – Primo Semestre)
+    Docente/i: ROMANO MATTEO
+  • NEUROPSICHIATRIA INFANTILE (2 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • PSICHIATRIA (3 CFU – Primo Semestre)
+    Docente/i: MARTINI MICHELE
+  • NEUROLOGIA (2 CFU – Primo Semestre)
+    Docente/i: FILOSTO MASSIMILIANO, ROZZINI LUCA
+  • GERIATRIA (1 CFU – Primo Semestre)
+    Docente/i: ZUCCHELLI ALBERTO
+  • SCIENZE DELL'EDUCAZIONE PROFESSIONALE SANITARIA (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI ELENA
+  • PEDAGOGIA GENERALE E SOCIALE II (4 CFU – Primo Semestre)
+    Docente/i: BORNATICI SARA
+  • PSICOLOGIA SOCIALE (4 CFU – Primo Semestre)
+    Docente/i: MARIANI NICOLA
+  • SOCIOLOGIA GIURIDICA, DELLA DEVIANZA (4 CFU – Primo Semestre)
+    Docente/i: ORLANDO FABIO
+  • ORGANIZZAZ. SERVIZI SANITARI E SOCIO EDUCATIV (3 CFU – Primo Semestre)
+    Docente/i: SORRENTINO EMANUELE
+  • FARMACOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: LOMBARDI LUCA
+  • FARMACOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: BELLUCCI ARIANNA
+  • NEUROPSICOFARMACOLOGIA E FARMACOLOGIA DELLE DIPENDENZE (1 CFU – Secondo Semestre)
+    Docente/i: BELLUCCI ARIANNA
+  • SCIENZE GIURIDICHE E DELLA PREVENZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: PAGANO ANTONIO
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: COLOMBO ELISA
+  • MEDICINA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • ISTITUZIONI DI DIRITTO PUBBLICO (2 CFU – Secondo Semestre)
+    Docente/i: PALMIERI SARA
+  • DIRITTO PRIVATO (2 CFU – Secondo Semestre)
+    Docente/i: CACACE SIMONA
+  • DIRITTO DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: D'AMICO GIOVANNI
+  • SCIENZE PSICOLOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: MARTINI GIOVANNI
+  • PSICOLOGIA CLINICA (3 CFU – Secondo Semestre)
+    Docente/i: CONTI CARLO
+  • PSICOLOGIA DINAMICA (3 CFU – Secondo Semestre)
+    Docente/i: DELLA VEDOVA ANNA MARIA
+
+  [3° Anno]
+  • ALTRE ATTIVITA' FORMATIVE (3° ANNO) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GALLO NICOLA
+  • ALTRE ATTIVITA' (2 CFU – Ciclo Annuale Unico)
+    Docente/i: GIORDANO ANNA
+  • LABORATORIO PROFESSIONALE (3 CFU – Ciclo Annuale Unico)
+    Docente/i: GUERRA PAOLO
+  • TIROCINIO 3°ANNO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BIANCHI ANNA
+  • TIROCINIO PRATICO 3° ANNO (18 CFU – Ciclo Annuale Unico)
+    Docente/i: PELLEGRINI FRANCESCO
+  • METODI TECN. INTERV. RIAB. PSICOSOC. (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SALA GIUSEPPE
+  • SEMINARIO SUL GRUPPO DI LAVORO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RICCI GIUSEPPE
+  • PROGET. VALUTAZ. ORGANIZ. INTERV. EDUC. (2 CFU – Ciclo Annuale Unico)
+    Docente/i: NEGRI LORENZO
+  • MANAGEMENT E ORGANIZZAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: BRUNO SIMONE
+  • ORGANIZZAZIONE AZIENDALE (1 CFU – Primo Semestre)
+    Docente/i: BASILE STEFANO
+  • PSICOLOGIA DEL LAVORO E DELLE ORGANIZZAZIONI (3 CFU – Primo Semestre)
+    Docente/i: ROSSI ALESSIA
+  • SOCIOLOGIA GENERALE II (POLITICA SOCIALE) (3 CFU – Primo Semestre)
+    Docente/i: COSTA RICCARDO
+  • METODOLOGIA DELL'INTERVENTO PEDAGOGICO E DELL'EDUCAZIONE PROFESSIONALE (CFU n/d – Primo Semestre)
+    Docente/i: FERRARA MONICA
+  • DIDATTICA E PEDAGOGIA SPECIALE (3 CFU – Primo Semestre)
+    Docente/i: BIANCHI CRISTINA
+  • PEDAGOGIA SPERIMENTALE (3 CFU – Primo Semestre)
+    Docente/i: SILVESTRI NICOLA
+  • FILOSOFIA MORALE (2 CFU – Primo Semestre)
+    Docente/i: BUZZI ELISA MARIA
+  • SCIENZE INTERDISCIPLINARI E DELLA COMUNICAZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: TESTA MATTEO
+  • SOCIOLOGIA DEI PROCESSI CULTURALI (4 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI ROBERTO
+  • METODI E DIDATTICHE DELLE ATTIVITA' MOTORIE (2 CFU – Secondo Semestre)
+    Docente/i: LONGO GIUSEPPE
+  • DISCIPLINE DELLO SPETTACOLO (2 CFU – Secondo Semestre)
+    Docente/i: FERRARO SARA
+  • ELABORATO FINALE TEORICO PRATICO (6 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: CARBONE ENRICO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: FISIOTERAPIA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MORELLI SILVIA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MARIANI DAVIDE
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: BARBIERI TOMMASO
+  • SCIENZE PROPEDEUTICHE (CFU n/d – Primo Semestre)
+    Docente/i: CONTI MARTINA
+  • FISICA APPLICATA (2 CFU – Primo Semestre)
+    Docente/i: GATTI GIULIA
+  • APPLICATIVI INFORMATICI DI BASE (2 CFU – Primo Semestre)
+    Docente/i: RICCI ALESSANDRO
+  • STATISTICA MEDICA (2 CFU – Primo Semestre)
+    Docente/i: CALZA STEFANO
+  • SCIENZE BIOLOGICHE E DELLA PREVENZIONE (CFU n/d – Primo Semestre)
+    Docente/i: GRASSI LAURA
+  • CHIMICA E BIOCHIMICA (1 CFU – Primo Semestre)
+    Docente/i: ZIZIOLI DANIELA
+  • BIOCHIMICA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: GARRAFA EMIRENA MICHELA
+  • BIOLOGIA E GENETICA (1 CFU – Primo Semestre)
+    Docente/i: SALVI ALESSANDRO
+  • IGIENE GENERALE ED APPLICATA (1 CFU – Primo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • MEDICINA DEL LAVORO (1 CFU – Primo Semestre)
+    Docente/i: SALA EMMA
+  • ANATOMIA ISPETTIVA (1 CFU – Primo Semestre)
+    Docente/i: FERRARI CLAUDIA
+  • FISIOLOGIA UMANA E DEL MOVIMENTO (CFU n/d – Primo Semestre)
+    Docente/i: LEONE LAURA
+  • FISIOLOGIA UMANA (2 CFU – Primo Semestre)
+    Docente/i: FALCIATI LUCA
+  • NEUROFISIOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: GOBBO MASSIMILIANO
+  • CINESIOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: MONTICONE MARCO
+  • Anatomia generale ed elementi morfofunzionali dei sistemi (2 CFU – Primo Semestre)
+    Docente/i: REZZANI RITA, FAVERO GAIA
+  • ANATOMIA UMANA (CFU n/d – Primo Semestre)
+    Docente/i: FERRARI ANTONIO
+  • Anatomia del sistema locomotore (2 CFU – Primo Semestre)
+    Docente/i: BONOMINI FRANCESCA
+  • Anatomia del sistema nervoso centrale e periferico (1 CFU – Primo Semestre)
+    Docente/i: FAVERO GAIA
+  • SCIENZE DEL MOVIMENTO (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCHI FEDERICA
+  • VALUTAZIONE ARTICOLARE (1 CFU – Secondo Semestre)
+    Docente/i: FERRARA ENRICO
+  • VALUTAZIONE MUSCOLARE (3 CFU – Secondo Semestre)
+    Docente/i: SALA ANNA
+  • ANALISI STRUMENTALE DEL MOVIMENTO (1 CFU – Secondo Semestre)
+    Docente/i: MONTICONE MARCO
+  • VALUTAZIONE CINESIOLOGICA DEL CAMMINO E DEL GESTO (1 CFU – Secondo Semestre)
+    Docente/i: TESTA ROBERTA
+  • VALUTAZIONE DELLO SVILUPPO MOTORIO (1 CFU – Secondo Semestre)
+    Docente/i: GRECO FILIPPO
+  • METODOLOGIA DELLA RIABILITAZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: CONTI ALESSANDRO
+  • SISTEMI DI VALUTAZIONE DELLA DISABILITA' E ORGANIZZAZIONE DEI SERVIZI RIABILITATIVI (1 CFU – Secondo Semestre)
+    Docente/i: MORELLI MARIA
+  • STORIA E METODOLOGIA DELLA FISIOTERAPIA (1 CFU – Secondo Semestre)
+    Docente/i: FONTANA TOMMASO
+  • METODOLOGIA DELL'ALLENAMENTO (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI ALESSANDRO
+  • PRINCIPI E TECNICHE DELL'ESERCIZIO TERAPEUTICO (2 CFU – Secondo Semestre)
+    Docente/i: PELLEGRINI CRISTINA
+  • MASSOTERAPIA (1 CFU – Secondo Semestre)
+    Docente/i: GALLI MATTEO
+  • METODOLOGIA DELLA RICERCA SCIENTIFICA IN RIABILITAZIONE (2 CFU – Secondo Semestre)
+    Docente/i: MARINO EMANUELE
+  • PATOLOGIA GENERALE, FARMACOLOGIA E PRINCIPI DI PRIMO SOCCORSO (CFU n/d – Secondo Semestre)
+    Docente/i: CONTI LORENZO
+  • FARMACOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: BELLUCCI ARIANNA
+  • PATOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: FRA ANNAMARIA
+  • PRINCIPI DI PS (1 CFU – Secondo Semestre)
+    Docente/i: RASULO FRANCESCO ANTONIO
+  • MEDICINA INTERNA (1 CFU – Secondo Semestre)
+    Docente/i: ZUCCHELLI ALBERTO
+  • LABORATORIO 1 (CFU n/d – Secondo Semestre)
+    Docente/i: PELLEGRINI FILIPPO
+  • LABORATORIO 1: PRESE E TECNICHE IN CINESITERAPIA (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ROBERTO
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 1° ANNO (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCO MASSIMO
+  • TIROCINIO PROFESSIONALE 1° ANNO (8 CFU – Secondo Semestre)
+    Docente/i: BARBIERI MARTINA
+  • LINGUA INGLESE (B1 + OPEN BADGE) (4 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SALA RICCARDO
+
+  [2° Anno]
+  • CLINICA DELL'APPARATO LOCOMOTORE (CFU n/d – Primo Semestre)
+    Docente/i: RICCI CRISTINA
+  • REUMATOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: FREDI MICAELA, PIANTONI SILVIA, CAVAZZANA ILARIA
+  • ORTOPEDIA E TRAUMATOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: LOMBARDI FRANCESCA
+  • MEDICINA DELLO SPORT (1 CFU – Primo Semestre)
+    Docente/i: MAZZA LUCA
+  • RADIOPROTEZIONE E IMAGING DELL'APPARATO LOCOMOTORE (1 CFU – Primo Semestre)
+    Docente/i: BIANCHI ALESSANDRO
+  • CLINICA NEUROLOGICA (CFU n/d – Primo Semestre)
+    Docente/i: CONTI MARTINA
+  • SEMEIOTICA NEUROLOGICA (1 CFU – Primo Semestre)
+    Docente/i: TOJA ANDREA, FILOSTO MASSIMILIANO
+  • IMAGING CEREBROSPINALE (1 CFU – Primo Semestre)
+    Docente/i: CORBO DANIELE
+  • NEUROLOGIA (2 CFU – Primo Semestre)
+    Docente/i: MOROTTI ANDREA, FILOSTO MASSIMILIANO, PILOTTO ANDREA
+  • NEUROPSICOLOGIA E PRINCIPI RIABILITAZIONE NEUROPSICOL (2 CFU – Primo Semestre)
+    Docente/i: ROZZINI LUCA
+  • NEUROCHIRURGIA E NEUROTRAUMATOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: PANCIANI PIER PAOLO, CORNALI CLAUDIO
+  • SCIENZE PSICOLOGICHE (CFU n/d – Primo Semestre)
+    Docente/i: CONTI PAOLA
+  • PEDAGOGIA GENERALE E SOCIALE E DEMOETNO (2 CFU – Primo Semestre)
+    Docente/i: MARTINELLI ELENA
+  • PSICOLOGIA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: MARTINELLI FABIO
+  • PSICOLOGIA CLINICA E DELLA RIABILITAZIONE (1 CFU – Primo Semestre)
+    Docente/i: GENTILE ROBERTA
+  • PSICHIATRIA (1 CFU – Primo Semestre)
+    Docente/i: BARLATI STEFANO
+  • CLINICA E RIABILITAZIONE GERIATRICA E PALLIATIVA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI VITTORIO
+  • ONCOLOGIA E CURE PALLIATIVE (1 CFU – Primo Semestre)
+    Docente/i: NICOSIA LUCA, GRISANTI SALVATORE, ALONGI FILIPPO
+  • GERIATRIA E GERONTOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: MORANDI ALESSANDRO, MARENGONI ALESSANDRA
+  • RIABILITAZIONE GERIATRICA (2 CFU – Primo Semestre)
+    Docente/i: ROSSI FRANCESCO
+  • RIABILITAZIONE IN AMBITO ONCOLOGICO E PALLIATIVO (1 CFU – Primo Semestre)
+    Docente/i: BARONE ENRICO
+  • RIABILITAZIONE DELLE PATOLOGIE DELL'APPARATO LOCOMOTORE (CFU n/d – Secondo Semestre)
+    Docente/i: LEONE LUCA
+  • PRINCIPI E METODI DELLA RIABILITAZIONE ORTOPEDICA (1 CFU – Secondo Semestre)
+    Docente/i: GUERRA CRISTINA
+  • PRINCIPI E METODI DELLA RIABILITAZIONE DELLE PATOLOGIE DEL RACHIDE (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI BARBARA
+  • FISIOTERAPIA IN ORTOPEDIA, TRAUMATOLOGIA E REUMATOLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: GENTILE GIUSEPPE
+  • EDUCAZIONE E RIEDUCAZIONE POSTURALE (1 CFU – Secondo Semestre)
+    Docente/i: NERI LORENZO
+  • TERAPIA FISICA E STRUMENTALE (1 CFU – Secondo Semestre)
+    Docente/i: GENTILE GABRIELE
+  • RIABILITAZIONE DELLO SPORTIVO (1 CFU – Secondo Semestre)
+    Docente/i: PAGANO PAOLA
+  • TERAPIA MANUALE (2 CFU – Secondo Semestre)
+    Docente/i: BARONE MONICA
+  • RIABILITAZIONE DELLE PATOLOGIE NEUROLOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: VALENTE EMANUELE
+  • PRINCIPI E METODI DI RIABILITAZIONE NEUROLOGICA (1 CFU – Secondo Semestre)
+    Docente/i: MONTICONE MARCO
+  • PRINCIPI E METODI RIABILITAZIONE NEUROTRAUMATOLOGICA (1 CFU – Secondo Semestre)
+    Docente/i: FRANCO ENRICO
+  • FISIOTERAPIA NELLE PATOLOGIE DEL SNC E PERIFERICO (2 CFU – Secondo Semestre)
+    Docente/i: SORRENTINO ELISA
+  • FISIOTERAPIA DELLE MIELOLESIONI (1 CFU – Secondo Semestre)
+    Docente/i: BIANCHI FEDERICA
+  • RIABILITAZIONE NELLE DISFAGIE (1 CFU – Secondo Semestre)
+    Docente/i: BIANCHI CRISTINA
+  • PROTESI ORTESI AUSILI (1 CFU – Secondo Semestre)
+    Docente/i: BASILE GIOVANNI
+  • BIOINGEGNERIA DELLA RIABILITAZIONE (1 CFU – Secondo Semestre)
+    Docente/i: DE ANGELIS GIOVANNI
+  • LABORATORIO 2 (CFU n/d – Secondo Semestre)
+    Docente/i: LOMBARDI LAURA
+  • LABORATORIO 2: RIABILITAZIONE NEUROMOTORIA (1 CFU – Secondo Semestre)
+    Docente/i: PAGANO VITTORIO
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 2° ANNO (CFU n/d – Secondo Semestre)
+    Docente/i: FERRARO GIOVANNI
+  • TIROCINIO PROFESSIONALE 2° ANNO (20 CFU – Secondo Semestre)
+    Docente/i: PARISI ELENA
+
+  [3° Anno]
+  • CLINICA E RIABILITAZIONE IN ETA' EVOLUTIVA (CFU n/d – Primo Semestre)
+    Docente/i: NEGRI CLAUDIA
+  • PEDIATRIA (1 CFU – Primo Semestre)
+    Docente/i: LOUGARIS VASSILIOS
+  • NEUROPSICHIATRIA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • ORTOPEDIA PEDIATRICA (1 CFU – Primo Semestre)
+    Docente/i: GUERRA MAURIZIO
+  • FISIOTERAPIA IN ETA' EVOLUTIVA (2 CFU – Primo Semestre)
+    Docente/i: LEONE SERGIO
+  • RIABILITAZIONE SPECIALISTICA (CFU n/d – Primo Semestre)
+    Docente/i: LOMBARDI DAVIDE
+  • UROLOGIA RIABILITATIVA (1 CFU – Primo Semestre)
+    Docente/i: SUARDI NAZARENO, ZANI DANILO
+  • FISIOTERAPIA NELLE DISFUNZIONI PELVIPERINEALI (1 CFU – Primo Semestre)
+    Docente/i: GATTI MARCO
+  • FISIOTERAPIA DELL'AMPUTATO E DELL'USTIONATO (1 CFU – Primo Semestre)
+    Docente/i: FONTANA DANIELE
+  • LINFODRENAGGIO (1 CFU – Primo Semestre)
+    Docente/i: BIANCO MARCO
+  • PNEUMOLOGIA E FISIOPATOLOGIA RESPIRATORIA (1 CFU – Primo Semestre)
+    Docente/i: PINI LAURA
+  • CARDIOLOGIA RIABILITATIVA (1 CFU – Primo Semestre)
+    Docente/i: NODARI SAVINA, LOMBARDI CARLO MARIO
+  • CARDIOCHIRURGIA E CHIRURGIA TORACICA (2 CFU – Primo Semestre)
+    Docente/i: MUNERETTO CLAUDIO, BENUSSI STEFANO
+  • FISIOTERAPIA CARDIOVASCOLARE E RESPIRATORIA (2 CFU – Primo Semestre)
+    Docente/i: LOMBARDI CLAUDIA
+  • LABORATORIO 3 (CFU n/d – Primo Semestre)
+    Docente/i: SERRA ENRICO
+  • LABORATORIO 3: METODI E AUSILI PER LA DISOSTRUZIONE BRONCHIALE E LA RIESPANSIONE POLMONARE (1 CFU – Primo Semestre)
+    Docente/i: AMATO EMANUELE
+  • PRINCIPI LEGALI BIOETICI E DEL MANAGEMENT SANITARIO (CFU n/d – Secondo Semestre)
+    Docente/i: SANTORO ANDREA
+  • MEDICINA LEGALE E BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • ORGANIZZAZIONE ED ECONOMIA SANITARIA (1 CFU – Secondo Semestre)
+    Docente/i: DE LUCA PAOLA
+  • DIRITTO AMMINISTRATIVO (1 CFU – Secondo Semestre)
+    Docente/i: MARTINELLI ANDREA
+  • ORGANIZZAZIONE E DEONTOLOGIA PROFESSIONALE (1 CFU – Secondo Semestre)
+    Docente/i: RIZZO DANIELE
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 3° ANNO (CFU n/d – Secondo Semestre)
+    Docente/i: GALLI MASSIMO
+  • TIROCINIO PROFESSIONALE 3° ANNO (32 CFU – Secondo Semestre)
+    Docente/i: CONTI ANTONIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: IGIENE DENTALE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: GIORDANO FEDERICA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: SORRENTINO CLAUDIA
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: RICCI ANDREA
+  • TIROCINIO 1° ANNO (CDL IG. DENTALE) (6 CFU – Annualità tirocini)
+    Docente/i: PALUMBO VITTORIO
+  • FISICA, STATISTICA ED INFORMATICA (CFU n/d – Primo Semestre)
+    Docente/i: FERRARA DANIELE
+  • SCIENZE BIOMEDICHE DI BASE (CFU n/d – Primo Semestre)
+    Docente/i: BARBIERI SIMONE
+  • SCIENZE MORFOLOGICHE UMANE E FISIOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: GRECO MAURIZIO
+  • INGLESE SCIENTIFICO (CFU n/d – Primo Semestre)
+    Docente/i: SILVESTRI VALENTINA
+  • INGLESE MEDICO-SCIENTIFICO A (3 CFU – Primo Semestre)
+    Docente/i: VITALE FRANCESCO
+  • INGLESE MEDICO-SCIENTIFICO B (1 CFU – Primo Semestre)
+    Docente/i: GIORDANO CARLO
+  • Anatomia del sistema stomatognatico (1 CFU – Primo Semestre)
+    Docente/i: VALENTE MAURIZIO
+  • FISICA AD INDIRIZZO BIOMEDICO (2 CFU – Primo Semestre)
+    Docente/i: GRASSI ELENA
+  • STATISTICA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: CALZA STEFANO
+  • STATISTICA PER LA RICERCA (2 CFU – Primo Semestre)
+    Docente/i: CALZA STEFANO
+  • INFORMATICA (3 CFU – Primo Semestre)
+    Docente/i: GATTA ROBERTO
+  • CHIMICA (1 CFU – Primo Semestre)
+    Docente/i: ZANELLA ISABELLA
+  • BIOCHIMICA (2 CFU – Primo Semestre)
+    Docente/i: ZANELLA ISABELLA
+  • BIOLOGIA APPLICATA AGLI STUDI BIOMEDICI (3 CFU – Primo Semestre)
+    Docente/i: PIOVANI GIOVANNA
+  • ISTOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: TABELLINI GIOVANNA
+  • FISIOLOGIA (4 CFU – Primo Semestre)
+    Docente/i: SORRENTINO FILIPPO
+  • ANATOMIA UMANA (3 CFU – Primo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • ETIOPATOGENESI DELLE MALATTIE (CFU n/d – Secondo Semestre)
+    Docente/i: NEGRI GIULIA
+  • SCIENZE DELL'IGIENE DENTALE 1 (CFU n/d – Secondo Semestre)
+    Docente/i: GATTI BARBARA
+  • SCIENZE PSICO-PEDAGOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: MAZZA FRANCESCO
+  • Tecniche di semeiotica e monitoraggio del cavo orale 1 (1 CFU – Secondo Semestre)
+    Docente/i: SALA ROBERTO
+  • PATOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: BONETTI STEFANO
+  • ANATOMIA PATOLOGICA (2 CFU – Secondo Semestre)
+    Docente/i: LORENZI LUISA
+  • EPIDEMIOLOGIA (IGIENE GENERALE) (1 CFU – Secondo Semestre)
+    Docente/i: LONGO LORENZO
+  • IGIENE GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • MICROBIOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: GIAGULLI CINZIA
+  • MAT E STRUM PER L'IGIENE ORALE DOM E PROF A (1 CFU – Secondo Semestre)
+    Docente/i: RICCI SIMONE
+  • MAT E STRUM PER L'IGIENE ORALE DOM E PROF B (1 CFU – Secondo Semestre)
+    Docente/i: GENTILE FILIPPO
+  • MAT E STRUM PER L'IGIENE ORALE DOM E PROF C (1 CFU – Secondo Semestre)
+    Docente/i: SORRENTINO CLAUDIA
+  • TECNICHE D'IGIENE ORALE PROFESSIONALE 1A (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO ELISA
+  • TECNICHE D'IGIENE ORALE PROFESSIONALE 1B (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI ALESSANDRO
+  • PARODONTOLOGIA 1A (1 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • PARODONTOLOGIA 1B (2 CFU – Secondo Semestre)
+    Docente/i: SAVOLDI FABIO
+  • PSICOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: GALLO TOMMASO
+  • LOGICA E FILOSOFIA DELLA SCIENZA (2 CFU – Secondo Semestre)
+    Docente/i: BUZZI ELISA MARIA
+  • STORIA DELLA MEDICINA (1 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: DELBON PAOLA
+  • TECNICHE D'IGIENE ORALE DOMICILIARE A (1 CFU – Secondo Semestre)
+    Docente/i: BELLINI MARTINA
+  • TECNICHE D'IGIENE ORALE DOMICILIARE B (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO CARLO
+  • LABORATORIO PROFESSIONALE I (1 CFU – Secondo Semestre)
+    Docente/i: FERRI SARA
+
+  [2° Anno]
+  • TIROCINIO 2° ANNO (CDL IG. DENTALE) (24 CFU – Annualità tirocini)
+    Docente/i: MAJORANA ALESSANDRA
+  • PRINCIPI DI PATOLOGIA DEL CAVO ORALE (CFU n/d – Primo Semestre)
+    Docente/i: VITALE ANTONIO
+  • SCIENZE DELL'IGIENE DENTALE 2 (CFU n/d – Primo Semestre)
+    Docente/i: BARBIERI ROBERTO
+  • PRINCIPI DI MEDICINA GENERALE (CFU n/d – Primo Semestre)
+    Docente/i: NERI ENRICO
+  • Tecniche di semeiotica e monitoraggio del cavo orale 2 (1 CFU – Primo Semestre)
+    Docente/i: FERRARI ANTONIO
+  • PATOLOGIA SPECIALE ODONTOSTOMATOLOGICA (2 CFU – Primo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • RADIOLOGIA ODONTOSTOMATOLOGICA (1 CFU – Primo Semestre)
+    Docente/i: BORGHESI ANDREA
+  • RADIOPROTEZIONE (1 CFU – Primo Semestre)
+    Docente/i: BORGHESI ANDREA
+  • TECNICHE D'IGIENE ORALE PROFESSIONALE 1C (1 CFU – Primo Semestre)
+    Docente/i: PALMIERI CHIARA
+  • PARODONTOLOGIA 2A (2 CFU – Primo Semestre)
+    Docente/i: BONETTI STEFANO
+  • PARODONTOLOGIA 2B (1 CFU – Primo Semestre)
+    Docente/i: MENSI MAGDA
+  • SCIENZE DELL'ALIMENTAZIONE (1 CFU – Primo Semestre)
+    Docente/i: ZANINI BARBARA
+  • TECNICHE D'IGIENE ORALE PROFESSIONALE 2A (1 CFU – Primo Semestre)
+    Docente/i: BARBIERI MASSIMO
+  • TECNICHE D'IGIENE ORALE PROFESSIONALE 2B (1 CFU – Primo Semestre)
+    Docente/i: CARBONE ELENA
+  • MEDICINA INTERNA (3 CFU – Primo Semestre)
+    Docente/i: SALVETTI MASSIMO
+  • FARMACOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: PIZZI MARINA
+  • ANESTESIA E RIANIMAZIONE (1 CFU – Primo Semestre)
+    Docente/i: PIVA SIMONE
+  • ANESTESIA BLS (2 CFU – Primo Semestre)
+    Docente/i: CHELAZZI COSIMO
+  • LABORATORIO PROFESSIONALE II (1 CFU – Primo Semestre)
+    Docente/i: MARIANI ROBERTO
+  • ODONTOIATRIA RICOSTRUTTIVA (CFU n/d – Secondo Semestre)
+    Docente/i: NERI MONICA
+  • ODONTOIATRIA PEDIATRICA (CFU n/d – Secondo Semestre)
+    Docente/i: BERNARDI NICOLA
+  • Pedodonzia A (1 CFU – Secondo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • Pedodonzia B (1 CFU – Secondo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • ODONTOIATRIA CONSERVATRICE E ENDODONZIA A (1 CFU – Secondo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • ODONTOIATRIA CONSERVATRICE E ENDODONZIA B (1 CFU – Secondo Semestre)
+    Docente/i: PALUMBO GIUSEPPE
+  • MATERIALI DENTARI A (1 CFU – Secondo Semestre)
+    Docente/i: LAFFRANCHI LAURA
+  • MATERIALI DENTARI B (1 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • TECNICHE DI IGIENE ORALE PROFESSIONALE 2C (1 CFU – Secondo Semestre)
+    Docente/i: RINALDI MASSIMO
+  • ORTOGNATODONZIA A (1 CFU – Secondo Semestre)
+    Docente/i: VISCONTI LUCA
+  • ORTOGNATODONZIA B (1 CFU – Secondo Semestre)
+    Docente/i: VISCONTI LUCA
+  • PEDIATRIA GENERALE E SPECIALISTICA (1 CFU – Secondo Semestre)
+    Docente/i: CONSONNI FILIPPO
+  • LABORATORIO PROFESSIONALE III (1 CFU – Secondo Semestre)
+    Docente/i: TESTA MONICA
+
+  [3° Anno]
+  • TIROCINIO 3° ANNO (CDL IG. DENTALE) (30 CFU – Annualità tirocini)
+    Docente/i: MAJORANA ALESSANDRA
+  • ODONTOIATRIA CHIRURGICA E RIABILITATIVA (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO CRISTINA
+  • CLINICA ODONTOSTOMATOLOGICA C (1 CFU – Primo Semestre)
+    Docente/i: TONNI INGRID
+  • SCIENZE DELL'IGIENE DENTALE 3 (CFU n/d – Primo Semestre)
+    Docente/i: LEONE MARCO
+  • IMPLANTOLOGIA A (1 CFU – Primo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • IMPLANTOLOGIA B (1 CFU – Primo Semestre)
+    Docente/i: VISCONTI LUCA
+  • TECNOLOGIE DI LABORATORIO 1 (1 CFU – Primo Semestre)
+    Docente/i: VISCONTI LUCA
+  • TECNOLOGIE DI LABORATORIO 2 (1 CFU – Primo Semestre)
+    Docente/i: DALESSANDRI DOMENICO
+  • Clinica odontostomatologica A (1 CFU – Primo Semestre)
+    Docente/i: MAJORANA ALESSANDRA
+  • Clinica odontostomatologica B (1 CFU – Primo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • Chirurgia orale A (1 CFU – Primo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • Chirurgia orale B (1 CFU – Primo Semestre)
+    Docente/i: MENSI MAGDA
+  • TECNICHE DI IG OR NEL PAZ CON PART BISOGNI A (1 CFU – Primo Semestre)
+    Docente/i: LEONE ENRICO
+  • TECNICHE DI IG OR NEL PAZ CON PART BISOGNI B (1 CFU – Primo Semestre)
+    Docente/i: LONGO ROBERTO
+  • CHIRURGIA MAXILLO-FACCIALE (1 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI DAVIDE
+  • SCIENZE DELL'IGIENE DENTALE 4 (CFU n/d – Secondo Semestre)
+    Docente/i: BERNARDI FRANCESCA
+  • SCIENZE MEDICO-LEGALI E GESTIONALI (CFU n/d – Secondo Semestre)
+    Docente/i: GRECO FEDERICA
+  • SCIENZE E TECNICHE DI IGIENE ORALE APPLICATA ALLA COMUNITA' B (1 CFU – Secondo Semestre)
+    Docente/i: LONGO ELENA
+  • Economia applicata 1 (Elementi di economia sanitaria) (1 CFU – Secondo Semestre)
+    Docente/i: BARONE PAOLO
+  • Economia applicata 2 (Elementi di Economia Sanitaria) (1 CFU – Secondo Semestre)
+    Docente/i: VITALE SERGIO
+  • Odontoiatria preventiva e di comunità A (1 CFU – Secondo Semestre)
+    Docente/i: ORLANDO PAOLO
+  • Odontoiatria preventiva e di comunità B (1 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • SCIENZE E TECNICHE DI IGIENE ORALE APPLICATA ALLA COMUNITA' A (1 CFU – Secondo Semestre)
+    Docente/i: GATTI GIUSEPPE
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: GALLI ANNA
+  • MEDICINA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: SALA EMMA
+  • ERGONOMIA E ORGANIZZAZIONE PROFESSIONALE A (1 CFU – Secondo Semestre)
+    Docente/i: GUERRA BARBARA
+  • ERGONOMIA E ORGANIZZAZIONE PROFESSIONALE B (1 CFU – Secondo Semestre)
+    Docente/i: COLOMBO MAURIZIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: INFERMIERISTICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MONTI NICOLA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: RINALDI FILIPPO
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: ORLANDO FABIO
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 1° ANNO (CFU n/d – Annualità tirocini)
+    Docente/i: SILVESTRI STEFANO
+  • TIROCINIO (22 CFU – Annualità tirocini)
+    Docente/i: ROSSI NICOLA
+  • LE BASI MORFOLOGICHE E FUNZIONALI DELLA VITA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SALA PAOLO
+  • INFERMIERISTICA CLINICA GENERALE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MAZZA MAURIZIO
+  • INGLESE SCIENTIFICO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: FRANCO SILVIA
+  • SEMINARIO 1° ANNO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: SARTORI ELISA
+  • LABORATORIO DI METODOLOGIA E RELAZIONE ASSISTENZIALE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MARINO CLAUDIA
+  • SICUREZZA NEGLI AMBIENTI DI LAVORO, PREVENZIONE DEI RISCHI E PROMOZIONE DELLA SALUTE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: D'AMICO MASSIMO
+  • FISIOLOGIA (3 CFU – Ciclo Annuale Unico)
+    Docente/i: GRASSI FRANCESCA
+  • INFERMIERISTICA CLINICA DI BASE (3 CFU – Ciclo Annuale Unico)
+    Docente/i: PALUMBO SARA
+  • FONDAMENTI DI INFERMIERISTICA GENERALE (CFU n/d – Primo Semestre)
+    Docente/i: CARUSO ROBERTO
+  • LE BASI BIOLOGICHE E MOLECOLARI DELLA VITA (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA BARBARA
+  • INFORMATICA (1 CFU – Primo Semestre)
+    Docente/i: MARTINI PAOLO
+  • Fondamenti di Infermieristica Generale I (2 CFU – Primo Semestre)
+    Docente/i: MOTTA PAOLO CARLO
+  • Fondamenti di Infermieristica Generale II (2 CFU – Primo Semestre)
+    Docente/i: GALLI GIULIA
+  • IGIENE GENERALE (2 CFU – Primo Semestre)
+    Docente/i: ROMANO GIUSEPPE
+  • SICUREZZA NEGLI AMBIENTI DI LAVORO (1 CFU – Primo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • INFERMIERISTICA PREVENTIVA (1 CFU – Primo Semestre)
+    Docente/i: CATTANEO MASSIMO
+  • BIOCHIMICA (1 CFU – Primo Semestre)
+    Docente/i: INGRASSIA ROSARIA
+  • BIOLOGIA APPLICATA (1 CFU – Primo Semestre)
+    Docente/i: SALVI ALESSANDRO
+  • GENETICA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: RITELLI MARCO GIUSEPPE
+  • MICROBIOLOGIA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • ANATOMIA UMANA (2 CFU – Primo Semestre)
+    Docente/i: CORSETTI GIOVANNI
+  • PATOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: GRECO CRISTINA
+  • RELAZIONE ASSISTENZIALE (1 CFU – Secondo Semestre)
+    Docente/i: GIORDANO ROBERTO
+  • FISIOPATOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: COSTA ANDREA
+  • EPIDEMIOLOGIA E PROBLEMI PRIORITARI DI SALUTE (2 CFU – Secondo Semestre)
+    Docente/i: ROSSI LAURA
+  • SOCIOLOGIA DELLA SALUTE E FAMIGLIA (1 CFU – Secondo Semestre)
+    Docente/i: DE ANGELIS MARTINA
+  • EDUCAZIONE ALLA SALUTE (1 CFU – Secondo Semestre)
+    Docente/i: PAGANO RICCARDO
+
+  [2° Anno]
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 2° ANNO (CFU n/d – Annualità tirocini)
+    Docente/i: PODAVINI ENRICA
+  • TIROCINIO - 2 ANNO (25 CFU – Annualità tirocini)
+    Docente/i: SANTORO BARBARA
+  • INFERMIERISTICA CLINICA IN AREA MEDICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARO TOMMASO
+  • INFERMIERISTICA CLINICA IN AREA CHIRURGICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BIANCO MASSIMO
+  • LABORATORIO DI METODOLOGIA E INFERMIERISTICA CLINICA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RIZZO ALESSANDRO
+  • MEDICINA INTERNA (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BUSO GIACOMO, RICCI CHIARA, DE CIUCEIS CAROLINA
+  • INFERMIERISTICA CLINICA IN MEDICINA (3 CFU – Ciclo Annuale Unico)
+    Docente/i: LONGO VALENTINA
+  • CHIRURGIA GENERALE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BAIOCCHI GIANLUCA
+  • INFERMIERISTICA CLINICA IN CHIRURGIA (3 CFU – Ciclo Annuale Unico)
+    Docente/i: GRECO VITTORIO
+  • RELAZIONE D'AIUTO E ADATTAMENTO (CFU n/d – Primo Semestre)
+    Docente/i: GRECO MICHELE
+  • APPLICAZIONE DEI PROCESSI DIAGNOSTICI E TERAPEUTICI (CFU n/d – Primo Semestre)
+    Docente/i: BIANCO MAURIZIO
+  • SEMINARI 2° ANNO (CDL INFERMIERISTICA) (CFU n/d – Primo Semestre)
+    Docente/i: GRECO MAURIZIO
+  • MALATTIE DELL'APPARATO NEFROLOGICO (1 CFU – Primo Semestre)
+    Docente/i: ZUBANI ROBERTO, ALBERICI FEDERICO
+  • LABORATORI DI INFERMIERISTICA CLINICA APPLICATA ALLE MALATTIE CARDIOVASCOLARI E NEFROLOGICHE (1 CFU – Primo Semestre)
+    Docente/i: BIANCO SARA
+  • FARMACOLOGIA GENERALE (1 CFU – Primo Semestre)
+    Docente/i: BONO FEDERICA, BELLUCCI ARIANNA
+  • ANTROPOLOGIA CULTURALE (1 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI ALESSANDRO
+  • PSICOLOGIA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: BUIZZA CHIARA, GHILARDI ALBERTO
+  • FARMACOLOGIA CLINICA (2 CFU – Primo Semestre)
+    Docente/i: COLLO LUIGIA RINALDA, VALERIO ALESSANDRA, BONO FEDERICA
+  • DIAGNOSTICA PER IMMAGINI E RADIOPROTEZIONE (1 CFU – Primo Semestre)
+    Docente/i: NICOSIA LUCA, RAVANELLI MARCO, TRIGGIANI LUCA
+  • INFERMIERISTICA APPL. PERCORSI DIAGN. TERAP. (2 CFU – Primo Semestre)
+    Docente/i: BARBIERI CLAUDIA
+  • ANESTESIOLOGIA E TERAPIA ANTALGICA (1 CFU – Primo Semestre)
+    Docente/i: CHELAZZI COSIMO, RASULO FRANCESCO ANTONIO
+  • LE MALATTIE DELL'APPARATO CARDIOVASCOLARE (1 CFU – Primo Semestre)
+    Docente/i: VIZZARDI ENRICO, ADAMO MARIANNA, NODARI SAVINA
+  • Infermieristica nelle cure palliative (1 CFU – Secondo Semestre)
+    Docente/i: VITALE GIOVANNI
+  • INFERMIERISTICA CLINICA NELLA CRONICITA' E DISABILITA' (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCO ROBERTO
+  • ONCOLOGIA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: GUERINI ANDREA, LAGANÀ MARTA, BERRUTI ALFREDO
+  • MALATTIE INFETTIVE (1 CFU – Secondo Semestre)
+    Docente/i: FOCA' EMANUELE, MATTEELLI ALBERTO, GOBBI FEDERICO
+  • ORTOPEDIA E TRAUMATOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: ZARATTINI GUIDO
+  • GERIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: MARENGONI ALESSANDRA, ZUCCHELLI ALBERTO, MORANDI ALESSANDRO, ROMANELLI GIUSEPPE
+  • NEUROLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: BORRONI BARBARA
+  • INFERMIERISTICA CLINICA DELLA CRONICITA' E DI (1 CFU – Secondo Semestre)
+    Docente/i: FERRARO NICOLA
+
+  [3° Anno]
+  • TIROCINIO 3° ANNO (CDL INFERMIERISTICA) (27 CFU – Annualità tirocini)
+    Docente/i: LUCCINI ADELE
+  • ORGANIZZAZIONE E CONTINUITA' DELL'ASSISTENZA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARA ENRICO
+  • METODOLOGIE DI EDUCAZIONE DEL PAZIENTE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: COLOMBO DAVIDE
+  • PRINCIPI DI ECONOMIA E ORGANIZZ. SANIT. (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GRASSI MARCO
+  • DIRITTO DEL LAVORO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MAZZA ANNA
+  • MEDICINA LEGALE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MARTINELLI FEDERICA
+  • BIOETICA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DELBON PAOLA, CONTI ADELAIDE
+  • ORG. E VALUTAZ. QUALITA' ASSISTENZA INFER.CA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: VALENTE PAOLO
+  • DEONT. E REGOLAM. ESERC. PROFESSIONALE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CATTANEO RICCARDO
+  • PSICOLOGIA DEI GRUPPI E DELL'EDUCAZIONE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RIZZO ELENA
+  • PEDAGOGIA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LEONE SARA
+  • EDUCAZIONE TERAPEUTICA (2 CFU – Ciclo Annuale Unico)
+    Docente/i: ESPOSITO CLAUDIA
+  • INFERMIERISTICA BASATA SULLE PROVE DI EFFICACIA (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO MAURIZIO
+  • INF.CA CLIN. SALUTE MENTALE E DELLA COMUNITA' (CFU n/d – Primo Semestre)
+    Docente/i: FRANCO ROBERTA
+  • INFERMIERISTICA CLINICA NELLA CRITICITA' VITALE (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA PAOLA
+  • INFERMIERISTICA CLINICA IN AREA MATERNO-INFANTILE (CFU n/d – Primo Semestre)
+    Docente/i: BRUNO MONICA
+  • STATISTICA SANITARIA (1 CFU – Primo Semestre)
+    Docente/i: CALZA STEFANO
+  • EPIDEMIOLOGIA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: SALA ROBERTO
+  • EVIDENZE SCIENTIFICHE PER INFERMIERISTICA (2 CFU – Primo Semestre)
+    Docente/i: MANCINI MASSIMO
+  • PSICHIATRIA (1 CFU – Primo Semestre)
+    Docente/i: DESTE GIACOMO VITTORIO PIETRO, TURRINA CESARE
+  • INF.CA NELLA SALUTE MENTALE E PSICH. (2 CFU – Primo Semestre)
+    Docente/i: PALMIERI SARA
+  • INFERMIERISTICA DI COMUNITA' (1 CFU – Primo Semestre)
+    Docente/i: CARUSO CRISTINA
+  • MEDICINA D'URGENZA (1 CFU – Primo Semestre)
+    Docente/i: SALVETTI MASSIMO
+  • CHIRURGIA D'URGENZA (1 CFU – Primo Semestre)
+    Docente/i: BAIOCCHI GIANLUCA, RAMERA MARCO
+  • RIANIMAZIONE (1 CFU – Primo Semestre)
+    Docente/i: RASULO FRANCESCO ANTONIO
+  • INFERMIERISTICA CLINICA TERAPIA INTENSIVA (1 CFU – Primo Semestre)
+    Docente/i: PALMIERI RICCARDO
+  • INFERMIERISTICA DI EMERGENZA TERRITORIALE (1 CFU – Primo Semestre)
+    Docente/i: MONTI LORENZO
+  • PEDIATRIA (1 CFU – Primo Semestre)
+    Docente/i: CATTALINI MARCO
+  • GINECOLOGIA E OSTETRICIA (1 CFU – Primo Semestre)
+    Docente/i: ODICINO FRANCO EDOARDO
+  • ASSISTENZA OSTETRICA (1 CFU – Primo Semestre)
+    Docente/i: D'AMICO VALENTINA
+  • INFERMIERISTICA PEDIATRICA (1 CFU – Primo Semestre)
+    Docente/i: RICCI CRISTINA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: OSTETRICIA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: FERRARA FEDERICA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: SERRA MATTEO
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: GRECO RICCARDO
+  • LABORATORIO PROFESSIONALE 1° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SANTORO FABIO
+  • TIROCINIO 1° ANNO (CDL OSTETRICIA) (17 CFU – Ciclo Annuale Unico)
+    Docente/i: SILVESTRI ROBERTO
+  • SCIENZE MORFOLOGICHE E FUNZIONALI (CFU n/d – Primo Semestre)
+    Docente/i: BRUNO FEDERICA
+  • SCIENZE BIOMOLECOLARI E PROPEDEUTICHE (CFU n/d – Primo Semestre)
+    Docente/i: CARBONE FRANCESCO
+  • RADIOPROTEZIONE (1 CFU – Primo Semestre)
+    Docente/i: BUGLIONE DI MONALE E BASTIA MICHELA
+  • SCIENZE OSTETRICO-GINECOLOGICO-NEONATALI PROPEDEUTICHE DI BASE (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI BARBARA
+  • LEGISLAZIONE DELLA PROFESSIONE OSTETRICA (1 CFU – Primo Semestre)
+    Docente/i: ORLANDO MARIA
+  • TEORIE E STORIA DELLA MIDWIFERY (1 CFU – Primo Semestre)
+    Docente/i: LONGO BARBARA
+  • ASSISTENZA OSTETRICA DI BASE 1 (1 CFU – Primo Semestre)
+    Docente/i: RIZZO FRANCESCA
+  • PSICOLOGIA GENERALE (1 CFU – Primo Semestre)
+    Docente/i: DELLA VEDOVA ANNA MARIA
+  • STORIA DELLA MEDICINA (1 CFU – Primo Semestre)
+    Docente/i: FALCONI BRUNO
+  • ANTROPOLOGIA CULTURALE (1 CFU – Primo Semestre)
+    Docente/i: GUERRA GABRIELE
+  • BIOCHIMICA (1 CFU – Primo Semestre)
+    Docente/i: ZIZIOLI DANIELA
+  • BIOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: SCHIAVONE MARCO
+  • FISICA (1 CFU – Primo Semestre)
+    Docente/i: CORBO DANIELE
+  • IGIENE GENERALE ED APPLICATA (1 CFU – Primo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • ISTOLOGIA E EMBRIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: COLTRINI DANIELA
+  • ANATOMIA UMANA (3 CFU – Primo Semestre)
+    Docente/i: CORSETTI GIOVANNI
+  • FISIOLOGIA UMANA 1 (2 CFU – Primo Semestre)
+    Docente/i: MONTI CRISTINA
+  • ASSISTENZA OSTETRICA DI BASE 2 (1 CFU – Primo Semestre)
+    Docente/i: MARTINI TOMMASO
+  • PROPEDEUTICA CLINICA E FARMACOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI GIULIA
+  • FISIOLOGIA E CLINICA DEL PARTO E DEL PUERPERIO E FISIOLOGIA DELLA LATTAZIONE (1 CFU – Secondo Semestre)
+    Docente/i: FERRARI FEDERICO GIORGIO
+  • FISIOLOGIA DELLA RIPRODUZIONE UMANA (1 CFU – Secondo Semestre)
+    Docente/i: BENEDETTI BARBARA
+  • ASSISTENZA OSTETRICA NELLA GRAVIDANZA FISIOLOGICA (2 CFU – Secondo Semestre)
+    Docente/i: BERNARDI MASSIMO
+  • ASSISTENZA ALLA GRAVIDANZA FISIOLOGICA E SORVEGLIANZA MATERNO-FETALE (CFU n/d – Secondo Semestre)
+    Docente/i: COSTA CHIARA
+  • ASSISTENZA NEL PARTO/NASCITA FISIOLOGICO E AL NEONATO SANO (CFU n/d – Secondo Semestre)
+    Docente/i: GALLI MASSIMO
+  • ASSISTENZA OSTETRICA AL TRAVAGLIO/PARTO FISIOLOGICO (2 CFU – Secondo Semestre)
+    Docente/i: TESTA CHIARA
+  • ASSISTENZA OSTETRICA NELL'ALLATTAMENTO MATERNO E ALIMENTAZIONE COMPLEMENTARE (2 CFU – Secondo Semestre)
+    Docente/i: BASILE GABRIELE
+  • ASSISTENZA OSTETRICA IN PUERPERIO (1 CFU – Secondo Semestre)
+    Docente/i: CARBONE ELENA
+  • ASSISTENZA OSTETRICA AL NEONATO SANO (1 CFU – Secondo Semestre)
+    Docente/i: GALLO ELENA
+  • PATOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: RONCA ROBERTO
+  • MICROBIOLOGIA E MICROBIOLOGIA CLINICA (2 CFU – Secondo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • BIOCHIMICA CLINICA (1 CFU – Secondo Semestre)
+    Docente/i: GARRAFA EMIRENA MICHELA
+  • FISIOLOGIA UMANA 2 (1 CFU – Secondo Semestre)
+    Docente/i: BRUNO EMANUELE
+  • FARMACOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: PIZZI MARINA
+  • FISIOLOGIA DELLA GRAVIDANZA (1 CFU – Secondo Semestre)
+    Docente/i: FICHERA ANNA
+  • NEONATOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: BRUNO NICOLA
+  • LINGUA INGLESE 1°anno (CdL Ostetricia) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SANTORO FABIO
+
+  [2° Anno]
+  • LABORATORIO PROFESSIONALE 2° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BARBIERI STEFANO
+  • TIROCINIO 2° ANNO (CDL OSTETRICIA) (21 CFU – Ciclo Annuale Unico)
+    Docente/i: BELLINI PAOLA
+  • FARMACOLOGIA 2 (2 CFU – Primo Semestre)
+    Docente/i: PIZZI MARINA
+  • SCIENZE MEDICHE E CLINICHE (CFU n/d – Primo Semestre)
+    Docente/i: PELLEGRINI SERGIO
+  • MEDICINA E ASSISTENZA MATERNO-FETALE, FARMACOLOGIA 2 (CFU n/d – Primo Semestre)
+    Docente/i: BERNARDI ANDREA
+  • ASSISTENZA OSTETRICA MATERNO/FETALE (1 CFU – Primo Semestre)
+    Docente/i: FRANCO ALESSANDRO
+  • PROMOZIONE E TUTELA DELLA SALUTE DELLA FAMIGLIA, DELLA COMUNITA' E NEI LUOGHI DI LAVORO (CFU n/d – Primo Semestre)
+    Docente/i: ORLANDO GIOVANNI
+  • ACCOMPAGNAMENTO OSTETRICO ALLA NASCITA E ALLA GENITORIALITA' (1 CFU – Primo Semestre)
+    Docente/i: FERRARO ROBERTA
+  • PSICOLOGIA CLINICA IN OSTETRICIA E GINECOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: MANFREDI PAOLA
+  • OSTETRICIA DI COMUNITA' E SALUTE DI GENERE (1 CFU – Primo Semestre)
+    Docente/i: GIORDANO CRISTINA
+  • ASSISTENZA TERRITORIALE DELL'OSTETRICA DI FAMIGLIA (1 CFU – Primo Semestre)
+    Docente/i: RIZZO ALESSIA
+  • MEDICINA MATERNO FETALE E DIAGNOSTICA PRENAT (2 CFU – Primo Semestre)
+    Docente/i: FICHERA ANNA
+  • GENETICA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: IZZI CLAUDIA
+  • CARDIOTOCOGRAFIA (1 CFU – Primo Semestre)
+    Docente/i: FICHERA ANNA
+  • PEDAGOGIA (1 CFU – Primo Semestre)
+    Docente/i: D'AMICO MARTINA
+  • MEDICINA DEL LAVORO (1 CFU – Primo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • MEDICINA INTERNA E TERAPIA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • MEDICINA D'URGENZA E PRONTO SOCCORSO (1 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • MALATTIE INFETTIVE E TROPICALI (1 CFU – Primo Semestre)
+    Docente/i: MATTEELLI ALBERTO
+  • ENDOCRINOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: CAPPELLI CARLO
+  • TIROCINIO (3 CFU – Primo Semestre)
+    Docente/i: NEGRI MARCO
+  • EMERGENZE ED URGENZE IN OSTETRICIA E DISTOCIE DEL PARTO (2 CFU – Secondo Semestre)
+    Docente/i: FICHERA ANNA
+  • CHIRURGIA GENERALE ED EMERGENZE 1 (1 CFU – Secondo Semestre)
+    Docente/i: CASELLA CLAUDIO
+  • CHIRURGIA GENERALE ED EMERGENZE 2 (1 CFU – Secondo Semestre)
+    Docente/i: CASELLA CLAUDIO
+  • ASSISTENZA AL NEONATO E AL BAMBINO PATOLOGICO (CFU n/d – Secondo Semestre)
+    Docente/i: BENEDETTI MARCO
+  • ASSISTENZA OSTETRICA AL NEONATO PATOLOGICO (1 CFU – Secondo Semestre)
+    Docente/i: PAGANO GIULIA
+  • DISTOCIE DEL PARTO, EMERGENZE OSTETRICHE (CFU n/d – Secondo Semestre)
+    Docente/i: SERRA STEFANO
+  • ASSISTENZA IN ANESTESIA OSTETRICA (1 CFU – Secondo Semestre)
+    Docente/i: BELLINI CRISTINA
+  • ASSISTENZA OSTETRICA NEL PERCORSO CHIRURGICO OSTETRICO (1 CFU – Secondo Semestre)
+    Docente/i: BASILE DAVIDE
+  • MEDICINA LEGALE, BIOETICA E DEONTOLOGIA PROFESSIONALE OSTETRICA (CFU n/d – Secondo Semestre)
+    Docente/i: FERRARO MONICA
+  • DEONTOLOGIA DELLA PROFESSIONE OSTETRICA (1 CFU – Secondo Semestre)
+    Docente/i: PALUMBO MONICA
+  • ASSISTENZA OSTETRICA AL PARTO DISTOCICO ED EMERGENZE OSTETRICHE (1 CFU – Secondo Semestre)
+    Docente/i: FONTANA VALENTINA
+  • ANESTESIA E RIANIMAZIONE (1 CFU – Secondo Semestre)
+    Docente/i: BRUNO MASSIMO
+  • PATOLOGIA NEONATALE (1 CFU – Secondo Semestre)
+    Docente/i: COLOMBO ANDREA
+  • PEDIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: LOUGARIS VASSILIOS
+  • NEUROPSICHIATRIA INFANTILE (1 CFU – Secondo Semestre)
+    Docente/i: GALLI JESSICA
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: PARISI MARTINA
+  • BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+
+  [3° Anno]
+  • ALTRE ATTIVITA' 3° ANNO (697) (4 CFU – Ciclo Annuale Unico)
+    Docente/i: GUERRA ANTONIO
+  • TIROCINIO 3° ANNO (21 CFU – Ciclo Annuale Unico)
+    Docente/i: FRANCO MATTEO
+  • LABORATORIO PROFESSIONALE 3° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GALLO ROBERTA
+  • FISIOPATOLOGIA E ASSISTENZA GINECOLOGICA (CFU n/d – Primo Semestre)
+    Docente/i: BRUNO SILVIA
+  • ASSISTENZA GINECOLOGICA E CHIRURGICA INTRAOPERATORIA (2 CFU – Primo Semestre)
+    Docente/i: SILVESTRI MAURIZIO
+  • PATOLOGIA DELLA RIPRODUZIONE E CONTRACCEZIONE (1 CFU – Primo Semestre)
+    Docente/i: CARBONE LUCA
+  • ASSISTENZA UROGINECOLOGICA E COUNSELLING (2 CFU – Primo Semestre)
+    Docente/i: NEGRI ANTONIO
+  • ANDROLOGIA (1 CFU – Primo Semestre)
+    Docente/i: BARBIERI RICCARDO
+  • UROGINECOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: BASILE DANIELE
+  • ONCOLOGIA GINECOLOGICA E SENOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: VITALE ROBERTA
+  • TERAPIA MEDICO-CHIRURGICA IN ONCOLOGIA GINECOLOGICA (1 CFU – Primo Semestre)
+    Docente/i: FERRARI FEDERICO GIORGIO
+  • PREVENZIONE IN GINECOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: SILVESTRI VITTORIO
+  • Prevenzione in oncologia ginecologica (1 CFU – Primo Semestre)
+    Docente/i: FERRARI FEDERICO GIORGIO
+  • GINECOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: ODICINO FRANCO EDOARDO
+  • ONCOLOGIA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: COSENTINI DEBORAH
+  • ANATOMIA PATOLOGICA E CITOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: CONTI ALESSIA
+  • RICERCA BIBLIOGRAFICA ON-LINE (2 CFU – Secondo Semestre)
+    Docente/i: ROTA MATTEO
+  • OSTETRICIA BASATA SULL'EVIDENZA (CFU n/d – Secondo Semestre)
+    Docente/i: DE LUCA ROBERTA
+  • METODOLOGIA DELLA RICERCA IN OSTETRICIA (1 CFU – Secondo Semestre)
+    Docente/i: RUSSO BARBARA
+  • ORGANIZZAZIONE E GESTIONE DEI PROCESSI ASSISTENZIALI (CFU n/d – Secondo Semestre)
+    Docente/i: BASILE EMANUELE
+  • GESTIONE RISCHIO CLINICO (1 CFU – Secondo Semestre)
+    Docente/i: RUSSO ENRICO
+  • ORGANIZZAZIONE PROFESSIONE OSTETRICA (1 CFU – Secondo Semestre)
+    Docente/i: RUSSO ANNA
+  • ORGANIZZAZIONE SISTEMA SALUTE (1 CFU – Secondo Semestre)
+    Docente/i: FERRARA MAURIZIO
+  • STATISTICA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: ROTA MATTEO
+  • METODOLOGIA DELLA RICERCA SOCIALE (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI MATTEO
+  • EPIDEMIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: COVOLO LOREDANA
+  • SISTEMA ELABORAZIONE INFORMAZIONI ONLINE (1 CFU – Secondo Semestre)
+    Docente/i: ROTA MATTEO
+  • ECONOMIA AZIENDALE (1 CFU – Secondo Semestre)
+    Docente/i: VALENTE VALENTINA
+  • DIRITTO DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: FRANCO STEFANO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: TECNICA DELLA RIABILITAZIONE PSICHIATRICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MARIANI ALESSIA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: CATTANEO MARTINA
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: ORLANDO ALESSIA
+  • ALTRE ATTIVITA' 1° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SANTORO SIMONE
+  • TIROCINIO 1° ANNO (CDL TEC. RIABIL PSIC.) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BERNARDI LUCA
+  • LABORATORIO PROFESSIONALE 1° ANNO (CDL TEC.RIABIL. PSIC.) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GENTILE VITTORIO
+  • TIROCINIO 1° ANNO (CDL 715) (6 CFU – Ciclo Annuale Unico)
+    Docente/i: VILLA MARTINA
+  • TIROCINIO 1° ANNO CDL 715 (14 CFU – Ciclo Annuale Unico)
+    Docente/i: PARISI VALENTINA
+  • ANATOMIA E FISIOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: ROMANO MONICA
+  • STATISTICA E INFORMATICA I (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI FRANCESCA
+  • BIOLOGIA, BIOCHIMICA, GENETICA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINI GABRIELE
+  • PSICOLOGIA DELLO SVILUPPO E PSICOLOGIA DELL'EDUCAZIONE (1 CFU – Primo Semestre)
+    Docente/i: VITALE MICHELE
+  • FONDAMENTI NEUROLOGICI E NEUROPSICOLOGICI DELLA RIABILITAZIONE PSICHIATRICA (CFU n/d – Primo Semestre)
+    Docente/i: NEGRI CHIARA
+  • PSICOLOGIA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • PSICOBIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • GENETICA GENERALE E MOLECOLARE (1 CFU – Primo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • ANATOMIA (1 CFU – Primo Semestre)
+    Docente/i: LABANCA MAURO
+  • NEUROANATOMIA (1 CFU – Primo Semestre)
+    Docente/i: ORLANDO BARBARA
+  • FISIOLOGIA E NEUROFISIOLOGIA (3 CFU – Primo Semestre)
+    Docente/i: D'AMICO GIULIA
+  • STATISTICA MEDICA (2 CFU – Primo Semestre)
+    Docente/i: ROTA MATTEO
+  • INFORMATICA (2 CFU – Primo Semestre)
+    Docente/i: MARTINI PAOLO
+  • BIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: RUSSO ISABELLA
+  • BIOCHIMICA (1 CFU – Primo Semestre)
+    Docente/i: POLI MAURA
+  • GENETICA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • SOCIOLOGIA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: GRECO ANDREA
+  • PSICOLOGIA SOCIALE (1 CFU – Primo Semestre)
+    Docente/i: BARBIERI SIMONE
+  • EPIDEMIOLOGIA PSICHIATRICA (1 CFU – Secondo Semestre)
+    Docente/i: TURRINA CESARE
+  • EPIDEMIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: ROTA MATTEO
+  • FONDAMENTI PSICOLOGICI E SOCIALI DELLA VITA DI RELAZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: PELLEGRINI MASSIMO
+  • PSICHIATRIA I (CFU n/d – Secondo Semestre)
+    Docente/i: BARBIERI ANNA
+  • FONDAMENTI DI PSICHIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: BIANCHI SERGIO
+  • PSICOPATOLOGIA GENERALE E COLL. CLINICO (2 CFU – Secondo Semestre)
+    Docente/i: LONGO NICOLA
+  • PSICHIATRIA DI COMUNITÀ (1 CFU – Secondo Semestre)
+    Docente/i: CARBONE GABRIELE
+  • PSICHIATRIA TRANSCULTURALE (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO MONICA
+  • NEUROLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: ROZZINI LUCA
+  • NEUROPSICOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: ROZZINI LUCA
+  • COGNITIVITÀ E RIABILITAZIONE PSICHIATRICA (1 CFU – Secondo Semestre)
+    Docente/i: DESTE GIACOMO VITTORIO PIETRO
+  • INGLESE (CDL TEC RIAB PSICH) (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: MAZZA CLAUDIA
+
+  [2° Anno]
+  • ALTRE ATTIVITA' 2° ANNO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: GALLI FABIO
+  • TIROCINIO 2° ANNO (CDL TEC. RIABIL PSIC.) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GUERRA ANDREA
+  • LABORATORIO PROFESSIONALE 2° ANNO (CDL TEC. RIABIL. PSIC.) (2 CFU – Ciclo Annuale Unico)
+    Docente/i: FERRI GIOVANNI
+  • FONDAMENTI BIOLOGICI E PATOLOGICI DELLE MALATTIE E FARMACOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: BASILE MARCO
+  • DISTURBI DELLA PERSONALITA' (1 CFU – Primo Semestre)
+    Docente/i: FONTANA GABRIELE
+  • FARMACOLOGIA (AMBITO SC. MEDICHE CHIRURGICHE) (2 CFU – Primo Semestre)
+    Docente/i: COLLO LUIGIA RINALDA
+  • DISTURBI PSICOTICI (1 CFU – Primo Semestre)
+    Docente/i: AMATO ANTONIO
+  • PSICHIATRIA II (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI ALESSIA
+  • COMPORTAMENTI AUTOLESIVI E RISCHIO SUICIDARIO (1 CFU – Primo Semestre)
+    Docente/i: COSTA ANTONIO
+  • METODI E TECNICHE DELLA RIABILITAZIONE I (CFU n/d – Primo Semestre)
+    Docente/i: FERRARO ANTONIO
+  • INTERVENTI SULLE ABILITA' SOCIALI (1 CFU – Primo Semestre)
+    Docente/i: MARTINI TOMMASO
+  • DISTURBI DELL'UMORE E DISTURBI D'ANSIA (1 CFU – Primo Semestre)
+    Docente/i: TURRINA CESARE
+  • CRISI,ACUZIE E DISTURBI DEL COMPORTAMENTO IN (1 CFU – Primo Semestre)
+    Docente/i: MONTI ANTONIO
+  • PSICOPATOLOGIA E DISTURBI PSICHIATRICI NELL'A (1 CFU – Primo Semestre)
+    Docente/i: DESTE GIACOMO VITTORIO PIETRO
+  • NEUROPSICHIATRIA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • PATOLOGIA GENERALE (1 CFU – Primo Semestre)
+    Docente/i: SILVESTRI GIULIA
+  • PATOLOGIA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: FRANCO MONICA
+  • NOZIONI DI MEDICINA GENERALE (1 CFU – Primo Semestre)
+    Docente/i: RINALDI FEDERICA
+  • PRINCIPI E MODELLI DELLA RIABILITAZIONE PSICH (1 CFU – Primo Semestre)
+    Docente/i: VITA ANTONIO
+  • METODI DELLA RIABILITAZIONE PSICHIATRICA SUL (2 CFU – Primo Semestre)
+    Docente/i: LEONE CHIARA
+  • TECNICA DELLA RIABILITAZIONE PSICHIATRICA 1 (2 CFU – Primo Semestre)
+    Docente/i: NEGRI FRANCESCO
+  • TIROCINIO 2° ANNO (CDL 715) (9 CFU – Primo Semestre)
+    Docente/i: SARTORI LAURA
+  • PSICOLOGIA CLINICA E PSICOMETRIA (CFU n/d – Secondo Semestre)
+    Docente/i: COLOMBO LORENZO
+  • IGIENE GENERALE, MEDICINA LEGALE E DEL LAVORO (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCO ALESSANDRO
+  • VALUTAZIONE NELLA RIABILITAZIONE PSICHIATRICA (CFU n/d – Secondo Semestre)
+    Docente/i: ESPOSITO SIMONE
+  • PSICOLOGIA CLINICA (3 CFU – Secondo Semestre)
+    Docente/i: MANFREDI PAOLA
+  • PSICOMETRIA (1 CFU – Secondo Semestre)
+    Docente/i: CARBONE ALESSIA
+  • TESTISTICA PSICOLOGICA (1 CFU – Secondo Semestre)
+    Docente/i: BASILE GIOVANNI
+  • IGIENE GENERALE E APPLICATA (1 CFU – Secondo Semestre)
+    Docente/i: GENTILE GABRIELE
+  • MEDICINA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: SALA EMMA
+  • PSICOLOGIA DEL LAVORO E DELLE ORGANIZZAZIONI (1 CFU – Secondo Semestre)
+    Docente/i: GHILARDI ALBERTO
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: DELBON PAOLA
+  • NOZIONI DI RADIOPROTEZIONE (1 CFU – Secondo Semestre)
+    Docente/i: FARINA DAVIDE
+  • VALUTAZIONE DELLA DISABILITÀ E DEFINIZIONE DE (2 CFU – Secondo Semestre)
+    Docente/i: GRECO FRANCESCA
+  • VALUTAZIONE DEGLI INTERVENTI RIABILITATIVI (2 CFU – Secondo Semestre)
+    Docente/i: CATTANEO FEDERICA
+  • METODOLOGIA DELLA RICERCA CLINICA ED EVIDENCE (1 CFU – Secondo Semestre)
+    Docente/i: ROTA MATTEO
+  • TIROCINIO 2° ANNO CDL 715 (13 CFU – Secondo Semestre)
+    Docente/i: MAZZA ELENA
+
+  [3° Anno]
+  • ALTRE ATTIVITA' 3° ANNO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: PELLEGRINI SARA
+  • TIROCINIO 3° ANNO (CDL TEC. RIABIL PSIC.) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: TESTA SILVIA
+  • TIROCINIO 3° ANNO (CDL 715) (9 CFU – Ciclo Annuale Unico)
+    Docente/i: ESPOSITO MARCO
+  • TIROCINIO 3° ANNO CDL 715 (9 CFU – Ciclo Annuale Unico)
+    Docente/i: NERI LAURA
+  • INTERVENTI RIABILITATIVI IN NEUROPSICHIATRIA (2 CFU – Primo Semestre)
+    Docente/i: SORRENTINO MARTINA
+  • METODI E TECNICHE DELLA RIABILITAZIONE PSICHIATRICA II (CFU n/d – Primo Semestre)
+    Docente/i: BARONE DANIELE
+  • INTERVENTI SUI DISTURBI DI PERSONALITA (1 CFU – Primo Semestre)
+    Docente/i: CARUSO FRANCESCO
+  • RIABILITAZIONE IN POPOLAZIONI SPECIALI (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI FRANCESCA
+  • ELEMENTI DI PSICHIATRIA FORENSE (1 CFU – Primo Semestre)
+    Docente/i: COLOMBO VITTORIO
+  • INTERVENTI RIABILITATIVI NEI DISTURBI DELLA NUTRIZIONE (1 CFU – Primo Semestre)
+    Docente/i: COSTA MASSIMO
+  • TRATTAMENTI NEI DISTURBI DELLA NUTRIZIONE (1 CFU – Primo Semestre)
+    Docente/i: LONGO MAURIZIO
+  • INTERVENTI PSICOEDUCATIVI (1 CFU – Primo Semestre)
+    Docente/i: NERI ENRICO
+  • INTERVENTI SULLE ABILITÀ SOCIALI (1 CFU – Primo Semestre)
+    Docente/i: VALENTE FRANCESCO
+  • INTERVENTI COGNITIVI E COGNITIVO-COMPORTAMENT (2 CFU – Primo Semestre)
+    Docente/i: ROMANO LUCA
+  • METODI E DID. ATT. MOTORIE (1 CFU – Primo Semestre)
+    Docente/i: FRANCO DAVIDE
+  • ARTITERAPIE (2 CFU – Primo Semestre)
+    Docente/i: ESPOSITO VALENTINA
+  • TRATTAMENTI IN NEUROPSICHIATRIA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • TRATTAMENTI IN PSICOGERIATRIA (1 CFU – Primo Semestre)
+    Docente/i: MARINO MASSIMO
+  • INTERVENTI RIABILITATIVI IN PSICOGERIATRIA (1 CFU – Primo Semestre)
+    Docente/i: TESTA ROBERTA
+  • TRATTAMENTI NELLE DOPPIE DIAGNOSI (1 CFU – Primo Semestre)
+    Docente/i: BARONE NICOLA
+  • INTERVENTI RIABILITATIVI NELLE DOPPIE DIAGNOS (1 CFU – Primo Semestre)
+    Docente/i: SALA CRISTINA
+  • ORGANIZZAZIONE DEI SERVIZI SANITARI E PSICHIATRICI (CFU n/d – Secondo Semestre)
+    Docente/i: MONTI VITTORIO
+  • PROCESSI PER IL MCQ NELLA RIABILITAZIONE PSICHIATRICA (1 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI CLAUDIA
+  • TRATTAMENTI IN PSICHIATRIA (CFU n/d – Secondo Semestre)
+    Docente/i: PARISI ANDREA
+  • CASE MANAGEMENT E STRUMENTI PER LA PRESA IN CARICO DEL PAZIENTE PSICHIATRICO (1 CFU – Secondo Semestre)
+    Docente/i: MORELLI MARTINA
+  • LEGISLAZIONE PSICHIATRICA NAZIONALE REGIONALE (2 CFU – Secondo Semestre)
+    Docente/i: BARLATI STEFANO
+  • ORGANIZZAZIONE AZIENDALE (1 CFU – Secondo Semestre)
+    Docente/i: LONGO EMANUELE
+  • ORGANIZZAZIONE DEI SERVIZI PSICHIATRICI E RIA (2 CFU – Secondo Semestre)
+    Docente/i: BASILE ANNA
+  • SCIENZE INFERMIERISTICHE GENERALI (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO NICOLA
+  • SCIENZE INFERMIERISTICHE DI PRIMO SOCCORSO E (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI GIUSEPPE
+  • TRATTAMENTI PSICHIATRICI (2 CFU – Secondo Semestre)
+    Docente/i: SORRENTINO ALESSANDRO
+  • TRATTAMENTI PSICOLOGICI (1 CFU – Secondo Semestre)
+    Docente/i: BUIZZA CHIARA
+  • TRATTAMENTI INTEGRATI (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI MARTINA
+  • TRATTAMENTI BASATI SULLE EVIDENZE (1 CFU – Secondo Semestre)
+    Docente/i: BARLATI STEFANO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: TECNICHE DELLA PREVENZIONE NELL'AMBIENTE E NEI LUOGHI DI LAVORO [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: LOMBARDI MASSIMO
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: BIANCO ROBERTA
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: RIZZO DAVIDE
+  • TIROCINIO 1° ANNO (CDL TPLA) (12 CFU – Ciclo Annuale Unico)
+    Docente/i: D'AMICO ELENA
+  • SCIENZE FISICHE, STATISTICHE E INFORMATICHE (CFU n/d – Primo Semestre)
+    Docente/i: CONTI FABIO
+  • CHIMICA (CDL TPLA) (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA VALENTINA
+  • SCIENZE NATURALI E BIOLOGICHE (CFU n/d – Primo Semestre)
+    Docente/i: MORETTI MASSIMO
+  • Elementi di Fisiologia di Organi e Apparati (2 CFU – Primo Semestre)
+    Docente/i: RIZZO ALESSANDRO
+  • FISICA APPLICATA (2 CFU – Primo Semestre)
+    Docente/i: BIANCONI ANDREA
+  • STATISTICA (1 CFU – Primo Semestre)
+    Docente/i: BARONE NICOLA
+  • ELEMENTI DI INFORMATICA (1 CFU – Primo Semestre)
+    Docente/i: BIANCHI CARLO
+  • STATISTICA SOCIALE (1 CFU – Primo Semestre)
+    Docente/i: LONGO FRANCESCO
+  • CHIMICA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: BORGESE LAURA
+  • CHIMICA ORGANICA (2 CFU – Primo Semestre)
+    Docente/i: BORGESE LAURA
+  • BIOCHIMICA (2 CFU – Primo Semestre)
+    Docente/i: CORSINI MICHELA
+  • SCHEDE DI SICUREZZA E REGOLAMENTI REACH E CLP (1 CFU – Primo Semestre)
+    Docente/i: NEGRI FEDERICA
+  • BOTANICA GENERALE ED APPLICATA (2 CFU – Primo Semestre)
+    Docente/i: FERRABOLI SERGIO
+  • ECOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: FERRABOLI SERGIO
+  • BIOLOGIA GENERALE E APPLICATA (2 CFU – Primo Semestre)
+    Docente/i: RUSSO ISABELLA
+  • GENETICA (1 CFU – Primo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • SCIENZE DELL'ALIMENTAZIONE 1 (CFU n/d – Secondo Semestre)
+    Docente/i: MAZZA MASSIMO
+  • SCIENZE DELL'IGIENE 1 (CFU n/d – Secondo Semestre)
+    Docente/i: SERRA NICOLA
+  • INGLESE 1° ANNO (1 CFU – Secondo Semestre)
+    Docente/i: BRUNO MONICA
+  • CHIMICA DEGLI ALIMENTI (3 CFU – Secondo Semestre)
+    Docente/i: PERON GREGORIO
+  • SCIENZE BIOMEDICHE (CFU n/d – Secondo Semestre)
+    Docente/i: CARBONE CARLO
+  • MICROBIOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI CRISTINA
+  • PATOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: RINALDI ALESSANDRO
+  • FARMACOLOGIA (PRIMO SOCCORSO) (1 CFU – Secondo Semestre)
+    Docente/i: BONINI SARA ANNA
+  • FARMACOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: BONINI SARA ANNA
+  • PROCESSI DI TRASFORMAZIONE (1 CFU – Secondo Semestre)
+    Docente/i: FERRARO ELISA
+  • IL LATTE (1 CFU – Secondo Semestre)
+    Docente/i: LEONE CRISTINA
+  • IGIENE DEGLI ALIMENTI E DELLA NUTRIZIONE (2 CFU – Secondo Semestre)
+    Docente/i: D'AMICO NICOLA
+  • LABORATORIO DI MICROBIOLOGIA PREDITTIVA (1 CFU – Secondo Semestre)
+    Docente/i: BARBIERI DAVIDE
+  • IGIENE GENERALE E SANITA' PUBBLICA I (2 CFU – Secondo Semestre)
+    Docente/i: COVOLO LOREDANA
+  • IGIENE AMBIENTALE (2 CFU – Secondo Semestre)
+    Docente/i: FERETTI DONATELLA
+  • INTRODUZIONE ALLA MEDICINA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: SALA EMMA
+  • EPIDEMIOLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: DONATO FRANCESCO
+
+  [2° Anno]
+  • TIROCINIO 2° ANNO (CDL TPLA) (20 CFU – Ciclo Annuale Unico)
+    Docente/i: VERSETTI ALESSANDRO
+  • SCIENZE DELLA SALUTE NEI LUOGHI DI LAVORO 1 (CFU n/d – Primo Semestre)
+    Docente/i: DE ANGELIS ANNA
+  • SCIENZE GIURIDICHE (CFU n/d – Primo Semestre)
+    Docente/i: GIORDANO FEDERICA
+  • SCIENZE DELL'ORGANIZZAZIONE E DELLA FORMAZIONE (CFU n/d – Primo Semestre)
+    Docente/i: PARISI MAURIZIO
+  • PREVENZIONE E PROTEZIONE (2 CFU – Primo Semestre)
+    Docente/i: LEONE MASSIMO
+  • PATOLOGIE DA LAVORO E LAVORO CORRELATE (1 CFU – Primo Semestre)
+    Docente/i: SALA EMMA
+  • MEDICINA DEL LAVORO (1 CFU – Primo Semestre)
+    Docente/i: SALA EMMA
+  • PRIMO SOCCORSO ED EMERGENZA (2 CFU – Primo Semestre)
+    Docente/i: BERTONI MICHELE
+  • I RISCHI OCCUPAZIONALI MATERNITA' E LAV. MIN (1 CFU – Primo Semestre)
+    Docente/i: CATTALINI MARCO
+  • I DISPOSITIVI DI PROTEZIONE AMBIENTALE E INDI (1 CFU – Primo Semestre)
+    Docente/i: RUSSO MONICA
+  • DIRITTO PENALE (1 CFU – Primo Semestre)
+    Docente/i: ROSSI FRANCESCO
+  • ELEMENTI DI DIRITTO PENALE E PROCESSUALE (1 CFU – Primo Semestre)
+    Docente/i: BELLINI ANTONIO
+  • PROCEDIMENTI SPECIALI: OBLAZIONE E PRESCRIZIO (1 CFU – Primo Semestre)
+    Docente/i: BIANCHI MARIA
+  • IL DIBATTIMENTO PROCESSUALE (1 CFU – Primo Semestre)
+    Docente/i: MORELLI MARCO
+  • DIRITTO DEL LAVORO (1 CFU – Primo Semestre)
+    Docente/i: GRECO LAURA
+  • FORMAZIONE E INFORMAZ. NEI LUOGHI DI LAVORO (1 CFU – Primo Semestre)
+    Docente/i: LEONE STEFANO
+  • PSICOLOGIA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: VILLA BARBARA
+  • STORIA DELLA MEDICINA (1 CFU – Primo Semestre)
+    Docente/i: FALCONI BRUNO
+  • ORGANIZZAZIONE AZIENDALE (1 CFU – Primo Semestre)
+    Docente/i: ESPOSITO STEFANO
+  • ECONOMIA APPLICATA (1 CFU – Primo Semestre)
+    Docente/i: BIANCHI FRANCESCA
+  • PSICOLOGIA DEL LAVORO (1 CFU – Primo Semestre)
+    Docente/i: GHILARDI ALBERTO
+  • IMPIANTI (CFU n/d – Secondo Semestre)
+    Docente/i: CARUSO EMANUELE
+  • RILIEVO ARCHITETTONICO ED ELABORAZIONE DELLE INFORMAZIONI (CFU n/d – Secondo Semestre)
+    Docente/i: FONTANA ANNA
+  • INGLESE 2° ANNO (1 CFU – Secondo Semestre)
+    Docente/i: PALUMBO RICCARDO
+  • FISICA TECNICA AMBIENTALE E SISTEMI PER L'ENERGIA (CFU n/d – Secondo Semestre)
+    Docente/i: MARTINELLI ANNA
+  • IMPIANTI (2 CFU – Secondo Semestre)
+    Docente/i: ROSSI DIANA
+  • SICUREZZA IMPIANTI (2 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI SIMONE
+  • CHIMICA AMBIENTALE (2 CFU – Secondo Semestre)
+    Docente/i: BILO FABJOLA
+  • ADEMPIMENTI NORMAT. PER CONTROLLO E MIGLIORAM (1 CFU – Secondo Semestre)
+    Docente/i: PARISI MARTINA
+  • IMPIANTI DI SMALTIMENTO RIFIUTI E DI DEPURAZ (1 CFU – Secondo Semestre)
+    Docente/i: VACCARI MENTORE
+  • FISICA TECNICA AMBIENTALE (2 CFU – Secondo Semestre)
+    Docente/i: PIANA EDOARDO ALESSIO
+  • FISICA TECNICA INDUSTRIALE (2 CFU – Secondo Semestre)
+    Docente/i: PILOTELLI MARIAGRAZIA
+  • SISTEMI PER L'ENERGIA E L'AMBIENTE (1 CFU – Secondo Semestre)
+    Docente/i: GHIDONI ANTONIO
+  • IL RILIEVO AMBIENTALE E ARCHITETTONICO 1 (1 CFU – Secondo Semestre)
+    Docente/i: MARINO GIUSEPPE
+  • IL RILIEVO AMBIENTALE E ARCHITETTONICO 2 (1 CFU – Secondo Semestre)
+    Docente/i: GIORDANO ALESSANDRO
+  • SISTEMA DI ELABORAZIONE DELLE INFORMAZIONI (2 CFU – Secondo Semestre)
+    Docente/i: GIORDANO ALESSANDRO
+
+  [3° Anno]
+  • TIROCINIO 3° ANNO (CDL TPLA) (28 CFU – Ciclo Annuale Unico)
+    Docente/i: VERSETTI ALESSANDRO
+  • SCIENZE DELL'IGIENE 2 (CFU n/d – Primo Semestre)
+    Docente/i: LONGO GABRIELE
+  • SCIENZE DELLA SALUTE NEI LUOGHI DI LAVORO 2 (CFU n/d – Primo Semestre)
+    Docente/i: BASILE TOMMASO
+  • INGLESE 3° ANNO (1 CFU – Primo Semestre)
+    Docente/i: FERRI ENRICO
+  • PROGRAMMAZIONE ORGANIZZ. E GESTIONE SERV. SAN (1 CFU – Primo Semestre)
+    Docente/i: GELATTI UMBERTO
+  • MEDICINA PREVENTIVA E SOCIALE (2 CFU – Primo Semestre)
+    Docente/i: FERETTI DONATELLA
+  • EDUCAZIONE SANITARIA (1 CFU – Primo Semestre)
+    Docente/i: CERETTI ELISABETTA
+  • IGIENE NEI LUOGHI DI LAVORO E IGIENE SCOLASTI (2 CFU – Primo Semestre)
+    Docente/i: FERRI SARA
+  • IGIENE INDUSTRIALE (2 CFU – Primo Semestre)
+    Docente/i: DE PALMA GIUSEPPE
+  • TOSSICOLOGIA INDUSTRIALE (2 CFU – Primo Semestre)
+    Docente/i: DE PALMA GIUSEPPE
+  • RADIOPROTEZIONE (1 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI MARIA
+  • MISURE RADIOMETRICHE (1 CFU – Primo Semestre)
+    Docente/i: MARIANI SERGIO
+  • MEDICINA LEGALE (1 CFU – Primo Semestre)
+    Docente/i: FRANCO PAOLA
+  • TECNICHE CAMPIONAMENTO POLV. E SOSTANZE CHIM. (1 CFU – Primo Semestre)
+    Docente/i: VALENTE FABIO
+  • SCIENZE DELL'ALIMENTAZIONE 2 (CFU n/d – Secondo Semestre)
+    Docente/i: FERRARO EMANUELE
+  • URBANISTICA E INGEGNERIA SANITARIA (CFU n/d – Secondo Semestre)
+    Docente/i: CARUSO MATTEO
+  • SCIENZE E TECNOLOGIE ALIMENTARI (2 CFU – Secondo Semestre)
+    Docente/i: COSTA LUCA
+  • PROCESSI DI TRASFORM. E CONTROLLO DI PROCESSO (2 CFU – Secondo Semestre)
+    Docente/i: BRUNO TOMMASO
+  • ACQUE E PRODOTTI ITTICI (1 CFU – Secondo Semestre)
+    Docente/i: MARTINELLI GABRIELE
+  • LATTE, CARNE E DERIVATI (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO GABRIELE
+  • ISPEZIONE ALIMENTI ANIMALI (1 CFU – Secondo Semestre)
+    Docente/i: MARINO ALESSANDRO
+  • TECNICHE DI CAMPIONAMENTO ALIMENTI ED ACQUE (1 CFU – Secondo Semestre)
+    Docente/i: ESPOSITO MAURIZIO
+  • INGEGNERIA SANITARIA (1 CFU – Secondo Semestre)
+    Docente/i: CATTANEO VITTORIO
+  • PIANIFICAZIONE URBANISTICA (2 CFU – Secondo Semestre)
+    Docente/i: TESTA ANDREA
+  • VALUTAZ. RISCHI OCCUPAZIONALI SETTORE SANITAR (1 CFU – Secondo Semestre)
+    Docente/i: MARTINELLI MARCO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: TECNICHE DI LABORATORIO BIOMEDICO [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: BIANCHI MATTEO
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: CARUSO MICHELE
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: MONTI ANNA
+  • LABORATORI PROFESSIONALI 1° ANNO (CdS TLB) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GILIANI SILVIA CLARA, PAOLINI LUCIA
+  • LINGUA INGLESE 1° ANNO (CdS TLB) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GIORDANO ANTONIO
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 1° ANNO (CdS TLB) (16 CFU – Ciclo Annuale Unico)
+    Docente/i: TESTA ALESSIA
+  • Normative sulla sicurezza in laboratorio (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PALUMBO SILVIA
+  • SCIENZE FISICHE E STATISTICHE (CFU n/d – Primo Semestre)
+    Docente/i: NEGRI PAOLA
+  • Fisica applicata (4 CFU – Primo Semestre)
+    Docente/i: FUSE' MARCO
+  • Analisi Matematica (2 CFU – Primo Semestre)
+    Docente/i: BRUNO MARTINA
+  • Statistica medica (2 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • Elementi di informatica (1 CFU – Primo Semestre)
+    Docente/i: MARTINI PAOLO
+  • SCIENZE STRUTTURALI E FUNZIONALI DELLE BIOMOLECOLE (CFU n/d – Primo Semestre)
+    Docente/i: PARISI GABRIELE
+  • Chimica generale (3 CFU – Primo Semestre)
+    Docente/i: ZANELLA ISABELLA
+  • Chimica organica e propedeutica biochimica (1 CFU – Primo Semestre)
+    Docente/i: ZANELLA ISABELLA
+  • Biochimica 1 (1 CFU – Primo Semestre)
+    Docente/i: GRILLO ELISABETTA
+  • Esercitazioni di stechiometria (1 CFU – Primo Semestre)
+    Docente/i: CECCONELLO ALESSANDRO
+  • FONDAMENTI MORFOLOGICI E FUNZIONALI DELLA VITA (CFU n/d – Primo Semestre)
+    Docente/i: FERRI BARBARA
+  • Anatomia (2 CFU – Primo Semestre)
+    Docente/i: FAVERO GAIA
+  • Istologia (3 CFU – Primo Semestre)
+    Docente/i: REZZOLA SARA
+  • Fisiologia (3 CFU – Primo Semestre)
+    Docente/i: VILLA SARA
+  • Laboratorio di microscopia (1 CFU – Primo Semestre)
+    Docente/i: GRECO LAURA
+  • SCIENZE BIOLOGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: GALLO STEFANO
+  • Biologia e genetica generale (3 CFU – Secondo Semestre)
+    Docente/i: BARBON ALESSANDRO
+  • Laboratorio di colture cellulari (1 CFU – Secondo Semestre)
+    Docente/i: RADEGHIERI ANNALISA, GILIANI SILVIA CLARA
+  • Tecniche di genetica di base e biotecnologie applicate (2 CFU – Secondo Semestre)
+    Docente/i: RADEGHIERI ANNALISA, GILIANI SILVIA CLARA
+  • MICROBIOLOGIA E METODOLOGIE DIAGNOSTICHE (CFU n/d – Secondo Semestre)
+    Docente/i: BIANCO GIUSEPPE
+  • Microbiologia 1 (3 CFU – Secondo Semestre)
+    Docente/i: FIORENTINI SIMONA
+  • Tecniche diagnostiche di microbiologia (2 CFU – Secondo Semestre)
+    Docente/i: GIAGULLI CINZIA
+  • ISTITUZIONI DI BIOCHIMICA E BIOCHIMICA CLINICA (CFU n/d – Secondo Semestre)
+    Docente/i: PALMIERI MAURIZIO
+  • Biochimica 2 (2 CFU – Secondo Semestre)
+    Docente/i: GRILLO ELISABETTA
+  • Biochimica clinica 1 (3 CFU – Secondo Semestre)
+    Docente/i: BIASIOTTO GIORGIO
+  • Strumentazione analitica (1 CFU – Secondo Semestre)
+    Docente/i: GUERRA NICOLA
+
+  [2° Anno]
+  • ATTIVITA' FORMATIVE PROFESSIONALIZZANTI 2° ANNO (21 CFU – Ciclo Annuale Unico)
+    Docente/i: STEA MARCO GIACOMO
+  • LABORATORI PROFESSIONALI 2° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BIANCO SARA
+  • LINGUA INGLESE 2 (2 CFU – Ciclo Annuale Unico)
+    Docente/i: MARTINI MICHELE
+  • DIAGNOSTICA MICOLOGICA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BRUNO MARCO
+  • SCIENZE BIOMEDICHE (CFU n/d – Primo Semestre)
+    Docente/i: GENTILE MICHELE
+  • PATOLOGIA GENERALE (3 CFU – Primo Semestre)
+    Docente/i: FRA ANNAMARIA
+  • IMMUNOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: DEL PRETE ANNALISA
+  • TECNICHE DIAGNOSTICHE DI PATOLOGIA GENERALE (2 CFU – Primo Semestre)
+    Docente/i: GILIANI SILVIA CLARA, ROMANI CHIARA
+  • TECNICHE DIAGNOSTICHE DI IMMUNOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: GILIANI SILVIA CLARA, RADEGHIERI ANNALISA
+  • SCIENZE DELLA PATOLOGIA UMANA (CFU n/d – Primo Semestre)
+    Docente/i: DE LUCA BARBARA
+  • ANATOMIA PATOLOGICA 1 (2 CFU – Primo Semestre)
+    Docente/i: LORENZI LUISA, BALZARINI PIERA
+  • TECNICHE DIAGNOSTICHE DI ANATOMIA PATOLOGICA 1 (2 CFU – Primo Semestre)
+    Docente/i: SILVESTRI ROBERTO
+  • ISTITUZIONI DI FISIOPATOLOGIA E SCIENZE CLINICHE (CFU n/d – Primo Semestre)
+    Docente/i: GIORDANO ELISA
+  • PATOLOGIA CLINICA (2 CFU – Primo Semestre)
+    Docente/i: SALVI VALENTINA
+  • MALATTIE DEL SANGUE (1 CFU – Primo Semestre)
+    Docente/i: BERNARDI SIMONA
+  • FARMACOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: BONO FEDERICA
+  • TECNICHE DI MEDICINA TRASFUSIONALE (1 CFU – Primo Semestre)
+    Docente/i: FERRARO DAVIDE
+  • MICROBIOLOGIA CLINICA E IGIENE (CFU n/d – Secondo Semestre)
+    Docente/i: CARBONE GIULIA
+  • MICROBIOLOGIA CLINICA (3 CFU – Secondo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • ANALISI DEGLI ALIMENTI (2 CFU – Secondo Semestre)
+    Docente/i: PERON GREGORIO
+  • ANATOMIA PATOLOGICA 2 (1 CFU – Secondo Semestre)
+    Docente/i: LORENZI LUISA
+  • CITOLOGIA DIAGNOSTICA (2 CFU – Secondo Semestre)
+    Docente/i: BALZARINI PIERA
+  • TECNICHE DIAGNOSTICHE DI ANATOMIA PATOLOGICA 2 (2 CFU – Secondo Semestre)
+    Docente/i: BALZARINI PIERA
+  • ISTITUZIONI DI ANATOMIA PATOLOGICA (CFU n/d – Secondo Semestre)
+    Docente/i: BARONE LUCA
+  • MALATTIE INFETTIVE (1 CFU – Secondo Semestre)
+    Docente/i: QUIROS ROLDAN MARIA EUGENIA
+  • IGIENE (2 CFU – Secondo Semestre)
+    Docente/i: FERRARI NICOLA
+  • PARASSITOLOGIA E MALATTIE ANIMALI (1 CFU – Secondo Semestre)
+    Docente/i: SORRENTINO NICOLA
+
+  [3° Anno]
+  • RADIOBIOLOGIA E RADIOPROTEZIONE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: AMATO DANIELE
+  • LABORATORI PROFESSIONALI 3° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RADEGHIERI ANNALISA, GILIANI SILVIA CLARA
+  • ATTIVITÀ FORMATIVE PROFESSIONALIZZANTI 3°ANNO (21 CFU – Ciclo Annuale Unico)
+    Docente/i: STEA MARCO GIACOMO
+  • Il TLB e la produzione del dato scientifico nel laboratorio di ricerca (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GILIANI SILVIA CLARA
+  • INFORMATICA APPLICATA (1 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • ISTITUZIONI BIOGENETICA E SCIENZE INTERDISCIPLINARI CLINICHE (CFU n/d – Primo Semestre)
+    Docente/i: BIANCO CARLO
+  • METODOLOGIE DIAGNOSTICHE DI PATOLOGIA CLINICA (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO DANIELE
+  • SCIENZE INTERDISCIPLINARI ED INTEGRATIVE (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA CRISTINA
+  • BIOLOGIA APPLICATA (2 CFU – Primo Semestre)
+    Docente/i: PIOVANI GIOVANNA
+  • TECNICHE DIAGNOSTICHE IN EMERGENZA/URGENZA (1 CFU – Primo Semestre)
+    Docente/i: PALMIERI VALENTINA
+  • BIOCHIMICA CLINICA SPECIALISTICA (1 CFU – Primo Semestre)
+    Docente/i: GARRAFA EMIRENA MICHELA
+  • TECNICHE DIAGNOSTICHE DI MICROBIOLOGIA 2 (2 CFU – Primo Semestre)
+    Docente/i: BRUNO SIMONE
+  • Fondamenti e tecniche di genetica medica (3 CFU – Primo Semestre)
+    Docente/i: RITELLI MARCO GIUSEPPE
+  • ELABORAZIONE DELLE INFORMAZIONI (2 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • STATISTICA PER LA RICERCA SPERIM E TECNOL (2 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • ENDOCRINOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: PIROLA ILENIA
+  • ONCOLOGIA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: GRISANTI SALVATORE
+  • TECNICHE DI PATOLOGIA CLINICA (3 CFU – Primo Semestre)
+    Docente/i: SALVI VALENTINA
+  • SCIENZE DELLA PREVENZIONE E SERVIZI SANITARI, PROMOZIONE DELLA SALUTE ED ETICA (CFU n/d – Secondo Semestre)
+    Docente/i: SARTORI STEFANO
+  • SCIENZE UMANE E DEL MANAGEMENT (CFU n/d – Secondo Semestre)
+    Docente/i: COLOMBO BARBARA
+  • ORGANIZZAZIONE DI LABORATORIO (1 CFU – Secondo Semestre)
+    Docente/i: GILIANI SILVIA CLARA
+  • ECONOMIA ED ORGANIZZAZIONE AZIENDALE (2 CFU – Secondo Semestre)
+    Docente/i: MARIANI GABRIELE
+  • PSICOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • MEDICINA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: DE PALMA GIUSEPPE
+  • ANESTESIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: PIVA SIMONE
+  • ORGANIZZAZIONE PROFESSIONALE (1 CFU – Secondo Semestre)
+    Docente/i: VALENTE ANDREA
+  • MEDICINA LEGALE E BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • TOSSICOLOGIA FORENSE (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI LORENZO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: TECNICHE DI RADIOLOGIA MEDICA, PER IMMAGINI E RADIOTERAPIA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: GALLO PAOLA
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: BERNARDI MAURIZIO
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: VITALE ROBERTO
+  • LABORATORIO PROFESSIONALE 1° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RINALDI FABIO
+  • SEMINARI 1° anno (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LONGO CRISTINA
+  • TIROCINIO 1° anno (16 CFU – Ciclo Annuale Unico)
+    Docente/i: COSTA MONICA
+  • SCIENZE FISICHE, STATISTICA (CFU n/d – Primo Semestre)
+    Docente/i: CATTANEO MICHELE
+  • Statistica medica (1 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • Informatica (1 CFU – Primo Semestre)
+    Docente/i: GATTA ROBERTO
+  • Fisica applicata alle scienze radiologiche (3 CFU – Primo Semestre)
+    Docente/i: CORBO DANIELE
+  • STRUTTURA E FUNZIONI DELLE BIOMOLECOLE, ANATOMIA E ISTOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: COSTA GIULIA
+  • Chimica e biochimica (2 CFU – Primo Semestre)
+    Docente/i: CORSINI MICHELA
+  • Anatomia umana (3 CFU – Primo Semestre)
+    Docente/i: BUFFOLI BARBARA, BONOMINI FRANCESCA
+  • Biologia applicata (2 CFU – Primo Semestre)
+    Docente/i: SALVI ALESSANDRO
+  • Istologia (1 CFU – Primo Semestre)
+    Docente/i: COLTRINI DANIELA
+  • SALUTE E SICUREZZA IN AMBIENTE SANITARIO (CFU n/d – Primo Semestre)
+    Docente/i: BIANCO ELENA
+  • Medicina del lavoro (1 CFU – Primo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • Igiene (2 CFU – Primo Semestre)
+    Docente/i: FERETTI DONATELLA
+  • Etica e deontologia della professione (1 CFU – Primo Semestre)
+    Docente/i: GALLI GABRIELE
+  • Sociologia della salute (1 CFU – Primo Semestre)
+    Docente/i: NEGRI FRANCESCA
+  • Radioprotezione (2 CFU – Primo Semestre)
+    Docente/i: CATTANEO LUCA
+  • APPARECCHIATURE, SISTEMI INFORMATICI IN RADIOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI RICCARDO
+  • Sistemi informatici radiologici (2 CFU – Primo Semestre)
+    Docente/i: GALLO ENRICO
+  • Apparecchiature di radiodiagnostica convenzionale e mammografica (2 CFU – Primo Semestre)
+    Docente/i: GUERRA SARA
+  • FISIOLOGIA, PATOLOGIA, ALTERAZIONI METABOLICHE E FUNZIONALI DEI SISTEMI E DEGLI ORGANI (CFU n/d – Secondo Semestre)
+    Docente/i: GUERRA RICCARDO
+  • Fisiologia (2 CFU – Secondo Semestre)
+    Docente/i: BERTONI MICHELE
+  • Medicina interna (1 CFU – Secondo Semestre)
+    Docente/i: MARIANI DANIELE
+  • Patologia generale (2 CFU – Secondo Semestre)
+    Docente/i: COSTA GABRIELE
+  • FISICA DELLE RADIAZIONI E FISICA MEDICA (CFU n/d – Secondo Semestre)
+    Docente/i: BELLINI PAOLO
+  • Fisica delle radiazioni (2 CFU – Secondo Semestre)
+    Docente/i: COLOMBO CRISTINA
+  • Fisica medica (1 CFU – Secondo Semestre)
+    Docente/i: COSTA STEFANO
+  • DIAGNOSTICA PER IMMAGINI I (CFU n/d – Secondo Semestre)
+    Docente/i: BARBIERI ELISA
+  • Anatomia radiologica dell'apparato osteoarticolare (2 CFU – Secondo Semestre)
+    Docente/i: CARBONE RICCARDO
+  • Malattie dell'apparato locomotore (1 CFU – Secondo Semestre)
+    Docente/i: ZARATTINI GUIDO
+  • Tecniche radiografiche convenzionali e contrastografiche planari (2 CFU – Secondo Semestre)
+    Docente/i: AMATO GIUSEPPE
+  • Tecniche radiografiche in traumatologia ossea e sala operatoria (1 CFU – Secondo Semestre)
+    Docente/i: GRASSI LORENZO
+  • Anatomia radiologica pediatrica (1 CFU – Secondo Semestre)
+    Docente/i: BIANCHI FEDERICA
+  • Tecniche radiografiche in radiologia pediatrica (1 CFU – Secondo Semestre)
+    Docente/i: VITALE ALESSANDRO
+
+  [2° Anno]
+  • LABORATORIO PROFESSIONALE 2° ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: GIORDANO ENRICO
+  • SEMINARI 2° anno (1 CFU – Ciclo Annuale Unico)
+    Docente/i: VILLA ANTONIO
+  • TIROCINIO 2° anno (22 CFU – Ciclo Annuale Unico)
+    Docente/i: BRUNO ELISA
+  • DIAGNOSTICA PER IMMAGINI II (CFU n/d – Primo Semestre)
+    Docente/i: MAZZA LAURA
+  • Anatomia radiologica del distretto testa-collo (1 CFU – Primo Semestre)
+    Docente/i: RAVANELLI MARCO
+  • Anatomia radiologica del sistema nervoso (1 CFU – Primo Semestre)
+    Docente/i: GASPAROTTI ROBERTO
+  • Radiologia del sistema nervoso (3 CFU – Primo Semestre)
+    Docente/i: GASPAROTTI ROBERTO
+  • Mezzi di contrasto (1 CFU – Primo Semestre)
+    Docente/i: FERRI ELISA
+  • Basi di assistenza infermieristica e tecniche di iniezione (1 CFU – Primo Semestre)
+    Docente/i: MARTINELLI ANDREA
+  • Tecniche di neuroradiologia RM (1 CFU – Primo Semestre)
+    Docente/i: GENTILE MONICA
+  • DIAGNOSTICA PER IMMAGINI III (CFU n/d – Primo Semestre)
+    Docente/i: LONGO DAVIDE
+  • Apparecchiature TC-RM-ECO (2 CFU – Primo Semestre)
+    Docente/i: RIZZO DAVIDE
+  • Controlli di qualità (1 CFU – Primo Semestre)
+    Docente/i: BENEDETTI SERGIO
+  • Tecniche di controlli di qualità (1 CFU – Primo Semestre)
+    Docente/i: FERRI LORENZO
+  • Senologia (1 CFU – Primo Semestre)
+    Docente/i: BENEDETTI ELENA
+  • Tecniche radiografiche in senologia (1 CFU – Primo Semestre)
+    Docente/i: GRECO MONICA
+  • Tecniche di studio TC (2 CFU – Primo Semestre)
+    Docente/i: VALENTE GIUSEPPE
+  • Esercitazioni CT (1 CFU – Primo Semestre)
+    Docente/i: BIANCO ANDREA
+  • RADIOTERAPIA I (CFU n/d – Primo Semestre)
+    Docente/i: GIORDANO ROBERTA
+  • Radiobiologia e radiopatologia (1 CFU – Primo Semestre)
+    Docente/i: BUGLIONE DI MONALE E BASTIA MICHELA
+  • Oncologia medica (1 CFU – Primo Semestre)
+    Docente/i: BUGLIONE DI MONALE E BASTIA MICHELA
+  • Psicologia applicata al paziente (1 CFU – Primo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • DIAGNOSTICA PER IMMAGINI IV (CFU n/d – Secondo Semestre)
+    Docente/i: LONGO EMANUELE
+  • Radiologia dell'apparato respiratorio (2 CFU – Secondo Semestre)
+    Docente/i: FARINA DAVIDE
+  • Radiologia dell'apparato digestivo (2 CFU – Secondo Semestre)
+    Docente/i: GATTI ALESSIA
+  • Radiologia dell'apparato uro-genitale (1 CFU – Secondo Semestre)
+    Docente/i: MARIANI CARLO
+  • Chirurgia generale (1 CFU – Secondo Semestre)
+    Docente/i: RAMERA MARCO
+  • Tecniche di studio RM body 1 (1 CFU – Secondo Semestre)
+    Docente/i: DE LUCA SERGIO
+  • Tecniche di studio RM body 2 (1 CFU – Secondo Semestre)
+    Docente/i: NERI SILVIA
+  • RADIOTERAPIA II (CFU n/d – Secondo Semestre)
+    Docente/i: ROMANO ROBERTA
+  • Apparecchiature di radioterapia (2 CFU – Secondo Semestre)
+    Docente/i: CATTANEO ELENA
+  • Controlli di qualità nella dosimetria fisica in radioterapia (1 CFU – Secondo Semestre)
+    Docente/i: COLOMBO SARA
+  • Principi di radioterapia e brachiterapia (1 CFU – Secondo Semestre)
+    Docente/i: TRIGGIANI LUCA
+  • Moderne modalità di trattamento radioterapico (2 CFU – Secondo Semestre)
+    Docente/i: BUGLIONE DI MONALE E BASTIA MICHELA
+  • Tecniche di radioterapia (1 CFU – Secondo Semestre)
+    Docente/i: VALENTE VITTORIO
+
+  [3° Anno]
+  • LABORATORIO PROFESSIONALE 3°ANNO (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PELLEGRINI ELISA
+  • INGLESE SCIENTIFICO (3 CFU – Ciclo Annuale Unico)
+    Docente/i: BARONE FRANCESCO
+  • SEMINARI 3° anno (4 CFU – Ciclo Annuale Unico)
+    Docente/i: AMATO FABIO
+  • TIROCINIO 3° anno (22 CFU – Ciclo Annuale Unico)
+    Docente/i: CONTI MAURIZIO
+  • RADIOLOGIA INTERVENTISTICA, CARDIOVASCOLARE (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO ENRICO
+  • Angiografia (2 CFU – Primo Semestre)
+    Docente/i: GUERRA MARTINA
+  • Imaging dell'apparato cardio-vascolare (1 CFU – Primo Semestre)
+    Docente/i: FARINA DAVIDE
+  • Tecniche di radiologia interventistica (1 CFU – Primo Semestre)
+    Docente/i: FERRARA ROBERTO
+  • Tecniche ecografiche (1 CFU – Primo Semestre)
+    Docente/i: COLOMBO ALESSIA
+  • Emodinamica (1 CFU – Primo Semestre)
+    Docente/i: ROSSI VITTORIO
+  • Emergenze e primo soccorso in ambito professionale (1 CFU – Primo Semestre)
+    Docente/i: SANTORO LORENZO
+  • MEDICINA NUCLEARE (CFU n/d – Primo Semestre)
+    Docente/i: MANCINI ANNA
+  • Apparecchiature di medicina nucleare (2 CFU – Primo Semestre)
+    Docente/i: FRANCO MASSIMO
+  • Controlli di qualità in medicina nucleare (1 CFU – Primo Semestre)
+    Docente/i: PELLEGRINI MATTEO
+  • Radiofarmaci (1 CFU – Primo Semestre)
+    Docente/i: MORETTI DAVIDE
+  • Terapia medico-nucleare (1 CFU – Primo Semestre)
+    Docente/i: BERTAGNA FRANCESCO
+  • Medicina nucleare I (2 CFU – Primo Semestre)
+    Docente/i: DONDI FRANCESCO
+  • Tecniche di medicina nucleare I (1 CFU – Primo Semestre)
+    Docente/i: CONTI MARCO
+  • Medicina nucleare II (2 CFU – Primo Semestre)
+    Docente/i: ALBANO DOMENICO
+  • Tecniche di medicina nucleare II (1 CFU – Primo Semestre)
+    Docente/i: RIZZO MONICA
+  • ELABORAZIONE DELLE IMMAGINI E RICERCA (CFU n/d – Secondo Semestre)
+    Docente/i: ESPOSITO GIULIA
+  • L'intelligenza artificiale e radiomica (1 CFU – Secondo Semestre)
+    Docente/i: SAVARDI MATTIA
+  • Tecniche di elaborazione dell'imaging digitale (2 CFU – Secondo Semestre)
+    Docente/i: BORGHESI ANDREA
+  • Statistica per la ricerca sperimentale e tecnologica (1 CFU – Secondo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • ORGANIZZAZIONE DEI SISTEMI SANITARI, REGOLAMENTAZIONE E RESPONSABILITA' PROFESSIONALE (CFU n/d – Secondo Semestre)
+    Docente/i: DE ANGELIS PAOLA
+  • Organizzazione dei sistemi sanitari (1 CFU – Secondo Semestre)
+    Docente/i: CARUSO MARTINA
+  • Diritto del lavoro (1 CFU – Secondo Semestre)
+    Docente/i: RICCI BARBARA
+  • Regolamentazione dell'esercizio della professione (1 CFU – Secondo Semestre)
+    Docente/i: SANTORO NICOLA
+  • Rischio clinico in ambito professionale (1 CFU – Secondo Semestre)
+    Docente/i: GRECO LORENZO
+  • Bioetica e medicina legale (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • ELABORATO FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: SARTORI LORENZO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: ORTOTTICA ED ASSISTENZA OFTALMOLOGICA [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • Corso propedeutico di Matematica e Fisica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: VITALE MAURIZIO
+  • Corso propedeutico di Biologia per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: LEONE FRANCESCA
+  • Corso Propedeutico di Chimica Generale, Organica e Biochimica per le Professioni Sanitarie (CFU n/d – Periodo OFA)
+    Docente/i: FERRARA PAOLO
+  • LINGUA INGLESE (CDL ORTOTTICA) (3 CFU – Ciclo Annuale Unico)
+    Docente/i: DE LUCA PAOLA
+  • LABORATORIO INFORMATICO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: GATTA ROBERTO
+  • Fisica applicata (2 CFU – Primo Semestre)
+    Docente/i: MAZZEO GIUSEPPE
+  • Informatica (2 CFU – Primo Semestre)
+    Docente/i: SAVARDI MATTIA
+  • Statistica medica (1 CFU – Primo Semestre)
+    Docente/i: VEZZOLI MARIKA
+  • Logica e filosofia della scienza (1 CFU – Primo Semestre)
+    Docente/i: BUZZI ELISA MARIA
+  • SCIENZE PROPEDEUTICHE E DI BASE (CFU n/d – Primo Semestre)
+    Docente/i: D'AMICO FILIPPO
+  • Biologia applicata (1 CFU – Primo Semestre)
+    Docente/i: SCHIAVONE MARCO
+  • Biochimica clinica e biologia molecolare (1 CFU – Primo Semestre)
+    Docente/i: GARRAFA EMIRENA MICHELA
+  • Istologia (1 CFU – Primo Semestre)
+    Docente/i: REZZOLA SARA
+  • Microbiologia e microbiologia clinica (1 CFU – Primo Semestre)
+    Docente/i: DE FRANCESCO MARIA ANTONIA
+  • SCIENZE BIOLOGICHE E BIOCHIMICHE (CFU n/d – Primo Semestre)
+    Docente/i: VITALE STEFANO
+  • Anatomia umana (2 CFU – Primo Semestre)
+    Docente/i: FAVERO GAIA
+  • Genetica medica (1 CFU – Primo Semestre)
+    Docente/i: IZZI CLAUDIA
+  • Fisiologia (2 CFU – Primo Semestre)
+    Docente/i: FALCIATI LUCA
+  • Patologia generale (1 CFU – Primo Semestre)
+    Docente/i: RONCA ROBERTO
+  • SCIENZE MORFO-FUNZIONALI GENERALI (CFU n/d – Primo Semestre)
+    Docente/i: CONTI MASSIMO
+  • TIROCINIO 1° ANNO (CDL ORTOTTICA) (24 CFU – Annualità tirocini)
+    Docente/i: BRUNO RICCARDO
+  • Pedagogia generale e sociale (1 CFU – Secondo Semestre)
+    Docente/i: BORNATICI SARA
+  • Sociologia generale (1 CFU – Secondo Semestre)
+    Docente/i: PAGANO GABRIELE
+  • Psicologia clinica (1 CFU – Secondo Semestre)
+    Docente/i: BUIZZA CHIARA
+  • Psicologia generale (1 CFU – Secondo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • SCIENZE PSICOPEDAGOGICHE E SOCIALI (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI MATTEO
+  • Fisiopatologia dell'occhio (3 CFU – Secondo Semestre)
+    Docente/i: ROMANO VITO, NASCIMBENI GIUSEPPE, FERRARA MARIANTONIA
+  • Fisiologia della funzione visiva e della motilità oculare (3 CFU – Secondo Semestre)
+    Docente/i: SANTORO MAURIZIO
+  • SCIENZE MORFO-FUNZIONALI SPECIALISTICHE (CFU n/d – Secondo Semestre)
+    Docente/i: CATTANEO DANIELE
+  • Storia della medicina (1 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • Diritto amministrativo (1 CFU – Secondo Semestre)
+    Docente/i: SANTORO RICCARDO
+  • Economia aziendale (1 CFU – Secondo Semestre)
+    Docente/i: NERI FRANCESCO
+  • Sistemi di elaborazione delle informazioni (2 CFU – Secondo Semestre)
+    Docente/i: SIGNORONI ALBERTO
+  • MANAGEMENT SANITARIO (CFU n/d – Secondo Semestre)
+    Docente/i: PELLEGRINI FRANCESCO
+
+  [2° Anno]
+  • SEMINARI 2° ANNO (CDL ORTOTTICA) (2 CFU – Ciclo Annuale Unico)
+    Docente/i: PELLEGRINI LORENZO
+  • LABORATORIO PROFESSIONALE 2° ANNO (CDL ORTOTTICA) (2 CFU – Ciclo Annuale Unico)
+    Docente/i: COLOMBO MICHELE
+  • Clinica e diagnosi delle malattie oculari (4 CFU – Primo Semestre)
+    Docente/i: SEMERARO FRANCESCO, ROMANO VITO
+  • Semeiotica clinico-strumentale oftalmologica e ortottica (2 CFU – Primo Semestre)
+    Docente/i: RIZZO MAURIZIO
+  • SEMEIOTICA E CLINICA DELL'APPARATO VISIVO (CFU n/d – Primo Semestre)
+    Docente/i: VALENTE FRANCESCA
+  • Medicina interna (1 CFU – Primo Semestre)
+    Docente/i: MARTINELLI GIULIA
+  • Oncologia medica (1 CFU – Primo Semestre)
+    Docente/i: ALONGI FILIPPO
+  • Endocrinologia (1 CFU – Primo Semestre)
+    Docente/i: CAPPELLI CARLO
+  • Reumatologia (1 CFU – Primo Semestre)
+    Docente/i: CAVAZZANA ILARIA
+  • Malattie cutanee e veneree (1 CFU – Primo Semestre)
+    Docente/i: VENTURINI MARINA
+  • SCIENZE INTERDISCIPLINARI E MEDICHE (CFU n/d – Primo Semestre)
+    Docente/i: BIANCO SERGIO
+  • Clinica della motilità oculare (4 CFU – Primo Semestre)
+    Docente/i: PARISI CLAUDIA
+  • Ortottica e strabismo (2 CFU – Primo Semestre)
+    Docente/i: BELLINI LAURA
+  • FISIOLOGIA E CLINICA DELLA VISIONE BINOCULARE (CFU n/d – Primo Semestre)
+    Docente/i: GALLO MATTEO
+  • TIROCINIO 2° ANNO (CDL ORTOTTICA) (20 CFU – Annualità tirocini)
+    Docente/i: GENTILE ANNA
+  • Chirurgia generale (1 CFU – Secondo Semestre)
+    Docente/i: RAMERA MARCO
+  • Malattie odontostomatologiche (1 CFU – Secondo Semestre)
+    Docente/i: SAVOLDI FABIO
+  • Chirurgia maxillofacciale (1 CFU – Secondo Semestre)
+    Docente/i: MORELLI FABIO
+  • Otorinolaringoiatria (1 CFU – Secondo Semestre)
+    Docente/i: MATTAVELLI DAVIDE, RAMPINELLI VITTORIO
+  • Malattie dell'apparato locomotore (1 CFU – Secondo Semestre)
+    Docente/i: PASSIATORE MARCO
+  • Chirurgia plastica (1 CFU – Secondo Semestre)
+    Docente/i: SILVESTRI CARLO
+  • SCIENZE INTERDISCIPLINARI CHIRURGICHE (CFU n/d – Secondo Semestre)
+    Docente/i: RUSSO MICHELE
+  • Pediatria generale e specialistica (1 CFU – Secondo Semestre)
+    Docente/i: CONSONNI FILIPPO
+  • Neuropsichiatria infantile (1 CFU – Secondo Semestre)
+    Docente/i: GALLI JESSICA
+  • Chirurgia pediatrica e infantile (1 CFU – Secondo Semestre)
+    Docente/i: BORONI GIOVANNI
+  • CLINICA E PATOLOGIA DELL'ETÀ EVOLUTIVA (CFU n/d – Secondo Semestre)
+    Docente/i: LEONE LUCA
+  • Neurologia (1 CFU – Secondo Semestre)
+    Docente/i: TOJA ANDREA
+  • Neurochirurgia (1 CFU – Secondo Semestre)
+    Docente/i: FONTANELLA MARCO MARIA
+  • Psichiatria (1 CFU – Secondo Semestre)
+    Docente/i: GALLI MASSIMO
+  • Patologie neuro-oftalmologiche (2 CFU – Secondo Semestre)
+    Docente/i: MARTINI ANDREA
+  • Scienze tecniche neurologiche e oftalmologiche (2 CFU – Secondo Semestre)
+    Docente/i: PAOLINI LUCIA
+  • NEUROFTALMOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: FERRARA CHIARA
+
+  [3° Anno]
+  • ASPETTI MEDICO-PREVENTIVI E LEGALI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GALLO GIUSEPPE
+  • SEMINARI 3° ANNO (CDL ORTOTTICA) (2 CFU – Ciclo Annuale Unico)
+    Docente/i: D'AMICO CLAUDIA
+  • LABORATORIO PROFESSIONALE 3° ANNO (CDL ORTOTTICA) (1 CFU – Ciclo Annuale Unico)
+    Docente/i: D'AMICO DAVIDE
+  • Medicina legale (1 CFU – Primo Semestre)
+    Docente/i: VERZELETTI ANDREA
+  • Medicina del lavoro (1 CFU – Primo Semestre)
+    Docente/i: SALA EMMA
+  • Igiene generale e applicata (1 CFU – Primo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • Diagnostica per immagini e radioterapia (1 CFU – Primo Semestre)
+    Docente/i: GUERINI ANDREA
+  • Anatomia patologica (1 CFU – Primo Semestre)
+    Docente/i: POLIANI PIETRO LUIGI
+  • Terapia medica e chirurgica oculare (3 CFU – Primo Semestre)
+    Docente/i: FERRI ANTONIO
+  • Assistenza medica e chirurgica (1 CFU – Primo Semestre)
+    Docente/i: FERRARI MASSIMO
+  • OFTALMOLOGIA CLINICA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINI DAVIDE
+  • TIROCINIO 3° ANNO (CDL ORTOTTICA) (30 CFU – Annualità tirocini)
+    Docente/i: BIANCO MARCO
+  • Farmacologia (1 CFU – Secondo Semestre)
+    Docente/i: FIORENTINI CHIARA
+  • Anestesiologia (1 CFU – Secondo Semestre)
+    Docente/i: GIORDANO ANDREA
+  • Scienze infermieristiche generali, cliniche e pediatriche (1 CFU – Secondo Semestre)
+    Docente/i: COSTA FABIO
+  • Malattie infettive (1 CFU – Secondo Semestre)
+    Docente/i: MATTEELLI ALBERTO
+  • EMERGENZA E PRIMO SOCCORSO (CFU n/d – Secondo Semestre)
+    Docente/i: BASILE MONICA
+  • Medicina fisica e riabilitativa (1 CFU – Secondo Semestre)
+    Docente/i: MAZZA ANDREA
+  • Trattamento riabilitativo oftalmologico (2 CFU – Secondo Semestre)
+    Docente/i: TESTA FRANCESCO
+  • Rieducazione e riabilitazione ortottica (2 CFU – Secondo Semestre)
+    Docente/i: GALLI MARCO
+  • IPOVISIONE E RIABILITAZIONE OFTALMOLOGICA (CFU n/d – Secondo Semestre)
+    Docente/i: FRANCO TOMMASO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: SCIENZE MOTORIE [Laurea Triennale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • ANATOMIA UMANA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARA ANTONIO
+  • Neuroanatomia (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BONOMINI FRANCESCA
+  • Anatomia Umana (8 CFU – Ciclo Annuale Unico)
+    Docente/i: BORSANI ELISA
+  • BIOCHIMICA E BIOLOGIA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PALUMBO TOMMASO
+  • Biochimica generale, nutrizionale e dell'esercizio fisico (5 CFU – Ciclo Annuale Unico)
+    Docente/i: FANZANI ALESSANDRO
+  • Biochimica clinica applicata allo sport (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SANTORO TOMMASO
+  • BASI PSICOLOGICHE DELL'ATTIVITÀ MOTORIA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRI LAURA
+  • Psicologia generale e dello sport (4 CFU – Ciclo Annuale Unico)
+    Docente/i: DELLA VEDOVA ANNA MARIA, BUIZZA CHIARA
+  • Lo sviluppo psicosomatico (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BUIZZA CHIARA
+  • BASI DI ATLETICA E ATTIVITÀ NATATORIE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GALLI ROBERTO
+  • Attività natatorie - teoria (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DE ANGELIS ENRICO
+  • Attività natatorie - esercitazioni (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CATTANEO MARTINA
+  • Atletica leggera I (3 CFU – Ciclo Annuale Unico)
+    Docente/i: CONTI ENRICO
+  • FISICA, INFORMATICA E STATISTICA (CFU n/d – Primo Semestre)
+    Docente/i: MARINO MASSIMO
+  • Informatica (2 CFU – Primo Semestre)
+    Docente/i: FONTANA STEFANO
+  • Fisica (3 CFU – Primo Semestre)
+    Docente/i: FUSE' MARCO
+  • Statistica (2 CFU – Primo Semestre)
+    Docente/i: CALZA STEFANO
+  • Biologia applicata (3 CFU – Primo Semestre)
+    Docente/i: ZOPPI NICOLETTA
+  • METODOLOGIE DIDATTICHE E PEDAGOGIA APPLICATA ALLO SPORT (CFU n/d – Primo Semestre)
+    Docente/i: NEGRI MONICA
+  • Storia dello sport e dell'educazione fisica (2 CFU – Primo Semestre)
+    Docente/i: BELLINI DAVIDE
+  • Metodologie didattiche (5 CFU – Primo Semestre)
+    Docente/i: CARUSO STEFANO
+  • Pedagogia generale (3 CFU – Primo Semestre)
+    Docente/i: BORNATICI SARA
+  • Chimica e propedeutica biochimica (2 CFU – Primo Semestre)
+    Docente/i: GRILLO ELISABETTA
+  • ECONOMIA E DIRITTO DELLE ORGANIZZAZIONI SPORTIVE (CFU n/d – Secondo Semestre)
+    Docente/i: GRASSI MICHELE
+  • Economia delle aziende e dello sport (2 CFU – Secondo Semestre)
+    Docente/i: COSTA MAURIZIO
+  • Legislazione e normativa pubblica dello sport (2 CFU – Secondo Semestre)
+    Docente/i: CARUSO MONICA
+  • Legislazione e normativa privata dello sport (3 CFU – Secondo Semestre)
+    Docente/i: VITI VALENTINA
+  • LINGUA INGLESE (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GRECO MARCO
+
+  [2° Anno]
+  • SPORT DI SQUADRA E ATLETICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: NEGRI FRANCESCA
+  • Pallacanestro (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BERNARDI GIULIA
+  • Calcio (2 CFU – Ciclo Annuale Unico)
+    Docente/i: DE PAOLI MASSIMO
+  • Rugby (2 CFU – Ciclo Annuale Unico)
+    Docente/i: MAZZA CLAUDIA
+  • Atletica leggera II (3 CFU – Ciclo Annuale Unico)
+    Docente/i: ESPOSITO STEFANO
+  • FISIOLOGIA UMANA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: PELLEGRINI NICOLA
+  • Fisiologia dei sistemi (7 CFU – Ciclo Annuale Unico)
+    Docente/i: VALENTE LUCA
+  • Fisiologia dell'esercizio e dello sport (3 CFU – Ciclo Annuale Unico)
+    Docente/i: TABONI ANNA
+  • ATTIVITÀ ESPRESSIVE E DI ANIMAZIONE PER L'ATTIVITÀ LUDICO-RICREATIVA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARO ELENA
+  • Progettazione di interventi sociali e di animazione per l'attività ludico-ricreativa (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MONTI NICOLA
+  • Attività motoria e animativa nei contesti ludico-ricreativi - esercitazioni (2 CFU – Ciclo Annuale Unico)
+    Docente/i: MAZZA ANNA
+  • Espressione e comunicazione (2 CFU – Ciclo Annuale Unico)
+    Docente/i: FERRARA VITTORIO
+  • Marketing delle attività ludico-ricreative (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BANNÒ MARIASOLE
+  • Media e comunicazione delle attività ludico-ricreative (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RICCI FRANCESCA
+  • CHINESIOLOGIA: TEORIA, TECNICA E DIDATTICA DEL MOVIMENTO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: LEONE MARIA
+  • Le basi funzionali del movimento umano (4 CFU – Ciclo Annuale Unico)
+    Docente/i: NEGRO FRANCESCO
+  • Tecnica e didattica del movimento umano (4 CFU – Ciclo Annuale Unico)
+    Docente/i: FERRARO EMANUELE
+  • Tecnica e didattica dell'attività motoria adattata - teoria (3 CFU – Ciclo Annuale Unico)
+    Docente/i: NERI LORENZO
+  • Tecnica e didattica dell'attività motoria adattata - esercitazione (1 CFU – Ciclo Annuale Unico)
+    Docente/i: IANNETTA DANILO
+  • Pallavolo (2 CFU – Primo Semestre)
+    Docente/i: PARISI GABRIELE
+  • Pallamano (2 CFU – Primo Semestre)
+    Docente/i: ROMANO ROBERTO
+  • BASI ETICHE, TOSSICOLOGICHE, FARMACOLOGICHE E SOCIOLOGICHE (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI ELISA
+  • Principi etici generali (1 CFU – Primo Semestre)
+    Docente/i: BUZZI ELISA MARIA
+  • Bioetica e tossicologia forense (3 CFU – Primo Semestre)
+    Docente/i: CONTI ADELAIDE, TULIPANO GIOVANNI
+  • Basi di sociologia (2 CFU – Primo Semestre)
+    Docente/i: PAGANO SARA
+  • Farmacologia (2 CFU – Primo Semestre)
+    Docente/i: TULIPANO GIOVANNI
+  • TIROCINIO - II ANNO (5 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: COLOMBO MARTINA
+
+  [3° Anno]
+  • STILI DI VITA E ATTIVITÀ MOTORIA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MARINO FRANCESCA
+  • Medicina dello sport (3 CFU – Ciclo Annuale Unico)
+    Docente/i: RICCI GABRIELE
+  • Alimentazione (2 CFU – Ciclo Annuale Unico)
+    Docente/i: ZANINI BARBARA
+  • Igiene applicata (2 CFU – Ciclo Annuale Unico)
+    Docente/i: FERETTI DONATELLA
+  • SCIENZE CLINICHE APPLICATE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: VITALE MATTEO
+  • Malattie dell'apparato respiratorio (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PINI LAURA
+  • Malattie dell'apparato cardiovascolare (1 CFU – Ciclo Annuale Unico)
+    Docente/i: ROMANO ELISA
+  • Pediatria (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CONSONNI FILIPPO
+  • Neurologia (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MOROTTI ANDREA, TOJA ANDREA
+  • Medicina fisica e riabilitativa (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MONTICONE MARCO
+  • Medicina interna e pronto soccorso (3 CFU – Ciclo Annuale Unico)
+    Docente/i: ZUCCHELLI ALBERTO
+  • TEORIA E METODOLOGIA DELL'ALLENAMENTO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SANTORO MARTINA
+  • Metodologia dell'allenamento - teoria (4 CFU – Ciclo Annuale Unico)
+    Docente/i: SORRENTINO DANIELE
+  • Metodologia dell'allenamento - esercitazioni (2 CFU – Ciclo Annuale Unico)
+    Docente/i: SARTORI BARBARA
+  • METODI E TECNICHE DEL FITNESS (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BERNARDI CHIARA
+  • Fitness muscolare - teoria (1 CFU – Ciclo Annuale Unico)
+    Docente/i: COLOMBO RICCARDO
+  • Fitness muscolare - esercitazioni (3 CFU – Ciclo Annuale Unico)
+    Docente/i: ORLANDO DAVIDE
+  • Fitness aerobica - teoria (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SILVESTRI FRANCESCO
+  • Fitness aerobica - esercitazioni (3 CFU – Ciclo Annuale Unico)
+    Docente/i: BELLINI GIUSEPPE
+  • Malattie dell'apparato locomotore (2 CFU – Ciclo Annuale Unico)
+    Docente/i: MILANO GIUSEPPE
+  • BIOMECCANICA DELLE ATTIVITÀ MOTORIE E SPORTIVE (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI LAURA
+  • Biomeccanica delle attività sportive (3 CFU – Primo Semestre)
+    Docente/i: LEGNANI GIOVANNI
+  • CHINESIOLOGIA: VALUTAZIONE FUNZIONALE DELL'ATTIVITÀ MOTORIA (CFU n/d – Primo Semestre)
+    Docente/i: SILVESTRI CARLO
+  • Metodi e tecniche di valutazione (3 CFU – Primo Semestre)
+    Docente/i: NEGRO FRANCESCO
+  • Misure ergometaboliche e biomeccaniche (3 CFU – Primo Semestre)
+    Docente/i: NEGRO FRANCESCO
+  • Anatomia funzionale del sistema locomotore (3 CFU – Primo Semestre)
+    Docente/i: PARISI FRANCESCA
+  • TIROCINIO - III ANNO (5 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FONTANA MARIA
+
+──────────────────────────────────────────────────────────────────────
+CORSO: BIOTECNOLOGIE MEDICHE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • FONDAMENTI DI BIONANOTECNOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: LONGO MARCO
+  • Ingegneria proteica (3 CFU – Primo Semestre)
+    Docente/i: MONTI EUGENIO, POLI MAURA
+  • Spettroscopia e dinamica molecolare (3 CFU – Primo Semestre)
+    Docente/i: LONGHI GIOVANNA
+  • Nanochimica (3 CFU – Primo Semestre)
+    Docente/i: BERGESE PAOLO
+  • MECCANISMI MOLECOLARI (CFU n/d – Primo Semestre)
+    Docente/i: RINALDI MICHELE
+  • Meccanismi molecolari e manipolazione genica (6 CFU – Primo Semestre)
+    Docente/i: ELIA LEONARDO, FINAZZI DARIO
+  • Meccanismi molecolari in modelli animali (3 CFU – Primo Semestre)
+    Docente/i: SCHIAVONE MARCO
+  • MEDICINA RIGENERATIVA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI STEFANO
+  • Biologia applicata alla medicina rigenerativa (3 CFU – Primo Semestre)
+    Docente/i: SALVI ALESSANDRO, PIOVANI GIOVANNA
+  • Patologia clinica per la medicina rigenerativa (3 CFU – Primo Semestre)
+    Docente/i: GIACOMINI ARIANNA
+  • Tecnologie avanzate per la medicina rigenerativa  (3 CFU – Primo Semestre)
+    Docente/i: GILIANI SILVIA CLARA, RADEGHIERI ANNALISA
+  • TERAPIE FARMACOLOGICHE INNOVATIVE E FITOTERAPIA (CFU n/d – Secondo Semestre)
+    Docente/i: FERRARA ALESSIA
+  • Farmacologia speciale (3 CFU – Secondo Semestre)
+    Docente/i: FIORENTINI CHIARA
+  • Biotecnologie in farmacologia (3 CFU – Secondo Semestre)
+    Docente/i: FIORENTINI CHIARA
+  • Piante medicinali e fitoterapia (3 CFU – Secondo Semestre)
+    Docente/i: MASTINU ANDREA
+  • BIOCHIMICA CLINICA SPECIALISTICA E DIAGNOSTICA MOLECOLARE  (CFU n/d – Secondo Semestre)
+    Docente/i: LEONE MARTINA
+  • Biochimica clinica specialistica (3 CFU – Secondo Semestre)
+    Docente/i: GARRAFA EMIRENA MICHELA
+  • Diagnostica molecolare (3 CFU – Secondo Semestre)
+    Docente/i: BIASIOTTO GIORGIO
+  • GENOMICA E GENETICA MEDICA (CFU n/d – Secondo Semestre)
+    Docente/i: COLOMBO STEFANO
+  • Genomica (3 CFU – Secondo Semestre)
+    Docente/i: BORSANI GIUSEPPE, MARTINI PAOLO
+  • Genetica medica (3 CFU – Secondo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • STATISTICA COMPUTAZIONALE E BIOINFORMATICA (CFU n/d – Secondo Semestre)
+    Docente/i: GRECO SARA
+  • Bioinformatica (3 CFU – Secondo Semestre)
+    Docente/i: MARTINI PAOLO
+  • Statistica computazionale (3 CFU – Secondo Semestre)
+    Docente/i: CALZA STEFANO
+  • CONOSCENZA DELLA LINGUA INGLESE B2 (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RUSSO ANDREA
+
+  [2° Anno]
+  • APPLICAZIONI BIOTECNOLOGICHE IN MEDICINA (CFU n/d – Primo Semestre)
+    Docente/i: MANCINI ANNA
+  • Metabolomica in medicina (3 CFU – Primo Semestre)
+    Docente/i: MITOLA STEFANIA MARIA FILOMENA
+  • Diagnostica e terapie avanzate per le malattie del sangue (3 CFU – Primo Semestre)
+    Docente/i: BERNARDI SIMONA, MALAGOLA MICHELE, AVENOSO DANIELE
+  • DIAGNOSTICA MOLECOLARE E PER IMMAGINI IN ONCOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: FERRARA MONICA
+  • Diagnostica molecolare oncologica (3 CFU – Primo Semestre)
+    Docente/i: VERMI WILLIAM
+  • Diagnostica per immagini (3 CFU – Primo Semestre)
+    Docente/i: TRIGGIANI LUCA
+  • MICROBIOLOGIA TRASLAZIONALE E CLINICA (CFU n/d – Primo Semestre)
+    Docente/i: BIANCHI SIMONE
+  • Microbiologia traslazionale (3 CFU – Primo Semestre)
+    Docente/i: FIORENTINI SIMONA
+  • Microbiologia clinica (3 CFU – Primo Semestre)
+    Docente/i: GIAGULLI CINZIA
+  • ONCOLOGIA SPERIMENTALE (CFU n/d – Primo Semestre)
+    Docente/i: SERRA CRISTINA
+  • Modelli sperimentali in oncologia (3 CFU – Primo Semestre)
+    Docente/i: RONCA ROBERTO
+  • Immunoterapia di soppressione e di attivazione (3 CFU – Primo Semestre)
+    Docente/i: TIBERIO LAURA
+  • Ricerca clinica in oncologia medica (3 CFU – Primo Semestre)
+    Docente/i: BERRUTI ALFREDO, LAGANÀ MARTA
+  • TIROCINIO (BIOTECNOLOGIE MEDICHE) (4 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ROSSI DANIELE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: CORSO DI LAUREA MAGISTRALE IN SCIENZE INFERMIERISTICHE E OSTETRICHE [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • INGLESE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CARUSO PAOLO
+  • TIROCINIO 1° ANNO (CDL MAG. SC. INFERM. ED OSTETRICHE) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRI FABIO
+  • INFERMIERISTICA E OSTETRICIA AVANZATA (CFU n/d – Primo Semestre)
+    Docente/i: MARIANI FRANCESCO
+  • MODELLI E COMPETENZE AVANZATE PER LA PREVENZIONE E L'ASSISTENZA DI COMUNITA' (CFU n/d – Primo Semestre)
+    Docente/i: FERRI CHIARA
+  • METODI PER LA RICERCA CLINICA ED EPIDEMIOLOGICA (CFU n/d – Primo Semestre)
+    Docente/i: SILVESTRI VITTORIO
+  • INGLESE MODULO 1 (2 CFU – Primo Semestre)
+    Docente/i: SORRENTINO EMANUELE
+  • TIROCINIO 1° ANNO (CDL 698) (5 CFU – Primo Semestre)
+    Docente/i: COSTA STEFANO
+  • TEORIA E FILOSOFIA AVANZATE DELLE SC.INFERMIE (4 CFU – Primo Semestre)
+    Docente/i: CATTANEO ROBERTO
+  • TEORIA E FILOSOFIA AVANZATE DELLE SCIENZE OST (3 CFU – Primo Semestre)
+    Docente/i: SILVESTRI FABIO
+  • ELEMENTI DI ANALISI EPISTEMOLOGICA SCIENZE SA (1 CFU – Primo Semestre)
+    Docente/i: NERI MARCO
+  • STORIA DELLA SCIENZA E DELL'ASSISTENZA SANITA (1 CFU – Primo Semestre)
+    Docente/i: SORRENTINO FEDERICA
+  • STATISTICA MEDICA ED EPIDEMIOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: RUSSO GIULIA
+  • INFORMATICA APPLICATA AI SERVIZI SANITARI (1 CFU – Primo Semestre)
+    Docente/i: FONTANA RICCARDO
+  • MODELLI E STRUMENTI DI INTERVENTO NELLA SANIT (2 CFU – Primo Semestre)
+    Docente/i: BENEDETTI MAURIZIO
+  • METODOLOGIA DELL'ASSISTENZA OSTETRICA DI COMU (2 CFU – Primo Semestre)
+    Docente/i: FONTANA FRANCESCO
+  • APPROFONDIMENTI SULLE CONCEZIONI E I COMPORTA (1 CFU – Primo Semestre)
+    Docente/i: RIZZO EMANUELE
+  • STATISTICA PER LA RICERCA SPERIMENTALE (2 CFU – Primo Semestre)
+    Docente/i: PARISI ROBERTO
+  • METODOLOGIA DELL'ASSISTENZA INFERMIERISTICA D (2 CFU – Primo Semestre)
+    Docente/i: COSTA VITTORIO
+  • METODOLOGIA DELLA RICERCA, DEONTOLOGIA E REGOLAMENTAZIONE DELLA PROFESSIONE INFERMIERISTICA E OSTETRICA (CFU n/d – Secondo Semestre)
+    Docente/i: NERI MARTINA
+  • INGLESE MODULO 2 (2 CFU – Secondo Semestre)
+    Docente/i: SALA NICOLA
+  • TIROCINIO (CDL 698) (10 CFU – Secondo Semestre)
+    Docente/i: MARIANI FRANCESCA
+  • METODOLOGIA DELLA RICERCA INFERMIERISTICA ED (3 CFU – Secondo Semestre)
+    Docente/i: RUSSO MARCO
+  • METODOLOGIA DELLA RICERCA OSTETRICA ED EVIDEN (3 CFU – Secondo Semestre)
+    Docente/i: BERNARDI VITTORIO
+  • METODOLOGIA PER LA RICERCA SOCIALE GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: COSTA FILIPPO
+  • METODOLOGIA PER LA RICERCA SOCIALE E CULTURAL (1 CFU – Secondo Semestre)
+    Docente/i: RUSSO SILVIA
+  • DEONTOLOGIA INFERMIERISTICA E REGOLAZIONE DEL (4 CFU – Secondo Semestre)
+    Docente/i: BIANCHI CLAUDIA
+  • DEONTOLOGIA OSTETRICA E REGOLAMENTAZIONE DELL (3 CFU – Secondo Semestre)
+    Docente/i: MORELLI MARCO
+
+  [2° Anno]
+  • ALTRE ATTIVITA' (CDL 08698) (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BASILE GIUSEPPE
+  • RICERCA BIBLIOGRAFICA E REDAZIONE RELAZIONI DI INTERESSE INFERMIERISTICO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BERNARDI MAURIZIO
+  • RICERCA BIBLIOGRAFICA E REDAZIONE RELAZIONI DI INTERESSE OSTERICO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: VITALE CRISTINA
+  • UTILIZZAZIONE DI RISORSE INFORMATICHE PER LA REDAZIONE DI PROGETTI E RELAZIONI SCIENTIFICHE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: ORLANDO GIUSEPPE
+  • PROGRAMMAZIONE, ORGANIZZAZIONE E ECONOMIA NEI SERVIZI SANITARI (CFU n/d – Primo Semestre)
+    Docente/i: MANCINI CRISTINA
+  • TEORIA E METODOLOGIA DELL'INSEGNAMENTO DELLE SCIENZE INFERMIERISTICHE E OSTETRICHE (CFU n/d – Primo Semestre)
+    Docente/i: PAGANO MARCO
+  • MANAGEMENT DELL'ASSISTENZA INFERMIERISTICA E OSTETRICA (CFU n/d – Primo Semestre)
+    Docente/i: CATTANEO SIMONE
+  • PROGRAMMAZIONE E ORGANIZZAZIONE DEI SERVIZI S (2 CFU – Primo Semestre)
+    Docente/i: FONTANA GIOVANNI
+  • ECONOMIA NELLE AZIENDE SANITARIE (2 CFU – Primo Semestre)
+    Docente/i: TESTA MARTINA
+  • DIRITTO DEL LAVORO NELLA SANITA' (1 CFU – Primo Semestre)
+    Docente/i: DE ANGELIS GIOVANNI
+  • DIRITTO PRUBBLICO AMMISTRATIVO NELLA SANITA' (1 CFU – Primo Semestre)
+    Docente/i: PARISI DAVIDE
+  • REGOLAMENTAZIONE SANITARIA NELL'UNIONE EUROPE (1 CFU – Primo Semestre)
+    Docente/i: PALMIERI ELISA
+  • METODOLOGIE DIDATTICHE E TUTORIALI APPLICATE (2 CFU – Primo Semestre)
+    Docente/i: RINALDI FRANCESCO
+  • METOLOGIE DIDATTICHE E TUTORIALI APPLICATE AL (2 CFU – Primo Semestre)
+    Docente/i: CATTANEO SARA
+  • PEDAGOGIA PER LE SCIENZE SANITARIE (1 CFU – Primo Semestre)
+    Docente/i: PAGANO CARLO
+  • PSICOLOGIA GENERALE, SOCIALE E DEI GRUPPI (1 CFU – Primo Semestre)
+    Docente/i: MINELLI ALESSANDRA
+  • MODELLI E METOLOGIE NEL MANAGEMENT INFERMIERI (2 CFU – Primo Semestre)
+    Docente/i: CONTI LUCA
+  • MODELLI E METODOLOGIE NEL MANAGEMENT OSTETRIC (2 CFU – Primo Semestre)
+    Docente/i: GENTILE FRANCESCO
+  • AGGIORNAMENTI IN FARMACOLOGIA CLINICA (2 CFU – Primo Semestre)
+    Docente/i: SIGALA SANDRA
+  • AGGIORNAMENTI IN ANESTESIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: RASULO FRANCESCO ANTONIO
+  • PROGETTAZIONE, VALUTAZIONE E DIREZIONE DEI PROCESSI ASSISTENZA INFERMIERISTICA E OSTETRICA (CFU n/d – Secondo Semestre)
+    Docente/i: PELLEGRINI ALESSANDRO
+  • PRATICA SANITARIA BASATA SULLE PROVE (CFU n/d – Secondo Semestre)
+    Docente/i: BENEDETTI PAOLA
+  • TIROCINIO 2° ANNO (CDL MAG. SC. INFERM. ED OSTETRICHE) (15 CFU – Secondo Semestre)
+    Docente/i: BARBIERI ENRICO
+  • MANAGEMENT INFERMIERISTICO AVANZATO (2 CFU – Secondo Semestre)
+    Docente/i: GRECO MONICA
+  • MANAGEMENT OSTETRICO AVANZATO (2 CFU – Secondo Semestre)
+    Docente/i: BASILE FILIPPO
+  • PSICOLOGIA DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: GHILARDI ALBERTO
+  • MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: VERZELETTI ANDREA
+  • MEDICINA DEL LAVORO ED ERGONOMIA OCCUPAZIONAL (1 CFU – Secondo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • SOCIOLOGIA DELLE ORGANIZZAZIONI E DEL LAVORO (1 CFU – Secondo Semestre)
+    Docente/i: NEGRI GIULIA
+  • PROVE IN MEDICINA INTERNA (1 CFU – Secondo Semestre)
+    Docente/i: SALVETTI MASSIMO
+  • PROVE IN ONCOLOGIA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: COSENTINI DEBORAH
+  • PROVE IN CHIRURGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: CASELLA CLAUDIO
+  • PROVE IN PEDIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: DOTTA LAURA
+  • PROVE IN GINECOLOGIA E OSTETRICIA (1 CFU – Secondo Semestre)
+    Docente/i: ODICINO FRANCO EDOARDO, FERRARI FEDERICO GIORGIO
+  • PROVE IN PSICHIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: TURRINA CESARE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: Scienza del movimento per la salute ed il benessere [Laurea Magistrale]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • STILI DI VITA , ATTIVITA' FISICA E BENESSERE PSICO-SOCIALE NELLE DIVERSE POPOLAZIONI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SANTORO ANDREA
+  • PEDAGOGIA E  DIDATTICA DELL'AZIONE UMANA  NELLE DIVERSE ETA' (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MARINO MARIA
+  • CHINESIOLOGIA DELLE ATTIVITA' MOTORIE PREVENTIVE E ADATTATE NELLE PATOLOGIE ESERCIZIO SENSIBILI (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: RUSSO MARIA
+  • Sociologia delle attività motorie e sportive (5 CFU – Ciclo Annuale Unico)
+    Docente/i: ROSSI CARLO
+  • Principi di educazione alimentare (3 CFU – Ciclo Annuale Unico)
+    Docente/i: ZANINI BARBARA
+  • Psicologia clinica delle attività motorie e sportive (3 CFU – Ciclo Annuale Unico)
+    Docente/i: BUIZZA CHIARA
+  • Progettazione educativa, valutazione condivisa e  pedagogia dell'azione umana nelle diverse età  (7 CFU – Ciclo Annuale Unico)
+    Docente/i: BARBIERI GIUSEPPE
+  • Didattica delle attività motorie e sportive nell'età evolutiva e nell'invecchiamento  (3 CFU – Ciclo Annuale Unico)
+    Docente/i: BIANCHI FRANCESCO
+  • Valutazione funzionale ergometabolica e neuromuscolare (5 CFU – Ciclo Annuale Unico)
+    Docente/i: IANNETTA DANILO
+  • Attività motorie preventive e adattate e rieducazione posturale in persone con disabilità (5 CFU – Ciclo Annuale Unico)
+    Docente/i: GIORDANO MARTINA
+  • ADATTAMENTI MORFOFUNZIONALI NELLE DIVERSE ETA' (CFU n/d – Primo Semestre)
+    Docente/i: RUSSO TOMMASO
+  • LINGUA INGLESE (3 CFU – Primo Semestre)
+    Docente/i: PARISI FILIPPO
+  • Anatomia dello sviluppo e dell'invecchiamento (3 CFU – Primo Semestre)
+    Docente/i: BORSANI ELISA
+  • Fisiologia dello sviluppo e dell'invecchiamento (5 CFU – Primo Semestre)
+    Docente/i: RINALDI LUCA
+  • Endocrinologia dello sviluppo e dell'invecchiamento (3 CFU – Primo Semestre)
+    Docente/i: CAPPELLI CARLO
+  • TIROCINIO - PRIMO ANNO (10 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GALLI MARTINA
+
+  [2° Anno]
+  • PATOLOGIE ESERCIZIO SENSIBILI IN AMBITO INTERNISTICO E NEUROLOGICO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: SARTORI MATTEO
+  • ATTIVITA' MOTORIA PREVENTIVA E ADATTATA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CONTI CRISTINA
+  • Malattie di interesse internistico, cardio-circolatorio, respiratorio e geriatria  (10 CFU – Ciclo Annuale Unico)
+    Docente/i: MARENGONI ALESSANDRA, DE CIUCEIS CAROLINA, PINI LAURA, NODARI SAVINA
+  • Alterazioni neurologiche del controllo sensori-motorio (3 CFU – Ciclo Annuale Unico)
+    Docente/i: PILOTTO ANDREA, MOROTTI ANDREA
+  • Nozioni di prescrizione e somministrazione dell'attività motoria adattata nelle patologie esercizio sensibili  (3 CFU – Ciclo Annuale Unico)
+    Docente/i: IANNETTA DANILO
+  • Biomeccanica del movimento assistito (3 CFU – Ciclo Annuale Unico)
+    Docente/i: AMICI CINZIA
+  • PATOLOGIE ESERCIZIO SENSIBILI DELL'APPARATO LOCOMOTORE	 (CFU n/d – Primo Semestre)
+    Docente/i: AMATO ANDREA
+  • CHINESIOLOGIA DELLE ATTIVITA' SPORTIVE NELLE PERSONE CON DISABILITA' (CFU n/d – Primo Semestre)
+    Docente/i: FERRARI RICCARDO
+  • Traumatologia nelle diverse età e trattamenti riabilitativi (5 CFU – Primo Semestre)
+    Docente/i: MILANO GIUSEPPE, PASSIATORE MARCO
+  • Reumatologia (3 CFU – Primo Semestre)
+    Docente/i: CAVAZZANA ILARIA
+  • Attività sportive in persone con disabilità fisica e/o sensoriale (5 CFU – Primo Semestre)
+    Docente/i: BELLINI MONICA
+  • Attività sportive in persone con disabilità intellettive e relazionali (5 CFU – Primo Semestre)
+    Docente/i: GIORDANO EMANUELE
+  • TIROCINIO - SECONDO  ANNO (10 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RUSSO LORENZO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: FARMACIA [Ciclo Unico]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • CHIMICA GENERALE E INORGANICA (12 CFU – Ciclo Annuale Unico)
+    Docente/i: CECCONELLO ALESSANDRO, BERGESE PAOLO
+  • BIOLOGIA VEGETALE E BOTANICA FARMACEUTICA (9 CFU – Ciclo Annuale Unico)
+    Docente/i: MASTINU ANDREA
+  • ISTOLOGIA ED EMBRIOLOGIA (3 CFU – Primo Semestre)
+    Docente/i: TABELLINI GIOVANNA
+  • Genetica Molecolare e Genomica (5 CFU – Primo Semestre)
+    Docente/i: BORSANI GIUSEPPE
+  • General English (1.5 CFU – Primo Semestre)
+    Docente/i: COLOMBO GIUSEPPE
+  • Scientific English - Elementary (1.5 CFU – Primo Semestre)
+    Docente/i: MARTINI FABIO
+  • FISICA ED ELEMENTI DI MATEMATICA (7 CFU – Primo Semestre)
+    Docente/i: MAZZEO GIUSEPPE
+  • ACQUISIZIONE DI ELEMENTI DI INFORMATICA E STATISTICA (2 CFU – Primo Semestre)
+    Docente/i: ROTA MATTEO
+  • Biologia animale, Genetica Generale ed Epigenetica (7 CFU – Primo Semestre)
+    Docente/i: BARBON ALESSANDRO, SALVI ALESSANDRO
+  • Anatomia umana (6 CFU – Secondo Semestre)
+    Docente/i: REZZANI RITA, FAVERO GAIA
+  • CHIMICA ANALITICA (6 CFU – Secondo Semestre)
+    Docente/i: BORGESE LAURA, BILO FABJOLA
+  • ELEMENTI DI BASE: INGLESE (CFU n/d)
+    Docente/i: RUSSO GIULIA
+  • BIOLOGIA E GENETICA (CFU n/d)
+    Docente/i: LONGO FEDERICA
+  • ANATOMIA UMANA E ISTOLOGIA (CFU n/d)
+    Docente/i: BELLINI FRANCESCA
+  • LINGUA INGLESE B2 (CFU n/d)
+    Docente/i: BIANCHI BARBARA
+  • ELEMENTI DI BASE: BIOLOGIA (CFU n/d)
+    Docente/i: SILVESTRI ALESSANDRO
+  • ELEMENTI DI BASE: CHIMICA (CFU n/d)
+    Docente/i: FERRARO ELENA
+
+  [2° Anno]
+  • ANALISI DEI MEDICINALI (12 CFU – Ciclo Annuale Unico)
+    Docente/i: GIANONCELLI ALESSANDRA, RIBAUDO GIOVANNI
+  • CHIMICA ORGANICA (10 CFU – Ciclo Annuale Unico)
+    Docente/i: CECCONELLO ALESSANDRO
+  • FISIOLOGIA UMANA (9 CFU – Primo Semestre)
+    Docente/i: MIRABELLA GIOVANNI
+  • Microbiologia (6 CFU – Primo Semestre)
+    Docente/i: CACCURI FRANCESCA
+  • Igiene (3 CFU – Primo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • MICROBIOLOGIA E IGIENE (CFU n/d – Primo Semestre)
+    Docente/i: CONTI CARLO
+  • BIOCHIMICA GENERALE E MOLECOLARE (9 CFU – Secondo Semestre)
+    Docente/i: BRESCIANI ROBERTO, CORSINI MICHELA, GRILLO ELISABETTA
+  • PATOLOGIA GENERALE E FISIOPATOLOGIA (8 CFU – Secondo Semestre)
+    Docente/i: GIACOMINI ARIANNA
+  • IMMUNOLOGIA CON BASI MOLECOLARI DEI FARMACI BIOTECNOLOGICI (6 CFU – Secondo Semestre)
+    Docente/i: BOSISIO DANIELA, TIBERIO LAURA
+
+  [3° Anno]
+  • FARMACOLOGIA GENERALE E FARMACOGNOSIA (12 CFU – Ciclo Annuale Unico)
+    Docente/i: UBERTI DANIELA LETIZIA
+  • CHIMICA FARMACEUTICA I (9 CFU – Ciclo Annuale Unico)
+    Docente/i: RIBAUDO GIOVANNI, GIANONCELLI ALESSANDRA
+  • SCIENZE DEGLI ALIMENTI (CFU n/d – Primo Semestre)
+    Docente/i: SANTORO ANNA
+  • Chimica degli alimenti (6 CFU – Primo Semestre)
+    Docente/i: PERON GREGORIO
+  • Biochimica degli alimenti (6 CFU – Primo Semestre)
+    Docente/i: POLI MAURA
+  • Biologia molecolare applicata ai farmaci (6 CFU – Primo Semestre)
+    Docente/i: FINAZZI DARIO, ELIA LEONARDO
+  • METODOLOGIE PER LO SVILUPPO DI FARMACI PERSONALIZZATI (CFU n/d – Primo Semestre)
+    Docente/i: CARUSO ANDREA
+  • Farmacogenomica (3 CFU – Secondo Semestre)
+    Docente/i: GENNARELLI MASSIMO, RITELLI MARCO GIUSEPPE
+  • METODOLOGIE DI LABORATORIO IN AMBITO SANITARIO (CFU n/d – Secondo Semestre)
+    Docente/i: RICCI VITTORIO
+  • Medicina di laboratorio (3 CFU – Secondo Semestre)
+    Docente/i: RADEGHIERI ANNALISA, GILIANI SILVIA CLARA
+  • Patologia Clinica (3 CFU – Secondo Semestre)
+    Docente/i: DEL PRETE ANNALISA
+  • SCIENZE DELLA NUTRIZIONE (CFU n/d – Secondo Semestre)
+    Docente/i: MARIANI LAURA
+  • Scienze dell'alimentazione (3 CFU – Secondo Semestre)
+    Docente/i: ZANINI BARBARA
+  • Nutraceutica (5 CFU – Secondo Semestre)
+    Docente/i: UBERTI DANIELA LETIZIA
+
+  [4° Anno]
+  • CHIMICA FARMACEUTICA II (12 CFU – Ciclo Annuale Unico)
+    Docente/i: RIBAUDO GIOVANNI, GIANONCELLI ALESSANDRA
+  • FARMACOLOGIA SPECIALE E FARMACOTERAPIA (12 CFU – Ciclo Annuale Unico)
+    Docente/i: BONO FEDERICA, BELLUCCI ARIANNA
+  • BIOSTATISTICA (6 CFU – Primo Semestre)
+    Docente/i: ROTA MATTEO
+  • TECNOLOGIA FARMACEUTICA E LABORATORIO DI PREPARAZIONI GALENICHE (9 CFU – Primo Semestre)
+    Docente/i: MANDRACCHIA DELIA
+  • NORMATIVA FARMACEUTICA E ORGANIZZAZIONE E GESTIONE DELLA FARMACIA (6 CFU – Secondo Semestre)
+    Docente/i: MANDRACCHIA DELIA
+  • TIROCINIO PROFESSIONALE IN FARMACIA (15 CFU)
+    Docente/i: DE ANGELIS MARIA
+
+  [5° Anno]
+  • TECNOLOGIA FARMACEUTICA AVANZATA E DISPOSITIVI MEDICI (8 CFU – Ciclo Annuale Unico)
+    Docente/i: MANDRACCHIA DELIA
+  • FARMACOLOGIA APPLICATA, FARMACOVIGILANZA E TOSSICOLOGIA (12 CFU – Ciclo Annuale Unico)
+    Docente/i: UBERTI DANIELA LETIZIA, SIGALA SANDRA
+  • FARMACOVIGILANZA E TOSSICOLOGIA (12 CFU)
+    Docente/i: PELLEGRINI NICOLA
+  • TESI (15 CFU)
+    Docente/i: BARONE GABRIELE
+  • TIROCINIO PROFESSIONALE IN FARMACIA (15 CFU)
+    Docente/i: BIANCO ALESSANDRO
+  • PROVA PRATICA VALUTATIVA (PPV) (CFU n/d)
+    Docente/i: ROSSI LORENZO
+  • TIROCINIO PROFESSIONALE IN FARMACIA (15 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: PARISI ANTONIO
+
+──────────────────────────────────────────────────────────────────────
+CORSO: MEDICINA E CHIRURGIA [Ciclo Unico]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • BIOLOGIA (6 CFU – Primo Semestre)
+    Docente/i: BARBON ALESSANDRO, ZOPPI NICOLETTA, SALVI ALESSANDRO, RUSSO ISABELLA, MAGRI CHIARA
+  • CHIMICA E PROPEDEUTICA BIOCHIMICA (6 CFU – Primo Semestre)
+    Docente/i: FANZANI ALESSANDRO, POLI MAURA, ZANELLA ISABELLA, GRILLO ELISABETTA, BRESCIANI ROBERTO
+  • FISICA (6 CFU – Primo Semestre)
+    Docente/i: FUSE' MARCO, MAZZEO GIUSEPPE
+  • PRINCIPI DI MEDICINA DEL LAVORO: RISCHI LAVORATIVI IN SANITA' (1 CFU – Secondo Semestre)
+    Docente/i: PLACIDI DONATELLA
+  • DIAGNOSTICA IN GENETICA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: IZZI CLAUDIA
+  • GENETICA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: GENNARELLI MASSIMO
+  • GENETICA MOLECOLARE E GENOMICA (2 CFU – Secondo Semestre)
+    Docente/i: MAGRI CHIARA, BORSANI GIUSEPPE, SALVI ALESSANDRO
+  • ISTOLOGIA (5 CFU – Secondo Semestre)
+    Docente/i: PAROLINI SILVIA, TABELLINI GIOVANNA
+  • BIOCHIMICA E BIOCHIMICA MEDICA (8 CFU – Secondo Semestre)
+    Docente/i: FANZANI ALESSANDRO, MONTI EUGENIO, MITOLA STEFANIA MARIA FILOMENA, BRESCIANI ROBERTO
+  • ANATOMIA SISTEMATICA, TOPOGRAFICA E FUNZIONALE DEI PRINCIPALI SISTEMI CORPOREI (5 CFU – Secondo Semestre)
+    Docente/i: REZZANI RITA, FAVERO GAIA
+  • ESERCITAZIONI DI ANATOMIA (1 CFU – Secondo Semestre)
+    Docente/i: FAVERO GAIA
+  • INTRODUZIONE ALLA BIOETICA E PRINCIPI DI MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • PSICOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: DELLA VEDOVA ANNA MARIA, MINELLI ALESSANDRA
+  • ESERCITAZIONI DI PSICOLOGIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: MINELLI ALESSANDRA, DELLA VEDOVA ANNA MARIA
+  • INGLESE (3 CFU – Secondo Semestre)
+    Docente/i: VITALE RICCARDO
+  • ESERCITAZIONI DI LINGUA INGLESE (1 CFU – Secondo Semestre)
+    Docente/i: PALMIERI FILIPPO
+  • SCIENZE UMANE (CFU n/d – Secondo Semestre)
+    Docente/i: MORETTI FABIO
+  • MODELLI DI INTEGRAZIONE CON LE PROFESSIONI SANITARIE (1 CFU – Secondo Semestre)
+    Docente/i: MOTTA PAOLO CARLO
+  • BIOLOGIA MOLECOLARE (2 CFU – Secondo Semestre)
+    Docente/i: ELIA LEONARDO, FINAZZI DARIO
+  • STORIA DELLA MEDICINA (1 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • GENETICA E BIOLOGIA MOLECOLARE (CFU n/d)
+    Docente/i: LONGO PAOLA
+  • SCIENZE MORFOLOGICHE (CFU n/d)
+    Docente/i: ORLANDO MICHELE
+
+  [2° Anno]
+  • FISIOLOGIA CELLULARE CONTRAZ MUSCOLARE (4 CFU – Primo Semestre)
+    Docente/i: MIRABELLA GIOVANNI
+  • FISIOLOGIA DEL SISTEMA ENDOCRINO (1 CFU – Primo Semestre)
+    Docente/i: BRIGNANI DEBORA
+  • NEUROFISIOLOGIA (3 CFU – Primo Semestre)
+    Docente/i: BRIGNANI DEBORA
+  • IMMUNOLOGIA (4 CFU – Primo Semestre)
+    Docente/i: BOSISIO DANIELA, DEL PRETE ANNALISA, TIBERIO LAURA, SALVI VALENTINA
+  • ANATOMIA SISTEMATICA E TOPOGRAFICA DI TESTA, COLLO, TORACE E ADDOME (8 CFU – Primo Semestre)
+    Docente/i: REZZANI RITA, BONOMINI FRANCESCA, BORSANI ELISA
+  • ANATOMIA TOPOGRAFICA DEGLI ARTI (1 CFU – Primo Semestre)
+    Docente/i: D'AMICO MASSIMO
+  • ESERCITAZIONI ANATOMIA UMANA II (1 CFU – Primo Semestre)
+    Docente/i: BORSANI ELISA, BONOMINI FRANCESCA
+  • BIOCHIMICA CLINICA (3 CFU – Primo Semestre)
+    Docente/i: BIASIOTTO GIORGIO, GARRAFA EMIRENA MICHELA
+  • PRINCIPI DI MEDICINA LEGALE (1 CFU – Secondo Semestre)
+    Docente/i: CONTI ADELAIDE
+  • STATISTICA MEDICA (4 CFU – Secondo Semestre)
+    Docente/i: CALZA STEFANO, SPECCHIA CLAUDIA
+  • MODELLI DI INTEGRAZIONE CON LE PROFESSIONI SANITARIE (1 CFU – Secondo Semestre)
+    Docente/i: BIANCO MICHELE
+  • MICROBIOLOGIA CLINICA (3 CFU – Secondo Semestre)
+    Docente/i: CARUSO ARNALDO
+  • BATTERIOLOGIA (3 CFU – Secondo Semestre)
+    Docente/i: FIORENTINI SIMONA, GIAGULLI CINZIA
+  • MICOLOGIA E PARASSITOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: GIAGULLI CINZIA
+  • VIROLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: CACCURI FRANCESCA
+  • FISIOLOGIA APPARATO CARDIOVASCOLARE (4 CFU – Secondo Semestre)
+    Docente/i: GOBBO MASSIMILIANO
+  • FISIOLOGIA DEL RENE E DEI LIQUIDI CORPOREI (2 CFU – Secondo Semestre)
+    Docente/i: FAGONI NAZZARENO
+  • FISIOLOGIA DELL'APPARATO RESPIRATORIO (2 CFU – Secondo Semestre)
+    Docente/i: FAGONI NAZZARENO
+  • SALUTE, PREVENZIONE E METODOLOGIA DELLA RICERCA (CFU n/d – Secondo Semestre)
+    Docente/i: SILVESTRI CLAUDIA
+  • EPIDEMIOLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: COVOLO LOREDANA
+  • IGIENE AMBIENTALE (1 CFU – Secondo Semestre)
+    Docente/i: ZANI CLAUDIA
+  • PSICOLOGIA MEDICA (1 CFU – Secondo Semestre)
+    Docente/i: GHILARDI ALBERTO
+  • PRINCIPI DI MEDICINA DEL LAVORO: RISCHI LAVORATIVI IN SANITA' (1 CFU – Secondo Semestre)
+    Docente/i: SALA EMMA, PLACIDI DONATELLA
+  • INFORMATICA (2 CFU – Secondo Semestre)
+    Docente/i: GATTA ROBERTO, SAVARDI MATTIA
+  • FISIOLOGIA DELL'APPARATO DIGERENTE (1 CFU – Secondo Semestre)
+    Docente/i: GOBBO MASSIMILIANO, FAGONI NAZZARENO
+  • FISIOLOGIA UMANA I (CFU n/d)
+    Docente/i: SARTORI PAOLO
+  • FISIOLOGIA UMANA II (CFU n/d)
+    Docente/i: CARBONE ENRICO
+  • IMMUNOLOGIA E BIOCHIMICA CLINICA (CFU n/d)
+    Docente/i: BENEDETTI ENRICO
+  • ANATOMIA UMANA II (CFU n/d)
+    Docente/i: ESPOSITO SIMONE
+  • MICROBIOLOGIA E MICROBIOLOGIA CLINICA (CFU n/d)
+    Docente/i: VITALE ANNA
+
+  [3° Anno]
+  • FARMACOLOGIA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CATTANEO ANDREA
+  • FARMACOLOGIA GENERALE (4 CFU – Ciclo Annuale Unico)
+    Docente/i: VALERIO ALESSANDRA, SIGALA SANDRA, FIORENTINI CHIARA, TULIPANO GIOVANNI, COLLO LUIGIA RINALDA
+  • FARMACOLOGIA SPECIALE (7 CFU – Ciclo Annuale Unico)
+    Docente/i: VALERIO ALESSANDRA, SIGALA SANDRA, COLLO LUIGIA RINALDA, FIORENTINI CHIARA
+  • PATOLOGIA E FISIOPATOLOGIA GENERALE (CFU n/d – Primo Semestre)
+    Docente/i: ROSSI LORENZO
+  • METODICHE DI DIAGNOSTICA PER IMMAGINI (1 CFU – Primo Semestre)
+    Docente/i: RAVANELLI MARCO
+  • Semeiotica Chirurgica (3 CFU – Primo Semestre)
+    Docente/i: RAMERA MARCO
+  • METODOLOGIA CLINICA (CFU n/d – Primo Semestre)
+    Docente/i: ROMANO PAOLA
+  • PATOLOGIA GENERALE (4 CFU – Primo Semestre)
+    Docente/i: RUSNATI MARCO
+  • ONCOLOGIA (4 CFU – Primo Semestre)
+    Docente/i: RONCA ROBERTO
+  • FISIOPATOLOGIA GENERALE (4 CFU – Primo Semestre)
+    Docente/i: RUSNATI MARCO, MAZZOLENI GIOVANNA, DEL PRETE ANNALISA, BOSISIO DANIELA
+  • SEMEIOTICA MEDICA (3 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • ELEMENTI DI DIAGNOSTICA STRUMENT CARDIOLOGICA (1 CFU – Primo Semestre)
+    Docente/i: AGABITI-ROSEI CLAUDIA
+  • ANATOMIA PATOLOGICA I (CFU n/d – Secondo Semestre)
+    Docente/i: PARISI GABRIELE
+  • ANATOMIA PATOLOGICA MOD.A (3 CFU – Secondo Semestre)
+    Docente/i: VERMI WILLIAM, POLIANI PIETRO LUIGI
+  • ANATOMIA PATOLOGICA MOD.B (2 CFU – Secondo Semestre)
+    Docente/i: VERMI WILLIAM, LORENZI LUISA, POLIANI PIETRO LUIGI
+  • MALATTIE DEL RENE, DELLE VIE URINARIE, DELL'APPARATO GENITALE MASCHILE E DEL SISTEMA ENDOCRINO (CFU n/d – Secondo Semestre)
+    Docente/i: TESTA MAURIZIO
+  • NEFROLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: MESCIA FEDERICA, ALBERICI FEDERICO
+  • UROLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: ZANI DANILO, SUARDI NAZARENO
+  • ENDOCRINOLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: CAPPELLI CARLO, PIROLA ILENIA
+  • ENDOCRINOCHIRURGIA (1 CFU – Secondo Semestre)
+    Docente/i: CASELLA CLAUDIO
+  • ORTOPEDIA (3 CFU – Secondo Semestre)
+    Docente/i: MILANO GIUSEPPE, ZARATTINI GUIDO, PASSIATORE MARCO
+  • MEDICINA FISICA E RIABILITATIVA (1 CFU – Secondo Semestre)
+    Docente/i: MONTICONE MARCO
+  • MALATTIE DELL' APPARATO LOCOMOTORE (CFU n/d – Secondo Semestre)
+    Docente/i: CARUSO MARCO
+  • TIROCINIO Semeiotica Medica (3 CFU)
+    Docente/i: BERNARDI ALESSANDRO
+  • TIROCINIO UROLOGIA (1 CFU)
+    Docente/i: FRANCO ROBERTO
+  • TIROCINIO Semeiotica Chirurgica (1 CFU)
+    Docente/i: BRUNO ALESSIA
+  • TIROCINIO Tecniche di Diagnostica per Immagini (1 CFU)
+    Docente/i: MARTINI GABRIELE
+  • TIR ORTOPEDIA (1 CFU)
+    Docente/i: MONTI MARIA
+  • TIROCINIO NEFROLOGIA (1 CFU)
+    Docente/i: BARONE NICOLA
+
+  [4° Anno]
+  • MALATTIE INFETTIVE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CASTELLI FRANCESCO, QUIROS ROLDAN MARIA EUGENIA
+  • EMATOLOGIA SPERIMENTALE TRASLAZIONALE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BERNARDI SIMONA
+  • MALATTIE INFETTIVE E DEL SANGUE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GRECO STEFANO
+  • MALATTIE EMERGENTI E TROPICALI (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CASTELLI FRANCESCO, GOBBI FEDERICO
+  • INFEZIONI NOSOCOMIALI E DI COMUNITA' (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CASTELLI FRANCESCO, MATTEELLI ALBERTO
+  • EMATOLOGIA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: AVENOSO DANIELE, MALAGOLA MICHELE
+  • EMATOLOGIA ONCOLOGICA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: RUSSO DOMENICO, MALAGOLA MICHELE
+  • IMMUNOLOGIA CLINICA, ALLERGOLOGIA, DERMATOLOGIA, REUMATOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: MORETTI ANDREA
+  • ANATOMIA PATOLOGICA II (CFU n/d – Primo Semestre)
+    Docente/i: MARINO CLAUDIA
+  • ANATOMIA PATOLOGICA MOD.C (3 CFU – Primo Semestre)
+    Docente/i: VERMI WILLIAM, LORENZI LUISA, POLIANI PIETRO LUIGI
+  • ANATOMIA PATOLOGICA MOD.D (2 CFU – Primo Semestre)
+    Docente/i: VERMI WILLIAM, POLIANI PIETRO LUIGI
+  • MALATTIE DELL'APPARATO RESPIRATORIO E DELL'APPARATO CARDIOVASCOLARE (CFU n/d – Primo Semestre)
+    Docente/i: GATTI ALESSIA
+  • PNEUMOLOGIA (3 CFU – Primo Semestre)
+    Docente/i: PINI LAURA
+  • IMMUNOLOGIA E ALLERGOLOGIA CLINICA (1 CFU – Primo Semestre)
+    Docente/i: MORANDI ALESSANDRO
+  • REUMATOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: CAVAZZANA ILARIA, FREDI MICAELA, PIANTONI SILVIA
+  • DERMATOLOGIA (3 CFU – Primo Semestre)
+    Docente/i: ROSSI MARIATERESA, VENTURINI MARINA
+  • CARDIOCHIRURGIA (2 CFU – Primo Semestre)
+    Docente/i: MUNERETTO CLAUDIO, BENUSSI STEFANO
+  • CHIRURGIA VASCOLARE (2 CFU – Primo Semestre)
+    Docente/i: BERTOGLIO LUCA, BONARDELLI STEFANO
+  • CARDIOLOGIA (2 CFU – Primo Semestre)
+    Docente/i: NODARI SAVINA, LOMBARDI CARLO MARIO, ADAMO MARIANNA
+  • ELEMENTI DI ANGIOLOGIA (1 CFU – Primo Semestre)
+    Docente/i: CURNIS ANTONIO, VIZZARDI ENRICO
+  • EPIDEMIOLOGIA E FATTORI DI RISCHIO VASCOLARE (1 CFU – Primo Semestre)
+    Docente/i: NODARI SAVINA
+  • AUDIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: REDAELLI DE ZINIS LUCA OSCAR
+  • PSICHIATRIA E PSICOLOGIA CLINICA (CFU n/d – Secondo Semestre)
+    Docente/i: SILVESTRI LUCA
+  • MALATTIE DEL SISTEMA NERVOSO E DELL'APPARATO VISIVO (CFU n/d – Secondo Semestre)
+    Docente/i: CARBONE ANTONIO
+  • OCULISTICA (3 CFU – Secondo Semestre)
+    Docente/i: SEMERARO FRANCESCO, ROMANO VITO, FERRARA MARIANTONIA, NASCIMBENI GIUSEPPE
+  • OTORINOLARINGOIATRIA E MEDICINA ORALE (CFU n/d – Secondo Semestre)
+    Docente/i: CARBONE ANTONIO
+  • OTORINOLARINGOIATRIA GENERALE (1 CFU – Secondo Semestre)
+    Docente/i: PIAZZA CESARE
+  • OTORINOLARINGOIATRIA ONCOLOGICA (1 CFU – Secondo Semestre)
+    Docente/i: PIAZZA CESARE
+  • ODONTOIATRIA, MALFORMAZIONI, CARIE E PARODONTOPATIA (2 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO, VISCONTI LUCA, SALGARELLO STEFANO ALESSANDRO, DALESSANDRI DOMENICO
+  • NEUROLOGIA E RIABILITAZIONE NEUROLOGICA (4 CFU – Secondo Semestre)
+    Docente/i: PADOVANI ALESSANDRO, FILOSTO MASSIMILIANO, BORRONI BARBARA, PILOTTO ANDREA
+  • EMERGENZE NEUROLOGICHE (1 CFU – Secondo Semestre)
+    Docente/i: PADOVANI ALESSANDRO, MOROTTI ANDREA
+  • NEUROCHIRURGIA (1 CFU – Secondo Semestre)
+    Docente/i: CORNALI CLAUDIO, FONTANELLA MARCO MARIA
+  • NEURORADIOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: GASPAROTTI ROBERTO
+  • CHIRURGIA MAXILLO FACCIALE (1 CFU – Secondo Semestre)
+    Docente/i: GRASSI FILIPPO
+  • PSICOLOGIA CLINICA (2 CFU – Secondo Semestre)
+    Docente/i: MANFREDI PAOLA
+  • PSICHIATRIA (3 CFU – Secondo Semestre)
+    Docente/i: BARLATI STEFANO, TURRINA CESARE, DESTE GIACOMO VITTORIO PIETRO
+  • TIROCINIO Reumatologia (1 CFU)
+    Docente/i: FRANCO CRISTINA
+  • TIROCINIO Dermatologia (1 CFU)
+    Docente/i: FERRI ANTONIO
+  • TIROCINIO Psichiatria (1 CFU)
+    Docente/i: SANTORO ANDREA
+  • TIROCINIO Neurochirurgia (1 CFU)
+    Docente/i: NEGRI DANIELE
+  • TIROCINIO Otorinolaringoiatria (1 CFU)
+    Docente/i: SARTORI CARLO
+  • TIROCINIO Ematologia (1 CFU)
+    Docente/i: LOMBARDI LUCA
+  • TIROCINIO Malattie Infettive (1 CFU)
+    Docente/i: LEONE NICOLA
+  • TIR CARDIOLOGIA (2 CFU)
+    Docente/i: GUERRA EMANUELE
+  • TIR PNEUMOLOGIA (1 CFU)
+    Docente/i: BRUNO GIOVANNI
+  • TIR CARDIOCHIRURGIA (1 CFU)
+    Docente/i: ROMANO LORENZO
+  • TIR NEUROLOGIA (1 CFU)
+    Docente/i: AMATO LUCA
+  • TIR OCULISTICA (1 CFU)
+    Docente/i: FONTANA TOMMASO
+
+  [5° Anno]
+  • GENETICA MEDICA (1 CFU – Primo Semestre)
+    Docente/i: IZZI CLAUDIA, MARCHINA ELEONORA
+  • MEDICINA DELL'ESERCIZIO FISICO E DELLO SPORT (1 CFU – Primo Semestre)
+    Docente/i: DE CIUCEIS CAROLINA
+  • MEDICINA INTERNA E ONCOLOGIA (CFU n/d – Primo Semestre)
+    Docente/i: BELLINI GABRIELE
+  • MEDICINA INTERNA MOD.1 (2 CFU – Primo Semestre)
+    Docente/i: DE CIUCEIS CAROLINA
+  • MEDICINA INTERNA MOD.2 (3 CFU – Primo Semestre)
+    Docente/i: DE CIUCEIS CAROLINA, AGABITI-ROSEI CLAUDIA
+  • ONCOLOGIA GENERALE (1 CFU – Primo Semestre)
+    Docente/i: BERRUTI ALFREDO, LAGANÀ MARTA
+  • ONCOLOGIA SPECIALE (1 CFU – Primo Semestre)
+    Docente/i: BERRUTI ALFREDO, COSENTINI DEBORAH
+  • PEDIATRIA GENERALE E SPECIALISTICA (CFU n/d – Primo Semestre)
+    Docente/i: MARTINELLI STEFANO
+  • GINECOLOGIA E OSTETRICIA (CFU n/d – Primo Semestre)
+    Docente/i: BIANCO GABRIELE
+  • NEUROPSICHIATRIA INFANTILE (1 CFU – Primo Semestre)
+    Docente/i: GALLI JESSICA
+  • PEDIATRIA (4 CFU – Primo Semestre)
+    Docente/i: BADOLATO RAFFAELE, LOUGARIS VASSILIOS, DOTTA LAURA, CATTALINI MARCO
+  • CHIRURGIA PEDIATRICA (1 CFU – Primo Semestre)
+    Docente/i: BORONI GIOVANNI
+  • ENDOCRINOLOGIA GINECOLOGICA (1 CFU – Primo Semestre)
+    Docente/i: FERRARI ENRICO
+  • GINECOLOGIA E OSTETRICIA (1 CFU – Primo Semestre)
+    Docente/i: VILLA EMANUELE
+  • PATOLOGIA OSTETRICA (1 CFU – Primo Semestre)
+    Docente/i: FICHERA ANNA
+  • MEDICINA DELL' ETA' PRENATALE (1 CFU – Primo Semestre)
+    Docente/i: FERRARI FEDERICO GIORGIO
+  • ONCOLOGIA GINECOLOGICA (1 CFU – Primo Semestre)
+    Docente/i: ODICINO FRANCO EDOARDO
+  • DIAGNOSTICA PER IMMAGINI E RADIOTERAPIA (CFU n/d – Secondo Semestre)
+    Docente/i: FERRI ANTONIO
+  • MALATTIE DELL'APPARATO DIGERENTE (CFU n/d – Secondo Semestre)
+    Docente/i: MARTINELLI ELISA
+  • CHIRURGIA GENERALE (4 CFU – Secondo Semestre)
+    Docente/i: TIBERIO GUIDO ALBERTO
+  • CHIRURGIA DELL'APPARATO DIGERENTE (1 CFU – Secondo Semestre)
+    Docente/i: RAMERA MARCO
+  • SANITA' PUBBLICA (CFU n/d – Secondo Semestre)
+    Docente/i: MORETTI ANNA
+  • ORGANIZZAZIONE E VALUTAZIONE DEI SERVIZI SOCIO-SANITARI (1 CFU – Secondo Semestre)
+    Docente/i: GELATTI UMBERTO
+  • IGIENE (3 CFU – Secondo Semestre)
+    Docente/i: GELATTI UMBERTO, CERETTI ELISABETTA
+  • ECONOMIA SANITARIA (1 CFU – Secondo Semestre)
+    Docente/i: CARBONE BARBARA
+  • MEDICINA DEL LAVORO (3 CFU – Secondo Semestre)
+    Docente/i: DE PALMA GIUSEPPE, SALA EMMA
+  • MEDICINA LEGALE E BIOETICA CLINICA (3 CFU – Secondo Semestre)
+    Docente/i: VERZELETTI ANDREA
+  • GASTROENTEROLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: RICCI CHIARA
+  • RADIODIAGNOSTICA E RADIOLOGIA INTERVENTISTICA (3 CFU – Secondo Semestre)
+    Docente/i: FARINA DAVIDE, BORGHESI ANDREA
+  • RADIOTERAPIA (2 CFU – Secondo Semestre)
+    Docente/i: TRIGGIANI LUCA, BUGLIONE DI MONALE E BASTIA MICHELA
+  • MEDICINA NUCLEARE (1 CFU – Secondo Semestre)
+    Docente/i: BERTAGNA FRANCESCO
+  • TIROCINIO Radiodiagnostica (1 CFU)
+    Docente/i: LONGO ELENA
+  • TIROCINIO Radioterapia (1 CFU)
+    Docente/i: BIANCO CHIARA
+  • TIROCINIO Oncologia (1 CFU)
+    Docente/i: GALLO DANIELE
+  • TIROCINIO Medicina Interna (4 CFU)
+    Docente/i: DE LUCA VITTORIO
+  • TIROCINIO Pediatria (3 CFU)
+    Docente/i: FONTANA MICHELE
+  • TIROCINIO Ginecologia e Ostetricia (2 CFU)
+    Docente/i: D'AMICO MARCO
+  • TIROCINIO Gastroenterologia (1 CFU)
+    Docente/i: ROSSI MICHELE
+  • TIROCINIO Chirurgia Generale (2 CFU)
+    Docente/i: CARUSO SARA
+
+  [6° Anno]
+  • GERIATRIA (3 CFU – Primo Semestre)
+    Docente/i: MARENGONI ALESSANDRA, ZUCCHELLI ALBERTO, MORANDI ALESSANDRO
+  • CLINICA MEDICA E GERIATRIA (CFU n/d – Primo Semestre)
+    Docente/i: GATTI CARLO
+  • CLINICA MEDICA E TERAPIA MEDICA (6 CFU – Primo Semestre)
+    Docente/i: SALVETTI MASSIMO, DE CIUCEIS CAROLINA, MUIESAN MARIA LORENZA
+  • EMERGENZE MEDICO CHIRURGICHE (CFU n/d – Primo Semestre)
+    Docente/i: RUSSO VALENTINA
+  • ANESTESIOLOGIA E TERAPIA INTENSIVA (3 CFU – Primo Semestre)
+    Docente/i: RASULO FRANCESCO ANTONIO, PIVA SIMONE, CHELAZZI COSIMO, BERTONI MICHELE
+  • TERAPIA DEL DOLORE (1 CFU – Primo Semestre)
+    Docente/i: PARISI ANDREA
+  • MEDICINA D'URGENZA (2 CFU – Primo Semestre)
+    Docente/i: MUIESAN MARIA LORENZA, SALVETTI MASSIMO
+  • CLINICA CHIRURGICA (CFU n/d – Primo Semestre)
+    Docente/i: MONTI MICHELE
+  • CLINICA CHIRURGICA (7 CFU – Primo Semestre)
+    Docente/i: TIBERIO GUIDO ALBERTO
+  • CHIRURGIA D'URGENZA (2 CFU – Primo Semestre)
+    Docente/i: BAIOCCHI GIANLUCA
+  • TIROCINIO Geriatria (1 CFU)
+    Docente/i: GUERRA ELENA
+  • TIROCINIO Clinica Medica (3 CFU)
+    Docente/i: MARTINI MICHELE
+  • TIROCINIO Chirurgia d'Urgenza (1 CFU)
+    Docente/i: BARONE FILIPPO
+  • TIROCINIO Medicina d'Urgenza (1 CFU)
+    Docente/i: CARBONE CRISTINA
+  • TIROCINIO Clinica Chirurgica (3 CFU)
+    Docente/i: MARTINELLI LORENZO
+  • TIROCINIO PRATICO VALUTATIVO PER L'ESAME DI STATO - AREA MEDICA (5 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: NERI DANIELE
+  • TIROCINIO PRATICO VALUTATIVO PER L'ESAME DI STATO - AREA CHIRURGICA (5 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RINALDI CRISTINA
+  • TIROCINIO PRATICO VALUTATIVO PER L'ESAME DI STATO - AREA MEDICINA GENERALE (5 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: PAGANO DAVIDE
+
+──────────────────────────────────────────────────────────────────────
+CORSO: ODONTOIATRIA E PROTESI DENTARIA [Ciclo Unico]
+──────────────────────────────────────────────────────────────────────
+
+  [1° Anno]
+  • BIOLOGIA (6 CFU – Primo Semestre)
+    Docente/i: RINALDI DANIELE
+  • CHIMICA E PROPEDEUTICA BIOCHIMICA (6 CFU – Primo Semestre)
+    Docente/i: MAZZA FILIPPO
+  • FISICA (6 CFU – Primo Semestre)
+    Docente/i: FERRARO SERGIO
+  • SCIENZE COMPORTAMENTALI E METODOLOGIA SCIENTIFICA (CFU n/d – Secondo Semestre)
+    Docente/i: ROMANO BARBARA
+  • ISTOLOGIA (7 CFU – Secondo Semestre)
+    Docente/i: COLTRINI DANIELA
+  • LINGUA INGLESE (7 CFU – Secondo Semestre)
+    Docente/i: BARONE GIULIA
+  • ANATOMIA UMANA (CFU n/d – Secondo Semestre)
+    Docente/i: CARUSO CARLO
+  • ANATOMIA SISTEMATICA E TOPOGRAFICA DELLA TESTA E DEL COLLO (4 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • ANATOMIA DEL CAVO ORALE (1 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • STORIA DELLA MEDICINA E ISTITUZIONI DI BIOETICA (1 CFU – Secondo Semestre)
+    Docente/i: FALCONI BRUNO
+  • BIOLOGIA E GENETICA APPLICATA ALL'ODONTOIATRIA (CFU n/d – Secondo Semestre)
+    Docente/i: CARBONE ANDREA
+  • BIOLOGIA E GENETICA APPLICATA ALL'ODONTOIATRIA (2 CFU – Secondo Semestre)
+    Docente/i: PIOVANI GIOVANNA, SCHIAVONE MARCO
+  • GENETICA GENERALE E MOLECOLARE (1 CFU – Secondo Semestre)
+    Docente/i: SALVI ALESSANDRO
+  • ANATOMIA UMANA SISTEMATICA GENERALE (3 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • NEUROANATOMIA (2 CFU – Secondo Semestre)
+    Docente/i: BUFFOLI BARBARA
+  • PSICOLOGIA GENERALE (2 CFU – Secondo Semestre)
+    Docente/i: DELLA VEDOVA ANNA MARIA
+  • INFORMATICA (4 CFU – Secondo Semestre)
+    Docente/i: MARTINELLI ANDREA
+  • EVIDENCE BASED AND TEAM APPROACH (1 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • STATISTICA A (4 CFU – Secondo Semestre)
+    Docente/i: CALZA STEFANO
+  • STATISTICA B (1 CFU – Secondo Semestre)
+    Docente/i: CALZA STEFANO
+
+  [2° Anno]
+  • FISIOLOGIA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GIORDANO SARA
+  • MICROBIOLOGIA ED IGIENE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: GALLI LAURA
+  • FISIOLOGIA CELLULARE E NEUROFISIOLOGIA (4 CFU – Ciclo Annuale Unico)
+    Docente/i: FERRARI ELENA
+  • FISIOLOGIA DELLE FUNZIONI VEGETATIVE (4 CFU – Ciclo Annuale Unico)
+    Docente/i: CARUSO MAURIZIO
+  • METODOLOGIA E PROPEDEUTICA CLINICA ODONTOSTOMATOLOGICA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BRUNO BARBARA
+  • METODOLOGIA E PROPEDEUTICA CLINICA ODONTOSTOMATOLOGICA B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DE LUCA FILIPPO
+  • BIBLIOMETRIA E EDB-GEROSTOMATOLOGIA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SAVOLDI FABIO
+  • MATERIALI DENTARI CHIMICA FISICA APPLICATA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PAGANELLI CORRADO
+  • MATERIALI DENTARI CHIMICA FISICA APPLICATA B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LAFFRANCHI LAURA
+  • MATERIALI DENTARI APPLICAZIONE CLINICHE A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LAFFRANCHI LAURA
+  • MATERIALI DENTARI APPLICAZIONI CLINICHE B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LOMBARDI DAVIDE
+  • IGIENE ORALE PROFESSIONALE A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BIANCHI LORENZO
+  • IGIENE ORALE PROFESSIONALE B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MENSI MAGDA
+  • PRINCIPI DI ODONTOIATRIA E METODOLOGIA SCIENTIFICA CLINICA (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARI BARBARA
+  • MICROBIOLOGIA GENERALE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CARUSO ARNALDO
+  • MICROBIOLOGIA CLINICA (4 CFU – Ciclo Annuale Unico)
+    Docente/i: CARUSO ARNALDO
+  • METODOLOGIA DELLA RICERCA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: VALENTE MARCO
+  • METODOLOGIA DELLA RICERCA B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SAVOLDI FABIO
+  • ODONTOIATRIA PREVENTIVA E DI COMUNITA' A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: BASILE MATTEO
+  • ODONTOIATRIA PREVENTIVA E DI COMUNITA' B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MARIANI CARLO
+  • IGIENE AMBIENTALE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: FERETTI DONATELLA
+  • FISIOLOGIA APPARATO STOMATOGNATICO (2 CFU – Ciclo Annuale Unico)
+    Docente/i: GALLO LUCA
+  • IGIENE GENERALE PREVENZIONE E INFEZIONI CROCI (2 CFU – Ciclo Annuale Unico)
+    Docente/i: ZANI CLAUDIA
+  • IGIENE GENERALE (3 CFU – Ciclo Annuale Unico)
+    Docente/i: CERETTI ELISABETTA
+  • EPIDEMIOLOGIA ODONTOIATRICA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: MORETTI GABRIELE
+  • IGIENE ORALE DOMICILIARE (2 CFU – Ciclo Annuale Unico)
+    Docente/i: LAFFRANCHI LAURA
+  • BIOCHIMICA E BIOCHIMICA CLINICA (CFU n/d – Primo Semestre)
+    Docente/i: ROMANO FRANCESCA
+  • PATOLOGIA GENERALE (7 CFU – Primo Semestre)
+    Docente/i: TIBERIO LAURA
+  • ANALISI CLINICA E BIOLOGIA MOLECOL CLINICA I (1 CFU – Primo Semestre)
+    Docente/i: BIASIOTTO GIORGIO
+  • BIOLOGIA MOLECOLARE (1 CFU – Primo Semestre)
+    Docente/i: FINAZZI DARIO
+  • ANALISI CLINICA E BIOLOGIA MOLECOLARE II (1 CFU – Primo Semestre)
+    Docente/i: BIASIOTTO GIORGIO
+  • BIOCHIMICA II (5 CFU – Primo Semestre)
+    Docente/i: BRESCIANI ROBERTO, GRILLO ELISABETTA
+  • TIROCINIO II ANNO (4 CFU)
+    Docente/i: ROMANO CLAUDIA
+
+  [3° Anno]
+  • SCIENZE MEDICHE I (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: MONTI MAURIZIO
+  • FARMACOLOGIA (6 CFU – Ciclo Annuale Unico)
+    Docente/i: PIZZI MARINA
+  • PRINCIPI DI ODONTOIATRIA II (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: RUSSO CRISTINA
+  • TECNOLOGIE DI LABORATORIO D (1 CFU – Ciclo Annuale Unico)
+    Docente/i: VITALE SILVIA
+  • TECNOLOGIE DI LABORATORIO E (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DALESSANDRI DOMENICO
+  • PRINCIPI DI CONSERVATIVA 1 (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CERUTTI ANTONIO
+  • Conservativa diretta settori posteriori (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CERUTTI ANTONIO
+  • BIOETICA E ISTITUZIONI DI STORIA DELLA MEDICINA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CONTI ADELAIDE
+  • TECNOLOGIE DI LABORATORIO A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: TONNI INGRID
+  • TECNOLOGIE DI LABORATORIO B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: AMATO FILIPPO
+  • TECNOLOGIE DI LABORATORIO C (1 CFU – Ciclo Annuale Unico)
+    Docente/i: VITALE MARIA
+  • PATOLOGIA ORALE PEDIATRICA (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BARDELLINI ELENA
+  • MEDICINA INTERNA 1 (4 CFU – Ciclo Annuale Unico)
+    Docente/i: DE CIUCEIS CAROLINA, ZUCCHELLI ALBERTO
+  • MEDICINA INTERNA 2 (2 CFU – Ciclo Annuale Unico)
+    Docente/i: DE CIUCEIS CAROLINA
+  • MEDICINA D'URGENZA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: SALVETTI MASSIMO
+  • MALATTIE APPARATO CARDIOVASCOLARE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LOMBARDI CARLO MARIO
+  • MALATTIE INFETTIVE (1 CFU – Ciclo Annuale Unico)
+    Docente/i: FOCA' EMANUELE
+  • ENDODONZIA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PALUMBO ANDREA
+  • ENDODONZIA B (2 CFU – Ciclo Annuale Unico)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • MATERIALI DENTARI (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PAGANELLI CORRADO
+  • PATOLOGIA CLINICA (2 CFU – Ciclo Annuale Unico)
+    Docente/i: DEL PRETE ANNALISA
+  • ANESTESIA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: LATRONICO NICOLA
+  • PEDIATRIA (1 CFU – Ciclo Annuale Unico)
+    Docente/i: CATTALINI MARCO
+  • ANATOMIA PATOLOGICA (CDL ODONTOIATRIA) (CFU n/d – Primo Semestre)
+    Docente/i: GRASSI VALENTINA
+  • DIAGNOSTICA PER IMMAGINI E RADIOTERAPIA (CFU n/d – Primo Semestre)
+    Docente/i: PALMIERI SERGIO
+  • ANATOMIA PATOLOGICA DEL CAVO ORALE (3 CFU – Primo Semestre)
+    Docente/i: POLIANI PIETRO LUIGI
+  • BASI ISTOPATOLOGICHE DELLE INFIAMMAZIONI E DE (1 CFU – Primo Semestre)
+    Docente/i: POLIANI PIETRO LUIGI
+  • PATOLOGIA ODONTOGENA E DEGLI ORGANI DEL COLLO (1 CFU – Primo Semestre)
+    Docente/i: SERRA RICCARDO
+  • NOZIONI DI PATOLOGIA DI ORGANI EXTRA-ORALI (1 CFU – Primo Semestre)
+    Docente/i: GRECO TOMMASO
+  • DIAGNOSTICA PER IMMAGINI GENERALE (3 CFU – Primo Semestre)
+    Docente/i: BORGHESI ANDREA
+  • DIAGNOSTICA PER IMMAGINI SPECIALE (3 CFU – Primo Semestre)
+    Docente/i: FARINA DAVIDE
+  • TIROCINIO III ANNO (12 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: FONTANA ALESSANDRO
+
+  [4° Anno]
+  • SCIENZE MEDICHE II (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: BRUNO MATTEO
+  • DISCIPLINE ODONTOSTOMATOLOGICHE I (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: FERRARI MICHELE
+  • GNATOLOGIA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: TONNI INGRID
+  • GNATOLOGIA B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: TONNI INGRID
+  • GNATOLOGIA C (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DALESSANDRI DOMENICO
+  • TECNOLOGIE DI LABORATORIO 1 (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DALESSANDRI DOMENICO
+  • TECNOLOGIE DI LABORATORIO 2 (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DALESSANDRI DOMENICO
+  • PRINCIPI DI CONSERVATIVA 2 (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CERUTTI ANTONIO
+  • CONSERVATIVA DIRETTA SETTORI ANTERIORI (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CERUTTI ANTONIO
+  • ANESTESIOLOGIA E TRATTAMENTO DELL'EMERGENZA A (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CHELAZZI COSIMO
+  • ANESTESIOLOGIA E TRATTAMENTO DELL'EMERGENZA B (2 CFU – Ciclo Annuale Unico)
+    Docente/i: CHELAZZI COSIMO, BERTONI MICHELE
+  • ANESTESIOLOGIA E TRATTAMENTO DELL'EMERGENZA C (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PIVA SIMONE, BERTONI MICHELE
+  • PROTESI FISSA (4 CFU – Ciclo Annuale Unico)
+    Docente/i: PAGANELLI CORRADO
+  • PARODONTOLOGIA A (2 CFU – Ciclo Annuale Unico)
+    Docente/i: VISCONTI LUCA, BONFANTI CARLO
+  • PARODONTOLOGIA B (2 CFU – Ciclo Annuale Unico)
+    Docente/i: BONETTI STEFANO
+  • PARODONTOLOGIA C (1 CFU – Ciclo Annuale Unico)
+    Docente/i: PAGANELLI CORRADO
+  • ORTODONZIA A (1 CFU – Ciclo Annuale Unico)
+    Docente/i: TONNI INGRID
+  • ORTODONZIA B (1 CFU – Ciclo Annuale Unico)
+    Docente/i: DE LUCA MATTEO
+  • ORTODONZIA C (1 CFU – Ciclo Annuale Unico)
+    Docente/i: AMATO MASSIMO
+  • CHIRURGIA GENERALE (CDS ODONTO) (5 CFU – Ciclo Annuale Unico)
+    Docente/i: CASELLA CLAUDIO
+  • CHIRURGIA ORALE (CFU n/d – Primo Semestre)
+    Docente/i: MARTINI MARIA
+  • NEUROLOGIA E PSICHIATRIA (CFU n/d – Primo Semestre)
+    Docente/i: PALMIERI CLAUDIA
+  • MEDICINA LEGALE (4 CFU – Primo Semestre)
+    Docente/i: VERZELETTI ANDREA
+  • CHIRURGIA ORALE A (1 CFU – Primo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • CHIRURGIA ORALE B (1 CFU – Primo Semestre)
+    Docente/i: MAZZA DAVIDE
+  • CHIRURGIA ORALE C (1 CFU – Primo Semestre)
+    Docente/i: MENSI MAGDA
+  • CHIRURGIA ORALE D (1 CFU – Primo Semestre)
+    Docente/i: CARUSO SILVIA
+  • NEUROLOGIA (2 CFU – Primo Semestre)
+    Docente/i: BORRONI BARBARA
+  • PSICHIATRIA (1 CFU – Primo Semestre)
+    Docente/i: TURRINA CESARE
+  • PATOLOGIA SPECIALE (CFU n/d – Secondo Semestre)
+    Docente/i: BARONE VALENTINA
+  • PATOLOGIA SPECIALE A (2 CFU – Secondo Semestre)
+    Docente/i: TESTA SERGIO
+  • PATOLOGIA SPECIALE B (1 CFU – Secondo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • PATOLOGIA SPECIALE C (1 CFU – Secondo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • DERMATOLOGIA (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI MARIATERESA
+  • TIROCINIO IV ANNO (13 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: ROSSI LUCA
+
+  [5° Anno]
+  • TIROCINIO V ANNO (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: CARBONE MATTEO
+  • ODONTOIATRIA RESTAURATIVA (CFU n/d – Primo Semestre)
+    Docente/i: DE LUCA TOMMASO
+  • PATOLOGIA E TERAPIA MAXILLO-FACCIALE (CFU n/d – Primo Semestre)
+    Docente/i: FERRARI FRANCESCO
+  • ORTODONZIA (CFU n/d – Primo Semestre)
+    Docente/i: MORELLI RICCARDO
+  • PARODONTOLOGIA D (1 CFU – Primo Semestre)
+    Docente/i: MENSI MAGDA
+  • CHIRURGIA MAXILLO-FACCIALE A (1 CFU – Primo Semestre)
+    Docente/i: MANCINI PAOLA
+  • CHIRURGIA MAXILLO-FACCIALE B (1 CFU – Primo Semestre)
+    Docente/i: FRANCO SIMONE
+  • CHIRURGIA MAXILLO-FACCIALE PEDIATRICA (1 CFU – Primo Semestre)
+    Docente/i: GRECO SERGIO
+  • ORTODONZIA D (1 CFU – Primo Semestre)
+    Docente/i: TONNI INGRID
+  • ORTODONZIA E (1 CFU – Primo Semestre)
+    Docente/i: ROSSI STEFANO
+  • ORTODONZIA F (1 CFU – Primo Semestre)
+    Docente/i: SAVOLDI FABIO
+  • ORTODONZIA G (1 CFU – Primo Semestre)
+    Docente/i: CARBONE MARCO
+  • ORTODONZIA H (1 CFU – Primo Semestre)
+    Docente/i: DALESSANDRI DOMENICO
+  • ORTODONZIA I (1 CFU – Primo Semestre)
+    Docente/i: TONNI INGRID
+  • ORTODONZIA L (1 CFU – Primo Semestre)
+    Docente/i: PAGANO ANNA
+  • OTORINOLARINGOIATRIA (1 CFU – Primo Semestre)
+    Docente/i: MATTAVELLI DAVIDE
+  • RESTAURATIVA INDIRETTA E POST TRATTAMENTO ENDODONTICO (1 CFU – Primo Semestre)
+    Docente/i: CERUTTI ANTONIO
+  • ENDODONZIA A (1 CFU – Primo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • ENDODONZIA B (1 CFU – Primo Semestre)
+    Docente/i: DE LUCA LORENZO
+  • PARODONTOLOGIA A (1 CFU – Primo Semestre)
+    Docente/i: CARBONE GABRIELE
+  • PARODONTOLOGIA B (1 CFU – Primo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • PARODONTOLOGIA C (1 CFU – Primo Semestre)
+    Docente/i: BONETTI STEFANO
+  • ORTODONZIA A (1 CFU – Primo Semestre)
+    Docente/i: VISCONTI LUCA
+  • ORTODONZIA B (1 CFU – Primo Semestre)
+    Docente/i: PARISI ENRICO
+  • ORTODONZIA C (1 CFU – Primo Semestre)
+    Docente/i: BONETTI STEFANO
+  • CHIRURGIA ORALE A (1 CFU – Primo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • CHIRURGIA ORALE B (1 CFU – Primo Semestre)
+    Docente/i: MENSI MAGDA
+  • ODONTOIATRIA PEDIATRICA (CFU n/d – Secondo Semestre)
+    Docente/i: COLOMBO LUCA
+  • IMPLANTOLOGIA (CFU n/d – Secondo Semestre)
+    Docente/i: LOMBARDI ENRICO
+  • PEDODONZIA C (1 CFU – Secondo Semestre)
+    Docente/i: MORELLI ROBERTO
+  • PEDODONZIA D (1 CFU – Secondo Semestre)
+    Docente/i: BARDELLINI ELENA
+  • PROTESI DENTARIA FISSA (4 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • CLINICA ODONTOSTOMATOLOGICA D (1 CFU – Secondo Semestre)
+    Docente/i: TONNI INGRID
+  • TECNOLOGIE DI LABORATORIO 3 (1 CFU – Secondo Semestre)
+    Docente/i: ROSSI ELENA
+  • PEDODONZIA A (1 CFU – Secondo Semestre)
+    Docente/i: TESTA VALENTINA
+  • PEDODONZIA B (1 CFU – Secondo Semestre)
+    Docente/i: VILLA MARCO
+  • CLINICA ODONTOSTOMATOLOGICA A (1 CFU – Secondo Semestre)
+    Docente/i: BENEDETTI MARCO
+  • CLINICA ODONTOSTOMATOLOGICA B (1 CFU – Secondo Semestre)
+    Docente/i: PAGANELLI CORRADO
+  • CHIRURGIA ORALE A (1 CFU – Secondo Semestre)
+    Docente/i: SALGARELLO STEFANO ALESSANDRO
+  • CHIRURGIA ORALE B (1 CFU – Secondo Semestre)
+    Docente/i: MENSI MAGDA
+  • ORTODONZIA MOD. A (1 CFU – Secondo Semestre)
+    Docente/i: MONTI DANIELE
+  • CLINICA ODONTOSTOMATOLOGICA C (1 CFU – Secondo Semestre)
+    Docente/i: RINALDI SIMONE
+  • PARODONTOLOGIA (2 CFU – Secondo Semestre)
+    Docente/i: SAVOLDI FABIO
+  • PEDIATRIA (1 CFU – Secondo Semestre)
+    Docente/i: LOUGARIS VASSILIOS
+  • TIROCINIO V ANNO - PARTE A (15 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: DE ANGELIS EMANUELE
+  • TIROCINIO V ANNO - PARTE B (3 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: RUSSO ANNA
+
+  [6° Anno]
+  • TPV DISCIPLINE ODONTOSTOMATOLOGICHE (CFU n/d – Ciclo Annuale Unico)
+    Docente/i: D'AMICO CRISTINA
+  • TPV ORTOGNATODONZIA (6 CFU)
+    Docente/i: CATTANEO ROBERTA
+  • TPV CHIRURGIA ORALE (6 CFU)
+    Docente/i: MORETTI SIMONE
+  • TPV ODONTOIATRIA PEDIATRICA (1 CFU)
+    Docente/i: SERRA MAURIZIO
+  • TPV PATOLOGIA E MEDICINA ORALE (1 CFU)
+    Docente/i: PELLEGRINI ANNA
+  • TPV ODONTOIATRIA RESTAURATIVA (2 CFU)
+    Docente/i: ROSSI LUCA
+  • TPV ENDODONZIA (3 CFU)
+    Docente/i: MARIANI PAOLO
+  • TPV ODONTOIATRIA SPECIALE (1 CFU)
+    Docente/i: VITALE BARBARA
+  • TPV PROTESI (6 CFU)
+    Docente/i: MARIANI MARTINA
+  • TPV IMPLANTOLOGIA (1 CFU)
+    Docente/i: BIANCHI FILIPPO
+  • TPV PARODONTOLOGIA (3 CFU)
+    Docente/i: MANCINI LUCA
+  • TESI (10 CFU – Insegnamenti che non prevedono erogazione)
+    Docente/i: GENTILE ANNA

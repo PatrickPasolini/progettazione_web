@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "document:libs/server/security/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "libs/server/security/README.md",
+      "summary": "Minimal placeholder README for the @server/security library, which provides shared authentication guards (JwtAuthGuard, RolesGuard) and decorators (@CurrentUser, @Roles).",
+      "tags": ["documentation", "entry-point", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/security/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/server/security/package.json",
+      "summary": "Package manifest for the @server/security library declaring its entry points, type definitions, and runtime dependencies for the shared security module.",
+      "tags": ["configuration", "package-manifest", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/security/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/server/security/tsconfig.json",
+      "summary": "Root TypeScript project configuration for the @server/security library, referencing the lib build config and wiring up project references in the Nx monorepo.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/server/security/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/server/security/tsconfig.lib.json",
+      "summary": "TypeScript build configuration defining compiler options and source includes for compiling the @server/security library.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:libs/server/security/tsconfig.json",
+      "target": "config:libs/server/security/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

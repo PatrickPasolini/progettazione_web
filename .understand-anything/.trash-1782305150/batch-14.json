@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "document:libs/database/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "libs/database/README.md",
+      "summary": "Minimal placeholder README for the @org/database library, containing only the project title heading.",
+      "tags": ["documentation", "library", "placeholder"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/database/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/database/package.json",
+      "summary": "Package manifest for the @org/database library, declaring it private and pointing main/types/exports to the TypeScript source entry at src/index.ts.",
+      "tags": ["configuration", "package-manifest", "library", "build-system"],
+      "complexity": "simple",
+      "languageNotes": "Uses the modern package.json exports map with a source-first (src/index.ts) entry point typical of Nx buildable libraries."
+    },
+    {
+      "id": "config:libs/database/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/database/tsconfig.json",
+      "summary": "Root TypeScript project-references config for the database library, extending the workspace base config and wiring references to its lib build config.",
+      "tags": ["configuration", "typescript", "build-system", "project-references"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/database/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/database/tsconfig.lib.json",
+      "summary": "Library-specific TypeScript compiler config defining compilerOptions and include globs for building the @org/database source.",
+      "tags": ["configuration", "typescript", "build-system", "library"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:libs/database/package.json",
+      "target": "file:libs/database/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:libs/database/tsconfig.lib.json",
+      "target": "file:libs/database/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:libs/database/tsconfig.json",
+      "target": "config:libs/database/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:libs/database/README.md",
+      "target": "file:libs/database/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

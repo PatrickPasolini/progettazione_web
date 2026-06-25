@@ -1,24 +1,27 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { login } from './auth.api';
-import book_styles from '../css/books.module.css';
+import { login, fetchCurrentUser } from './auth.api';
+import { Button } from '../../components/ui/button';
+import { Input } from '../../components/ui/input';
+import { Label } from '../../components/ui/label';
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-
   const navigate = useNavigate();
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: { preventDefault(): void }) {
     e.preventDefault();
-    setError(null);
-    setLoading(true);
-
+    setError(null); setLoading(true);
     try {
-      await login(email, password);
-      navigate('/');
+      const { mustChangePassword } = await login(email, password);
+      if (mustChangePassword) { navigate('/cambia-password', { state: { forced: true } }); return; }
+      const user = await fetchCurrentUser();
+      if (user.role === 'SECRETARY') navigate('/secretary');
+      else if (user.role === 'TEACHER') navigate('/teacher');
+      else navigate('/');
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -27,41 +30,28 @@ export function LoginPage() {
   }
 
   return (
-    <main className={book_styles.page}>
-      <div className={`${book_styles.card} ${book_styles.cardSmall}`}>
-        <h1 className={book_styles.title}>Login</h1>
+    <main className="min-h-screen bg-background flex justify-center items-center p-8">
+      <div className="bg-card border border-border w-full max-w-sm p-8 rounded-xl shadow-lg">
+        <div className="flex flex-col items-center gap-2 mb-7">
+          <img src="/examflow-logo.png" alt="ExamFlow" className="h-14 w-auto" />
+          <p className="text-sm text-muted-foreground text-center">Accedi per gestire le sessioni d'esame</p>
+        </div>
 
-        <form onSubmit={handleSubmit} className={book_styles.form}>
-          <div className={book_styles.field}>
-            <label>Email</label>
-            <input
-              type="email"
-              className={book_styles.input}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Inserisci email"
-              required
-            />
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Inserisci email" required />
           </div>
-
-          <div className={book_styles.field}>
-            <label>Password</label>
-            <input
-              type="password"
-              className={book_styles.input}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Inserisci password"
-              required
-            />
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="password">Password</Label>
+            <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Inserisci password" required />
           </div>
-
-          <button className={book_styles.button} type="submit" disabled={loading}>
-            {loading ? 'Accesso in corso...' : 'Login'}
-          </button>
+          <Button type="submit" disabled={loading} className="mt-2 w-full">
+            {loading ? 'Accesso in corso…' : 'Accedi'}
+          </Button>
         </form>
 
-        {error && <p className={book_styles.error}>{error}</p>}
+        {error && <p className="mt-4 text-center text-destructive font-medium text-sm">{error}</p>}
       </div>
     </main>
   );

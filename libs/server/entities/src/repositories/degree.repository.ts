@@ -19,6 +19,10 @@ export class DegreeRepository {
         return this.repo.findOne({ where: { id } });
     }
 
+    findByIdWithSessions(id: number): Promise<DegreeEntity | null> {
+        return this.repo.findOne({ where: { id }, relations: ['sessions'] });
+    }
+
     findByIds(ids: number[]): Promise<DegreeEntity[]> {
         return this.repo.findBy({ id: In(ids) });
     }
@@ -35,6 +39,13 @@ export class DegreeRepository {
         return this.repo.findOne({ where: { degreeName, degreeType, degreeYear } });
     }
 
+    hasCourses(id: number): Promise<boolean> {
+        return this.repo.query(
+            'SELECT EXISTS (SELECT 1 FROM "course" WHERE "degreeId" = $1) AS result',
+            [id],
+        ).then((rows: { result: boolean }[]) => rows[0].result);
+    }
+
     create(data: Partial<DegreeEntity>): DegreeEntity {
         return this.repo.create(data);
     }
@@ -45,5 +56,10 @@ export class DegreeRepository {
 
     delete(id: number): Promise<DeleteResult> {
         return this.repo.delete(id);
+    }
+
+    // Svuota la tabella degree. CASCADE pulisce course, exam e il join session_degrees.
+    async clearCascade(): Promise<void> {
+        await this.repo.query('TRUNCATE TABLE "degree" RESTART IDENTITY CASCADE');
     }
 }

@@ -2,7 +2,6 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { CourseEntity } from '../entities/course.entity.js';
-import { DegreeEntity } from '../entities/degree.entity.js';
 
 @Injectable()
 export class CourseRepository {
@@ -22,29 +21,34 @@ export class CourseRepository {
     }
 
     findById(id: number): Promise<CourseEntity | null> {
-        return this.repo.findOne({ where: { id }, relations: ['teacher', 'degrees'] });
+        return this.repo.findOne({ where: { id }, relations: ['teacher', 'degree'] });
     }
 
     findByIdWithRelations(id: number): Promise<CourseEntity | null> {
-        return this.repo.findOne({ where: { id }, relations: ['teacher', 'degrees'] });
+        return this.repo.findOne({ where: { id }, relations: ['teacher', 'degree'] });
     }
 
-    async findDegreesByTeacher(teacherId: number): Promise<DegreeEntity[]> {
-        const courses = await this.repo.find({
-            where: { teacher: { id: teacherId } },
-            relations: ['degrees'],
-        });
-        const map = new Map<number, DegreeEntity>();
-        for (const course of courses) {
-            for (const degree of course.degrees) {
-                map.set(degree.id, degree);
-            }
-        }
-        return [...map.values()];
+    findByNameAndDegree(courseName: string, degreeId: number): Promise<CourseEntity | null> {
+        return this.repo.findOne({ where: { courseName, degree: { id: degreeId } } });
     }
 
-    findByName(courseName: string): Promise<CourseEntity | null> {
-        return this.repo.findOne({ where: { courseName } });
+    findByTeacherAndSession(teacherId: number, sessionId: number): Promise<CourseEntity[]> {
+        return this.repo.createQueryBuilder('course')
+            .innerJoinAndSelect('course.teacher', 'teacher')
+            .innerJoinAndSelect('course.degree', 'degree')
+            .innerJoin('degree.sessions', 'session')
+            .where('teacher.id = :teacherId', { teacherId })
+            .andWhere('session.id = :sessionId', { sessionId })
+            .orderBy('course.id', 'ASC')
+            .getMany();
+    }
+
+    countUpcomingExams(courseId: number): Promise<number> {
+        return this.repo.createQueryBuilder('course')
+            .innerJoin('course.exams', 'exam')
+            .where('course.id = :courseId', { courseId })
+            .andWhere('exam.examDate >= CURRENT_DATE')
+            .getCount();
     }
 
     create(data: Partial<CourseEntity>): CourseEntity {
@@ -56,7 +60,11 @@ export class CourseRepository {
     }
 
     async delete(id: number): Promise<DeleteResult> {
-        await this.repo.query(`DELETE FROM degree_courses WHERE course_id = $1`, [id]);
         return this.repo.delete(id);
+    }
+
+    // Svuota la tabella course. CASCADE pulisce anche exam (exam.course RESTRICT).
+    async clearCascade(): Promise<void> {
+        await this.repo.query('TRUNCATE TABLE "course" RESTART IDENTITY CASCADE');
     }
 }

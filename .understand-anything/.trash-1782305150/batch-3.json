@@ -1,0 +1,320 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/server/entities/src/controllers/degree.controller.ts",
+      "type": "file",
+      "name": "degree.controller.ts",
+      "filePath": "libs/server/entities/src/controllers/degree.controller.ts",
+      "summary": "NestJS REST controller exposing CRUD and seed endpoints for degree programmes, delegating all logic to ServerDegreeService.",
+      "tags": ["api-handler", "controller", "degree", "rest"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/controllers/degree.controller.ts:ServerDegreeController",
+      "type": "class",
+      "name": "ServerDegreeController",
+      "filePath": "libs/server/entities/src/controllers/degree.controller.ts",
+      "lineRange": [22, 97],
+      "summary": "Controller handling HTTP routes for listing, retrieving, creating, updating, removing, and seeding degree programmes.",
+      "tags": ["api-handler", "controller", "crud", "degree"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/controllers/session.controller.ts",
+      "type": "file",
+      "name": "session.controller.ts",
+      "filePath": "libs/server/entities/src/controllers/session.controller.ts",
+      "summary": "NestJS REST controller exposing CRUD, teacher-active-lookup, and seed endpoints for exam sessions, delegating to ServerSessionService.",
+      "tags": ["api-handler", "controller", "session", "rest"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/controllers/session.controller.ts:ServerSessionController",
+      "type": "class",
+      "name": "ServerSessionController",
+      "filePath": "libs/server/entities/src/controllers/session.controller.ts",
+      "lineRange": [22, 111],
+      "summary": "Controller handling HTTP routes for exam session CRUD plus a teacher-scoped active-session lookup and a seed endpoint.",
+      "tags": ["api-handler", "controller", "crud", "session"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/degree.entity.ts",
+      "type": "file",
+      "name": "degree.entity.ts",
+      "filePath": "libs/server/entities/src/entities/degree.entity.ts",
+      "summary": "TypeORM entity modelling a degree programme with name, type, year, macro area, and a many-to-many relation to exam sessions.",
+      "tags": ["data-model", "entity", "degree", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/entities/src/entities/degree.entity.ts:DegreeEntity",
+      "type": "class",
+      "name": "DegreeEntity",
+      "filePath": "libs/server/entities/src/entities/degree.entity.ts",
+      "lineRange": [7, 33],
+      "summary": "Persisted degree programme record with degree type/year enums, macro area, and a sessions relationship.",
+      "tags": ["data-model", "entity", "degree", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "type": "file",
+      "name": "create-degree.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/create-degree.dto.ts",
+      "summary": "Validated DTO defining the payload for creating a degree programme (name, type, year, macro area).",
+      "tags": ["dto", "validation", "degree", "type-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "type": "file",
+      "name": "create-session.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/create-session.dto.ts",
+      "summary": "Validated DTO describing the payload for creating an exam session: date window, insertion window, macro area, exam limit, and associated degree ids.",
+      "tags": ["dto", "validation", "session", "type-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/degree.enum.ts",
+      "type": "file",
+      "name": "degree.enum.ts",
+      "filePath": "libs/server/entities/src/entities/dto/degree.enum.ts",
+      "summary": "Shared enums for degree classification (DegreeType, MacroArea) used across degree and session DTOs and entities.",
+      "tags": ["enum", "type-definition", "degree", "shared"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "type": "file",
+      "name": "update-degree.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/update-degree.dto.ts",
+      "summary": "Validated DTO defining the optional fields accepted when updating a degree programme.",
+      "tags": ["dto", "validation", "degree", "type-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "type": "file",
+      "name": "update-session.dto.ts",
+      "filePath": "libs/server/entities/src/entities/dto/update-session.dto.ts",
+      "summary": "Validated DTO defining the optional fields accepted when updating an exam session.",
+      "tags": ["dto", "validation", "session", "type-definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/entities/session.entity.ts",
+      "type": "file",
+      "name": "session.entity.ts",
+      "filePath": "libs/server/entities/src/entities/session.entity.ts",
+      "summary": "TypeORM entity modelling an exam session with date and insertion windows, exam limit, and relations to degrees and exams.",
+      "tags": ["data-model", "entity", "session", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/server/entities/src/entities/session.entity.ts:SessionEntity",
+      "type": "class",
+      "name": "SessionEntity",
+      "filePath": "libs/server/entities/src/entities/session.entity.ts",
+      "lineRange": [7, 40],
+      "summary": "Persisted exam session record holding scheduling windows, exam limit, and many-to-many degrees plus exams relations.",
+      "tags": ["data-model", "entity", "session", "typeorm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/interfaces/degree-list-item.ts",
+      "type": "file",
+      "name": "degree-list-item.ts",
+      "filePath": "libs/server/entities/src/interfaces/degree-list-item.ts",
+      "summary": "Interface describing the flattened degree representation returned by the API list and detail endpoints.",
+      "tags": ["type-definition", "interface", "degree", "dto"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/interfaces/session-list-item.ts",
+      "type": "file",
+      "name": "session-list-item.ts",
+      "filePath": "libs/server/entities/src/interfaces/session-list-item.ts",
+      "summary": "Interface describing the flattened exam session representation returned by the API list and detail endpoints.",
+      "tags": ["type-definition", "interface", "session", "dto"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/modules/degree.module.ts",
+      "type": "file",
+      "name": "degree.module.ts",
+      "filePath": "libs/server/entities/src/modules/degree.module.ts",
+      "summary": "NestJS module wiring the degree controller, service, and repository together for dependency injection.",
+      "tags": ["module", "nestjs", "degree", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/modules/session.module.ts",
+      "type": "file",
+      "name": "session.module.ts",
+      "filePath": "libs/server/entities/src/modules/session.module.ts",
+      "summary": "NestJS module wiring the session controller, service, and session/degree repositories for dependency injection.",
+      "tags": ["module", "nestjs", "session", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/server/entities/src/repositories/degree.repository.ts",
+      "type": "file",
+      "name": "degree.repository.ts",
+      "filePath": "libs/server/entities/src/repositories/degree.repository.ts",
+      "summary": "Data-access layer wrapping the TypeORM repository for DegreeEntity with finders by id, ids, macro area, and name/type/year plus cascade clearing.",
+      "tags": ["repository", "data-access", "degree", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/repositories/degree.repository.ts:DegreeRepository",
+      "type": "class",
+      "name": "DegreeRepository",
+      "filePath": "libs/server/entities/src/repositories/degree.repository.ts",
+      "lineRange": [8, 54],
+      "summary": "Repository exposing typed CRUD and query helpers for degree records including findByIds, findByMacroArea, and findByNameTypeYear.",
+      "tags": ["repository", "data-access", "degree", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/repositories/session.repository.ts",
+      "type": "file",
+      "name": "session.repository.ts",
+      "filePath": "libs/server/entities/src/repositories/session.repository.ts",
+      "summary": "Data-access layer for SessionEntity, including a query-builder lookup of active sessions for a teacher via degree/course joins.",
+      "tags": ["repository", "data-access", "session", "typeorm"],
+      "complexity": "moderate",
+      "languageNotes": "Uses TypeORM QueryBuilder with innerJoin on CourseEntity to filter sessions a teacher is involved in."
+    },
+    {
+      "id": "class:libs/server/entities/src/repositories/session.repository.ts:SessionRepository",
+      "type": "class",
+      "name": "SessionRepository",
+      "filePath": "libs/server/entities/src/repositories/session.repository.ts",
+      "lineRange": [8, 60],
+      "summary": "Repository exposing CRUD and relational queries for exam sessions, notably findActiveByTeacher and findByIdWithDegrees.",
+      "tags": ["repository", "data-access", "session", "typeorm"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/services/degree.service.ts",
+      "type": "file",
+      "name": "degree.service.ts",
+      "filePath": "libs/server/entities/src/services/degree.service.ts",
+      "summary": "Business-logic service for degree programmes handling CRUD with uniqueness validation, list-item mapping, and seeding from courses data.",
+      "tags": ["service", "business-logic", "degree", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/server/entities/src/services/degree.service.ts:ServerDegreeService",
+      "type": "class",
+      "name": "ServerDegreeService",
+      "filePath": "libs/server/entities/src/services/degree.service.ts",
+      "lineRange": [10, 91],
+      "summary": "Service orchestrating degree CRUD, enforcing name/type/year uniqueness, mapping entities to list items, and seeding deduplicated degrees.",
+      "tags": ["service", "business-logic", "degree", "seeding"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/server/entities/src/services/session.service.ts",
+      "type": "file",
+      "name": "session.service.ts",
+      "filePath": "libs/server/entities/src/services/session.service.ts",
+      "summary": "Business-logic service for exam sessions handling CRUD with date-window validation, degree association, teacher-active lookups, and macro-area seeding.",
+      "tags": ["service", "business-logic", "session", "validation"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService",
+      "type": "class",
+      "name": "ServerSessionService",
+      "filePath": "libs/server/entities/src/services/session.service.ts",
+      "lineRange": [11, 150],
+      "summary": "Service orchestrating session CRUD with validateDates checks, degree-id association, teacher-scoped active queries, list-item mapping, and per-macro-area seeding.",
+      "tags": ["service", "business-logic", "session", "seeding"],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {"source": "file:libs/server/entities/src/controllers/degree.controller.ts", "target": "class:libs/server/entities/src/controllers/degree.controller.ts:ServerDegreeController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/controllers/degree.controller.ts", "target": "class:libs/server/entities/src/controllers/degree.controller.ts:ServerDegreeController", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/controllers/degree.controller.ts", "target": "file:libs/server/entities/src/entities/dto/create-degree.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/degree.controller.ts", "target": "file:libs/server/entities/src/entities/dto/update-degree.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/degree.controller.ts", "target": "file:libs/server/entities/src/services/degree.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/controllers/degree.controller.ts:ServerDegreeController", "target": "class:libs/server/entities/src/services/degree.service.ts:ServerDegreeService", "type": "depends_on", "direction": "forward", "weight": 0.6},
+
+    {"source": "file:libs/server/entities/src/controllers/session.controller.ts", "target": "class:libs/server/entities/src/controllers/session.controller.ts:ServerSessionController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/controllers/session.controller.ts", "target": "class:libs/server/entities/src/controllers/session.controller.ts:ServerSessionController", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/controllers/session.controller.ts", "target": "file:libs/server/entities/src/entities/dto/create-session.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/session.controller.ts", "target": "file:libs/server/entities/src/entities/dto/update-session.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/controllers/session.controller.ts", "target": "file:libs/server/entities/src/services/session.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/controllers/session.controller.ts:ServerSessionController", "target": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService", "type": "depends_on", "direction": "forward", "weight": 0.6},
+
+    {"source": "file:libs/server/entities/src/entities/degree.entity.ts", "target": "class:libs/server/entities/src/entities/degree.entity.ts:DegreeEntity", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/entities/degree.entity.ts", "target": "class:libs/server/entities/src/entities/degree.entity.ts:DegreeEntity", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/entities/degree.entity.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/degree.entity.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/dto/create-degree.dto.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/dto/create-session.dto.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/dto/update-degree.dto.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/dto/update-session.dto.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/entities/session.entity.ts", "target": "class:libs/server/entities/src/entities/session.entity.ts:SessionEntity", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/entities/session.entity.ts", "target": "class:libs/server/entities/src/entities/session.entity.ts:SessionEntity", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/entities/session.entity.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/session.entity.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/entities/session.entity.ts", "target": "file:libs/server/entities/src/entities/exam.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/interfaces/degree-list-item.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/modules/degree.module.ts", "target": "class:libs/server/entities/src/modules/degree.module.ts:ServerDegreeModule", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/modules/degree.module.ts", "target": "file:libs/server/entities/src/controllers/degree.controller.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/degree.module.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/degree.module.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/degree.module.ts", "target": "file:libs/server/entities/src/services/degree.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "class:libs/server/entities/src/modules/session.module.ts:ServerSessionModule", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/controllers/session.controller.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/repositories/session.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/modules/session.module.ts", "target": "file:libs/server/entities/src/services/session.service.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/repositories/degree.repository.ts", "target": "class:libs/server/entities/src/repositories/degree.repository.ts:DegreeRepository", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/repositories/degree.repository.ts", "target": "class:libs/server/entities/src/repositories/degree.repository.ts:DegreeRepository", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/repositories/degree.repository.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/repositories/degree.repository.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/repositories/session.repository.ts", "target": "class:libs/server/entities/src/repositories/session.repository.ts:SessionRepository", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/repositories/session.repository.ts", "target": "class:libs/server/entities/src/repositories/session.repository.ts:SessionRepository", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/repositories/session.repository.ts", "target": "file:libs/server/entities/src/entities/course.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/repositories/session.repository.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "class:libs/server/entities/src/services/degree.service.ts:ServerDegreeService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "class:libs/server/entities/src/services/degree.service.ts:ServerDegreeService", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/assets/courses-data.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/entities/degree.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/entities/dto/create-degree.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/entities/dto/update-degree.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/interfaces/degree-list-item.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/degree.service.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/services/degree.service.ts:ServerDegreeService", "target": "class:libs/server/entities/src/repositories/degree.repository.ts:DegreeRepository", "type": "depends_on", "direction": "forward", "weight": 0.6},
+
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/entities/dto/create-session.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/entities/dto/degree.enum.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/entities/dto/update-session.dto.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/entities/session.entity.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/interfaces/session-list-item.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/repositories/degree.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/server/entities/src/services/session.service.ts", "target": "file:libs/server/entities/src/repositories/session.repository.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService", "target": "class:libs/server/entities/src/repositories/session.repository.ts:SessionRepository", "type": "depends_on", "direction": "forward", "weight": 0.6},
+    {"source": "class:libs/server/entities/src/services/session.service.ts:ServerSessionService", "target": "class:libs/server/entities/src/repositories/degree.repository.ts:DegreeRepository", "type": "depends_on", "direction": "forward", "weight": 0.6}
+  ]
+}

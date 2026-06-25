@@ -1,4 +1,4 @@
-import { IsArray, IsInt, IsOptional, IsString } from 'class-validator';
+import { IsInt, IsOptional, IsString } from 'class-validator';
 
 export class UpdateCourseDto {
     @IsString()
@@ -9,8 +9,7 @@ export class UpdateCourseDto {
     @IsOptional()
     teacherId?: number;
 
-    @IsArray()
-    @IsInt({ each: true })
+    @IsInt()
     @IsOptional()
-    degreeIds?: number[];
+    degreeId?: number;
 }
