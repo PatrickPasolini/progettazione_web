@@ -55,5 +55,7 @@ vite.config.*.timestamp*
 # University data files
 UniBS_Materie_Docenti_2026.txt
 
-# Claude settings
+# AI assistant config/state
 .claude
+.codex
+.gemini

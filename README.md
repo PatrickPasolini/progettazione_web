@@ -157,3 +157,20 @@ Esplora il grafo delle dipendenze del workspace:
 ```bash
 npx nx graph
 ```
+
+## Grafo del progetto (understand-anything)
+
+Per ottenere una mappa interattiva dell'intero progetto (architettura,
+componenti e relazioni) si usa il plugin **understand-anything** di Claude Code.
+Dalla sessione Claude Code nella root del workspace:
+
+```
+/understand            # analizza il codebase e genera il knowledge graph
+/understand-dashboard  # apre la dashboard web interattiva del grafo
+```
+
+Comandi utili correlati:
+
+- `/understand-explain <file|modulo>` — spiegazione approfondita di un file o modulo
+- `/understand-diff` — analizza un diff/PR (cosa è cambiato, rischi, componenti toccati)
+- `/understand-onboard` — guida di onboarding per nuovi membri del team
