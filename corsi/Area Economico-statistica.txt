@@ -51,10 +51,6 @@ CORSO: BANCA E FINANZA [Laurea Triennale]
     Docente/i: SAVONA ROBERTO, ABATE GUIDO
   • SCELTE DI PORTAFOGLIO (6 CFU – Secondo Quadrimestre)
     Docente/i: DONADELLI MICHAEL
-  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: FRANCO TOMMASO
-  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ROSSI ANDREA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: Business and Economics [Laurea Triennale]
@@ -143,10 +139,6 @@ CORSO: ECONOMIA E ANALISI DEI DATI [Laurea Triennale]
     Docente/i: MINIACI RAFFAELE
   • COMPUTATIONAL METHODS (6 CFU – Secondo Quadrimestre)
     Docente/i: FILIPPI CARLO
-  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: COLOMBO DAVIDE
-  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: FONTANA MARIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: ECONOMIA E GESTIONE AZIENDALE [Laurea Triennale]
@@ -235,10 +227,6 @@ CORSO: ECONOMIA E GESTIONE AZIENDALE [Laurea Triennale]
     Docente/i: MARTINELLI SILVIA
   • FINANZA PER LE ATTIVITÀ CULTURALI (9 CFU – Secondo Quadrimestre)
     Docente/i: ABATE GUIDO
-  • STAGE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GIORDANO MARIA
-  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: D'AMICO SARA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: Economia e Gestione delle Imprese Culturali e Creative [Laurea Triennale]
@@ -313,8 +301,6 @@ CORSO: Analytics and Data Science for Economics and Management [Laurea Magistral
     Docente/i: DOMINGUEZ MARTIN MARIA RUTH
   • ECONOMICS OF INFORMATION AND DATA (6 CFU – Secondo Quadrimestre)
     Docente/i: MINELLI ENRICO
-  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MARTINI GIUSEPPE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: CONSULENZA AZIENDALE E LIBERA PROFESSIONE [Laurea Magistrale]
@@ -367,8 +353,6 @@ CORSO: CONSULENZA AZIENDALE E LIBERA PROFESSIONE [Laurea Magistrale]
     Docente/i: CAMODECA RENATO SALVATORE
   • DIRITTO COMMERCIALE (CORSO PROGREDITO) (6 CFU – Secondo Quadrimestre)
     Docente/i: MONTI MARTINA
-  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: SANTORO ALESSIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: FINANZA E RISK MANAGEMENT [Laurea Magistrale]
@@ -397,8 +381,6 @@ CORSO: FINANZA E RISK MANAGEMENT [Laurea Magistrale]
   [2° Anno]
   • ECONOMETRIA DEI MERCATI FINANZIARI (6 CFU – Primo Quadrimestre)
     Docente/i: GUERINI MATTIA
-  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: RUSSO CHIARA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: MANAGEMENT [Laurea Magistrale]
@@ -495,8 +477,6 @@ CORSO: MANAGEMENT [Laurea Magistrale]
     Docente/i: BONERA MICHELLE
   • GESTIONE DELLA LOGISTICA DISTRIBUTIVA E DELLA LOGISTICA SOSTENIBILE (9 CFU – Secondo Quadrimestre)
     Docente/i: BERTAZZI LUCA
-  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: COSTA CLAUDIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: MARKETING PER IL MADE IN ITALY [Laurea Magistrale]
@@ -535,5 +515,3 @@ CORSO: MARKETING PER IL MADE IN ITALY [Laurea Magistrale]
     Docente/i: RICCI TOMMASO
   • DIRITTO PER IL MARKETING (9 CFU – Secondo Quadrimestre)
     Docente/i: PELLEGRINI ANNA
-  • TESI DI LAUREA (16 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: LONGO MONICA

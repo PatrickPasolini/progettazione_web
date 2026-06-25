@@ -65,8 +65,6 @@ CORSO: CONSULENTE DEL LAVORO E GIURISTA D'IMPRESA [Laurea Triennale]
     Docente/i: MORANDI PAOLA
   • MODULO DIRITTO PENALE DELL'ECONOMIA (3 CFU – Secondo Semestre)
     Docente/i: PALUMBO CRISTINA
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GENTILE TOMMASO
   • TIROCINIO (3 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: BENEDETTI GIOVANNI
 
@@ -169,8 +167,6 @@ CORSO: Governo delle amministrazioni pubbliche [Laurea Magistrale]
     Docente/i: VENTURELLI ALBERTO, FERRARI MARIANGELA
   • ECONOMIA E GESTIONE DELLE AMMINISTRAZIONI PUBBLICHE - MOD. PROGRAMMAZIONE, RENDICONTAZIONE E CONTROLLO NELLE AMMINISTRAZIONI PUBBLICHE (6 CFU – Secondo Semestre)
     Docente/i: MORI ELISA
-  • PROVA FINALE (15 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MORETTI ENRICO
   • LINGUA INGLESE (3 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: D'AMICO GIULIA
 
@@ -227,8 +223,6 @@ CORSO: SCIENZE GIURIDICHE DELL'INNOVAZIONE E DELLA SOSTENIBILITA' [Laurea Magist
     Docente/i: ALESSI CRISTINA
   • TIROCINIO (3 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: ESPOSITO PAOLA
-  • PROVA FINALE (9 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: SALA ANNA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: GIURISPRUDENZA [Ciclo Unico]
@@ -313,5 +307,3 @@ CORSO: GIURISPRUDENZA [Ciclo Unico]
     Docente/i: ITZCOVICH GIULIO
   • ABILITA' INFORMATICHE (1 CFU – Secondo Semestre)
     Docente/i: BERNARDI ROBERTO
-  • PROVA FINALE (17 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GIORDANO SIMONE

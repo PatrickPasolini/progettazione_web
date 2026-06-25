@@ -29,7 +29,7 @@ CORSO: INGEGNERIA MEDICA [Laurea Triennale]
     Docente/i: GRINGOLI FRANCESCO
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICHE DELL'EDILIZIA [Laurea Triennale]
+CORSO: TECNICHE DELL'EDILIZIA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -73,13 +73,11 @@ CORSO: CORSO DI LAUREA IN TECNICHE DELL'EDILIZIA [Laurea Triennale]
     Docente/i: GENTILE MARIA
 
   [3° Anno]
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ORLANDO SERGIO
   • TIROCINIO PRATICO-VALUTATIVO TPV (50 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: MONTI FRANCESCO
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICHE INDUSTRIALI DI PRODOTTO E DI PROCESSO [Laurea Triennale]
+CORSO: TECNICHE INDUSTRIALI DI PRODOTTO E DI PROCESSO [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -141,8 +139,6 @@ CORSO: CORSO DI LAUREA IN TECNICHE INDUSTRIALI DI PRODOTTO E DI PROCESSO [Laurea
   [3° Anno]
   • PROJECT WORK (6 CFU – Primo Semestre)
     Docente/i: TOCCI MARIALAURA
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MANCINI SIMONE
   • TIROCINIO PRATICO-VALUTATIVO - AREA INDUSTRIALE - A (24 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: BRUNO DANIELE
   • TIROCINIO PRATICO-VALUTATIVO - AREA INDUSTRIALE - B (24 CFU – Insegnamenti che non prevedono erogazione)
@@ -191,8 +187,6 @@ CORSO: INGEGNERIA CIVILE [Laurea Triennale]
     Docente/i: PILOTTI MARCO
   • ARCHITETTURA TECNICA (9 CFU – Secondo Semestre)
     Docente/i: ARENGHI ALBERTO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BERNARDI SERGIO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Triennale]
@@ -247,8 +241,6 @@ CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Triennale]
     Docente/i: ADAMINI RICCARDO, PELLEGRINI NICOLA
   • CONTROLLO DIGITALE (6 CFU – Secondo Semestre)
     Docente/i: CARNEVALE CLAUDIO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: RINALDI MARIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA DELLE TECNOLOGIE PER L'IMPRESA DIGITALE [Laurea Triennale]
@@ -317,8 +309,6 @@ CORSO: INGEGNERIA DELLE TECNOLOGIE PER L'IMPRESA DIGITALE [Laurea Triennale]
     Docente/i: GRINGOLI FRANCESCO, BIANCHINI DEVIS
   • INTERNET OF THINGS (6 CFU – Secondo Semestre)
     Docente/i: FERRARI PAOLO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: LOMBARDI CLAUDIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA ELETTRONICA E DELLE TELECOMUNICAZIONI [Laurea Triennale]
@@ -413,8 +403,6 @@ CORSO: INGEGNERIA ELETTRONICA E DELLE TELECOMUNICAZIONI [Laurea Triennale]
     Docente/i: CARLETTI LUCA
   • PRINCIPI DI TRASMISSIONE DELL'INFORMAZIONE (6 CFU – Secondo Semestre)
     Docente/i: BENINI SERGIO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: SARTORI MARIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA GESTIONALE [Laurea Triennale]
@@ -481,8 +469,6 @@ CORSO: INGEGNERIA GESTIONALE [Laurea Triennale]
     Docente/i: ROSSI DIANA
   • LABORATORIO DI SISTEMI PRODUTTIVI (6 CFU – Secondo Semestre)
     Docente/i: SACCANI NICOLA
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: PARISI SIMONE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA INFORMATICA [Laurea Triennale]
@@ -549,8 +535,6 @@ CORSO: INGEGNERIA INFORMATICA [Laurea Triennale]
     Docente/i: GIORDANO MASSIMO
   • IMPIANTI INFORMATICI (6 CFU – Secondo Semestre)
     Docente/i: BARONI PIETRO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ROSSI ROBERTO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA MECCANICA E DEI MATERIALI [Laurea Triennale]
@@ -633,8 +617,6 @@ CORSO: INGEGNERIA MECCANICA E DEI MATERIALI [Laurea Triennale]
     Docente/i: DI MARCOBERARDINO GIOELE
   • EFFICIENZA ENERGETICA DEGLI IMPIANTI (3 CFU – Secondo Semestre)
     Docente/i: ZANONI SIMONE
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BIANCHI EMANUELE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Triennale]
@@ -683,8 +665,6 @@ CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Triennale]
     Docente/i: PILOTTI MARCO
   • IDROLOGIA (9 CFU – Secondo Semestre)
     Docente/i: TOMIROTTI MASSIMO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: PARISI ANNA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: Ingegneria fisica e matematica [Laurea Triennale]
@@ -751,8 +731,6 @@ CORSO: Ingegneria fisica e matematica [Laurea Triennale]
     Docente/i: BAU' MARCO, RICHELLI ANNA
   • OTTICA E TECNOLOGIE FOTONICHE (9 CFU – Secondo Semestre)
     Docente/i: BARONIO FABIO, DE CEGLIA DOMENICO
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ESPOSITO PAOLO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: SISTEMI AGRICOLI SOSTENIBILI [Laurea Triennale]
@@ -823,11 +801,9 @@ CORSO: SISTEMI AGRICOLI SOSTENIBILI [Laurea Triennale]
     Docente/i: BORGHETTI MICHELA
   • COLTIVAZIONI ARBOREE E VITICOLTURA SOSTENIBILI (9 CFU – Secondo Semestre)
     Docente/i: GHIGLIENO ISABELLA
-  • PROVA FINALE (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: FERRARI FRANCESCA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CIVIL AND ENVIRONMENTAL ENGINEERING - INGEGNERIA CIVILE E AMBIENTALE [Laurea Magistrale]
+CORSO: INGEGNERIA CIVILE E AMBIENTALE [Laurea Magistrale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -855,8 +831,6 @@ CORSO: CIVIL AND ENVIRONMENTAL ENGINEERING - INGEGNERIA CIVILE E AMBIENTALE [Lau
     Docente/i: METELLI GIOVANNI, PRETI MARCO
   • ENERGY SYSTEMS: FROM OIL AND GAS TO RENEWABLES (6 CFU – Secondo Semestre)
     Docente/i: ARTIOLI NANCY
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: LOMBARDI SIMONE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA CIVILE [Laurea Magistrale]
@@ -875,8 +849,6 @@ CORSO: INGEGNERIA CIVILE [Laurea Magistrale]
   [2° Anno]
   • TEORIA E PROGETTO DELLE COSTRUZIONI IN CA E CAP (9 CFU – Primo Semestre)
     Docente/i: MINELLI FAUSTO, FACCONI LUCA
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: DE ANGELIS MONICA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Magistrale]
@@ -923,8 +895,6 @@ CORSO: INGEGNERIA DELL'AUTOMAZIONE INDUSTRIALE [Laurea Magistrale]
     Docente/i: SERPELLONI MAURO
   • LABORATORIO DI AUTOMATICA (3 CFU – Secondo Semestre)
     Docente/i: BESCHI MANUEL
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: RICCI SIMONE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA ELETTRONICA [Laurea Magistrale]
@@ -945,8 +915,6 @@ CORSO: INGEGNERIA ELETTRONICA [Laurea Magistrale]
     Docente/i: TORRICELLI FABRIZIO
   • PROGETTO DI SISTEMI ELETTRONICI PER L'INTERNET OF THINGS (6 CFU – Secondo Semestre)
     Docente/i: SISINNI EMILIANO
-  • PROVA DI CONOSCENZA DELLA LINGUA INGLESE (APPROFONDIMENTO) (3 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MARTINELLI CHIARA
 
   [2° Anno]
   • PROGETTO DI CIRCUITI INTEGRATI ANALOGICI (CFU n/d – Primo Semestre)
@@ -959,8 +927,6 @@ CORSO: INGEGNERIA ELETTRONICA [Laurea Magistrale]
     Docente/i: FERRARI MARCO
   • ELETTRONICA PER STRUMENTAZIONE, SENSORI E MICROSISTEMI (9 CFU – Secondo Semestre)
     Docente/i: FERRARI VITTORIO, FERRARI MARCO, NASTRO ALESSANDRO
-  • PROVA FINALE (18 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MORELLI VITTORIO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA GESTIONALE [Laurea Magistrale]
@@ -1047,8 +1013,6 @@ CORSO: INGEGNERIA GESTIONALE [Laurea Magistrale]
     Docente/i: BANNÒ MARIASOLE
   • GESTIONE DELLA SOSTENIBILITA' INDUSTRIALE (6 CFU – Secondo Semestre)
     Docente/i: TOMASONI GIUSEPPE
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: VILLA SERGIO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA INFORMATICA [Laurea Magistrale]
@@ -1073,8 +1037,6 @@ CORSO: INGEGNERIA INFORMATICA [Laurea Magistrale]
   [2° Anno]
   • STAGE/PROGETTO 6 CFU - LM (6 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: NEGRI ELISA
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GRECO GABRIELE
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA MECCANICA [Laurea Magistrale]
@@ -1253,8 +1215,6 @@ CORSO: INGEGNERIA MECCANICA [Laurea Magistrale]
     Docente/i: MARTINI ELISA
   • LABORATORIO DI FLUIDODINAMICA COMPUTAZIONALE (6 CFU – Secondo Semestre)
     Docente/i: GHIDONI ANTONIO
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ESPOSITO CHIARA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Magistrale]
@@ -1281,8 +1241,6 @@ CORSO: INGEGNERIA PER L'AMBIENTE E IL TERRITORIO [Laurea Magistrale]
     Docente/i: BADIANI BARBARA
   • ORGANICA URBANISTICA (6 CFU – Primo Semestre)
     Docente/i: BADIANI BARBARA
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: ROMANO FEDERICA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA PER L'INNOVAZIONE DEI MATERIALI E DEL PRODOTTO [Laurea Magistrale]
@@ -1331,8 +1289,6 @@ CORSO: INGEGNERIA PER L'INNOVAZIONE DEI MATERIALI E DEL PRODOTTO [Laurea Magistr
     Docente/i: FIORENTINO ANTONIO, SEITI MIRIAM
   • PROGETTAZIONE CON LE MATERIE PLASTICHE (6 CFU – Secondo Semestre)
     Docente/i: RAMORINO GIORGIO
-  • PROVA FINALE (12 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: FERRI FEDERICA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: TECNOLOGIE PER LA TRANSIZIONE ECOLOGICA IN AGRICOLTURA [Laurea Magistrale]
@@ -1381,8 +1337,6 @@ CORSO: TECNOLOGIE PER LA TRANSIZIONE ECOLOGICA IN AGRICOLTURA [Laurea Magistrale
     Docente/i: DE ANGELIS EMANUELE
   • ALTRE ATTIVITÀ FORMATIVE (3 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: GUERRA ALESSIA
-  • PROVA FINALE (15 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BASILE FRANCESCA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: INGEGNERIA EDILE-ARCHITETTURA [Ciclo Unico]

@@ -91,7 +91,7 @@ for (const file of files) {
             continue;
         }
 
-        const mBullet = line.match(/^\s*•\s*(.+?)\s*\(\s*\d+.*$/);
+        const mBullet = line.match(/^\s*•\s*(.+?)\s*\(.+\)\s*$/);
         if (mBullet && macroArea && curDegreeName && curType && curYear) {
             const courseName = mBullet[1].trim();
             const dk = degreeKey(curDegreeName, curType, curYear);
@@ -187,6 +187,17 @@ export const seedDegrees: SeedDegree[] = [
 ${degreeLines}
 ];
 
+// Converte un nome corso da TUTTO MAIUSCOLO a "Solo iniziale maiuscola"
+// (sentence case): prima lettera maiuscola, resto minuscolo. Gestisce accenti.
+// I numeri romani standalone (I, II, III … XII) restano maiuscoli.
+function toSentenceCase(name: string): string {
+    const ROMAN = /^(I{1,3}|IV|VI{0,3}|IX|X[I]{0,3}|XII)$/;
+    return name
+        .toLowerCase()
+        .replace(/\\p{L}/u, (ch) => ch.toUpperCase())
+        .replace(/\\b[ivx]+\\b/g, (w) => (ROMAN.test(w.toUpperCase()) ? w.toUpperCase() : w));
+}
+
 function mkCourse(
     courseName: string,
     teacherEmail: string,
@@ -194,12 +205,18 @@ function mkCourse(
     degreeType: DegreeType,
     degreeYear: DegreeYear,
 ): SeedCourse {
-    return { courseName, teacherEmail, degreeName, degreeType, degreeYear };
+    return { courseName: toSentenceCase(courseName), teacherEmail, degreeName, degreeType, degreeYear };
 }
 
 export const seedCourses: SeedCourse[] = [
 ${courseLines}
 ];
+
+// Normalizza i nomi dei corsi di laurea a "Solo iniziale maiuscola" su ENTRAMBI
+// gli array: le definizioni dei degree e i riferimenti dentro i corsi. Stessa
+// funzione su entrambi i lati => la chiave di join degreeName resta coerente.
+for (const d of seedDegrees) d.degreeName = toSentenceCase(d.degreeName);
+for (const c of seedCourses) c.degreeName = toSentenceCase(c.degreeName);
 `;
 
 writeFileSync(outFile, out, 'utf-8');

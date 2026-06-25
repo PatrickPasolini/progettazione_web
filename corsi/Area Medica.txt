@@ -121,13 +121,11 @@ CORSO: BIOTECNOLOGIE [Laurea Triennale]
     Docente/i: BUZZI ELISA MARIA
   • ECONOMIA AZIENDALE (3 CFU – Primo Semestre)
     Docente/i: CASSANO RAFFAELLA
-  • PROVA FINALE (BIOTECNOLOGIE) (4 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GATTI CLAUDIA
   • TIROCINIO (BIOTECNOLOGIE) (2 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: BENEDETTI ANDREA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN ASSISTENZA SANITARIA [Laurea Triennale]
+CORSO: ASSISTENZA SANITARIA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -333,11 +331,9 @@ CORSO: CORSO DI LAUREA IN ASSISTENZA SANITARIA [Laurea Triennale]
     Docente/i: FONTANA SARA
   • Sanità digitale (1 CFU – Secondo Semestre)
     Docente/i: LOMBARDI CLAUDIA
-  • PROVA FINALE (CDL ASSIST SAN) (7 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: CONTI GABRIELE
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN DIETISTICA [Laurea Triennale]
+CORSO: DIETISTICA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -533,11 +529,9 @@ CORSO: CORSO DI LAUREA IN DIETISTICA [Laurea Triennale]
     Docente/i: MARCONI SILVIA
   • ORGANIZZAZIONE AZIENDALE (1 CFU – Secondo Semestre)
     Docente/i: ESPOSITO SERGIO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BELLINI CLAUDIA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN EDUCAZIONE PROFESSIONALE [Laurea Triennale]
+CORSO: EDUCAZIONE PROFESSIONALE [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -707,7 +701,7 @@ CORSO: CORSO DI LAUREA IN EDUCAZIONE PROFESSIONALE [Laurea Triennale]
     Docente/i: CARBONE ENRICO
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN FISIOTERAPIA [Laurea Triennale]
+CORSO: FISIOTERAPIA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -933,11 +927,9 @@ CORSO: CORSO DI LAUREA IN FISIOTERAPIA [Laurea Triennale]
     Docente/i: GALLI MASSIMO
   • TIROCINIO PROFESSIONALE 3° ANNO (32 CFU – Secondo Semestre)
     Docente/i: CONTI ANTONIO
-  • PROVA FINALE (5 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: FERRARA CARLO
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN IGIENE DENTALE [Laurea Triennale]
+CORSO: IGIENE DENTALE [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -1151,11 +1143,9 @@ CORSO: CORSO DI LAUREA IN IGIENE DENTALE [Laurea Triennale]
     Docente/i: GUERRA BARBARA
   • ERGONOMIA E ORGANIZZAZIONE PROFESSIONALE B (1 CFU – Secondo Semestre)
     Docente/i: COLOMBO MAURIZIO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: VALENTE MARTINA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN INFERMIERISTICA [Laurea Triennale]
+CORSO: INFERMIERISTICA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -1349,11 +1339,9 @@ CORSO: CORSO DI LAUREA IN INFERMIERISTICA [Laurea Triennale]
     Docente/i: D'AMICO VALENTINA
   • INFERMIERISTICA PEDIATRICA (1 CFU – Primo Semestre)
     Docente/i: RICCI CRISTINA
-  • PROVA FINALE (CDL INFERMIERISTICA) (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: CATTANEO GIUSEPPE
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN OSTETRICIA [Laurea Triennale]
+CORSO: OSTETRICIA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -1577,11 +1565,9 @@ CORSO: CORSO DI LAUREA IN OSTETRICIA [Laurea Triennale]
     Docente/i: VALENTE VALENTINA
   • DIRITTO DEL LAVORO (1 CFU – Secondo Semestre)
     Docente/i: FRANCO STEFANO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: GRASSI BARBARA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICA DELLA RIABILITAZIONE PSICHIATRICA [Laurea Triennale]
+CORSO: TECNICA DELLA RIABILITAZIONE PSICHIATRICA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -1809,11 +1795,9 @@ CORSO: CORSO DI LAUREA IN TECNICA DELLA RIABILITAZIONE PSICHIATRICA [Laurea Trie
     Docente/i: ROSSI MARTINA
   • TRATTAMENTI BASATI SULLE EVIDENZE (1 CFU – Secondo Semestre)
     Docente/i: BARLATI STEFANO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MARTINI PAOLA
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICHE DELLA PREVENZIONE NELL'AMBIENTE E NEI LUOGHI DI LAVORO [Laurea Triennale]
+CORSO: TECNICHE DELLA PREVENZIONE NELL'AMBIENTE E NEI LUOGHI DI LAVORO [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -2017,11 +2001,9 @@ CORSO: CORSO DI LAUREA IN TECNICHE DELLA PREVENZIONE NELL'AMBIENTE E NEI LUOGHI 
     Docente/i: TESTA ANDREA
   • VALUTAZ. RISCHI OCCUPAZIONALI SETTORE SANITAR (1 CFU – Secondo Semestre)
     Docente/i: MARTINELLI MARCO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BIANCHI GIUSEPPE
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICHE DI LABORATORIO BIOMEDICO [Laurea Triennale]
+CORSO: TECNICHE DI LABORATORIO BIOMEDICO [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -2205,11 +2187,9 @@ CORSO: CORSO DI LAUREA IN TECNICHE DI LABORATORIO BIOMEDICO [Laurea Triennale]
     Docente/i: CONTI ADELAIDE
   • TOSSICOLOGIA FORENSE (1 CFU – Secondo Semestre)
     Docente/i: NEGRI LORENZO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: RUSSO TOMMASO
 
 ──────────────────────────────────────────────────────────────────────
-CORSO: CORSO DI LAUREA IN TECNICHE DI RADIOLOGIA MEDICA, PER IMMAGINI E RADIOTERAPIA [Laurea Triennale]
+CORSO: TECNICHE DI RADIOLOGIA MEDICA, PER IMMAGINI E RADIOTERAPIA [Laurea Triennale]
 ──────────────────────────────────────────────────────────────────────
 
   [1° Anno]
@@ -2609,8 +2589,6 @@ CORSO: ORTOTTICA ED ASSISTENZA OFTALMOLOGICA [Laurea Triennale]
     Docente/i: GALLI MARCO
   • IPOVISIONE E RIABILITAZIONE OFTALMOLOGICA (CFU n/d – Secondo Semestre)
     Docente/i: FRANCO TOMMASO
-  • PROVA FINALE (6 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MANCINI GIOVANNI
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: SCIENZE MOTORIE [Laurea Triennale]
@@ -2785,8 +2763,6 @@ CORSO: SCIENZE MOTORIE [Laurea Triennale]
     Docente/i: PARISI FRANCESCA
   • TIROCINIO - III ANNO (5 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: FONTANA MARIA
-  • PROVA FINALE (4 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BERNARDI MAURIZIO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: BIOTECNOLOGIE MEDICHE [Laurea Magistrale]
@@ -2873,8 +2849,6 @@ CORSO: BIOTECNOLOGIE MEDICHE [Laurea Magistrale]
     Docente/i: BERRUTI ALFREDO, LAGANÀ MARTA
   • TIROCINIO (BIOTECNOLOGIE MEDICHE) (4 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: ROSSI DANIELE
-  • PROVA FINALE (BIOTECNOLOGIE MEDICHE) (22 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: MONTI VITTORIO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: CORSO DI LAUREA MAGISTRALE IN SCIENZE INFERMIERISTICHE E OSTETRICHE [Laurea Magistrale]
@@ -3007,8 +2981,6 @@ CORSO: CORSO DI LAUREA MAGISTRALE IN SCIENZE INFERMIERISTICHE E OSTETRICHE [Laur
     Docente/i: ODICINO FRANCO EDOARDO, FERRARI FEDERICO GIORGIO
   • PROVE IN PSICHIATRIA (1 CFU – Secondo Semestre)
     Docente/i: TURRINA CESARE
-  • PROVA FINALE (5 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: SORRENTINO ROBERTO
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: Scienza del movimento per la salute ed il benessere [Laurea Magistrale]
@@ -3075,8 +3047,6 @@ CORSO: Scienza del movimento per la salute ed il benessere [Laurea Magistrale]
     Docente/i: GIORDANO EMANUELE
   • TIROCINIO - SECONDO  ANNO (10 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: RUSSO LORENZO
-  • PROVA FINALE (10 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: LOMBARDI GIULIA
 
 ──────────────────────────────────────────────────────────────────────
 CORSO: FARMACIA [Ciclo Unico]
@@ -3579,8 +3549,6 @@ CORSO: MEDICINA E CHIRURGIA [Ciclo Unico]
     Docente/i: CARBONE CRISTINA
   • TIROCINIO Clinica Chirurgica (3 CFU)
     Docente/i: MARTINELLI LORENZO
-  • ATTIVITA' FORMATIVE PER LA PROVA FINALE (18 CFU – Insegnamenti che non prevedono erogazione)
-    Docente/i: BERNARDI PAOLO
   • TIROCINIO PRATICO VALUTATIVO PER L'ESAME DI STATO - AREA MEDICA (5 CFU – Insegnamenti che non prevedono erogazione)
     Docente/i: NERI DANIELE
   • TIROCINIO PRATICO VALUTATIVO PER L'ESAME DI STATO - AREA CHIRURGICA (5 CFU – Insegnamenti che non prevedono erogazione)

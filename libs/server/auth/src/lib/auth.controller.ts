@@ -23,7 +23,7 @@ export class ServerAuthController {
           schema: {
               type: 'object',
               properties: {
-                  email: { type: 'string', example: 'patrick.pasolini@unibs.it' },
+                  email: { type: 'string', example: 'segreteria.economia@unibs.it' },
                   password: {type: 'string', example: 'Password1!'}
               },
               required: ['email', 'password'],
