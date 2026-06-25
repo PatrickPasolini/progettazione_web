@@ -1,3 +1,5 @@
+import { handleApiError } from '../shared/utils.api';
+
 const API_URL = 'http://localhost:3333/api';
 
 export async function login(email: string, password: string): Promise<{ mustChangePassword: boolean }> {
@@ -28,7 +30,7 @@ export async function changePassword(newPassword: string): Promise<void> {
   });
 
   if (!response.ok) {
-    throw new Error('Errore durante il cambio password');
+    await handleApiError(response);
   }
 }
 

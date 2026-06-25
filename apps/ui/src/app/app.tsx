@@ -3,6 +3,7 @@ import { LoginPage } from '../features/auth/login.page';
 import { LogoutPage } from '../features/auth/logout.page';
 import { ChangePasswordPage } from '../features/auth/change-password.page';
 import { ProtectedRoute } from '../features/auth/protected-route';
+import { getRoleFromToken } from '../features/auth/role.utils';
 import { AppLayout } from '../features/layouts/app-layout';
 
 import {
@@ -19,6 +20,22 @@ import {
   TeacherIndex,
 } from '../features/teacher/pages/teacher.page';
 import { ExamsPage } from '../features/teacher/pages/exams.page';
+
+import { AdminPage, AdminIndex } from '../features/admin/pages/admin.page';
+import { SecretariesPage } from '../features/admin/pages/secretaries.page';
+import { AdminExamsPage } from '../features/admin/pages/admin-exams.page';
+
+// Reindirizza l'utente alla dashboard corretta in base al ruolo nel JWT.
+// Senza token (es. primo avvio) si va direttamente al login.
+function RootRedirect() {
+  const token = localStorage.getItem('access_token');
+  if (!token) return <Navigate to="/login" replace />;
+
+  const role = getRoleFromToken();
+  if (role === 'ADMIN') return <Navigate to="/admin" replace />;
+  if (role === 'TEACHER') return <Navigate to="/teacher" replace />;
+  return <Navigate to="/secretary" replace />;
+}
 
 export function App() {
   return (
@@ -54,7 +71,36 @@ export function App() {
           <Route path="exams" element={<ExamsPage />} />
         </Route>
 
-        <Route path="/" element={<Navigate to="/secretary" replace />} />
+        {/* Dashboard admin: schermate segreteria + lista segretari (CRUD pieno consentito lato API) */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute roles={['ADMIN']}>
+              <AdminPage />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<AdminIndex />} />
+          <Route path="sessions"    element={<SessionsPage />} />
+          <Route path="degrees"     element={<DegreesPage />} />
+          <Route path="courses"     element={<CoursesPage />} />
+          <Route path="teachers"    element={<TeachersPage />} />
+          <Route path="secretaries" element={<SecretariesPage />} />
+        </Route>
+
+        {/* Calendario appelli in sola lettura, filtrato per dipartimento e corso di laurea */}
+        <Route
+          path="/admin/exams"
+          element={
+            <ProtectedRoute roles={['ADMIN']}>
+              <div className="flex flex-1 min-h-0">
+                <AdminExamsPage />
+              </div>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path="/" element={<RootRedirect />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
