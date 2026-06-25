@@ -1,105 +1,159 @@
-# New Nx Repository
+<div align="center">
+  <img src="apps/ui/public/examflow-logo.png" alt="ExamFlow" width="400">
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+  Sistema di gestione e pianificazione degli appelli d'esame universitari.
+</div>
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+---
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-## Try the full Nx platform
-🚀 If you haven't connected to Nx Cloud yet, [complete your setup here](https://cloud.nx.app/setup/connect-workspace/guide). Get faster builds with remote caching, distributed task execution, and self-healing CI. [See how your workspace can benefit](#nx-cloud).
-## Generate a library
+I docenti di un corso di laurea coordinano la prenotazione delle date d'esame all'interno di una sessione configurata dalla segreteria.
 
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+Monorepo [Nx](https://nx.dev) con backend **NestJS** + **PostgreSQL** (TypeORM) e frontend **React 19** + **Vite**.
+
+## Funzionalità
+
+- **Segreteria** — configura la sessione: inizio/fine sessione, finestra di inserimento, corsi di laurea e anni di corso.
+- **Docente** — sceglie corso di laurea + anno, vede tutte le date del periodo con gli appelli già prenotati dai colleghi, inserisce il proprio appello su una data libera e può modificarlo/cancellarlo finché la finestra di inserimento è aperta.
+
+### Vincoli
+
+- Massimo 1 appello al giorno per combinazione (corso di laurea + anno).
+- Inserimento/modifica consentiti solo nella finestra di pianificazione (`insertion_start` → `insertion_end`).
+- Il docente vede tutti gli appelli ma modifica solo i propri.
+- Giorni disponibili escludono sabato e domenica.
+
+## Stack
+
+| Livello | Tecnologia |
+|---------|-----------|
+| API | NestJS + Webpack — rotte sotto `/api`, Swagger su `/api/docs` |
+| UI | React 19 + Vite + react-router-dom v6 |
+| Database | PostgreSQL + TypeORM (`autoLoadEntities`, `synchronize`) |
+| Auth | JWT + Passport (strategie local + jwt) |
+| Test | Jest (API), Playwright (UI e2e) |
+
+### Ruoli
+
+Due ruoli, gestiti via Single Table Inheritance su `UserEntity` (colonna `role`):
+
+- `SECRETARY` — configura sessioni, corsi di laurea, corsi, docenti.
+- `TEACHER` — inserisce/modifica i propri appelli.
+
+## Struttura
+
+```
+apps/
+  api        @org/api        NestJS API
+  ui         @org/ui         React frontend
+  api-e2e    @org/api-e2e    test integrazione API (Jest)
+  ui-e2e     @org/ui-e2e     test e2e UI (Playwright)
+libs/
+  database          @org/database     setup TypeORM/PostgreSQL
+  server/users      @server/users     UserEntity, UserRole
+  server/auth       @server/auth      login/register, JWT
+  server/security   @server/security  guard e decorator condivisi
+  server/entities   @server/entities  entità di dominio (course, degree, exam, session, teacher) + moduli, controller, service, repository
 ```
 
-## Run tasks
+## Setup
 
-To build the library use:
+Richiede Node.js, npm e Docker (per il database).
 
-```sh
-npx nx build pkg1
+### 1. Variabili d'ambiente
+
+Crea un file `.env` nella root del workspace:
+
+```env
+PORT=3333
+PG_HOST=127.0.0.1
+PG_PORT=5433
+PG_USER=postgres
+PG_PASSWORD=PWS
+PG_DATABASE=appelli_db
+SECRET_KEY=...
 ```
 
-To run any task with Nx use:
+### 2. Dipendenze
 
-```sh
-npx nx <target> <project-name>
+```bash
+npm install
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### 3. Database in Docker
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Lo script `db_appelli.sh` crea (o ricrea) un container PostgreSQL chiamato
+`postgres_appelli`, esposto sulla porta `5433`, con il database `appelli_db`:
 
-## Versioning and releasing
-
-To version and release the library use
-
-```
-npx nx release
+```bash
+./db_appelli.sh
 ```
 
-Pass `--dry-run` to see what would happen without actually releasing the library.
+Lo script ferma ed elimina un eventuale container omonimo già attivo, avvia un
+nuovo container `postgres` e crea il database `appelli_db`. Le credenziali
+(`postgres` / `PWS`) coincidono con quelle del file `.env`.
 
-[Learn more about Nx release &raquo;](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 4. Avvio e popolamento
 
-## Keep TypeScript project references up to date
+Avvia il backend:
 
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
+```bash
+npm run start:api
 ```
 
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
+Apri Swagger su **http://localhost:3333/api/docs** ed esegui il popolamento
+nell'ordine seguente (necessario per rispettare le dipendenze tra entità):
 
-```sh
-npx nx sync:check
+1. **`POST /api/users/populate`** — endpoint pubblico, crea le segreterie
+   (una per area: Economia, Giurisprudenza, Ingegneria, Medicina).
+   Tutte con password `Password1!`.
+2. **`POST /api/auth/login`** — accedi come segreteria
+   (es. `segreteria.ingegneria@unibs.it` / `Password1!`), copia il token JWT e
+   premi **Authorize** in Swagger. I populate successivi richiedono il ruolo
+   `SECRETARY`.
+3. Esegui i populate delle altre entità **in quest'ordine**:
+
+   | # | Endpoint | Dipende da |
+   |---|----------|-----------|
+   | 1 | `POST /api/teacher/populate` | — |
+   | 2 | `POST /api/degree/populate`  | — |
+   | 3 | `POST /api/course/populate`  | docenti + corsi di laurea |
+   | 4 | `POST /api/session/populate` | corsi di laurea |
+   | 5 | `POST /api/exam/populate`    | sessioni + docenti + corsi + corsi di laurea |
+
+A questo punto il database è popolato e l'app è pronta. Avvia il frontend con:
+
+```bash
+npm run start:ui
 ```
 
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
+## Comandi
 
-## Nx Cloud
+```bash
+# Dev server
+npm run start:api          # API NestJS su porta 3333 (npx nx serve api)
+npm run start:ui           # UI React/Vite          (npx nx serve ui)
 
-Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
+# Build
+npx nx build api
+npx nx build ui
 
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+# Test
+npx nx test api
+npx nx test @server/users
 
-### Set up CI (non-Github Actions CI)
+# Lint
+npx nx lint api
 
-**Note:** This is only required if your CI provider is not GitHub Actions.
+# E2E
+npx nx e2e api-e2e
+npx nx e2e ui-e2e
 
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
+# Typecheck
+npx nx typecheck api
 ```
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Esplora il grafo delle dipendenze del workspace:
 
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```bash
+npx nx graph
+```
