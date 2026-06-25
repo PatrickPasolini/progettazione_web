@@ -84,8 +84,8 @@ export class ServerTeacherService {
         await this.teacherRepository.clearTeachers();
 
         const passwordHash = await bcrypt.hash('Password1!', 10);
-        // Dedup contro TUTTE le email utente (admin/secretary inclusi): users.email
-        // è unique cross-ruolo. Un docente con email già usata da un admin verrebbe
+        // Dedup contro TUTTE le email utente (secretary inclusi): users.email
+        // è unique cross-ruolo. Un docente con email già usata da un secretary verrebbe
         // saltato invece di far fallire l'INSERT (violazione unique).
         const existing = new Set(await this.teacherRepository.findAllUserEmails());
 

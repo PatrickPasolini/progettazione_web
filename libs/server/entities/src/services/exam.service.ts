@@ -151,14 +151,13 @@ export class ServerExamService {
         const exam = await this.examRepository.findById(id);
         if (!exam) throw new NotFoundException(`Exam with id ${id} not found`);
 
-        const isAdminOrSecretary =
-            currentTeacher.role === UserRole.ADMIN || currentTeacher.role === UserRole.SECRETARY;
+        const isSecretary = currentTeacher.role === UserRole.SECRETARY;
 
-        if (!isAdminOrSecretary && exam.teacher.id !== currentTeacher.id) {
+        if (!isSecretary && exam.teacher.id !== currentTeacher.id) {
             throw new ForbiddenException('You can only delete your own exams');
         }
 
-        if (!isAdminOrSecretary) {
+        if (!isSecretary) {
             this.validateInsertionWindow(exam.session.startInsertDate, exam.session.endInsertDate);
         }
 

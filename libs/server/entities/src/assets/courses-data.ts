@@ -1520,6 +1520,12 @@ export const seedDegrees: SeedDegree[] = [
     { degreeName: 'ODONTOIATRIA E PROTESI DENTARIA', degreeType: DegreeType.SINGLE_CYCLE, degreeYear: DegreeYear.SIXTH, macroArea: MacroArea.MEDICINE },
 ];
 
+// Converte un nome corso da TUTTO MAIUSCOLO a "Solo iniziale maiuscola"
+// (sentence case): prima lettera maiuscola, resto minuscolo. Gestisce accenti.
+function toSentenceCase(name: string): string {
+    return name.toLowerCase().replace(/\p{L}/u, (ch) => ch.toUpperCase());
+}
+
 function mkCourse(
     courseName: string,
     teacherEmail: string,
@@ -1527,7 +1533,7 @@ function mkCourse(
     degreeType: DegreeType,
     degreeYear: DegreeYear,
 ): SeedCourse {
-    return { courseName, teacherEmail, degreeName, degreeType, degreeYear };
+    return { courseName: toSentenceCase(courseName), teacherEmail, degreeName, degreeType, degreeYear };
 }
 
 export const seedCourses: SeedCourse[] = [
@@ -3896,3 +3902,9 @@ export const seedCourses: SeedCourse[] = [
     mkCourse('TPV PARODONTOLOGIA', 'luca.mancini@unibs.it', 'ODONTOIATRIA E PROTESI DENTARIA', DegreeType.SINGLE_CYCLE, DegreeYear.SIXTH),
     mkCourse('TESI', 'anna.gentile@unibs.it', 'ODONTOIATRIA E PROTESI DENTARIA', DegreeType.SINGLE_CYCLE, DegreeYear.SIXTH),
 ];
+
+// Normalizza i nomi dei corsi di laurea a "Solo iniziale maiuscola" su ENTRAMBI
+// gli array: le definizioni dei degree e i riferimenti dentro i corsi. Stessa
+// funzione su entrambi i lati => la chiave di join degreeName resta coerente.
+for (const d of seedDegrees) d.degreeName = toSentenceCase(d.degreeName);
+for (const c of seedCourses) c.degreeName = toSentenceCase(c.degreeName);

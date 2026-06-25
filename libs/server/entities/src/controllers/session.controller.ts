@@ -47,7 +47,7 @@ export class ServerSessionController {
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -70,7 +70,7 @@ export class ServerSessionController {
 
     @Patch(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     @ApiBody({
@@ -94,7 +94,7 @@ export class ServerSessionController {
     @Delete(':id')
     @HttpCode(204)
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     remove(@Param('id', ParseIntPipe) id: number) {
@@ -103,7 +103,7 @@ export class ServerSessionController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverSessionService.seed();

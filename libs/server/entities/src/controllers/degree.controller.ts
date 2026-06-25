@@ -39,7 +39,7 @@ export class ServerDegreeController {
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -59,7 +59,7 @@ export class ServerDegreeController {
 
     @Patch(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     @ApiBody({
@@ -80,7 +80,7 @@ export class ServerDegreeController {
     @Delete(':id')
     @HttpCode(204)
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY, UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     remove(@Param('id', ParseIntPipe) id: number) {
@@ -89,7 +89,7 @@ export class ServerDegreeController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverDegreeService.seed();

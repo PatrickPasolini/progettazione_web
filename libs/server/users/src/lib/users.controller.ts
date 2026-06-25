@@ -13,7 +13,7 @@ export class ServerUsersController {
 
     @Get() // GET /users or /users?role=value
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiQuery({ name: 'role', required: false, enum: UserRole })
     getUsers(@Query('role', new ParseEnumPipe(UserRole, {optional: true})) role?: UserRole) {
@@ -34,7 +34,7 @@ export class ServerUsersController {
 
     @Get(':id') // GET /users/:id
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     getOneUser(@Param('id', ParseIntPipe) id: number) {
         return this.serverUsersService.getOneUser(id);
@@ -65,7 +65,7 @@ export class ServerUsersController {
 
     @Patch(':id') // PATCH /users/:id
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -87,7 +87,7 @@ export class ServerUsersController {
     @Delete(':id') // DELETE /users/:id
     @HttpCode(204)  // convenzione rest per indicare che la risposta è vuota
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     removeUser(@Param('id', ParseIntPipe) id: number) {
         return this.serverUsersService.removeUser(id);    

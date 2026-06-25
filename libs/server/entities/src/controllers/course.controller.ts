@@ -52,7 +52,7 @@ export class ServerCourseController {
 
     @Post()
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY, UserRole.TEACHER)
+    @Roles(UserRole.SECRETARY, UserRole.TEACHER)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -76,7 +76,7 @@ export class ServerCourseController {
 
     @Patch(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY, UserRole.TEACHER)
+    @Roles(UserRole.SECRETARY, UserRole.TEACHER)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number, description: 'ID del corso da aggiornare' })
     @ApiBody({
@@ -100,7 +100,7 @@ export class ServerCourseController {
 
     @Delete(':id')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number, description: 'ID del corso da eliminare' })
     remove(@Param('id', ParseIntPipe) id: number) {
@@ -109,7 +109,7 @@ export class ServerCourseController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverCourseService.seed();

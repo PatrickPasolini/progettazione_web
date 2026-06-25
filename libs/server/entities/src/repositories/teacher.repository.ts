@@ -44,7 +44,7 @@ export class TeacherRepository {
 
     // Svuota i soli docenti. course/exam referenziano teacher (RESTRICT): prima va
     // pulita la tabella course (CASCADE pulisce anche exam), poi si eliminano le
-    // righe con role=TEACHER. NON si tocca 'users' interamente: admin/secretary restano.
+    // righe con role=TEACHER. NON si tocca 'users' interamente: i secretary restano.
     async clearTeachers(): Promise<void> {
         await this.repo.query('TRUNCATE TABLE "course" RESTART IDENTITY CASCADE');
         await this.repo.delete({ role: UserRole.TEACHER });

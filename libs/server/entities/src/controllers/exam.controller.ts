@@ -100,7 +100,7 @@ export class ServerExamController {
     @Delete(':id')
     @HttpCode(204)
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.TEACHER, UserRole.ADMIN, UserRole.SECRETARY)
+    @Roles(UserRole.TEACHER, UserRole.SECRETARY)
     @ApiBearerAuth()
     @ApiParam({ name: 'id', type: Number })
     remove(@Param('id', ParseIntPipe) id: number, @CurrentUser() teacher: TeacherEntity) {
@@ -109,7 +109,7 @@ export class ServerExamController {
 
     @Post('populate')
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN)
+    @Roles(UserRole.SECRETARY)
     @ApiBearerAuth()
     seed() {
         return this.serverExamService.seed();
