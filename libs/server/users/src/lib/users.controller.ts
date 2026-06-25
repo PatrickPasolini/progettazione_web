@@ -34,7 +34,7 @@ export class ServerUsersController {
 
     @Get(':id') // GET /users/:id
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.ADMIN,UserRole.USER)
+    @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     getOneUser(@Param('id', ParseIntPipe) id: number) {
         return this.serverUsersService.getOneUser(id);
@@ -49,7 +49,7 @@ export class ServerUsersController {
                 surname: { type: 'string', example: 'Bianchini' },  
                 email: { type: 'string', example: 'bianchini@unibs.it' },
                 password: {type: 'string', example: 'Password1!'},
-                role: { type: 'string', enum: Object.values(UserRole), example: UserRole.USER}
+                role: { type: 'string', enum: Object.values(UserRole), example: UserRole.TEACHER}
             },
             required: ['name', 'email', 'password', 'role'],
         },
@@ -74,7 +74,7 @@ export class ServerUsersController {
                 name: { type: 'string', example: 'Devis' },
                 surname: { type: 'string', example: 'Bianchini' },
                 email: { type: 'string', example: 'bianchini@unibs.it' },
-                role: { type: 'string', enum: Object.values(UserRole), example: UserRole.USER}
+                role: { type: 'string', enum: Object.values(UserRole), example: UserRole.TEACHER}
             },
             required: ['name', 'email', 'role'],
         },
