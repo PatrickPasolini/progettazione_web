@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { SessionListItem } from '@server/entities/frontend';
-import { fetchSessions } from '../secretary.api';
+import { fetchSessions, deleteSession } from '../secretary.api';
 import { SessionModal } from '../components/session-modal';
+import { ConfirmDialog } from '../../../components/ui/confirm-dialog';
+import { ErrorDialog } from '../../../components/ui/error-dialog';
 
 // draft: creazione sessione, submission: inserimento exam dei prof, ongoing: sessione in corso , closed: sessione finita
 type SessionStatus = 'draft' | 'submission' | 'ongoing' | 'closed';
@@ -75,9 +77,11 @@ function StatusPill({ status }: { status: SessionStatus }) {
 function SessionCard({
   session,
   onOpen,
+  onDelete,
 }: {
   session: SessionListItem;
   onOpen: () => void;
+  onDelete: () => void;
 }) {
   const status = getStatus(session);
 
@@ -125,8 +129,8 @@ function SessionCard({
         </dd>
       </dl>
 
-      {/* bottone Modifica — attivo solo in bozza */}
-      <div className="mt-4 pt-4 border-t border-line-2 flex justify-end">
+      {/* bottoni Modifica / Elimina — attivi solo in bozza */}
+      <div className="mt-4 pt-4 border-t border-line-2 flex justify-end gap-2">
         <button
           disabled={status !== 'draft'}
           className="bg-accent text-white px-4 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-accent-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-accent"
@@ -136,6 +140,16 @@ function SessionCard({
           }}
         >
           Modifica
+        </button>
+        <button
+          disabled={status !== 'draft'}
+          className="bg-red-600 text-white px-4 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-red-700 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-red-600"
+          onClick={(e) => {
+            e.stopPropagation();
+            onDelete();
+          }}
+        >
+          Elimina
         </button>
       </div>
     </div>
@@ -148,6 +162,9 @@ export function SessionsPage() {
   const [sessions, setSessions] = useState<SessionListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [pendingDelete, setPendingDelete] = useState<{ id: number; label: string } | null>(null);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMode, setModalMode] = useState<'create' | 'edit'>('create');
@@ -170,6 +187,21 @@ export function SessionsPage() {
   useEffect(() => {
     loadSessions();
   }, []);
+
+  const handleDelete = (session: SessionListItem) => {
+    setPendingDelete({ id: session.id, label: getSessionLabel(session) });
+  };
+
+  const confirmDelete = async () => {
+    if (!pendingDelete) return;
+    setPendingDelete(null);
+    try {
+      await deleteSession(pendingDelete.id);
+      loadSessions();
+    } catch (err: any) {
+      setDeleteError(err.message || "Errore nell'eliminazione della sessione");
+    }
+  };
 
   const openCreateModal = () => {
     setModalMode('create');
@@ -250,6 +282,7 @@ export function SessionsPage() {
                 key={s.id}
                 session={s}
                 onOpen={() => openEditModal(s)}
+                onDelete={() => handleDelete(s)}
               />
             ))}
         </div>
@@ -264,6 +297,19 @@ export function SessionsPage() {
           onSave={loadSessions}
         />
       )}
+
+      <ConfirmDialog
+        open={!!pendingDelete}
+        title="Elimina sessione"
+        description={<>Sei sicuro di voler eliminare la sessione<br />"{pendingDelete?.label}"?</>}
+        onConfirm={confirmDelete}
+        onCancel={() => setPendingDelete(null)}
+      />
+      <ErrorDialog
+        open={!!deleteError}
+        message={deleteError}
+        onClose={() => setDeleteError(null)}
+      />
     </div>
   );
 }
