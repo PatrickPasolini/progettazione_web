@@ -29,7 +29,7 @@ export function InsertionBanner({ session, insertOpen, examLimitReached }: Inser
             >
                 {insertOpen && examLimitReached ? 'Limite' : insertOpen ? 'Aperta' : 'Chiusa'}
             </span>
-            <div className="flex-1 text-[13.5px]">
+            <div className="flex-1 text-sm">
                 {insertOpen && examLimitReached ? (
                     <>
                         <b className="text-ink">Limite di {session.examLimit} appelli raggiunto.</b>

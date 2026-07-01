@@ -78,7 +78,7 @@ export function SessionSidebar({
                 </h4>
                 <div className="flex flex-col gap-2">
                     {courses.length === 0 ? (
-                        <p className="text-[12px] text-ink-3 m-0">
+                        <p className="text-xs text-ink-3 m-0">
                             {selectedSessionId
                                 ? 'Nessun corso disponibile.'
                                 : 'Seleziona prima una sessione.'}
@@ -105,10 +105,10 @@ export function SessionSidebar({
                                         {sel && <span className="w-2 h-2 rounded-full bg-accent" />}
                                     </span>
                                     <span className="flex flex-col gap-0.5 min-w-0">
-                                        <span className="text-[17px] font-semibold leading-tight text-ink">
+                                        <span className="text-base font-semibold leading-tight text-ink">
                                             {course.courseName}
                                         </span>
-                                        <span className="text-[12.5px] text-ink-2">
+                                        <span className="text-xs text-ink-2">
                                             {course.degree.degreeName} · Anno {course.degree.degreeYear}
                                         </span>
                                         <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-bg text-ink-2 mt-0.5 self-start">
@@ -127,7 +127,7 @@ export function SessionSidebar({
                 <h4 className="font-mono text-[11px] uppercase tracking-widest text-ink-3 m-0">
                     Legenda
                 </h4>
-                <div className="flex flex-col gap-2 text-[12.5px] text-ink-2">
+                    <div className="flex flex-col gap-2 text-xs text-ink-2">
                     <div className="flex items-center gap-2.5">
                         <span className="w-3 h-3 rounded-[3px] bg-accent shrink-0" />
                         Il tuo appello
@@ -170,11 +170,11 @@ export function SessionSidebar({
                             ([iso]) => iso >= sStart && iso <= sEnd,
                         );
                         return inRange.length === 0 ? (
-                            <p className="text-[12.5px] text-ink-3 m-0">
+                            <p className="text-xs text-ink-3 m-0">
                                 Nessuna festività nel periodo.
                             </p>
                         ) : (
-                            <div className="flex flex-col gap-1.5 text-[12.5px] text-ink-2">
+                            <div className="flex flex-col gap-1.5 text-xs text-ink-2">
                                 {inRange.map(([iso, name]) => (
                                     <div key={iso} className="flex justify-between">
                                         <span>{name}</span>
@@ -190,7 +190,7 @@ export function SessionSidebar({
                         );
                     })()
                 ) : (
-                    <p className="text-[12.5px] text-ink-3 m-0">
+                    <p className="text-xs text-ink-3 m-0">
                         Seleziona una sessione.
                     </p>
                 )}

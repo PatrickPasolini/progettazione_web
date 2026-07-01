@@ -80,7 +80,7 @@ export function CalendarGrid({
                         </svg>
                     </Button>
                 </div>
-                <div className="text-[26px] font-semibold leading-none">
+                <div className="text-2xl font-semibold leading-none">
                     {MONTH_LABELS_IT[viewMonth.getMonth()]}{' '}
                     <span className="text-ink-3">{viewMonth.getFullYear()}</span>
                 </div>
@@ -142,25 +142,25 @@ export function CalendarGrid({
                                 <span
                                     className={
                                         isToday && !outMonth
-                                            ? 'w-6 h-6 bg-ink text-paper rounded-full grid place-items-center font-mono text-[13px]'
-                                            : 'text-[18px] font-semibold leading-none' +
+                                            ? 'w-6 h-6 bg-ink text-paper rounded-full grid place-items-center font-mono text-xs'
+                                            : 'text-lg font-semibold leading-none' +
                                               (outMonth ? ' text-ink-4' : '')
                                     }
                                 >
                                     {d.getDate()}
                                 </span>
                                 {!outMonth && we && (
-                                    <span className="font-mono text-[9.5px] uppercase tracking-wide text-ink-3">
+                                    <span className="font-mono text-[10px] uppercase tracking-wide text-ink-3">
                                         {d.getDay() === 6 ? 'Sab' : 'Dom'}
                                     </span>
                                 )}
                                 {!outMonth && hol && (
-                                    <span className="font-mono text-[9.5px] uppercase tracking-wide text-gold">
+                                    <span className="font-mono text-[10px] uppercase tracking-wide text-gold">
                                         Festivo
                                     </span>
                                 )}
                                 {!outMonth && !inSession && !we && !hol && (
-                                    <span className="font-mono text-[9.5px] uppercase tracking-wide text-ink-3">
+                                    <span className="font-mono text-[10px] uppercase tracking-wide text-ink-3">
                                         fuori sess.
                                     </span>
                                 )}
@@ -169,13 +169,13 @@ export function CalendarGrid({
                             {!outMonth && exam && (
                                 <div
                                     className={
-                                        'text-[11.5px] px-[7px] py-[5px] rounded-[5px] flex flex-col gap-[1px] leading-[1.25] border-l-[3px] ' +
+                                        'text-xs px-[7px] py-[5px] rounded-[5px] flex flex-col gap-[1px] leading-[1.25] border-l-[3px] ' +
                                         (isMine
                                             ? 'bg-accent text-paper border-[#0a1f44] border border-l-[3px]'
                                             : 'bg-paper text-ink-2 border-line border border-l-[3px] border-l-ink-4')
                                     }
                                 >
-                                    <span className={'font-mono text-[9.5px] tracking-wide ' + (isMine ? 'text-white/70' : 'text-ink-3')}>
+                                    <span className={'font-mono text-[10px] tracking-wide ' + (isMine ? 'text-white/70' : 'text-ink-3')}>
                                         {fmtTime(exam.startTime)}
                                     </span>
                                     <span className={'font-medium ' + (isMine ? 'text-paper' : 'text-ink')}>

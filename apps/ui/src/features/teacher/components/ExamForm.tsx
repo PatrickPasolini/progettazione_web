@@ -121,7 +121,7 @@ export function ExamForm({
                 </div>
                 <div className="flex flex-col gap-1.5">
                     <Label>Materia</Label>
-                    <Input value={course.courseName} disabled className="bg-muted text-muted-foreground" />
+                    <Input value={course.courseName} disabled className="bg-muted text-ink-2/80" />
                 </div>
             </div>
 
@@ -130,28 +130,26 @@ export function ExamForm({
                 <Input
                     value={`${course.degree.degreeName} · Anno ${course.degree.degreeYear}`}
                     disabled
-                    className="bg-muted text-muted-foreground"
+                    className="bg-muted text-ink-2/80"
                 />
             </div>
 
             {err && (
-                <div className="text-[12px] text-destructive flex items-center gap-1.5">
+                <div className="text-xs text-destructive flex items-center gap-1.5">
                     ⚠ {err}
                 </div>
             )}
 
             <div className="flex items-center justify-end gap-2 mt-1 pt-3.5 border-t border-border -mx-6 px-6">
                 {mode === 'edit' && (
-                    <Button
+                    <button
                         type="button"
-                        variant="outline"
-                        size="sm"
                         onClick={() => setShowDeleteConfirm(true)}
                         disabled={saving}
-                        className="mr-auto border-destructive/40 text-destructive hover:bg-destructive/10"
+                        className="mr-auto bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-red-700 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-red-600 h-10"
                     >
                         Cancella appello
-                    </Button>
+                    </button>
                 )}
                 <Button type="button" variant="outline" onClick={onCancel} disabled={saving}>
                     Annulla

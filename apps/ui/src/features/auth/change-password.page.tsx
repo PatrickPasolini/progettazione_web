@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { changePassword, fetchCurrentUser } from './auth.api';
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
+import { PasswordInput } from '../../components/ui/password-input';
 import { Label } from '../../components/ui/label';
 
 export function ChangePasswordPage() {
@@ -45,11 +46,11 @@ export function ChangePasswordPage() {
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-6">
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="new-password">Nuova password</Label>
-            <Input id="new-password" type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} placeholder="Min 8 caratteri, maiuscola, simbolo" required />
+            <PasswordInput id="new-password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} placeholder="Min 8 caratteri, maiuscola, simbolo" required />
           </div>
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="confirm-password">Conferma password</Label>
-            <Input id="confirm-password" type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} placeholder="Ripeti la password" required />
+            <PasswordInput id="confirm-password" value={confirm} onChange={(e) => setConfirm(e.target.value)} placeholder="Ripeti la password" required />
           </div>
           <Button type="submit" disabled={loading} className="mt-2 w-full">
             {loading ? 'Salvataggio…' : 'Imposta password'}
