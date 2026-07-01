@@ -235,7 +235,7 @@ export function SessionsPage() {
           className="bg-accent text-white hover:bg-accent-2 transition-colors
                                    px-4 py-2 rounded-lg font-medium shadow-sm"
         >
-          + Nuova Sessione
+          + Aggiungi Sessione
         </button>
       </div>
 
