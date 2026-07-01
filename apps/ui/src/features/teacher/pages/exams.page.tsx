@@ -102,9 +102,9 @@ export function ExamsPage() {
     const myExams = useMemo(
         () =>
             exams
-                .filter((e) => e.teacher.id === userId)
+                .filter((e) => e.teacher.id === userId && e.course.id === selectedCourseId)
                 .sort((a, b) => dateKey(a.examDate).localeCompare(dateKey(b.examDate))),
-        [exams, userId],
+        [exams, userId, selectedCourseId],
     );
 
     const examLimitReached =

@@ -50,9 +50,10 @@ export class ServerExamService {
         }
 
         const teacherExams = await this.examRepository.findAll(session.id, undefined, currentTeacher.id);
-        if (teacherExams.length >= session.examLimit) {
+        const courseExams = teacherExams.filter(e => e.course.id === dto.courseId);
+        if (courseExams.length >= session.examLimit) {
             throw new BadRequestException(
-                `Limite di ${session.examLimit} appelli per sessione raggiunto`,
+                `Limite di ${session.examLimit} appelli per questo corso raggiunto`,
             );
         }
 
