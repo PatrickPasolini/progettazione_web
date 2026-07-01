@@ -118,6 +118,8 @@ export function CalendarGrid({
                         cellCls += 'bg-[#dde4ef] cursor-not-allowed';
                     } else if (hol) {
                         cellCls += 'cursor-not-allowed';
+                    } else if (exam && !isMine) {
+                        cellCls += 'bg-paper cursor-not-allowed';
                     } else {
                         cellCls += insertOpen ? 'bg-paper hover:bg-[#f0f5fc] cursor-pointer' : 'bg-paper cursor-default';
                     }

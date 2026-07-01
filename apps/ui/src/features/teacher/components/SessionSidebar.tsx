@@ -46,18 +46,22 @@ export function SessionSidebar({
                 </select>
 
                 {selectedSession && (
-                    <div className="flex flex-col gap-1 text-[12px] text-ink-3 mt-1">
-                        <div className="flex justify-between">
-                            <span>Periodo</span>
-                            <span className="text-ink-2 font-mono text-[11px]">
+                    <div className="flex flex-col gap-1.5 mt-1">
+                        <div className="flex justify-between items-center">
+                            <span className="font-mono text-[11px] uppercase tracking-wide text-ink-3">
+                                Sessione
+                            </span>
+                            <span className="tabular-nums text-ink-2 text-sm">
                                 {new Date(selectedSession.startDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}
                                 {' → '}
                                 {new Date(selectedSession.endDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}
                             </span>
                         </div>
-                        <div className="flex justify-between">
-                            <span>Inserimenti</span>
-                            <span className="text-ink-2 font-mono text-[11px]">
+                        <div className="flex justify-between items-center">
+                            <span className="font-mono text-[11px] uppercase tracking-wide text-ink-3">
+                                Inserimenti
+                            </span>
+                            <span className="tabular-nums text-ink-2 text-sm">
                                 {new Date(selectedSession.startInsertDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}
                                 {' → '}
                                 {new Date(selectedSession.endInsertDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'short' })}

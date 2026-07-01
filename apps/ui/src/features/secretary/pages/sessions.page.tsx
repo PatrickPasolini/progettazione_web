@@ -133,7 +133,7 @@ function SessionCard({
       <div className="mt-4 pt-4 border-t border-line-2 flex justify-end gap-2">
         <button
           disabled={status !== 'draft'}
-          className="bg-accent text-white px-4 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-accent-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-accent"
+          className="bg-accent text-white hover:bg-accent-2 transition-colors px-4 py-2 rounded-lg font-medium shadow-sm disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-accent"
           onClick={(e) => {
             e.stopPropagation();
             onOpen();
@@ -221,11 +221,11 @@ export function SessionsPage() {
   };
 
   return (
-    <div>
+    <div className="space-y-6">
       {/* Header pagina */}
-      <div className="flex items-start justify-between mb-6">
+      <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-bold"> Sessioni d'esame</h1>
+          <h1 className="text-2xl font-bold">Sessioni d'esame</h1>
           <p className="text-sm text-gray-600">
             Gestione delle sessioni d'esame
           </p>
