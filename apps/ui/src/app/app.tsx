@@ -54,7 +54,7 @@ export function App() {
           <Route path="exams" element={<ExamsPage />} />
         </Route>
 
-        <Route path="/" element={<Navigate to="/secretary" replace />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

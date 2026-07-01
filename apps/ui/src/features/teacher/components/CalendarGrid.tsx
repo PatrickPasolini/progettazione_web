@@ -132,7 +132,7 @@ export function CalendarGrid({
                             className={cellCls}
                             style={cellStyle}
                             onClick={() => {
-                                if (outMonth) return;
+                                if (outMonth || !inSession) return;
                                 onCellClick(iso, exam ?? null);
                             }}
                         >
