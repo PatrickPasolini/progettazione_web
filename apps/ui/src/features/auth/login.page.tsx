@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { login, fetchCurrentUser } from './auth.api';
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
+import { PasswordInput } from '../../components/ui/password-input';
 import { Label } from '../../components/ui/label';
 
 export function LoginPage() {
@@ -44,7 +45,7 @@ export function LoginPage() {
           </div>
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Inserisci password" required />
+            <PasswordInput id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Inserisci password" required />
           </div>
           <Button type="submit" disabled={loading} className="mt-2 w-full">
             {loading ? 'Accesso in corso…' : 'Accedi'}

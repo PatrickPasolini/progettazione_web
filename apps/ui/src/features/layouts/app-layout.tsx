@@ -65,7 +65,7 @@ export function AppLayout() {
                     'h-20 flex items-center px-5 text-base font-medium border-b-2 transition-colors',
                     isActive
                       ? 'border-accent text-ink'
-                      : 'border-transparent text-ink-3 hover:text-ink hover:bg-gray-100 rounded-md',
+                      : 'border-transparent text-ink-3 hover:text-ink hover:bg-gray-100',
                   ].join(' ')
                 }
               >

@@ -102,9 +102,9 @@ export function ExamsPage() {
     const myExams = useMemo(
         () =>
             exams
-                .filter((e) => e.teacher.id === userId)
+                .filter((e) => e.teacher.id === userId && e.course.id === selectedCourseId)
                 .sort((a, b) => dateKey(a.examDate).localeCompare(dateKey(b.examDate))),
-        [exams, userId],
+        [exams, userId, selectedCourseId],
     );
 
     const examLimitReached =
@@ -190,12 +190,18 @@ export function ExamsPage() {
             <main className="flex-1 min-w-0 overflow-y-auto px-9 py-7">
                 <div className="flex items-start justify-between mb-5">
                     <div>
-                        <h1 className="text-[38px] font-bold leading-tight tracking-tight m-0 mt-0.5">
+                        <h1 className="text-3xl font-bold leading-tight tracking-tight m-0 mt-0.5">
                             Calendario Appelli{' '}
                             <em className="italic text-accent">
                                 {selectedSession ? `- ${selectedSession.macroArea}` : '-'}
                             </em>
                         </h1>
+                        {selectedCourse && (
+                            <p className="text-base text-ink-2 font-medium mt-1.5">
+                                <span className="text-lg font-semibold text-ink">{selectedCourse.degree.degreeName}</span>
+                                <span className="text-sm text-ink-3"> - {selectedCourse.courseName} - Anno {selectedCourse.degree.degreeYear} - {selectedCourse.degree.degreeType}</span>
+                            </p>
+                        )}
                     </div>
                     <Button
                         disabled={!insertOpen || !selectedCourse || examLimitReached}
@@ -226,7 +232,7 @@ export function ExamsPage() {
                         holidays={holidays}
                     />
                 ) : (
-                    <div className="rounded-xl border border-line bg-paper flex items-center justify-center min-h-[420px] text-ink-3 text-sm font-mono">
+                    <div className="rounded-xl border border-line bg-paper flex items-center justify-center min-h-[420px] text-ink-3 text-sm">
                         {selectedSession
                             ? 'Seleziona una materia per vedere il calendario'
                             : 'Calendario — seleziona sessione e corso di laurea'}
@@ -246,7 +252,7 @@ export function ExamsPage() {
             <Modal
                 open={!!modal}
                 onClose={() => setModal(null)}
-                title={modal?.mode === 'edit' ? 'Modifica appello' : 'Nuovo appello'}
+                title={modal?.mode === 'edit' ? `Modifica appello - ${selectedCourse?.courseName}` : `Nuovo appello - ${selectedCourse?.courseName}`}
                 subtitle={modalSubtitle}
             >
                 {modal && selectedSession && selectedCourse && (
