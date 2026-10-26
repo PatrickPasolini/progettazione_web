@@ -24,6 +24,11 @@ export class RolesGuard implements CanActivate {
       throw new ForbiddenException('User not found in request');
     }
 
+    // L'admin ha accesso completo: supera qualsiasi restrizione di ruolo.
+    if (user.role === UserRole.ADMIN) {
+      return true;
+    }
+
     if (!requiredRoles.includes(user.role)) {
       throw new ForbiddenException('Insufficient permissions');
     }

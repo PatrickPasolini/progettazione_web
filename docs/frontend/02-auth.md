@@ -14,9 +14,11 @@ Form email + password con componenti shadcn/ui (`Input`, `Button`, `Label`).
 3. Salva `access_token` in `localStorage`
 4. Se `mustChangePassword === true` → redirect a `/cambia-password`
 5. Altrimenti → redirect basato su `user.role`:
-   - `SECRETARY` → `/segreteria`
-   - `TEACHER` → `/docente/esami`
-   - `ADMIN` → `/segreteria`
+   - `SECRETARY` → `/secretary`
+   - `TEACHER` → `/teacher`
+   - `ADMIN` → `/admin`
+
+Le aree `/secretary`, `/teacher` e `/admin` sono protette da `ProtectedRoute roles={[...]}`: il ruolo viene letto dal JWT (`role.utils.ts`) e, se non corrisponde, si torna a `/`, dove `RootRedirect` porta l'utente nella propria area.
 
 ## LogoutPage
 

@@ -85,4 +85,4 @@ Il layout (`AppLayout`) mostra tab diverse in base al ruolo dell'utente:
 |-------|-------------|
 | `SECRETARY` | Sessioni, Corsi, Materie, Docenti |
 | `TEACHER` | Esami |
-| `ADMIN` | Tutte |
+| `ADMIN` | Sessioni, Corsi, Materie, Docenti, Segretari, Esami (calendario appelli in sola lettura di tutti i dipartimenti) |

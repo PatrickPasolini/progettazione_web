@@ -17,6 +17,15 @@ const TEACHER_TABS: NavTab[] = [
   { label: 'Esami', path: '/teacher/exams' },
 ];
 
+const ADMIN_TABS: NavTab[] = [
+  { label: 'Sessioni',  path: '/admin/sessions' },
+  { label: 'Corsi',     path: '/admin/degrees' },
+  { label: 'Materie',   path: '/admin/courses' },
+  { label: 'Docenti',   path: '/admin/teachers' },
+  { label: 'Segretari', path: '/admin/secretaries' },
+  { label: 'Esami',     path: '/admin/exams' },
+];
+
 export function AppLayout() {
   const [email, setEmail] = useState<string | null>(null);
   const [tabs, setTabs] = useState<NavTab[]>([]);
@@ -29,7 +38,11 @@ export function AppLayout() {
     fetchCurrentUser()
       .then((u) => {
         setEmail(u.email);
-        setTabs(u.role === 'TEACHER' ? TEACHER_TABS : SEGRETERIA_TABS);
+        const tabsByRole =
+          u.role === 'TEACHER' ? TEACHER_TABS
+          : u.role === 'ADMIN' ? ADMIN_TABS
+          : SEGRETERIA_TABS;
+        setTabs(tabsByRole);
       })
       .catch(() => setEmail(null));
   }, []);

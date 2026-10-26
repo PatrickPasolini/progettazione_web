@@ -88,7 +88,7 @@ Nx monorepo — **university exam management system** (`appelli_db`).
 
 **Auth flow** — local strategy validates email/password → issues JWT → jwt strategy validates Bearer token on protected routes. Guards live in `@server/security`, not in each feature module.
 
-**Roles** — `USER`, `ADMIN`, `TEACHER`, `SECRETARY`. Use `@Roles(UserRole.TEACHER)` + `RolesGuard` from `@server/security`.
+**Roles** — `ADMIN`, `TEACHER`, `SECRETARY`. Use `@Roles(UserRole.TEACHER)` + `RolesGuard` from `@server/security`. `RolesGuard` lets `ADMIN` through every `@Roles(...)` check (full access), so there is no need to list `ADMIN` explicitly. User management (`/users`, `/auth/register`) is `ADMIN`-only.
 
 ### Business Requirements
 

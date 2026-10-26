@@ -13,7 +13,7 @@ export class ServerUsersController {
 
     @Get() // GET /users or /users?role=value
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.SECRETARY)
+    @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     @ApiQuery({ name: 'role', required: false, enum: UserRole })
     getUsers(@Query('role', new ParseEnumPipe(UserRole, {optional: true})) role?: UserRole) {
@@ -34,13 +34,17 @@ export class ServerUsersController {
 
     @Get(':id') // GET /users/:id
     @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(UserRole.SECRETARY)
+    @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     getOneUser(@Param('id', ParseIntPipe) id: number) {
         return this.serverUsersService.getOneUser(id);
     }
 
+    // Solo l'admin crea utenti: altrimenti chiunque potrebbe registrarsi come ADMIN.
     @Post() // POST /users
+    @UseGuards(JwtAuthGuard, RolesGuard)
+    @Roles(UserRole.ADMIN)
+    @ApiBearerAuth()
     @ApiBody({
         schema: {
             type: 'object',
@@ -65,7 +69,7 @@ export class ServerUsersController {
 
     @Patch(':id') // PATCH /users/:id
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.SECRETARY)
+    @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     @ApiBody({
         schema: {
@@ -87,7 +91,7 @@ export class ServerUsersController {
     @Delete(':id') // DELETE /users/:id
     @HttpCode(204)  // convenzione rest per indicare che la risposta è vuota
     @UseGuards(JwtAuthGuard,RolesGuard)
-    @Roles(UserRole.SECRETARY)
+    @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     removeUser(@Param('id', ParseIntPipe) id: number) {
         return this.serverUsersService.removeUser(id);    

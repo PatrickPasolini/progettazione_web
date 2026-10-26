@@ -42,7 +42,6 @@ export class UserEntity {
 
 ```typescript
 enum UserRole {
-  USER = 'USER',
   ADMIN = 'ADMIN',
   TEACHER = 'TEACHER',
   SECRETARY = 'SECRETARY',
@@ -51,8 +50,7 @@ enum UserRole {
 
 | Ruolo | Accesso |
 |-------|---------|
-| `USER` | Base, non usato attivamente |
-| `ADMIN` | Accesso completo, può fare seed e operazioni administrative |
+| `ADMIN` | Accesso completo: `RolesGuard` lo fa passare su ogni `@Roles(...)`; unico ruolo che gestisce gli utenti |
 | `TEACHER` | Inserisce/modifica i propri esami |
 | `SECRETARY` | Configura sessioni, corsi, materie, docenti |
 
@@ -79,7 +77,7 @@ La colonna `dtype` avrà valore `'TEACHER'` per le righe TeacherEntity.
 
 | Metodo | Descrizione |
 |--------|-------------|
-| `seed()` | Crea 3 admin + 2 segretarie (password hashate con bcrypt) |
+| `seed()` | Crea 3 admin + 4 segreterie, una per area (password hashate con bcrypt) |
 | `findByEmail(email)` | Trova utente per email; lancia `NotFoundException` se assente |
 | `getOneUser(id)` | Trova per ID |
 | `getUsers(role?)` | Lista utenti, filtrabile per ruolo |
@@ -94,11 +92,16 @@ La colonna `dtype` avrà valore `'TEACHER'` per le righe TeacherEntity.
 
 | Metodo | Rotta | Auth |
 |--------|-------|------|
-| `GET` | `/api/user` | JwtAuthGuard |
-| `GET` | `/api/user/:id` | JwtAuthGuard |
-| `POST` | `/api/user` | JwtAuthGuard + ADMIN |
-| `PATCH` | `/api/user/:id` | JwtAuthGuard + ADMIN |
-| `DELETE` | `/api/user/:id` | JwtAuthGuard + ADMIN |
+| `GET` | `/api/users` | JwtAuthGuard + ADMIN |
+| `GET` | `/api/users/me` | JwtAuthGuard |
+| `GET` | `/api/users/:id` | JwtAuthGuard + ADMIN |
+| `POST` | `/api/users` | JwtAuthGuard + ADMIN |
+| `POST` | `/api/users/populate` | pubblico (seed iniziale) |
+| `PATCH` | `/api/users/:id` | JwtAuthGuard + ADMIN |
+| `DELETE` | `/api/users/:id` | JwtAuthGuard + ADMIN |
+
+Anche `POST /api/auth/register` è riservato all'admin: il ruolo arriva dal body,
+quindi un endpoint pubblico permetterebbe a chiunque di crearsi un account `ADMIN`.
 
 ## DTOs
 

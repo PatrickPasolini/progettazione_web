@@ -1,11 +1,11 @@
 import { Controller, UseGuards, Post, Patch, Request, Body, ValidationPipe } from '@nestjs/common';
-import { ApiTags, ApiBody } from '@nestjs/swagger';
+import { ApiTags, ApiBody, ApiBearerAuth } from '@nestjs/swagger';
 import { ServerAuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { ChangePasswordDto } from './dto/change-password.dto';
 import type { AuthenticatedUser } from './interfaces/authenticated-user.interface';
 import { LocalAuthGuard } from './guards/local-auth.guard';
-import { JwtAuthGuard, CurrentUser } from '@server/security';
+import { JwtAuthGuard, CurrentUser, Roles, RolesGuard } from '@server/security';
 import { UserRole } from '@server/users';
 
 type RequestWithUser = Request & {
@@ -42,7 +42,11 @@ export class ServerAuthController {
     return this.serverAuthService.changePassword(user.id, dto.newPassword);
   }
 
+  // Registrazione riservata all'admin: il ruolo è scelto nel body, quindi non può essere pubblica.
   @Post('register')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
+  @ApiBearerAuth()
   @ApiBody({
           schema: {
               type: 'object',

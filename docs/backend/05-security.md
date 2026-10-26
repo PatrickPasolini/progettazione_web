@@ -31,7 +31,7 @@ getProtected() { ... }
 
 `src/lib/guards/roles.guard.ts`
 
-Controlla che il ruolo dell'utente autenticato (da `request.user.role`) corrisponda ai ruoli richiesti dal decoratore `@Roles()`.
+Controlla che il ruolo dell'utente autenticato (da `request.user.role`) corrisponda ai ruoli richiesti dal decoratore `@Roles()`. L'`ADMIN` supera sempre il controllo (accesso completo), quindi non va elencato nei `@Roles(...)`.
 
 ```typescript
 @Injectable()
@@ -40,6 +40,7 @@ export class RolesGuard implements CanActivate {
     const requiredRoles = this.reflector.get<UserRole[]>('roles', context.getHandler());
     if (!requiredRoles) return true; // nessun requisito di ruolo → accesso libero
     const user = context.switchToHttp().getRequest().user;
+    if (user.role === UserRole.ADMIN) return true; // l'admin ha accesso completo
     if (!requiredRoles.includes(user.role)) throw new ForbiddenException();
     return true;
   }

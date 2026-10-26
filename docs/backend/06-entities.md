@@ -6,6 +6,8 @@
 Contiene tutto il dominio core: Teacher, Course, Exam, Session, Degree.
 Ogni entità ha: Entity, Repository, Service, Controller, Module, DTOs, Interface.
 
+> Nelle tabelle seguenti `ADMIN` compare per chiarezza: nel codice non è elencato nei `@Roles(...)`, perché `RolesGuard` lascia passare l'admin su tutte le rotte protette da ruolo.
+
 ---
 
 ## Enum
@@ -65,7 +67,7 @@ export class DegreeEntity {
 | `POST` | `/api/degree` | ADMIN, SECRETARY |
 | `PATCH` | `/api/degree/:id` | ADMIN, SECRETARY |
 | `DELETE` | `/api/degree/:id` | ADMIN, SECRETARY |
-| `POST` | `/api/degree/populate` | ADMIN |
+| `POST` | `/api/degree/populate` | ADMIN, SECRETARY |
 
 ---
 
@@ -117,7 +119,7 @@ export class SessionEntity {
 | `POST` | `/api/session` | ADMIN, SECRETARY |
 | `PATCH` | `/api/session/:id` | ADMIN, SECRETARY |
 | `DELETE` | `/api/session/:id` | ADMIN, SECRETARY |
-| `POST` | `/api/session/populate` | ADMIN |
+| `POST` | `/api/session/populate` | ADMIN, SECRETARY |
 
 ---
 
@@ -147,7 +149,7 @@ export class TeacherEntity extends UserEntity {
 | `POST` | `/api/teacher` | ADMIN, SECRETARY |
 | `PATCH` | `/api/teacher/:id` | ADMIN, SECRETARY |
 | `DELETE` | `/api/teacher/:id` | ADMIN, SECRETARY |
-| `POST` | `/api/teacher/populate` | ADMIN |
+| `POST` | `/api/teacher/populate` | ADMIN, SECRETARY |
 
 ---
 
@@ -188,7 +190,7 @@ export class CourseEntity {
 | `POST` | `/api/course` | ADMIN, SECRETARY |
 | `PATCH` | `/api/course/:id` | ADMIN, SECRETARY |
 | `DELETE` | `/api/course/:id` | ADMIN, SECRETARY |
-| `POST` | `/api/course/populate` | ADMIN |
+| `POST` | `/api/course/populate` | ADMIN, SECRETARY |
 
 La rotta `GET /course/teacher/:teacherId/session/:sessionId` è la principale usata dal portale docente per caricare i corsi disponibili in una sessione.
 
@@ -256,7 +258,7 @@ Per `remove()`:
 | `POST` | `/api/exam` | TEACHER |
 | `PATCH` | `/api/exam/:id` | TEACHER |
 | `DELETE` | `/api/exam/:id` | TEACHER, ADMIN, SECRETARY |
-| `POST` | `/api/exam/populate` | ADMIN |
+| `POST` | `/api/exam/populate` | ADMIN, SECRETARY |
 
 ---
 

@@ -26,7 +26,7 @@ export class CreateUserDto {
     password: string;
 
     @IsEnum(UserRole, {
-        message: 'Valid role required among TEACHER or SECRETARY'
+        message: 'Valid role required among ADMIN, TEACHER or SECRETARY'
     })
     role: UserRole;
 };

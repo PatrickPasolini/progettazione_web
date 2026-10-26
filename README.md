@@ -34,8 +34,11 @@ Monorepo [Nx](https://nx.dev) con backend **NestJS** + **PostgreSQL** (TypeORM) 
 
 ### Ruoli
 
-Due ruoli, gestiti via Single Table Inheritance su `UserEntity` (colonna `role`):
+Tre ruoli, gestiti via Single Table Inheritance su `UserEntity` (colonna `role`):
 
+- `ADMIN` — accesso completo: tutte le funzioni della segreteria, gestione
+  degli utenti (segretari), calendario appelli di tutti i dipartimenti.
+  Il `RolesGuard` lascia passare l'admin su ogni rotta protetta da ruolo.
 - `SECRETARY` — configura sessioni, corsi di laurea, corsi, docenti.
 - `TEACHER` — inserisce/modifica i propri appelli.
 
@@ -103,13 +106,14 @@ npm run start:api
 Apri Swagger su **http://localhost:3333/api/docs** ed esegui il popolamento
 nell'ordine seguente (necessario per rispettare le dipendenze tra entità):
 
-1. **`POST /api/users/populate`** — endpoint pubblico, crea le segreterie
-   (una per area: Economia, Giurisprudenza, Ingegneria, Medicina).
-   Tutte con password `Password1!`.
-2. **`POST /api/auth/login`** — accedi come segreteria
+1. **`POST /api/users/populate`** — endpoint pubblico, crea 3 admin
+   (`diego.pioli@unibs.it`, `patrick.pasolini@unibs.it`,
+   `luca.martinelli@unibs.it`) e le segreterie (una per area: Economia,
+   Giurisprudenza, Ingegneria, Medicina). Tutti con password `Password1!`.
+2. **`POST /api/auth/login`** — accedi come segreteria o admin
    (es. `segreteria.ingegneria@unibs.it` / `Password1!`), copia il token JWT e
    premi **Authorize** in Swagger. I populate successivi richiedono il ruolo
-   `SECRETARY`.
+   `SECRETARY` (o `ADMIN`).
 3. Esegui i populate delle altre entità **in quest'ordine**:
 
    | # | Endpoint | Dipende da |
